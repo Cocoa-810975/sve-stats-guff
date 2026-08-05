@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：智念せいらおめでとう隊｜4/14 (0.2857)｜2026/08/02｜<a href="https://decklog.bushiroad.com/view/6185R" target="_blank" rel="noopener">6185R</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/PR-060.png" alt="ダークオファリング"><span>主BP01-140/EBD04-017/PR-060：ダークオファリング</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-107.png" alt="安息の肯定者"><span>主BP20-107：安息の肯定者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-560.png" alt="安息の神殿"><span>主BP20-103/PR-560：安息の神殿</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-100.png" alt="戒律の諜報員"><span>主BP19-100/BP19-P27：戒律の諜報員</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-100.png" alt="輝く失意"><span>主BP20-100/BP20-P49：輝く失意</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-101.png" alt="安息の祈祷者"><span>主BP20-101/BP20-P50：安息の祈祷者</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL26.png" alt="安息の継承者・ヒメカ"><span>主BP20-094/BP20-SL26：安息の継承者・ヒメカ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-406.png" alt="スパークルアサルト"><span>主PR-406：スパークルアサルト</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-108.png" alt="安息の隠者"><span>主BP15-108/BP15-P24：安息の隠者</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-097.png" alt="安息の団結者"><span>主BP20-097/BP20-P47：安息の団結者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-SL24.png" alt="嗚咽の聖騎士・ウィルバート"><span>主BP21-094/BP21-SL24：嗚咽の聖騎士・ウィルバート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL16.png" alt="安息の絶傑・マーウィン"><span>主BP05-SL16：安息の絶傑・マーウィン</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL25.png" alt="絶望の顕現・マーウィン"><span>主BP20-093/BP20-SL25：絶望の顕現・マーウィン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-098.png" alt="テミスの審判"><span>主BP01-131/PR-098：テミスの審判</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-U06.png" alt="結盟の咎人・エルラーデ"><span>主BP19-092/BP19-U06：結盟の咎人・エルラーデ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL17.png" alt="安息の絶傑・マーウィン"><span>进BP05-SL17/BP05-U06：安息の絶傑・マーウィン</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-101.png" alt="戒律の諜報員"><span>进BP19-101/BP19-P28：戒律の諜報員</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-098.png" alt="安息の団結者"><span>进BP20-098/BP20-P48：安息の団結者</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-102.png" alt="安息の祈祷者"><span>进BP20-102/BP20-P51：安息の祈祷者</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-U07.png" alt="安息の継承者・ヒメカ"><span>进BP20-095/BP20-U07：安息の継承者・ヒメカ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-SL25.png" alt="嗚咽の聖騎士・ウィルバート"><span>进BP21-095/BP21-SL25：嗚咽の聖騎士・ウィルバート</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -114,7 +121,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

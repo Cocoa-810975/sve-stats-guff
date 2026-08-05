@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：カルム｜1/64 (0.0156)｜2026/06/13｜<a href="https://decklog.bushiroad.com/view/5UTF3" target="_blank" rel="noopener">5UTF3</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP09-082.png" alt="白夜の吸血鬼・ヴァーニア"><span>主BP09-082/BP09-P24：白夜の吸血鬼・ヴァーニア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP09-083.png" alt="真夜中の吸血鬼・ヴァーニア"><span>主BP09-083/BP09-P25：真夜中の吸血鬼・ヴァーニア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL22.png" alt="紅のワルツ"><span>主BP12-079/BP12-SL22：紅のワルツ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-085.png" alt="怪奇の探索者・ユナ"><span>主BP16-085/BP16-P19：怪奇の探索者・ユナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-096.png" alt="バットノイズ"><span>主BP18-096：バットノイズ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP02-081.png" alt="貴き血牙"><span>主BP02-081：貴き血牙</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP02-SL13.png" alt="吸血姫・ヴァンピィ"><span>主BP02-069/BP02-SL13/BP02-U05：吸血姫・ヴァンピィ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL20.png" alt="紅き血の女王・ヴァンピィ"><span>主BP18-080/BP18-SL20/PR-479：紅き血の女王・ヴァンピィ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP02-085.png" alt="ラストデイライト"><span>主CP02-085/CP02-P70：ラストデイライト</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-230.png" alt="眷属への贈り物"><span>主BP09-075/PR-230/PR-488：眷属への贈り物</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-474.png" alt="高貴なる闇夜・ヴァイト"><span>主BP18-084/PR-474：高貴なる闇夜・ヴァイト</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP09-SL13.png" alt="闇夜の姫・ヴァンピィ"><span>主BP09-069/BP09-SL13：闇夜の姫・ヴァンピィ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL18.png" alt="夜明けの吸血鬼・ノイン"><span>主BP12-069/BP12-SL18：夜明けの吸血鬼・ノイン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL18.png" alt="終幕の吸血鬼・ユリアス"><span>主BP17-074/BP17-SL18：終幕の吸血鬼・ユリアス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL19.png" alt="奔放なる獄炎・ケルベロス"><span>主BP16-075/BP16-SL19/BP16-U05/EBD03-001/PR-512：奔放なる獄炎・ケルベロス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP09-SL14.png" alt="カインドクイーン・ヴァンピィ"><span>进BP09-070/BP09-SL14：カインドクイーン・ヴァンピィ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL19.png" alt="夜明けの吸血鬼・ノイン"><span>进BP12-070/BP12-SL19：夜明けの吸血鬼・ノイン</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL19.png" alt="終幕の吸血鬼・ユリアス"><span>进BP17-075/BP17-SL19：終幕の吸血鬼・ユリアス</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL21.png" alt="紅き血の女王・ヴァンピィ"><span>进BP18-081/BP18-SL21/PR-480：紅き血の女王・ヴァンピィ</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -703,7 +710,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

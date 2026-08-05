@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：終人（おわんちゅ）｜1/27 (0.0370)｜2025/12/21｜<a href="https://decklog.bushiroad.com/view/39MR2" target="_blank" rel="noopener">39MR2</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP18-027.png" alt="ギガブレード"><span>主BP18-027/BP18-P11：ギガブレード</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-471.png" alt="異端の調査協力"><span>主BP18-031/PR-471：異端の調査協力</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-032.png" alt="死角の観測員"><span>主BP18-032/BP18-P14：死角の観測員</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-463.png" alt="新約都市・透京"><span>主BP18-120/PR-463：新約都市・透京</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-477.png" alt="炎術検定A級"><span>主BP18-123/PR-477：炎術検定A級</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-126.png" alt="区役所の丙種職員"><span>主BP18-126/BP18-P49：区役所の丙種職員</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-182.png" alt="月の刃・リオード"><span>主BP07-022/PR-182/PR-325：月の刃・リオード</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-028.png" alt="隘路の調査員"><span>主BP18-028/BP18-P12：隘路の調査員</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL27.png" alt="魔汚区役所職員・災藤"><span>主BP18-117/BP18-SL27：魔汚区役所職員・災藤</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-481.png" alt="歪なる進歩"><span>主BP18-119/PR-481：歪なる進歩</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-025.png" alt="簒奪の信者"><span>主BP05-025/BP05-P11：簒奪の信者</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL05.png" alt="全識の六銘伝・シンラ"><span>主BP18-020/BP18-SL05：全識の六銘伝・シンラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL07.png" alt="ワイルドメディエーター・ガンマ"><span>主BP18-022/BP18-SL07：ワイルドメディエーター・ガンマ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-024.png" alt="俯瞰の捜査員"><span>主BP18-024/BP18-P09：俯瞰の捜査員</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-SL23.png" alt="ワールドブレイク"><span>主BP13-107/BP13-SL23：ワールドブレイク</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL06.png" alt="全識の六銘伝・シンラ"><span>进BP18-021/BP18-SL06/BP18-U02：全識の六銘伝・シンラ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-025.png" alt="俯瞰の捜査員"><span>进BP18-025/BP18-P10：俯瞰の捜査員</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-029.png" alt="隘路の調査員"><span>进BP18-029/BP18-P13：隘路の調査員</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-033.png" alt="死角の観測員"><span>进BP18-033/BP18-P15：死角の観測員</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL28.png" alt="魔汚区役所職員・災藤"><span>进BP18-118/BP18-SL28/BP18-U07：魔汚区役所職員・災藤</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-216.png" alt="月の刃・リオード"><span>进BP07-023/PR-216/PR-326：月の刃・リオード</span><small>进化 × 1</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -2413,7 +2420,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

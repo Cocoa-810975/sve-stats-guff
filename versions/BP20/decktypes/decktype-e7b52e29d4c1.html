@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：piro｜1/32 (0.0313)｜2026/05/30｜<a href="https://decklog.bushiroad.com/view/51D51" target="_blank" rel="noopener">51D51</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/PR-562.png" alt="虚偽の術式"><span>主BP20-049/PR-562：虚偽の術式</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-046.png" alt="真実の信者"><span>主BP05-046/BP05-P20：真実の信者</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-304.png" alt="レヴィールの保安官補"><span>主BP11-048/PR-304：レヴィールの保安官補</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-047.png" alt="絶尽の崇拝者"><span>主BP15-047/BP15-P10：絶尽の崇拝者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL10.png" alt="真実の継承者・ヴェハリヤー"><span>主BP20-038/BP20-SL10：真実の継承者・ヴェハリヤー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-053.png" alt="真実の肯定者"><span>主BP20-053/BP20-P27：真実の肯定者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-044.png" alt="真実の宣告"><span>主BP05-044/BP05-P18：真実の宣告</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP08-047.png" alt="真実の狂信者"><span>主BP08-047：真実の狂信者</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-U03.png" alt="インフィニットウィッチ・ドロシー"><span>主BP12-037/BP12-U03/EBD02-002：インフィニットウィッチ・ドロシー</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-411.png" alt="連鎖する雷"><span>主BP12-050/EBD02-019/PR-411：連鎖する雷</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-390.png" alt="真実の隠者"><span>主BP15-053/PR-390：真実の隠者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-046.png" alt="真実の団結者"><span>主BP20-046：真実の団結者</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP08-041.png" alt="真実の掟"><span>主BP08-041/BP08-P09：真実の掟</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-050.png" alt="解放の絶尽"><span>主BP15-050/BP15-P12：解放の絶尽</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL07.png" alt="真実の絶傑・ライオ"><span>主BP05-035/BP05-SL07/BP20-R05：真実の絶傑・ライオ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL10.png" alt="絶尽の真実・ライオ"><span>主BP15-038/BP15-SL10：絶尽の真実・ライオ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL14.png" alt="絶尽の顕現・ライオ"><span>主BP20-042/BP20-SL14：絶尽の顕現・ライオ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL08.png" alt="真実の絶傑・ライオ"><span>进BP05-036/BP05-SL08/BP20-R06：真実の絶傑・ライオ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-048.png" alt="絶尽の崇拝者"><span>进BP15-048/BP15-P11：絶尽の崇拝者</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL11.png" alt="真実の継承者・ヴェハリヤー"><span>进BP20-039/BP20-SL11/BP20-U03：真実の継承者・ヴェハリヤー</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL15.png" alt="絶尽の顕現・ライオ"><span>进BP20-043/BP20-SL15：絶尽の顕現・ライオ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-047.png" alt="真実の団結者"><span>进BP20-047：真実の団結者</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -760,7 +767,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

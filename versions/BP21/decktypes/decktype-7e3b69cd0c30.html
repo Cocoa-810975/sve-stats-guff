@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：床鰻の奔走者　エクシヴ｜1/49 (0.0204)｜2026/08/02｜<a href="https://decklog.bushiroad.com/view/3F6JF" target="_blank" rel="noopener">3F6JF</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP05-058.png" alt="侮蔑の炎爪"><span>主BP05-058/BP05-P27：侮蔑の炎爪</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-067.png" alt="侮蔑の国"><span>主BP20-067/BP20-P35：侮蔑の国</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-387.png" alt="灯火の烈絶"><span>主BP15-064/PR-387：灯火の烈絶</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-064.png" alt="侮蔑の祈祷者"><span>主BP20-064/BP20-P33：侮蔑の祈祷者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-202.png" alt="侮蔑の狂信者"><span>主BP08-063/PR-202：侮蔑の狂信者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-010.png" alt="竜の託宣"><span>主PR-010/PR-209/SD04-002：竜の託宣</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-553.png" alt="蒼炎の猛威"><span>主BP20-063/PR-553：蒼炎の猛威</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-055.png" alt="侮蔑の使徒"><span>主BP05-055/BP05-P25：侮蔑の使徒</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-066.png" alt="烈絶の崇拝者"><span>主BP15-066/BP15-P14：烈絶の崇拝者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-062.png" alt="侮蔑の団結者"><span>主BP20-062/BP20-P32：侮蔑の団結者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL16.png" alt="烈絶の顕現・ガルミーユ"><span>主BP20-056/BP20-SL16/BP20-U05：烈絶の顕現・ガルミーユ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL17.png" alt="侮蔑の継承者・アジュラフリート"><span>主BP20-057/BP20-SL17：侮蔑の継承者・アジュラフリート</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-U04.png" alt="烈絶の侮蔑・ガルミーユ"><span>主BP15-057/BP15-U04：烈絶の侮蔑・ガルミーユ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL10.png" alt="侮蔑の絶傑・ガルミーユ"><span>主BP05-052/BP05-SL10/SP01-028/SP01-SP18：侮蔑の絶傑・ガルミーユ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-056.png" alt="侮蔑の使徒"><span>进BP05-056/BP05-P26：侮蔑の使徒</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL11.png" alt="侮蔑の絶傑・ガルミーユ"><span>进BP05-053/BP05-SL11/BP05-U04/SP01-029/SP01-SP19：侮蔑の絶傑・ガルミーユ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-067.png" alt="烈絶の崇拝者"><span>进BP15-067/BP15-P15：烈絶の崇拝者</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-065.png" alt="侮蔑の祈祷者"><span>进BP20-065/BP20-P34：侮蔑の祈祷者</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL18.png" alt="侮蔑の継承者・アジュラフリート"><span>进BP20-058/BP20-SL18：侮蔑の継承者・アジュラフリート</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -703,7 +710,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

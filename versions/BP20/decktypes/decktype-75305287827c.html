@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：深淵の迫害者｜2/47 (0.0426)｜2026/06/01｜<a href="https://decklog.bushiroad.com/view/1LNM1" target="_blank" rel="noopener">1LNM1</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP07-078.png" alt="獄炎のデーモン"><span>主BP07-078：獄炎のデーモン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-080.png" alt="シルヴァリーブレイダー"><span>主BP13-080：シルヴァリーブレイダー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-080.png" alt="ブラッドロード・ユヅキ"><span>主BP15-080/BP15-P17：ブラッドロード・ユヅキ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL26.png" alt="粛清の器・メイシア"><span>主BP17-110/BP17-SL26：粛清の器・メイシア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-082.png" alt="貪りの蛇"><span>主BP18-082/BP18-P32：貪りの蛇</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-085.png" alt="佰死の三日月"><span>主BP18-085/BP18-P34：佰死の三日月</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-086.png" alt="穿りの鴉"><span>主BP18-086/BP18-P35：穿りの鴉</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-090.png" alt="齧りの鼠"><span>主BP18-090/BP18-P39：齧りの鼠</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL19.png" alt="葬りの狼・ヴェッド"><span>主BP18-079/BP18-SL19：葬りの狼・ヴェッド</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-090.png" alt="イビルコレクター"><span>主BP20-090/BP20-P46：イビルコレクター</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL17.png" alt="ヒシミラクル"><span>主ECP01-037/ECP01-SL17/ECP01-SP17：ヒシミラクル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-207.png" alt="片翼の悪魔・ピユラ"><span>主BP08-074/PR-207：片翼の悪魔・ピユラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-430.png" alt="青薔薇の令嬢・セレス"><span>主BP16-082/PR-430：青薔薇の令嬢・セレス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-554.png" alt="混融の祈祷者"><span>主BP20-085/PR-554：混融の祈祷者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL17.png" alt="佰死と佰亡の六銘伝・イルゼ＆ウルゼ"><span>主BP18-077/BP18-SL17/PR-482：佰死と佰亡の六銘伝・イルゼ＆ウルゼ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-081.png" alt="ブラッドロード・ユヅキ"><span>进BP15-081/BP15-P18：ブラッドロード・ユヅキ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL27.png" alt="粛清の器・メイシア"><span>进BP17-111/BP17-SL27/BP17-U09：粛清の器・メイシア</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-091.png" alt="齧りの鼠"><span>进BP18-091/BP18-P40：齧りの鼠</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-087.png" alt="穿りの鴉"><span>进BP18-087/BP18-P36：穿りの鴉</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL18.png" alt="佰死と佰亡の六銘伝・イルゼ＆ウルゼ"><span>进BP18-078/BP18-SL18/BP18-U05：佰死と佰亡の六銘伝・イルゼ＆ウルゼ</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -266,7 +273,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

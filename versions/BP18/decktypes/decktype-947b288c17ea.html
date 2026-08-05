@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：李桜｜2/19 (0.1053)｜2025/12/28｜<a href="https://decklog.bushiroad.com/view/2FCEN" target="_blank" rel="noopener">2FCEN</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P05.png" alt="〔ニャンダフル・ワールド〕前川みく"><span>主ECP02-P05：〔ニャンダフル・ワールド〕前川みく</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P16.png" alt="〔瞳のトゥインクル〕関裕美"><span>主ECP02-P16：〔瞳のトゥインクル〕関裕美</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL13.png" alt="〔シンデレラガール〕塩見周子"><span>主ECP02-026/ECP02-SL13：〔シンデレラガール〕塩見周子</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP02-SL15.png" alt="輿水幸子"><span>主CP02-SL15/CP02-U10：輿水幸子</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P32.png" alt="自称・街の人気者"><span>主ECP02-P32：自称・街の人気者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL24.png" alt="〔individuals〕早坂美玲"><span>主ECP02-049/ECP02-SL24：〔individuals〕早坂美玲</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL28.png" alt="〔シンデレラガール〕安部菜々"><span>主ECP02-SL28：〔シンデレラガール〕安部菜々</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-436.png" alt="〔サマーキャット☆ランデブー〕前川みく"><span>主PR-436：〔サマーキャット☆ランデブー〕前川みく</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-053.png" alt="〔紡ぐメメント・モリ〕黒埼ちとせ"><span>主ECP02-053/ECP02-P26：〔紡ぐメメント・モリ〕黒埼ちとせ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL30.png" alt="〔シンデレラガール〕高垣楓"><span>主ECP02-SL30：〔シンデレラガール〕高垣楓</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-U06.png" alt="〔リプル・マイハート〕乙倉悠貴"><span>主ECP02-U06：〔リプル・マイハート〕乙倉悠貴</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP02-P53.png" alt="水本ゆかり"><span>主CP02-P53：水本ゆかり</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P12.png" alt="〔ユースフルロマンス〕小日向美穂"><span>主ECP02-P12：〔ユースフルロマンス〕小日向美穂</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL22.png" alt="〔シンデレラガール〕神崎蘭子"><span>主ECP02-047/ECP02-SL22：〔シンデレラガール〕神崎蘭子</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL09.png" alt="〔シンデレラガール〕島村卯月"><span>主ECP02-SL09：〔シンデレラガール〕島村卯月</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CSD02a-SL01.png" alt="〔P.C.S〕島村卯月"><span>主CSD02a-SL01：〔P.C.S〕島村卯月</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP02-P29.png" alt="塩見周子"><span>主CP02-P29：塩見周子</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-U13.png" alt="笑顔のカーテンコール"><span>主ECP02-U13：笑顔のカーテンコール</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P17.png" alt="〔瞳のトゥインクル〕関裕美"><span>进ECP02-P17：〔瞳のトゥインクル〕関裕美</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-054.png" alt="〔紡ぐメメント・モリ〕黒埼ちとせ"><span>进ECP02-054/ECP02-P27：〔紡ぐメメント・モリ〕黒埼ちとせ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-P36.png" alt="〔ピュア・ユーフォリア〕西園寺琴歌"><span>进ECP02-P36：〔ピュア・ユーフォリア〕西園寺琴歌</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL29.png" alt="〔シンデレラガール〕安部菜々"><span>进ECP02-SL29：〔シンデレラガール〕安部菜々</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -133,7 +140,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：ねと｜1/18 (0.0556)｜2026/06/28｜<a href="https://decklog.bushiroad.com/view/18DD1" target="_blank" rel="noopener">18DD1</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP09-SL04.png" alt="空の指揮官・セリア"><span>主BP09-018/BP09-SL04/PR-222/SP01-SP06/SP01-U05：空の指揮官・セリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP11-031.png" alt="ナハトの私兵"><span>主BP11-031/BP11-P07：ナハトの私兵</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-029.png" alt="キャットアドミラル"><span>主BP13-029：キャットアドミラル</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-031.png" alt="刹那のクイックブレイダー"><span>主BP16-031：刹那のクイックブレイダー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL08.png" alt="月光の執行者・リオード"><span>主BP17-022/BP17-SL08：月光の執行者・リオード</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-SL05.png" alt="音速の機構・ララミア"><span>主BP06-019/BP06-SL05/SP01-012/SP01-SL12/SP01-SP07/SP01-U06：音速の機構・ララミア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL09.png" alt="アストロウィング・ララミア"><span>主BP15-023/BP15-SL09：アストロウィング・ララミア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL05.png" alt="忠義の剣士・エリカ"><span>主BP17-019/BP17-SL05/BP17-U03：忠義の剣士・エリカ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-029.png" alt="ブレイドライツの小隊長"><span>主BP17-029/BP17-P06：ブレイドライツの小隊長</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL08.png" alt="約束の栄光・ガウェイン"><span>主BP18-023/BP18-SL08：約束の栄光・ガウェイン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP11-SL05.png" alt="ファントムデュオ・バニー＆バロン"><span>主BP11-019/BP11-SL05/PR-322：ファントムデュオ・バニー＆バロン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP11-SL04.png" alt="カースドクイーン・ナハト・ナハト"><span>主BP11-018/BP11-SL04/BP11-SP01/BP11-U02/BP18-SP01/SD07-004：カースドクイーン・ナハト・ナハト</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/SP01-U04.png" alt="晴天の銀騎士・エミリア"><span>主SP01-010/SP01-U04：晴天の銀騎士・エミリア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL08.png" alt="静寂のアナテマ・ギルダリア"><span>主BP19-022/BP19-SL08：静寂のアナテマ・ギルダリア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL08.png" alt="グロリアスセイバー・オーレリア"><span>主BP20-022/BP20-SL08：グロリアスセイバー・オーレリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-U02.png" alt="音速の機構・ララミア"><span>进BP06-020/BP06-U02/SP01-013/SP01-U07：音速の機構・ララミア</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP09-SL05.png" alt="希望の戦術家・セリア"><span>进BP09-019/BP09-SL05：希望の戦術家・セリア</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP11-SL06.png" alt="ファントムデュオ・バニー＆バロン"><span>进BP11-020/BP11-SL06：ファントムデュオ・バニー＆バロン</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-032.png" alt="刹那のクイックブレイダー"><span>进BP16-032：刹那のクイックブレイダー</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL09.png" alt="静寂のアナテマ・ギルダリア"><span>进BP19-023/BP19-SL09：静寂のアナテマ・ギルダリア</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -209,7 +216,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

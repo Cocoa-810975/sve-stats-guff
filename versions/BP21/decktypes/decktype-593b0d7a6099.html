@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：サンタイム｜1/40 (0.0250)｜2026/08/02｜<a href="https://decklog.bushiroad.com/view/4MCFM" target="_blank" rel="noopener">4MCFM</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP13-026.png" alt="レヴィオンの見習い・ルネス"><span>主BP13-026/BP13-P06：レヴィオンの見習い・ルネス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-032.png" alt="レヴィオンの魔術師・ミイム"><span>主BP13-032：レヴィオンの魔術師・ミイム</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-035.png" alt="レヴィオンシスターズ登場！"><span>主BP13-035：レヴィオンシスターズ登場！</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-026.png" alt="テンタクルバイト"><span>主BP16-026：テンタクルバイト</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP02-027.png" alt="レヴィオンデューク・ユリウス"><span>主BP02-027/SP01-018：レヴィオンデューク・ユリウス</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-030.png" alt="レヴィオンの副団長・マイム"><span>主BP13-030/SD07-017：レヴィオンの副団長・マイム</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-033.png" alt="レヴィオンの武闘家・メイム"><span>主BP13-033：レヴィオンの武闘家・メイム</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL08.png" alt="約束の栄光・ガウェイン"><span>主BP18-023/BP18-SL08：約束の栄光・ガウェイン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-034.png" alt="レヴィオンの弓使い"><span>主BP21-034：レヴィオンの弓使い</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/SD07-012.png" alt="レヴィオンアックス・ジェノ"><span>主SD07-012：レヴィオンアックス・ジェノ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-025.png" alt="レヴィオンの正義"><span>主BP13-025/BP13-P05：レヴィオンの正義</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-SL08.png" alt="レヴィオンの超越者・ユリウス"><span>主BP21-022/BP21-SL08/BP21-U02：レヴィオンの超越者・ユリウス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-028.png" alt="暴威の武人・ジェノ"><span>主BP13-028：暴威の武人・ジェノ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL07.png" alt="レヴィオンの迅雷・アルベール"><span>主BP16-021/BP16-SL07/BP16-U02：レヴィオンの迅雷・アルベール</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP09-U02.png" alt="スパルタクス"><span>主BP09-020/BP09-U02：スパルタクス</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP05-SL05.png" alt="簒奪の絶傑・オクトリス"><span>进BP05-019/BP05-SL05/BP05-U02：簒奪の絶傑・オクトリス</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-031.png" alt="レヴィオンの副団長・マイム"><span>进BP13-031/SD07-018：レヴィオンの副団長・マイム</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL06.png" alt="出航の咎人・バルバロス"><span>进BP19-020/BP19-SL06/BP19-U02：出航の咎人・バルバロス</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-027.png" alt="レヴィオンの見習い・ルネス"><span>进BP13-027/BP13-P07/SD07-014：レヴィオンの見習い・ルネス</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -285,7 +292,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：狐花｜32/248 (0.1290)｜2025/12/06｜<a href="https://decklog.bushiroad.com/view/44ACY" target="_blank" rel="noopener">44ACY</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/PR-034.png" alt="検証、開始"><span>主CP01-021/CP01-P15/PR-034：検証、開始</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-070.png" alt="その背中を越えて"><span>主CP01-070/CP01-P52：その背中を越えて</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-027.png" alt="夜に暁、空に瑞星"><span>主ECP01-027/ECP01-P15：夜に暁、空に瑞星</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-044.png" alt="マンハッタンカフェ"><span>主ECP01-044/ECP01-P24：マンハッタンカフェ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-035.png" alt="見習い魔女と長い夜"><span>主CP01-034/CP01-P25/PR-035：見習い魔女と長い夜</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-009.png" alt="マーベラスサンデー"><span>主CP01-009/CP01-P06：マーベラスサンデー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-031.png" alt="おどれ・さわげ・フェスれ！"><span>主CP01-031/CP01-P22：おどれ・さわげ・フェスれ！</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL09.png" alt="シュヴァルグラン"><span>主ECP01-019/ECP01-SL09/ECP01-SSP09：シュヴァルグラン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-026.png" alt="スイープトウショウ"><span>主ECP01-026/ECP01-P14：スイープトウショウ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL17.png" alt="ヒシミラクル"><span>主ECP01-037/ECP01-SL17/ECP01-SSP17：ヒシミラクル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL26.png" alt="Balliamo?"><span>主ECP01-056/ECP01-SL26：Balliamo?</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-043.png" alt="エアシャカール"><span>主ECP01-043/ECP01-P23：エアシャカール</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-060.png" alt="雨の独奏、私の独創"><span>主CP01-060：雨の独奏、私の独創</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-SL03.png" alt="スマートファルコン"><span>主CP01-003/CP01-SL03/CP01-SP03：スマートファルコン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP01-057.png" alt="7センチの先へ"><span>主CP01-057/CP01-P42：7センチの先へ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL25.png" alt="祖にして導く者"><span>主ECP01-055/ECP01-SL25：祖にして導く者</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-052.png" alt="にんじん"><span>进CP01-085/CSD01-032/PR-052：にんじん</span><small>进化 × 4</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL10.png" alt="シュヴァルグラン"><span>进ECP01-020/ECP01-SL10/ECP01-SSP10：シュヴァルグラン</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL18.png" alt="ヒシミラクル"><span>进ECP01-038/ECP01-SL18/ECP01-SP18/ECP01-SSP18：ヒシミラクル</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -152,7 +159,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：ぎー｜2/18 (0.1111)｜2026/08/01｜<a href="https://decklog.bushiroad.com/view/418U5" target="_blank" rel="noopener">418U5</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP04-010.png" alt="小さな勇士・スクナ"><span>主BP04-010/BP04-P02：小さな勇士・スクナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP11-SL03.png" alt="優美な猫姉妹・シャム＆シャマ"><span>主BP11-003/BP11-SL03/BP11-U01：優美な猫姉妹・シャム＆シャマ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL01.png" alt="深緑の弓使い・アリサ"><span>主BP17-001/BP17-SL01：深緑の弓使い・アリサ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-007.png" alt="アクティブエルフ・メイ"><span>主BP18-007/BP18-P03：アクティブエルフ・メイ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-223.png" alt="自然の導き"><span>主BP01-015/PR-223：自然の導き</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-437.png" alt="夏色の南風"><span>主PR-437：夏色の南風</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-529.png" alt="対空射撃"><span>主BP18-019/PR-529：対空射撃</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL01.png" alt="剪定の咎人・マガチヨ"><span>主BP19-001/BP19-SL01/PR-528：剪定の咎人・マガチヨ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-128.png" alt="爆砕の傭兵・フィーナ"><span>主BP05-109/PR-128：爆砕の傭兵・フィーナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-483.png" alt="マドロスエルフ"><span>主BP10-005/PR-483：マドロスエルフ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL04.png" alt="ロイヤルクリスタリア・ティア"><span>主BP18-SL04/PR-509：ロイヤルクリスタリア・ティア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/SP01-SL45.png" alt="不思議な青空・アリス"><span>主SP01-045/SP01-SL45：不思議な青空・アリス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-009.png" alt="フロストクリスタリア・エリン"><span>主BP16-009：フロストクリスタリア・エリン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP02-SL04.png" alt="〔渚の花嫁〕新田美波"><span>主ECP02-004/ECP02-SL04：〔渚の花嫁〕新田美波</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-435.png" alt="〔よくばりサニーバカンス〕アナスタシア"><span>主PR-435：〔よくばりサニーバカンス〕アナスタシア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP04-011.png" alt="小さな勇士・スクナ"><span>进BP04-011/BP04-P03：小さな勇士・スクナ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-010.png" alt="フロストクリスタリア・エリン"><span>进BP16-010：フロストクリスタリア・エリン</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL02.png" alt="剪定の咎人・マガチヨ"><span>进BP19-002/BP19-SL02/BP19-U01：剪定の咎人・マガチヨ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-484.png" alt="マドロスエルフ"><span>进BP10-006/PR-484：マドロスエルフ</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -114,7 +121,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

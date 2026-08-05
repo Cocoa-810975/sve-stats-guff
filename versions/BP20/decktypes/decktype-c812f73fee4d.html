@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：れいと｜2/58 (0.0345)｜2026/06/13｜<a href="https://decklog.bushiroad.com/view/701YR" target="_blank" rel="noopener">701YR</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/CP04-079.png" alt="グレイス"><span>主CP04-079/CP04-P59：グレイス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-084.png" alt="ミヤコ"><span>主CP04-084：ミヤコ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-115.png" alt="クローチェ"><span>主CP04-115/CP04-P87：クローチェ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-118.png" alt="コールオブギルド"><span>主CP04-118/CP04-P90：コールオブギルド</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL16.png" alt="ムイミ"><span>主CP04-058/CP04-SL16/CP04-SP08/CP04-U08/PR-503：ムイミ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-066.png" alt="ヴルム"><span>主CP04-066/CP04-P50：ヴルム</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL17.png" alt="イリヤ"><span>主CP04-073/CP04-SL17/PCS01-029：イリヤ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-081.png" alt="ヨリ"><span>主CP04-081：ヨリ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-113.png" alt="アメス"><span>主CP04-113/CP04-P85/PCS01-050：アメス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-077.png" alt="シノブ"><span>主CP04-077：シノブ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-083.png" alt="アカリ"><span>主CP04-083：アカリ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-076.png" alt="ヴァイオレット"><span>主CP04-076：ヴァイオレット</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL15.png" alt="ホマレ"><span>主CP04-057/CP04-SL15/PR-505：ホマレ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL28.png" alt="ライラエル"><span>主CP04-112/CP04-SL28/CP04-U13：ライラエル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL18.png" alt="イリヤ"><span>进CP04-074/CP04-SL18/CP04-SP09/CP04-U09/PCS01-030：イリヤ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-078.png" alt="シノブ"><span>进CP04-078/PCS01-032：シノブ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-082.png" alt="ヨリ"><span>进CP04-082：ヨリ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-510.png" alt="アメス"><span>进CP04-114/PR-510：アメス</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -114,7 +121,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

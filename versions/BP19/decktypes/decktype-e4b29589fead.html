@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,15 +89,19 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：GIGAS｜5/27 (0.1852)｜2026/04/04｜<a href="https://decklog.bushiroad.com/view/2CY79" target="_blank" rel="noopener">2CY79</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL01.png" alt="コッコロ"><span>主CP04-001/CP04-SL01/PCS01-001：コッコロ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-015.png" alt="アオイ"><span>主CP04-015/CP04-P11：アオイ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL08.png" alt="ラビリスタ"><span>主CP04-022/CP04-SL08：ラビリスタ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-507.png" alt="エリコ"><span>主CP04-089/PR-507：エリコ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-118.png" alt="コールオブギルド"><span>主CP04-118/CP04-P90：コールオブギルド</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-018.png" alt="オーロラヒーリング"><span>主CP04-018/CP04-P14/PCS01-007：オーロラヒーリング</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-095.png" alt="ユイ"><span>主CP04-095/CP04-P71/PCS01-041：ユイ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-499.png" alt="レイ"><span>主CP04-080/PCS01-033/PR-499：レイ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL16.png" alt="ムイミ"><span>主CP04-058/CP04-SL16/CP04-SP08/CP04-U08/PR-503：ムイミ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-113.png" alt="アメス"><span>主CP04-113/PCS01-050：アメス</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-063.png" alt="イノリ"><span>主CP04-063/CP04-P47/PCS01-026：イノリ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL19.png" alt="ランファ"><span>主CP04-075/CP04-SL19：ランファ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-497.png" alt="ヒヨリ"><span>主PR-497：ヒヨリ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL15.png" alt="ホマレ"><span>主CP04-057/CP04-SL15/PR-505：ホマレ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-059.png" alt="カヤ"><span>主CP04-059/CP04-P43/PCS01-023：カヤ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-SL02.png" alt="コッコロ"><span>进CP04-002/CP04-SL02/CP04-SP01/CP04-U01/PCS01-002：コッコロ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/CP04-060.png" alt="カヤ"><span>进CP04-060/CP04-P44/PCS01-024：カヤ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-510.png" alt="アメス"><span>进CP04-114/CP04-P86/PR-510：アメス</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-498.png" alt="イノリ"><span>进CP04-064/PR-498：イノリ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-500.png" alt="ユイ"><span>进CP04-096/PR-500：ユイ</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-empty">该范围只有最佳卡组，没有其他卡组可对比</div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

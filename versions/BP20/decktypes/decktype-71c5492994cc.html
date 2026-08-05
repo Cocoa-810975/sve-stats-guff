@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：ドルフィン｜16/553 (0.0289)｜2026/06/06｜<a href="https://decklog.bushiroad.com/view/1127X" target="_blank" rel="noopener">1127X</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP19-090.png" alt="バイオレントスクリーム"><span>主BP19-090：バイオレントスクリーム</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-085.png" alt="ドアマンバット"><span>主BP14-085/BP14-P20：ドアマンバット</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-U05.png" alt="底無しの契約"><span>主BP14-077/BP14-U05：底無しの契約</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL17.png" alt="友魂の少女・ルナ"><span>主BP17-073/BP17-SL17/BP17-SP01/BP17-U07：友魂の少女・ルナ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-374.png" alt="月下の跳躍"><span>主BP14-087/PR-374：月下の跳躍</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-385.png" alt="楽園への来訪"><span>主BP14-115/PR-385：楽園への来訪</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-541.png" alt="デッドペナルティ"><span>主BP11-075/BP11-P17/EBD03-011/PR-541：デッドペナルティ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-SL14.png" alt="憧れの飛躍・イツルギ"><span>主BP14-070/BP14-SL14：憧れの飛躍・イツルギ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL21.png" alt="デモンズドミネーター・ゼロヌア"><span>主BP19-077/BP19-SL21：デモンズドミネーター・ゼロヌア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-082.png" alt="叫喚と憎悪"><span>主BP20-082/BP20-P42：叫喚と憎悪</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-175.png" alt="鋭利な一裂き"><span>主PR-175/SD05-014：鋭利な一裂き</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-367.png" alt="因果の迷い子・アンサージュ"><span>主BP14-074/PR-367：因果の迷い子・アンサージュ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-379.png" alt="惑わぬ意志"><span>主BP14-081/PR-379：惑わぬ意志</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-SL16.png" alt="デモンズグリード・パラセリゼ"><span>主BP14-072/BP14-SL16：デモンズグリード・パラセリゼ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-140.png" alt="ハンプティダンプティ"><span>主BP03-115/PR-140：ハンプティダンプティ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL19.png" alt="奔放なる獄炎・ケルベロス"><span>主BP16-075/BP16-SL19/BP16-U05/EBD03-001/PR-512：奔放なる獄炎・ケルベロス</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-SL15.png" alt="楽園の終焉・イツルギ"><span>进BP14-071/BP14-SL15/PR-386：楽園の終焉・イツルギ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-SL17.png" alt="デモンズグリード・パラセリゼ"><span>进BP14-073/BP14-SL17/BP14-SP02：デモンズグリード・パラセリゼ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-137.png" alt="ハンプティダンプティ"><span>进BP03-116/PR-137：ハンプティダンプティ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-368.png" alt="因果の迷い子・アンサージュ"><span>进BP14-075/PR-368：因果の迷い子・アンサージュ</span><small>进化 × 3</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -551,7 +558,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

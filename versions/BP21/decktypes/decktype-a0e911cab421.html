@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：しむ｜2/12 (0.1667)｜2026/08/02｜<a href="https://decklog.bushiroad.com/view/1B3MM" target="_blank" rel="noopener">1B3MM</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP06-SL12.png" alt="銀氷のドラゴニュート・フィルレイン"><span>主BP06-056/BP06-SL12：銀氷のドラゴニュート・フィルレイン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-063.png" alt="剛爪の看守"><span>主BP19-063/BP19-P16：剛爪の看守</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-066.png" alt="亀裂の盗人"><span>主BP19-066/BP19-P19：亀裂の盗人</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-063.png" alt="竜人のストライカー"><span>主BP21-063/BP21-P32：竜人のストライカー</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01b-016.png" alt="残影のドラゴニュート"><span>主DSD01b-016/DSD01b-P07：残影のドラゴニュート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-063.png" alt="氷上の竜戦士"><span>主BP06-063/BP06-P17：氷上の竜戦士</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL16.png" alt="ブリザードハート・フィルレイン"><span>主BP15-058/BP15-SL16：ブリザードハート・フィルレイン</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-064.png" alt="倒壊の襲撃者"><span>主BP19-064/BP19-P17：倒壊の襲撃者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-010.png" alt="竜の託宣"><span>主PR-010/PR-209/SD04-002：竜の託宣</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-317.png" alt="銀氷の吐息"><span>主BP06-061/PR-317：銀氷の吐息</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-578.png" alt="銀色の清純・アルジャンテ"><span>主BP21-062/PR-578：銀色の清純・アルジャンテ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-063.png" alt="ニードルドラゴニュート"><span>主BP07-063：ニードルドラゴニュート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-SL13.png" alt="竜槍の戦士・ローウェン"><span>主BP17-055/BP17-SL13：竜槍の戦士・ローウェン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-060.png" alt="焦土の無頼漢"><span>主BP19-060：焦土の無頼漢</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL14.png" alt="遊猟の咎人・アンテマリア"><span>主BP19-056/BP19-SL14：遊猟の咎人・アンテマリア</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL15.png" alt="禁牙の執行者・ドラズエル"><span>主BP19-057/BP19-SL15：禁牙の執行者・ドラズエル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-SL16.png" alt="金色の威信・リュミオール"><span>主BP21-058/BP21-SL16/BP21-SP01：金色の威信・リュミオール</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-064.png" alt="氷上の竜戦士"><span>进BP06-064/BP06-P18：氷上の竜戦士</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL17.png" alt="ブリザードハート・フィルレイン"><span>进BP15-059/BP15-SL17：ブリザードハート・フィルレイン</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-061.png" alt="焦土の無頼漢"><span>进BP19-061：焦土の無頼漢</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-065.png" alt="倒壊の襲撃者"><span>进BP19-065/BP19-P18：倒壊の襲撃者</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL16.png" alt="禁牙の執行者・ドラズエル"><span>进BP19-058/BP19-SL16：禁牙の執行者・ドラズエル</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP21-064.png" alt="竜人のストライカー"><span>进BP21-064/BP21-P33：竜人のストライカー</span><small>进化 × 1</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -114,7 +121,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

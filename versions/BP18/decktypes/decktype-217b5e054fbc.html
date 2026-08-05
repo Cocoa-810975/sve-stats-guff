@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：卍かずん最強卍｜3/24 (0.1250)｜2025/11/22｜<a href="https://decklog.bushiroad.com/view/468W6" target="_blank" rel="noopener">468W6</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP04-010.png" alt="小さな勇士・スクナ"><span>主BP04-010/BP04-P02：小さな勇士・スクナ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-011.png" alt="神鉄圧錬法"><span>主BP07-011：神鉄圧錬法</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL04.png" alt="重なり合う決意"><span>主BP12-007/BP12-SL04/EBD01-012：重なり合う決意</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-015.png" alt="純粋なるウォーターフェアリー"><span>主BP16-015/EBD01-019：純粋なるウォーターフェアリー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL01.png" alt="自然の妖精姫・アリア"><span>主BP16-001/BP16-SL01/EBD01-001：自然の妖精姫・アリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-019.png" alt="対空射撃"><span>主BP18-019：対空射撃</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-SL03.png" alt="フェアリーブレイダー・アマツ"><span>主BP06-003/BP06-SL03/EBD01-009：フェアリーブレイダー・アマツ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-012.png" alt="ワンダーツリー"><span>主BP13-012/EBD01-016：ワンダーツリー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL02.png" alt="リバースブレイダー・アマツ"><span>主BP15-002/BP15-SL02/EBD01-003：リバースブレイダー・アマツ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-013.png" alt="フェアリーテイマー"><span>主BP16-013：フェアリーテイマー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-157.png" alt="フェアリードラゴン"><span>主BP06-007/PR-157：フェアリードラゴン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-199.png" alt="ブレスフェアリーダンサー"><span>主BP01-011/EBD01-014/PR-199：ブレスフェアリーダンサー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-352.png" alt="フォレストフェアリー"><span>主EBD01-017/PR-352：フォレストフェアリー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/EBD01-013.png" alt="ティターニアの妖精郷"><span>主EBD01-013/SD01-002：ティターニアの妖精郷</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-SL03.png" alt="瘴気の妖精姫・アリア"><span>主BP13-SL03/EBD01-005：瘴気の妖精姫・アリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/SP01-SL01.png" alt="揺蕩う意志・スピネ"><span>主EBD01-007/SP01-001/SP01-SL01/SP01-SP02/SP01-U01：揺蕩う意志・スピネ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL04.png" alt="凍土の女王・ピアシィ"><span>主BP15-004/BP15-SL04/PR-394：凍土の女王・ピアシィ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-SL03.png" alt="クイーンセイバー・シンシア"><span>主BP07-003/BP07-SL03/EBD01-008：クイーンセイバー・シンシア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP04-011.png" alt="小さな勇士・スクナ"><span>进BP04-011/BP04-P03：小さな勇士・スクナ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-SL04.png" alt="瘴気の妖精姫・アリア"><span>进BP13-SL04/EBD01-006：瘴気の妖精姫・アリア</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL03.png" alt="リバースブレイダー・アマツ"><span>进BP15-003/BP15-SL03/EBD01-004：リバースブレイダー・アマツ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-014.png" alt="フェアリーテイマー"><span>进BP16-014：フェアリーテイマー</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL02.png" alt="自然の妖精姫・アリア"><span>进BP16-002/BP16-SL02/EBD01-002：自然の妖精姫・アリア</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-353.png" alt="フォレストフェアリー"><span>进EBD01-018/PR-353：フォレストフェアリー</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL05.png" alt="凍土の女王・ピアシィ"><span>进BP15-005/BP15-SL05/PR-395：凍土の女王・ピアシィ</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -228,7 +235,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：soma｜6/14 (0.4286)｜2026/05/31｜<a href="https://decklog.bushiroad.com/view/5FS77" target="_blank" rel="noopener">5FS77</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP16-045.png" alt="宿題やるですぅ！"><span>主BP16-045：宿題やるですぅ！</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-054.png" alt="マナリアの叡智"><span>主BP17-054：マナリアの叡智</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01a-009.png" alt="グレアの炎熱"><span>主DSD01a-009：グレアの炎熱</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01a-014.png" alt="マナリアの知識"><span>主DSD01a-014：マナリアの知識</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01a-015.png" alt="術式の教師・ジル"><span>主DSD01a-015：術式の教師・ジル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP02-046.png" alt="マナリアウィザード・クレイグ"><span>主BP02-046：マナリアウィザード・クレイグ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-036.png" alt="マナリアクイーン・アン"><span>主BP13-036：マナリアクイーン・アン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-048.png" alt="アドラブルティーチャー・ミラ"><span>主BP16-048：アドラブルティーチャー・ミラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL10.png" alt="真実の継承者・ヴェハリヤー"><span>主BP20-038/BP20-SL10：真実の継承者・ヴェハリヤー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-037.png" alt="魔術の始祖・マナリア"><span>主BP06-037：魔術の始祖・マナリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-U03.png" alt="インフィニットウィッチ・ドロシー"><span>主BP12-037/BP12-U03/EBD02-002：インフィニットウィッチ・ドロシー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-411.png" alt="連鎖する雷"><span>主BP12-050/EBD02-019/PR-411：連鎖する雷</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-491.png" alt="一世の探究"><span>主BP14-042/PR-491：一世の探究</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01a-002.png" alt="マナリアの竜姫・グレア"><span>主DSD01a-002：マナリアの竜姫・グレア</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-SL08.png" alt="真理の大文豪・ユキシマ"><span>主BP14-036/BP14-SL08/BP14-U03：真理の大文豪・ユキシマ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP19-SL12.png" alt="破式の執行者・シュマエル"><span>主BP19-040/BP19-SL12：破式の執行者・シュマエル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-029.png" alt="次元の超越"><span>主BP01-057/PR-029/PR-301：次元の超越</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP02-047.png" alt="マナリアウィザード・クレイグ"><span>进BP02-047：マナリアウィザード・クレイグ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP06-038.png" alt="魔術の始祖・マナリア"><span>进BP06-038：魔術の始祖・マナリア</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-039.png" alt="イクシードブラスト"><span>进BP13-039：イクシードブラスト</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP20-SL11.png" alt="真実の継承者・ヴェハリヤー"><span>进BP20-039/BP20-SL11/BP20-U03：真実の継承者・ヴェハリヤー</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/DSD01a-003.png" alt="マナリアの竜姫・グレア"><span>进DSD01a-003/SP01-022：マナリアの竜姫・グレア</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -133,7 +140,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

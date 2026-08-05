@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：LittleRabbit｜5/30 (0.1667)｜2025/12/10｜<a href="https://decklog.bushiroad.com/view/28QFN" target="_blank" rel="noopener">28QFN</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/PR-419.png" alt="ベルエンジェル・リア"><span>主BP16-117/PR-419：ベルエンジェル・リア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-053.png" alt="〔月下の悪魔ちゃん♪〕メジロパーマー"><span>主ECP01-053/ECP01-P29：〔月下の悪魔ちゃん♪〕メジロパーマー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-415.png" alt="ルナールの聖騎士"><span>主BP13-091/PR-415：ルナールの聖騎士</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-SL18.png" alt="絶望の聖女・ジャンヌ"><span>主BP13-088/BP13-SL18：絶望の聖女・ジャンヌ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP14-101.png" alt="福呼びの狐"><span>主BP14-101/BP14-P23：福呼びの狐</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL27.png" alt="闇穿つ煌き・サリッサ"><span>主BP15-097/BP15-SL27：闇穿つ煌き・サリッサ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP18-SL25.png" alt="清純なる祈り・エイラ"><span>主BP18-100/BP18-SL25：清純なる祈り・エイラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/SP01-SL45.png" alt="不思議な青空・アリス"><span>主SP01-045/SP01-SL45/SP01-SP30/SP01-SP31/SP01-U28：不思議な青空・アリス</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-494.png" alt="エイラの祈祷"><span>主BP02-095/BP02-P26/PR-494：エイラの祈祷</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-508.png" alt="迸る光明・アポロン"><span>主BP16-118/PR-508：迸る光明・アポロン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL24.png" alt="絶望の安息・マーウィン"><span>主BP15-094/BP15-SL24/EBD04-004：絶望の安息・マーウィン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-U06.png" alt="ブライトパラディン・ウィルバート"><span>主BP15-096/BP15-U06：ブライトパラディン・ウィルバート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL27.png" alt="勇壮の堕天使・オリヴィエ"><span>主BP16-111/BP16-SL27/BP16-U07：勇壮の堕天使・オリヴィエ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL23.png" alt="メジロラモーヌ"><span>主ECP01-048/ECP01-SL23/ECP01-SP23：メジロラモーヌ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/SP01-U26.png" alt="グランドナイト・ウィルバート"><span>主BP06-090/SP01-U26：グランドナイト・ウィルバート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-051.png" alt="〔夜風に舞うは祈りの花〕メジロアルダン"><span>主ECP01-051/ECP01-P27：〔夜風に舞うは祈りの花〕メジロアルダン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-416.png" alt="ルナールの聖騎士"><span>进BP13-092/PR-416：ルナールの聖騎士</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP13-SL19.png" alt="絶望の聖女・ジャンヌ"><span>进BP13-089/BP13-SL19/BP13-U06：絶望の聖女・ジャンヌ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-SL28.png" alt="勇壮の堕天使・オリヴィエ"><span>进BP16-112/BP16-SL28/BP16-SP01：勇壮の堕天使・オリヴィエ</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP16-119.png" alt="迸る光明・アポロン"><span>进BP16-119：迸る光明・アポロン</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP15-SL25.png" alt="絶望の安息・マーウィン"><span>进BP15-095/BP15-SL25/EBD04-005：絶望の安息・マーウィン</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL28.png" alt="聖なる夜に重なるキセキ"><span>进ECP01-059/ECP01-SL28：聖なる夜に重なるキセキ</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/ECP01-SL30.png" alt="開幕ッ！大農耕時代ッ！"><span>进ECP01-061/ECP01-SL30：開幕ッ！大農耕時代ッ！</span><small>进化 × 1</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -114,7 +121,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>

@@ -24,7 +24,7 @@
     .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
     .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
     .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
-    .core-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
@@ -57,8 +57,10 @@
     .comparison-wrap { transition: max-height 0.25s ease; }
     .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
     .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
-    .comparison-toggle { margin-top: 14px; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
     .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
     .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
     .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
     .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
@@ -87,13 +89,18 @@
       </div>
     </div>
     <div class="section">
-      <h2>成绩最好的卡组</h2>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
       <div class="best-deck-note" id="best-deck-note">最佳卡组：Rico｜1/248 (0.0040)｜2025/12/06｜<a href="https://decklog.bushiroad.com/view/1PPJL" target="_blank" rel="noopener">1PPJL</a></div>
       <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img src="../../../assets/cards/BP07-101.png" alt="セイント・コア"><span>主BP07-101/BP07-P30：セイント・コア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-206.png" alt="メカニカルガンナー"><span>主BP07-116/PR-206/PR-339：メカニカルガンナー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-327.png" alt="デュアルエンジェル"><span>主BP12-104/BP12-P20/PR-327：デュアルエンジェル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-106.png" alt="デバイスチューナー"><span>主BP17-106/BP17-P25：デバイスチューナー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-094.png" alt="マシンファルコン"><span>主BP07-094/BP07-P27：マシンファルコン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-176.png" alt="鉄腕の修道女"><span>主BP07-097/PR-176：鉄腕の修道女</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL23.png" alt="極炎のドラグーン・ローラ"><span>主BP12-086/BP12-SL23：極炎のドラグーン・ローラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-336.png" alt="機械鞭の僧侶"><span>主BP12-091/PR-336：機械鞭の僧侶</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-096.png" alt="リモニウムの救済"><span>主BP12-096/BP12-P18：リモニウムの救済</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-107.png" alt="ロボティクスユーザー"><span>主BP17-107：ロボティクスユーザー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-343.png" alt="機構の解放"><span>主BP07-092/BP07-P26/PR-343：機構の解放</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-SL16.png" alt="欠落の聖女・リモニウム"><span>主BP07-086/BP07-SL16：欠落の聖女・リモニウム</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-099.png" alt="オートマティックメイデン"><span>主BP17-099：オートマティックメイデン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP17-098.png" alt="マシンフィンガー・イヴィル"><span>主BP17-098/BP17-P24：マシンフィンガー・イヴィル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-089.png" alt="百機王・グライアス"><span>主BP12-089/BP12-P16：百機王・グライアス</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-SL17.png" alt="欠落の聖女・リモニウム"><span>进BP07-087/BP07-SL17：欠落の聖女・リモニウム</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP07-095.png" alt="マシンファルコン"><span>进BP07-095/BP07-P28：マシンファルコン</span><small>进化 × 2</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-SL24.png" alt="極炎のドラグーン・ローラ"><span>进BP12-087/BP12-SL24/BP12-U06：極炎のドラグーン・ローラ</span><small>进化 × 3</small></div><div class="core-card-tile"><img src="../../../assets/cards/BP12-090.png" alt="百機王・グライアス"><span>进BP12-090/BP12-P17：百機王・グライアス</span><small>进化 × 1</small></div><div class="core-card-tile"><img src="../../../assets/cards/PR-328.png" alt="デュアルエンジェル"><span>进BP12-105/BP12-P21/PR-328：デュアルエンジェル</span><small>进化 × 2</small></div></div>
-      <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
     </div>
     <div class="section">
-      <h2>其他卡组对比最佳卡组</h2>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
+      </div>
       <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
       <article class="comparison-card">
         <div class="comparison-head">
@@ -1197,7 +1204,6 @@
           </section>
         </div>
       </article></div></div>
-      <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
     </div>
     <div class="section">
       <h2>卡牌使用率</h2>
