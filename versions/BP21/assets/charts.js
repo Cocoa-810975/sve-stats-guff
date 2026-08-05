@@ -1531,8 +1531,6 @@
     setText('desc-top8-class', '统计范围：' + scope.label + '，名次小于等于8的 ' + (scope.top8_count || 0) + ' 套卡组。');
     setText('desc-type-distribution', '统计范围：' + scope.label + '，名次小于等于8的 ' + (scope.top8_count || 0) + ' 套卡组；占比小于 4% 的类型合并为 Others。Others 合计 ' + (scope.type_other_count || 0) + ' 套，包含 ' + (scope.type_other_types || 0) + ' 个卡组类型。');
     setText('desc-top1-type-distribution', '统计范围：' + scope.label + '，冠军卡组共 ' + (scope.top1_count || 0) + ' 套；占比小于 4% 的类型合并为 Others。Others 合计 ' + (scope.top1_type_other_count || 0) + ' 套，包含 ' + (scope.top1_type_other_types || 0) + ' 个卡组类型。');
-    setText('scope-summary-title', currentScopeKey === 'total' ? '总数据总结' : '每周数据总结');
-    setText('scope-summary-text', scope.scope_summary || '该范围暂无可生成的总结。');
     updateChart(top1ClassChart, scope.top1_class_distribution || []);
     updateChart(top8ClassChart, scope.top8_class_distribution || []);
     updateChart(typeDistributionChart, withScopedLinks(scope.type_distribution || [], currentScopeKey));

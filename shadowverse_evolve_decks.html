@@ -14,6 +14,7 @@
     .title { display: flex; flex-direction: column; gap: 2px; }
     .title h1 { color: #fff; font-size: 20px; line-height: 1.3; }
     .title span { color: #9aa8bd; font-size: 12px; }
+    .update-info { color: #b8c7dd; font-size: 12px; margin-top: 2px; }
     .version-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .version-btn { border: 1px solid rgba(255,255,255,0.18); background: #20243a; color: #e0e0e0; border-radius: 999px; padding: 8px 18px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
     .version-btn:hover { transform: translateY(-1px); border-color: #e94560; }
@@ -39,6 +40,7 @@
         <div class="title">
           <h1>Shadowverse EVOLVE 大会卡组统计</h1>
           <span id="version-subtitle">请选择查询版本；各版本数据、周统计与详情页互相独立。</span>
+          <span class="update-info" id="last-updated">上次更新时间：读取中…</span>
         </div>
         <div class="version-actions">
           <button class="version-btn" type="button" data-version="BP21" data-src="versions/BP21/shadowverse_evolve_decks.html">BP21</button>
@@ -76,6 +78,7 @@
       var loading = document.getElementById('loading');
       var subtitle = document.getElementById('version-subtitle');
       var openCurrent = document.getElementById('open-current');
+      var lastUpdated = document.getElementById('last-updated');
       var buttons = Array.prototype.slice.call(document.querySelectorAll('.version-btn'));
 
       function getInitialVersion() {
@@ -87,6 +90,26 @@
           if (versions[saved]) return saved;
         } catch (error) {}
         return 'BP21';
+      }
+
+      function formatUpdatedAt(value) {
+        if (!value) return '';
+        var d = new Date(value);
+        if (isNaN(d.getTime())) return '';
+        return d.getFullYear() + '/' + String(d.getMonth() + 1).padStart(2, '0') + '/' + String(d.getDate()).padStart(2, '0') + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+      }
+
+      function loadLastUpdated() {
+        if (!lastUpdated || !window.fetch) return;
+        fetch('last_updated.json?ts=' + Date.now())
+          .then(function(res) { return res.ok ? res.json() : null; })
+          .then(function(data) {
+            var text = data && formatUpdatedAt(data.updatedAt);
+            lastUpdated.textContent = text ? ('上次更新时间：' + text) : '上次更新时间：未知';
+          })
+          .catch(function() {
+            lastUpdated.textContent = '上次更新时间：未知';
+          });
       }
 
       function setVersion(version) {
@@ -115,6 +138,7 @@
         loading.style.display = 'none';
       });
       setVersion(getInitialVersion());
+      loadLastUpdated();
     })();
   </script>
 </body>
