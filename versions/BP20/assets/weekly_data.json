@@ -61,7 +61,7 @@
         "itemStyle": {
           "color": "#f1c40f"
         },
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "🎤 偶像大师",
@@ -167,9 +167,9 @@
       },
       {
         "name": "主教｜节奏教",
-        "value": 28,
+        "value": 26,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "精灵｜宇宙妖",
@@ -215,7 +215,7 @@
       },
       {
         "name": "主教｜纹章教",
-        "value": 15,
+        "value": 17,
         "link": "decktypes/decktype-c068a8ef6610.html",
         "image": "../../assets/cards/BP20-SL25.png"
       },
@@ -1334,7 +1334,7 @@
         "name": "主教｜节奏教",
         "value": 2,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "精灵｜八狱妖",
@@ -2002,7 +2002,7 @@
         "itemStyle": {
           "color": "#f1c40f"
         },
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "💎 公主连结Re:Dive",
@@ -2076,7 +2076,7 @@
         "name": "主教｜节奏教",
         "value": 5,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "精灵｜连击妖",
@@ -2334,7 +2334,7 @@
         "count": 5,
         "best": "1/32",
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "class": "精灵",
@@ -2433,7 +2433,7 @@
         "itemStyle": {
           "color": "#f1c40f"
         },
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "🎤 偶像大师",
@@ -2485,7 +2485,7 @@
         "name": "主教｜节奏教",
         "value": 7,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "精灵｜宇宙妖",
@@ -2735,7 +2735,7 @@
         "count": 7,
         "best": "4/38",
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "class": "精灵",
@@ -2956,7 +2956,7 @@
         "name": "主教｜节奏教",
         "value": 2,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "精灵｜连击妖",
@@ -3281,7 +3281,7 @@
         "name": "主教｜节奏教",
         "value": 5,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "梦魇｜nc梦",
@@ -3527,7 +3527,7 @@
         "count": 5,
         "best": "4/64",
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "class": "梦魇",
@@ -3626,7 +3626,7 @@
         "itemStyle": {
           "color": "#f1c40f"
         },
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "🎤 偶像大师",
@@ -3714,7 +3714,7 @@
         "name": "主教｜节奏教",
         "value": 2,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "梦魇｜削手梦",
@@ -4093,7 +4093,7 @@
         "name": "主教｜节奏教",
         "value": 2,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "image": "../../assets/cards/PR-415.png"
       },
       {
         "name": "梦魇｜永火梦",
@@ -4485,10 +4485,10 @@
         "image": "../../assets/cards/PR-233.png"
       },
       {
-        "name": "主教｜节奏教",
+        "name": "主教｜纹章教",
         "value": 3,
-        "link": "decktypes/decktype-b9c3d7da07ee.html",
-        "image": "../../assets/cards/BP11-SL16.png"
+        "link": "decktypes/decktype-c068a8ef6610.html",
+        "image": "../../assets/cards/BP20-SL25.png"
       },
       {
         "name": "梦魇｜抉择梦",
@@ -4575,16 +4575,16 @@
         "image": "../../assets/cards/BP19-SL26.png"
       },
       {
+        "name": "主教｜节奏教",
+        "value": 1,
+        "link": "decktypes/decktype-b9c3d7da07ee.html",
+        "image": "../../assets/cards/PR-415.png"
+      },
+      {
         "name": "皇家护卫｜盗贼皇",
         "value": 1,
         "link": "decktypes/decktype-4aeba2c734d7.html",
         "image": "../../assets/cards/BP19-SL05.png"
-      },
-      {
-        "name": "主教｜纹章教",
-        "value": 1,
-        "link": "decktypes/decktype-c068a8ef6610.html",
-        "image": "../../assets/cards/BP20-SL25.png"
       },
       {
         "name": "巫师｜学院法",

@@ -22,7 +22,7 @@
     .open-link { color: #8bd3ff; font-size: 12px; text-decoration: none; padding: 8px 10px; border-radius: 999px; background: rgba(139,211,255,0.08); border: 1px solid rgba(139,211,255,0.18); }
     .open-link:hover { color: #fff; border-color: #e94560; background: rgba(233,69,96,0.16); }
     .report-frame { flex: 1 1 auto; width: 100%; border: 0; background: #0f0f1a; }
-    .loading { position: fixed; left: 50%; top: 96px; transform: translateX(-50%); color: #9aa8bd; font-size: 13px; pointer-events: none; }
+    .loading { position: fixed; left: 50%; top: 96px; transform: translateX(-50%); color: #9aa8bd; font-size: 13px; pointer-events: none; background: rgba(15,15,26,0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 7px 12px; transition: opacity 0.2s; }
     @media (max-width: 760px) {
       body { overflow: auto; }
       .version-shell { height: 100vh; }
@@ -80,6 +80,21 @@
       var openCurrent = document.getElementById('open-current');
       var lastUpdated = document.getElementById('last-updated');
       var buttons = Array.prototype.slice.call(document.querySelectorAll('.version-btn'));
+      var loadingTimer = null;
+
+      function hideLoading() {
+        if (!loading) return;
+        loading.style.opacity = '0';
+        setTimeout(function() { loading.style.display = 'none'; }, 220);
+      }
+
+      function showLoading() {
+        if (!loading) return;
+        if (loadingTimer) clearTimeout(loadingTimer);
+        loading.style.opacity = '1';
+        loading.style.display = 'block';
+        loadingTimer = setTimeout(hideLoading, 1800);
+      }
 
       function getInitialVersion() {
         var params = new URLSearchParams(window.location.search || '');
@@ -120,7 +135,7 @@
         subtitle.textContent = info.text + '。';
         openCurrent.href = info.src;
         if (frame.getAttribute('src') !== info.src) {
-          loading.style.display = 'block';
+          showLoading();
           frame.src = info.src;
         }
         try { localStorage.setItem('sve_selected_version', version); } catch (error) {}
@@ -134,9 +149,11 @@
           setVersion(button.dataset.version);
         });
       });
-      frame.addEventListener('load', function() {
-        loading.style.display = 'none';
+      frame.addEventListener('load', hideLoading);
+      window.addEventListener('message', function(event) {
+        if (event && event.data && event.data.type === 'sve-report-dom-ready') hideLoading();
       });
+      showLoading();
       setVersion(getInitialVersion());
       loadLastUpdated();
     })();
