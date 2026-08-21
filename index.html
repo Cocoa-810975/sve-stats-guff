@@ -48,6 +48,8 @@
           <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html">BP19</button>
           <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html">BP18</button>
           <a class="open-link" id="open-current" href="versions/BP21/shadowverse_evolve_decks.html" target="_blank" rel="noopener">新窗口打开当前版本</a>
+          <a class="open-link" id="matchup-link" href="matchup.html" target="_blank" rel="noopener">对局胜率矩阵</a>
+          <a class="open-link" href="major_tournaments.html" target="_blank" rel="noopener">大赛卡组统计</a>
         </div>
       </div>
     </div>
@@ -134,6 +136,8 @@
         });
         subtitle.textContent = info.text + '。';
         openCurrent.href = info.src;
+        var matchupLink = document.getElementById('matchup-link');
+        if (matchupLink) matchupLink.href = 'matchup.html?version=' + encodeURIComponent(version);
         if (frame.getAttribute('src') !== info.src) {
           showLoading();
           frame.src = info.src;
