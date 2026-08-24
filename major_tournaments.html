@@ -71,10 +71,10 @@
         <table class="deck-table" id="type-table">
           <thead>
             <tr>
-              <th>职业</th>
               <th>卡组类型</th>
               <th style="text-align:center">数量</th>
               <th style="text-align:center">占比</th>
+              <th style="text-align:center">平均分数</th>
               <th style="text-align:center">最好成绩</th>
             </tr>
           </thead>
@@ -222,11 +222,12 @@
   function renderTypeTable(t, top8Decks) {
     var typeStats = {};
     top8Decks.forEach(function(d) {
-      var key = d.class + '|' + d.category;
+      var key = d.category;
       if (!typeStats[key]) {
-        typeStats[key] = { class: d.class, category: d.category, count: 0, bestRank: 999 };
+        typeStats[key] = { category: d.category, count: 0, bestRank: 999, rankSum: 0 };
       }
       typeStats[key].count++;
+      typeStats[key].rankSum += d.rank;
       if (d.rank < typeStats[key].bestRank) typeStats[key].bestRank = d.rank;
     });
 
@@ -258,14 +259,17 @@
 
     var teamInfo = getTeamCount(top8Decks.length);
     var displayedTeams = teamInfo.teams;
+    var totalPlayers = t.players;
     var html = '';
     types.forEach(function(st) {
       var pct = (st.count / displayedTeams * 100).toFixed(1);
       var barWidth = Math.max(4, pct * 2);
-      html += '<tr><td>' + classTag(st.class) + '</td>' +
+      var avgScore = (st.rankSum / st.count / totalPlayers * 100).toFixed(2);
+      html += '<tr>' +
         '<td><span class="type-tag">' + safeHtml(st.category) + '</span></td>' +
         '<td style="text-align:center">' + st.count + '套</td>' +
         '<td style="text-align:center"><span class="percentage-bar" style="width:' + barWidth + 'px"></span>' + pct + '%</td>' +
+        '<td style="text-align:center">' + avgScore + '</td>' +
         '<td style="text-align:center">' + getRankBadge(st.bestRank) + '</td></tr>';
     });
 
