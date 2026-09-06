@@ -264,12 +264,6 @@
         "image": "../../assets/cards/PR-479.jpg"
       },
       {
-        "name": "精灵｜樹権の剪定者型",
-        "value": 3,
-        "link": "decktypes/decktype-495307433269.html",
-        "image": "../../assets/cards/BP18-005.jpg"
-      },
-      {
         "name": "皇家护卫｜学院皇",
         "value": 3,
         "link": "decktypes/decktype-c20c01569823.html",
@@ -318,6 +312,12 @@
         "image": "../../assets/cards/BP17-057.jpg"
       },
       {
+        "name": "精灵｜樹権の剪定者型",
+        "value": 2,
+        "link": "decktypes/decktype-495307433269.html",
+        "image": "../../assets/cards/BP18-005.jpg"
+      },
+      {
         "name": "龙族｜宇宙龙",
         "value": 1,
         "link": "decktypes/decktype-36123430c5af.html",
@@ -336,15 +336,21 @@
         "image": "../../assets/cards/BP11-SP02.jpg"
       },
       {
+        "name": "精灵｜透京妖",
+        "value": 1,
+        "link": "decktypes/decktype-b839e822b2c1.html",
+        "image": "../../assets/cards/BP18-005.jpg"
+      },
+      {
         "name": "龙族｜荒野龙",
         "value": 1,
         "link": "decktypes/decktype-7ea4d7128729.html",
         "image": "../../assets/cards/BP11-052.jpg"
       },
       {
-        "name": "巫师｜光の道筋型",
+        "name": "巫师｜大美法",
         "value": 1,
-        "link": "decktypes/decktype-90f8957e9e85.html",
+        "link": "decktypes/decktype-b02e587006ac.html",
         "image": "../../assets/cards/BP21-PR10.jpg"
       },
       {
@@ -665,12 +671,6 @@
         "image": "../../assets/cards/PR-399.jpg"
       },
       {
-        "name": "精灵｜樹権の剪定者型",
-        "value": 3,
-        "link": "decktypes/decktype-495307433269.html",
-        "image": "../../assets/cards/BP18-005.jpg"
-      },
-      {
         "name": "主教｜节奏教",
         "value": 3,
         "link": "decktypes/decktype-b9c3d7da07ee.html",
@@ -707,15 +707,27 @@
         "image": "../../assets/cards/BP05-SL14.jpg"
       },
       {
+        "name": "精灵｜樹権の剪定者型",
+        "value": 2,
+        "link": "decktypes/decktype-495307433269.html",
+        "image": "../../assets/cards/BP18-005.jpg"
+      },
+      {
+        "name": "精灵｜透京妖",
+        "value": 1,
+        "link": "decktypes/decktype-b839e822b2c1.html",
+        "image": "../../assets/cards/BP18-005.jpg"
+      },
+      {
         "name": "龙族｜荒野龙",
         "value": 1,
         "link": "decktypes/decktype-7ea4d7128729.html",
         "image": "../../assets/cards/BP11-052.jpg"
       },
       {
-        "name": "巫师｜光の道筋型",
+        "name": "巫师｜大美法",
         "value": 1,
-        "link": "decktypes/decktype-90f8957e9e85.html",
+        "link": "decktypes/decktype-b02e587006ac.html",
         "image": "../../assets/cards/BP21-PR10.jpg"
       },
       {
