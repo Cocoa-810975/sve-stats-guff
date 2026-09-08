@@ -69,6 +69,8 @@
     .deck-table tr:hover td { background: rgba(255,255,255,0.03); }
     .rank-badge { display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; text-align: center; font-weight: bold; font-size: 13px; color: #000; }
     .deck-code { font-family: Consolas, monospace; background: #2a2a3e; padding: 2px 8px; border-radius: 4px; color: #e94560; text-decoration: none; font-weight: bold; }
+    .event-link { color: #8bd3ff; font-size: 12px; text-decoration: none; }
+    .event-link:hover { color: #e94560; text-decoration: underline; }
     .type-link { color: #8bd3ff; text-decoration: none; font-weight: 700; }
     .type-link:hover { color: #e94560; text-decoration: underline; }
     .others-list { margin-top: 12px; padding: 12px; background: #0f172a; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -82,6 +84,16 @@
     .preview-link:hover { background: #e94560; }
     .footer { text-align: center; color: #555; font-size: 12px; padding: 20px; }
     @media (max-width: 768px) { .summary-grid, .chart-grid { grid-template-columns: 1fr; } .class-header { flex-direction: column; align-items: flex-start; } .deck-table { font-size: 12px; } }
+
+    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
+    .card-modal-overlay.active { display: flex; }
+    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 24px 24px 20px; max-width: 300px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
+    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
+    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+    .card-modal .card-modal-jp { font-size: 12px; color: #8899aa; margin-bottom: 8px; }
+    .card-modal .card-modal-meta { font-size: 11px; color: #8bd3ff; font-family: Consolas, monospace; }
+    .card-zoomable { cursor: pointer; transition: transform 0.15s ease; }
+    .card-zoomable:hover { transform: scale(1.05); }
   </style>
 </head>
 <body>

@@ -111,3 +111,32 @@
     }
   } catch (error) {}
 })();
+
+(function() {
+  var overlay = document.createElement('div');
+  overlay.className = 'card-modal-overlay';
+  overlay.innerHTML = '<div class="card-modal"><img id="card-modal-img" src="" alt=""><div class="card-modal-cn" id="card-modal-cn"></div><div class="card-modal-jp" id="card-modal-jp"></div><div class="card-modal-meta" id="card-modal-meta"></div></div>';
+  document.body.appendChild(overlay);
+  function closeModal() { overlay.classList.remove('active'); }
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('click', function(e) {
+    var img = e.target.closest ? e.target.closest('.card-zoomable') : null;
+    if (!img) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var modalImg = overlay.querySelector('#card-modal-img');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt || '';
+    var cn = img.dataset.cn || '';
+    var cnEl = overlay.querySelector('#card-modal-cn');
+    if (cn) { cnEl.textContent = cn; cnEl.style.color = '#fff'; }
+    else { cnEl.textContent = '暂无中文翻译'; cnEl.style.color = '#8899aa'; }
+    overlay.querySelector('#card-modal-jp').textContent = img.dataset.jp || '';
+    var meta = [];
+    if (img.dataset.zone) meta.push(img.dataset.zone);
+    if (img.dataset.num) meta.push(img.dataset.num);
+    overlay.querySelector('#card-modal-meta').textContent = meta.join(' · ');
+    overlay.classList.add('active');
+  }, true);
+})();
