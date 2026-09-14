@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>巫师／梦魇｜クロスオーバー卡组详情</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 28px; border-radius: 16px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
+    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 14px; }
+    .back-link:hover { color: #e94560; text-decoration: underline; }
+    h1 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #8899aa; font-size: 13px; }
+    .stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .stat-pill { background: #2a2a3e; padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ccc; }
+    .section { background: #1a1a2e; border-radius: 16px; padding: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); }
+    .section h2 { color: #fff; font-size: 18px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid rgba(255,255,255,0.08); }
+    .section h3 { color: #c9d4e0; font-size: 15px; margin: 14px 0 10px; }
+    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
+    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; }
+    .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
+    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; }
+    .core-card-tile span { display: block; font-family: Consolas, monospace; line-height: 1.45; }
+    .core-card-tile small { display: inline-block; margin-top: 6px; color: #8bd3ff; }
+    .table-wrap { width: 100%; overflow-x: auto; max-height: 720px; }
+    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 900px; }
+    .deck-table th { background: #111; padding: 10px 12px; text-align: left; color: #8899aa; font-weight: 600; font-size: 12px; border-bottom: 2px solid #2a2a3e; position: sticky; top: 0; z-index: 1; }
+    .deck-table td { padding: 10px 12px; border-bottom: 1px solid #1a1a2e; color: #ddd; }
+    .deck-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .rank-badge { display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; text-align: center; font-weight: bold; font-size: 13px; color: #000; }
+    .deck-code { font-family: Consolas, monospace; background: #2a2a3e; padding: 2px 8px; border-radius: 4px; color: #e94560; text-decoration: none; font-weight: bold; }
+    .event-link { color: #8bd3ff; font-size: 12px; text-decoration: none; }
+    .event-link:hover { color: #e94560; text-decoration: underline; }
+    .score-cell { font-family: Consolas, monospace; color: #8bd3ff !important; font-weight: 700; }
+    .diff-item { display: inline-block; background: #2a2a3e; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin: 1px; }
+    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; }
+    img[data-jp] { cursor: pointer; }
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 999; }
+    .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
+    .modal-content { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; max-width: 500px; width: 90%; }
+    .modal-content h3 { color: #fff; margin-bottom: 10px; }
+    .modal-content .cn-name { color: #8bd3ff; font-size: 14px; margin-bottom: 6px; }
+    .modal-content .jp-name { color: #9aa8bd; font-size: 13px; }
+    .modal-close { float: right; cursor: pointer; color: #9aa8bd; font-size: 20px; }
+    @media (max-width: 760px) { .container { padding: 12px; } h1 { font-size: 18px; } .deck-table { font-size: 11px; min-width: 700px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="back-link" href="../crossover.html">&#8592; 返回クロスオーバー统计</a>
+      <h1>巫师／梦魇 卡组详情</h1>
+      <div class="subtitle">职业组合: ウィッチ/ナイトメア | 卡组数: 1 | 淘汰赛战绩: 2胜1负 | 胜率: 66.7%</div>
+      <div class="stat-row">
+        <span class="stat-pill">卡组数: 1</span>
+        <span class="stat-pill">淘汰赛胜场: 2</span>
+        <span class="stat-pill">淘汰赛负场: 1</span>
+        <span class="stat-pill">胜率: 66.7%</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>最佳卡组构筑</h2>
+      <div class="best-deck-note">最佳成绩: <span class="rank-badge" style="background:#c0c0c0">2</span> 2/42 (0.0476)｜2026/09/12｜のぼる｜<a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/1FPG04" target="_blank" rel="noopener">1FPG04</a></div>
+      <div class="core-card-row"><div class="core-card-tile"><img  src="assets/cards/BP19-088.jpg" alt="奈落の軍曹" data-cn="" data-jp="奈落の軍曹" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>奈落の軍曹</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP19-116.jpg" alt="アズヴォルト" data-cn="" data-jp="アズヴォルト" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>アズヴォルト</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-074.jpg" alt="勅令の咎人・イステンデッド" data-cn="" data-jp="勅令の咎人・イステンデッド" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>勅令の咎人・イステンデッド</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-046.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>熱中の研究者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-048.jpg" alt="没頭の実験体" data-cn="" data-jp="没頭の実験体" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>没頭の実験体</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-115.jpg" alt="溶鉄の腹心" data-cn="" data-jp="溶鉄の腹心" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>溶鉄の腹心</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-078.jpg" alt="深淵の大佐" data-cn="" data-jp="深淵の大佐" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>深淵の大佐</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-042.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>忘我の才媛</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>スキュア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ウルズ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-038.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>耽溺の咎人・セフィー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-081.jpg" alt="蛇殿の執行者・ゲノムエル" data-cn="" data-jp="蛇殿の執行者・ゲノムエル" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>蛇殿の執行者・ゲノムエル</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP14-076.jpg" alt="寒冷の死霊術師" data-cn="" data-jp="寒冷の死霊術師" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>寒冷の死霊術師</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-080.jpg" alt="滅屍の執行者・ミロエル" data-cn="" data-jp="滅屍の執行者・ミロエル" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>滅屍の執行者・ミロエル</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP08-037.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>開闢の予言者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-047.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>熱中の研究者</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-079.jpg" alt="深淵の大佐" data-cn="" data-jp="深淵の大佐" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>深淵の大佐</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-043.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>忘我の才媛</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ウルズ</span><small>进化 × 1</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-039.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>耽溺の咎人・セフィー</span><small>进化 × 3</small></div></div>
+    </div>
+
+    <div class="section">
+      <h2>全部卡组列表</h2>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead>
+            <tr>
+              <th>名次</th>
+              <th>参赛人数</th>
+              <th>选手</th>
+              <th>淘汰赛战绩</th>
+              <th>成绩系数</th>
+              <th>卡组码</th>
+              <th>与最佳差异(+)</th>
+              <th>与最佳差异(-)</th>
+              <th>日期</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#c0c0c0">2</span></td>
+      <td style="text-align:center">42</td>
+      <td>のぼる</td>
+      <td style="text-align:center">2胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0476</td>
+      <td><a href="https://decklog.bushiroad.com/view/1FPG04" class="deck-code" target="_blank" rel="noopener">1FPG04</a></td>
+      <td></td>
+      <td></td>
+      <td>2026/09/12<br><a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>卡牌使用率</h2>
+      <h3>主卡组</h3>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+          <tbody>
+    <tr>
+      <td style="text-align:center">1</td>
+      <td><img class="" src="assets/cards/BP19-088.jpg" alt="奈落の軍曹" data-cn="" data-jp="奈落の軍曹" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>奈落の軍曹</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">2</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP19-116.jpg" alt="アズヴォルト" data-cn="" data-jp="アズヴォルト" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>アズヴォルト</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">3</td>
+      <td><img class="" src="assets/cards/BP19-074.jpg" alt="勅令の咎人・イステンデッド" data-cn="" data-jp="勅令の咎人・イステンデッド" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>勅令の咎人・イステンデッド</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">4</td>
+      <td><img class="" src="assets/cards/BP19-046.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>熱中の研究者</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">5</td>
+      <td><img class="" src="assets/cards/BP19-048.jpg" alt="没頭の実験体" data-cn="" data-jp="没頭の実験体" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>没頭の実験体</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">6</td>
+      <td><img class="" src="assets/cards/BP19-115.jpg" alt="溶鉄の腹心" data-cn="" data-jp="溶鉄の腹心" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>溶鉄の腹心</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">7</td>
+      <td><img class="" src="assets/cards/BP19-078.jpg" alt="深淵の大佐" data-cn="" data-jp="深淵の大佐" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>深淵の大佐</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">8</td>
+      <td><img class="" src="assets/cards/BP19-042.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>忘我の才媛</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">9</td>
+      <td><img class="" src="assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>スキュア</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">10</td>
+      <td><img class="" src="assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ウルズ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">11</td>
+      <td><img class="" src="assets/cards/BP19-038.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>耽溺の咎人・セフィー</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">12</td>
+      <td><img class="" src="assets/cards/BP19-081.jpg" alt="蛇殿の執行者・ゲノムエル" data-cn="" data-jp="蛇殿の執行者・ゲノムエル" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>蛇殿の執行者・ゲノムエル</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">13</td>
+      <td><img class="" src="assets/cards/BP14-076.jpg" alt="寒冷の死霊術師" data-cn="" data-jp="寒冷の死霊術師" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>寒冷の死霊術師</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">14</td>
+      <td><img class="" src="assets/cards/BP19-080.jpg" alt="滅屍の執行者・ミロエル" data-cn="" data-jp="滅屍の執行者・ミロエル" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>滅屍の執行者・ミロエル</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">15</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP08-037.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>開闢の予言者</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">16</td>
+      <td><img class="" src="assets/cards/BP19-047.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>熱中の研究者</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">17</td>
+      <td><img class="" src="assets/cards/BP19-079.jpg" alt="深淵の大佐" data-cn="" data-jp="深淵の大佐" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>深淵の大佐</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">18</td>
+      <td><img class="" src="assets/cards/BP19-043.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>忘我の才媛</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">19</td>
+      <td><img class="" src="assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ウルズ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">20</td>
+      <td><img class="" src="assets/cards/BP19-039.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>耽溺の咎人・セフィー</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">100.0%</td>
+    </tr></tbody>
+        </table>
+      </div>
+      <h3>进化卡组</h3>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+          <tbody><tr><td colspan="6" style="text-align:center;color:#8899aa">暂无数据</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="card-modal" onclick="if(event.target===this)this.classList.remove('active')">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('card-modal').classList.remove('active')">&times;</span>
+      <h3 id="modal-jp-name"></h3>
+      <div class="cn-name" id="modal-cn-name"></div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName === 'IMG' && e.target.dataset.jp) {
+        document.getElementById('modal-jp-name').textContent = e.target.dataset.jp;
+        document.getElementById('modal-cn-name').textContent = e.target.dataset.cn || '（暂无中文翻译）';
+        document.getElementById('card-modal').classList.add('active');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.getElementById('card-modal').classList.remove('active');
+    });
+  </script>
+</body>
+</html>

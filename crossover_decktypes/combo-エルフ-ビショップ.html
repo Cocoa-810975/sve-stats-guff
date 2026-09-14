@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>精灵／主教｜クロスオーバー卡组详情</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 28px; border-radius: 16px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
+    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 14px; }
+    .back-link:hover { color: #e94560; text-decoration: underline; }
+    h1 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #8899aa; font-size: 13px; }
+    .stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .stat-pill { background: #2a2a3e; padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ccc; }
+    .section { background: #1a1a2e; border-radius: 16px; padding: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); }
+    .section h2 { color: #fff; font-size: 18px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid rgba(255,255,255,0.08); }
+    .section h3 { color: #c9d4e0; font-size: 15px; margin: 14px 0 10px; }
+    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
+    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; }
+    .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
+    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; }
+    .core-card-tile span { display: block; font-family: Consolas, monospace; line-height: 1.45; }
+    .core-card-tile small { display: inline-block; margin-top: 6px; color: #8bd3ff; }
+    .table-wrap { width: 100%; overflow-x: auto; max-height: 720px; }
+    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 900px; }
+    .deck-table th { background: #111; padding: 10px 12px; text-align: left; color: #8899aa; font-weight: 600; font-size: 12px; border-bottom: 2px solid #2a2a3e; position: sticky; top: 0; z-index: 1; }
+    .deck-table td { padding: 10px 12px; border-bottom: 1px solid #1a1a2e; color: #ddd; }
+    .deck-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .rank-badge { display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; text-align: center; font-weight: bold; font-size: 13px; color: #000; }
+    .deck-code { font-family: Consolas, monospace; background: #2a2a3e; padding: 2px 8px; border-radius: 4px; color: #e94560; text-decoration: none; font-weight: bold; }
+    .event-link { color: #8bd3ff; font-size: 12px; text-decoration: none; }
+    .event-link:hover { color: #e94560; text-decoration: underline; }
+    .score-cell { font-family: Consolas, monospace; color: #8bd3ff !important; font-weight: 700; }
+    .diff-item { display: inline-block; background: #2a2a3e; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin: 1px; }
+    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; }
+    img[data-jp] { cursor: pointer; }
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 999; }
+    .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
+    .modal-content { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; max-width: 500px; width: 90%; }
+    .modal-content h3 { color: #fff; margin-bottom: 10px; }
+    .modal-content .cn-name { color: #8bd3ff; font-size: 14px; margin-bottom: 6px; }
+    .modal-content .jp-name { color: #9aa8bd; font-size: 13px; }
+    .modal-close { float: right; cursor: pointer; color: #9aa8bd; font-size: 20px; }
+    @media (max-width: 760px) { .container { padding: 12px; } h1 { font-size: 18px; } .deck-table { font-size: 11px; min-width: 700px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="back-link" href="../crossover.html">&#8592; 返回クロスオーバー统计</a>
+      <h1>精灵／主教 卡组详情</h1>
+      <div class="subtitle">职业组合: エルフ/ビショップ | 卡组数: 10 | 淘汰赛战绩: 10胜9负 | 胜率: 52.6%</div>
+      <div class="stat-row">
+        <span class="stat-pill">卡组数: 10</span>
+        <span class="stat-pill">淘汰赛胜场: 10</span>
+        <span class="stat-pill">淘汰赛负场: 9</span>
+        <span class="stat-pill">胜率: 52.6%</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>最佳卡组构筑</h2>
+      <div class="best-deck-note">最佳成绩: <span class="rank-badge" style="background:#ffd700">1</span> 1/128 (0.0078)｜2026/09/06｜ウニ｜<a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/AE2X6" target="_blank" rel="noopener">AE2X6</a></div>
+      <div class="core-card-row"><div class="core-card-tile"><img  src="assets/cards/BP03-114.jpg" alt="歌劇姫・フェリア" data-cn="" data-jp="歌劇姫・フェリア" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>歌劇姫・フェリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/ECP01-053.jpg" alt="〔月下の悪魔ちゃん♪〕メジロパーマー" data-cn="" data-jp="〔月下の悪魔ちゃん♪〕メジロパーマー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>〔月下の悪魔ちゃん♪〕メジロパーマー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP04-010.jpg" alt="小さな勇士・スクナ" data-cn="" data-jp="小さな勇士・スクナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>小さな勇士・スクナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP07-012.jpg" alt="チェシャキャット" data-cn="" data-jp="チェシャキャット" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>チェシャキャット</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/CP03-115.jpg" alt="三日月の女神 ツクヨミ" data-cn="" data-jp="三日月の女神 ツクヨミ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>三日月の女神 ツクヨミ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP03-017.jpg" alt="森の音楽隊" data-cn="" data-jp="森の音楽隊" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>森の音楽隊</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP07-016.jpg" alt="奇妙な帽子屋" data-cn="" data-jp="奇妙な帽子屋" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>奇妙な帽子屋</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-SL01.jpg" alt="剪定の咎人・マガチヨ" data-cn="" data-jp="剪定の咎人・マガチヨ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>剪定の咎人・マガチヨ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/PR-128.jpg" alt="爆砕の傭兵・フィーナ" data-cn="" data-jp="爆砕の傭兵・フィーナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>爆砕の傭兵・フィーナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/SP01-045.jpg" alt="不思議な青空・アリス" data-cn="" data-jp="不思議な青空・アリス" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>不思議な青空・アリス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP10-005.jpg" alt="マドロスエルフ" data-cn="" data-jp="マドロスエルフ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>マドロスエルフ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP13-091.jpg" alt="ルナールの聖騎士" data-cn="" data-jp="ルナールの聖騎士" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ルナールの聖騎士</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP03-096.jpg" alt="アリスの冒険" data-cn="" data-jp="アリスの冒険" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>アリスの冒険</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP03-115.jpg" alt="ハンプティダンプティ" data-cn="" data-jp="ハンプティダンプティ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ハンプティダンプティ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP03-101.jpg" alt="ブリキの兵隊" data-cn="" data-jp="ブリキの兵隊" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ブリキの兵隊</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="assets/cards/BP10-017.jpg" alt="森林の狼" data-cn="" data-jp="森林の狼" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>森林の狼</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="assets/cards/BP04-011.jpg" alt="小さな勇士・スクナ" data-cn="" data-jp="小さな勇士・スクナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>小さな勇士・スクナ</span><small>进化 × 3</small></div><div class="core-card-tile"><img  src="assets/cards/BP19-SL02.jpg" alt="剪定の咎人・マガチヨ" data-cn="" data-jp="剪定の咎人・マガチヨ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>剪定の咎人・マガチヨ</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP10-006.jpg" alt="マドロスエルフ" data-cn="" data-jp="マドロスエルフ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>マドロスエルフ</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="https://decklog.bushiroad.com/images/cards/BP13-092.jpg" alt="ルナールの聖騎士" data-cn="" data-jp="ルナールの聖騎士" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ルナールの聖騎士</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="assets/cards/PR-137.jpg" alt="ハンプティダンプティ" data-cn="" data-jp="ハンプティダンプティ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"><span>ハンプティダンプティ</span><small>进化 × 1</small></div></div>
+    </div>
+
+    <div class="section">
+      <h2>全部卡组列表</h2>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead>
+            <tr>
+              <th>名次</th>
+              <th>参赛人数</th>
+              <th>选手</th>
+              <th>淘汰赛战绩</th>
+              <th>成绩系数</th>
+              <th>卡组码</th>
+              <th>与最佳差异(+)</th>
+              <th>与最佳差异(-)</th>
+              <th>日期</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#ffd700">1</span></td>
+      <td style="text-align:center">128</td>
+      <td>ウニ</td>
+      <td style="text-align:center">3胜0负</td>
+      <td style="text-align:center" class="score-cell">0.0078</td>
+      <td><a href="https://decklog.bushiroad.com/view/AE2X6" class="deck-code" target="_blank" rel="noopener">AE2X6</a></td>
+      <td></td>
+      <td></td>
+      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#c0c0c0">2</span></td>
+      <td style="text-align:center">128</td>
+      <td>アイダホ</td>
+      <td style="text-align:center">2胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0156</td>
+      <td><a href="https://decklog.bushiroad.com/view/19AW0C" class="deck-code" target="_blank" rel="noopener">19AW0C</a></td>
+      <td><span class="diff-item">+4 悪魔のエピタフ</span> <span class="diff-item">+3 闇穿つ煌き・サリッサ</span> <span class="diff-item">+3 ハンプティダンプティ</span></td>
+      <td><span class="diff-item">-2 小さな勇士・スクナ</span> <span class="diff-item">-1 三日月の女神 ツクヨミ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-2 アリスの冒険</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#cd7f32">3</span></td>
+      <td style="text-align:center">128</td>
+      <td>ユズ</td>
+      <td style="text-align:center">1胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0234</td>
+      <td><a href="https://decklog.bushiroad.com/view/1YV204" class="deck-code" target="_blank" rel="noopener">1YV204</a></td>
+      <td><span class="diff-item">+2 宿命の狐火・セッカ</span> <span class="diff-item">+2 ネビア</span> <span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+2 ハンプティダンプティ</span></td>
+      <td><span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-2 アリスの冒険</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">4</span></td>
+      <td style="text-align:center">128</td>
+      <td>りあ</td>
+      <td style="text-align:center">1胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0313</td>
+      <td><a href="https://decklog.bushiroad.com/view/ZTG1E" class="deck-code" target="_blank" rel="noopener">ZTG1E</a></td>
+      <td><span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+3 闇穿つ煌き・サリッサ</span> <span class="diff-item">+1 ルナールの聖騎士</span> <span class="diff-item">+3 ハンプティダンプティ</span> <span class="diff-item">+4 迸る光明・アポロン</span></td>
+      <td><span class="diff-item">-1 アリスの冒険</span> <span class="diff-item">-6 小さな勇士・スクナ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#c0c0c0">2</span></td>
+      <td style="text-align:center">55</td>
+      <td>えんがわ</td>
+      <td style="text-align:center">2胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0364</td>
+      <td><a href="https://decklog.bushiroad.com/view/X6N52" class="deck-code" target="_blank" rel="noopener">X6N52</a></td>
+      <td><span class="diff-item">+3 宿命の狐火・セッカ</span> <span class="diff-item">+1 アリスの冒険</span></td>
+      <td><span class="diff-item">-3 三日月の女神 ツクヨミ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/05<br><a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">6</span></td>
+      <td style="text-align:center">128</td>
+      <td>まいこ</td>
+      <td style="text-align:center">0胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0469</td>
+      <td><a href="https://decklog.bushiroad.com/view/111Z00" class="deck-code" target="_blank" rel="noopener">111Z00</a></td>
+      <td><span class="diff-item">+3 絶望の聖女・ジャンヌ</span> <span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+2 闇穿つ煌き・サリッサ</span> <span class="diff-item">+1 ルナールの聖騎士</span></td>
+      <td><span class="diff-item">-2 小さな勇士・スクナ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">4</span></td>
+      <td style="text-align:center">55</td>
+      <td>なるみん</td>
+      <td style="text-align:center">1胜1负</td>
+      <td style="text-align:center" class="score-cell">0.0727</td>
+      <td><a href="https://decklog.bushiroad.com/view/VEJPW" class="deck-code" target="_blank" rel="noopener">VEJPW</a></td>
+      <td><span class="diff-item">+4 絶望の聖女・ジャンヌ</span> <span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+4 ハンプティダンプティ</span> <span class="diff-item">+2 不思議の探求者・アリス</span> <span class="diff-item">+2 ドールズトレーニング</span> <span class="diff-item">+3 三月ウサギのお茶会</span></td>
+      <td><span class="diff-item">-6 小さな勇士・スクナ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-3 爆砕の傭兵・フィーナ</span> <span class="diff-item">-2 アリスの冒険</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/05<br><a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">6</span></td>
+      <td style="text-align:center">53</td>
+      <td>たちょ</td>
+      <td style="text-align:center">0胜1负</td>
+      <td style="text-align:center" class="score-cell">0.1132</td>
+      <td><a href="https://decklog.bushiroad.com/view/1V4B0C" class="deck-code" target="_blank" rel="noopener">1V4B0C</a></td>
+      <td><span class="diff-item">+2 宿命の狐火・セッカ</span> <span class="diff-item">+3 絶望の聖女・ジャンヌ</span></td>
+      <td><span class="diff-item">-1 小さな勇士・スクナ</span> <span class="diff-item">-2 三日月の女神 ツクヨミ</span> <span class="diff-item">-1 爆砕の傭兵・フィーナ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/13<br><a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">7</span></td>
+      <td style="text-align:center">55</td>
+      <td>スズラン</td>
+      <td style="text-align:center">0胜1负</td>
+      <td style="text-align:center" class="score-cell">0.1273</td>
+      <td><a href="https://decklog.bushiroad.com/view/C79AC" class="deck-code" target="_blank" rel="noopener">C79AC</a></td>
+      <td><span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+3 闇穿つ煌き・サリッサ</span> <span class="diff-item">+1 ルナールの聖騎士</span> <span class="diff-item">+3 ハンプティダンプティ</span> <span class="diff-item">+4 不思議の探求者・アリス</span></td>
+      <td><span class="diff-item">-1 アリスの冒険</span> <span class="diff-item">-6 小さな勇士・スクナ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/05<br><a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr><tr>
+      <td style="text-align:center"><span class="rank-badge" style="background:#666">6</span></td>
+      <td style="text-align:center">42</td>
+      <td>カナ</td>
+      <td style="text-align:center">0胜1负</td>
+      <td style="text-align:center" class="score-cell">0.1429</td>
+      <td><a href="https://decklog.bushiroad.com/view/LEXUY" class="deck-code" target="_blank" rel="noopener">LEXUY</a></td>
+      <td><span class="diff-item">+3 絶望の聖女・ジャンヌ</span> <span class="diff-item">+1 マドロスエルフ</span> <span class="diff-item">+2 闇穿つ煌き・サリッサ</span> <span class="diff-item">+1 ルナールの聖騎士</span></td>
+      <td><span class="diff-item">-2 小さな勇士・スクナ</span> <span class="diff-item">-4 剪定の咎人・マガチヨ</span> <span class="diff-item">-1 森林の狼</span></td>
+      <td>2026/09/12<br><a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
+    </tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>卡牌使用率</h2>
+      <h3>主卡组</h3>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+          <tbody>
+    <tr>
+      <td style="text-align:center">1</td>
+      <td><img class="" src="assets/cards/ECP01-053.jpg" alt="〔月下の悪魔ちゃん♪〕メジロパーマー" data-cn="" data-jp="〔月下の悪魔ちゃん♪〕メジロパーマー" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>〔月下の悪魔ちゃん♪〕メジロパーマー</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">2</td>
+      <td><img class="" src="assets/cards/BP07-012.jpg" alt="チェシャキャット" data-cn="" data-jp="チェシャキャット" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>チェシャキャット</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">3</td>
+      <td><img class="" src="assets/cards/BP07-016.jpg" alt="奇妙な帽子屋" data-cn="" data-jp="奇妙な帽子屋" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>奇妙な帽子屋</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">4</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP13-092.jpg" alt="ルナールの聖騎士" data-cn="" data-jp="ルナールの聖騎士" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ルナールの聖騎士</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">100.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">5</td>
+      <td><img class="" src="assets/cards/BP03-114.jpg" alt="歌劇姫・フェリア" data-cn="" data-jp="歌劇姫・フェリア" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>歌劇姫・フェリア</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">90.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">6</td>
+      <td><img class="" src="assets/cards/CP03-115.jpg" alt="三日月の女神 ツクヨミ" data-cn="" data-jp="三日月の女神 ツクヨミ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>三日月の女神 ツクヨミ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">90.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">7</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/SP01-045.jpg" alt="不思議な青空・アリス" data-cn="" data-jp="不思議な青空・アリス" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>不思議な青空・アリス</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">90.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">8</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP13-091.jpg" alt="ルナールの聖騎士" data-cn="" data-jp="ルナールの聖騎士" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ルナールの聖騎士</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">90.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">9</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP03-115.jpg" alt="ハンプティダンプティ" data-cn="" data-jp="ハンプティダンプティ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ハンプティダンプティ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">90.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">10</td>
+      <td><img class="" src="assets/cards/BP03-017.jpg" alt="森の音楽隊" data-cn="" data-jp="森の音楽隊" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>森の音楽隊</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">80.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">11</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP10-005.jpg" alt="マドロスエルフ" data-cn="" data-jp="マドロスエルフ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>マドロスエルフ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">80.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">12</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP03-101.jpg" alt="ブリキの兵隊" data-cn="" data-jp="ブリキの兵隊" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ブリキの兵隊</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">80.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">13</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP10-006.jpg" alt="マドロスエルフ" data-cn="" data-jp="マドロスエルフ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>マドロスエルフ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">80.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">14</td>
+      <td><img class="" src="assets/cards/BP04-010.jpg" alt="小さな勇士・スクナ" data-cn="" data-jp="小さな勇士・スクナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>小さな勇士・スクナ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">70.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">15</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP03-096.jpg" alt="アリスの冒険" data-cn="" data-jp="アリスの冒険" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>アリスの冒険</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">70.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">16</td>
+      <td><img class="" src="assets/cards/BP04-011.jpg" alt="小さな勇士・スクナ" data-cn="" data-jp="小さな勇士・スクナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>小さな勇士・スクナ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">70.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">17</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP03-116.jpg" alt="ハンプティダンプティ" data-cn="" data-jp="ハンプティダンプティ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>ハンプティダンプティ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">70.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">18</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP05-109.jpg" alt="爆砕の傭兵・フィーナ" data-cn="" data-jp="爆砕の傭兵・フィーナ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>爆砕の傭兵・フィーナ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">5</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">19</td>
+      <td><img class="" src="assets/cards/BP13-088.jpg" alt="絶望の聖女・ジャンヌ" data-cn="" data-jp="絶望の聖女・ジャンヌ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>絶望の聖女・ジャンヌ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">4</td>
+      <td style="text-align:center">40.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">20</td>
+      <td><img class="" src="https://decklog.bushiroad.com/images/cards/BP15-097.jpg" alt="闇穿つ煌き・サリッサ" data-cn="" data-jp="闇穿つ煌き・サリッサ" loading="lazy" decoding="async" onerror="this.style.opacity=0.1"></td>
+      <td>闇穿つ煌き・サリッサ</td>
+      <td style="color:#8bd3ff"></td>
+      <td style="text-align:center">4</td>
+      <td style="text-align:center">40.0%</td>
+    </tr></tbody>
+        </table>
+      </div>
+      <h3>进化卡组</h3>
+      <div class="table-wrap">
+        <table class="deck-table">
+          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+          <tbody><tr><td colspan="6" style="text-align:center;color:#8899aa">暂无数据</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="card-modal" onclick="if(event.target===this)this.classList.remove('active')">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('card-modal').classList.remove('active')">&times;</span>
+      <h3 id="modal-jp-name"></h3>
+      <div class="cn-name" id="modal-cn-name"></div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName === 'IMG' && e.target.dataset.jp) {
+        document.getElementById('modal-jp-name').textContent = e.target.dataset.jp;
+        document.getElementById('modal-cn-name').textContent = e.target.dataset.cn || '（暂无中文翻译）';
+        document.getElementById('card-modal').classList.add('active');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.getElementById('card-modal').classList.remove('active');
+    });
+  </script>
+</body>
+</html>
