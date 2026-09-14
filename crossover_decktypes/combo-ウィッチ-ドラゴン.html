@@ -8,52 +8,87 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
     .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 28px; border-radius: 16px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
-    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 14px; }
+    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 32px 28px; border-radius: 16px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.1); }
+    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 18px; }
     .back-link:hover { color: #e94560; text-decoration: underline; }
-    h1 { color: #fff; font-size: 24px; margin-bottom: 8px; }
-    .subtitle { color: #8899aa; font-size: 13px; }
-    .stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    h1 { color: #fff; font-size: 28px; margin-bottom: 10px; }
+    .subtitle { color: #8899aa; font-size: 14px; }
+    .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
     .stat-pill { background: #2a2a3e; padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ccc; }
-    .section { background: #1a1a2e; border-radius: 16px; padding: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); }
-    .section h2 { color: #fff; font-size: 18px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid rgba(255,255,255,0.08); }
-    .section h3 { color: #c9d4e0; font-size: 15px; margin: 14px 0 10px; }
-    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
-    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; }
+    .section { background: #1a1a2e; border-radius: 16px; padding: 24px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.05); }
+    .section h2 { color: #fff; font-size: 20px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #9b59b6; }
+    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
+    .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
+    .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
-    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; }
+    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
     .core-card-tile span { display: block; font-family: Consolas, monospace; line-height: 1.45; }
     .core-card-tile small { display: inline-block; margin-top: 6px; color: #8bd3ff; }
-    .table-wrap { width: 100%; overflow-x: auto; max-height: 720px; }
-    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 900px; }
+    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
+    .diff-list { display: flex; flex-wrap: wrap; gap: 8px; max-width: 260px; }
+    .diff-card { position: relative; display: inline-flex; width: 52px; height: 72px; border-radius: 7px; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); background: #0f172a; box-shadow: 0 5px 12px rgba(0,0,0,0.28); }
+    .diff-card img, .diff-card-placeholder { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .diff-card-placeholder { display: inline-flex; align-items: center; justify-content: center; color: #8899aa; font-size: 11px; }
+    .diff-card b { position: absolute; right: 3px; bottom: 3px; min-width: 24px; padding: 2px 5px; border-radius: 999px; text-align: center; background: rgba(15,23,42,0.88); color: #8bd3ff; font-family: Consolas, monospace; font-size: 12px; }
+    .diff-empty { color: #667085; font-size: 12px; white-space: nowrap; }
+    .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+    .comparison-wrap { transition: max-height 0.25s ease; }
+    .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
+    .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
+    .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+    .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
+    .comparison-head span { display: block; color: #8899aa; font-size: 12px; margin-top: 4px; }
+    .comparison-head a { color: #e94560; font-family: Consolas, monospace; text-decoration: none; font-weight: 700; }
+    .comparison-body { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .comparison-body h3 { color: #8bd3ff; font-size: 13px; margin: 0 0 8px; }
+    .comparison-body .diff-list { max-width: none; }
+    .comparison-empty { background: #111827; border-radius: 10px; padding: 14px; color: #8899aa; text-align: center; }
+    .table-wrap { width: 100%; overflow-x: auto; overflow-y: auto; max-height: 720px; }
+    .table-wrap.usage { max-height: 820px; }
+    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1100px; }
+    .deck-table.usage-table { min-width: 940px; }
     .deck-table th { background: #111; padding: 10px 12px; text-align: left; color: #8899aa; font-weight: 600; font-size: 12px; border-bottom: 2px solid #2a2a3e; position: sticky; top: 0; z-index: 1; }
     .deck-table td { padding: 10px 12px; border-bottom: 1px solid #1a1a2e; color: #ddd; }
     .deck-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .usage-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; }
+    .usage-subtitle { color: #fff; font-size: 16px; margin: 18px 0 10px; padding-left: 10px; border-left: 3px solid #9b59b6; }
+    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 6px 14px rgba(0,0,0,0.38); }
+    .usage-card-placeholder { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 78px; border-radius: 6px; background: #2a2a3e; color: #8899aa; font-size: 11px; }
+    .usage-best-no-carry { display: flex; flex-direction: column; align-items: center; gap: 6px; white-space: nowrap; }
+    .usage-best-no-carry span { display: inline-flex; align-items: center; gap: 6px; color: #ddd; font-weight: 700; }
+    .usage-no-data { color: #667788; }
     .rank-badge { display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; text-align: center; font-weight: bold; font-size: 13px; color: #000; }
     .deck-code { font-family: Consolas, monospace; background: #2a2a3e; padding: 2px 8px; border-radius: 4px; color: #e94560; text-decoration: none; font-weight: bold; }
     .event-link { color: #8bd3ff; font-size: 12px; text-decoration: none; }
     .event-link:hover { color: #e94560; text-decoration: underline; }
     .score-cell { font-family: Consolas, monospace; color: #8bd3ff !important; font-weight: 700; }
-    .diff-item { display: inline-block; background: #2a2a3e; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin: 1px; }
-    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; }
-    img[data-jp] { cursor: pointer; }
-    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 999; }
-    .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
-    .modal-content { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; max-width: 500px; width: 90%; }
-    .modal-content h3 { color: #fff; margin-bottom: 10px; }
-    .modal-content .cn-name { color: #8bd3ff; font-size: 14px; margin-bottom: 6px; }
-    .modal-content .jp-name { color: #9aa8bd; font-size: 13px; }
-    .modal-close { float: right; cursor: pointer; color: #9aa8bd; font-size: 20px; }
-    @media (max-width: 760px) { .container { padding: 12px; } h1 { font-size: 18px; } .deck-table { font-size: 11px; min-width: 700px; } }
+    @media (max-width: 768px) { .container { padding: 14px; } h1 { font-size: 22px; } .deck-table { font-size: 12px; } }
+
+    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
+    .card-modal-overlay.active { display: flex; }
+    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 24px 24px 20px; max-width: 300px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
+    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
+    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+    .card-modal .card-modal-jp { font-size: 12px; color: #8899aa; margin-bottom: 8px; }
+    .card-modal .card-modal-meta { font-size: 11px; color: #8bd3ff; font-family: Consolas, monospace; }
+    .card-zoomable { cursor: pointer; transition: transform 0.15s ease; }
+    .card-zoomable:hover { transform: scale(1.05); }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="header" style="border-left:5px solid #9b59b6">
       <a class="back-link" href="../crossover.html">&#8592; 返回クロスオーバー统计</a>
-      <h1>巫师／龙族 卡组详情</h1>
-      <div class="subtitle">职业组合: ウィッチ/ドラゴン | 卡组数: 4 | 淘汰赛战绩: 2胜4负 | 胜率: 33.3%</div>
-      <div class="stat-row">
+      <h1>巫师／龙族</h1>
+      <div class="subtitle">ウィッチ/ドラゴン 双职业卡组详情：名次、参赛人数、选手、卡组码与构筑链接。</div>
+      <div class="meta-row">
         <span class="stat-pill">卡组数: 4</span>
         <span class="stat-pill">淘汰赛胜场: 2</span>
         <span class="stat-pill">淘汰赛负场: 4</span>
@@ -62,270 +97,765 @@
     </div>
 
     <div class="section">
-      <h2>最佳卡组构筑</h2>
-      <div class="best-deck-note">最佳成绩: <span class="rank-badge" style="background:#cd7f32">3</span> 3/53 (0.0566)｜2026/09/13｜サラダ油次郎｜<a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a></div>
-      <div class="core-card-row"><div class="core-card-tile"><img  src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" width="72" height="101" loading="lazy"><span>栄光の華・エレノア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" width="72" height="101" loading="lazy"><span>ジャンピング・ジル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" width="72" height="101" loading="lazy"><span>ジュエリーマネージャー・フラージュ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" width="72" height="101" loading="lazy"><span>ダークメタル・バイコーン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" width="72" height="101" loading="lazy"><span>ブリリアントカット</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" width="72" height="101" loading="lazy"><span>越光の六銘伝・マナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" width="72" height="101" loading="lazy"><span>カースドソーサラー・リーズ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" width="72" height="101" loading="lazy"><span>ジュエリーアドバイザー</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" width="72" height="101" loading="lazy"><span>ジュエリーバウンサー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" width="72" height="101" loading="lazy"><span>ダイナマイト・ジャグラー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" width="72" height="101" loading="lazy"><span>紡ぎ繋ぐ糸・エヴァミア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" width="72" height="101" loading="lazy"><span>ミストレス・ハリケーン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" width="72" height="101" loading="lazy"><span>虐殺のドラゴニュート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" width="72" height="101" loading="lazy"><span>密かなる商談</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"><span>ウルズ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" width="72" height="101" loading="lazy"><span>マギスの魔導師</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" width="72" height="101" loading="lazy"><span>越光の六銘伝・マナ</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" width="72" height="101" loading="lazy"><span>ジュエリーアドバイザー</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP18-052.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" width="72" height="101" loading="lazy"><span>ジュエリーバウンサー</span><small>进化 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" width="72" height="101" loading="lazy"><span>虐殺のドラゴニュート</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"><span>ウルズ</span><small>进化 × 1</small></div></div>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
+      <div class="best-deck-note" id="best-deck-note">最佳卡组：サラダ油次郎｜3/53｜(0.0566)｜2026/09/13｜<a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a></div>
+      <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" data-zone="主卡组" data-num="BP17-039" loading="lazy" decoding="async"><span>主BP17-039：栄光の華・エレノア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" data-zone="主卡组" data-num="BP18-041" loading="lazy" decoding="async"><span>主BP18-041：ジュエリーマネージャー・フラージュ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" data-zone="主卡组" data-num="BP18-046" loading="lazy" decoding="async"><span>主BP18-046：ブリリアントカット</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" data-zone="主卡组" data-num="CP03-052" loading="lazy" decoding="async"><span>主CP03-052：ダークメタル・バイコーン</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" data-zone="主卡组" data-num="CP03-060" loading="lazy" decoding="async"><span>主CP03-060：ジャンピング・ジル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="主卡组" data-num="BP18-039" loading="lazy" decoding="async"><span>主BP18-039：越光の六銘伝・マナ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="主卡组" data-num="BP18-047" loading="lazy" decoding="async"><span>主BP18-047：ジュエリーアドバイザー</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="主卡组" data-num="BP18-051" loading="lazy" decoding="async"><span>主BP18-051：ジュエリーバウンサー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" data-zone="主卡组" data-num="BP21-047" loading="lazy" decoding="async"><span>主BP21-047：カースドソーサラー・リーズ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" data-zone="主卡组" data-num="BP21-051" loading="lazy" decoding="async"><span>主BP21-051：紡ぎ繋ぐ糸・エヴァミア</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" data-zone="主卡组" data-num="CP03-048" loading="lazy" decoding="async"><span>主CP03-048：ミストレス・ハリケーン</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" data-zone="主卡组" data-num="CP03-056" loading="lazy" decoding="async"><span>主CP03-056：ダイナマイト・ジャグラー</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="主卡组" data-num="BP10-060" loading="lazy" decoding="async"><span>主BP10-060：虐殺のドラゴニュート</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" data-zone="主卡组" data-num="BP18-050" loading="lazy" decoding="async"><span>主BP18-050：密かなる商談</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"><span>主BP01-155：ウルズ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" data-zone="主卡组" data-num="BP17-051" loading="lazy" decoding="async"><span>主BP17-051：マギスの魔導師</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"><span>进BP01-156：ウルズ</span><small>进化 × 1</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="进化" data-num="BP10-061" loading="lazy" decoding="async"><span>进BP10-061：虐殺のドラゴニュート</span><small>进化 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="进化" data-num="BP18-040" loading="lazy" decoding="async"><span>进BP18-040：越光の六銘伝・マナ</span><small>进化 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="进化" data-num="BP18-048" loading="lazy" decoding="async"><span>进BP18-048：ジュエリーアドバイザー</span><small>进化 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP18-052.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="进化" data-num="BP18-052" loading="lazy" decoding="async"><span>进BP18-052：ジュエリーバウンサー</span><small>进化 × 3</small></div></div>
     </div>
 
     <div class="section">
-      <h2>全部卡组列表</h2>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead>
-            <tr>
-              <th>名次</th>
-              <th>参赛人数</th>
-              <th>选手</th>
-              <th>淘汰赛战绩</th>
-              <th>成绩系数</th>
-              <th>卡组码</th>
-              <th>与最佳差异(+)</th>
-              <th>与最佳差异(-)</th>
-              <th>日期</th>
-            </tr>
-          </thead>
-          <tbody><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#cd7f32">3</span></td>
-      <td style="text-align:center">53</td>
-      <td>サラダ油次郎</td>
-      <td style="text-align:center">1胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0566</td>
-      <td><a href="https://decklog.bushiroad.com/view/XSLNC" class="deck-code" target="_blank" rel="noopener">XSLNC</a></td>
-      <td></td>
-      <td></td>
-      <td>2026/09/13<br><a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">4</span></td>
-      <td style="text-align:center">53</td>
-      <td>黒木</td>
-      <td style="text-align:center">1胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0755</td>
-      <td><a href="https://decklog.bushiroad.com/view/2T5RKW" class="deck-code" target="_blank" rel="noopener">2T5RKW</a></td>
-      <td><span class="diff-item">+2 剛爪の看守</span> <span class="diff-item">+3 ワンダーコック</span> <span class="diff-item">+5 干絶の飢餓・ギルネリーゼ</span> <span class="diff-item">+5 熱中の研究者</span> <span class="diff-item">+3 没頭の実験体</span> <span class="diff-item">+3 光の道筋</span> <span class="diff-item">+1 竜の託宣</span> <span class="diff-item">+6 忘我の才媛</span> <span class="diff-item">+1 天使の恩寵</span> <span class="diff-item">+1 タル子マン</span> <span class="diff-item">+5 耽溺の咎人・セフィー</span> <span class="diff-item">+2 変異の巨竜</span> <span class="diff-item">+4 波濤のプレシオサウルス</span> <span class="diff-item">+3 雲海の騎竜兵</span> <span class="diff-item">+3 猛火のティラノサウルス</span> <span class="diff-item">+3 開闢の予言者</span></td>
-      <td><span class="diff-item">-3 栄光の華・エレノア</span> <span class="diff-item">-3 ジャンピング・ジル</span> <span class="diff-item">-3 ジュエリーマネージャー・フラージュ</span> <span class="diff-item">-3 ダークメタル・バイコーン</span> <span class="diff-item">-3 ブリリアントカット</span> <span class="diff-item">-5 越光の六銘伝・マナ</span> <span class="diff-item">-3 カースドソーサラー・リーズ</span> <span class="diff-item">-4 ジュエリーアドバイザー</span> <span class="diff-item">-6 ジュエリーバウンサー</span> <span class="diff-item">-1 ダイナマイト・ジャグラー</span> <span class="diff-item">-2 紡ぎ繋ぐ糸・エヴァミア</span> <span class="diff-item">-2 ミストレス・ハリケーン</span> <span class="diff-item">-5 虐殺のドラゴニュート</span> <span class="diff-item">-2 密かなる商談</span> <span class="diff-item">-2 ウルズ</span> <span class="diff-item">-3 マギスの魔導師</span></td>
-      <td>2026/09/13<br><a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">5</span></td>
-      <td style="text-align:center">55</td>
-      <td>オウノ</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0909</td>
-      <td><a href="https://decklog.bushiroad.com/view/1CG8F6" class="deck-code" target="_blank" rel="noopener">1CG8F6</a></td>
-      <td><span class="diff-item">+3 グレアの炎熱</span> <span class="diff-item">+3 宿題やるですぅ！</span> <span class="diff-item">+3 製造術</span> <span class="diff-item">+3 マナリアの叡智</span> <span class="diff-item">+3 マナリアの知識</span> <span class="diff-item">+3 魔力の蓄積</span> <span class="diff-item">+3 竜の託宣</span> <span class="diff-item">+3 いつか、また会う未来で</span> <span class="diff-item">+1 スキュア</span> <span class="diff-item">+3 魔力の充填</span> <span class="diff-item">+2 願望の実現</span> <span class="diff-item">+3 マナリアパーティー</span> <span class="diff-item">+3 魔道具専門店</span> <span class="diff-item">+3 次元の超越</span> <span class="diff-item">+9 ドライブポイント</span></td>
-      <td><span class="diff-item">-3 栄光の華・エレノア</span> <span class="diff-item">-3 ジャンピング・ジル</span> <span class="diff-item">-3 ジュエリーマネージャー・フラージュ</span> <span class="diff-item">-3 ダークメタル・バイコーン</span> <span class="diff-item">-3 ブリリアントカット</span> <span class="diff-item">-5 越光の六銘伝・マナ</span> <span class="diff-item">-3 カースドソーサラー・リーズ</span> <span class="diff-item">-4 ジュエリーアドバイザー</span> <span class="diff-item">-6 ジュエリーバウンサー</span> <span class="diff-item">-1 ダイナマイト・ジャグラー</span> <span class="diff-item">-2 紡ぎ繋ぐ糸・エヴァミア</span> <span class="diff-item">-2 ミストレス・ハリケーン</span> <span class="diff-item">-5 虐殺のドラゴニュート</span> <span class="diff-item">-2 密かなる商談</span> <span class="diff-item">-3 マギスの魔導師</span></td>
-      <td>2026/09/05<br><a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">8</span></td>
-      <td style="text-align:center">53</td>
-      <td>アカツキ</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.1509</td>
-      <td><a href="https://decklog.bushiroad.com/view/YAHQG" class="deck-code" target="_blank" rel="noopener">YAHQG</a></td>
-      <td></td>
-      <td></td>
-      <td>2026/09/13<br><a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr></tbody>
-        </table>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
       </div>
+      <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">4</span> 黒木</b>
+            <span>4/53｜2026/09/13｜<a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:波濤のプレシオサウルス +3"><img class="card-zoomable" src="../assets/cards/BP12-SL14.jpg" alt="波濤のプレシオサウルス" data-cn="" data-jp="波濤のプレシオサウルス" data-zone="主卡组" data-num="BP12-SL14" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:耽溺の咎人・セフィー +3"><img class="card-zoomable" src="../assets/cards/BP19-SL10.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" data-zone="主卡组" data-num="BP19-SL10" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:干絶の飢餓・ギルネリーゼ +3"><img class="card-zoomable" src="../assets/cards/BP15-SL29.jpg" alt="干絶の飢餓・ギルネリーゼ" data-cn="" data-jp="干絶の飢餓・ギルネリーゼ" data-zone="主卡组" data-num="BP15-SL29" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:光の道筋 +3"><img class="card-zoomable" src="../assets/cards/PR-210.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" data-zone="主卡组" data-num="PR-210" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:開闢の予言者 +3"><img class="card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:没頭の実験体 +3"><img class="card-zoomable" src="../assets/cards/PR-518.jpg" alt="没頭の実験体" data-cn="" data-jp="没頭の実験体" data-zone="主卡组" data-num="PR-518" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:猛火のティラノサウルス +3"><img class="card-zoomable" src="../assets/cards/PR-334.jpg" alt="猛火のティラノサウルス" data-cn="" data-jp="猛火のティラノサウルス" data-zone="主卡组" data-num="PR-334" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:熱中の研究者 +3"><img class="card-zoomable" src="../assets/cards/BP19-P14.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" data-zone="主卡组" data-num="BP19-P14" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:忘我の才媛 +3"><img class="card-zoomable" src="../assets/cards/BP19-P11.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" data-zone="主卡组" data-num="BP19-P11" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="进:忘我の才媛 +3"><img class="card-zoomable" src="../assets/cards/BP19-P12.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" data-zone="进化" data-num="BP19-P12" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:雲海の騎竜兵 +3"><img class="card-zoomable" src="../assets/cards/BP16-072.jpg" alt="雲海の騎竜兵" data-cn="" data-jp="雲海の騎竜兵" data-zone="主卡组" data-num="BP16-072" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:ワンダーコック +3"><img class="card-zoomable" src="../assets/cards/PR-205.jpg" alt="ワンダーコック" data-cn="" data-jp="ワンダーコック" data-zone="主卡组" data-num="PR-205" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:変異の巨竜 +2"><img class="card-zoomable" src="../assets/cards/BP02-061.jpg" alt="変異の巨竜" data-cn="" data-jp="変異の巨竜" data-zone="主卡组" data-num="BP02-061" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:耽溺の咎人・セフィー +2"><img class="card-zoomable" src="../assets/cards/BP19-U03.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" data-zone="进化" data-num="BP19-U03" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:干絶の飢餓・ギルネリーゼ +2"><img class="card-zoomable" src="../assets/cards/BP15-U07.jpg" alt="干絶の飢餓・ギルネリーゼ" data-cn="" data-jp="干絶の飢餓・ギルネリーゼ" data-zone="进化" data-num="BP15-U07" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:剛爪の看守 +2"><img class="card-zoomable" src="../assets/cards/BP19-P16.jpg" alt="剛爪の看守" data-cn="" data-jp="剛爪の看守" data-zone="主卡组" data-num="BP19-P16" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:熱中の研究者 +2"><img class="card-zoomable" src="../assets/cards/BP19-P15.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" data-zone="进化" data-num="BP19-P15" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:波濤のプレシオサウルス +1"><img class="card-zoomable" src="../assets/cards/BP12-U04.jpg" alt="波濤のプレシオサウルス" data-cn="" data-jp="波濤のプレシオサウルス" data-zone="进化" data-num="BP12-U04" loading="lazy" decoding="async"><b>+1</b></span><span class="diff-card" title="主:竜の託宣 +1"><img class="card-zoomable" src="../assets/cards/PR-209.jpg" alt="竜の託宣" data-cn="" data-jp="竜の託宣" data-zone="主卡组" data-num="PR-209" loading="lazy" decoding="async"><b>+1</b></span><span class="diff-card" title="主:天使の恩寵 +1"><img class="card-zoomable" src="../assets/cards/BP14-110.jpg" alt="天使の恩寵" data-cn="" data-jp="天使の恩寵" data-zone="主卡组" data-num="BP14-110" loading="lazy" decoding="async"><b>+1</b></span><span class="diff-card" title="主:タル子マン +1"><img class="card-zoomable" src="../assets/cards/BP08-U07.jpg" alt="タル子マン" data-cn="" data-jp="タル子マン" data-zone="主卡组" data-num="BP08-U07" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:虐殺のドラゴニュート -3"><img class="card-zoomable" src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="主卡组" data-num="BP10-060" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:栄光の華・エレノア -3"><img class="card-zoomable" src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" data-zone="主卡组" data-num="BP17-039" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:越光の六銘伝・マナ -3"><img class="card-zoomable" src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="主卡组" data-num="BP18-039" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:カースドソーサラー・リーズ -3"><img class="card-zoomable" src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" data-zone="主卡组" data-num="BP21-047" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジャンピング・ジル -3"><img class="card-zoomable" src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" data-zone="主卡组" data-num="CP03-060" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジュエリーバウンサー -3"><img class="card-zoomable" src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="主卡组" data-num="BP18-051" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="进:ジュエリーバウンサー -3"><img class="card-zoomable" src="../assets/cards/BP18-052.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="进化" data-num="BP18-052" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジュエリーマネージャー・フラージュ -3"><img class="card-zoomable" src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" data-zone="主卡组" data-num="BP18-041" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ダークメタル・バイコーン -3"><img class="card-zoomable" src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" data-zone="主卡组" data-num="CP03-052" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ブリリアントカット -3"><img class="card-zoomable" src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" data-zone="主卡组" data-num="BP18-046" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:マギスの魔導師 -3"><img class="card-zoomable" src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" data-zone="主卡组" data-num="BP17-051" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:紡ぎ繋ぐ糸・エヴァミア -2"><img class="card-zoomable" src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" data-zone="主卡组" data-num="BP21-051" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:密かなる商談 -2"><img class="card-zoomable" src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" data-zone="主卡组" data-num="BP18-050" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:虐殺のドラゴニュート -2"><img class="card-zoomable" src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="进化" data-num="BP10-061" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:越光の六銘伝・マナ -2"><img class="card-zoomable" src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="进化" data-num="BP18-040" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ジュエリーアドバイザー -2"><img class="card-zoomable" src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="主卡组" data-num="BP18-047" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:ジュエリーアドバイザー -2"><img class="card-zoomable" src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="进化" data-num="BP18-048" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ミストレス・ハリケーン -2"><img class="card-zoomable" src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" data-zone="主卡组" data-num="CP03-048" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ウルズ -1"><img class="card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ウルズ -1"><img class="card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="主:ダイナマイト・ジャグラー -1"><img class="card-zoomable" src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" data-zone="主卡组" data-num="CP03-056" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">5</span> オウノ</b>
+            <span>5/55｜2026/09/05｜<a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="进:ドライブポイント +9"><img class="card-zoomable" src="../assets/cards/CP03-127.jpg" alt="ドライブポイント" data-cn="" data-jp="ドライブポイント" data-zone="进化" data-num="CP03-127" loading="lazy" decoding="async"><b>+9</b></span><span class="diff-card" title="主:次元の超越 +3"><img class="card-zoomable" src="../assets/cards/BP01-057.jpg" alt="次元の超越" data-cn="" data-jp="次元の超越" data-zone="主卡组" data-num="BP01-057" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:竜の託宣 +3"><img class="card-zoomable" src="../assets/cards/PR-209.jpg" alt="竜の託宣" data-cn="" data-jp="竜の託宣" data-zone="主卡组" data-num="PR-209" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:魔道具専門店 +3"><img class="card-zoomable" src="../assets/cards/BP12-045.jpg" alt="魔道具専門店" data-cn="" data-jp="魔道具専門店" data-zone="主卡组" data-num="BP12-045" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:魔力の充填 +3"><img class="card-zoomable" src="../assets/cards/BP14-051.jpg" alt="魔力の充填" data-cn="" data-jp="魔力の充填" data-zone="主卡组" data-num="BP14-051" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:魔力の蓄積 +3"><img class="card-zoomable" src="../assets/cards/BP01-072.jpg" alt="魔力の蓄積" data-cn="" data-jp="魔力の蓄積" data-zone="主卡组" data-num="BP01-072" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:宿題やるですぅ！ +3"><img class="card-zoomable" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" data-zone="主卡组" data-num="BP16-045" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:製造術 +3"><img class="card-zoomable" src="../assets/cards/BP05-051.jpg" alt="製造術" data-cn="" data-jp="製造術" data-zone="主卡组" data-num="BP05-051" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:いつか、また会う未来で +3"><img class="card-zoomable" src="../assets/cards/CP04-062.jpg" alt="いつか、また会う未来で" data-cn="" data-jp="いつか、また会う未来で" data-zone="主卡组" data-num="CP04-062" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:グレアの炎熱 +3"><img class="card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:マナリアの叡智 +3"><img class="card-zoomable" src="../assets/cards/BP17-054.jpg" alt="マナリアの叡智" data-cn="" data-jp="マナリアの叡智" data-zone="主卡组" data-num="BP17-054" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:マナリアの知識 +3"><img class="card-zoomable" src="../assets/cards/DSD01a-014.jpg" alt="マナリアの知識" data-cn="" data-jp="マナリアの知識" data-zone="主卡组" data-num="DSD01a-014" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:マナリアパーティー +3"><img class="card-zoomable" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" data-zone="主卡组" data-num="BP21-043" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:願望の実現 +2"><img class="card-zoomable" src="../assets/cards/BP14-046.jpg" alt="願望の実現" data-cn="" data-jp="願望の実現" data-zone="主卡组" data-num="BP14-046" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:スキュア +1"><img class="card-zoomable" src="../assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" data-zone="主卡组" data-num="BP10-052" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:虐殺のドラゴニュート -3"><img class="card-zoomable" src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="主卡组" data-num="BP10-060" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:栄光の華・エレノア -3"><img class="card-zoomable" src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" data-zone="主卡组" data-num="BP17-039" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:越光の六銘伝・マナ -3"><img class="card-zoomable" src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="主卡组" data-num="BP18-039" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:カースドソーサラー・リーズ -3"><img class="card-zoomable" src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" data-zone="主卡组" data-num="BP21-047" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジャンピング・ジル -3"><img class="card-zoomable" src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" data-zone="主卡组" data-num="CP03-060" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジュエリーバウンサー -3"><img class="card-zoomable" src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="主卡组" data-num="BP18-051" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="进:ジュエリーバウンサー -3"><img class="card-zoomable" src="../assets/cards/BP18-052.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="进化" data-num="BP18-052" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ジュエリーマネージャー・フラージュ -3"><img class="card-zoomable" src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" data-zone="主卡组" data-num="BP18-041" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ダークメタル・バイコーン -3"><img class="card-zoomable" src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" data-zone="主卡组" data-num="CP03-052" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:ブリリアントカット -3"><img class="card-zoomable" src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" data-zone="主卡组" data-num="BP18-046" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:マギスの魔導師 -3"><img class="card-zoomable" src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" data-zone="主卡组" data-num="BP17-051" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:紡ぎ繋ぐ糸・エヴァミア -2"><img class="card-zoomable" src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" data-zone="主卡组" data-num="BP21-051" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:密かなる商談 -2"><img class="card-zoomable" src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" data-zone="主卡组" data-num="BP18-050" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:虐殺のドラゴニュート -2"><img class="card-zoomable" src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="进化" data-num="BP10-061" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:越光の六銘伝・マナ -2"><img class="card-zoomable" src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="进化" data-num="BP18-040" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ジュエリーアドバイザー -2"><img class="card-zoomable" src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="主卡组" data-num="BP18-047" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:ジュエリーアドバイザー -2"><img class="card-zoomable" src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="进化" data-num="BP18-048" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ミストレス・ハリケーン -2"><img class="card-zoomable" src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" data-zone="主卡组" data-num="CP03-048" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:ダイナマイト・ジャグラー -1"><img class="card-zoomable" src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" data-zone="主卡组" data-num="CP03-056" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">8</span> アカツキ</b>
+            <span>8/53｜2026/09/13｜<a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/YAHQG" target="_blank" rel="noopener">YAHQG</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <span class="diff-empty">无增加</span>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <span class="diff-empty">无减少</span>
+          </section>
+        </div>
+      </article></div></div>
     </div>
 
     <div class="section">
       <h2>卡牌使用率</h2>
-      <h3>主卡组</h3>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+      <div class="usage-note">统计范围：该职业组合下的 4 套卡组记录；同名不同编号合并，主卡组与进化卡组分开统计；3张列包含实际投入3张及以上的记录。</div>
+      <h3 class="usage-subtitle">主卡组使用率</h3>
+      <div class="table-wrap usage">
+        <table class="deck-table usage-table">
+          <thead>
+            <tr>
+              <th style="text-align:center">图片</th>
+              <th style="text-align:center">平均张数</th>
+              <th style="text-align:center">使用率</th>
+              <th style="text-align:center">携带最好成绩</th>
+              <th style="text-align:center">不携带最好成绩</th>
+              <th style="text-align:center">1张比例</th>
+              <th style="text-align:center">2张比例</th>
+              <th style="text-align:center">3张比例</th>
+            </tr>
+          </thead>
           <tbody>
     <tr>
-      <td style="text-align:center">1</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"></td>
-      <td>ウルズ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
       <td style="text-align:center">75.0%</td>
-    </tr>
-    <tr>
-      <td style="text-align:center">2</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"></td>
-      <td>ウルズ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
       <td style="text-align:center">75.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">3</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" width="72" height="101" loading="lazy"></td>
-      <td>虐殺のドラゴニュート</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">2</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP10-060.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="主卡组" data-num="BP10-060" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">50.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">4</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" width="72" height="101" loading="lazy"></td>
-      <td>マギスの魔導師</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">2</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" data-zone="主卡组" data-num="BP17-039" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">50.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">5</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" width="72" height="101" loading="lazy"></td>
-      <td>虐殺のドラゴニュート</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">2</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="主卡组" data-num="BP18-039" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">50.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">6</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP17-039.jpg" alt="栄光の華・エレノア" data-cn="" data-jp="栄光の華・エレノア" width="72" height="101" loading="lazy"></td>
-      <td>栄光の華・エレノア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" data-zone="主卡组" data-num="BP21-047" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" data-zone="主卡组" data-num="CP03-060" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="主卡组" data-num="BP18-051" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" data-zone="主卡组" data-num="BP18-041" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" data-zone="主卡组" data-num="CP03-052" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" data-zone="主卡组" data-num="BP18-046" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP17-051.jpg" alt="マギスの魔導師" data-cn="" data-jp="マギスの魔導師" data-zone="主卡组" data-num="BP17-051" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" data-zone="主卡组" data-num="BP21-051" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-209.jpg" alt="竜の託宣" data-cn="" data-jp="竜の託宣" data-zone="主卡组" data-num="PR-209" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">7</td>
-      <td><img class="usage-card-img" src="../assets/cards/CP03-060.jpg" alt="ジャンピング・ジル" data-cn="" data-jp="ジャンピング・ジル" width="72" height="101" loading="lazy"></td>
-      <td>ジャンピング・ジル</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" data-zone="主卡组" data-num="BP18-050" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="主卡组" data-num="BP18-047" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" data-zone="主卡组" data-num="CP03-048" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" data-zone="主卡组" data-num="CP03-056" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP12-SL14.jpg" alt="波濤のプレシオサウルス" data-cn="" data-jp="波濤のプレシオサウルス" data-zone="主卡组" data-num="BP12-SL14" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">8</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-041.jpg" alt="ジュエリーマネージャー・フラージュ" data-cn="" data-jp="ジュエリーマネージャー・フラージュ" width="72" height="101" loading="lazy"></td>
-      <td>ジュエリーマネージャー・フラージュ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-057.jpg" alt="次元の超越" data-cn="" data-jp="次元の超越" data-zone="主卡组" data-num="BP01-057" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">9</td>
-      <td><img class="usage-card-img" src="../assets/cards/CP03-052.jpg" alt="ダークメタル・バイコーン" data-cn="" data-jp="ダークメタル・バイコーン" width="72" height="101" loading="lazy"></td>
-      <td>ダークメタル・バイコーン</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-SL10.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" data-zone="主卡组" data-num="BP19-SL10" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">10</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-046.jpg" alt="ブリリアントカット" data-cn="" data-jp="ブリリアントカット" width="72" height="101" loading="lazy"></td>
-      <td>ブリリアントカット</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-SL29.jpg" alt="干絶の飢餓・ギルネリーゼ" data-cn="" data-jp="干絶の飢餓・ギルネリーゼ" data-zone="主卡组" data-num="BP15-SL29" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">11</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-039.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" width="72" height="101" loading="lazy"></td>
-      <td>越光の六銘伝・マナ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-210.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" data-zone="主卡组" data-num="PR-210" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">12</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-047.jpg" alt="カースドソーサラー・リーズ" data-cn="" data-jp="カースドソーサラー・リーズ" width="72" height="101" loading="lazy"></td>
-      <td>カースドソーサラー・リーズ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">13</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-047.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" width="72" height="101" loading="lazy"></td>
-      <td>ジュエリーアドバイザー</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-518.jpg" alt="没頭の実験体" data-cn="" data-jp="没頭の実験体" data-zone="主卡组" data-num="PR-518" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">14</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-051.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" width="72" height="101" loading="lazy"></td>
-      <td>ジュエリーバウンサー</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-334.jpg" alt="猛火のティラノサウルス" data-cn="" data-jp="猛火のティラノサウルス" data-zone="主卡组" data-num="PR-334" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">15</td>
-      <td><img class="usage-card-img" src="../assets/cards/CP03-056.jpg" alt="ダイナマイト・ジャグラー" data-cn="" data-jp="ダイナマイト・ジャグラー" width="72" height="101" loading="lazy"></td>
-      <td>ダイナマイト・ジャグラー</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP12-045.jpg" alt="魔道具専門店" data-cn="" data-jp="魔道具専門店" data-zone="主卡组" data-num="BP12-045" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">16</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-051.jpg" alt="紡ぎ繋ぐ糸・エヴァミア" data-cn="" data-jp="紡ぎ繋ぐ糸・エヴァミア" width="72" height="101" loading="lazy"></td>
-      <td>紡ぎ繋ぐ糸・エヴァミア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP14-051.jpg" alt="魔力の充填" data-cn="" data-jp="魔力の充填" data-zone="主卡组" data-num="BP14-051" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">17</td>
-      <td><img class="usage-card-img" src="../assets/cards/CP03-048.jpg" alt="ミストレス・ハリケーン" data-cn="" data-jp="ミストレス・ハリケーン" width="72" height="101" loading="lazy"></td>
-      <td>ミストレス・ハリケーン</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-072.jpg" alt="魔力の蓄積" data-cn="" data-jp="魔力の蓄積" data-zone="主卡组" data-num="BP01-072" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">18</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-050.jpg" alt="密かなる商談" data-cn="" data-jp="密かなる商談" width="72" height="101" loading="lazy"></td>
-      <td>密かなる商談</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-P14.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" data-zone="主卡组" data-num="BP19-P14" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">19</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" width="72" height="101" loading="lazy"></td>
-      <td>越光の六銘伝・マナ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" data-zone="主卡组" data-num="BP16-045" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">25.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">20</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" width="72" height="101" loading="lazy"></td>
-      <td>ジュエリーアドバイザー</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">1</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-P11.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" data-zone="主卡组" data-num="BP19-P11" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
       <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP16-072.jpg" alt="雲海の騎竜兵" data-cn="" data-jp="雲海の騎竜兵" data-zone="主卡组" data-num="BP16-072" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP05-051.jpg" alt="製造術" data-cn="" data-jp="製造術" data-zone="主卡组" data-num="BP05-051" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP04-062.jpg" alt="いつか、また会う未来で" data-cn="" data-jp="いつか、また会う未来で" data-zone="主卡组" data-num="CP04-062" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP17-054.jpg" alt="マナリアの叡智" data-cn="" data-jp="マナリアの叡智" data-zone="主卡组" data-num="BP17-054" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/DSD01a-014.jpg" alt="マナリアの知識" data-cn="" data-jp="マナリアの知識" data-zone="主卡组" data-num="DSD01a-014" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" data-zone="主卡组" data-num="BP21-043" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-205.jpg" alt="ワンダーコック" data-cn="" data-jp="ワンダーコック" data-zone="主卡组" data-num="PR-205" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP02-061.jpg" alt="変異の巨竜" data-cn="" data-jp="変異の巨竜" data-zone="主卡组" data-num="BP02-061" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-P16.jpg" alt="剛爪の看守" data-cn="" data-jp="剛爪の看守" data-zone="主卡组" data-num="BP19-P16" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP14-046.jpg" alt="願望の実現" data-cn="" data-jp="願望の実現" data-zone="主卡组" data-num="BP14-046" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP14-110.jpg" alt="天使の恩寵" data-cn="" data-jp="天使の恩寵" data-zone="主卡组" data-num="BP14-110" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.25</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" data-zone="主卡组" data-num="BP10-052" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.25</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP08-U07.jpg" alt="タル子マン" data-cn="" data-jp="タル子マン" data-zone="主卡组" data-num="BP08-U07" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.25</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
     </tr></tbody>
         </table>
       </div>
-      <h3>进化卡组</h3>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
-          <tbody><tr><td colspan="6" style="text-align:center;color:#8899aa">暂无数据</td></tr></tbody>
+      <h3 class="usage-subtitle">进化卡组使用率</h3>
+      <div class="table-wrap usage">
+        <table class="deck-table usage-table">
+          <thead>
+            <tr>
+              <th style="text-align:center">图片</th>
+              <th style="text-align:center">平均张数</th>
+              <th style="text-align:center">使用率</th>
+              <th style="text-align:center">携带最好成绩</th>
+              <th style="text-align:center">不携带最好成绩</th>
+              <th style="text-align:center">1张比例</th>
+              <th style="text-align:center">2张比例</th>
+              <th style="text-align:center">3张比例</th>
+            </tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">75.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">75.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-052.jpg" alt="ジュエリーバウンサー" data-cn="" data-jp="ジュエリーバウンサー" data-zone="进化" data-num="BP18-052" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP10-061.jpg" alt="虐殺のドラゴニュート" data-cn="" data-jp="虐殺のドラゴニュート" data-zone="进化" data-num="BP10-061" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-040.jpg" alt="越光の六銘伝・マナ" data-cn="" data-jp="越光の六銘伝・マナ" data-zone="进化" data-num="BP18-040" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP18-048.jpg" alt="ジュエリーアドバイザー" data-cn="" data-jp="ジュエリーアドバイザー" data-zone="进化" data-num="BP18-048" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.00</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP03-127.jpg" alt="ドライブポイント" data-cn="" data-jp="ドライブポイント" data-zone="进化" data-num="CP03-127" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.25</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">5</span> 5/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1CG8F6" target="_blank" rel="noopener">1CG8F6</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-P12.jpg" alt="忘我の才媛" data-cn="" data-jp="忘我の才媛" data-zone="进化" data-num="BP19-P12" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.75</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-U03.jpg" alt="耽溺の咎人・セフィー" data-cn="" data-jp="耽溺の咎人・セフィー" data-zone="进化" data-num="BP19-U03" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-U07.jpg" alt="干絶の飢餓・ギルネリーゼ" data-cn="" data-jp="干絶の飢餓・ギルネリーゼ" data-zone="进化" data-num="BP15-U07" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-P15.jpg" alt="熱中の研究者" data-cn="" data-jp="熱中の研究者" data-zone="进化" data-num="BP19-P15" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP12-U04.jpg" alt="波濤のプレシオサウルス" data-cn="" data-jp="波濤のプレシオサウルス" data-zone="进化" data-num="BP12-U04" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.25</td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">4</span> 4/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/2T5RKW" target="_blank" rel="noopener">2T5RKW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/XSLNC" target="_blank" rel="noopener">XSLNC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">25.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr></tbody>
         </table>
       </div>
     </div>
   </div>
+<script>
+(function() {
+  function setupCoreToggle() {
+    var row = document.getElementById('core-card-row');
+    var button = document.getElementById('core-toggle');
+    if (!row || !button) return;
+    row.classList.add('is-collapsed');
+    row.style.maxHeight = '';
+    button.textContent = '展开完整构筑';
+    button.style.display = '';
+    function firstRowHeight() {
+      var items = Array.prototype.slice.call(row.children || []);
+      if (!items.length) return 0;
+      var firstTop = items[0].offsetTop;
+      var maxBottom = 0;
+      items.forEach(function(item) {
+        if (item.offsetTop === firstTop) {
+          maxBottom = Math.max(maxBottom, item.offsetTop + item.offsetHeight);
+        }
+      });
+      return Math.max(0, maxBottom - firstTop);
+    }
+    var collapsedHeight = firstRowHeight();
+    if (!collapsedHeight || row.scrollHeight <= collapsedHeight + 8) {
+      button.style.display = 'none';
+      row.classList.remove('is-collapsed');
+      row.style.maxHeight = 'none';
+      return;
+    }
+    row.style.maxHeight = collapsedHeight + 'px';
+    button.onclick = function() {
+      var collapsed = row.classList.toggle('is-collapsed');
+      row.style.maxHeight = collapsed ? collapsedHeight + 'px' : 'none';
+      button.textContent = collapsed ? '展开完整构筑' : '收起完整构筑';
+    };
+  }
+  function setupComparisonToggle() {
+    var wrap = document.getElementById('comparison-cards');
+    var button = document.getElementById('comparison-toggle');
+    if (!wrap || !button) return;
+    wrap.classList.add('is-collapsed');
+    button.textContent = '展开其他卡组对比';
+    button.style.display = '';
+    if (wrap.scrollHeight <= 540) {
+      button.style.display = 'none';
+      wrap.classList.remove('is-collapsed');
+      return;
+    }
+    button.onclick = function() {
+      var collapsed = wrap.classList.toggle('is-collapsed');
+      button.textContent = collapsed ? '展开其他卡组对比' : '收起其他卡组对比';
+    };
+  }
+  setupCoreToggle();
+  setupComparisonToggle();
+})();
 
-  <div class="modal-overlay" id="card-modal" onclick="if(event.target===this)this.classList.remove('active')">
-    <div class="modal-content">
-      <span class="modal-close" onclick="document.getElementById('card-modal').classList.remove('active')">&times;</span>
-      <h3 id="modal-jp-name"></h3>
-      <div class="cn-name" id="modal-cn-name"></div>
-    </div>
-  </div>
-  <script>
-    document.addEventListener('click', function(e) {
-      if (e.target.tagName === 'IMG' && e.target.dataset.jp) {
-        document.getElementById('modal-jp-name').textContent = e.target.dataset.jp;
-        document.getElementById('modal-cn-name').textContent = e.target.dataset.cn || '（暂无中文翻译）';
-        document.getElementById('card-modal').classList.add('active');
-      }
-    });
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') document.getElementById('card-modal').classList.remove('active');
-    });
-  </script>
+(function() {
+  var overlay = document.createElement('div');
+  overlay.className = 'card-modal-overlay';
+  overlay.innerHTML = '<div class="card-modal"><img id="card-modal-img" src="" alt=""><div class="card-modal-cn" id="card-modal-cn"></div><div class="card-modal-jp" id="card-modal-jp"></div><div class="card-modal-meta" id="card-modal-meta"></div></div>';
+  document.body.appendChild(overlay);
+  function closeModal() { overlay.classList.remove('active'); }
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('click', function(e) {
+    var img = e.target.closest ? e.target.closest('.card-zoomable') : null;
+    if (!img) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var modalImg = overlay.querySelector('#card-modal-img');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt || '';
+    var cn = img.dataset.cn || '';
+    var cnEl = overlay.querySelector('#card-modal-cn');
+    if (cn) { cnEl.textContent = cn; cnEl.style.color = '#fff'; }
+    else { cnEl.textContent = '暂无中文翻译'; cnEl.style.color = '#8899aa'; }
+    overlay.querySelector('#card-modal-jp').textContent = img.dataset.jp || '';
+    var meta = [];
+    if (img.dataset.zone) meta.push(img.dataset.zone);
+    if (img.dataset.num) meta.push(img.dataset.num);
+    overlay.querySelector('#card-modal-meta').textContent = meta.join(' · ');
+    overlay.classList.add('active');
+  }, true);
+})();
+</script>
 </body>
 </html>

@@ -8,52 +8,87 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
     .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 28px; border-radius: 16px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
-    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 14px; }
+    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 32px 28px; border-radius: 16px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.1); }
+    .back-link { display: inline-block; color: #8bd3ff; text-decoration: none; font-size: 13px; margin-bottom: 18px; }
     .back-link:hover { color: #e94560; text-decoration: underline; }
-    h1 { color: #fff; font-size: 24px; margin-bottom: 8px; }
-    .subtitle { color: #8899aa; font-size: 13px; }
-    .stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    h1 { color: #fff; font-size: 28px; margin-bottom: 10px; }
+    .subtitle { color: #8899aa; font-size: 14px; }
+    .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
     .stat-pill { background: #2a2a3e; padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ccc; }
-    .section { background: #1a1a2e; border-radius: 16px; padding: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); }
-    .section h2 { color: #fff; font-size: 18px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid rgba(255,255,255,0.08); }
-    .section h3 { color: #c9d4e0; font-size: 15px; margin: 14px 0 10px; }
-    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
-    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; }
+    .section { background: #1a1a2e; border-radius: 16px; padding: 24px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.05); }
+    .section h2 { color: #fff; font-size: 20px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #3498db; }
+    .core-card-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; color: #8899aa; font-size: 12px; transition: max-height 0.25s ease; }
+    .core-card-row.is-collapsed { max-height: 330px; overflow: hidden; position: relative; }
+    .core-card-row.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42px; background: linear-gradient(to bottom, rgba(17,24,39,0), #111827); pointer-events: none; }
+    .core-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .core-toggle:hover { background: #e94560; color: #fff; }
     .core-card, .core-card-tile { background: #111827; color: #ddd; border-radius: 10px; padding: 10px; border: 1px solid rgba(255,255,255,0.08); }
-    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; }
+    .core-card-tile img { width: 100%; max-width: 160px; display: block; margin: 0 auto 8px; border-radius: 8px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
     .core-card-tile span { display: block; font-family: Consolas, monospace; line-height: 1.45; }
     .core-card-tile small { display: inline-block; margin-top: 6px; color: #8bd3ff; }
-    .table-wrap { width: 100%; overflow-x: auto; max-height: 720px; }
-    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 900px; }
+    .best-deck-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; font-family: Consolas, 'Microsoft YaHei', sans-serif; }
+    .section-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .section-title-row h2 { margin-bottom: 0; }
+    .diff-list { display: flex; flex-wrap: wrap; gap: 8px; max-width: 260px; }
+    .diff-card { position: relative; display: inline-flex; width: 52px; height: 72px; border-radius: 7px; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); background: #0f172a; box-shadow: 0 5px 12px rgba(0,0,0,0.28); }
+    .diff-card img, .diff-card-placeholder { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .diff-card-placeholder { display: inline-flex; align-items: center; justify-content: center; color: #8899aa; font-size: 11px; }
+    .diff-card b { position: absolute; right: 3px; bottom: 3px; min-width: 24px; padding: 2px 5px; border-radius: 999px; text-align: center; background: rgba(15,23,42,0.88); color: #8bd3ff; font-family: Consolas, monospace; font-size: 12px; }
+    .diff-empty { color: #667085; font-size: 12px; white-space: nowrap; }
+    .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+    .comparison-wrap { transition: max-height 0.25s ease; }
+    .comparison-wrap.is-collapsed { max-height: 520px; overflow: hidden; position: relative; }
+    .comparison-wrap.is-collapsed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(to bottom, rgba(26,26,46,0), #1a1a2e); pointer-events: none; }
+    .comparison-toggle { margin-top: 0; border: 1px solid rgba(255,255,255,0.14); background: #2a2a3e; color: #e0e0e0; border-radius: 999px; padding: 7px 16px; font-size: 12px; cursor: pointer; }
+    .comparison-toggle:hover { background: #e94560; color: #fff; }
+    .comparison-card { background: #111827; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
+    .comparison-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+    .comparison-head b { display: flex; align-items: center; gap: 8px; color: #fff; }
+    .comparison-head span { display: block; color: #8899aa; font-size: 12px; margin-top: 4px; }
+    .comparison-head a { color: #e94560; font-family: Consolas, monospace; text-decoration: none; font-weight: 700; }
+    .comparison-body { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .comparison-body h3 { color: #8bd3ff; font-size: 13px; margin: 0 0 8px; }
+    .comparison-body .diff-list { max-width: none; }
+    .comparison-empty { background: #111827; border-radius: 10px; padding: 14px; color: #8899aa; text-align: center; }
+    .table-wrap { width: 100%; overflow-x: auto; overflow-y: auto; max-height: 720px; }
+    .table-wrap.usage { max-height: 820px; }
+    .deck-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1100px; }
+    .deck-table.usage-table { min-width: 940px; }
     .deck-table th { background: #111; padding: 10px 12px; text-align: left; color: #8899aa; font-weight: 600; font-size: 12px; border-bottom: 2px solid #2a2a3e; position: sticky; top: 0; z-index: 1; }
     .deck-table td { padding: 10px 12px; border-bottom: 1px solid #1a1a2e; color: #ddd; }
     .deck-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .usage-note { color: #8899aa; font-size: 12px; margin: -4px 0 14px; }
+    .usage-subtitle { color: #fff; font-size: 16px; margin: 18px 0 10px; padding-left: 10px; border-left: 3px solid #3498db; }
+    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 6px 14px rgba(0,0,0,0.38); }
+    .usage-card-placeholder { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 78px; border-radius: 6px; background: #2a2a3e; color: #8899aa; font-size: 11px; }
+    .usage-best-no-carry { display: flex; flex-direction: column; align-items: center; gap: 6px; white-space: nowrap; }
+    .usage-best-no-carry span { display: inline-flex; align-items: center; gap: 6px; color: #ddd; font-weight: 700; }
+    .usage-no-data { color: #667788; }
     .rank-badge { display: inline-block; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; text-align: center; font-weight: bold; font-size: 13px; color: #000; }
     .deck-code { font-family: Consolas, monospace; background: #2a2a3e; padding: 2px 8px; border-radius: 4px; color: #e94560; text-decoration: none; font-weight: bold; }
     .event-link { color: #8bd3ff; font-size: 12px; text-decoration: none; }
     .event-link:hover { color: #e94560; text-decoration: underline; }
     .score-cell { font-family: Consolas, monospace; color: #8bd3ff !important; font-weight: 700; }
-    .diff-item { display: inline-block; background: #2a2a3e; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin: 1px; }
-    .usage-card-img { width: 56px; height: 78px; object-fit: cover; border-radius: 6px; display: block; margin: 0 auto; }
-    img[data-jp] { cursor: pointer; }
-    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 999; }
-    .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
-    .modal-content { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; max-width: 500px; width: 90%; }
-    .modal-content h3 { color: #fff; margin-bottom: 10px; }
-    .modal-content .cn-name { color: #8bd3ff; font-size: 14px; margin-bottom: 6px; }
-    .modal-content .jp-name { color: #9aa8bd; font-size: 13px; }
-    .modal-close { float: right; cursor: pointer; color: #9aa8bd; font-size: 20px; }
-    @media (max-width: 760px) { .container { padding: 12px; } h1 { font-size: 18px; } .deck-table { font-size: 11px; min-width: 700px; } }
+    @media (max-width: 768px) { .container { padding: 14px; } h1 { font-size: 22px; } .deck-table { font-size: 12px; } }
+
+    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
+    .card-modal-overlay.active { display: flex; }
+    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 24px 24px 20px; max-width: 300px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
+    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
+    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+    .card-modal .card-modal-jp { font-size: 12px; color: #8899aa; margin-bottom: 8px; }
+    .card-modal .card-modal-meta { font-size: 11px; color: #8bd3ff; font-family: Consolas, monospace; }
+    .card-zoomable { cursor: pointer; transition: transform 0.15s ease; }
+    .card-zoomable:hover { transform: scale(1.05); }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="header" style="border-left:5px solid #3498db">
       <a class="back-link" href="../crossover.html">&#8592; 返回クロスオーバー统计</a>
-      <h1>皇家护卫／巫师 卡组详情</h1>
-      <div class="subtitle">职业组合: ロイヤル/ウィッチ | 卡组数: 6 | 淘汰赛战绩: 2胜6负 | 胜率: 25.0%</div>
-      <div class="stat-row">
+      <h1>皇家护卫／巫师</h1>
+      <div class="subtitle">ロイヤル/ウィッチ 双职业卡组详情：名次、参赛人数、选手、卡组码与构筑链接。</div>
+      <div class="meta-row">
         <span class="stat-pill">卡组数: 6</span>
         <span class="stat-pill">淘汰赛胜场: 2</span>
         <span class="stat-pill">淘汰赛负场: 6</span>
@@ -62,290 +97,703 @@
     </div>
 
     <div class="section">
-      <h2>最佳卡组构筑</h2>
-      <div class="best-deck-note">最佳成绩: <span class="rank-badge" style="background:#cd7f32">3</span> 3/55 (0.0545)｜2026/09/05｜そらん｜<a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a></div>
-      <div class="core-card-row"><div class="core-card-tile"><img  src="../assets/cards/BP21-037.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" width="72" height="101" loading="lazy"><span>御伽の姫・アマリリス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" width="72" height="101" loading="lazy"><span>術式の教師・ジル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" width="72" height="101" loading="lazy"><span>グレアの炎熱</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" width="72" height="101" loading="lazy"><span>宿題やるですぅ！</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP03-030.jpg" alt="プリンセスキス" data-cn="" data-jp="プリンセスキス" width="72" height="101" loading="lazy"><span>プリンセスキス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-114.jpg" alt="大いなる学び舎" data-cn="" data-jp="大いなる学び舎" width="72" height="101" loading="lazy"><span>大いなる学び舎</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP16-048.jpg" alt="アドラブルティーチャー・ミラ" data-cn="" data-jp="アドラブルティーチャー・ミラ" width="72" height="101" loading="lazy"><span>アドラブルティーチャー・ミラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" width="72" height="101" loading="lazy"><span>マナリアウィザード・クレイグ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" width="72" height="101" loading="lazy"><span>結びの紅蓮・グレア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP01-170.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" width="72" height="101" loading="lazy"><span>光の道筋</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP06-037.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" width="72" height="101" loading="lazy"><span>魔術の始祖・マナリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"><span>ウルズ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img  src="../assets/cards/BP09-020.jpg" alt="スパルタクス" data-cn="" data-jp="スパルタクス" width="72" height="101" loading="lazy"><span>スパルタクス</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" width="72" height="101" loading="lazy"><span>マナリアパーティー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP08-037.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" width="72" height="101" loading="lazy"><span>開闢の予言者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" width="72" height="101" loading="lazy"><span>ルナルの教会長・グリュネ</span><small>进化 × 1</small></div><div class="core-card-tile"><img  src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" width="72" height="101" loading="lazy"><span>マナリアウィザード・クレイグ</span><small>进化 × 2</small></div><div class="core-card-tile"><img  src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" width="72" height="101" loading="lazy"><span>結びの紅蓮・グレア</span><small>进化 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP06-038.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" width="72" height="101" loading="lazy"><span>魔術の始祖・マナリア</span><small>进化 × 3</small></div><div class="core-card-tile"><img  src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"><span>ウルズ</span><small>进化 × 1</small></div></div>
+      <div class="section-title-row">
+        <h2>成绩最好的卡组</h2>
+        <button class="core-toggle" id="core-toggle" type="button">展开完整构筑</button>
+      </div>
+      <div class="best-deck-note" id="best-deck-note">最佳卡组：そらん｜3/55｜(0.0545)｜2026/09/05｜<a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a>｜<a href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a></div>
+      <div class="core-card-row is-collapsed" id="core-card-row"><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP03-030.jpg" alt="プリンセスキス" data-cn="" data-jp="プリンセスキス" data-zone="主卡组" data-num="BP03-030" loading="lazy" decoding="async"><span>主BP03-030：プリンセスキス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" data-zone="主卡组" data-num="BP16-045" loading="lazy" decoding="async"><span>主BP16-045：宿題やるですぅ！</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-037.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" data-zone="主卡组" data-num="BP21-037" loading="lazy" decoding="async"><span>主BP21-037：御伽の姫・アマリリス</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-114.jpg" alt="大いなる学び舎" data-cn="" data-jp="大いなる学び舎" data-zone="主卡组" data-num="BP21-114" loading="lazy" decoding="async"><span>主BP21-114：大いなる学び舎</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"><span>主DSD01a-009：グレアの炎熱</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" data-zone="主卡组" data-num="DSD01a-015" loading="lazy" decoding="async"><span>主DSD01a-015：術式の教師・ジル</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP01-170.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" data-zone="主卡组" data-num="BP01-170" loading="lazy" decoding="async"><span>主BP01-170：光の道筋</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="主卡组" data-num="BP02-046" loading="lazy" decoding="async"><span>主BP02-046：マナリアウィザード・クレイグ</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP16-048.jpg" alt="アドラブルティーチャー・ミラ" data-cn="" data-jp="アドラブルティーチャー・ミラ" data-zone="主卡组" data-num="BP16-048" loading="lazy" decoding="async"><span>主BP16-048：アドラブルティーチャー・ミラ</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="主卡组" data-num="BP21-041" loading="lazy" decoding="async"><span>主BP21-041：結びの紅蓮・グレア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP06-037.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="主卡组" data-num="BP06-037" loading="lazy" decoding="async"><span>主BP06-037：魔術の始祖・マナリア</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"><span>主BP01-155：ウルズ</span><small>主卡组 × 1</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP09-020.jpg" alt="スパルタクス" data-cn="" data-jp="スパルタクス" data-zone="主卡组" data-num="BP09-020" loading="lazy" decoding="async"><span>主BP09-020：スパルタクス</span><small>主卡组 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" data-zone="主卡组" data-num="BP21-043" loading="lazy" decoding="async"><span>主BP21-043：マナリアパーティー</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP08-037.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-037" loading="lazy" decoding="async"><span>主BP08-037：開闢の予言者</span><small>主卡组 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"><span>进BP01-156：ウルズ</span><small>进化 × 1</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"><span>进BP02-047：マナリアウィザード・クレイグ</span><small>进化 × 2</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP06-038.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="进化" data-num="BP06-038" loading="lazy" decoding="async"><span>进BP06-038：魔術の始祖・マナリア</span><small>进化 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="进化" data-num="BP21-042" loading="lazy" decoding="async"><span>进BP21-042：結びの紅蓮・グレア</span><small>进化 × 3</small></div><div class="core-card-tile"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><span>进BP21-046：ルナルの教会長・グリュネ</span><small>进化 × 1</small></div></div>
     </div>
 
     <div class="section">
-      <h2>全部卡组列表</h2>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead>
-            <tr>
-              <th>名次</th>
-              <th>参赛人数</th>
-              <th>选手</th>
-              <th>淘汰赛战绩</th>
-              <th>成绩系数</th>
-              <th>卡组码</th>
-              <th>与最佳差异(+)</th>
-              <th>与最佳差异(-)</th>
-              <th>日期</th>
-            </tr>
-          </thead>
-          <tbody><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#cd7f32">3</span></td>
-      <td style="text-align:center">55</td>
-      <td>そらん</td>
-      <td style="text-align:center">1胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0545</td>
-      <td><a href="https://decklog.bushiroad.com/view/9QBYC" class="deck-code" target="_blank" rel="noopener">9QBYC</a></td>
-      <td></td>
-      <td></td>
-      <td>2026/09/05<br><a href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">7</span></td>
-      <td style="text-align:center">128</td>
-      <td>はいぶらー</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0547</td>
-      <td><a href="https://decklog.bushiroad.com/view/1MDNHS" class="deck-code" target="_blank" rel="noopener">1MDNHS</a></td>
-      <td><span class="diff-item">+1 グレアの炎熱</span> <span class="diff-item">+2 マナリアの竜術士</span> <span class="diff-item">+2 マナリアの白竜</span></td>
-      <td><span class="diff-item">-1 魔術の始祖・マナリア</span> <span class="diff-item">-3 開闢の予言者</span> <span class="diff-item">-1 ルナルの教会長・グリュネ</span></td>
-      <td>2026/09/06<br><a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#cd7f32">3</span></td>
-      <td style="text-align:center">42</td>
-      <td>ツミキ</td>
-      <td style="text-align:center">1胜1负</td>
-      <td style="text-align:center" class="score-cell">0.0714</td>
-      <td><a href="https://decklog.bushiroad.com/view/UYZRW" class="deck-code" target="_blank" rel="noopener">UYZRW</a></td>
-      <td><span class="diff-item">+3 海原の斥候</span> <span class="diff-item">+3 アヴァリティア</span> <span class="diff-item">+3 極意たる空絶</span> <span class="diff-item">+5 荒波の副船長</span> <span class="diff-item">+3 空絶の顕現・オクトリス</span> <span class="diff-item">+5 空絶の崇拝者</span> <span class="diff-item">+5 簒奪の絶傑・オクトリス</span> <span class="diff-item">+3 潮流の砲手</span> <span class="diff-item">+3 返還の剣閃</span> <span class="diff-item">+3 星の鎧</span> <span class="diff-item">+3 空絶の簒奪・オクトリス</span> <span class="diff-item">+3 ユキ</span> <span class="diff-item">+1 ウルズ</span> <span class="diff-item">+5 出航の咎人・バルバロス</span></td>
-      <td><span class="diff-item">-3 御伽の姫・アマリリス</span> <span class="diff-item">-3 術式の教師・ジル</span> <span class="diff-item">-2 グレアの炎熱</span> <span class="diff-item">-3 宿題やるですぅ！</span> <span class="diff-item">-3 プリンセスキス</span> <span class="diff-item">-3 大いなる学び舎</span> <span class="diff-item">-3 アドラブルティーチャー・ミラ</span> <span class="diff-item">-4 マナリアウィザード・クレイグ</span> <span class="diff-item">-6 結びの紅蓮・グレア</span> <span class="diff-item">-3 光の道筋</span> <span class="diff-item">-6 魔術の始祖・マナリア</span> <span class="diff-item">-2 スパルタクス</span> <span class="diff-item">-3 マナリアパーティー</span> <span class="diff-item">-3 開闢の予言者</span> <span class="diff-item">-1 ルナルの教会長・グリュネ</span></td>
-      <td>2026/09/12<br><a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">7</span></td>
-      <td style="text-align:center">53</td>
-      <td>けーじ</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.1321</td>
-      <td><a href="https://decklog.bushiroad.com/view/V02U8" class="deck-code" target="_blank" rel="noopener">V02U8</a></td>
-      <td><span class="diff-item">+1 マナリアウィザード・クレイグ</span> <span class="diff-item">+3 一世の探究</span> <span class="diff-item">+3 真理の大文豪・ユキシマ</span></td>
-      <td><span class="diff-item">-1 術式の教師・ジル</span> <span class="diff-item">-1 結びの紅蓮・グレア</span> <span class="diff-item">-2 グレアの炎熱</span> <span class="diff-item">-3 開闢の予言者</span> <span class="diff-item">-1 ルナルの教会長・グリュネ</span></td>
-      <td>2026/09/13<br><a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">7</span></td>
-      <td style="text-align:center">42</td>
-      <td>アイギス</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.1667</td>
-      <td><a href="https://decklog.bushiroad.com/view/M9YZ2" class="deck-code" target="_blank" rel="noopener">M9YZ2</a></td>
-      <td><span class="diff-item">+1 マナリアクイーン・アン</span> <span class="diff-item">+2 スキュア</span> <span class="diff-item">+2 マナリアの白竜</span> <span class="diff-item">+2 イクシードブラスト</span></td>
-      <td><span class="diff-item">-1 御伽の姫・アマリリス</span> <span class="diff-item">-1 ウルズ</span> <span class="diff-item">-4 マナリアウィザード・クレイグ</span> <span class="diff-item">-1 ルナルの教会長・グリュネ</span></td>
-      <td>2026/09/12<br><a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr><tr>
-      <td style="text-align:center"><span class="rank-badge" style="background:#666">8</span></td>
-      <td style="text-align:center">42</td>
-      <td>べーやん/alucarD</td>
-      <td style="text-align:center">0胜1负</td>
-      <td style="text-align:center" class="score-cell">0.1905</td>
-      <td><a href="https://decklog.bushiroad.com/view/18AR5S" class="deck-code" target="_blank" rel="noopener">18AR5S</a></td>
-      <td><span class="diff-item">+1 マナリアウィザード・クレイグ</span> <span class="diff-item">+1 熾天使の剣</span></td>
-      <td><span class="diff-item">-1 結びの紅蓮・グレア</span> <span class="diff-item">-1 ルナルの教会長・グリュネ</span></td>
-      <td>2026/09/12<br><a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></td>
-    </tr></tbody>
-        </table>
+      <div class="section-title-row">
+        <h2>其他卡组对比最佳卡组</h2>
+        <button class="comparison-toggle" id="comparison-toggle" type="button">展开其他卡组对比</button>
       </div>
+      <div id="comparison-cards" class="comparison-wrap is-collapsed"><div class="comparison-grid">
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">7</span> はいぶらー</b>
+            <span>7/128｜2026/09/06｜<a href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/1MDNHS" target="_blank" rel="noopener">1MDNHS</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="进:マナリアの白竜 +2"><img class="card-zoomable" src="../assets/cards/BP09-039.jpg" alt="マナリアの白竜" data-cn="" data-jp="マナリアの白竜" data-zone="进化" data-num="BP09-039" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:マナリアの竜術士 +2"><img class="card-zoomable" src="../assets/cards/BP09-038.jpg" alt="マナリアの竜術士" data-cn="" data-jp="マナリアの竜術士" data-zone="主卡组" data-num="BP09-038" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:グレアの炎熱 +1"><img class="card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:開闢の予言者 -3"><img class="card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="进:魔術の始祖・マナリア -1"><img class="card-zoomable" src="../assets/cards/BP06-SL09.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="进化" data-num="BP06-SL09" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ルナルの教会長・グリュネ -1"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#cd7f32">3</span> ツミキ</b>
+            <span>3/42｜2026/09/12｜<a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:潮流の砲手 +3"><img class="card-zoomable" src="../assets/cards/BP19-026.jpg" alt="潮流の砲手" data-cn="" data-jp="潮流の砲手" data-zone="主卡组" data-num="BP19-026" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:出航の咎人・バルバロス +3"><img class="card-zoomable" src="../assets/cards/BP19-019.jpg" alt="出航の咎人・バルバロス" data-cn="" data-jp="出航の咎人・バルバロス" data-zone="主卡组" data-num="BP19-019" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:簒奪の絶傑・オクトリス +3"><img class="card-zoomable" src="../assets/cards/BP05-018.jpg" alt="簒奪の絶傑・オクトリス" data-cn="" data-jp="簒奪の絶傑・オクトリス" data-zone="主卡组" data-num="BP05-018" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:返還の剣閃 +3"><img class="card-zoomable" src="../assets/cards/BP20-026.jpg" alt="返還の剣閃" data-cn="" data-jp="返還の剣閃" data-zone="主卡组" data-num="BP20-026" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:海原の斥候 +3"><img class="card-zoomable" src="../assets/cards/BP19-030.jpg" alt="海原の斥候" data-cn="" data-jp="海原の斥候" data-zone="主卡组" data-num="BP19-030" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:荒波の副船長 +3"><img class="card-zoomable" src="../assets/cards/BP19-028.jpg" alt="荒波の副船長" data-cn="" data-jp="荒波の副船長" data-zone="主卡组" data-num="BP19-028" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:極意たる空絶 +3"><img class="card-zoomable" src="../assets/cards/BP15-026.jpg" alt="極意たる空絶" data-cn="" data-jp="極意たる空絶" data-zone="主卡组" data-num="BP15-026" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:空絶の崇拝者 +3"><img class="card-zoomable" src="../assets/cards/BP15-028.jpg" alt="空絶の崇拝者" data-cn="" data-jp="空絶の崇拝者" data-zone="主卡组" data-num="BP15-028" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:空絶の簒奪・オクトリス +3"><img class="card-zoomable" src="../assets/cards/BP15-020.jpg" alt="空絶の簒奪・オクトリス" data-cn="" data-jp="空絶の簒奪・オクトリス" data-zone="主卡组" data-num="BP15-020" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:空絶の顕現・オクトリス +3"><img class="card-zoomable" src="../assets/cards/BP20-019.jpg" alt="空絶の顕現・オクトリス" data-cn="" data-jp="空絶の顕現・オクトリス" data-zone="主卡组" data-num="BP20-019" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:星の鎧 +3"><img class="card-zoomable" src="../assets/cards/BP04-037.jpg" alt="星の鎧" data-cn="" data-jp="星の鎧" data-zone="主卡组" data-num="BP04-037" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:アヴァリティア +3"><img class="card-zoomable" src="../assets/cards/BP05-034.jpg" alt="アヴァリティア" data-cn="" data-jp="アヴァリティア" data-zone="主卡组" data-num="BP05-034" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="进:出航の咎人・バルバロス +2"><img class="card-zoomable" src="../assets/cards/BP19-020.jpg" alt="出航の咎人・バルバロス" data-cn="" data-jp="出航の咎人・バルバロス" data-zone="进化" data-num="BP19-020" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:簒奪の絶傑・オクトリス +2"><img class="card-zoomable" src="../assets/cards/BP05-019.jpg" alt="簒奪の絶傑・オクトリス" data-cn="" data-jp="簒奪の絶傑・オクトリス" data-zone="进化" data-num="BP05-019" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:荒波の副船長 +2"><img class="card-zoomable" src="../assets/cards/BP19-029.jpg" alt="荒波の副船長" data-cn="" data-jp="荒波の副船長" data-zone="进化" data-num="BP19-029" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:空絶の崇拝者 +2"><img class="card-zoomable" src="../assets/cards/BP15-029.jpg" alt="空絶の崇拝者" data-cn="" data-jp="空絶の崇拝者" data-zone="进化" data-num="BP15-029" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:ユキ +2"><img class="card-zoomable" src="../assets/cards/CP04-049.jpg" alt="ユキ" data-cn="" data-jp="ユキ" data-zone="主卡组" data-num="CP04-049" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:ウルズ +1"><img class="card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"><b>+1</b></span><span class="diff-card" title="进:ユキ +1"><img class="card-zoomable" src="../assets/cards/CP04-050.jpg" alt="ユキ" data-cn="" data-jp="ユキ" data-zone="进化" data-num="CP04-050" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:大いなる学び舎 -3"><img class="card-zoomable" src="../assets/cards/PR-582.jpg" alt="大いなる学び舎" data-cn="" data-jp="大いなる学び舎" data-zone="主卡组" data-num="PR-582" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:光の道筋 -3"><img class="card-zoomable" src="../assets/cards/PR-210.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" data-zone="主卡组" data-num="PR-210" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:結びの紅蓮・グレア -3"><img class="card-zoomable" src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="主卡组" data-num="BP21-041" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="进:結びの紅蓮・グレア -3"><img class="card-zoomable" src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="进化" data-num="BP21-042" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:開闢の予言者 -3"><img class="card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:魔術の始祖・マナリア -3"><img class="card-zoomable" src="../assets/cards/BP06-SL08.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="主卡组" data-num="BP06-SL08" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="进:魔術の始祖・マナリア -3"><img class="card-zoomable" src="../assets/cards/BP06-SL09.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="进化" data-num="BP06-SL09" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:術式の教師・ジル -3"><img class="card-zoomable" src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" data-zone="主卡组" data-num="DSD01a-015" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:宿題やるですぅ！ -3"><img class="card-zoomable" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" data-zone="主卡组" data-num="BP16-045" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:御伽の姫・アマリリス -3"><img class="card-zoomable" src="../assets/cards/PR-583.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" data-zone="主卡组" data-num="PR-583" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:アドラブルティーチャー・ミラ -3"><img class="card-zoomable" src="../assets/cards/PR-426.jpg" alt="アドラブルティーチャー・ミラ" data-cn="" data-jp="アドラブルティーチャー・ミラ" data-zone="主卡组" data-num="PR-426" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:プリンセスキス -3"><img class="card-zoomable" src="../assets/cards/BP03-030.jpg" alt="プリンセスキス" data-cn="" data-jp="プリンセスキス" data-zone="主卡组" data-num="BP03-030" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:マナリアパーティー -3"><img class="card-zoomable" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" data-zone="主卡组" data-num="BP21-043" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:グレアの炎熱 -2"><img class="card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:スパルタクス -2"><img class="card-zoomable" src="../assets/cards/BP09-U02.jpg" alt="スパルタクス" data-cn="" data-jp="スパルタクス" data-zone="主卡组" data-num="BP09-U02" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:マナリアウィザード・クレイグ -2"><img class="card-zoomable" src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="主卡组" data-num="BP02-046" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:マナリアウィザード・クレイグ -2"><img class="card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:ルナルの教会長・グリュネ -1"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">7</span> けーじ</b>
+            <span>7/53｜2026/09/13｜<a href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/V02U8" target="_blank" rel="noopener">V02U8</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:一世の探究 +3"><img class="card-zoomable" src="../assets/cards/PR-491.jpg" alt="一世の探究" data-cn="" data-jp="一世の探究" data-zone="主卡组" data-num="PR-491" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="主:真理の大文豪・ユキシマ +3"><img class="card-zoomable" src="../assets/cards/BP14-U03.jpg" alt="真理の大文豪・ユキシマ" data-cn="" data-jp="真理の大文豪・ユキシマ" data-zone="主卡组" data-num="BP14-U03" loading="lazy" decoding="async"><b>+3</b></span><span class="diff-card" title="进:マナリアウィザード・クレイグ +1"><img class="card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:開闢の予言者 -3"><img class="card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"><b>-3</b></span><span class="diff-card" title="主:グレアの炎熱 -2"><img class="card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:結びの紅蓮・グレア -1"><img class="card-zoomable" src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="进化" data-num="BP21-042" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="主:術式の教師・ジル -1"><img class="card-zoomable" src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" data-zone="主卡组" data-num="DSD01a-015" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ルナルの教会長・グリュネ -1"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">7</span> アイギス</b>
+            <span>7/42｜2026/09/12｜<a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/M9YZ2" target="_blank" rel="noopener">M9YZ2</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="进:イクシードブラスト +2"><img class="card-zoomable" src="../assets/cards/BP13-039.jpg" alt="イクシードブラスト" data-cn="" data-jp="イクシードブラスト" data-zone="进化" data-num="BP13-039" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:スキュア +2"><img class="card-zoomable" src="../assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" data-zone="主卡组" data-num="BP10-052" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="进:マナリアの白竜 +2"><img class="card-zoomable" src="../assets/cards/BP09-039.jpg" alt="マナリアの白竜" data-cn="" data-jp="マナリアの白竜" data-zone="进化" data-num="BP09-039" loading="lazy" decoding="async"><b>+2</b></span><span class="diff-card" title="主:マナリアクイーン・アン +1"><img class="card-zoomable" src="../assets/cards/BP13-036.jpg" alt="マナリアクイーン・アン" data-cn="" data-jp="マナリアクイーン・アン" data-zone="主卡组" data-num="BP13-036" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:マナリアウィザード・クレイグ -2"><img class="card-zoomable" src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="主卡组" data-num="BP02-046" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="进:マナリアウィザード・クレイグ -2"><img class="card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"><b>-2</b></span><span class="diff-card" title="主:御伽の姫・アマリリス -1"><img class="card-zoomable" src="../assets/cards/PR-583.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" data-zone="主卡组" data-num="PR-583" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ウルズ -1"><img class="card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ルナルの教会長・グリュネ -1"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article>
+      <article class="comparison-card">
+        <div class="comparison-head">
+          <div>
+            <b><span class="rank-badge" style="background:#666">8</span> べーやん/alucarD</b>
+            <span>8/42｜2026/09/12｜<a href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener" class="event-link">赛事结果</a></span>
+          </div>
+          <a href="https://decklog.bushiroad.com/view/18AR5S" target="_blank" rel="noopener">18AR5S</a>
+        </div>
+        <div class="comparison-body">
+          <section>
+            <h3>多了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:熾天使の剣 +1"><img class="card-zoomable" src="../assets/cards/BP12-106.jpg" alt="熾天使の剣" data-cn="" data-jp="熾天使の剣" data-zone="主卡组" data-num="BP12-106" loading="lazy" decoding="async"><b>+1</b></span><span class="diff-card" title="进:マナリアウィザード・クレイグ +1"><img class="card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"><b>+1</b></span></div>
+          </section>
+          <section>
+            <h3>少了哪些牌</h3>
+            <div class="diff-list"><span class="diff-card" title="主:結びの紅蓮・グレア -1"><img class="card-zoomable" src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="主卡组" data-num="BP21-041" loading="lazy" decoding="async"><b>-1</b></span><span class="diff-card" title="进:ルナルの教会長・グリュネ -1"><img class="card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"><b>-1</b></span></div>
+          </section>
+        </div>
+      </article></div></div>
     </div>
 
     <div class="section">
       <h2>卡牌使用率</h2>
-      <h3>主卡组</h3>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
+      <div class="usage-note">统计范围：该职业组合下的 6 套卡组记录；同名不同编号合并，主卡组与进化卡组分开统计；3张列包含实际投入3张及以上的记录。</div>
+      <h3 class="usage-subtitle">主卡组使用率</h3>
+      <div class="table-wrap usage">
+        <table class="deck-table usage-table">
+          <thead>
+            <tr>
+              <th style="text-align:center">图片</th>
+              <th style="text-align:center">平均张数</th>
+              <th style="text-align:center">使用率</th>
+              <th style="text-align:center">携带最好成绩</th>
+              <th style="text-align:center">不携带最好成绩</th>
+              <th style="text-align:center">1张比例</th>
+              <th style="text-align:center">2张比例</th>
+              <th style="text-align:center">3张比例</th>
+            </tr>
+          </thead>
           <tbody>
     <tr>
-      <td style="text-align:center">1</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"></td>
-      <td>ウルズ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">6</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-155.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="主卡组" data-num="BP01-155" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.17</td>
       <td style="text-align:center">100.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><span class="usage-no-data">无</span></td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">2</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" width="72" height="101" loading="lazy"></td>
-      <td>宿題やるですぅ！</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-582.jpg" alt="大いなる学び舎" data-cn="" data-jp="大いなる学び舎" data-zone="主卡组" data-num="PR-582" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">3</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP03-030.jpg" alt="プリンセスキス" data-cn="" data-jp="プリンセスキス" width="72" height="101" loading="lazy"></td>
-      <td>プリンセスキス</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-210.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" data-zone="主卡组" data-num="PR-210" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">4</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" width="72" height="101" loading="lazy"></td>
-      <td>結びの紅蓮・グレア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP06-SL08.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="主卡组" data-num="BP06-SL08" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">5</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" width="72" height="101" loading="lazy"></td>
-      <td>マナリアパーティー</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP16-045.jpg" alt="宿題やるですぅ！" data-cn="" data-jp="宿題やるですぅ！" data-zone="主卡组" data-num="BP16-045" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">6</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" width="72" height="101" loading="lazy"></td>
-      <td>結びの紅蓮・グレア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-426.jpg" alt="アドラブルティーチャー・ミラ" data-cn="" data-jp="アドラブルティーチャー・ミラ" data-zone="主卡组" data-num="PR-426" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">7</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" width="72" height="101" loading="lazy"></td>
-      <td>ウルズ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">5</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP03-030.jpg" alt="プリンセスキス" data-cn="" data-jp="プリンセスキス" data-zone="主卡组" data-num="BP03-030" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">83.3%</td>
     </tr>
     <tr>
-      <td style="text-align:center">8</td>
-      <td><img class="usage-card-img" src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" width="72" height="101" loading="lazy"></td>
-      <td>術式の教師・ジル</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-043.jpg" alt="マナリアパーティー" data-cn="" data-jp="マナリアパーティー" data-zone="主卡组" data-num="BP21-043" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.50</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">83.3%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-041.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="主卡组" data-num="BP21-041" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.33</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
       <td style="text-align:center">66.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">9</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-037.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" width="72" height="101" loading="lazy"></td>
-      <td>御伽の姫・アマリリス</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/DSD01a-015.jpg" alt="術式の教師・ジル" data-cn="" data-jp="術式の教師・ジル" data-zone="主卡组" data-num="DSD01a-015" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.33</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
       <td style="text-align:center">66.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">10</td>
-      <td><img class="usage-card-img" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" width="72" height="101" loading="lazy"></td>
-      <td>グレアの炎熱</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-583.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" data-zone="主卡组" data-num="PR-583" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.33</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
       <td style="text-align:center">66.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">11</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP21-114.jpg" alt="大いなる学び舎" data-cn="" data-jp="大いなる学び舎" width="72" height="101" loading="lazy"></td>
-      <td>大いなる学び舎</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
-      <td style="text-align:center">66.7%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP09-U02.jpg" alt="スパルタクス" data-cn="" data-jp="スパルタクス" data-zone="主卡组" data-num="BP09-U02" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.67</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center">0.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">12</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP06-037.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" width="72" height="101" loading="lazy"></td>
-      <td>魔術の始祖・マナリア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/DSD01a-009.jpg" alt="グレアの炎熱" data-cn="" data-jp="グレアの炎熱" data-zone="主卡组" data-num="DSD01a-009" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
       <td style="text-align:center">66.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center">16.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">13</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP09-020.jpg" alt="スパルタクス" data-cn="" data-jp="スパルタクス" width="72" height="101" loading="lazy"></td>
-      <td>スパルタクス</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="主卡组" data-num="BP02-046" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.33</td>
       <td style="text-align:center">66.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">66.7%</td>
+      <td style="text-align:center">0.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">14</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP06-038.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" width="72" height="101" loading="lazy"></td>
-      <td>魔術の始祖・マナリア</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">4</td>
-      <td style="text-align:center">66.7%</td>
-    </tr>
-    <tr>
-      <td style="text-align:center">15</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP02-046.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" width="72" height="101" loading="lazy"></td>
-      <td>マナリアウィザード・クレイグ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP08-U03.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" data-zone="主卡组" data-num="BP08-U03" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.50</td>
+      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/128</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1MDNHS" target="_blank" rel="noopener">1MDNHS</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
       <td style="text-align:center">50.0%</td>
     </tr>
     <tr>
-      <td style="text-align:center">16</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" width="72" height="101" loading="lazy"></td>
-      <td>マナリアウィザード・クレイグ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
-      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-026.jpg" alt="潮流の砲手" data-cn="" data-jp="潮流の砲手" data-zone="主卡组" data-num="BP19-026" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">17</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP16-048.jpg" alt="アドラブルティーチャー・ミラ" data-cn="" data-jp="アドラブルティーチャー・ミラ" width="72" height="101" loading="lazy"></td>
-      <td>アドラブルティーチャー・ミラ</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
-      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-019.jpg" alt="出航の咎人・バルバロス" data-cn="" data-jp="出航の咎人・バルバロス" data-zone="主卡组" data-num="BP19-019" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">18</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP01-170.jpg" alt="光の道筋" data-cn="" data-jp="光の道筋" width="72" height="101" loading="lazy"></td>
-      <td>光の道筋</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
-      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP05-018.jpg" alt="簒奪の絶傑・オクトリス" data-cn="" data-jp="簒奪の絶傑・オクトリス" data-zone="主卡组" data-num="BP05-018" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">19</td>
-      <td><img class="usage-card-img" src="../assets/cards/BP08-037.jpg" alt="開闢の予言者" data-cn="" data-jp="開闢の予言者" width="72" height="101" loading="lazy"></td>
-      <td>開闢の予言者</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">3</td>
-      <td style="text-align:center">50.0%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP20-026.jpg" alt="返還の剣閃" data-cn="" data-jp="返還の剣閃" data-zone="主卡组" data-num="BP20-026" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
     </tr>
     <tr>
-      <td style="text-align:center">20</td>
-      <td><img class="usage-card-img" src="../assets/cards/PR-583.jpg" alt="御伽の姫・アマリリス" data-cn="" data-jp="御伽の姫・アマリリス" width="72" height="101" loading="lazy"></td>
-      <td>御伽の姫・アマリリス</td>
-      <td style="color:#8bd3ff"></td>
-      <td style="text-align:center">2</td>
-      <td style="text-align:center">33.3%</td>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-030.jpg" alt="海原の斥候" data-cn="" data-jp="海原の斥候" data-zone="主卡组" data-num="BP19-030" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-028.jpg" alt="荒波の副船長" data-cn="" data-jp="荒波の副船長" data-zone="主卡组" data-num="BP19-028" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-026.jpg" alt="極意たる空絶" data-cn="" data-jp="極意たる空絶" data-zone="主卡组" data-num="BP15-026" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-028.jpg" alt="空絶の崇拝者" data-cn="" data-jp="空絶の崇拝者" data-zone="主卡组" data-num="BP15-028" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-020.jpg" alt="空絶の簒奪・オクトリス" data-cn="" data-jp="空絶の簒奪・オクトリス" data-zone="主卡组" data-num="BP15-020" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP20-019.jpg" alt="空絶の顕現・オクトリス" data-cn="" data-jp="空絶の顕現・オクトリス" data-zone="主卡组" data-num="BP20-019" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP04-037.jpg" alt="星の鎧" data-cn="" data-jp="星の鎧" data-zone="主卡组" data-num="BP04-037" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/PR-491.jpg" alt="一世の探究" data-cn="" data-jp="一世の探究" data-zone="主卡组" data-num="PR-491" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/V02U8" target="_blank" rel="noopener">V02U8</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP14-U03.jpg" alt="真理の大文豪・ユキシマ" data-cn="" data-jp="真理の大文豪・ユキシマ" data-zone="主卡组" data-num="BP14-U03" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/53</span><a class="deck-code" href="https://decklog.bushiroad.com/view/V02U8" target="_blank" rel="noopener">V02U8</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752411" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP05-034.jpg" alt="アヴァリティア" data-cn="" data-jp="アヴァリティア" data-zone="主卡组" data-num="BP05-034" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.50</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP10-052.jpg" alt="スキュア" data-cn="" data-jp="スキュア" data-zone="主卡组" data-num="BP10-052" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/M9YZ2" target="_blank" rel="noopener">M9YZ2</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP09-038.jpg" alt="マナリアの竜術士" data-cn="" data-jp="マナリアの竜術士" data-zone="主卡组" data-num="BP09-038" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/128</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1MDNHS" target="_blank" rel="noopener">1MDNHS</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP04-049.jpg" alt="ユキ" data-cn="" data-jp="ユキ" data-zone="主卡组" data-num="CP04-049" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP12-106.jpg" alt="熾天使の剣" data-cn="" data-jp="熾天使の剣" data-zone="主卡组" data-num="BP12-106" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.17</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">8</span> 8/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/18AR5S" target="_blank" rel="noopener">18AR5S</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP13-036.jpg" alt="マナリアクイーン・アン" data-cn="" data-jp="マナリアクイーン・アン" data-zone="主卡组" data-num="BP13-036" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.17</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/M9YZ2" target="_blank" rel="noopener">M9YZ2</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
     </tr></tbody>
         </table>
       </div>
-      <h3>进化卡组</h3>
-      <div class="table-wrap">
-        <table class="deck-table">
-          <thead><tr><th>#</th><th>卡图</th><th>日文卡名</th><th>中文卡名</th><th>使用数</th><th>使用率</th></tr></thead>
-          <tbody><tr><td colspan="6" style="text-align:center;color:#8899aa">暂无数据</td></tr></tbody>
+      <h3 class="usage-subtitle">进化卡组使用率</h3>
+      <div class="table-wrap usage">
+        <table class="deck-table usage-table">
+          <thead>
+            <tr>
+              <th style="text-align:center">图片</th>
+              <th style="text-align:center">平均张数</th>
+              <th style="text-align:center">使用率</th>
+              <th style="text-align:center">携带最好成绩</th>
+              <th style="text-align:center">不携带最好成绩</th>
+              <th style="text-align:center">1张比例</th>
+              <th style="text-align:center">2张比例</th>
+              <th style="text-align:center">3张比例</th>
+            </tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-042.jpg" alt="結びの紅蓮・グレア" data-cn="" data-jp="結びの紅蓮・グレア" data-zone="进化" data-num="BP21-042" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.33</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">66.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP06-SL09.jpg" alt="魔術の始祖・マナリア" data-cn="" data-jp="魔術の始祖・マナリア" data-zone="进化" data-num="BP06-SL09" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">2.33</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">66.7%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP01-156.jpg" alt="ウルズ" data-cn="" data-jp="ウルズ" data-zone="进化" data-num="BP01-156" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.83</td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/M9YZ2" target="_blank" rel="noopener">M9YZ2</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">83.3%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP02-047.jpg" alt="マナリアウィザード・クレイグ" data-cn="" data-jp="マナリアウィザード・クレイグ" data-zone="进化" data-num="BP02-047" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">1.67</td>
+      <td style="text-align:center">66.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">33.3%</td>
+      <td style="text-align:center">33.3%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP09-039.jpg" alt="マナリアの白竜" data-cn="" data-jp="マナリアの白竜" data-zone="进化" data-num="BP09-039" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.67</td>
+      <td style="text-align:center">33.3%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/128</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1MDNHS" target="_blank" rel="noopener">1MDNHS</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">33.3%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-020.jpg" alt="出航の咎人・バルバロス" data-cn="" data-jp="出航の咎人・バルバロス" data-zone="进化" data-num="BP19-020" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP05-019.jpg" alt="簒奪の絶傑・オクトリス" data-cn="" data-jp="簒奪の絶傑・オクトリス" data-zone="进化" data-num="BP05-019" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP19-029.jpg" alt="荒波の副船長" data-cn="" data-jp="荒波の副船長" data-zone="进化" data-num="BP19-029" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP15-029.jpg" alt="空絶の崇拝者" data-cn="" data-jp="空絶の崇拝者" data-zone="进化" data-num="BP15-029" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP13-039.jpg" alt="イクシードブラスト" data-cn="" data-jp="イクシードブラスト" data-zone="进化" data-num="BP13-039" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.33</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/M9YZ2" target="_blank" rel="noopener">M9YZ2</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/CP04-050.jpg" alt="ユキ" data-cn="" data-jp="ユキ" data-zone="进化" data-num="CP04-050" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.17</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/42</span><a class="deck-code" href="https://decklog.bushiroad.com/view/UYZRW" target="_blank" rel="noopener">UYZRW</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752410" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img class="usage-card-img card-zoomable" src="../assets/cards/BP21-046.jpg" alt="ルナルの教会長・グリュネ" data-cn="" data-jp="ルナルの教会長・グリュネ" data-zone="进化" data-num="BP21-046" loading="lazy" decoding="async"></td>
+      <td style="text-align:center" class="score-cell">0.17</td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#cd7f32">3</span> 3/55</span><a class="deck-code" href="https://decklog.bushiroad.com/view/9QBYC" target="_blank" rel="noopener">9QBYC</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752398" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center"><div class="usage-best-no-carry"><span><span class="rank-badge" style="background:#666">7</span> 7/128</span><a class="deck-code" href="https://decklog.bushiroad.com/view/1MDNHS" target="_blank" rel="noopener">1MDNHS</a><br><a class="event-link" href="https://www.bushi-navi.com/event/result/1752409" target="_blank" rel="noopener">赛事结果</a></div></td>
+      <td style="text-align:center">16.7%</td>
+      <td style="text-align:center">0.0%</td>
+      <td style="text-align:center">0.0%</td>
+    </tr></tbody>
         </table>
       </div>
     </div>
   </div>
+<script>
+(function() {
+  function setupCoreToggle() {
+    var row = document.getElementById('core-card-row');
+    var button = document.getElementById('core-toggle');
+    if (!row || !button) return;
+    row.classList.add('is-collapsed');
+    row.style.maxHeight = '';
+    button.textContent = '展开完整构筑';
+    button.style.display = '';
+    function firstRowHeight() {
+      var items = Array.prototype.slice.call(row.children || []);
+      if (!items.length) return 0;
+      var firstTop = items[0].offsetTop;
+      var maxBottom = 0;
+      items.forEach(function(item) {
+        if (item.offsetTop === firstTop) {
+          maxBottom = Math.max(maxBottom, item.offsetTop + item.offsetHeight);
+        }
+      });
+      return Math.max(0, maxBottom - firstTop);
+    }
+    var collapsedHeight = firstRowHeight();
+    if (!collapsedHeight || row.scrollHeight <= collapsedHeight + 8) {
+      button.style.display = 'none';
+      row.classList.remove('is-collapsed');
+      row.style.maxHeight = 'none';
+      return;
+    }
+    row.style.maxHeight = collapsedHeight + 'px';
+    button.onclick = function() {
+      var collapsed = row.classList.toggle('is-collapsed');
+      row.style.maxHeight = collapsed ? collapsedHeight + 'px' : 'none';
+      button.textContent = collapsed ? '展开完整构筑' : '收起完整构筑';
+    };
+  }
+  function setupComparisonToggle() {
+    var wrap = document.getElementById('comparison-cards');
+    var button = document.getElementById('comparison-toggle');
+    if (!wrap || !button) return;
+    wrap.classList.add('is-collapsed');
+    button.textContent = '展开其他卡组对比';
+    button.style.display = '';
+    if (wrap.scrollHeight <= 540) {
+      button.style.display = 'none';
+      wrap.classList.remove('is-collapsed');
+      return;
+    }
+    button.onclick = function() {
+      var collapsed = wrap.classList.toggle('is-collapsed');
+      button.textContent = collapsed ? '展开其他卡组对比' : '收起其他卡组对比';
+    };
+  }
+  setupCoreToggle();
+  setupComparisonToggle();
+})();
 
-  <div class="modal-overlay" id="card-modal" onclick="if(event.target===this)this.classList.remove('active')">
-    <div class="modal-content">
-      <span class="modal-close" onclick="document.getElementById('card-modal').classList.remove('active')">&times;</span>
-      <h3 id="modal-jp-name"></h3>
-      <div class="cn-name" id="modal-cn-name"></div>
-    </div>
-  </div>
-  <script>
-    document.addEventListener('click', function(e) {
-      if (e.target.tagName === 'IMG' && e.target.dataset.jp) {
-        document.getElementById('modal-jp-name').textContent = e.target.dataset.jp;
-        document.getElementById('modal-cn-name').textContent = e.target.dataset.cn || '（暂无中文翻译）';
-        document.getElementById('card-modal').classList.add('active');
-      }
-    });
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') document.getElementById('card-modal').classList.remove('active');
-    });
-  </script>
+(function() {
+  var overlay = document.createElement('div');
+  overlay.className = 'card-modal-overlay';
+  overlay.innerHTML = '<div class="card-modal"><img id="card-modal-img" src="" alt=""><div class="card-modal-cn" id="card-modal-cn"></div><div class="card-modal-jp" id="card-modal-jp"></div><div class="card-modal-meta" id="card-modal-meta"></div></div>';
+  document.body.appendChild(overlay);
+  function closeModal() { overlay.classList.remove('active'); }
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('click', function(e) {
+    var img = e.target.closest ? e.target.closest('.card-zoomable') : null;
+    if (!img) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var modalImg = overlay.querySelector('#card-modal-img');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt || '';
+    var cn = img.dataset.cn || '';
+    var cnEl = overlay.querySelector('#card-modal-cn');
+    if (cn) { cnEl.textContent = cn; cnEl.style.color = '#fff'; }
+    else { cnEl.textContent = '暂无中文翻译'; cnEl.style.color = '#8899aa'; }
+    overlay.querySelector('#card-modal-jp').textContent = img.dataset.jp || '';
+    var meta = [];
+    if (img.dataset.zone) meta.push(img.dataset.zone);
+    if (img.dataset.num) meta.push(img.dataset.num);
+    overlay.querySelector('#card-modal-meta').textContent = meta.join(' · ');
+    overlay.classList.add('active');
+  }, true);
+})();
+</script>
 </body>
 </html>
