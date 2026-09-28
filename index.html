@@ -43,11 +43,12 @@
           <span class="update-info" id="last-updated">上次更新时间：读取中…</span>
         </div>
         <div class="version-actions">
+          <button class="version-btn" type="button" data-version="BP22" data-src="versions/BP22/shadowverse_evolve_decks.html">BP22</button>
           <button class="version-btn" type="button" data-version="BP21" data-src="versions/BP21/shadowverse_evolve_decks.html">BP21</button>
           <button class="version-btn" type="button" data-version="BP20" data-src="versions/BP20/shadowverse_evolve_decks.html">BP20</button>
           <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html">BP19</button>
           <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html">BP18</button>
-          <a class="open-link" id="open-current" href="versions/BP21/shadowverse_evolve_decks.html" target="_blank" rel="noopener">新窗口打开当前版本</a>
+          <a class="open-link" id="open-current" href="versions/BP22/shadowverse_evolve_decks.html" target="_blank" rel="noopener">新窗口打开当前版本</a>
           <a class="open-link" id="matchup-link" href="matchup.html" target="_blank" rel="noopener">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="_blank" rel="noopener">大赛卡组统计</a>
           <a class="open-link" href="crossover.html" target="_blank" rel="noopener">クロスオーバー（双职业）</a>
@@ -55,14 +56,18 @@
       </div>
     </div>
     <div class="loading" id="loading">正在加载版本页面…</div>
-    <iframe id="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP21/shadowverse_evolve_decks.html"></iframe>
+    <iframe id="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP22/shadowverse_evolve_decks.html"></iframe>
   </div>
   <script>
     (function() {
       var versions = {
+        BP22: {
+          src: 'versions/BP22/shadowverse_evolve_decks.html',
+          text: '当前版本：BP22｜时间范围：2026年10月2日起（含10月2日）'
+        },
         BP21: {
           src: 'versions/BP21/shadowverse_evolve_decks.html',
-          text: '当前版本：BP21｜时间范围：2026年7月31日起（含7月31日）'
+          text: '当前版本：BP21｜时间范围：2026年7月31日-2026年10月1日（含首尾日期）'
         },
         BP20: {
           src: 'versions/BP20/shadowverse_evolve_decks.html',
@@ -107,7 +112,7 @@
           var saved = String(localStorage.getItem('sve_selected_version') || '').toUpperCase();
           if (versions[saved]) return saved;
         } catch (error) {}
-        return 'BP21';
+        return 'BP22';
       }
 
       function formatUpdatedAt(value) {
@@ -131,7 +136,7 @@
       }
 
       function setVersion(version) {
-        var info = versions[version] || versions['BP21'];
+        var info = versions[version] || versions['BP22'];
         buttons.forEach(function(button) {
           button.classList.toggle('active', button.dataset.version === version);
         });
