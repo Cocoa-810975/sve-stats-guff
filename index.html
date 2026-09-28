@@ -131,7 +131,7 @@
       }
 
       function setVersion(version) {
-        var info = versions[version] || versions.BP21;
+        var info = versions[version] || versions['BP21'];
         buttons.forEach(function(button) {
           button.classList.toggle('active', button.dataset.version === version);
         });
