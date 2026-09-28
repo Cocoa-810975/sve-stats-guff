@@ -95,7 +95,7 @@
       },
       {
         "name": "皇家护卫｜财宝皇",
-        "value": 223,
+        "value": 221,
         "link": "decktypes/decktype-9e477d88228e.html",
         "image": "../../assets/cards/BP19-SL05.jpg"
       },
@@ -208,12 +208,6 @@
         "image": "../../assets/cards/BP07-SL04.jpg"
       },
       {
-        "name": "龙族｜龙人龙",
-        "value": 13,
-        "link": "decktypes/decktype-ca24d30a1a65.html",
-        "image": "../../assets/cards/BP21-SL16.jpg"
-      },
-      {
         "name": "精灵｜猎人妖",
         "value": 12,
         "link": "decktypes/decktype-44ce1ca73386.html",
@@ -236,6 +230,12 @@
         "value": 11,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "龙族｜龙人龙",
+        "value": 11,
+        "link": "decktypes/decktype-ca24d30a1a65.html",
+        "image": "../../assets/cards/BP21-SL16.jpg"
       },
       {
         "name": "主教｜节奏教",
@@ -298,10 +298,22 @@
         "image": "../../assets/cards/BP20-076.jpg"
       },
       {
+        "name": "皇家护卫｜宇宙皇",
+        "value": 6,
+        "link": "decktypes/decktype-2271753f82b0.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
         "name": "龙族｜海洋龙",
         "value": 5,
         "link": "decktypes/decktype-200bb41cd994.html",
         "image": "../../assets/cards/BP17-SL15.jpg"
+      },
+      {
+        "name": "龙族｜宇宙龙",
+        "value": 4,
+        "link": "decktypes/decktype-36123430c5af.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "梦魇｜八狱梦",
@@ -314,12 +326,6 @@
         "value": 4,
         "link": "decktypes/decktype-b839e822b2c1.html",
         "image": "../../assets/cards/BP18-005.jpg"
-      },
-      {
-        "name": "皇家护卫｜盗贼皇",
-        "value": 4,
-        "link": "decktypes/decktype-4aeba2c734d7.html",
-        "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
         "name": "皇家护卫｜学院皇",
@@ -370,16 +376,16 @@
         "image": "../../assets/cards/BP18-SL13.jpg"
       },
       {
-        "name": "龙族｜宇宙龙",
-        "value": 2,
-        "link": "decktypes/decktype-36123430c5af.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
-      },
-      {
         "name": "巫师｜机械法",
         "value": 2,
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/PR-513.jpg"
+      },
+      {
+        "name": "皇家护卫｜盗贼皇",
+        "value": 2,
+        "link": "decktypes/decktype-4aeba2c734d7.html",
+        "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
         "name": "巫师｜九爷法",
@@ -410,12 +416,6 @@
         "value": 2,
         "link": "decktypes/decktype-0fe79a39fa2e.html",
         "image": "../../assets/cards/CSD02b-001.jpg"
-      },
-      {
-        "name": "皇家护卫｜宇宙皇",
-        "value": 2,
-        "link": "decktypes/decktype-2271753f82b0.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "巫师｜魔法使法",
@@ -540,7 +540,7 @@
       {
         "class": "皇家护卫",
         "category": "财宝皇",
-        "count": 223,
+        "count": 221,
         "best": "1/298",
         "link": "decktypes/decktype-9e477d88228e.html",
         "image": "../../assets/cards/BP19-SL05.jpg"
@@ -618,7 +618,7 @@
         "image": "../../assets/cards/BP15-SL26.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录263场有效赛事、2481套有排名记录的卡组，其中上位卡组1788套、冠军卡组327套。从上位职业分布看，皇家护卫576套（32.2%）、龙族365套（20.4%）构成本范围的主要出场面，冠军侧则以皇家护卫115套（35.2%）、龙族64套（19.6%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」377套（21.1%，最好2/298）、龙族「五妹龙」342套（19.1%，最好1/298）、皇家护卫「财宝皇」164套（9.2%，最好1/298）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「财宝皇」，由いおりぃ使用，成绩为1/298，成绩系数0.0034。整体来看，前10%成绩卡组共有722套，占全部记录29.1%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录263场有效赛事、2481套有排名记录的卡组，其中上位卡组1788套、冠军卡组327套。从上位职业分布看，皇家护卫576套（32.2%）、龙族365套（20.4%）构成本范围的主要出场面，冠军侧则以皇家护卫115套（35.2%）、龙族64套（19.6%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」377套（21.1%，最好2/298）、龙族「五妹龙」342套（19.1%，最好1/298）、皇家护卫「财宝皇」162套（9.1%，最好1/298）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「财宝皇」，由いおりぃ使用，成绩为1/298，成绩系数0.0034。整体来看，前10%成绩卡组共有722套，占全部记录29.1%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026-W40",
@@ -982,12 +982,6 @@
         "image": "../../assets/cards/BP16-SL15.jpg"
       },
       {
-        "name": "龙族｜龙人龙",
-        "value": 2,
-        "link": "decktypes/decktype-ca24d30a1a65.html",
-        "image": "../../assets/cards/BP21-SL16.jpg"
-      },
-      {
         "name": "龙族｜学院龙",
         "value": 2,
         "link": "decktypes/decktype-246e45fe1891.html",
@@ -1036,10 +1030,22 @@
         "image": "../../assets/cards/BP11-SL10.jpg"
       },
       {
+        "name": "龙族｜宇宙龙",
+        "value": 1,
+        "link": "decktypes/decktype-36123430c5af.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
         "name": "梦魇｜八狱梦",
         "value": 1,
         "link": "decktypes/decktype-7a481475a6b5.html",
         "image": "../../assets/cards/BP19-080.jpg"
+      },
+      {
+        "name": "龙族｜龙人龙",
+        "value": 1,
+        "link": "decktypes/decktype-ca24d30a1a65.html",
+        "image": "../../assets/cards/BP21-SL16.jpg"
       },
       {
         "name": "梦魇｜蝙蝠梦",
@@ -1345,22 +1351,28 @@
         "image": "../../assets/cards/BP09-SL09.jpg"
       },
       {
-        "name": "龙族｜龙人龙",
-        "value": 3,
-        "link": "decktypes/decktype-ca24d30a1a65.html",
-        "image": "../../assets/cards/BP21-SL16.jpg"
-      },
-      {
-        "name": "皇家护卫｜盗贼皇",
-        "value": 2,
-        "link": "decktypes/decktype-4aeba2c734d7.html",
-        "image": "../../assets/cards/BP19-SL05.jpg"
-      },
-      {
         "name": "梦魇｜2c梦",
         "value": 2,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
+        "name": "龙族｜宇宙龙",
+        "value": 2,
+        "link": "decktypes/decktype-36123430c5af.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
+        "name": "皇家护卫｜宇宙皇",
+        "value": 2,
+        "link": "decktypes/decktype-2271753f82b0.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
+        "name": "龙族｜龙人龙",
+        "value": 2,
+        "link": "decktypes/decktype-ca24d30a1a65.html",
+        "image": "../../assets/cards/BP21-SL16.jpg"
       },
       {
         "name": "龙族｜小凤龙",
@@ -1373,6 +1385,12 @@
         "value": 1,
         "link": "decktypes/decktype-73a3a8508e82.html",
         "image": "../../assets/cards/BP09-018.jpg"
+      },
+      {
+        "name": "皇家护卫｜盗贼皇",
+        "value": 1,
+        "link": "decktypes/decktype-4aeba2c734d7.html",
+        "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
         "name": "龙族｜海洋龙",
@@ -1397,12 +1415,6 @@
         "value": 1,
         "link": "decktypes/decktype-0fe79a39fa2e.html",
         "image": "../../assets/cards/CSD02b-001.jpg"
-      },
-      {
-        "name": "皇家护卫｜宇宙皇",
-        "value": 1,
-        "link": "decktypes/decktype-2271753f82b0.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "梦魇｜抉择梦",
@@ -1469,12 +1481,6 @@
         "value": 1,
         "link": "decktypes/decktype-a168893e77d8.html",
         "image": "../../assets/cards/ECP01-028.jpg"
-      },
-      {
-        "name": "龙族｜宇宙龙",
-        "value": 1,
-        "link": "decktypes/decktype-36123430c5af.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "精灵｜宇宙妖",
@@ -1674,16 +1680,16 @@
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "皇家护卫｜财宝皇",
-        "value": 27,
-        "link": "decktypes/decktype-9e477d88228e.html",
-        "image": "../../assets/cards/BP19-SL05.jpg"
-      },
-      {
         "name": "巫师｜学院法",
         "value": 25,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "name": "皇家护卫｜财宝皇",
+        "value": 25,
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -1756,6 +1762,12 @@
         "value": 3,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
         "image": "../../assets/cards/CP04-062.jpg"
+      },
+      {
+        "name": "皇家护卫｜宇宙皇",
+        "value": 3,
+        "link": "decktypes/decktype-2271753f82b0.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "皇家护卫｜自然皇",
@@ -1878,12 +1890,6 @@
         "image": "../../assets/cards/BP21-SL16.jpg"
       },
       {
-        "name": "皇家护卫｜宇宙皇",
-        "value": 1,
-        "link": "decktypes/decktype-2271753f82b0.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
-      },
-      {
         "name": "梦魇｜2c梦",
         "value": 1,
         "link": "decktypes/decktype-75305287827c.html",
@@ -1944,20 +1950,20 @@
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "class": "皇家护卫",
-        "category": "财宝皇",
-        "count": 27,
-        "best": "1/12",
-        "link": "decktypes/decktype-9e477d88228e.html",
-        "image": "../../assets/cards/BP19-SL05.jpg"
-      },
-      {
         "class": "巫师",
         "category": "学院法",
         "count": 25,
         "best": "1/15",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "财宝皇",
+        "count": 25,
+        "best": "1/12",
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
         "class": "精灵",
@@ -2024,7 +2030,7 @@
         "image": "../../assets/cards/BP15-SL11.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026 第37周（2026/09/07-2026/09/13）共收录35场有效赛事、324套有排名记录的卡组，其中上位卡组183套、冠军卡组45套。从上位职业分布看，皇家护卫69套（37.7%）、龙族42套（23.0%）构成本范围的主要出场面，冠军侧则以皇家护卫16套（35.6%）、龙族10套（22.2%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（24.0%，最好1/14）、龙族「五妹龙」40套（21.9%，最好1/16）、皇家护卫「财宝皇」18套（9.8%，最好1/12）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是梦魇「骰子梦」，由きたあかり使用，成绩为1/20，成绩系数0.0500。整体来看，前10%成绩卡组共有63套，占全部记录19.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026 第37周（2026/09/07-2026/09/13）共收录35场有效赛事、324套有排名记录的卡组，其中上位卡组183套、冠军卡组45套。从上位职业分布看，皇家护卫69套（37.7%）、龙族42套（23.0%）构成本范围的主要出场面，冠军侧则以皇家护卫16套（35.6%）、龙族10套（22.2%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（24.0%，最好1/14）、龙族「五妹龙」40套（21.9%，最好1/16）、皇家护卫「财宝皇」16套（8.7%，最好1/12）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是梦魇「骰子梦」，由きたあかり使用，成绩为1/20，成绩系数0.0500。整体来看，前10%成绩卡组共有63套，占全部记录19.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026-W36",
@@ -2303,10 +2309,10 @@
         "image": "../../assets/cards/BP16-SL15.jpg"
       },
       {
-        "name": "皇家护卫｜盗贼皇",
+        "name": "皇家护卫｜宇宙皇",
         "value": 1,
-        "link": "decktypes/decktype-4aeba2c734d7.html",
-        "image": "../../assets/cards/BP19-SL05.jpg"
+        "link": "decktypes/decktype-2271753f82b0.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
         "name": "精灵｜妖精妖",
