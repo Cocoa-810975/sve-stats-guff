@@ -291,7 +291,9 @@
         // 因此再用 fetch 确认一次，失败则给出提示。
         var src = frame.getAttribute('src');
         if (!src) return;
-        var version = src.replace(/^versions//, '').split('/')[0];
+        // 从 "versions/BP22/xxx.html" 中取出 "BP22"（用 split 而非正则，避免模板字符串里的转义问题）
+        var parts = src.split('/');
+        var version = parts[0] === 'versions' ? parts[1] : parts[0];
         if (hasData(version)) return;
         fetch(src, { method: 'HEAD' }).then(function(res) {
           if (!res.ok) showEmpty(version);
