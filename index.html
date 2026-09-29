@@ -177,8 +177,8 @@
         return !!(versions[key] && versions[key].exists);
       }
 
-      function pickVersionByDate() {
-        var now = Date.now();
+      function pickVersionByDate(nowMs) {
+        var now = typeof nowMs === 'number' ? nowMs : Date.now();
         var byDate = versionForDate(now);
         if (byDate && hasData(byDate)) return byDate;
         var fallback = latestStartedVersion(now);
