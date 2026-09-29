@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadowverse EVOLVE 卡组分类规则</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.7; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 55%, #0f3460 100%); border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 24px; }
+  .header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .header h1 { color: #fff; font-size: 20px; }
+  .header .subtitle { color: #9aa8bd; font-size: 12px; margin-top: 4px; }
+  .back-link { color: #8bd3ff; font-size: 12px; text-decoration: none; padding: 7px 14px; border-radius: 999px; background: rgba(139,211,255,0.08); border: 1px solid rgba(139,211,255,0.18); white-space: nowrap; }
+  .back-link:hover { color: #fff; border-color: #e94560; background: rgba(233,69,96,0.16); }
+  .layout { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 230px 1fr; gap: 24px; padding: 22px; align-items: start; }
+  .nav { position: sticky; top: 18px; background: #1a1a2e; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 12px; }
+  .nav-head { color: #fff; font-size: 13px; font-weight: 700; padding: 4px 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 8px; }
+  .nav-item { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #b8c7dd; font-size: 13px; padding: 7px 8px; border-radius: 7px; }
+  .nav-item:hover { background: rgba(139,211,255,0.1); color: #fff; }
+  .nav-count { margin-left: auto; color: #667788; font-size: 11px; font-family: Consolas, monospace; }
+  .content { min-width: 0; }
+  .intro { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 18px; margin-bottom: 18px; color: #b8c7dd; font-size: 13px; line-height: 1.9; }
+  .intro code { background: #111827; padding: 1px 6px; border-radius: 4px; color: #8bd3ff; font-family: Consolas, monospace; }
+  .class-section { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.05); border-radius: 14px; padding: 18px 20px; margin-bottom: 18px; scroll-margin-top: 16px; }
+  .class-title { color: #fff; font-size: 16px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .class-icon { font-size: 18px; }
+  .class-count { margin-left: auto; color: #667788; font-size: 12px; font-family: Consolas, monospace; }
+  .table-wrap { overflow-x: auto; }
+  .rules-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .rules-table th { text-align: left; color: #8bd3ff; font-size: 12px; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.12); white-space: nowrap; }
+  .rules-table td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: top; }
+  .rules-table tr:hover td { background: rgba(139,211,255,0.04); }
+  .cat-name { color: #fff; font-weight: 700; white-space: nowrap; }
+  .cat-ver { color: #8899aa; font-size: 12px; }
+  code { font-family: Consolas, 'Microsoft YaHei', monospace; color: #dfe6f0; background: #111827; padding: 2px 6px; border-radius: 4px; display: inline-block; margin: 1px 0; }
+  .cond-ver { margin-bottom: 4px; }
+  .ver-tag { display: inline-block; min-width: 46px; color: #e94560; font-size: 11px; font-family: Consolas, monospace; font-weight: 700; }
+  .footer { text-align: center; color: #555; font-size: 12px; padding: 24px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .nav { position: static; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-inner">
+    <div>
+      <h1>🗂️ Shadowverse EVOLVE 卡组分类规则</h1>
+      <div class="subtitle">共 94 个分类 · 各版本规则条数：BP18(87) · BP19(84) · BP20(83) · BP21(93) · BP22(93)</div>
+    </div>
+    <a class="back-link" href="shadowverse_evolve_decks.html">← 返回统计报告</a>
+  </div>
+</div>
+<div class="layout">
+  <nav class="nav">
+    <div class="nav-head">职业导航</div>
+    <a class="nav-item" href="#class-%E7%B2%BE%E7%81%B5"><span class="class-icon">🍃</span>精灵<span class="nav-count">14</span></a>
+<a class="nav-item" href="#class-%E7%9A%87%E5%AE%B6%E6%8A%A4%E5%8D%AB"><span class="class-icon">⚔️</span>皇家护卫<span class="nav-count">11</span></a>
+<a class="nav-item" href="#class-%E5%B7%AB%E5%B8%88"><span class="class-icon">🔮</span>巫师<span class="nav-count">13</span></a>
+<a class="nav-item" href="#class-%E9%BE%99%E6%97%8F"><span class="class-icon">🐉</span>龙族<span class="nav-count">14</span></a>
+<a class="nav-item" href="#class-%E6%A2%A6%E9%AD%87"><span class="class-icon">💀</span>梦魇<span class="nav-count">14</span></a>
+<a class="nav-item" href="#class-%E4%B8%BB%E6%95%99"><span class="class-icon">⛪</span>主教<span class="nav-count">14</span></a>
+<a class="nav-item" href="#class-%E5%85%AC%E4%B8%BB%E8%BF%9E%E7%BB%93Re%3ADive"><span class="class-icon">💎</span>公主连结Re:Dive<span class="nav-count">4</span></a>
+<a class="nav-item" href="#class-%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%88"><span class="class-icon">🎤</span>偶像大师<span class="nav-count">5</span></a>
+<a class="nav-item" href="#class-%E8%B5%9B%E9%A9%AC%E5%A8%98"><span class="class-icon">🏇</span>赛马娘<span class="nav-count">5</span></a>
+  </nav>
+  <div class="content">
+    <div class="intro">
+      本页由各版本的 <code>deck_names.txt</code> 自动生成，是统计页面实际使用的分类规则。<br>
+      条件写法：<code>核心卡A&amp;核心卡B</code> 表示必须同时满足；<code>核心卡A/核心卡B</code> 表示同一位置的候选卡，满足其一即可。<br>
+      若某套卡组不属于任何分类，会先寻找相似度最高的已分类构筑；相似度不足才生成新的自动类型。
+    </div>
+
+  <section class="class-section" id="class-%E7%B2%BE%E7%81%B5" style="border-left:4px solid #27ae60">
+    <h2 class="class-title"><span class="class-icon">🍃</span>精灵<span class="class-count">14 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">八狱妖</td><td><code>葉脈の舎弟頭&amp;剪定の咎人・マガチヨ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">法术妖</td><td><code>ユグドラシル</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">卡场妖</td><td><code>不殺の狂信者</code></td><td class="cat-ver">BP18、BP19</td></tr>
+<tr><td class="cat-name">连击妖</td><td><code>〔渚の花嫁〕新田美波/〔女神は朝焼けの海に〕新田美波</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">猎人妖</td><td><div class="cond-ver"><span class="ver-tag">BP18</span><code>絶命の顕現・エズディア</code></div><div class="cond-ver"><span class="ver-tag">BP19</span><code>絶命の顕現・エズディア</code></div><div class="cond-ver"><span class="ver-tag">BP20</span><code>絶命の顕現・エズディア 或 不殺の狂信者</code></div><div class="cond-ver"><span class="ver-tag">BP21</span><code>絶命の顕現・エズディア 或 不殺の狂信者</code></div><div class="cond-ver"><span class="ver-tag">BP22</span><code>絶命の顕現・エズディア 或 不殺の狂信者</code></div></td><td class="cat-ver">BP18、BP19、BP20、BP20、BP21、BP21、BP22、BP22</td></tr>
+<tr><td class="cat-name">人偶妖</td><td><code>プロシードハート・オーキス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">兽妖</td><td><div class="cond-ver"><span class="ver-tag">BP18</span><code>サルビアパンサー</code></div><div class="cond-ver"><span class="ver-tag">BP21</span><code>新緑の新入生・カステル</code></div><div class="cond-ver"><span class="ver-tag">BP22</span><code>新緑の新入生・カステル</code></div></td><td class="cat-ver">BP18、BP21、BP22</td></tr>
+<tr><td class="cat-name">童话妖</td><td><code>奇妙な帽子屋</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">透京妖</td><td><code>浄樹の六銘伝・ロロ・ロニエ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">无限妖</td><td><code>キングエレファント&amp;円環の看守&amp;サハクィエル＆イスラーフィール</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">妖精妖</td><td><code>自然の妖精姫・アリア</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">宇宙妖</td><td><code>機鋒の咎人・カットスロート</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">自然妖</td><td><code>回帰する抱擁・ラティカ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">EX妖</td><td><code>遺物の番人・ルチル</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E7%9A%87%E5%AE%B6%E6%8A%A4%E5%8D%AB" style="border-left:4px solid #3498db">
+    <h2 class="class-title"><span class="class-icon">⚔️</span>皇家护卫<span class="class-count">11 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">财宝皇</td><td><code>出航の咎人・バルバロス&amp;オクトリス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">篡夺皇</td><td><code>簒奪の絶傑・オクトリス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">荒野皇</td><td><code>ファントムデュオ・バニー＆バロン&amp;カースドクイーン・ナハト・ナハト</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">金币皇</td><td><code>天下の大泥棒・ジエモン</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">雷维翁皇</td><td><code>レヴィオンの副団長・マイム</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">铺场皇</td><td><code>空の指揮官・セリア/月光の執行者・リオード/音速の機構・ララミア/忠義の剣士・エリカ/晴天の銀騎士・エミリア</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">胜利皇</td><td><code>スパルタクス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">天使皇</td><td><code>天界の尖兵&amp;スパルタクス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">透京皇</td><td><code>全識の六銘伝・シンラ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">学院皇</td><td><code>英傑の学園長・ガルドル</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">自然皇</td><td><code>王たる光・ベイリオン</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E5%B7%AB%E5%B8%88" style="border-left:4px solid #9b59b6">
+    <h2 class="class-title"><span class="class-icon">🔮</span>巫师<span class="class-count">13 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">八狱法</td><td><code>耽溺の咎人・セフィー</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">二妹法</td><td><code>奏絶の破壊・リーシェナ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">机械法</td><td><code>清澄の蒼・テトラ&amp;極致の創造主・ベルフォメット</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">九爷法</td><td><code>真実の隠者</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">魔法使法</td><td><code>真理の大文豪・ユキシマ&amp;一世の探究</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">棋超</td><td><code>チェックメイト&amp;陰陽の開祖・クオン</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">土法</td><td><code>真実の究明者・ファウスト</code></td><td class="cat-ver">BP18、BP21、BP22</td></tr>
+<tr><td class="cat-name">消失法</td><td><code>越光の六銘伝・マナ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">小卖部法</td><td><code>魔道具専門店</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">星星法</td><td><code>ピースキーパー・ヴィンセント</code></td><td class="cat-ver">BP18、BP21、BP22</td></tr>
+<tr><td class="cat-name">学院法</td><td><code>魔術の始祖・マナリア</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">洋葱法</td><td><code>オニオン軍団</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">阴阳超越法</td><td><code>次元の超越&amp;陰陽の秘法</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E9%BE%99%E6%97%8F" style="border-left:4px solid #e67e22">
+    <h2 class="class-title"><span class="class-icon">🐉</span>龙族<span class="class-count">14 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">八狱龙</td><td><code>禁牙の執行者・ドラズエル</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">大哥龙</td><td><code>灼熱のアナテマ・バーンドナイト</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">海洋龙</td><td><code>神魚・ディズレスタン</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">荒野龙</td><td><code>烈覇のアルチザン・レジー</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">快攻龙</td><td><code>ニシノフラワー&amp;ストライクドラグーン</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">林德龙</td><td><code>リントヴルム</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">龙人龙</td><td><code>金色の威信・リュミオール&amp;ブリザードハート・フィルレイン</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">温泉龙</td><td><code>竜山の鳴動</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">五妹龙</td><td><code>烈絶の侮蔑・ガルミーユ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">武斗龙</td><td><code>壊竜の六銘伝・エル</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">武装龙</td><td><code>デュアルレイジ</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">学院龙</td><td><code>熱血の竜教師・ジョー</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">宇宙龙（如果职业为龙族）</td><td><code>機鋒の咎人・カットスロート</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">自然龙</td><td><code>呪われし影・ヴァイディ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E6%A2%A6%E9%AD%87" style="border-left:4px solid #5d6d7e">
+    <h2 class="class-title"><span class="class-icon">💀</span>梦魇<span class="class-count">14 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">2c梦</td><td><code>葬りの狼・ヴェッド</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">八狱梦</td><td><code>滅屍の執行者・ミロエル/形骸の看守</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">蝙蝠梦</td><td><code>紅き血の女王・ヴァンピィ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">机械梦</td><td><code>真紅の抗戦者・モノ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">抉择梦</td><td><code>混融の継承者・シャム＝ナクア&amp;混融の団結者</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">控梦</td><td><code>カオスルーラー・アイシィレンドリング</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">骰子梦</td><td><code>エンペラーフィスト・ガロム</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">削手梦</td><td><code>沈黙の絶傑・ルルナイ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">妖怪梦</td><td><code>テラーバンケット・ギンセツ&amp;潰し宴</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">永火梦</td><td><code>デモンズグリード・パラセリゼ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">宇宙梦</td><td><code>機鋒の咎人・カットスロート</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">怨灵梦</td><td><code>ゴーストヴァニッシュ&amp;ノーブルファントム</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">真红梦</td><td><code>欲望の絶傑・ヴァーナレク/愛絶の欲望・ヴァーナレク/羅刹の咎人・ガロダート/終幕の吸血鬼・ユリアス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">nc梦</td><td><code>ストレイホロウ・イルガンノ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E4%B8%BB%E6%95%99" style="border-left:4px solid #f1c40f">
+    <h2 class="class-title"><span class="class-icon">⛪</span>主教<span class="class-count">14 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">八狱教</td><td><code>結盟の咎人・エルラーデ</code></td><td class="cat-ver">BP18、BP19</td></tr>
+<tr><td class="cat-name">哈基米鼠鼠教</td><td><code>ネズミ神殿</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">护符教</td><td><code>翼天の執行者・ウヌエル/贖罪の司祭・イリス/神の盾・ブローディア</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">黄金船教</td><td><code>ゴールドシップ&amp;アブソリュート・トレランス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">机械教</td><td><code>機構の解放</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">教皇透京教</td><td><code>戒信の六銘伝・聖士郎&amp;双極の生命・フラム＝グラス</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">节奏教</td><td><div class="cond-ver"><span class="ver-tag">BP18</span><code>ルナールの聖騎士</code></div><div class="cond-ver"><span class="ver-tag">BP19</span><code>メルティングシュガー・セリーナ</code></div><div class="cond-ver"><span class="ver-tag">BP20</span><code>メルティングシュガー・セリーナ</code></div><div class="cond-ver"><span class="ver-tag">BP21</span><code>メルティングシュガー・セリーナ</code></div><div class="cond-ver"><span class="ver-tag">BP22</span><code>メルティングシュガー・セリーナ</code></div></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">控教</td><td><code>絶望の安息・マーウィン/テミスの審判</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">忍者教</td><td><code>セラフィックレオ・ガルエル&amp;テミスの審判&amp;帥忍部長・煤木万裁</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">守护教</td><td><code>ブライトパラディン・ウィルバート</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">纹章教</td><td><code>絶望の顕現・マーウィン&amp;安息の継承者・ヒメカ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">学院教</td><td><code>華麗なる淑女・エルヴィーラ</code></td><td class="cat-ver">BP21、BP22</td></tr>
+<tr><td class="cat-name">耶拉教</td><td><code>清純なる祈り・エイラ&amp;エイラの祈祷</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">宇宙教（如果职业为主教）</td><td><code>機鋒の咎人・カットスロート</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E5%85%AC%E4%B8%BB%E8%BF%9E%E7%BB%93Re%3ADive" style="border-left:4px solid #e91e63">
+    <h2 class="class-title"><span class="class-icon">💎</span>公主连结Re:Dive<span class="class-count">4 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">恶魔莱拉PCR</td><td><code>ヴァイオレット&amp;アカリ</code></td><td class="cat-ver">BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">法术PCR</td><td><code>エリス&amp;ユニ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">涅妃PCR</td><td><code>ネフィ＝ネラ&amp;ユイ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">跳费PCR</td><td><code>いつか、また会う未来で&amp;カヤ/ライラエル</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%88" style="border-left:4px solid #ff8ab3">
+    <h2 class="class-title"><span class="class-icon">🎤</span>偶像大师<span class="class-count">5 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">连击偶像</td><td><code>〔渚の花嫁〕新田美波&amp;アナスタシア</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">三色偶像</td><td><code>#UNICUS</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">cool</td><td><code>〔Triad Primus〕渋谷凛&amp;〔individuals〕森久保乃々</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">cute</td><td><code>〔P.C.S〕島村卯月</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">passion</td><td><code>〔シンデレラガール〕イヴ・サンタクロース</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="class-section" id="class-%E8%B5%9B%E9%A9%AC%E5%A8%98" style="border-left:4px solid #8bd450">
+    <h2 class="class-title"><span class="class-icon">🏇</span>赛马娘<span class="class-count">5 个分类</span></h2>
+    <div class="table-wrap">
+      <table class="rules-table">
+        <thead><tr><th style="width:22%">分类名</th><th>核心卡条件</th><th style="width:24%">出现版本</th></tr></thead>
+        <tbody><tr><td class="cat-name">大哥马</td><td><code>ネオユニヴァース</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">法术马</td><td><code>7センチの先へ</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">横马</td><td><code>〔うららか・ぱっしょん♪〕ハルウララ&amp;その背中を越えて</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr>
+<tr><td class="cat-name">露比马</td><td><code>ダイイチルビー</code></td><td class="cat-ver">BP18、BP21、BP22</td></tr>
+<tr><td class="cat-name">萝卜马</td><td><code>にんじん</code></td><td class="cat-ver">BP18、BP19、BP20、BP21、BP22</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+</div>
+<div class="footer">规则由脚本从 data/&lt;版本&gt;/deck_names.txt 生成，调整分类请修改该文件后重新生成。</div>
+</body>
+</html>
