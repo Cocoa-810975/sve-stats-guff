@@ -130,8 +130,8 @@
   overlay.className = 'card-modal-overlay';
   overlay.innerHTML = '<div class="card-modal">'
     + '<img id="card-modal-img" src="" alt="">'
-    + '<div class="card-modal-cn" id="card-modal-cn"></div>'
     + '<div class="card-modal-jp" id="card-modal-jp"></div>'
+    + '<div class="card-modal-cn" id="card-modal-cn"></div>'
     + '<div class="card-modal-meta" id="card-modal-meta"></div>'
     + '<div class="card-modal-stats" id="card-modal-stats"></div>'
     + '<div id="card-modal-effect"></div>'
@@ -148,11 +148,16 @@
       .replace(/"/g, '&quot;');
   }
 
-  function renderEffect(container, num) {
+  function renderEffect(container, num, needCnFallback) {
     if (!num) { container.innerHTML = ''; return; }
     container.innerHTML = '<div class="card-effect-loading">正在载入卡牌效果…</div>';
     loadCards().then(function(cards) {
       var card = cards[num];
+      // 优先显示中文名：页面自带的中文名缺失时，回退到效果表里的中文名
+      if (needCnFallback && card && card.name_cn) {
+        var cnEl = overlay.querySelector('#card-modal-cn');
+        if (cnEl) { cnEl.textContent = card.name_cn; cnEl.style.color = '#fff'; }
+      }
       if (!card) {
         container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
         return;
@@ -168,6 +173,8 @@
       }
       if (!card.desc_cn && !card.desc_jp) {
         html += '<div class="card-effect-note">该卡暂无效果文本（可能为衍生物或未收录）</div>';
+      } else if (!card.desc_cn) {
+        html += '<div class="card-effect-note">该卡在数据源中暂无中文效果，仅显示日文</div>';
       } else if (card.matched_by === 'name') {
         html += '<div class="card-effect-note">注：该卡在数据源中编号已变更，按卡名匹配</div>';
       }
@@ -187,7 +194,7 @@
     var cn = img.dataset.cn || '';
     var cnEl = overlay.querySelector('#card-modal-cn');
     if (cn) { cnEl.textContent = cn; cnEl.style.color = '#fff'; }
-    else { cnEl.textContent = '暂无中文翻译'; cnEl.style.color = '#8899aa'; }
+    else { cnEl.textContent = ''; }
     overlay.querySelector('#card-modal-jp').textContent = img.dataset.jp || '';
     var meta = [];
     if (img.dataset.zone) meta.push(img.dataset.zone);
@@ -198,7 +205,7 @@
     if (img.dataset.attack) stats.push('攻击 ' + img.dataset.attack);
     if (img.dataset.life) stats.push('体力 ' + img.dataset.life);
     overlay.querySelector('#card-modal-stats').textContent = stats.join('　');
-    renderEffect(overlay.querySelector('#card-modal-effect'), img.dataset.num || '');
+    renderEffect(overlay.querySelector('#card-modal-effect'), img.dataset.num || '', !cn);
     overlay.classList.add('active');
   }, true);
 })();
