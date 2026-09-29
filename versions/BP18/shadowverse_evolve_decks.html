@@ -88,13 +88,20 @@
     .team-badge { display: inline-block; margin-left: 4px; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 700; color: #0f0f1a; background: #8bd3ff; vertical-align: middle; white-space: nowrap; }
     .team-badge-lg { font-size: 11px; padding: 2px 8px; }
 
-    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
+    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; padding: 20px; }
     .card-modal-overlay.active { display: flex; }
-    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 24px 24px 20px; max-width: 300px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
-    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
-    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 22px 22px 18px; max-width: 420px; max-height: 90vh; overflow-y: auto; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
+    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
+    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 4px; }
     .card-modal .card-modal-jp { font-size: 12px; color: #8899aa; margin-bottom: 8px; }
     .card-modal .card-modal-meta { font-size: 11px; color: #8bd3ff; font-family: Consolas, monospace; }
+    .card-modal .card-modal-stats { font-size: 11px; color: #9aa8bd; margin-top: 6px; }
+    .card-modal .card-effect { margin-top: 12px; text-align: left; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 12px; }
+    .card-modal .card-effect-section { margin-bottom: 10px; }
+    .card-modal .card-effect-label { font-size: 11px; color: #8bd3ff; font-weight: 700; margin-bottom: 4px; letter-spacing: 0.5px; }
+    .card-modal .card-effect-text { font-size: 13px; color: #dfe6f0; line-height: 1.75; white-space: pre-wrap; word-break: break-word; margin-bottom: 8px; }
+    .card-modal .card-effect-note { font-size: 11px; color: #667788; margin-top: 6px; }
+    .card-modal .card-effect-loading { font-size: 12px; color: #8899aa; margin-top: 12px; }
     .card-zoomable { cursor: pointer; transition: transform 0.15s ease; }
     .card-zoomable:hover { transform: scale(1.05); }
   </style>

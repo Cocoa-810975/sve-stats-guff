@@ -84,18 +84,26 @@
     .team-badge { display: inline-block; margin-left: 4px; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 700; color: #0f0f1a; background: #8bd3ff; vertical-align: middle; white-space: nowrap; }
     .team-badge-lg { font-size: 11px; padding: 2px 8px; }
 
-    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
+    .card-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; padding: 20px; }
     .card-modal-overlay.active { display: flex; }
-    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 24px 24px 20px; max-width: 300px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
-    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
-    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 6px; }
+    .card-modal { background: #1a1a2e; border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 22px 22px 18px; max-width: 420px; max-height: 90vh; overflow-y: auto; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.55); cursor: auto; }
+    .card-modal img { width: 220px; max-width: 100%; border-radius: 10px; margin-bottom: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); display: block; margin-left: auto; margin-right: auto; }
+    .card-modal .card-modal-cn { font-size: 17px; color: #fff; font-weight: 700; margin-bottom: 4px; }
     .card-modal .card-modal-jp { font-size: 12px; color: #8899aa; margin-bottom: 8px; }
     .card-modal .card-modal-meta { font-size: 11px; color: #8bd3ff; font-family: Consolas, monospace; }
+    .card-modal .card-modal-stats { font-size: 11px; color: #9aa8bd; margin-top: 6px; }
+    .card-modal .card-effect { margin-top: 12px; text-align: left; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 12px; }
+    .card-modal .card-effect-section { margin-bottom: 10px; }
+    .card-modal .card-effect-label { font-size: 11px; color: #8bd3ff; font-weight: 700; margin-bottom: 4px; letter-spacing: 0.5px; }
+    .card-modal .card-effect-text { font-size: 13px; color: #dfe6f0; line-height: 1.75; white-space: pre-wrap; word-break: break-word; margin-bottom: 8px; }
+    .card-modal .card-effect-note { font-size: 11px; color: #667788; margin-top: 6px; }
+    .card-modal .card-effect-loading { font-size: 12px; color: #8899aa; margin-top: 12px; }
     .card-zoomable { cursor: pointer; transition: transform 0.15s ease; }
     .card-zoomable:hover { transform: scale(1.05); }
   </style>
 </head>
 <body>
+  <script>window.SVE_CARDS_JSON = '../../../assets/cards.json';</script>
   <div class="container">
     <div class="header" style="border-left:5px solid #8bd450">
       <a class="back-link" href="../shadowverse_evolve_decks.html?restore=1">← 返回主页面</a>
@@ -816,13 +824,69 @@
 })();
 
 (function() {
+  var CARDS_PATH = window.SVE_CARDS_JSON || 'assets/cards.json';
+  var cardsPromise = null;
+  var cardsData = null;
+
+  function loadCards() {
+    if (cardsPromise) return cardsPromise;
+    cardsPromise = fetch(CARDS_PATH)
+      .then(function(res) { return res.ok ? res.json() : null; })
+      .then(function(data) { cardsData = data && data.cards ? data.cards : {}; return cardsData; })
+      .catch(function() { cardsData = {}; return cardsData; });
+    return cardsPromise;
+  }
+
   var overlay = document.createElement('div');
   overlay.className = 'card-modal-overlay';
-  overlay.innerHTML = '<div class="card-modal"><img id="card-modal-img" src="" alt=""><div class="card-modal-cn" id="card-modal-cn"></div><div class="card-modal-jp" id="card-modal-jp"></div><div class="card-modal-meta" id="card-modal-meta"></div></div>';
+  overlay.innerHTML = '<div class="card-modal">'
+    + '<img id="card-modal-img" src="" alt="">'
+    + '<div class="card-modal-cn" id="card-modal-cn"></div>'
+    + '<div class="card-modal-jp" id="card-modal-jp"></div>'
+    + '<div class="card-modal-meta" id="card-modal-meta"></div>'
+    + '<div class="card-modal-stats" id="card-modal-stats"></div>'
+    + '<div id="card-modal-effect"></div>'
+    + '</div>';
   document.body.appendChild(overlay);
+
   function closeModal() { overlay.classList.remove('active'); }
   overlay.addEventListener('click', closeModal);
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderEffect(container, num) {
+    if (!num) { container.innerHTML = ''; return; }
+    container.innerHTML = '<div class="card-effect-loading">正在载入卡牌效果…</div>';
+    loadCards().then(function(cards) {
+      var card = cards[num];
+      if (!card) {
+        container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
+        return;
+      }
+      var html = '<div class="card-effect">';
+      if (card.desc_cn) {
+        html += '<div class="card-effect-section"><div class="card-effect-label">效果（中文）</div>'
+          + '<div class="card-effect-text">' + escapeHtml(card.desc_cn) + '</div></div>';
+      }
+      if (card.desc_jp) {
+        html += '<div class="card-effect-section"><div class="card-effect-label">効果（日文）</div>'
+          + '<div class="card-effect-text" style="color:#b8c7dd">' + escapeHtml(card.desc_jp) + '</div></div>';
+      }
+      if (!card.desc_cn && !card.desc_jp) {
+        html += '<div class="card-effect-note">该卡暂无效果文本（可能为衍生物或未收录）</div>';
+      } else if (card.matched_by === 'name') {
+        html += '<div class="card-effect-note">注：该卡在数据源中编号已变更，按卡名匹配</div>';
+      }
+      html += '</div>';
+      container.innerHTML = html;
+    });
+  }
+
   document.addEventListener('click', function(e) {
     var img = e.target.closest ? e.target.closest('.card-zoomable') : null;
     if (!img) return;
@@ -840,6 +904,12 @@
     if (img.dataset.zone) meta.push(img.dataset.zone);
     if (img.dataset.num) meta.push(img.dataset.num);
     overlay.querySelector('#card-modal-meta').textContent = meta.join(' · ');
+    var stats = [];
+    if (img.dataset.cost) stats.push('费用 ' + img.dataset.cost);
+    if (img.dataset.attack) stats.push('攻击 ' + img.dataset.attack);
+    if (img.dataset.life) stats.push('体力 ' + img.dataset.life);
+    overlay.querySelector('#card-modal-stats').textContent = stats.join('　');
+    renderEffect(overlay.querySelector('#card-modal-effect'), img.dataset.num || '');
     overlay.classList.add('active');
   }, true);
 })();

@@ -22,6 +22,13 @@
     .open-link { color: #8bd3ff; font-size: 12px; text-decoration: none; padding: 8px 10px; border-radius: 999px; background: rgba(139,211,255,0.08); border: 1px solid rgba(139,211,255,0.18); }
     .open-link:hover { color: #fff; border-color: #e94560; background: rgba(233,69,96,0.16); }
     .report-frame { flex: 1 1 auto; width: 100%; border: 0; background: #0f0f1a; }
+    .version-btn.is-empty { opacity: 0.55; border-style: dashed; }
+    .empty-state { flex: 1 1 auto; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 48px 24px; text-align: center; background: #0f0f1a; }
+    .empty-state .empty-icon { font-size: 40px; }
+    .empty-state .empty-title { color: #fff; font-size: 17px; font-weight: 700; }
+    .empty-state .empty-text { color: #9aa8bd; font-size: 13px; max-width: 560px; line-height: 1.8; }
+    .empty-state .empty-link { color: #8bd3ff; font-size: 13px; text-decoration: none; border: 1px solid rgba(139,211,255,0.25); border-radius: 999px; padding: 7px 16px; }
+    .empty-state .empty-link:hover { color: #fff; border-color: #e94560; }
     .loading { position: fixed; left: 50%; top: 96px; transform: translateX(-50%); color: #9aa8bd; font-size: 13px; pointer-events: none; background: rgba(15,15,26,0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 7px 12px; transition: opacity 0.2s; }
     @media (max-width: 760px) {
       body { overflow: auto; }
@@ -43,11 +50,11 @@
           <span class="update-info" id="last-updated">上次更新时间：读取中…</span>
         </div>
         <div class="version-actions">
-          <button class="version-btn" type="button" data-version="BP22" data-src="versions/BP22/shadowverse_evolve_decks.html">BP22</button>
-          <button class="version-btn" type="button" data-version="BP21" data-src="versions/BP21/shadowverse_evolve_decks.html">BP21</button>
-          <button class="version-btn" type="button" data-version="BP20" data-src="versions/BP20/shadowverse_evolve_decks.html">BP20</button>
-          <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html">BP19</button>
-          <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html">BP18</button>
+          <button class="version-btn is-empty" type="button" data-version="BP22" data-src="versions/BP22/shadowverse_evolve_decks.html" data-exists="0" title="该版本暂无数据">BP22</button>
+          <button class="version-btn" type="button" data-version="BP21" data-src="versions/BP21/shadowverse_evolve_decks.html" data-exists="1">BP21</button>
+          <button class="version-btn" type="button" data-version="BP20" data-src="versions/BP20/shadowverse_evolve_decks.html" data-exists="1">BP20</button>
+          <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html" data-exists="1">BP19</button>
+          <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html" data-exists="1">BP18</button>
           <a class="open-link" id="open-current" href="versions/BP22/shadowverse_evolve_decks.html" target="_blank" rel="noopener">新窗口打开当前版本</a>
           <a class="open-link" id="matchup-link" href="matchup.html" target="_blank" rel="noopener">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="_blank" rel="noopener">大赛卡组统计</a>
@@ -56,6 +63,12 @@
       </div>
     </div>
     <div class="loading" id="loading">正在加载版本页面…</div>
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">📭</div>
+      <div class="empty-title" id="empty-state-title">该版本暂无数据</div>
+      <div class="empty-text" id="empty-state-text"></div>
+      <a class="empty-link" href="#" id="empty-state-latest">查看最新版本</a>
+    </div>
     <iframe id="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP22/shadowverse_evolve_decks.html"></iframe>
   </div>
   <script>
@@ -63,23 +76,38 @@
       var versions = {
         BP22: {
           src: 'versions/BP22/shadowverse_evolve_decks.html',
-          text: '当前版本：BP22｜时间范围：2026年10月2日起（含10月2日）'
+          text: '当前版本：BP22｜时间范围：2026年10月2日起（含10月2日）',
+          start: '2026-10-02T00:00:00+09:00',
+          end: null,
+          exists: false
         },
         BP21: {
           src: 'versions/BP21/shadowverse_evolve_decks.html',
-          text: '当前版本：BP21｜时间范围：2026年7月31日-2026年10月1日（含首尾日期）'
+          text: '当前版本：BP21｜时间范围：2026年7月31日-2026年10月1日（含首尾日期）',
+          start: '2026-07-31T00:00:00+09:00',
+          end: '2026-10-02T00:00:00+09:00',
+          exists: true
         },
         BP20: {
           src: 'versions/BP20/shadowverse_evolve_decks.html',
-          text: '当前版本：BP20｜时间范围：2026年5月22日-2026年7月30日（含首尾日期）'
+          text: '当前版本：BP20｜时间范围：2026年5月22日-2026年7月30日（含首尾日期）',
+          start: '2026-05-22T00:00:00+00:00',
+          end: '2026-07-31T00:00:00+00:00',
+          exists: true
         },
         BP19: {
           src: 'versions/BP19/shadowverse_evolve_decks.html',
-          text: '当前版本：BP19｜时间范围：2026年3月27日-2026年5月21日（含首尾日期）'
+          text: '当前版本：BP19｜时间范围：2026年3月27日-2026年5月21日（含首尾日期）',
+          start: '2026-03-27T00:00:00+00:00',
+          end: '2026-05-22T00:00:00+00:00',
+          exists: true
         },
         BP18: {
           src: 'versions/BP18/shadowverse_evolve_decks.html',
-          text: '当前版本：BP18｜时间范围：2025年11月21日-2026年1月29日（含首尾日期）'
+          text: '当前版本：BP18｜时间范围：2025年11月21日-2026年1月29日（含首尾日期）',
+          start: '2025-11-21T00:00:00+00:00',
+          end: '2026-01-30T00:00:00+00:00',
+          exists: true
         }
       };
       var frame = document.getElementById('report-frame');
@@ -108,11 +136,56 @@
         var params = new URLSearchParams(window.location.search || '');
         var fromQuery = String(params.get('version') || '').toUpperCase();
         if (versions[fromQuery]) return fromQuery;
+        // 未显式指定版本时，以「当前日期所属版本」为准（新版本发布后自动切换）；
+        // 该版本暂无数据时再退回用户上次选择。
+        var byDate = versionForDate(Date.now());
+        if (byDate && hasData(byDate)) return byDate;
         try {
           var saved = String(localStorage.getItem('sve_selected_version') || '').toUpperCase();
           if (versions[saved]) return saved;
         } catch (error) {}
-        return 'BP22';
+        return pickVersionByDate();
+      }
+
+      // 按当前日期选出该日所属的版本（区间按日本时间定义，边界含起始日、不含结束日）
+      function versionForDate(now) {
+        var keys = Object.keys(versions);
+        for (var i = 0; i < keys.length; i++) {
+          var info = versions[keys[i]];
+          if (!info.start) continue;
+          var start = new Date(info.start).getTime();
+          if (isNaN(start)) continue;
+          var end = info.end ? new Date(info.end).getTime() : Infinity;
+          if (now >= start && now < end) return keys[i];
+        }
+        return null;
+      }
+
+      // 当前日期没有对应版本时，回退到最近一个「起始时间已到」的版本
+      function latestStartedVersion(now) {
+        var keys = Object.keys(versions);
+        for (var i = 0; i < keys.length; i++) {
+          var info = versions[keys[i]];
+          if (!info.start) continue;
+          var start = new Date(info.start).getTime();
+          if (!isNaN(start) && now >= start) return keys[i];
+        }
+        return keys[0];
+      }
+
+      function hasData(key) {
+        return !!(versions[key] && versions[key].exists);
+      }
+
+      function pickVersionByDate() {
+        var now = Date.now();
+        var byDate = versionForDate(now);
+        if (byDate && hasData(byDate)) return byDate;
+        var fallback = latestStartedVersion(now);
+        if (hasData(fallback)) return fallback;
+        var keys = Object.keys(versions);
+        for (var i = 0; i < keys.length; i++) if (hasData(keys[i])) return keys[i];
+        return byDate || fallback || 'BP22';
       }
 
       function formatUpdatedAt(value) {
@@ -144,14 +217,42 @@
         openCurrent.href = info.src;
         var matchupLink = document.getElementById('matchup-link');
         if (matchupLink) matchupLink.href = 'matchup.html?version=' + encodeURIComponent(version);
-        if (frame.getAttribute('src') !== info.src) {
-          showLoading();
-          frame.src = info.src;
-        }
         try { localStorage.setItem('sve_selected_version', version); } catch (error) {}
         if (history && history.replaceState) {
           history.replaceState(null, '', window.location.pathname + '?version=' + encodeURIComponent(version));
         }
+
+        // 该版本报告页尚未生成：不加载 iframe，直接给出提示
+        if (!info.exists) {
+          showEmpty(version);
+          return;
+        }
+        hideEmpty();
+        if (frame.getAttribute('src') !== info.src) {
+          showLoading();
+          frame.src = info.src;
+        } else if (frame.style.display === 'none') {
+          frame.style.display = '';
+        }
+      }
+
+      function showEmpty(version) {
+        var info = versions[version] || {};
+        var empty = document.getElementById('empty-state');
+        var text = document.getElementById('empty-state-text');
+        if (text) {
+          text.textContent = '版本 ' + version + '（' + (info.text || '').replace(/^当前版本：[^｜]*｜/, '') + '）的报告尚未生成。'
+            + '该版本的赛事数据通常在其开始日期之后才会收录，请稍后再来查看。';
+        }
+        if (empty) empty.style.display = 'flex';
+        if (frame) frame.style.display = 'none';
+        hideLoading();
+      }
+
+      function hideEmpty() {
+        var empty = document.getElementById('empty-state');
+        if (empty) empty.style.display = 'none';
+        if (frame) frame.style.display = '';
       }
 
       buttons.forEach(function(button) {
@@ -159,7 +260,45 @@
           setVersion(button.dataset.version);
         });
       });
-      frame.addEventListener('load', hideLoading);
+
+      // 「查看最新版本」：优先跳到当前日期所属版本，否则跳到最新有数据的版本
+      var latestLink = document.getElementById('empty-state-latest');
+      if (latestLink) {
+        latestLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          var now = Date.now();
+          var byDate = versionForDate(now);
+          var target = (byDate && hasData(byDate)) ? byDate : null;
+          if (!target) {
+            var keys = Object.keys(versions);
+            for (var i = 0; i < keys.length; i++) {
+              if (hasData(keys[i])) {
+                var st = versions[keys[i]].start ? new Date(versions[keys[i]].start).getTime() : NaN;
+                if (!isNaN(st) && now >= st) { target = keys[i]; break; }
+              }
+            }
+          }
+          if (!target) {
+            var all = Object.keys(versions);
+            for (var j = 0; j < all.length; j++) if (hasData(all[j])) { target = all[j]; break; }
+          }
+          if (target) setVersion(target);
+        });
+      }
+      frame.addEventListener('load', function() {
+        hideLoading();
+        // 报告页不存在时，浏览器会把 iframe 导航到 404 页面（仍会触发 load），
+        // 因此再用 fetch 确认一次，失败则给出提示。
+        var src = frame.getAttribute('src');
+        if (!src) return;
+        var version = src.replace(/^versions//, '').split('/')[0];
+        if (hasData(version)) return;
+        fetch(src, { method: 'HEAD' }).then(function(res) {
+          if (!res.ok) showEmpty(version);
+        }).catch(function() {
+          showEmpty(version);
+        });
+      });
       window.addEventListener('message', function(event) {
         if (event && event.data && event.data.type === 'sve-report-dom-ready') hideLoading();
       });

@@ -113,13 +113,69 @@
 })();
 
 (function() {
+  var CARDS_PATH = window.SVE_CARDS_JSON || 'assets/cards.json';
+  var cardsPromise = null;
+  var cardsData = null;
+
+  function loadCards() {
+    if (cardsPromise) return cardsPromise;
+    cardsPromise = fetch(CARDS_PATH)
+      .then(function(res) { return res.ok ? res.json() : null; })
+      .then(function(data) { cardsData = data && data.cards ? data.cards : {}; return cardsData; })
+      .catch(function() { cardsData = {}; return cardsData; });
+    return cardsPromise;
+  }
+
   var overlay = document.createElement('div');
   overlay.className = 'card-modal-overlay';
-  overlay.innerHTML = '<div class="card-modal"><img id="card-modal-img" src="" alt=""><div class="card-modal-cn" id="card-modal-cn"></div><div class="card-modal-jp" id="card-modal-jp"></div><div class="card-modal-meta" id="card-modal-meta"></div></div>';
+  overlay.innerHTML = '<div class="card-modal">'
+    + '<img id="card-modal-img" src="" alt="">'
+    + '<div class="card-modal-cn" id="card-modal-cn"></div>'
+    + '<div class="card-modal-jp" id="card-modal-jp"></div>'
+    + '<div class="card-modal-meta" id="card-modal-meta"></div>'
+    + '<div class="card-modal-stats" id="card-modal-stats"></div>'
+    + '<div id="card-modal-effect"></div>'
+    + '</div>';
   document.body.appendChild(overlay);
+
   function closeModal() { overlay.classList.remove('active'); }
   overlay.addEventListener('click', closeModal);
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderEffect(container, num) {
+    if (!num) { container.innerHTML = ''; return; }
+    container.innerHTML = '<div class="card-effect-loading">正在载入卡牌效果…</div>';
+    loadCards().then(function(cards) {
+      var card = cards[num];
+      if (!card) {
+        container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
+        return;
+      }
+      var html = '<div class="card-effect">';
+      if (card.desc_cn) {
+        html += '<div class="card-effect-section"><div class="card-effect-label">效果（中文）</div>'
+          + '<div class="card-effect-text">' + escapeHtml(card.desc_cn) + '</div></div>';
+      }
+      if (card.desc_jp) {
+        html += '<div class="card-effect-section"><div class="card-effect-label">効果（日文）</div>'
+          + '<div class="card-effect-text" style="color:#b8c7dd">' + escapeHtml(card.desc_jp) + '</div></div>';
+      }
+      if (!card.desc_cn && !card.desc_jp) {
+        html += '<div class="card-effect-note">该卡暂无效果文本（可能为衍生物或未收录）</div>';
+      } else if (card.matched_by === 'name') {
+        html += '<div class="card-effect-note">注：该卡在数据源中编号已变更，按卡名匹配</div>';
+      }
+      html += '</div>';
+      container.innerHTML = html;
+    });
+  }
+
   document.addEventListener('click', function(e) {
     var img = e.target.closest ? e.target.closest('.card-zoomable') : null;
     if (!img) return;
@@ -137,6 +193,12 @@
     if (img.dataset.zone) meta.push(img.dataset.zone);
     if (img.dataset.num) meta.push(img.dataset.num);
     overlay.querySelector('#card-modal-meta').textContent = meta.join(' · ');
+    var stats = [];
+    if (img.dataset.cost) stats.push('费用 ' + img.dataset.cost);
+    if (img.dataset.attack) stats.push('攻击 ' + img.dataset.attack);
+    if (img.dataset.life) stats.push('体力 ' + img.dataset.life);
+    overlay.querySelector('#card-modal-stats').textContent = stats.join('　');
+    renderEffect(overlay.querySelector('#card-modal-effect'), img.dataset.num || '');
     overlay.classList.add('active');
   }, true);
 })();
