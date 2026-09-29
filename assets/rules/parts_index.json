@@ -1,0 +1,86 @@
+{
+ "_comment": "综合规则分片清单。抓取方式：先读本文件，再按顺序抓取 part-*.json。每片含若干章节，可完整抓取。",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "totalParts": 8,
+ "totalRules": 897,
+ "fields": {
+  "sections": "本片包含的章节",
+  "rules": "规则数组，格式 [[类型, 编号, 文本], ...]；类型 rule=规则条目 / example=示例 / bullet=要点 / text=说明"
+ },
+ "parts": [
+  {
+   "file": "part-00.json",
+   "sections": [
+    "1 Game Overview",
+    "2 Card Information Follower Evolved Follower Collaboration Follower Universe Card Spell Amulet",
+    "3 Player Information"
+   ],
+   "ruleCount": 112,
+   "chars": 17492
+  },
+  {
+   "file": "part-01.json",
+   "sections": [
+    "4 Zones"
+   ],
+   "ruleCount": 87,
+   "chars": 14509
+  },
+  {
+   "file": "part-02.json",
+   "sections": [
+    "5 Key Notations"
+   ],
+   "ruleCount": 152,
+   "chars": 24514
+  },
+  {
+   "file": "part-03.json",
+   "sections": [
+    "6 Game Preparation",
+    "7 Game Progression",
+    "8 Main Phase Processes",
+    "9 Handling Special Card Types"
+   ],
+   "ruleCount": 113,
+   "chars": 17711
+  },
+  {
+   "file": "part-04.json",
+   "sections": [
+    "10 Playing and Resolving Cards and Abilities（上）"
+   ],
+   "ruleCount": 75,
+   "chars": 15199
+  },
+  {
+   "file": "part-05.json",
+   "sections": [
+    "10 Playing and Resolving Cards and Abilities（下）",
+    "11 Rules Handling"
+   ],
+   "ruleCount": 106,
+   "chars": 19460
+  },
+  {
+   "file": "part-06.json",
+   "sections": [
+    "12 Keywords and Keyword Abilities",
+    "13 Class-Specific Information and Keywords"
+   ],
+   "ruleCount": 124,
+   "chars": 19311
+  },
+  {
+   "file": "part-07.json",
+   "sections": [
+    "14 Universe-Specific Information and Keywords",
+    "15 Miscellaneous",
+    "B-1 Sealed Rules",
+    "B-2 Cross Craft Rules"
+   ],
+   "ruleCount": 128,
+   "chars": 18603
+  }
+ ]
+}

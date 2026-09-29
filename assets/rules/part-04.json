@@ -1,0 +1,395 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-04.json",
+ "sections": [
+  {
+   "num": "10",
+   "title": "Playing and Resolving Cards and Abilities（上）",
+   "ruleCount": 75
+  }
+ ],
+ "rules": [
+  {
+   "num": "10",
+   "title": "Playing and Resolving Cards and Abilities（上）",
+   "rules": [
+    [
+     "rule",
+     "10",
+     "Playing and Resolving Cards and Abilities"
+    ],
+    [
+     "rule",
+     "10.1",
+     "Types of Abilities"
+    ],
+    [
+     "rule",
+     "10.1.1",
+     "Abilities are divided into four types: activated abilities, automatic abilities, passive abilities, and spell abilities."
+    ],
+    [
+     "rule",
+     "10.1.1.1",
+     "An activated ability is an ability that a player may actively play at certain times during a turn by paying its cost."
+    ],
+    [
+     "rule",
+     "10.1.1.1.1",
+     "In card text, activated abilities are written in the form \" [cost]: [effect].\" The \"cost\" represents what must be paid to play the ability. The \"effect\" represents the effect produced when the activated ability is resolved."
+    ],
+    [
+     "rule",
+     "10.1.1.2",
+     "An automatic ability is an ability that is played automatically when the indicated event occurs during the game."
+    ],
+    [
+     "rule",
+     "10.1.1.2.1",
+     "In card text, automatic abilities are generally written in the form \"when(ever) [event], [effect]\" or \"at the start of [event], [effect].\""
+    ],
+    [
+     "rule",
+     "10.1.1.2.1.1",
+     "The condition in this case is called a \"trigger condition.\" When an automatic ability's trigger condition is satisfied, it is said to have been \"triggered.\""
+    ],
+    [
+     "rule",
+     "10.1.1.2.2",
+     "Some automatic abilities are written in the form \"when(ever) [event], [cost]: [effect]\" or \"at the start of [event], [cost]: [effect].\" In this case, the indicated cost must be paid in order to play the automatic ability."
+    ],
+    [
+     "rule",
+     "10.1.1.3",
+     "A passive ability is an ability that produces an effect as long as the ability is valid."
+    ],
+    [
+     "rule",
+     "10.1.1.3.1",
+     "An ability that isn't written in the form of an activated ability or automatic ability is generally a passive ability."
+    ],
+    [
+     "rule",
+     "10.1.1.4",
+     "A spell ability is the text on a spell card."
+    ],
+    [
+     "rule",
+     "10.2",
+     "Types of Effects"
+    ],
+    [
+     "rule",
+     "10.2.1",
+     "Effects are divided into three types: oneshot effects, persistent effects, and replacement effects."
+    ],
+    [
+     "rule",
+     "10.2.1.1",
+     "A one-shot effect is an effect that ends after all the indicated actions have been performed during its resolution."
+    ],
+    [
+     "rule",
+     "10.2.1.2",
+     "A persistent effect is an effect that remains valid for a fixed duration (this includes unspecified durations that could be written as \"for the rest of the game\")."
+    ],
+    [
+     "rule",
+     "10.2.1.3",
+     "A replacement effect is an effect that replaces an event that would normally happen during the game with another event."
+    ],
+    [
+     "rule",
+     "10.2.1.3.1",
+     "If an ability is written in the form \"instead, [action],\" \"[action] instead,\" \"[action B] instead of [action A],\" or \"instead of [action A], [action B],\" then the effect produced by that ability is a replacement effect."
+    ],
+    [
+     "rule",
+     "10.2.1.3.2",
+     "An effect that increases or decreases the amount of damage dealt or received is a replacement effect."
+    ],
+    [
+     "rule",
+     "10.2.1.3.3",
+     "An effect that changes how a card or ability is handled when played is a replacement effect. This includes effects written in the form \"[card] costs [play-point cost] to play.\""
+    ],
+    [
+     "rule",
+     "10.3",
+     "Valid and Invalid Abilities"
+    ],
+    [
+     "rule",
+     "10.3.1",
+     "An effect may be rendered \"valid\" or \"invalid\" by another effect. If this happens, do the following."
+    ],
+    [
+     "rule",
+     "10.3.2",
+     "If a card's text states that part or all of an effect is invalid under a certain condition, then that part of the effect will not produce an effect while under that condition, but it will still exist as an ability. If that effect would normally require a player to make a selection, that selection is not made."
+    ],
+    [
+     "rule",
+     "10.3.3",
+     "If a card's text states that part or all of an effect is valid under a certain condition, then that part of the effect is invalid as long as those conditions are not met."
+    ],
+    [
+     "rule",
+     "10.3.4",
+     "An effect that is clearly handled in a certain zone is only valid in that zone."
+    ],
+    [
+     "rule",
+     "10.3.5",
+     "Abilities of follower and amulet cards are valid only on the field unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "10.3.6",
+     "Abilities of crest tokens are valid only in the EX area."
+    ],
+    [
+     "rule",
+     "10.4",
+     "Costs and Payment"
+    ],
+    [
+     "rule",
+     "10.4.1",
+     "Players may be instructed to perform certain actions as part of the cost of a card or ability."
+    ],
+    [
+     "rule",
+     "10.4.2",
+     "To \"pay a cost\" means to perform any actions indicated by that cost."
+    ],
+    [
+     "rule",
+     "10.4.2.1",
+     "If a cost includes multiple actions, they should be performed in the listed order."
+    ],
+    [
+     "rule",
+     "10.4.2.2",
+     "If the player is unable to pay the full cost, they cannot and do not pay that cost at all."
+    ],
+    [
+     "rule",
+     "10.4.3",
+     "If a cost specifies a zone, card, or other player-specific game element (such as play points) without specifying which player, that player is assumed to be the controller of the card or ability that requires the cost."
+    ],
+    [
+     "rule",
+     "10.4.4",
+     "When a cost includes a play-point icon (5.2), it means \"if you have at least [number] remaining play points, subtract [number] from them.\""
+    ],
+    [
+     "rule",
+     "10.4.4.1",
+     "Effects that change a card's cost value when played do not actually change the card's information, but rather change the number of play points subtracted as part of the cost to play that card."
+    ],
+    [
+     "rule",
+     "10.4.5",
+     "When a cost includes increasing or reducing a certain value (but not a card's cost) by a specified amount, that value must be equal to or greater than the specified amount."
+    ],
+    [
+     "rule",
+     "10.4.5.1",
+     "If executing this increase or reduction would cause that value to be greater than its upper limit as defined in the rules, smaller than its lower limit as defined in the rules, or less than zero, then that process cannot be executed as a cost."
+    ],
+    [
+     "rule",
+     "10.4.6",
+     "When a cost includes the icon without specifying a card, it means \"if this card is on the field reserved, engage it.\" If a card is specified, it means to engage that reserved card on the field."
+    ],
+    [
+     "rule",
+     "10.4.6.1",
+     "This cost can be paid on the same turn the card with the cost is put onto the field."
+    ],
+    [
+     "rule",
+     "10.4.7",
+     "Abilities other than activated abilities may also have a cost. As a general rule, card text written in the form \"[cost]: [effect]\" denotes an optional cost that can be paid when playing or resolving the ability, and the resulting effect if that cost is paid."
+    ],
+    [
+     "rule",
+     "10.4.7.1",
+     "Some abilities are written in a similar form: \"[keyword]: [effect].\" With the exception of Earth Rite, these keywords do not themselves constitute a cost. They may, however, be accompanied by a cost, in which case they are written in the form \"[keyword], [cost]: [effect].\""
+    ],
+    [
+     "rule",
+     "10.4.7.2",
+     "The effects applied as a result of paying the cost include everything up to the end of the paragraph or the end of the option in a \"choose\" ability (5.18.1.1)."
+    ],
+    [
+     "rule",
+     "10.4.7.3",
+     "Card text written in the form \"when playing [card/ability], [process]: [effect]\" means the player has the option (10.6.2.2) to apply the indicated effect by executing the indicated process when playing that card or ability."
+    ],
+    [
+     "rule",
+     "10.4.7.4",
+     "When an automatic ability is written in the form \"when(ever) [event], [process]: [effect]\" or \"at the start of [event], [process]: [effect],\" the ability's controller has the option to apply the indicated effect by executing the indicated process when resolving the automatic ability."
+    ],
+    [
+     "rule",
+     "10.4.7.5",
+     "If card text not covered above is written in the form \"[process]: [effect],\" the ability's controller has the option to apply the indicated effect by executing the indicated process when resolving the card or ability."
+    ],
+    [
+     "rule",
+     "10.5",
+     "Confirmation Timing"
+    ],
+    [
+     "rule",
+     "10.5.1",
+     "Confirmation Timing refers to a point during the game where rules handling occurs (11.1.2) and automatic abilities are played."
+    ],
+    [
+     "rule",
+     "10.5.1.1",
+     "During Confirmation Timing, all currently applicable rules handling processes are resolved first. Once those have been resolved, automatic abilities whose trigger conditions have been met are played and resolved. For more information, see 10.5.2."
+    ],
+    [
+     "rule",
+     "10.5.2",
+     "If Confirmation Timing occurs, the game proceeds as follows:"
+    ],
+    [
+     "rule",
+     "10.5.2.1",
+     "All rules handling processes applicable at this time are executed simultaneously. If this results in more instances of rules handling, repeat this step until no rules handling processes remain."
+    ],
+    [
+     "rule",
+     "10.5.2.2",
+     "If the active player controls any pending automatic abilities, the player selects one of them and plays and resolves it, and the game returns to 10.5.2.1."
+    ],
+    [
+     "rule",
+     "10.5.2.3",
+     "If the non-active player controls any pending automatic abilities, the player selects one of them and plays and resolves it, and the game returns to 10.5.2.1."
+    ],
+    [
+     "rule",
+     "10.5.2.4",
+     "Confirmation Timing ends."
+    ],
+    [
+     "rule",
+     "10.6",
+     "Playing and Resolving"
+    ],
+    [
+     "rule",
+     "10.6.1",
+     "Activated abilities and automatic abilities, as well as all cards, are resolved by being played, whereupon they produce an effect. Passive abilities are not played; they are constantly producing an effect."
+    ],
+    [
+     "rule",
+     "10.6.2",
+     "To play a card or ability, the player does the following:"
+    ],
+    [
+     "rule",
+     "10.6.2.1",
+     "The player specifies the card or ability to be played. If it's a card, they reveal it and move it to the resolution zone."
+    ],
+    [
+     "rule",
+     "10.6.2.1.1",
+     "If it is an ability that belongs to a card in a non-public zone, the player reveals the card to each other player. This card remains revealed until the effects are resolved."
+    ],
+    [
+     "rule",
+     "10.6.2.1.2",
+     "If the card or ability cannot be played—due to an issue with target selection (10.6.2.3) or cost payment (10.6.2.5), for example—then it cannot be specified."
+    ],
+    [
+     "rule",
+     "10.6.2.1.3",
+     "If a card in the EX area is to be played, and it has any effects or counters applied to it, those effects and counters apply to it even after it moves to the resolution zone."
+    ],
+    [
+     "rule",
+     "10.6.2.2",
+     "If any selections must be made as a prerequisite to play the card or ability, the player makes those selections."
+    ],
+    [
+     "rule",
+     "10.6.2.2.1",
+     "If determining an optional additional cost (10.6.2.2.2) or the number of options to be selected as part of a \"choose\" action (10.6.2.2.3) requires a value represented by \"X\" to be determined, then that value is determined (5.2)."
+    ],
+    [
+     "rule",
+     "10.6.2.2.2",
+     "This includes whether or not to pay optional additional costs."
+    ],
+    [
+     "rule",
+     "10.6.2.2.3",
+     "If the card or ability requires a player to determine the number of options to be selected as part of a \"choose\" action, or select the options to be employed, then the player determines the number and makes their selections (5.18)."
+    ],
+    [
+     "rule",
+     "10.6.2.2.4",
+     "At this point, if a value represented by \"X\" still needs to be determined, then that value is determined (5.2)."
+    ],
+    [
+     "rule",
+     "10.6.2.3",
+     "If the card or ability requires the player to select something other than a card in a non-public zone (henceforth \"target\"), they make that selection."
+    ],
+    [
+     "rule",
+     "10.6.2.3.1",
+     "If the number of targets to be selected is specified, the player must select as many targets as they can to reach that number. They cannot choose to not select a target when there are targets that can be selected."
+    ],
+    [
+     "rule",
+     "10.6.2.3.2",
+     "If the number of targets to be selected is written in the form \"up to [number],\" the player specifies any number between 0 and the specified number (inclusive). If the number of targets is written as \"any number,\" the player specifies any number equal to or greater than 0."
+    ],
+    [
+     "rule",
+     "10.6.2.3.3",
+     "If the number of targets to be selected is specified as one or more, but it is not possible to select that many targets, the playing of the card or ability is considered illegal, so it cannot be played. The playing of the card or ability is canceled, and the game returns to the point before the player chose to play the card or ability."
+    ],
+    [
+     "rule",
+     "10.6.2.4",
+     "If the card or ability requires the player to divide and allocate a numeric value, they determine how that value is to be divided and allocated."
+    ],
+    [
+     "rule",
+     "10.6.2.4.1",
+     "If no targets have been selected, or for any reason there is nothing among which to allocate the value, division and allocation does not happen, and the process which requires it is not executed."
+    ],
+    [
+     "rule",
+     "10.6.2.4.2",
+     "When determining the division and allocation of the value, if targets have been selected as described in 10.6.2.3.1 for the purpose of allocating that value, each target must be allocated at least one unit. If this cannot be done, the target selection is deemed illegal, and the game returns to the point before targets were selected."
+    ],
+    [
+     "rule",
+     "10.6.2.4.2.1",
+     "If targets cannot be appropriately selected as a result of this for any reason, then the playing of the card or ability is deemed illegal, and the game returns to the point before the playing of the card or ability."
+    ],
+    [
+     "rule",
+     "10.6.2.4.3",
+     "At this point, if targets have been appropriately selected, the player resolves the division and allocation of the value."
+    ],
+    [
+     "rule",
+     "10.6.2.5",
+     "If the card or ability requires a cost to play, the player determines the cost and then pays it in its entirety."
+    ]
+   ]
+  }
+ ]
+}

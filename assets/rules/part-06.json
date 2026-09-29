@@ -1,0 +1,651 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-06.json",
+ "sections": [
+  {
+   "num": "12",
+   "title": "Keywords and Keyword Abilities",
+   "ruleCount": 85
+  },
+  {
+   "num": "13",
+   "title": "Class-Specific Information and Keywords",
+   "ruleCount": 39
+  }
+ ],
+ "rules": [
+  {
+   "num": "12",
+   "title": "Keywords and Keyword Abilities",
+   "rules": [
+    [
+     "rule",
+     "12",
+     "Keywords and Keyword Abilities"
+    ],
+    [
+     "rule",
+     "12.1",
+     "Overview"
+    ],
+    [
+     "rule",
+     "12.1.1",
+     "A \"keyword\" is a term used to simplify ability descriptions. An ability indicated by a keyword is called a \"keyword ability.\""
+    ],
+    [
+     "rule",
+     "12.1.2",
+     "When a card has multiple automatic ability keywords that have the same process, the card text may be simplified to consecutive icons or keywords followed by the process written once. Example: Card text written in the form \" [process]\" denotes two separate abilities, \" [process]\" and \" [process].\""
+    ],
+    [
+     "rule",
+     "12.1.2.1",
+     "To simplify card text, icons and keywords may also be separated by a forward slash (/)."
+    ],
+    [
+     "rule",
+     "12.2",
+     "Evolve"
+    ],
+    [
+     "rule",
+     "12.2.1",
+     "Evolve is an activated ability that allows cards to evolve."
+    ],
+    [
+     "rule",
+     "12.2.1.1",
+     "In card text, \" Evolve\" is denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.2.2",
+     "When playing an evolve ability, as part of the cost, the controller of the card with the ability must reveal a corresponding card (5.16.1.1.1) from their evolve deck area."
+    ],
+    [
+     "rule",
+     "12.2.3",
+     "When playing an evolve ability, if the cost includes play points, the player may use 1 evolution point in lieu of 1 play point."
+    ],
+    [
+     "rule",
+     "12.2.4",
+     "When playing an evolve ability, if the player's turns passed (3.3) is at least 7 (if they went first) or 6 (if they went second), they may additionally pay 1 super-evolution point (3.2.6). If they do, the following happens in addition to the regular evolve process (5.16)."
+    ],
+    [
+     "rule",
+     "12.2.4.1",
+     "After the card with the evolve ability is linked to a card in the evolve zone (5.16.1), give the follower +1 attack and defense."
+    ],
+    [
+     "rule",
+     "12.2.4.2",
+     "The card is considered to have \"super-evolved\" as well as \"evolved\" (5.16.1.3)."
+    ],
+    [
+     "rule",
+     "12.2.5",
+     "Evolve abilities of cards with the special type \"evolved\" cannot be played."
+    ],
+    [
+     "rule",
+     "12.3",
+     "Quick"
+    ],
+    [
+     "rule",
+     "12.3.1",
+     "Cards or activated abilities may have the Quick keyword."
+    ],
+    [
+     "rule",
+     "12.3.2",
+     "If a card has a standalone Quick keyword (i.e., it is not part of an ability), that means it has a passive ability that could be written, \"This card may be played at certain times during an opponent's turn, as specified by the rules.\""
+    ],
+    [
+     "rule",
+     "12.3.2.1",
+     "This type of Quick is denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.3.3",
+     "If an activated ability has an accompanying Quick keyword in front of it, the ability may be played at certain times during the opponent's turn, as specified by the rules."
+    ],
+    [
+     "rule",
+     "12.3.3.1",
+     "This type of Quick is denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.3.4",
+     "Cards and activated abilities with Quick can be played after an opponent's follower has \"attacked\" (8.4.7) or at the end of an opponent's turn (7.4.5)."
+    ],
+    [
+     "rule",
+     "12.3.5",
+     "Cards and activated abilities with Quick can also be played during the player's main phase."
+    ],
+    [
+     "rule",
+     "12.3.6",
+     "Passive abilities that cards and activated abilities \"have\" under certain circumstances are valid in the zones they can be played (10.3.4)."
+    ],
+    [
+     "rule",
+     "12.4",
+     "Fanfare"
+    ],
+    [
+     "rule",
+     "12.4.1",
+     "Fanfare is an automatic ability that triggers when the card with Fanfare is put onto the field."
+    ],
+    [
+     "rule",
+     "12.4.2",
+     "In card text, Fanfare abilities are denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.4.3",
+     "\" [text]\" means \"When this card is put onto the field from a zone other than the field, [text].\""
+    ],
+    [
+     "rule",
+     "12.5",
+     "Last Words"
+    ],
+    [
+     "rule",
+     "12.5.1",
+     "Last Words is an automatic ability that triggers when the card with Last Words is put into the cemetery from the field."
+    ],
+    [
+     "rule",
+     "12.5.2",
+     "In card text, Last Words abilities are denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.5.3",
+     "\" [text]\" means \"When this card is put into the cemetery from the field, [text].\""
+    ],
+    [
+     "rule",
+     "12.6",
+     "On Evolve"
+    ],
+    [
+     "rule",
+     "12.6.1",
+     "On Evolve is an automatic ability that triggers when the card with On Evolve evolves."
+    ],
+    [
+     "rule",
+     "12.6.2",
+     "“On Evolve - [text]\" means \"When this card evolves, [text].\" \"On Evolve - [cost]: [text]\" means \"When this card evolves, [cost]: [text].\""
+    ],
+    [
+     "rule",
+     "12.7",
+     "Strike"
+    ],
+    [
+     "rule",
+     "12.7.1",
+     "Strike is an automatic ability that triggers when the follower with Strike attacks."
+    ],
+    [
+     "rule",
+     "12.7.2",
+     "\"Strike - [text]\" means \"When this attacks, [text].\" \"Strike - [cost]: [text]\" means \"When this attacks, [cost]: [text].\""
+    ],
+    [
+     "rule",
+     "12.7.2.1",
+     "\"Follower Strike - [text]\" means \"Strike - If the attack target is a follower, [text].\" \"Follower Strike - [cost]: [text]\" means \"Strike - If the attack target is a follower, [cost]: [text].\""
+    ],
+    [
+     "rule",
+     "12.7.2.2",
+     "\"Leader Strike - [text]\" means \"Strike - If the attack target is a leader, [text].\" \"Leader Strike - [cost]: [text]\" means \"Strike - If the attack target is a leader, [cost]: [text].\""
+    ],
+    [
+     "rule",
+     "12.8",
+     "Ward"
+    ],
+    [
+     "rule",
+     "12.8.1",
+     "Ward is a passive ability that restricts the attacks of an opponent's followers."
+    ],
+    [
+     "rule",
+     "12.8.2",
+     "\"Ward\" has three meanings: (i) \"When you would put this follower onto the field reserved, you may instead put it onto the field reserved and then engage it\"; (ii) \"You may engage this follower during your end phase\" (7.4.3); and (iii) \"If this card is a follower, when your opponent selects an attack target, they must select an engaged follower with Ward that you control if possible\" (8.4.3)."
+    ],
+    [
+     "rule",
+     "12.9",
+     "Storm"
+    ],
+    [
+     "rule",
+     "12.9.1",
+     "Storm is a passive ability that allows the follower to attack on the same turn it is put onto its controller's field."
+    ],
+    [
+     "rule",
+     "12.9.2",
+     "“Storm\" means \"This follower may be selected as an attacking follower even if it was put onto its controller's field this turn.\""
+    ],
+    [
+     "rule",
+     "12.10",
+     "Rush"
+    ],
+    [
+     "rule",
+     "12.10.1",
+     "Rush is a passive ability that allows the follower to attack another follower on the same turn it is put onto its controller's field."
+    ],
+    [
+     "rule",
+     "12.10.2",
+     "“Rush\" means \"This follower may be selected as an attacking follower even if it was put onto its controller's field this turn, but only if an engaged follower is selected as its attack target.\""
+    ],
+    [
+     "rule",
+     "12.11",
+     "Assail"
+    ],
+    [
+     "rule",
+     "12.11.1",
+     "Assail is a passive ability that allows the follower to attack reserved followers."
+    ],
+    [
+     "rule",
+     "12.11.2",
+     "\"Assail\" means \"This follower may select reserved enemy followers as attack targets as if they were engaged.\""
+    ],
+    [
+     "rule",
+     "12.12",
+     "Intimidate"
+    ],
+    [
+     "rule",
+     "12.12.1",
+     "Intimidate is a passive ability that prevents the follower from being selected as an opponent's attack target."
+    ],
+    [
+     "rule",
+     "12.12.2",
+     "\"Intimidate\" means \"Your opponent may not select this follower as an attack target.\""
+    ],
+    [
+     "rule",
+     "12.12.2.1",
+     "Intimidate only prohibits opponents from selecting the follower with Intimidate as an attack target. Opponents may still select the follower when playing abilities or cards."
+    ],
+    [
+     "rule",
+     "12.13",
+     "Drain"
+    ],
+    [
+     "rule",
+     "12.13.1",
+     "Drain is an automatic ability that increases the follower's leader's defense whenever the follower deals attack damage."
+    ],
+    [
+     "rule",
+     "12.13.2",
+     "\"Drain\" means \"Whenever this follower deals attack damage, increase your leader's defense by a value equal to the amount of damage it dealt.\""
+    ],
+    [
+     "rule",
+     "12.13.2.1",
+     "“Attack damage\" refers to the damage dealt by an attacking follower to its attack target as described in 8.4.9."
+    ],
+    [
+     "rule",
+     "12.13.2.2",
+     "If an attack target with Drain deals damage to an attacking follower, or if a follower with Drain deals damage using an ability, Drain does not trigger."
+    ],
+    [
+     "rule",
+     "12.13.3",
+     "If a card should ever have more than one instance of Drain, it is treated as having only one instance."
+    ],
+    [
+     "rule",
+     "12.14",
+     "Bane"
+    ],
+    [
+     "rule",
+     "12.14.1",
+     "Bane is a passive ability that destroys the opposing follower after two followers have fought (8.4.9.2)."
+    ],
+    [
+     "rule",
+     "12.14.2",
+     "\"Bane\" means \"Any follower that fought with this follower is destroyed during the next instance of rules handling.\""
+    ],
+    [
+     "rule",
+     "12.14.2.1",
+     "The trigger condition only requires that the followers have fought, so the opposing follower will be destroyed even if it doesn't take any damage (e.g., because the attacking follower has 0 attack)."
+    ],
+    [
+     "rule",
+     "12.15",
+     "Aura"
+    ],
+    [
+     "rule",
+     "12.15.1",
+     "Aura is a passive ability that prevents the follower from being selected by spells and abilities controlled by an opponent."
+    ],
+    [
+     "rule",
+     "12.15.2",
+     "\"Aura\" means \"This card cannot be selected by an opponent's cards or abilities.\""
+    ],
+    [
+     "rule",
+     "12.15.2.1",
+     "Aura only prohibits opponents from selecting the follower with Aura when playing a card or ability. Opponents may still select the follower as an attack target."
+    ],
+    [
+     "rule",
+     "12.16",
+     "Advanced Activated Abilities"
+    ],
+    [
+     "rule",
+     "12.16.1",
+     "Advanced activated abilities are a special type of activated ability."
+    ],
+    [
+     "rule",
+     "12.16.2",
+     "In card text, advanced activated abilities are denoted by the icon."
+    ],
+    [
+     "rule",
+     "12.16.3",
+     "\" [text]\" means \" [text]. When paying the cost of this ability, you may use 1 evolution point in lieu of 1 play point. This ability is equivalent to an evolve ability\" (8.3.2.1)."
+    ],
+    [
+     "rule",
+     "12.17",
+     "On Super-Evolve"
+    ],
+    [
+     "rule",
+     "12.17.1",
+     "On Super-Evolve is an automatic ability that triggers when the card with On SuperEvolve super-evolves (12.2.4)."
+    ],
+    [
+     "rule",
+     "12.17.2",
+     "\"On Super-Evolve - [text]\" means \"When this card super-evolves, [text].\" \"On SuperEvolve - [cost]: [text]\" means \"When this card super-evolves, [cost]: [text].\""
+    ],
+    [
+     "rule",
+     "12.18",
+     "Fuse"
+    ],
+    [
+     "rule",
+     "12.18.1",
+     "An activated ability with the Fuse keyword allows the player to put the card from their hand into their EX area in a strengthened state by discarding or burying from their EX area the specified card(s)."
+    ],
+    [
+     "rule",
+     "12.18.2",
+     "\"() Fuse [specified cards]: [text]\" means \"() Discard or bury from your EX area [specified cards] other than this, put this from your hand into your EX area: [text].\""
+    ],
+    [
+     "rule",
+     "12.18.2.1",
+     "If there are multiple [specified cards], they do not have to either all be discarded or all be buried from the EX area."
+    ],
+    [
+     "rule",
+     "12.18.2.2",
+     "If the player can select the number of [specified cards], they must select a number greater than zero if possible."
+    ],
+    [
+     "rule",
+     "12.18.2.2.1",
+     "If the number of cards is to be determined by an X value selected by the player (10.6.2.2.4) etc., the player must select the value of X so that the specified number of cards becomes 1 or more if possible."
+    ],
+    [
+     "rule",
+     "12.18.3",
+     "If, for any reason, there are no cards to be discarded or buried from the EX area as part of the ability's cost, [text] does not happen."
+    ],
+    [
+     "rule",
+     "12.18.4",
+     "If a card is put into the EX area as a result of its own Fuse ability, it is considered to have undergone \"fusion.\""
+    ],
+    [
+     "rule",
+     "12.18.4.1",
+     "When a card undergoes fusion, the cards discarded or buried in the process are considered to have been \"fused.\""
+    ]
+   ]
+  },
+  {
+   "num": "13",
+   "title": "Class-Specific Information and Keywords",
+   "rules": [
+    [
+     "rule",
+     "13",
+     "Class-Specific Information and Keywords"
+    ],
+    [
+     "rule",
+     "13.1",
+     "Overview"
+    ],
+    [
+     "rule",
+     "13.1.1",
+     "Players may possess certain additional information depending on their leader's class. Furthermore, some classes have cards with unique notations or keywords. This section will detail those notations and keywords."
+    ],
+    [
+     "rule",
+     "13.2",
+     "Forestcraft"
+    ],
+    [
+     "rule",
+     "13.2.1",
+     "Combo"
+    ],
+    [
+     "rule",
+     "13.2.1.1",
+     "Combo denotes a condition that counts the number of cards played that turn."
+    ],
+    [
+     "rule",
+     "13.2.1.2",
+     "\"Combo (X) - [text]\" means \"If you've played at least X cards this turn, including this card, [text].\""
+    ],
+    [
+     "rule",
+     "13.2.1.3",
+     "Cards and tokens played from any zone count towards this condition."
+    ],
+    [
+     "rule",
+     "13.3",
+     "Runecraft"
+    ],
+    [
+     "rule",
+     "13.3.1",
+     "Spellchain"
+    ],
+    [
+     "rule",
+     "13.3.1.1",
+     "Spellchain denotes a condition that counts the number of spell cards in the player's cemetery."
+    ],
+    [
+     "rule",
+     "13.3.1.2",
+     "\"Spellchain (X) - [text]\" or \"SC (X) [text]\" means \"If you have at least X spells in your cemetery, [text].\""
+    ],
+    [
+     "rule",
+     "13.3.1.3",
+     "While a card with Spellchain is being resolved, it is in the resolution zone, and therefore does not count itself toward the total number of spells in the cemetery."
+    ],
+    [
+     "rule",
+     "13.3.1.4",
+     "In general, the total number of spells referenced by Spellchain becomes fixed the moment the effect containing the Spellchain begins to be resolved. The number cannot change or be changed while the effect is being resolved."
+    ],
+    [
+     "rule",
+     "13.3.1.4.1",
+     "When referencing the number of spells in a cemetery for the purpose of determining the number of options to be selected for a \"choose\" action (5.18.3.1), refer to the number of spells present when the ability is initially played."
+    ],
+    [
+     "rule",
+     "13.3.2",
+     "Stack"
+    ],
+    [
+     "rule",
+     "13.3.2.1",
+     "Stack is both a passive ability and an activated ability that some amulets have."
+    ],
+    [
+     "rule",
+     "13.3.2.2",
+     "\"Stack\" denotes the following three abilities: • When this card is put onto the field, it is put onto the field with one Stack counter placed on top of it. • When this card would leave the field, if it has any Stack counters on it, remove one instead, and this card remains on the field. • : Select another amulet with Stack on your field and transfer all this card's Stack counters to that card."
+    ],
+    [
+     "rule",
+     "13.3.2.3",
+     "If a card with Stack has no Stack counters, it is moved to its owner's cemetery under rules handling (11.7)."
+    ],
+    [
+     "rule",
+     "13.3.2.4",
+     "Card text written in the form \"add X to a Stack on your field\" means \"put X Stack counters on a card with Stack on your field.\""
+    ],
+    [
+     "rule",
+     "13.3.3",
+     "Earth Rite"
+    ],
+    [
+     "rule",
+     "13.3.3.1",
+     "Earth Rite is a passive ability that produces an effect by removing Stack counters."
+    ],
+    [
+     "rule",
+     "13.3.3.2",
+     "\"Earth Rite (X): [text]\" means \"When you play this card or ability, as an additional cost, you may remove X Stack counters from an amulet with Stack on your field. If that amulet's last Stack counter was removed as a result, put the amulet into its owner's cemetery. If you paid this additional cost, [text].\""
+    ],
+    [
+     "rule",
+     "13.3.3.2.1",
+     "If X isn't specified, treat X as 1."
+    ],
+    [
+     "rule",
+     "13.4",
+     "Dragoncraft"
+    ],
+    [
+     "rule",
+     "13.4.1",
+     "Overflow"
+    ],
+    [
+     "rule",
+     "13.4.1.1",
+     "Overflow denotes a condition that references the player's maximum number of play points."
+    ],
+    [
+     "rule",
+     "13.4.1.2",
+     "\"If Overflow is active for you\" means \"if your maximum number of play points is at least 7.\""
+    ],
+    [
+     "rule",
+     "13.5",
+     "Abysscraft"
+    ],
+    [
+     "rule",
+     "13.5.1",
+     "Necrocharge"
+    ],
+    [
+     "rule",
+     "13.5.1.1",
+     "Necrocharge denotes a condition that counts the number of cards in the player's cemetery."
+    ],
+    [
+     "rule",
+     "13.5.1.2",
+     "\"Necrocharge (X) - [text]\" or \"NC (X) - [text]\" means \"If you have at least X cards in your cemetery, [text].\""
+    ],
+    [
+     "rule",
+     "13.5.1.3",
+     "The following rules apply when resolving cards and abilities involving Necrocharge."
+    ],
+    [
+     "rule",
+     "13.5.1.3.1",
+     "While a card with Necrocharge is being resolved, it is in the resolution zone, and therefore does not count itself toward the total number of cards in the cemetery."
+    ],
+    [
+     "rule",
+     "13.5.1.3.2",
+     "In general, the total number of cards referenced by Necrocharge becomes fixed the moment the effect containing the Necrocharge begins to be resolved. The number cannot change or be changed while the effect is being resolved."
+    ],
+    [
+     "rule",
+     "13.5.1.3.2.1",
+     "When referencing the number of cards in a cemetery for the purpose of determining the number of options to be selected for a \"choose\" action (5.18.3.1), refer to the number of cards present when the ability is initially played."
+    ],
+    [
+     "rule",
+     "13.5.2",
+     "Sanguine"
+    ],
+    [
+     "rule",
+     "13.5.2.1",
+     "Sanguine denotes a condition that checks whether the player's leader has lost defense during their turn."
+    ],
+    [
+     "rule",
+     "13.5.2.2",
+     "\"If Sanguine is active for you\" means \"if this is your turn, and your leader has lost defense this turn.\""
+    ]
+   ]
+  }
+ ]
+}

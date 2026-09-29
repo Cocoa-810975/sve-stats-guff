@@ -1,0 +1,618 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-03.json",
+ "sections": [
+  {
+   "num": "6",
+   "title": "Game Preparation",
+   "ruleCount": 30
+  },
+  {
+   "num": "7",
+   "title": "Game Progression",
+   "ruleCount": 28
+  },
+  {
+   "num": "8",
+   "title": "Main Phase Processes",
+   "ruleCount": 30
+  },
+  {
+   "num": "9",
+   "title": "Handling Special Card Types",
+   "ruleCount": 25
+  }
+ ],
+ "rules": [
+  {
+   "num": "6",
+   "title": "Game Preparation",
+   "rules": [
+    [
+     "rule",
+     "6",
+     "Game Preparation"
+    ],
+    [
+     "rule",
+     "6.1",
+     "Card Preparation"
+    ],
+    [
+     "rule",
+     "6.1.1",
+     "Before the game, each player must prepare their cards, which should include a leader card, a main deck, and an evolve deck."
+    ],
+    [
+     "rule",
+     "6.1.1.1",
+     "Each player may only have one leader card."
+    ],
+    [
+     "rule",
+     "6.1.1.2",
+     "A main deck is constructed of 40 to 50 cards. Leader cards and special card types (namely, evolved cards, advanced cards, and tokens) are not included in the main deck."
+    ],
+    [
+     "rule",
+     "6.1.1.3",
+     "An evolve deck is constructed of 0 to 10 cards. Only evolved cards and advanced cards, which are considered special card types, may be included in an evolve deck."
+    ],
+    [
+     "rule",
+     "6.1.1.4",
+     "The main deck and the evolve deck may each contain up to three copies of a card with the same card name (for a total of six copies across both decks)."
+    ],
+    [
+     "rule",
+     "6.1.1.4.1",
+     "For the purposes of this rule, the name of a double-faced card (2.14) is the card name on its front face."
+    ],
+    [
+     "rule",
+     "6.1.1.5",
+     "Leader cards as well as cards in the main and evolve decks must be based on either a single class or universe."
+    ],
+    [
+     "rule",
+     "6.1.1.5.1",
+     "When basing a deck on a class, all cards in both the main and evolve decks must be from either the leader card's class or the Neutral class."
+    ],
+    [
+     "rule",
+     "6.1.1.5.2",
+     "When basing a deck on a universe, both the leader card and cards in the main and evolve decks must have a universe, and this universe must be the same for all of them."
+    ],
+    [
+     "rule",
+     "6.1.1.5.2.1",
+     "Decks based on certain universes may possess additional rules. Please refer to \"14. UniverseSpecific Information and Keywords\" for more information."
+    ],
+    [
+     "rule",
+     "6.1.2",
+     "Passive abilities related to deck construction conditions are applied as replacement effects that override the above conditions. Once the game starts, these abilities become invalid (10.3.2)."
+    ],
+    [
+     "rule",
+     "6.2",
+     "Before Starting a Game"
+    ],
+    [
+     "rule",
+     "6.2.1",
+     "Before starting a game, do the following in order:"
+    ],
+    [
+     "rule",
+     "6.2.1.1",
+     "Each player presents the leader card, main deck, and evolve deck they'll be using during the game."
+    ],
+    [
+     "rule",
+     "6.2.1.1.1",
+     "If a player's evolve deck contains zero cards, they inform the other players that they don't have an evolve deck."
+    ],
+    [
+     "rule",
+     "6.2.1.2",
+     "Each player places their leader card in their leader area."
+    ],
+    [
+     "rule",
+     "6.2.1.3",
+     "If a player's leader card has both a class and universe, they declare whether their deck is based on the class or universe (6.1.1.5)."
+    ],
+    [
+     "rule",
+     "6.2.1.4",
+     "Each player puts their main deck in their deck area and shuffles it."
+    ],
+    [
+     "rule",
+     "6.2.1.5",
+     "Each player with an evolve deck places it in their evolve deck area."
+    ],
+    [
+     "rule",
+     "6.2.1.6",
+     "Randomly pick a player. They decide who goes first and who goes second."
+    ],
+    [
+     "rule",
+     "6.2.1.7",
+     "Each player draws the top four cards of their deck and moves them into their hand."
+    ],
+    [
+     "rule",
+     "6.2.1.8",
+     "The player going first may, if they desire, move all cards from their hand to the bottom of their deck in any order, then redraw the top four cards of their deck and move them into their hand. The player going second may then elect to do the same. Each player may only perform this action once."
+    ],
+    [
+     "rule",
+     "6.2.1.9",
+     "Each player sets their play points and maximum play points to 0."
+    ],
+    [
+     "rule",
+     "6.2.1.10",
+     "The player going first receives 0 evolution points, while the player going second receives 3 evolution points."
+    ],
+    [
+     "rule",
+     "6.2.1.11",
+     "Each player receives 1 superevolution point."
+    ],
+    [
+     "rule",
+     "6.2.1.12",
+     "Set each leader's defense to 20."
+    ],
+    [
+     "rule",
+     "6.2.1.13",
+     "At this point, each player resolves any cards in their deck or on their field with abilities that take effect after redrawing at the start of the game."
+    ],
+    [
+     "rule",
+     "6.2.1.14",
+     "The player going first becomes the active player, and the game begins."
+    ]
+   ]
+  },
+  {
+   "num": "7",
+   "title": "Game Progression",
+   "rules": [
+    [
+     "rule",
+     "7",
+     "Game Progression"
+    ],
+    [
+     "rule",
+     "7.1",
+     "Overview"
+    ],
+    [
+     "rule",
+     "7.1.1",
+     "The game progresses by repeating steps, or \"turns,\" taken by each player alternately. During a player's turn, that player is considered the \"active player,\" and the other player is considered the \"non-active player.\""
+    ],
+    [
+     "rule",
+     "7.1.2",
+     "The active player proceeds through each of the phases described in 7.2–7.4 in order."
+    ],
+    [
+     "rule",
+     "7.2",
+     "Start Phase"
+    ],
+    [
+     "rule",
+     "7.2.1",
+     "The active player increases their maximum play points by 1 unless their current maximum is 10."
+    ],
+    [
+     "rule",
+     "7.2.2",
+     "The active player sets their play points to the same value as their maximum play points."
+    ],
+    [
+     "rule",
+     "7.2.3",
+     "The active player refreshes all cards on their field."
+    ],
+    [
+     "rule",
+     "7.2.4",
+     "The active player draws a card."
+    ],
+    [
+     "rule",
+     "7.2.4.1",
+     "The player who goes first does not draw a card on their first turn."
+    ],
+    [
+     "rule",
+     "7.2.5",
+     "Confirmation Timing occurs. Once all necessary processes have been carried out, the active player proceeds to the main phase."
+    ],
+    [
+     "rule",
+     "7.3",
+     "Main Phase"
+    ],
+    [
+     "rule",
+     "7.3.1",
+     "Any conditions that say \"at the start of your (next) main phase\" or \"at the start of each player's main phase\" are triggered."
+    ],
+    [
+     "rule",
+     "7.3.2",
+     "Confirmation Timing occurs."
+    ],
+    [
+     "rule",
+     "7.3.3",
+     "The active player performs one of the following actions: • Play a card from their hand or EX area (8.2). • Play an activated ability of a card they control (8.3). • Attack with a follower they control (8.4). • End their main phase."
+    ],
+    [
+     "rule",
+     "7.3.3.1",
+     "The active player cannot choose to end their main phase if an effect is forcing them to satisfy a certain condition during their main phase which they have yet to satisfy."
+    ],
+    [
+     "example",
+     "",
+     "The effect \"This must attack once per turn if able\" is applied to a follower controlled by the active player, and the follower has yet to attack even though it is able to."
+    ],
+    [
+     "rule",
+     "7.3.4",
+     "If the active player chose to end their main phase as described in 7.3.3, they proceed to the end phase. If another choice was made, Confirmation Timing occurs, and 7.3.3 is repeated."
+    ],
+    [
+     "rule",
+     "7.4",
+     "End Phase"
+    ],
+    [
+     "rule",
+     "7.4.1",
+     "Any conditions that say \"at the start of your (next) end phase\" or \"at the start of each player's end phase\" are triggered."
+    ],
+    [
+     "rule",
+     "7.4.2",
+     "Confirmation Timing occurs."
+    ],
+    [
+     "rule",
+     "7.4.3",
+     "The active player may select and engage any number of followers with Ward on their field."
+    ],
+    [
+     "rule",
+     "7.4.4",
+     "Confirmation Timing occurs."
+    ],
+    [
+     "rule",
+     "7.4.5",
+     "The non-active player performs one of the following actions: • Play a card with Quick from their hand or EX area (10.6). • Play an activated ability with Quick. • Do nothing."
+    ],
+    [
+     "rule",
+     "7.4.6",
+     "If a card or ability was played as part of 7.4.5, Confirmation Timing occurs, and 7.4.5 is repeated."
+    ],
+    [
+     "rule",
+     "7.4.7",
+     "If the active player's hand has more cards than the current limit, they must discard down to the limit. If cards were discarded this way, Confirmation Timing occurs, and 7.4.7 is repeated."
+    ],
+    [
+     "rule",
+     "7.4.8",
+     "All \"until the end of the turn,\" \"during this turn,\" and \"during your turn\" effects are removed."
+    ],
+    [
+     "rule",
+     "7.4.9",
+     "The turn concludes. The non-active player becomes the active player and a new turn begins."
+    ]
+   ]
+  },
+  {
+   "num": "8",
+   "title": "Main Phase Processes",
+   "rules": [
+    [
+     "rule",
+     "8",
+     "Main Phase Processes"
+    ],
+    [
+     "rule",
+     "8.1",
+     "Overview"
+    ],
+    [
+     "rule",
+     "8.1.1",
+     "This section provides further details about the actions the active player may perform during their main phase."
+    ],
+    [
+     "rule",
+     "8.1.2",
+     "As a general rule, if part of an action cannot be performed, then that action cannot be selected."
+    ],
+    [
+     "rule",
+     "8.2",
+     "Playing Cards from the Hand or EX Area"
+    ],
+    [
+     "rule",
+     "8.2.1",
+     "The active player may specify a card from their hand or their EX area and play it by paying play points equal to its cost (10.6)."
+    ],
+    [
+     "rule",
+     "8.3",
+     "Playing Activated Abilities"
+    ],
+    [
+     "rule",
+     "8.3.1",
+     "The active player may specify an activated ability of a card they control and play it (10.6)."
+    ],
+    [
+     "rule",
+     "8.3.2",
+     "Some activated abilities are considered equivalent to evolve abilities by certain rules."
+    ],
+    [
+     "rule",
+     "8.3.2.1",
+     "The active player cannot specify an evolve or equivalent ability if they have already played either type of ability that turn."
+    ],
+    [
+     "rule",
+     "8.3.2.2",
+     "The above does not apply if the evolve or equivalent ability has an effect applied to it that allows it to be played any number of times per turn."
+    ],
+    [
+     "rule",
+     "8.4",
+     "Attacking with a Follower"
+    ],
+    [
+     "rule",
+     "8.4.1",
+     "The active player may use a follower they control to attack an enemy leader or enemy follower. If they choose to do so, they do the following in order."
+    ],
+    [
+     "rule",
+     "8.4.2",
+     "The player selects a reserved follower they control as the attacking follower."
+    ],
+    [
+     "rule",
+     "8.4.2.1",
+     "The follower must meet one of the following conditions to be selected: • It has remained on the player's field (under their control) since the start of the turn (including if it evolved that turn). • It evolved that turn."
+    ],
+    [
+     "rule",
+     "8.4.3",
+     "The player selects an attack target."
+    ],
+    [
+     "rule",
+     "8.4.3.1",
+     "The target must meet one of the following conditions to be selected: • It is an engaged follower controlled by the non-active player. • It is the non-active player's leader, but only if the attacking follower has remained on the active player's field (under their control) since the start of the turn."
+    ],
+    [
+     "rule",
+     "8.4.3.2",
+     "If an attack target cannot be selected for any reason, the follower's attack is rendered illegal, and the game returns to the point before the player chose to attack with the follower."
+    ],
+    [
+     "rule",
+     "8.4.3.2.1",
+     "If, due to an effect, the attacking follower \"can't attack enemies,\" an attack target cannot be selected."
+    ],
+    [
+     "rule",
+     "8.4.4",
+     "The player engages the attacking follower."
+    ],
+    [
+     "rule",
+     "8.4.5",
+     "The attacking follower is now considered to have \"attacked.\""
+    ],
+    [
+     "rule",
+     "8.4.5.1",
+     "If the attack target is a follower, the attacking follower and attack target are now considered to be in \"combat\" as long as they both remain on the field."
+    ],
+    [
+     "rule",
+     "8.4.6",
+     "Confirmation Timing occurs."
+    ],
+    [
+     "rule",
+     "8.4.7",
+     "The non-active player performs one of the following actions: • Play a card with Quick from their hand or EX area (10.6). • Play an activated ability with Quick. • Do nothing."
+    ],
+    [
+     "rule",
+     "8.4.8",
+     "If a card or ability was played as part of 8.4.7, Confirmation timing occurs, and 8.4.7 is repeated."
+    ],
+    [
+     "rule",
+     "8.4.9",
+     "If the attacking follower is still on the field at this point, it deals damage equal to its attack value to its attack target."
+    ],
+    [
+     "rule",
+     "8.4.9.1",
+     "If the attack target is a follower, when the attacking follower deals damage according to 8.4.9, the attack target simultaneously deals damage equal to its attack value to the attacking follower."
+    ],
+    [
+     "rule",
+     "8.4.9.2",
+     "If the attacking follower and attack target are still in combat at this point, they are considered to have \"fought\" with each other."
+    ],
+    [
+     "rule",
+     "8.4.10",
+     "Confirmation Timing occurs."
+    ],
+    [
+     "rule",
+     "8.4.11",
+     "The attack ends, and if the attacking follower and attack target are in combat, they leave combat."
+    ]
+   ]
+  },
+  {
+   "num": "9",
+   "title": "Handling Special Card Types",
+   "rules": [
+    [
+     "rule",
+     "9",
+     "Handling Special Card Types"
+    ],
+    [
+     "rule",
+     "9.1",
+     "Tokens"
+    ],
+    [
+     "rule",
+     "9.1.1",
+     "\"Tokens\" may be created during the game and are treated as cards."
+    ],
+    [
+     "rule",
+     "9.1.1.1",
+     "Although tokens are not cards, they are treated as if they were regular cards: they are included when counting the cards in the zone they are in, and any effects that would apply to cards also apply to them."
+    ],
+    [
+     "rule",
+     "9.1.2",
+     "To \"create\" a token in a given zone means to put the specified token into play in that zone."
+    ],
+    [
+     "rule",
+     "9.1.2.1",
+     "The owner and controller of a created token is the player to whom the zone where the token was created belongs."
+    ],
+    [
+     "rule",
+     "9.1.2.2",
+     "When a token is created in a zone, that token is considered to have been put into that zone."
+    ],
+    [
+     "rule",
+     "9.1.2.3",
+     "A token's card information is determined by its card name. Please see the appendix attached at the end of this document for detailed information."
+    ],
+    [
+     "rule",
+     "9.1.3",
+     "To \"eliminate\" a token means to remove it from its current zone and treat it as if it no longer exists."
+    ],
+    [
+     "rule",
+     "9.1.3.1",
+     "If a token is eliminated from a zone, it is considered to have left that zone."
+    ],
+    [
+     "rule",
+     "9.1.4",
+     "Tokens may only exist in certain zones."
+    ],
+    [
+     "rule",
+     "9.1.4.1",
+     "If a token is a follower or amulet, it may exist only in the EX area, the field, or the resolution zone."
+    ],
+    [
+     "rule",
+     "9.1.4.2",
+     "If a token is a crest, it may exist only in the EX area."
+    ],
+    [
+     "rule",
+     "9.1.4.3",
+     "If a token is a spell, it may exist only in the EX area or the resolution zone."
+    ],
+    [
+     "rule",
+     "9.1.4.4",
+     "If a token is moved to a zone where it may not exist, it is eliminated from that zone immediately after it gets moved, and does not entail Confirmation Timing. If the movement takes place in the middle of an effect, the token is eliminated before the rest of the effect is executed."
+    ],
+    [
+     "rule",
+     "9.1.5",
+     "Crest tokens obey the following rules."
+    ],
+    [
+     "rule",
+     "9.1.5.1",
+     "Only one crest with the same name may exist in a given player's EX area."
+    ],
+    [
+     "rule",
+     "9.1.5.1.1",
+     "If a crest is to be created in an EX area which already has a crest with the same name, it is not created."
+    ],
+    [
+     "rule",
+     "9.1.5.1.2",
+     "If multiple crests with the same name are to be created simultaneously in the same EX area, only one of them is created."
+    ],
+    [
+     "rule",
+     "9.1.5.1.3",
+     "If a crest is to be moved to an EX area which already has a crest with the same name, it is not moved."
+    ],
+    [
+     "rule",
+     "9.1.6",
+     "When using tokens during a game, players may use any card-like object to represent a token as long as that object is approved and explicitly understood by both players, and is distinguishable from regular cards."
+    ],
+    [
+     "rule",
+     "9.2",
+     "Advanced Cards"
+    ],
+    [
+     "rule",
+     "9.2.1",
+     "Cards with the special type \"advanced\" obey the following rules when moving between zones."
+    ],
+    [
+     "rule",
+     "9.2.1.1",
+     "A card with the special type \"advanced\" is called an \"advanced card.\""
+    ],
+    [
+     "rule",
+     "9.2.2",
+     "If, during the execution of some process, an advanced card is moved to a zone other than the field, EX area, resolution zone, or evolve deck area, it is placed in the evolve deck faceup immediately after movement and before the rest of the process is performed."
+    ]
+   ]
+  }
+ ]
+}

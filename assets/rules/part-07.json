@@ -1,0 +1,693 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-07.json",
+ "sections": [
+  {
+   "num": "14",
+   "title": "Universe-Specific Information and Keywords",
+   "ruleCount": 91
+  },
+  {
+   "num": "15",
+   "title": "Miscellaneous",
+   "ruleCount": 13
+  },
+  {
+   "num": "B-1",
+   "title": "Sealed Rules",
+   "ruleCount": 17
+  },
+  {
+   "num": "B-2",
+   "title": "Cross Craft Rules",
+   "ruleCount": 7
+  }
+ ],
+ "rules": [
+  {
+   "num": "14",
+   "title": "Universe-Specific Information and Keywords",
+   "rules": [
+    [
+     "rule",
+     "14",
+     "Universe-Specific Information and Keywords"
+    ],
+    [
+     "rule",
+     "14.1",
+     "Overview"
+    ],
+    [
+     "rule",
+     "14.1.1",
+     "Players may possess certain additional information depending on their deck's universe. Furthermore, some universes have cards with unique notations or keywords. This section will detail those notations and keywords."
+    ],
+    [
+     "rule",
+     "14.2",
+     "Umamusume: Pretty Derby"
+    ],
+    [
+     "rule",
+     "14.2.1",
+     "Serve (Notation)"
+    ],
+    [
+     "rule",
+     "14.2.1.1",
+     "If instructed to serve a card X times, and that card is not linked to any cards in the race zone, its controller puts X Carrot cards from their evolve deck into their race zone and links them to the card."
+    ],
+    [
+     "rule",
+     "14.2.1.1.1",
+     "If X isn't specified, treat X as 1."
+    ],
+    [
+     "rule",
+     "14.2.1.2",
+     "If the card to be served is already linked to a card in the race zone, nothing happens as part of the serving process."
+    ],
+    [
+     "rule",
+     "14.2.1.2.1",
+     "In such a case, the serving process can't be executed as part of a cost."
+    ],
+    [
+     "rule",
+     "14.2.1.3",
+     "If a card on the field is moved to a zone other than the field, the link between that card and any cards in the race zone is lost immediately after movement."
+    ],
+    [
+     "rule",
+     "14.2.2",
+     "Serve (Keyword Ability)"
+    ],
+    [
+     "rule",
+     "14.2.2.1",
+     "\"Serve\" is an activated ability involving the payment of a certain cost."
+    ],
+    [
+     "rule",
+     "14.2.2.2",
+     "Serve abilities are denoted by the icon."
+    ],
+    [
+     "rule",
+     "14.2.2.3",
+     "\"[X icons] [cost]: [effect]\" means \" Serve this follower X times, [cost]: [effect].\""
+    ],
+    [
+     "rule",
+     "14.2.2.4",
+     "When playing a serve ability, if the cost includes play points, the player may use 1 evolution point in lieu of 1 play point."
+    ],
+    [
+     "rule",
+     "14.2.2.5",
+     "Serve abilities are equivalent to evolve abilities (8.3.2)."
+    ],
+    [
+     "rule",
+     "14.2.3",
+     "Race"
+    ],
+    [
+     "rule",
+     "14.2.3.1",
+     "If instructed to race a card X times, as long as it is linked to a card in the race zone, that card has Rush and is considered to have \"raced\" X times."
+    ],
+    [
+     "rule",
+     "14.2.3.1.1",
+     "If X isn't specified, treat X as 1."
+    ],
+    [
+     "rule",
+     "14.2.4",
+     "On Race"
+    ],
+    [
+     "rule",
+     "14.2.4.1",
+     "On Race is an automatic ability that triggers when the card with On Race races."
+    ],
+    [
+     "rule",
+     "14.2.4.2",
+     "\"On Race: [text]\" means \"When this card races, [text].\""
+    ],
+    [
+     "rule",
+     "14.3",
+     "THE IDOLM@STER CINDERELLA GIRLS"
+    ],
+    [
+     "rule",
+     "14.3.1",
+     "Magical Item"
+    ],
+    [
+     "rule",
+     "14.3.1.1",
+     "Magical Item tokens have alternate names (2.13)."
+    ],
+    [
+     "rule",
+     "14.3.1.2",
+     "During game preparation, before the first player is decided (6.2.1.6), any player whose deck is based on the THE IDOLM@STER CINDERELLA GIRLS universe (6.1.1.5.2) puts five Magical Item tokens into their EX area."
+    ],
+    [
+     "rule",
+     "14.3.2",
+     "Lesson"
+    ],
+    [
+     "rule",
+     "14.3.2.1",
+     "\"Lesson (X)\" means \"Banish X cards named Magical Item from your EX area.\""
+    ],
+    [
+     "rule",
+     "14.4",
+     "Cardfight!! Vanguard"
+    ],
+    [
+     "rule",
+     "14.4.1",
+     "Trigger Icon"
+    ],
+    [
+     "rule",
+     "14.4.1.1",
+     "Cards based on this universe may have one of the following Trigger icons written on the top right corner. Critical Trigger Draw Trigger Stand Trigger Heal Trigger"
+    ],
+    [
+     "rule",
+     "14.4.2",
+     "Deck Construction"
+    ],
+    [
+     "rule",
+     "14.4.2.1",
+     "A deck based on this universe is subjected to the following."
+    ],
+    [
+     "rule",
+     "14.4.2.1.1",
+     "It must contain at least one Starting Amulet card."
+    ],
+    [
+     "rule",
+     "14.4.2.1.2",
+     "If it contains a card with Trigger (14.4.1), that card must be from the leader's class."
+    ],
+    [
+     "rule",
+     "14.4.3",
+     "Starting a Game"
+    ],
+    [
+     "rule",
+     "14.4.3.1",
+     "At the start of a game (6.2), if a player's deck is based on this universe, they must put a Starting Amulet card from their deck onto their field facedown before each player puts their main deck in their deck zone (6.2.1.4)."
+    ],
+    [
+     "rule",
+     "14.4.3.2",
+     "After players have redrawn their hands, each player with facedown Starting Amulet cards on their field turns them faceup."
+    ],
+    [
+     "rule",
+     "14.4.4",
+     "Starting Amulet"
+    ],
+    [
+     "rule",
+     "14.4.4.1",
+     "Starting Amulet is a passive ability that affects deck construction."
+    ],
+    [
+     "rule",
+     "14.4.4.1.1",
+     "Starting Amulet means \"all Starting Amulet cards used in your main deck and evolve deck must share the same name.\""
+    ],
+    [
+     "rule",
+     "14.4.5",
+     "Drive Check"
+    ],
+    [
+     "rule",
+     "14.4.5.1",
+     "If instructed to perform a drive check, do the following."
+    ],
+    [
+     "rule",
+     "14.4.5.1.1",
+     "The player moves the top card of their deck into their Trigger zone."
+    ],
+    [
+     "rule",
+     "14.4.5.1.2",
+     "If their deck is not based on this universe, the player moves the card from their Trigger zone to the bottom of their deck and resolves the drive check."
+    ],
+    [
+     "rule",
+     "14.4.5.1.3",
+     "If the card has Trigger, that player resolves one of the following abilities according to the Trigger icon on the card."
+    ],
+    [
+     "rule",
+     "14.4.5.1.3.1",
+     "If it is a Critical Trigger icon ( ), the player gives a follower on their field +2 attack."
+    ],
+    [
+     "rule",
+     "14.4.5.1.3.2",
+     "If it is a Draw Trigger icon ( ), the player draws a card."
+    ],
+    [
+     "rule",
+     "14.4.5.1.3.3",
+     "If it is a Stand Trigger icon ( ), the player refreshes a follower on their field. For the rest of the turn, that follower cannot attack an enemy leader."
+    ],
+    [
+     "rule",
+     "14.4.5.1.3.4",
+     "If it is a Heal Trigger icon ( ), the player increases their leader's defense by 3."
+    ],
+    [
+     "rule",
+     "14.4.5.1.4",
+     "Once a player resolves an ability according to 14.4.5.1.3, their \"when you drive check a Trigger\" condition is satisfied at this point."
+    ],
+    [
+     "rule",
+     "14.4.5.1.5",
+     "If a player resolves a card with Trigger in their Trigger zone in the above manner, they put the card into their cemetery. If the card does not have Trigger, or if the player chooses not to resolve it, the player puts it at the bottom of their deck."
+    ],
+    [
+     "rule",
+     "14.4.6",
+     "Single Drive/Twin Drive"
+    ],
+    [
+     "rule",
+     "14.4.6.1",
+     "Single Drive and Twin Drive are automatic abilities that perform drive checks when the card with Single Drive or Twin Drive attacks."
+    ],
+    [
+     "rule",
+     "14.4.6.2",
+     "Single Drive means \"Strike - Perform a drive check.\""
+    ],
+    [
+     "rule",
+     "14.4.6.3",
+     "Twin Drive means \"Strike - Perform 2 drive checks.\""
+    ],
+    [
+     "rule",
+     "14.4.7",
+     "Drive"
+    ],
+    [
+     "rule",
+     "14.4.7.1",
+     "Drive is a passive ability that is given to a follower by resolving certain abilities."
+    ],
+    [
+     "rule",
+     "14.4.7.2",
+     "Drive does not have any effect on its own."
+    ],
+    [
+     "rule",
+     "14.4.7.3",
+     "If instructed to give a follower Drive, do the following."
+    ],
+    [
+     "rule",
+     "14.4.7.3.1",
+     "If the follower has previously been given Drive, even if it has lost Drive for any reason, do nothing and end the action sequence."
+    ],
+    [
+     "rule",
+     "14.4.7.3.2",
+     "Give the follower Drive, Single Drive (14.4.6.2), and Rush (12.10)."
+    ],
+    [
+     "rule",
+     "14.4.8",
+     "On Drive"
+    ],
+    [
+     "rule",
+     "14.4.8.1",
+     "On Drive is an automatic ability that triggers when the card with On Drive is given Drive."
+    ],
+    [
+     "rule",
+     "14.4.8.2",
+     "\"On Drive - [text]\" means \"when this card is given Drive, [text].\""
+    ],
+    [
+     "rule",
+     "14.4.9",
+     "Ride"
+    ],
+    [
+     "rule",
+     "14.4.9.1",
+     "Ride is an activated ability that gives Drive to the follower with Ride."
+    ],
+    [
+     "rule",
+     "14.4.9.2",
+     "\"Ride [cost]: [text]\" means \" [cost] Put a Drive Point card from your evolve deck into your drive zone: You may use 1 evolution point in lieu of 1 play point. The Drive Point card put into the drive zone by this ability is linked to this card. This ability can only be activated if this ability has not been activated for this card this game. [text].\""
+    ],
+    [
+     "rule",
+     "14.4.9.3",
+     "Ride is indicated on a card by ( )."
+    ],
+    [
+     "rule",
+     "14.4.9.4",
+     "If a card on the field is moved to a zone other than the field, the link between that card and any Drive Point cards in the drive zone is lost immediately after movement."
+    ],
+    [
+     "rule",
+     "14.4.9.5",
+     "Ride abilities are equivalent to evolve abilities (8.3.2.1)."
+    ],
+    [
+     "rule",
+     "14.5",
+     "Princess Connect! Re: Dive"
+    ],
+    [
+     "rule",
+     "14.5.1",
+     "Union Burst"
+    ],
+    [
+     "rule",
+     "14.5.1.1",
+     "Some abilities have the Union Burst keyword."
+    ],
+    [
+     "rule",
+     "14.5.1.1.1",
+     "Such abilities are written in the form \"Union Burst [ability]\" and are called Union Burst abilities."
+    ],
+    [
+     "rule",
+     "14.5.1.1.2",
+     "If [ability] is a simplification of multiple abilities (12.1.2), all of them are Union Burst abilities."
+    ],
+    [
+     "rule",
+     "14.5.1.1.3",
+     "Union Burst is indicated on a card by ."
+    ],
+    [
+     "rule",
+     "14.5.1.2",
+     "If a deck is based on a class (6.1.1.5.1) or a universe (6.1.1.5.2) other than Princess Connect! Re: Dive, all Union Burst abilities in it are invalid (10.3.2) at all times and in all zones."
+    ],
+    [
+     "rule",
+     "14.5.1.3",
+     "A Union Burst ability is considered to have \"executed\" if it is played (10.6.2.7) and resolved (10.6.2.8)."
+    ],
+    [
+     "rule",
+     "14.5.1.4",
+     "If instructed to execute a Union Burst ability \"without paying its cost,\" the player plays the ability (10.6.2) as if its original cost (5.24) did not exist."
+    ],
+    [
+     "rule",
+     "14.5.1.4.1",
+     "If the ability is an automatic ability, ignore its trigger condition (10.1.1.2.1.1)."
+    ],
+    [
+     "rule",
+     "14.5.1.5",
+     "If the ability contains an X (5.2) in its original cost and effect whose value would normally be determined by the player (5.2.1.2), play the ability as if X were equal to zero."
+    ],
+    [
+     "rule",
+     "14.5.2",
+     "Equipment"
+    ],
+    [
+     "rule",
+     "14.5.2.1",
+     "Tokens of the \"equipment\" card type may be created during the game by rules and effects."
+    ],
+    [
+     "rule",
+     "14.5.2.1.1",
+     "If a token is equipment, it may exist only in the equipment zone (4.16)."
+    ],
+    [
+     "rule",
+     "14.5.2.1.2",
+     "Abilities of equipment tokens are valid only in the equipment zone."
+    ],
+    [
+     "rule",
+     "14.5.2.2",
+     "If instructed to equip a follower with a [name], do the following."
+    ],
+    [
+     "rule",
+     "14.5.2.2.1",
+     "Create a token with the card name [name] in the equipment zone."
+    ],
+    [
+     "rule",
+     "14.5.2.2.2",
+     "Link the token to the follower. Upon being linked, the token's \"when a follower equips this\" condition is satisfied, and the follower is considered the token's \"equipped follower.\""
+    ],
+    [
+     "rule",
+     "14.5.2.3",
+     "A follower may equip multiple tokens at the same time."
+    ],
+    [
+     "rule",
+     "14.5.2.4",
+     "If a follower on the field is moved to a zone other than the field, the link between that follower and any tokens it has equipped is lost."
+    ]
+   ]
+  },
+  {
+   "num": "15",
+   "title": "Miscellaneous",
+   "rules": [
+    [
+     "rule",
+     "15",
+     "Miscellaneous"
+    ],
+    [
+     "rule",
+     "15.1",
+     "Counters"
+    ],
+    [
+     "rule",
+     "15.1.1",
+     "During the game, certain counters may be placed on or removed from cards."
+    ],
+    [
+     "rule",
+     "15.1.2",
+     "Different types of counters have different names."
+    ],
+    [
+     "rule",
+     "15.1.2.1",
+     "Names are written in the form \"[qualifier] counter.\""
+    ],
+    [
+     "rule",
+     "15.1.2.2",
+     "Counters with the same name are considered identical, regardless of how or why they were placed."
+    ],
+    [
+     "rule",
+     "15.1.3",
+     "To put a counter on a card, place a clearly identifiable item on top of that card."
+    ],
+    [
+     "rule",
+     "15.1.4",
+     "To remove a counter from a card, take the specified counter off that card."
+    ],
+    [
+     "rule",
+     "15.2",
+     "Perpetual Cycles"
+    ],
+    [
+     "rule",
+     "15.2.1",
+     "When executing a process, it may be possible for a sequence of actions to be repeated an infinite number of times. This is called a \"perpetual cycle,\" and is handled as follows:"
+    ],
+    [
+     "rule",
+     "15.2.1.1",
+     "When a perpetual cycle occurs, the active player declares the sequence of actions they wish to perform and then specifies the number of times they wish to perform that sequence. Next, the nonactive player can either allow the proposed sequence to be performed the specified number of times, or have it performed a lesser number of times by declaring that an action or actions not included in the sequence will be executed at a specific point in the perpetual cycle. The active player then performs the actions according to the decision of the non-active player."
+    ],
+    [
+     "rule",
+     "15.2.1.2",
+     "If the active player performs an action that results in the game state remaining completely identical to before the action was performed, the active player may not perform that action again."
+    ],
+    [
+     "rule",
+     "15.2.1.3",
+     "If neither player is able to stop the perpetual cycle, the game ends in a draw."
+    ]
+   ]
+  },
+  {
+   "num": "B-1",
+   "title": "Sealed Rules",
+   "rules": [
+    [
+     "text",
+     "",
+     "Sealed is a format where players build decks using unopened packs. When playing this format, use the following adjusted or additional rules. All other rules follow the normal Comprehensive Rules."
+    ],
+    [
+     "appendix-rule",
+     "6",
+     "Game Preparation"
+    ],
+    [
+     "rule",
+     "6.1",
+     "Card Preparation"
+    ],
+    [
+     "rule",
+     "6.1.1",
+     "Each player opens their prepared booster packs, and constructs a main deck and evolve deck using only the cards from those packs."
+    ],
+    [
+     "rule",
+     "6.1.1.1",
+     "The chosen Sealed format determines the number of booster packs: Open 8 uses eight packs, while Box Battle uses all the packs in a specified box."
+    ],
+    [
+     "rule",
+     "6.1.1.1.1",
+     "If the box specified for Box Battle contains additional unpacked cards, such as promo cards, those cards cannot be used in the construction of the main deck or evolve deck."
+    ],
+    [
+     "rule",
+     "6.1.1.2",
+     "Players are not required to use a leader card."
+    ],
+    [
+     "rule",
+     "6.1.1.3",
+     "A main deck is constructed of at least 30 cards. Leader cards and special card types (namely evolved cards, advanced cards, and tokens) are not included in the main deck."
+    ],
+    [
+     "rule",
+     "6.1.1.4",
+     "An evolve deck is constructed of 0 or more cards. Only evolved cards and advanced cards, which are considered special card types, may be included in an evolve deck."
+    ],
+    [
+     "rule",
+     "6.1.1.5",
+     "There is no limit on the number of copies of a card a deck may contain."
+    ],
+    [
+     "rule",
+     "6.1.1.6",
+     "Decks are not required to be constructed from the same class or universe."
+    ],
+    [
+     "rule",
+     "6.2",
+     "Before Starting a Game"
+    ],
+    [
+     "rule",
+     "6.2.1",
+     "Before starting a game, do the following in order (but ignore any mention of leader cards)."
+    ],
+    [
+     "appendix-rule",
+     "8",
+     "Main Phase Processes"
+    ],
+    [
+     "rule",
+     "8.5",
+     "Granting Rush"
+    ],
+    [
+     "rule",
+     "8.5.1",
+     "During their main phase, the active player can give a follower on their field Rush if they haven't used an evolve ability (12.2) or equivalent ability (8.3.2.1) that turn. To do this, the player spends 1 play point and turns a facedown card in their evolve deck faceup. If a player chooses to do this, they cannot do it again that turn or use an evolve or equivalent ability that turn."
+    ],
+    [
+     "rule",
+     "8.5.1.1",
+     "When paying the cost for performing this action, the player may use 1 evolution point in lieu of 1 play point."
+    ]
+   ]
+  },
+  {
+   "num": "B-2",
+   "title": "Cross Craft Rules",
+   "rules": [
+    [
+     "text",
+     "",
+     "Cross Craft is a format where players build decks using cards from multiple classes. When playing this format, use the following adjusted or additional rules. All other rules follow the normal Comprehensive Rules."
+    ],
+    [
+     "appendix-rule",
+     "6",
+     "Game Preparation"
+    ],
+    [
+     "rule",
+     "6.1",
+     "Card Preparation"
+    ],
+    [
+     "rule",
+     "6.1.1.1",
+     "Each player prepares two leader cards from different classes."
+    ],
+    [
+     "rule",
+     "6.1.1.5",
+     "The main deck and evolve deck must be based on classes. They cannot be based on a universe."
+    ],
+    [
+     "rule",
+     "6.1.1.5.1",
+     "All cards in both the main and evolve decks must be from either the leader cards' classes or the Neutral class."
+    ],
+    [
+     "rule",
+     "6.1.1.5.2",
+     "The main deck must contain at least one card from each leader's class."
+    ]
+   ]
+  }
+ ]
+}

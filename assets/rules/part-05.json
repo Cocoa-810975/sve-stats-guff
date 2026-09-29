@@ -1,0 +1,561 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-05.json",
+ "sections": [
+  {
+   "num": "10",
+   "title": "Playing and Resolving Cards and Abilities（下）",
+   "ruleCount": 75
+  },
+  {
+   "num": "11",
+   "title": "Rules Handling",
+   "ruleCount": 31
+  }
+ ],
+ "rules": [
+  {
+   "num": "10",
+   "title": "Playing and Resolving Cards and Abilities（下）",
+   "rules": [
+    [
+     "rule",
+     "10.6.2.5.1",
+     "A cost is determined as follows:"
+    ],
+    [
+     "rule",
+     "10.6.2.5.1.1",
+     "The cost is based on the processes determined by the card or ability (10.4)."
+    ],
+    [
+     "rule",
+     "10.6.2.5.1.2",
+     "If an alternate cost action may be performed and the player chooses to do so, the alternate cost action replaces the original cost action."
+    ],
+    [
+     "rule",
+     "10.6.2.5.1.3",
+     "Effects that change the cost to a specific value are applied (10.4.4.1)."
+    ],
+    [
+     "rule",
+     "10.6.2.5.1.4",
+     "Any actions which are to be added on to the cost are added."
+    ],
+    [
+     "rule",
+     "10.6.2.5.2",
+     "Even if part of a process that is executed as part of a cost is altered by a replacement effect, the original process is considered to have been executed."
+    ],
+    [
+     "rule",
+     "10.6.2.5.3",
+     "If part of a cost would be executed based on a value of zero (1.3.2.2), that process is not executed, but is considered to have been executed."
+    ],
+    [
+     "rule",
+     "10.6.2.5.4",
+     "If the cost cannot be paid at this point for any reason, the playing of the card or ability is canceled, and the game returns to the point before the player chose to play the card or ability."
+    ],
+    [
+     "rule",
+     "10.6.2.6",
+     "If the card to be played is a follower or amulet, check whether the current number of cards on their field (not including the one to be played) is at or over the limit. If equal to or greater than the limit, the follower or amulet cannot be played, and the game returns to the point before the playing of the card."
+    ],
+    [
+     "rule",
+     "10.6.2.7",
+     "At this point, the card or ability is considered to have been \"played.\""
+    ],
+    [
+     "rule",
+     "10.6.2.8",
+     "Resolve the card or ability."
+    ],
+    [
+     "rule",
+     "10.6.2.8.1",
+     "If the played card is a follower or amulet, and the number of cards on the player's field is under the limit, they move it to their field."
+    ],
+    [
+     "rule",
+     "10.6.2.8.1.1",
+     "Any effects or counters that were applied to the card in the resolution zone also apply to the card after it is put onto the field."
+    ],
+    [
+     "rule",
+     "10.6.2.8.2",
+     "If a spell, activated ability, or automatic ability was played, the effects indicated by the text or ability are performed in the written order."
+    ],
+    [
+     "rule",
+     "10.6.2.8.2.1",
+     "Even if the card with the activated ability or automatic ability is no longer in its original zone for some reason, the ability is resolved."
+    ],
+    [
+     "rule",
+     "10.6.2.8.2.2",
+     "If multiple options were selected for a \"choose\" action (5.18), the options are executed in the order they are listed."
+    ],
+    [
+     "rule",
+     "10.6.2.8.2.3",
+     "If any cards or abilities remain in the resolution zone at this point, they are moved to their owner's cemetery if they are cards, or removed from the resolution zone if they are abilities."
+    ],
+    [
+     "rule",
+     "10.7",
+     "Handling Automatic Abilities"
+    ],
+    [
+     "rule",
+     "10.7.1",
+     "An automatic ability is an ability that is played in the next Confirmation Timing after its trigger condition is met."
+    ],
+    [
+     "rule",
+     "10.7.2",
+     "When the trigger condition of an automatic ability is met, the automatic ability becomes pending."
+    ],
+    [
+     "rule",
+     "10.7.2.1",
+     "If the automatic ability's trigger condition is met multiple times, the automatic ability becomes pending the same number of times."
+    ],
+    [
+     "rule",
+     "10.7.2.2",
+     "When the trigger condition of an automatic ability in the form of \"[number of times] per/each turn\" is met, the automatic ability becomes pending up to a maximum of X times, where X equals the specified number minus the number of times the automatic ability has already become pending that turn. In this case, the controller determines which of the met trigger conditions become pending."
+    ],
+    [
+     "rule",
+     "10.7.3",
+     "When Confirmation Timing occurs, the controller of the pending automatic abilities selects one and plays it. After the played ability is resolved, one instance of its pending status is removed."
+    ],
+    [
+     "rule",
+     "10.7.3.1",
+     "A pending automatic ability must be played; a player cannot choose not to play to it. However, if a player controls multiple pending automatic abilities, they may select which to play first."
+    ],
+    [
+     "rule",
+     "10.7.3.2",
+     "If the selected pending automatic ability cannot be played for any reason, one instance of its pending status is removed."
+    ],
+    [
+     "rule",
+     "10.7.4",
+     "Some automatic abilities are triggered when a card moves from one zone to another. These are called \"zone-shift triggers.\""
+    ],
+    [
+     "rule",
+     "10.7.4.1",
+     "An automatic ability triggered by a zone shift may require the player to check whether the automatic ability is valid, the information or state of the card that triggered the ability, and/or the current game state. In such cases, information is checked as follows."
+    ],
+    [
+     "rule",
+     "10.7.4.1.1",
+     "When an automatic ability triggered by a card moving from a public zone to a non-public zone or vice versa requires the card's information, use the information from the card while it's in the public zone."
+    ],
+    [
+     "rule",
+     "10.7.4.1.2",
+     "When an automatic ability triggered by a card moving from the field to another zone requires the card's information, use the information from the card while it's on the field."
+    ],
+    [
+     "rule",
+     "10.7.4.1.3",
+     "Aside from cases covered in 10.7.4.1.2, when an automatic ability triggered by a card moving from a public zone to another public zone requires the card's information, use the information from the card after it moves to the new zone."
+    ],
+    [
+     "rule",
+     "10.7.4.2",
+     "If a card with a zone-shift trigger ability enters or leaves a zone where the ability is valid, and at the same time another card changes zones in a way that satisfies that ability's trigger condition, that condition is considered to have been triggered."
+    ],
+    [
+     "rule",
+     "10.7.4.3",
+     "A card that moves from one player's field to another is not treated as having \"entered\" or been \"put onto\" that field, and therefore does not satisfy trigger conditions that involve a card being put on the field."
+    ],
+    [
+     "rule",
+     "10.7.5",
+     "Some effects may create an automatic ability that triggers at a certain later point in time. This is called a \"delayed trigger.\""
+    ],
+    [
+     "rule",
+     "10.7.5.1",
+     "A delayed trigger condition may only trigger once unless a time frame is specified."
+    ],
+    [
+     "rule",
+     "10.7.6",
+     "Some automatic abilities are triggered not by the occurrence of an event, but by the fulfillment of a certain condition (e.g., \"When there are no cards in your hand\"). This is called a \"state trigger.\""
+    ],
+    [
+     "rule",
+     "10.7.6.1",
+     "State triggers become pending only once when that state is achieved. After the automatic ability is resolved, if the trigger condition for that automatic ability is met again, the ability becomes pending again."
+    ],
+    [
+     "rule",
+     "10.7.7",
+     "When playing a pending automatic ability, even if the card with the automatic ability has changed zones, the automatic ability must still be played."
+    ],
+    [
+     "rule",
+     "10.8",
+     "Handling One-Shot Effects"
+    ],
+    [
+     "rule",
+     "10.8.1",
+     "If a player is required to perform a oneshot effect, they perform the indicated action only once."
+    ],
+    [
+     "rule",
+     "10.9",
+     "Handling Persistent Effects"
+    ],
+    [
+     "rule",
+     "10.9.1",
+     "If a card's information is referenced while one or more persistent effects are in place, the persistent effects are applied to the card's information in the following order:"
+    ],
+    [
+     "rule",
+     "10.9.1.1",
+     "The information written on the card itself is always the base value."
+    ],
+    [
+     "rule",
+     "10.9.1.1.1",
+     "If the card is on the field and is linked to a card in the evolve zone, treat that card as having the card information of the card in the evolve zone, excluding the cost (5.16.1.2)."
+    ],
+    [
+     "rule",
+     "10.9.1.2",
+     "Next, apply effects that give, remove, validate, or invalidate abilities."
+    ],
+    [
+     "rule",
+     "10.9.1.3",
+     "Next, apply any persistent effects that do not change the numerical values in the information."
+    ],
+    [
+     "rule",
+     "10.9.1.4",
+     "Next, apply any persistent effects that change the numerical values in the information."
+    ],
+    [
+     "rule",
+     "10.9.1.5",
+     "If the application order of two persistent effects—effect A and effect B— cannot be determined by 10.9.1.2– 10.9.1.4, and applying A first would change what B applies to or how B would be applied, then B is considered dependent on A. Dependent effects are always processed after the effects they depend on."
+    ],
+    [
+     "rule",
+     "10.9.1.6",
+     "If there are multiple persistent effects whose application order cannot be determined by 10.9.1.2–10.9.1.5, apply them in the order in which they were produced."
+    ],
+    [
+     "rule",
+     "10.9.1.6.1",
+     "If the source of a persistent effect is a passive ability, its application order is based on when the card with the ability was put into its current zone."
+    ],
+    [
+     "rule",
+     "10.9.1.6.2",
+     "For all other ability types, order is based on when they were played."
+    ],
+    [
+     "rule",
+     "10.9.2",
+     "A persistent effect that isn't produced by a passive ability doesn't apply to cards that change zones after the corresponding ability is played, unless they move from one field to another."
+    ],
+    [
+     "rule",
+     "10.9.3",
+     "A persistent effect that changes card information in a certain zone is applied at the same time an applicable card enters that zone."
+    ],
+    [
+     "rule",
+     "10.9.3.1",
+     "An automatic ability whose trigger condition requires a card with certain information to enter a zone refers to the card's information after any persistent effects that are applicable in that zone have been applied."
+    ],
+    [
+     "rule",
+     "10.10",
+     "Handling Replacement Effects"
+    ],
+    [
+     "rule",
+     "10.10.1",
+     "While a replacement effect is in place, if the target event (the event being replaced) would occur, it does not occur, and instead the event indicated by the replacement effect occurs."
+    ],
+    [
+     "rule",
+     "10.10.1.1",
+     "The original event that was replaced is considered to have not occurred at all."
+    ],
+    [
+     "rule",
+     "10.10.2",
+     "If there are multiple replacement effects for the same event, the affected player determines the order in which they are applied."
+    ],
+    [
+     "rule",
+     "10.10.2.1",
+     "If the affected event is a card or ability, its controller determines the order instead."
+    ],
+    [
+     "rule",
+     "10.10.2.2",
+     "If the affected event is a game action, the order is determined by the player performing the action or the controller of the card to which the action applies."
+    ],
+    [
+     "rule",
+     "10.10.2.3",
+     "Each replacement effect is applied once at most to any single event."
+    ],
+    [
+     "rule",
+     "10.10.2.4",
+     "For replacement effects that change the cost of playing a card or ability (10.2.1.3.3), effects that change the cost to a specific value are applied before effects that increase or decrease the cost."
+    ],
+    [
+     "rule",
+     "10.10.2.5",
+     "A replacement effect which, when resolving a card or ability, replaces part of a process contained within the card or ability itself is called a “self-replacement effect.”"
+    ],
+    [
+     "rule",
+     "10.10.2.5.1",
+     "Self-replacement effects are applied before other replacement effects."
+    ],
+    [
+     "rule",
+     "10.10.3",
+     "For cards that are moved to the field or EX area, replacement effects are applied to them with reference to their card information after any persistent effects that apply to them on the field or in the EX area have been applied (10.9.3)."
+    ],
+    [
+     "rule",
+     "10.11",
+     "Final Card Information"
+    ],
+    [
+     "rule",
+     "10.11.1",
+     "If an effect refers to a certain card's information or placement state in a certain zone, and the card has changed zones (excluding movement from one field to another) by the time the effect is executed, the effect refers to the information or placement state of the card when it was last in that zone."
+    ],
+    [
+     "rule",
+     "10.12",
+     "Source"
+    ],
+    [
+     "rule",
+     "10.12.1",
+     "The source of an effect is the object from which the effect originates and is defined as follows."
+    ],
+    [
+     "rule",
+     "10.12.1.1",
+     "The source of an effect produced by a card's ability is that card."
+    ],
+    [
+     "rule",
+     "10.12.1.2",
+     "An instance of rules handling (section 11) is not an effect and therefore has no source."
+    ],
+    [
+     "rule",
+     "10.12.1.3",
+     "The source of an effect produced by a delayed trigger (10.7.5) is the source of the effect which created the delayed trigger."
+    ],
+    [
+     "rule",
+     "10.12.2",
+     "The source of an instance of damage is the object which dealt the damage and is defined as follows."
+    ],
+    [
+     "rule",
+     "10.12.2.1",
+     "When a follower attacks (8.4), the source of damage it deals in accordance with rule 8.4.9 is that follower itself."
+    ],
+    [
+     "rule",
+     "10.12.2.2",
+     "The source of damage dealt by an effect produced by a card's ability is the source of that effect, unless the effect specifies the damage source otherwise."
+    ],
+    [
+     "rule",
+     "10.12.2.3",
+     "If an effect modifies damage that an object deals, it means that it modifies damage whose source is that object."
+    ]
+   ]
+  },
+  {
+   "num": "11",
+   "title": "Rules Handling",
+   "rules": [
+    [
+     "rule",
+     "11",
+     "Rules Handling"
+    ],
+    [
+     "rule",
+     "11.1",
+     "Basics of Rules Handling"
+    ],
+    [
+     "rule",
+     "11.1.1",
+     "\"Rules handling\" refers to the automatic processes covered in this section, which are executed during or after certain game events."
+    ],
+    [
+     "rule",
+     "11.1.2",
+     "Rules handling occurs only during Confirmation Timing and checks whether the conditions of a certain rule have been met. If met, that rule is applied. Even if a condition is met during the execution of another process, if it is not met at the point of the Confirmation Timing, that rule is not applied."
+    ],
+    [
+     "rule",
+     "11.1.3",
+     "If multiple instances of rules handling should be required at the same time, the processes are executed simultaneously."
+    ],
+    [
+     "rule",
+     "11.2",
+     "Handling Losses"
+    ],
+    [
+     "rule",
+     "11.2.1",
+     "If a player's leader has 0 or less defense, that player loses the game."
+    ],
+    [
+     "rule",
+     "11.2.2",
+     "If a player should be required to draw a card after the previous instance of rules handling, and there are no cards in their deck area, that player loses the game."
+    ],
+    [
+     "rule",
+     "11.3",
+     "Handling Follower Destruction"
+    ],
+    [
+     "rule",
+     "11.3.1",
+     "If a follower has 0 or less defense, that follower is destroyed."
+    ],
+    [
+     "rule",
+     "11.3.2",
+     "If a follower fought (8.4.9.2) with another follower which has Bane (12.14) after the previous instance of rules handling, the former is destroyed."
+    ],
+    [
+     "rule",
+     "11.3.2.1",
+     "For effects that refer to being \"destroyed by abilities,\" destruction under rule 11.3.2 is considered destruction by a Bane ability."
+    ],
+    [
+     "rule",
+     "11.4",
+     "Handling Field Limits"
+    ],
+    [
+     "rule",
+     "11.4.1",
+     "If there are more cards on a player's field than that field's limit, the player selects cards on that field equal to the limit and moves the other cards to their owner's cemetery."
+    ],
+    [
+     "rule",
+     "11.5",
+     "Handling EX Area Limits"
+    ],
+    [
+     "rule",
+     "11.5.1",
+     "If there are more cards in a player's EX area than that EX area's limit, the player selects cards in that EX area equal to the limit and moves the other cards to their owner's cemetery."
+    ],
+    [
+     "rule",
+     "11.6",
+     "Handling Illegal Evolutions"
+    ],
+    [
+     "rule",
+     "11.6.1",
+     "If a card in the evolve zone is not linked to a card on the field, that card is moved faceup to the evolve deck area."
+    ],
+    [
+     "rule",
+     "11.6.2",
+     "If a single card on the field is linked to more than one card in the evolve zone, its controller selects the evolve-zone card that was most recently linked to it (or one of them, if multiple cards were linked simultaneously). The link between the card on the field and the other evolve-zone cards is lost."
+    ],
+    [
+     "rule",
+     "11.6.3",
+     "If a single card in the evolve zone is linked to more than one card on the field, its controller selects the card on the field that was most recently linked to it (or one of them, if multiple cards were linked simultaneously). The link between the card in the evolve zone and the other cards on the field is lost."
+    ],
+    [
+     "rule",
+     "11.7",
+     "Handling Stack"
+    ],
+    [
+     "rule",
+     "11.7.1",
+     "If a card on the field with Stack (13.3.2) has no Stack counters on it, that card is moved to its owner's cemetery."
+    ],
+    [
+     "rule",
+     "11.8",
+     "Handling Illegal Racing"
+    ],
+    [
+     "rule",
+     "11.8.1",
+     "If a card in the race zone is not linked to a card on the field, that card is moved faceup to the evolve deck area."
+    ],
+    [
+     "rule",
+     "11.9",
+     "Handling Play Point Limits"
+    ],
+    [
+     "rule",
+     "11.9.1",
+     "If a player's current number of play points exceeds their maximum play points, their current number of play points becomes equal to their maximum play points."
+    ],
+    [
+     "rule",
+     "11.10",
+     "Handling Illegal Drive Point Cards"
+    ],
+    [
+     "rule",
+     "11.10.1",
+     "If a Drive Point card in the drive zone is not linked to a card on the field, that card is moved faceup to the evolve deck area."
+    ],
+    [
+     "rule",
+     "11.11",
+     "Handling Illegal Equipment Cards"
+    ],
+    [
+     "rule",
+     "11.11.1",
+     "If a token in the equipment zone is not linked to a card on the field, that token is eliminated (9.1.3)."
+    ],
+    [
+     "rule",
+     "11.11.2",
+     "If the controller of a token in the equipment zone differs from the controller of the card on the field to which it is linked, the latter also becomes the controller of the token."
+    ]
+   ]
+  }
+ ]
+}

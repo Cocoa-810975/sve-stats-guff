@@ -1,0 +1,455 @@
+{
+ "_comment": "SVEE 综合规则分片",
+ "source": "SVEE-Comprehensive-Rules_v1.26.1_260805.pdf",
+ "part": "part-01.json",
+ "sections": [
+  {
+   "num": "4",
+   "title": "Zones",
+   "ruleCount": 87
+  }
+ ],
+ "rules": [
+  {
+   "num": "4",
+   "title": "Zones",
+   "rules": [
+    [
+     "rule",
+     "4",
+     "Zones"
+    ],
+    [
+     "rule",
+     "4.1",
+     "Zone Basics"
+    ],
+    [
+     "rule",
+     "4.1.1",
+     "Each player possesses one of each zone unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "4.1.2",
+     "Depending on the zone, card information may or may not be visible to all players. Zones where card information can be viewed by all players are called \"public zones,\" while other zones are called \"non-public zones.\""
+    ],
+    [
+     "rule",
+     "4.1.2.1",
+     "Whether public or non-public, players are allowed to check the number of cards in any zone at any time."
+    ],
+    [
+     "rule",
+     "4.1.2.2",
+     "A card in a non-public zone cannot be guaranteed to satisfy a given condition unless it has been revealed to all players by an effect. Even if there is a card in that zone that satisfies the condition, players to whom the zone has been revealed may choose to treat the card as if it didn't exist, as long as it has not been revealed to all players."
+    ],
+    [
+     "rule",
+     "4.1.2.3",
+     "When in non-public zones, doublefaced cards (2.14) follow the same visibility rules as other cards with regards to which players can check card information."
+    ],
+    [
+     "rule",
+     "4.1.2.3.1",
+     "Players may hide non-public information on double-faced cards with card sleeves or other means."
+    ],
+    [
+     "rule",
+     "4.1.3",
+     "Depending on the zone, it may be necessary to track card order. Where necessary, card order is tracked based on the way the cards are stacked above and below one another. For zones where card order is tracked, players may not change the card order unless instructed otherwise."
+    ],
+    [
+     "rule",
+     "4.1.3.1",
+     "If instructed to move a card to a specific position within a zone where card order is tracked, but there aren't enough cards in the zone to reach the specified position, instead move the card to the position furthest from the starting point from which the specified position is determined."
+    ],
+    [
+     "example",
+     "",
+     "An ability reads, \"Put this card into your deck 3rd from the top,\" but your deck only has one card. In this case, move the card to the position furthest from the top of your deck; that is, the bottom."
+    ],
+    [
+     "rule",
+     "4.1.4",
+     "When a card is moved to a different zone, that card is considered to be a new card in that zone unless indicated otherwise. Any applied effects from the previous zone do not carry over to the new zone unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "4.1.4.1",
+     "There are certain card effects which appear to refer to a card that has just moved zones. In this case, the effect is referring to the card after it has moved."
+    ],
+    [
+     "example",
+     "",
+     "A card has the Last Words ability \"Put this card onto its owner's field and evolve it.\" In this case, \"it\" refers to \"this card\" after it has moved from the cemetery to the field."
+    ],
+    [
+     "rule",
+     "4.1.5",
+     "When multiple cards are put into the same zone simultaneously, the order in which the cards are placed in the new zone is decided by the player to whom that zone belongs unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "4.1.5.1",
+     "When multiple cards are simultaneously moved from a public zone to a non-public zone, if the controller of those cards is able to determine the order of their placement, they do so without revealing the order to other players."
+    ],
+    [
+     "rule",
+     "4.1.6",
+     "When instructed to move a card to a given zone, if the player to whom the zone belongs is not specified, the card is moved to its owner's corresponding zone unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "4.2",
+     "Card Placement States"
+    ],
+    [
+     "rule",
+     "4.2.1",
+     "Some zones require cards to be placed in a specific way. The different placement states include horizontal and vertical orientation, as well as whether the front or back of the card is showing."
+    ],
+    [
+     "rule",
+     "4.2.2",
+     "Cards may be \"reserved\" (upright) or \"engaged\" (turned sideways). Cards must be in one of these two states at any given time; they cannot simultaneously be in both states nor can they be in neither state."
+    ],
+    [
+     "rule",
+     "4.2.2.1",
+     "A reserved card is placed vertically and upright from the perspective of its controller."
+    ],
+    [
+     "rule",
+     "4.2.2.2",
+     "An engaged card is placed horizontally from the perspective of its controller."
+    ],
+    [
+     "rule",
+     "4.2.2.3",
+     "When a card is put into a zone where placement state is governed, it is placed in the reserved state unless indicated otherwise."
+    ],
+    [
+     "rule",
+     "4.2.3",
+     "Cards may be \"faceup\" or \"facedown.\" Cards must be in one of these two states at any given time; they cannot simultaneously be in both states nor can they be in neither state."
+    ],
+    [
+     "rule",
+     "4.2.3.1",
+     "A faceup card is placed such that its card information is visible."
+    ],
+    [
+     "rule",
+     "4.2.3.2",
+     "A facedown card is placed such that its card information is not visible."
+    ],
+    [
+     "rule",
+     "4.2.3.2.1",
+     "A facedown double-faced card (2.14) should be covered so that its information is not visible, with a card sleeve or other means."
+    ],
+    [
+     "rule",
+     "4.2.3.3",
+     "In general, cards are placed faceup in public zones and facedown in non-public zones."
+    ],
+    [
+     "rule",
+     "4.3",
+     "Leader Area"
+    ],
+    [
+     "rule",
+     "4.3.1",
+     "Each player places their leader in this zone."
+    ],
+    [
+     "rule",
+     "4.3.2",
+     "The leader area is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.3.3",
+     "Whenever a rule, ability, or effect refers to a \"leader\" without specifying a zone, it's referring to a leader in the leader area."
+    ],
+    [
+     "rule",
+     "4.4",
+     "Field"
+    ],
+    [
+     "rule",
+     "4.4.1",
+     "Each player places their followers and amulets in this zone."
+    ],
+    [
+     "rule",
+     "4.4.2",
+     "Fields are public zones where card order is not tracked and cards have placement states."
+    ],
+    [
+     "rule",
+     "4.4.3",
+     "In general, when a rule, ability, or effect refers to a \"follower,\" \"amulet,\" or \"card,\" without specifying a zone, it's referring to a follower, amulet, or card on the field."
+    ],
+    [
+     "rule",
+     "4.4.3.1",
+     "This does not, however, apply to effects that change how a card is played, such as \"your [cards] cost [number] to play,\" which refer to cards played from any zone unless specified."
+    ],
+    [
+     "rule",
+     "4.4.4",
+     "There is a limit to how many cards a player may have on their field. This limit may be referenced during the game."
+    ],
+    [
+     "rule",
+     "4.4.4.1",
+     "At the start of the game, each player's field is limited to five cards."
+    ],
+    [
+     "rule",
+     "4.4.4.2",
+     "When cards are to be moved to or created on a field, if it would result in the field's limit being exceeded, the controller of the effect selects a number of cards from among the cards to be moved or created equal to the field's limit minus the number of cards on the field already, and then moves or creates those cards. The remaining cards are not moved or created."
+    ],
+    [
+     "rule",
+     "4.5",
+     "Deck Area"
+    ],
+    [
+     "rule",
+     "4.5.1",
+     "Each player places their main deck (6.1.1.2) in this zone at the start of the game."
+    ],
+    [
+     "rule",
+     "4.5.2",
+     "The deck area is non-public zone where card order is tracked. A player may only change the order or look at the card information of cards in the deck area when instructed to do so by an effect or rule."
+    ],
+    [
+     "rule",
+     "4.5.2.1",
+     "Card order in a deck is based on the way the cards are stacked above or below one another. The \"top\" or \"bottom\" card of a deck refers to the card which is physically above or below all other cards in the stack."
+    ],
+    [
+     "rule",
+     "4.5.3",
+     "If a rule, ability, or effect says \"deck,\" it is referring to the cards in the deck area."
+    ],
+    [
+     "rule",
+     "4.6",
+     "Evolve Deck Area"
+    ],
+    [
+     "rule",
+     "4.6.1",
+     "Each player places their evolve deck (6.1.1.3) in this zone at the start of the game."
+    ],
+    [
+     "rule",
+     "4.6.2",
+     "The evolve deck area is a non-public zone, but players may look at the cards in their own evolve deck areas at any time. A player may not look at the cards in another player's evolve deck area. Card order is not tracked in the evolve deck area."
+    ],
+    [
+     "rule",
+     "4.6.3",
+     "A card in the evolve deck area may be placed faceup in certain cases. In such cases, the faceup card is not considered part of the evolve deck unless it is explicitly referenced."
+    ],
+    [
+     "rule",
+     "4.6.3.1",
+     "A double-faced card (2.14) placed faceup in the evolve deck area may have either face visible."
+    ],
+    [
+     "rule",
+     "4.6.4",
+     "When revealing a card from the evolve deck area as part of the cost of an evolve ability (12.2.2) or as part of an \"evolve\" process (5.16.1.1), if one of the faces of a double-faced card corresponds to the evolution in question, the player may select the card and reveal that face."
+    ],
+    [
+     "rule",
+     "4.7",
+     "Hand"
+    ],
+    [
+     "rule",
+     "4.7.1",
+     "Players put unplayed cards in this zone. These cards are not revealed to opponents."
+    ],
+    [
+     "rule",
+     "4.7.2",
+     "The hand is a non-public zone, but players may look at the cards in their own hand at any time. A player may not look at the cards in another player's hand. Card order is not tracked in the hand."
+    ],
+    [
+     "rule",
+     "4.7.3",
+     "There is a limit to how many cards a player may have in their hand. This limit may be referenced during the game."
+    ],
+    [
+     "rule",
+     "4.7.3.1",
+     "At the start of the game, each player's hand is limited to seven cards."
+    ],
+    [
+     "rule",
+     "4.8",
+     "EX Area"
+    ],
+    [
+     "rule",
+     "4.8.1",
+     "Players put unplayed cards in this zone. These cards are revealed to opponents."
+    ],
+    [
+     "rule",
+     "4.8.2",
+     "The EX area is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.8.3",
+     "There is a limit to how many cards a player may have in their EX area. This limit may be referenced during the game."
+    ],
+    [
+     "rule",
+     "4.8.3.1",
+     "At the start of the game, each player's EX area is limited to five cards."
+    ],
+    [
+     "rule",
+     "4.8.3.2",
+     "When cards are to be moved to or created in an EX area, if it would result in the EX area's limit being exceeded, the controller of the effect selects a number of cards from among the cards to be moved or created equal to the EX area's limit minus the number of cards in the EX area already, and then moves or creates those cards. The remaining cards are not moved or created."
+    ],
+    [
+     "rule",
+     "4.8.3.3",
+     "If a card in the EX area has an effect applied to it, and that card is moved from the EX area directly onto the field, that card retains that effect after moving to the field."
+    ],
+    [
+     "rule",
+     "4.9",
+     "Cemetery"
+    ],
+    [
+     "rule",
+     "4.9.1",
+     "Each player puts their cards in this zone after using them."
+    ],
+    [
+     "rule",
+     "4.9.2",
+     "The cemetery is a public zone. Cards are placed faceup in this zone, and any player may look at the cards in this zone at any time. Card order is not tracked in the cemetery."
+    ],
+    [
+     "rule",
+     "4.10",
+     "Banished Zone"
+    ],
+    [
+     "rule",
+     "4.10.1",
+     "Each player puts their banished cards in this zone."
+    ],
+    [
+     "rule",
+     "4.10.2",
+     "The banished zone is generally a public zone. Cards in this zone have placement states: they may be faceup or facedown. Banished cards are placed faceup unless indicated otherwise. Card order is not tracked in the banished zone."
+    ],
+    [
+     "rule",
+     "4.11",
+     "Resolution Zone"
+    ],
+    [
+     "rule",
+     "4.11.1",
+     "Cards and abilities are temporarily put in this zone during the course of the game. There is only one resolution zone, which is shared by all players."
+    ],
+    [
+     "rule",
+     "4.11.2",
+     "The resolution zone is a public zone, and card order is tracked. When putting a card in this zone, place it on top of any cards that were played before it."
+    ],
+    [
+     "rule",
+     "4.12",
+     "Evolve Zone"
+    ],
+    [
+     "rule",
+     "4.12.1",
+     "When evolving (5.16), each player puts the evolved card used in this zone."
+    ],
+    [
+     "rule",
+     "4.12.2",
+     "The evolve zone is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.13",
+     "Race Zone"
+    ],
+    [
+     "rule",
+     "4.13.1",
+     "When serving (14.2.1), each player puts the Carrot cards used in this zone."
+    ],
+    [
+     "rule",
+     "4.13.2",
+     "The race zone is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.14",
+     "Drive Zone"
+    ],
+    [
+     "rule",
+     "4.14.1",
+     "When paying the cost of a ride ability (14.4.9), each player puts the Drive Point cards used in this zone."
+    ],
+    [
+     "rule",
+     "4.14.2",
+     "The drive zone is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.15",
+     "Trigger Zone"
+    ],
+    [
+     "rule",
+     "4.15.1",
+     "When performing a drive check (14.4.5), each player puts the cards used in this zone until the drive check is resolved."
+    ],
+    [
+     "rule",
+     "4.15.2",
+     "The Trigger zone is a public zone, and card order is not tracked."
+    ],
+    [
+     "rule",
+     "4.16",
+     "Equipment Zone"
+    ],
+    [
+     "rule",
+     "4.16.1",
+     "Each player puts equipment tokens they create in this zone."
+    ],
+    [
+     "rule",
+     "4.16.2",
+     "The equipment zone is a public zone, and card order is not tracked."
+    ]
+   ]
+  }
+ ]
+}
