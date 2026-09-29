@@ -1,0 +1,20 @@
+{
+ "prefix": "ETD02",
+ "count": 1,
+ "cards": {
+  "ETD02-007": {
+   "name_jp": "ソウルコンバージョン",
+   "name_cn": "灵魂转移",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "死者",
+   "rare": "SR",
+   "craft": "Nightmare",
+   "desc_cn": " 《快速》\n选择自己的1个从者。将其破坏。抽取2张卡。 ",
+   "matched_by": "card_no",
+   "api_card_no": "ETD02-007"
+  }
+ }
+}

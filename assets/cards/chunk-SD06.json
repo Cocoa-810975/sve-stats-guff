@@ -1,0 +1,48 @@
+{
+ "prefix": "SD06",
+ "count": 3,
+ "cards": {
+  "SD06-001": {
+   "name_jp": "スカルフェイン",
+   "name_cn": "白骨圣堂教主",
+   "cost": 7,
+   "attack": 6,
+   "life": 6,
+   "card_type": "Follower",
+   "type": "狂信・偶像",
+   "rare": "LG",
+   "craft": "Haven",
+   "desc_cn": "当自己的护符离开场上时，给予敌方的全体主战者与敌方的全体从者各2点伤害。\n《入场曲》查看自己的牌堆顶4张卡。从那之中，可以将1张护符卡召唤到场上。将剩余的卡置于墓场。",
+   "matched_by": "card_no",
+   "api_card_no": "SD06-001"
+  },
+  "SD06-002": {
+   "name_jp": "夢想の白兎",
+   "name_cn": "幻想白兔",
+   "cost": 0,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Amulet",
+   "type": "信仰",
+   "rare": "GR",
+   "craft": "Haven",
+   "desc_cn": "《起动》将这张卡《横置》置于墓场：选择敌方的1个从者。将其横置。\n《起动》《消费10》将这张卡《横置》置于墓场：将全体从者各消失。",
+   "matched_by": "card_no",
+   "api_card_no": "SD06-002"
+  },
+  "SD06-005": {
+   "name_jp": "破邪の光",
+   "name_cn": "破邪圣光",
+   "cost": 4,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "信仰",
+   "rare": "SR",
+   "craft": "Haven",
+   "desc_cn": "《快速》\n选择敌方的1个从者。将其消失。使自己的主战者《生命值》+2。",
+   "matched_by": "card_no",
+   "api_card_no": "SD06-005"
+  }
+ }
+}

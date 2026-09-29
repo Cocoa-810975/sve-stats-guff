@@ -1,0 +1,20 @@
+{
+ "prefix": "SD02",
+ "count": 1,
+ "cards": {
+  "SD02-016": {
+   "name_jp": "疾風怒濤",
+   "name_cn": "疾风怒涛",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "兵士",
+   "rare": "BR",
+   "craft": "Sword",
+   "desc_cn": "《快速》\n选择敌方的1个从者。给予其与「自己场上的从者的数量」等量的伤害。",
+   "matched_by": "card_no",
+   "api_card_no": "SD02-016"
+  }
+ }
+}

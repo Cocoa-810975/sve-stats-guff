@@ -1,0 +1,34 @@
+{
+ "prefix": "CSD01",
+ "count": 2,
+ "cards": {
+  "CSD01-014": {
+   "name_jp": "マーベラスサンデー",
+   "name_cn": "美丽周日",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ウマ娘",
+   "rare": "BR",
+   "craft": "Forest",
+   "desc_cn": "《吃饭》《消费1》：使这张卡起跑。\n《入场曲》将场上的其他的1张卡片放回手牌：使自己的主战者《生命值》+2。（放回到手牌的衍生物会从游戏中移出）",
+   "matched_by": "card_no",
+   "api_card_no": "CSD01-014"
+  },
+  "CSD01-032": {
+   "name_jp": "にんじん",
+   "name_cn": "胡萝卜",
+   "cost": -1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "SpellEvo",
+   "type": "-",
+   "rare": "",
+   "craft": "Neutral",
+   "desc_cn": "通过吃饭，来使那个赛马娘类型·从者起跑。（使其获得【突进】能力）（持有【突进】能力的从者，在召唤到场上的当回合即可攻击敌方的从者）\n----------\n在进化牌组中，这张卡可以放入最多10张。",
+   "matched_by": "card_no",
+   "api_card_no": "CSD01-032"
+  }
+ }
+}

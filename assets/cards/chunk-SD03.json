@@ -1,0 +1,76 @@
+{
+ "prefix": "SD03",
+ "count": 5,
+ "cards": {
+  "SD03-005": {
+   "name_jp": "知恵の光",
+   "name_cn": "智慧之光",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔法使い",
+   "rare": "SR",
+   "craft": "Rune",
+   "desc_cn": "《快速》\n抽取1张卡。",
+   "matched_by": "card_no",
+   "api_card_no": "SD03-005"
+  },
+  "SD03-006": {
+   "name_jp": "ファイアーチェイン",
+   "name_cn": "火焰连锁",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔法使い",
+   "rare": "SR",
+   "craft": "Rune",
+   "desc_cn": "《快速》\n选择敌方的从者最多2个。给予其合计3点伤害、任意分配。",
+   "matched_by": "card_no",
+   "api_card_no": "SD03-006"
+  },
+  "SD03-010": {
+   "name_jp": "ルーキーマジシャン・サミー",
+   "name_cn": "新星魔术师·萨米",
+   "cost": 1,
+   "attack": 2,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "魔法使い",
+   "rare": "BR",
+   "craft": "Rune",
+   "desc_cn": "《进化》《消费2》：使这张卡进化。\n《入场曲》查看自己的牌堆顶1张卡。可以将其置于墓场。",
+   "matched_by": "card_no",
+   "api_card_no": "SD03-010"
+  },
+  "SD03-011": {
+   "name_jp": "ルーキーマジシャン・サミー",
+   "name_cn": "新星魔术师·萨米",
+   "cost": -1,
+   "attack": 3,
+   "life": 2,
+   "card_type": "FollowerEvo",
+   "type": "魔法使い",
+   "rare": "BR",
+   "craft": "Rune",
+   "desc_cn": "【进化时】每位玩家各抽取1张卡。",
+   "matched_by": "card_no",
+   "api_card_no": "SD03-011"
+  },
+  "SD03-013": {
+   "name_jp": "魔力の蓄積",
+   "name_cn": "魔力积蓄",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔法使い",
+   "rare": "BR",
+   "craft": "Rune",
+   "desc_cn": "《快速》\n查看自己的牌堆顶4张卡。从那之中，可以将1张法术卡公开并加入手牌。可以将1张法术卡置于墓场。将剩余的卡以任意顺序置于牌堆底。",
+   "matched_by": "card_no",
+   "api_card_no": "SD03-013"
+  }
+ }
+}

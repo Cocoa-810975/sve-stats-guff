@@ -1,0 +1,76 @@
+{
+ "prefix": "SD05",
+ "count": 5,
+ "cards": {
+  "SD05-003": {
+   "name_jp": "悪戯なネクロマンサー",
+   "name_cn": "爱捣蛋的死灵法师",
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "死霊術師",
+   "rare": "SR",
+   "craft": "Nightmare",
+   "desc_cn": "《进化》《消费1》：使这张卡进化。",
+   "matched_by": "card_no",
+   "api_card_no": "SD05-003"
+  },
+  "SD05-004": {
+   "name_jp": "悪戯なネクロマンサー",
+   "name_cn": "爱捣蛋的死灵法师",
+   "cost": -1,
+   "attack": 4,
+   "life": 4,
+   "card_type": "FollowerEvo",
+   "type": "死霊術師",
+   "rare": "SR",
+   "craft": "Nightmare",
+   "desc_cn": "【进化时】将3个『怨灵』召唤。\n―――――――――――――――\n『怨灵』《梦魇职业》死者类型·从者《消费1》《攻击力》1/《生命值》1【疾驰】当自己的结束阶段到来时，使这张卡消失。",
+   "matched_by": "card_no",
+   "api_card_no": "SD05-004"
+  },
+  "SD05-014": {
+   "name_jp": "鋭利な一裂き",
+   "name_cn": "利爪的一击",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔界",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "《快速》\n给予自己的主战者2点伤害。\n选择敌方的1位主战者或敌方的1个从者。给予其3点伤害。",
+   "matched_by": "card_no",
+   "api_card_no": "SD05-014"
+  },
+  "SD05-015": {
+   "name_jp": "消えぬ怨恨",
+   "name_cn": "不灭的怨念",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "死者",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "《快速》\n选择敌方的1个从者。给予其3点伤害。将自己的牌堆顶1张卡置于墓场。",
+   "matched_by": "card_no",
+   "api_card_no": "SD05-015"
+  },
+  "SD05-016": {
+   "name_jp": "眷属の召喚",
+   "name_cn": "从魔召唤",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "吸血鬼",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "将1个『丛林蝙蝠』召唤。将1张『丛林蝙蝠』卡置于EX区域。\n―――――――――――――――\n『丛林蝙蝠』《梦魇职业》吸血鬼类型·从者《消费1》《攻击力》1/《生命值》1",
+   "matched_by": "card_no",
+   "api_card_no": "SD05-016"
+  }
+ }
+}

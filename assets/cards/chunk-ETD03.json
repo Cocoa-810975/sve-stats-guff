@@ -1,0 +1,34 @@
+{
+ "prefix": "ETD03",
+ "count": 2,
+ "cards": {
+  "ETD03-008": {
+   "name_jp": "自然の導き",
+   "name_cn": "大自然的导引",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "妖精",
+   "rare": "SR",
+   "craft": "Forest",
+   "desc_cn": "选择自己场上的1张卡片。将其放回手牌。抽取1张卡。（放回到手牌的衍生物会从游戏中移出）",
+   "matched_by": "card_no",
+   "api_card_no": "ETD03-008"
+  },
+  "ETD03-018": {
+   "name_jp": "フラワーブリーズ",
+   "name_cn": "花舞微风",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "植物族・獣",
+   "rare": "BR",
+   "craft": "Forest",
+   "desc_cn": "选择自己场上的1张卡片。将其放回手牌。使自己的主战者《生命值》+1。（放回到手牌的衍生物会从游戏中移出）",
+   "matched_by": "card_no",
+   "api_card_no": "ETD03-018"
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "prefix": "PCS02",
+ "count": 2,
+ "cards": {
+  "PCS02-001": {
+   "name_jp": "暴食のアナテマ・ララアンセム",
+   "name_cn": "暴食的安纳提玛·菈菈安瑟姆",
+   "cost": 4,
+   "attack": 4,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "アナテマ・魔法使い",
+   "rare": "LG",
+   "craft": "Rune",
+   "desc_cn": "《进化》《消费1》：使这张卡进化。\n《入场曲》选择敌方场上的1个从者。给予其2点伤害。\n《起动》【土之秘术】：使这张卡获得【指定攻击】能力。",
+   "matched_by": "name",
+   "api_card_no": "BP16-038"
+  },
+  "PCS02-003": {
+   "name_jp": "新たなる少女・エース",
+   "name_cn": "崭新的少女·欧丝",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "超克",
+   "rare": "LG",
+   "craft": "Neutral",
+   "desc_cn": "【守护】\n《入场曲》抽取1张卡。如果自己的SEP为0的话，使这张卡《攻击力》+2/《生命值》+2。使自己的主战者《生命值》+2。",
+   "matched_by": "name",
+   "api_card_no": "BP19-112"
+  }
+ }
+}

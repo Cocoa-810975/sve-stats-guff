@@ -1,0 +1,48 @@
+{
+ "prefix": "SD01",
+ "count": 3,
+ "cards": {
+  "SD01-002": {
+   "name_jp": "ティターニアの妖精郷",
+   "name_cn": "提泰妮娅的妖精乡",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Amulet",
+   "type": "妖精・プリンセス",
+   "rare": "GR",
+   "craft": "Forest",
+   "desc_cn": "只要有这张卡存在，使自己的全体妖精类型·衍生物各获得【指定攻击】能力。\n当妖精类型·衍生物召唤到自己的场上时，使其《攻击力》+1/《生命值》+1。\n《入场曲》使自己的全体妖精类型·衍生物各《攻击力》+1/《生命值》+1。",
+   "matched_by": "card_no",
+   "api_card_no": "SD01-002"
+  },
+  "SD01-016": {
+   "name_jp": "森荒らしへの報い",
+   "name_cn": "森林的反扑",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "エルフ族",
+   "rare": "BR",
+   "craft": "Forest",
+   "desc_cn": "《快速》\n选择敌方的1个从者。给予其3点伤害。将1张『妖精』卡置于EX区域。\n―――――――――――――――\n『妖精』《精灵职业》妖精类型·从者《消费1》《攻击力》1/《生命值》1",
+   "matched_by": "card_no",
+   "api_card_no": "SD01-016"
+  },
+  "SD01-019": {
+   "name_jp": "エンジェルスナイプ",
+   "name_cn": "天使的圣箭",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "天使",
+   "rare": "BR",
+   "craft": "Neutral",
+   "desc_cn": "《快速》\n选择敌方的1个从者。给予其2点伤害。",
+   "matched_by": "card_no",
+   "api_card_no": "SD01-019"
+  }
+ }
+}
