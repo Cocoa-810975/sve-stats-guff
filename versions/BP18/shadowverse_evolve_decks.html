@@ -4,14 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shadowverse EVOLVE BP18 大会卡组统计</title>
+  <title>SVE Stats Guff | BP18</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
     .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
     .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 40px 30px; border-radius: 16px; margin-bottom: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
     .header h1 { font-size: 28px; color: #fff; margin-bottom: 10px; }
+    /* 品牌标题：艺术字体 + 渐变描边与光晕 */
+    .brand-title {
+      font-family: 'Cinzel', 'Trajan Pro', Georgia, 'Microsoft YaHei', serif;
+      font-weight: 800;
+      font-size: 54px;
+      line-height: 1.12;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 2px 0 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #dbe9ff 32%, #7fc4ff 68%, #3f8fe0 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #cfe6ff;
+      filter: drop-shadow(0 0 18px rgba(120,190,255,0.42)) drop-shadow(0 2px 3px rgba(0,0,0,0.55));
+      text-shadow: 0 0 42px rgba(90,160,255,0.18);
+    }
     .header .subtitle { color: #8899aa; font-size: 14px; }
+    @media (max-width: 768px) {
+      .brand-title { font-size: 34px; letter-spacing: 0.03em; }
+    }
     .scope-panel { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; margin: -14px 0 22px; padding: 14px 18px; background: #1a1a2e; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; color: #ccc; }
     .scope-panel select { background: #111827; color: #e0e0e0; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; padding: 8px 12px; font-size: 13px; min-width: 260px; }
     .summary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 30px; }
@@ -109,7 +132,7 @@
 <body>
 <div class="container">
   <div class="header">
-    <h1>Shadowverse EVOLVE BP18 大会卡组统计</h1>
+    <h1 class="brand-title">SVE Stats Guff</h1>
     <div class="subtitle">数据来源: bushi-navi.com | 查询版本: BP18 | 时间范围: 2025年11月21日-2026年1月29日（含首尾日期）</div>
   </div>
   <div class="scope-panel">
