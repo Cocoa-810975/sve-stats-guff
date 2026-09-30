@@ -1,0 +1,29 @@
+{
+ "_comment": "按卡名索引分片：首字符「*」",
+ "firstChar": "*",
+ "count": 1,
+ "nameRange": [
+  "*(Asterisk)",
+  "*(Asterisk)"
+ ],
+ "fields": [
+  "卡号",
+  "中文名",
+  "日文名",
+  "费用",
+  "攻击",
+  "体力",
+  "卡种"
+ ],
+ "cards": [
+  [
+   "CP02-U01a",
+   "*(Asterisk)",
+   "*（Asterisk）",
+   2,
+   3,
+   1,
+   "随从"
+  ]
+ ]
+}

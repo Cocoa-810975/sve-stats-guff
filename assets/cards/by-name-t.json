@@ -1,0 +1,29 @@
+{
+ "_comment": "按卡名索引分片：首字符「T」",
+ "firstChar": "T",
+ "count": 1,
+ "nameRange": [
+  "TT Ignition！",
+  "TT Ignition！"
+ ],
+ "fields": [
+  "卡号",
+  "中文名",
+  "日文名",
+  "费用",
+  "攻击",
+  "体力",
+  "卡种"
+ ],
+ "cards": [
+  [
+   "ECP01-045",
+   "TT Ignition！",
+   "TT Ignition!",
+   5,
+   null,
+   null,
+   "法术"
+  ]
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "_comment": "按卡名索引分片：首字符「B」",
+ "firstChar": "B",
+ "count": 3,
+ "nameRange": [
+  "Balliamo?",
+  "BRIGHT:LIGHTS"
+ ],
+ "fields": [
+  "卡号",
+  "中文名",
+  "日文名",
+  "费用",
+  "攻击",
+  "体力",
+  "卡种"
+ ],
+ "cards": [
+  [
+   "ECP01-056",
+   "Balliamo?",
+   "Balliamo?",
+   2,
+   null,
+   null,
+   "法术"
+  ],
+  [
+   "ECP01-SL26",
+   "Balliamo?",
+   "Balliamo?",
+   2,
+   null,
+   null,
+   "法术"
+  ],
+  [
+   "CP02-U08a",
+   "BRIGHT:LIGHTS",
+   "BRIGHT:LIGHTS",
+   7,
+   4,
+   4,
+   "随从"
+  ]
+ ]
+}

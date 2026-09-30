@@ -1,9 +1,9 @@
 {
- "_comment": "按卡名索引清单。用法：先用首字索引或 parts 范围定位分片，再抓取对应 by-name-*.json；拿到卡号后到 part-*.json 取效果文本。",
+ "_comment": "按卡名索引。用法：取卡名首字符 -> 在 firstCharToPart 查对应分片文件 -> 抓该文件按名字匹配拿卡号 -> 到 part-*.json 取效果文本。",
  "totalCards": 4012,
  "totalNames": 1788,
  "duplicateNameGroups": 1246,
- "partChars": 40000,
+ "partCount": 718,
  "fields": [
   "卡号",
   "中文名",
@@ -14,816 +14,5035 @@
   "卡种"
  ],
  "fullFile": "by-name.json（全量，字符数较大，工具可能截断）",
+ "note": "同一名字可能对应多个卡号（主卡组与进化形态、异画各为独立卡号），按名查到多条属正常",
+ "firstCharToPart": {
+  "[": "by-name-[.json",
+  "《": "by-name-《.json",
+  "〔": "by-name-〔.json",
+  "*": "by-name-u2a.json",
+  "#": "by-name-#.json",
+  "阿": "by-name-阿.json",
+  "埃": "by-name-埃.json",
+  "艾": "by-name-艾.json",
+  "爱": "by-name-爱.json",
+  "隘": "by-name-隘.json",
+  "安": "by-name-安.json",
+  "暗": "by-name-暗.json",
+  "奥": "by-name-奥.json",
+  "巴": "by-name-巴.json",
+  "芭": "by-name-芭.json",
+  "霸": "by-name-霸.json",
+  "白": "by-name-白.json",
+  "百": "by-name-百.json",
+  "佰": "by-name-佰.json",
+  "半": "by-name-半.json",
+  "絆": "by-name-絆.json",
+  "宝": "by-name-宝.json",
+  "暴": "by-name-暴.json",
+  "爆": "by-name-爆.json",
+  "北": "by-name-北.json",
+  "背": "by-name-背.json",
+  "被": "by-name-被.json",
+  "奔": "by-name-奔.json",
+  "本": "by-name-本.json",
+  "笨": "by-name-笨.json",
+  "闭": "by-name-闭.json",
+  "庇": "by-name-庇.json",
+  "碧": "by-name-碧.json",
+  "避": "by-name-避.json",
+  "边": "by-name-边.json",
+  "蝙": "by-name-蝙.json",
+  "冰": "by-name-冰.json",
+  "剥": "by-name-剥.json",
+  "捕": "by-name-捕.json",
+  "不": "by-name-不.json",
+  "财": "by-name-财.json",
+  "裁": "by-name-裁.json",
+  "采": "by-name-采.json",
+  "彩": "by-name-彩.json",
+  "残": "by-name-残.json",
+  "沧": "by-name-沧.json",
+  "苍": "by-name-苍.json",
+  "柴": "by-name-柴.json",
+  "超": "by-name-超.json",
+  "沉": "by-name-沉.json",
+  "成": "by-name-成.json",
+  "诚": "by-name-诚.json",
+  "惩": "by-name-惩.json",
+  "持": "by-name-持.json",
+  "赤": "by-name-赤.json",
+  "炽": "by-name-炽.json",
+  "敕": "by-name-敕.json",
+  "冲": "by-name-冲.json",
+  "憧": "by-name-憧.json",
+  "崇": "by-name-崇.json",
+  "出": "by-name-出.json",
+  "触": "by-name-触.json",
+  "川": "by-name-川.json",
+  "传": "by-name-传.json",
+  "船": "by-name-船.json",
+  "串": "by-name-串.json",
+  "创": "by-name-创.json",
+  "纯": "by-name-纯.json",
+  "次": "by-name-次.json",
+  "刺": "by-name-刺.json",
+  "聪": "by-name-聪.json",
+  "从": "by-name-从.json",
+  "粗": "by-name-粗.json",
+  "篡": "by-name-篡.json",
+  "璀": "by-name-璀.json",
+  "翠": "by-name-翠.json",
+  "村": "by-name-村.json",
+  "打": "by-name-打.json",
+  "大": "by-name-大.json",
+  "待": "by-name-待.json",
+  "丹": "by-name-丹.json",
+  "单": "by-name-单.json",
+  "耽": "by-name-耽.json",
+  "弹": "by-name-弹.json",
+  "蛋": "by-name-蛋.json",
+  "岛": "by-name-岛.json",
+  "盗": "by-name-盗.json",
+  "地": "by-name-地.json",
+  "的": "by-name-的.json",
+  "灯": "by-name-灯.json",
+  "狄": "by-name-狄.json",
+  "帝": "by-name-帝.json",
+  "第": "by-name-第.json",
+  "缔": "by-name-缔.json",
+  "癫": "by-name-癫.json",
+  "电": "by-name-电.json",
+  "调": "by-name-调.json",
+  "叮": "by-name-叮.json",
+  "东": "by-name-东.json",
+  "动": "by-name-动.json",
+  "冻": "by-name-冻.json",
+  "都": "by-name-都.json",
+  "独": "by-name-独.json",
+  "读": "by-name-读.json",
+  "渎": "by-name-渎.json",
+  "镀": "by-name-镀.json",
+  "断": "by-name-断.json",
+  "对": "by-name-对.json",
+  "堕": "by-name-堕.json",
+  "俄": "by-name-俄.json",
+  "厄": "by-name-厄.json",
+  "恶": "by-name-恶.json",
+  "噩": "by-name-噩.json",
+  "发": "by-name-发.json",
+  "伐": "by-name-伐.json",
+  "法": "by-name-法.json",
+  "帆": "by-name-帆.json",
+  "番": "by-name-番.json",
+  "反": "by-name-反.json",
+  "芳": "by-name-芳.json",
+  "紡": "by-name-紡.json",
+  "放": "by-name-放.json",
+  "飞": "by-name-飞.json",
+  "非": "by-name-非.json",
+  "绯": "by-name-绯.json",
+  "緋": "by-name-緋.json",
+  "废": "by-name-废.json",
+  "奋": "by-name-奋.json",
+  "愤": "by-name-愤.json",
+  "丰": "by-name-丰.json",
+  "风": "by-name-风.json",
+  "封": "by-name-封.json",
+  "疯": "by-name-疯.json",
+  "逢": "by-name-逢.json",
+  "凤": "by-name-凤.json",
+  "奉": "by-name-奉.json",
+  "弗": "by-name-弗.json",
+  "拂": "by-name-拂.json",
+  "浮": "by-name-浮.json",
+  "斧": "by-name-斧.json",
+  "俯": "by-name-俯.json",
+  "腐": "by-name-腐.json",
+  "复": "by-name-复.json",
+  "改": "by-name-改.json",
+  "冈": "by-name-冈.json",
+  "刚": "by-name-刚.json",
+  "钢": "by-name-钢.json",
+  "高": "by-name-高.json",
+  "哥": "by-name-哥.json",
+  "歌": "by-name-歌.json",
+  "格": "by-name-格.json",
+  "葛": "by-name-葛.json",
+  "给": "by-name-给.json",
+  "根": "by-name-根.json",
+  "耿": "by-name-耿.json",
+  "工": "by-name-工.json",
+  "弓": "by-name-弓.json",
+  "公": "by-name-公.json",
+  "宫": "by-name-宫.json",
+  "孤": "by-name-孤.json",
+  "古": "by-name-古.json",
+  "骨": "by-name-骨.json",
+  "观": "by-name-观.json",
+  "管": "by-name-管.json",
+  "貫": "by-name-貫.json",
+  "光": "by-name-光.json",
+  "瑰": "by-name-瑰.json",
+  "贵": "by-name-贵.json",
+  "哈": "by-name-哈.json",
+  "骸": "by-name-骸.json",
+  "海": "by-name-海.json",
+  "骇": "by-name-骇.json",
+  "害": "by-name-害.json",
+  "寒": "by-name-寒.json",
+  "好": "by-name-好.json",
+  "合": "by-name-合.json",
+  "和": "by-name-和.json",
+  "涸": "by-name-涸.json",
+  "赫": "by-name-赫.json",
+  "鹤": "by-name-鹤.json",
+  "黑": "by-name-黑.json",
+  "恒": "by-name-恒.json",
+  "横": "by-name-横.json",
+  "轰": "by-name-轰.json",
+  "红": "by-name-红.json",
+  "宏": "by-name-宏.json",
+  "狐": "by-name-狐.json",
+  "胡": "by-name-胡.json",
+  "虎": "by-name-虎.json",
+  "花": "by-name-花.json",
+  "华": "by-name-华.json",
+  "画": "by-name-画.json",
+  "坏": "by-name-坏.json",
+  "环": "by-name-环.json",
+  "幻": "by-name-幻.json",
+  "唤": "by-name-唤.json",
+  "荒": "by-name-荒.json",
+  "皇": "by-name-皇.json",
+  "黄": "by-name-黄.json",
+  "煌": "by-name-煌.json",
+  "辉": "by-name-辉.json",
+  "回": "by-name-回.json",
+  "毁": "by-name-毁.json",
+  "惠": "by-name-惠.json",
+  "混": "by-name-混.json",
+  "活": "by-name-活.json",
+  "火": "by-name-火.json",
+  "祸": "by-name-祸.json",
+  "击": "by-name-击.json",
+  "饥": "by-name-饥.json",
+  "机": "by-name-机.json",
+  "激": "by-name-激.json",
+  "羁": "by-name-羁.json",
+  "极": "by-name-极.json",
+  "疾": "by-name-疾.json",
+  "棘": "by-name-棘.json",
+  "極": "by-name-極.json",
+  "记": "by-name-记.json",
+  "加": "by-name-加.json",
+  "嘉": "by-name-嘉.json",
+  "贾": "by-name-贾.json",
+  "假": "by-name-假.json",
+  "尖": "by-name-尖.json",
+  "坚": "by-name-坚.json",
+  "歼": "by-name-歼.json",
+  "拣": "by-name-拣.json",
+  "减": "by-name-减.json",
+  "剪": "by-name-剪.json",
+  "见": "by-name-见.json",
+  "剑": "by-name-剑.json",
+  "将": "by-name-将.json",
+  "交": "by-name-交.json",
+  "娇": "by-name-娇.json",
+  "焦": "by-name-焦.json",
+  "角": "by-name-角.json",
+  "矫": "by-name-矫.json",
+  "叫": "by-name-叫.json",
+  "教": "by-name-教.json",
+  "接": "by-name-接.json",
+  "洁": "by-name-洁.json",
+  "结": "by-name-结.json",
+  "截": "by-name-截.json",
+  "解": "by-name-解.json",
+  "戒": "by-name-戒.json",
+  "金": "by-name-金.json",
+  "尽": "by-name-尽.json",
+  "禁": "by-name-禁.json",
+  "荆": "by-name-荆.json",
+  "惊": "by-name-惊.json",
+  "精": "by-name-精.json",
+  "景": "by-name-景.json",
+  "警": "by-name-警.json",
+  "净": "by-name-净.json",
+  "静": "by-name-静.json",
+  "镜": "by-name-镜.json",
+  "九": "by-name-九.json",
+  "久": "by-name-久.json",
+  "酒": "by-name-酒.json",
+  "救": "by-name-救.json",
+  "橘": "by-name-橘.json",
+  "举": "by-name-举.json",
+  "巨": "by-name-巨.json",
+  "飓": "by-name-飓.json",
+  "聚": "by-name-聚.json",
+  "决": "by-name-决.json",
+  "绝": "by-name-绝.json",
+  "军": "by-name-军.json",
+  "均": "by-name-均.json",
+  "卡": "by-name-卡.json",
+  "开": "by-name-开.json",
+  "凯": "by-name-凯.json",
+  "铠": "by-name-铠.json",
+  "栞": "by-name-栞.json",
+  "可": "by-name-可.json",
+  "克": "by-name-克.json",
+  "客": "by-name-客.json",
+  "空": "by-name-空.json",
+  "库": "by-name-库.json",
+  "狂": "by-name-狂.json",
+  "傀": "by-name-傀.json",
+  "扩": "by-name-扩.json",
+  "拉": "by-name-拉.json",
+  "菈": "by-name-菈.json",
+  "莱": "by-name-莱.json",
+  "兰": "by-name-兰.json",
+  "蓝": "by-name-蓝.json",
+  "浪": "by-name-浪.json",
+  "乐": "by-name-乐.json",
+  "楽": "by-name-楽.json",
+  "勒": "by-name-勒.json",
+  "雷": "by-name-雷.json",
+  "棱": "by-name-棱.json",
+  "冷": "by-name-冷.json",
+  "狸": "by-name-狸.json",
+  "黎": "by-name-黎.json",
+  "里": "by-name-里.json",
+  "理": "by-name-理.json",
+  "力": "by-name-力.json",
+  "利": "by-name-利.json",
+  "莉": "by-name-莉.json",
+  "连": "by-name-连.json",
+  "怜": "by-name-怜.json",
+  "炼": "by-name-炼.json",
+  "恋": "by-name-恋.json",
+  "链": "by-name-链.json",
+  "疗": "by-name-疗.json",
+  "燎": "by-name-燎.json",
+  "列": "by-name-列.json",
+  "烈": "by-name-烈.json",
+  "裂": "by-name-裂.json",
+  "林": "by-name-林.json",
+  "琳": "by-name-琳.json",
+  "凛": "by-name-凛.json",
+  "灵": "by-name-灵.json",
+  "凌": "by-name-凌.json",
+  "铃": "by-name-铃.json",
+  "菱": "by-name-菱.json",
+  "零": "by-name-零.json",
+  "流": "by-name-流.json",
+  "六": "by-name-六.json",
+  "龙": "by-name-龙.json",
+  "竜": "by-name-竜.json",
+  "鲁": "by-name-鲁.json",
+  "路": "by-name-路.json",
+  "鹭": "by-name-鹭.json",
+  "履": "by-name-履.json",
+  "轮": "by-name-轮.json",
+  "罗": "by-name-罗.json",
+  "马": "by-name-马.json",
+  "玛": "by-name-玛.json",
+  "迈": "by-name-迈.json",
+  "满": "by-name-满.json",
+  "曼": "by-name-曼.json",
+  "猫": "by-name-猫.json",
+  "矛": "by-name-矛.json",
+  "没": "by-name-没.json",
+  "梅": "by-name-梅.json",
+  "美": "by-name-美.json",
+  "蒙": "by-name-蒙.json",
+  "猛": "by-name-猛.json",
+  "梦": "by-name-梦.json",
+  "夢": "by-name-夢.json",
+  "迷": "by-name-迷.json",
+  "米": "by-name-米.json",
+  "秘": "by-name-秘.json",
+  "喵": "by-name-喵.json",
+  "妙": "by-name-妙.json",
+  "灭": "by-name-灭.json",
+  "明": "by-name-明.json",
+  "冥": "by-name-冥.json",
+  "瞑": "by-name-瞑.json",
+  "摩": "by-name-摩.json",
+  "魔": "by-name-魔.json",
+  "母": "by-name-母.json",
+  "木": "by-name-木.json",
+  "目": "by-name-目.json",
+  "牧": "by-name-牧.json",
+  "暮": "by-name-暮.json",
+  "那": "by-name-那.json",
+  "娜": "by-name-娜.json",
+  "奈": "by-name-奈.json",
+  "南": "by-name-南.json",
+  "嫩": "by-name-嫩.json",
+  "逆": "by-name-逆.json",
+  "涅": "by-name-涅.json",
+  "啮": "by-name-啮.json",
+  "农": "by-name-农.json",
+  "農": "by-name-農.json",
+  "怒": "by-name-怒.json",
+  "女": "by-name-女.json",
+  "欧": "by-name-欧.json",
+  "帕": "by-name-帕.json",
+  "庞": "by-name-庞.json",
+  "跑": "by-name-跑.json",
+  "泡": "by-name-泡.json",
+  "佩": "by-name-佩.json",
+  "喷": "by-name-喷.json",
+  "琵": "by-name-琵.json",
+  "缥": "by-name-缥.json",
+  "漂": "by-name-漂.json",
+  "平": "by-name-平.json",
+  "破": "by-name-破.json",
+  "七": "by-name-七.json",
+  "栖": "by-name-栖.json",
+  "漆": "by-name-漆.json",
+  "齐": "by-name-齐.json",
+  "奇": "by-name-奇.json",
+  "祈": "by-name-祈.json",
+  "骑": "by-name-骑.json",
+  "企": "by-name-企.json",
+  "気": "by-name-気.json",
+  "器": "by-name-器.json",
+  "千": "by-name-千.json",
+  "前": "by-name-前.json",
+  "潜": "by-name-潜.json",
+  "茜": "by-name-茜.json",
+  "枪": "by-name-枪.json",
+  "强": "by-name-强.json",
+  "俏": "by-name-俏.json",
+  "切": "by-name-切.json",
+  "青": "by-name-青.json",
+  "清": "by-name-清.json",
+  "情": "by-name-情.json",
+  "晴": "by-name-晴.json",
+  "秋": "by-name-秋.json",
+  "区": "by-name-区.json",
+  "驱": "by-name-驱.json",
+  "駆": "by-name-駆.json",
+  "全": "by-name-全.json",
+  "群": "by-name-群.json",
+  "燃": "by-name-燃.json",
+  "热": "by-name-热.json",
+  "熱": "by-name-熱.json",
+  "人": "by-name-人.json",
+  "仁": "by-name-仁.json",
+  "忍": "by-name-忍.json",
+  "任": "by-name-任.json",
+  "日": "by-name-日.json",
+  "荣": "by-name-荣.json",
+  "熔": "by-name-熔.json",
+  "入": "by-name-入.json",
+  "睿": "by-name-睿.json",
+  "撒": "by-name-撒.json",
+  "塞": "by-name-塞.json",
+  "赛": "by-name-赛.json",
+  "骚": "by-name-骚.json",
+  "扫": "by-name-扫.json",
+  "涩": "by-name-涩.json",
+  "森": "by-name-森.json",
+  "杀": "by-name-杀.json",
+  "沙": "by-name-沙.json",
+  "鲨": "by-name-鲨.json",
+  "闪": "by-name-闪.json",
+  "烧": "by-name-烧.json",
+  "蛇": "by-name-蛇.json",
+  "射": "by-name-射.json",
+  "赦": "by-name-赦.json",
+  "身": "by-name-身.json",
+  "深": "by-name-深.json",
+  "神": "by-name-神.json",
+  "生": "by-name-生.json",
+  "圣": "by-name-圣.json",
+  "胜": "by-name-胜.json",
+  "盛": "by-name-盛.json",
+  "尸": "by-name-尸.json",
+  "失": "by-name-失.json",
+  "屍": "by-name-屍.json",
+  "十": "by-name-十.json",
+  "石": "by-name-石.json",
+  "辻": "by-name-辻.json",
+  "时": "by-name-时.json",
+  "始": "by-name-始.json",
+  "世": "by-name-世.json",
+  "式": "by-name-式.json",
+  "势": "by-name-势.json",
+  "试": "by-name-试.json",
+  "弑": "by-name-弑.json",
+  "誓": "by-name-誓.json",
+  "噬": "by-name-噬.json",
+  "收": "by-name-收.json",
+  "受": "by-name-受.json",
+  "兽": "by-name-兽.json",
+  "赎": "by-name-赎.json",
+  "熟": "by-name-熟.json",
+  "术": "by-name-术.json",
+  "束": "by-name-束.json",
+  "树": "by-name-树.json",
+  "帅": "by-name-帅.json",
+  "双": "by-name-双.json",
+  "水": "by-name-水.json",
+  "瞬": "by-name-瞬.json",
+  "说": "by-name-说.json",
+  "斯": "by-name-斯.json",
+  "死": "by-name-死.json",
+  "四": "by-name-四.json",
+  "似": "by-name-似.json",
+  "松": "by-name-松.json",
+  "送": "by-name-送.json",
+  "肃": "by-name-肃.json",
+  "宿": "by-name-宿.json",
+  "酸": "by-name-酸.json",
+  "碎": "by-name-碎.json",
+  "太": "by-name-太.json",
+  "贪": "by-name-贪.json",
+  "糖": "by-name-糖.json",
+  "桃": "by-name-桃.json",
+  "淘": "by-name-淘.json",
+  "忒": "by-name-忒.json",
+  "特": "by-name-特.json",
+  "提": "by-name-提.json",
+  "天": "by-name-天.json",
+  "殄": "by-name-殄.json",
+  "眺": "by-name-眺.json",
+  "跳": "by-name-跳.json",
+  "铁": "by-name-铁.json",
+  "童": "by-name-童.json",
+  "统": "by-name-统.json",
+  "头": "by-name-头.json",
+  "突": "by-name-突.json",
+  "屠": "by-name-屠.json",
+  "歪": "by-name-歪.json",
+  "丸": "by-name-丸.json",
+  "万": "by-name-万.json",
+  "亡": "by-name-亡.json",
+  "王": "by-name-王.json",
+  "往": "by-name-往.json",
+  "忘": "by-name-忘.json",
+  "望": "by-name-望.json",
+  "危": "by-name-危.json",
+  "威": "by-name-威.json",
+  "薇": "by-name-薇.json",
+  "唯": "by-name-唯.json",
+  "维": "by-name-维.json",
+  "未": "by-name-未.json",
+  "温": "by-name-温.json",
+  "乌": "by-name-乌.json",
+  "呜": "by-name-呜.json",
+  "巫": "by-name-巫.json",
+  "嗚": "by-name-嗚.json",
+  "无": "by-name-无.json",
+  "無": "by-name-無.json",
+  "五": "by-name-五.json",
+  "午": "by-name-午.json",
+  "武": "by-name-武.json",
+  "侮": "by-name-侮.json",
+  "舞": "by-name-舞.json",
+  "吸": "by-name-吸.json",
+  "西": "by-name-西.json",
+  "希": "by-name-希.json",
+  "蜥": "by-name-蜥.json",
+  "喜": "by-name-喜.json",
+  "夏": "by-name-夏.json",
+  "仙": "by-name-仙.json",
+  "先": "by-name-先.json",
+  "鲜": "by-name-鲜.json",
+  "线": "by-name-线.json",
+  "献": "by-name-献.json",
+  "相": "by-name-相.json",
+  "香": "by-name-香.json",
+  "向": "by-name-向.json",
+  "骁": "by-name-骁.json",
+  "宵": "by-name-宵.json",
+  "硝": "by-name-硝.json",
+  "小": "by-name-小.json",
+  "咲": "by-name-咲.json",
+  "校": "by-name-校.json",
+  "笑": "by-name-笑.json",
+  "邪": "by-name-邪.json",
+  "心": "by-name-心.json",
+  "新": "by-name-新.json",
+  "信": "by-name-信.json",
+  "星": "by-name-星.json",
+  "形": "by-name-形.json",
+  "醒": "by-name-醒.json",
+  "幸": "by-name-幸.json",
+  "凶": "by-name-凶.json",
+  "雄": "by-name-雄.json",
+  "休": "by-name-休.json",
+  "虚": "by-name-虚.json",
+  "宣": "by-name-宣.json",
+  "旋": "by-name-旋.json",
+  "漩": "by-name-漩.json",
+  "炫": "by-name-炫.json",
+  "绚": "by-name-绚.json",
+  "学": "by-name-学.json",
+  "雪": "by-name-雪.json",
+  "血": "by-name-血.json",
+  "薰": "by-name-薰.json",
+  "寻": "by-name-寻.json",
+  "巡": "by-name-巡.json",
+  "迅": "by-name-迅.json",
+  "亚": "by-name-亚.json",
+  "岩": "by-name-岩.json",
+  "炎": "by-name-炎.json",
+  "盐": "by-name-盐.json",
+  "艳": "by-name-艳.json",
+  "验": "by-name-验.json",
+  "扬": "by-name-扬.json",
+  "洋": "by-name-洋.json",
+  "妖": "by-name-妖.json",
+  "耶": "by-name-耶.json",
+  "也": "by-name-也.json",
+  "野": "by-name-野.json",
+  "业": "by-name-业.json",
+  "叶": "by-name-叶.json",
+  "夜": "by-name-夜.json",
+  "一": "by-name-一.json",
+  "伊": "by-name-伊.json",
+  "医": "by-name-医.json",
+  "依": "by-name-依.json",
+  "遗": "by-name-遗.json",
+  "乙": "by-name-乙.json",
+  "异": "by-name-异.json",
+  "異": "by-name-異.json",
+  "意": "by-name-意.json",
+  "毅": "by-name-毅.json",
+  "翼": "by-name-翼.json",
+  "因": "by-name-因.json",
+  "阴": "by-name-阴.json",
+  "音": "by-name-音.json",
+  "银": "by-name-银.json",
+  "隐": "by-name-隐.json",
+  "英": "by-name-英.json",
+  "樱": "by-name-樱.json",
+  "鹰": "by-name-鹰.json",
+  "迎": "by-name-迎.json",
+  "影": "by-name-影.json",
+  "拥": "by-name-拥.json",
+  "永": "by-name-永.json",
+  "咏": "by-name-咏.json",
+  "勇": "by-name-勇.json",
+  "优": "by-name-优.json",
+  "幽": "by-name-幽.json",
+  "悠": "by-name-悠.json",
+  "優": "by-name-優.json",
+  "游": "by-name-游.json",
+  "友": "by-name-友.json",
+  "幼": "by-name-幼.json",
+  "愚": "by-name-愚.json",
+  "舆": "by-name-舆.json",
+  "与": "by-name-与.json",
+  "宇": "by-name-宇.json",
+  "羽": "by-name-羽.json",
+  "雨": "by-name-雨.json",
+  "驭": "by-name-驭.json",
+  "狱": "by-name-狱.json",
+  "预": "by-name-预.json",
+  "欲": "by-name-欲.json",
+  "御": "by-name-御.json",
+  "元": "by-name-元.json",
+  "原": "by-name-原.json",
+  "圆": "by-name-圆.json",
+  "源": "by-name-源.json",
+  "远": "by-name-远.json",
+  "怨": "by-name-怨.json",
+  "愿": "by-name-愿.json",
+  "约": "by-name-约.json",
+  "月": "by-name-月.json",
+  "跃": "by-name-跃.json",
+  "越": "by-name-越.json",
+  "云": "by-name-云.json",
+  "运": "by-name-运.json",
+  "再": "by-name-再.json",
+  "在": "by-name-在.json",
+  "凿": "by-name-凿.json",
+  "早": "by-name-早.json",
+  "造": "by-name-造.json",
+  "噪": "by-name-噪.json",
+  "憎": "by-name-憎.json",
+  "炸": "by-name-炸.json",
+  "斩": "by-name-斩.json",
+  "崭": "by-name-崭.json",
+  "战": "by-name-战.json",
+  "帐": "by-name-帐.json",
+  "招": "by-name-招.json",
+  "召": "by-name-召.json",
+  "照": "by-name-照.json",
+  "折": "by-name-折.json",
+  "侦": "by-name-侦.json",
+  "珍": "by-name-珍.json",
+  "真": "by-name-真.json",
+  "震": "by-name-震.json",
+  "正": "by-name-正.json",
+  "织": "by-name-织.json",
+  "至": "by-name-至.json",
+  "炙": "by-name-炙.json",
+  "智": "by-name-智.json",
+  "中": "by-name-中.json",
+  "忠": "by-name-忠.json",
+  "终": "by-name-终.json",
+  "重": "by-name-重.json",
+  "咒": "by-name-咒.json",
+  "朱": "by-name-朱.json",
+  "珠": "by-name-珠.json",
+  "诸": "by-name-诸.json",
+  "蛛": "by-name-蛛.json",
+  "逐": "by-name-逐.json",
+  "壮": "by-name-壮.json",
+  "追": "by-name-追.json",
+  "椎": "by-name-椎.json",
+  "坠": "by-name-坠.json",
+  "灼": "by-name-灼.json",
+  "卓": "by-name-卓.json",
+  "紫": "by-name-紫.json",
+  "自": "by-name-自.json",
+  "宗": "by-name-宗.json",
+  "奏": "by-name-奏.json",
+  "诅": "by-name-诅.json",
+  "尊": "by-name-尊.json",
+  "左": "by-name-左.json",
+  "佐": "by-name-佐.json",
+  "作": "by-name-作.json",
+  "座": "by-name-座.json",
+  "做": "by-name-做.json",
+  "B": "by-name-b.json",
+  "C": "by-name-c.json",
+  "E": "by-name-e.json",
+  "F": "by-name-f.json",
+  "L": "by-name-l.json",
+  "M": "by-name-m.json",
+  "N": "by-name-n.json",
+  "T": "by-name-t.json",
+  "Y": "by-name-y.json",
+  "ア": "by-name-ア.json",
+  "イ": "by-name-イ.json",
+  "エ": "by-name-エ.json",
+  "カ": "by-name-カ.json",
+  "グ": "by-name-グ.json",
+  "ス": "by-name-ス.json",
+  "ソ": "by-name-ソ.json",
+  "タ": "by-name-タ.json",
+  "ド": "by-name-ド.json",
+  "バ": "by-name-バ.json",
+  "マ": "by-name-マ.json",
+  "め": "by-name-め.json",
+  "メ": "by-name-メ.json",
+  "ル": "by-name-ル.json",
+  "レ": "by-name-レ.json"
+ },
  "parts": [
   {
-   "file": "by-name-00.json",
-   "count": 402,
-   "range": [
-    "[爱情礼物]佐久间麻由",
-    "蝙蝠的鸣噪"
-   ],
-   "chars": 35153
+   "file": "by-name-[.json",
+   "firstChar": "[",
+   "count": 130,
+   "chars": 12723
   },
   {
-   "file": "by-name-01.json",
-   "count": 432,
-   "range": [
-    "冰刺枪击",
-    "噩梦人偶 爱丽丝"
-   ],
-   "chars": 35439
+   "file": "by-name-《.json",
+   "firstChar": "《",
+   "count": 36,
+   "chars": 3305
   },
   {
-   "file": "by-name-02.json",
-   "count": 433,
-   "range": [
-    "发条销售员",
-    "祸殃咒术师"
-   ],
-   "chars": 35441
+   "file": "by-name-〔.json",
+   "firstChar": "〔",
+   "count": 3,
+   "chars": 485
   },
   {
-   "file": "by-name-03.json",
-   "count": 435,
-   "range": [
-    "祸殃咒术师",
-    "傀儡特训"
-   ],
-   "chars": 35463
+   "file": "by-name-u2a.json",
+   "firstChar": "*",
+   "count": 1,
+   "chars": 294
   },
   {
-   "file": "by-name-04.json",
-   "count": 430,
-   "range": [
-    "扩展的魔法",
-    "妙舞蟹"
-   ],
-   "chars": 35426
+   "file": "by-name-#.json",
+   "firstChar": "#",
+   "count": 1,
+   "chars": 279
   },
   {
-   "file": "by-name-05.json",
-   "count": 438,
-   "range": [
-    "灭剑焰龙",
-    "杀戮人偶·枷薇"
-   ],
-   "chars": 35528
+   "file": "by-name-阿.json",
+   "firstChar": "阿",
+   "count": 9,
+   "chars": 898
   },
   {
-   "file": "by-name-06.json",
-   "count": 433,
-   "range": [
-    "杀戮人偶·枷薇",
-    "万籁争鸣"
-   ],
-   "chars": 35464
+   "file": "by-name-埃.json",
+   "firstChar": "埃",
+   "count": 4,
+   "chars": 555
   },
   {
-   "file": "by-name-07.json",
-   "count": 435,
-   "range": [
-    "万籁争鸣",
-    "一之濑志希"
-   ],
-   "chars": 35486
+   "file": "by-name-艾.json",
+   "firstChar": "艾",
+   "count": 3,
+   "chars": 439
   },
   {
-   "file": "by-name-08.json",
-   "count": 435,
-   "range": [
-    "一之濑志希",
-    "咒箱女王·娜哈特·娜哈特"
-   ],
-   "chars": 35495
+   "file": "by-name-爱.json",
+   "firstChar": "爱",
+   "count": 16,
+   "chars": 1490
   },
   {
-   "file": "by-name-09.json",
-   "count": 139,
-   "range": [
-    "咒箱女王·娜哈特·娜哈特",
-    "レジェンドティーチャー・ルシウス"
-   ],
-   "chars": 11667
+   "file": "by-name-隘.json",
+   "firstChar": "隘",
+   "count": 4,
+   "chars": 515
+  },
+  {
+   "file": "by-name-安.json",
+   "firstChar": "安",
+   "count": 41,
+   "chars": 3500
+  },
+  {
+   "file": "by-name-暗.json",
+   "firstChar": "暗",
+   "count": 18,
+   "chars": 1672
+  },
+  {
+   "file": "by-name-奥.json",
+   "firstChar": "奥",
+   "count": 3,
+   "chars": 437
+  },
+  {
+   "file": "by-name-巴.json",
+   "firstChar": "巴",
+   "count": 5,
+   "chars": 574
+  },
+  {
+   "file": "by-name-芭.json",
+   "firstChar": "芭",
+   "count": 5,
+   "chars": 609
+  },
+  {
+   "file": "by-name-霸.json",
+   "firstChar": "霸",
+   "count": 15,
+   "chars": 1408
+  },
+  {
+   "file": "by-name-白.json",
+   "firstChar": "白",
+   "count": 27,
+   "chars": 2427
+  },
+  {
+   "file": "by-name-百.json",
+   "firstChar": "百",
+   "count": 6,
+   "chars": 696
+  },
+  {
+   "file": "by-name-佰.json",
+   "firstChar": "佰",
+   "count": 10,
+   "chars": 1139
+  },
+  {
+   "file": "by-name-半.json",
+   "firstChar": "半",
+   "count": 2,
+   "chars": 366
+  },
+  {
+   "file": "by-name-絆.json",
+   "firstChar": "絆",
+   "count": 1,
+   "chars": 267
+  },
+  {
+   "file": "by-name-宝.json",
+   "firstChar": "宝",
+   "count": 1,
+   "chars": 276
+  },
+  {
+   "file": "by-name-暴.json",
+   "firstChar": "暴",
+   "count": 12,
+   "chars": 1240
+  },
+  {
+   "file": "by-name-爆.json",
+   "firstChar": "爆",
+   "count": 7,
+   "chars": 747
+  },
+  {
+   "file": "by-name-北.json",
+   "firstChar": "北",
+   "count": 7,
+   "chars": 767
+  },
+  {
+   "file": "by-name-背.json",
+   "firstChar": "背",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-被.json",
+   "firstChar": "被",
+   "count": 11,
+   "chars": 1139
+  },
+  {
+   "file": "by-name-奔.json",
+   "firstChar": "奔",
+   "count": 5,
+   "chars": 642
+  },
+  {
+   "file": "by-name-本.json",
+   "firstChar": "本",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-笨.json",
+   "firstChar": "笨",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-闭.json",
+   "firstChar": "闭",
+   "count": 4,
+   "chars": 515
+  },
+  {
+   "file": "by-name-庇.json",
+   "firstChar": "庇",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-碧.json",
+   "firstChar": "碧",
+   "count": 3,
+   "chars": 402
+  },
+  {
+   "file": "by-name-避.json",
+   "firstChar": "避",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-边.json",
+   "firstChar": "边",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-蝙.json",
+   "firstChar": "蝙",
+   "count": 1,
+   "chars": 276
+  },
+  {
+   "file": "by-name-冰.json",
+   "firstChar": "冰",
+   "count": 14,
+   "chars": 1365
+  },
+  {
+   "file": "by-name-剥.json",
+   "firstChar": "剥",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-捕.json",
+   "firstChar": "捕",
+   "count": 4,
+   "chars": 525
+  },
+  {
+   "file": "by-name-不.json",
+   "firstChar": "不",
+   "count": 53,
+   "chars": 4526
+  },
+  {
+   "file": "by-name-财.json",
+   "firstChar": "财",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-裁.json",
+   "firstChar": "裁",
+   "count": 6,
+   "chars": 741
+  },
+  {
+   "file": "by-name-采.json",
+   "firstChar": "采",
+   "count": 3,
+   "chars": 422
+  },
+  {
+   "file": "by-name-彩.json",
+   "firstChar": "彩",
+   "count": 6,
+   "chars": 691
+  },
+  {
+   "file": "by-name-残.json",
+   "firstChar": "残",
+   "count": 6,
+   "chars": 715
+  },
+  {
+   "file": "by-name-沧.json",
+   "firstChar": "沧",
+   "count": 2,
+   "chars": 392
+  },
+  {
+   "file": "by-name-苍.json",
+   "firstChar": "苍",
+   "count": 17,
+   "chars": 1607
+  },
+  {
+   "file": "by-name-柴.json",
+   "firstChar": "柴",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-超.json",
+   "firstChar": "超",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-沉.json",
+   "firstChar": "沉",
+   "count": 18,
+   "chars": 1675
+  },
+  {
+   "file": "by-name-成.json",
+   "firstChar": "成",
+   "count": 4,
+   "chars": 498
+  },
+  {
+   "file": "by-name-诚.json",
+   "firstChar": "诚",
+   "count": 4,
+   "chars": 511
+  },
+  {
+   "file": "by-name-惩.json",
+   "firstChar": "惩",
+   "count": 2,
+   "chars": 360
+  },
+  {
+   "file": "by-name-持.json",
+   "firstChar": "持",
+   "count": 2,
+   "chars": 346
+  },
+  {
+   "file": "by-name-赤.json",
+   "firstChar": "赤",
+   "count": 10,
+   "chars": 1041
+  },
+  {
+   "file": "by-name-炽.json",
+   "firstChar": "炽",
+   "count": 16,
+   "chars": 1535
+  },
+  {
+   "file": "by-name-敕.json",
+   "firstChar": "敕",
+   "count": 3,
+   "chars": 467
+  },
+  {
+   "file": "by-name-冲.json",
+   "firstChar": "冲",
+   "count": 2,
+   "chars": 373
+  },
+  {
+   "file": "by-name-憧.json",
+   "firstChar": "憧",
+   "count": 3,
+   "chars": 443
+  },
+  {
+   "file": "by-name-崇.json",
+   "firstChar": "崇",
+   "count": 11,
+   "chars": 1162
+  },
+  {
+   "file": "by-name-出.json",
+   "firstChar": "出",
+   "count": 6,
+   "chars": 739
+  },
+  {
+   "file": "by-name-触.json",
+   "firstChar": "触",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-川.json",
+   "firstChar": "川",
+   "count": 2,
+   "chars": 338
+  },
+  {
+   "file": "by-name-传.json",
+   "firstChar": "传",
+   "count": 6,
+   "chars": 718
+  },
+  {
+   "file": "by-name-船.json",
+   "firstChar": "船",
+   "count": 5,
+   "chars": 584
+  },
+  {
+   "file": "by-name-串.json",
+   "firstChar": "串",
+   "count": 5,
+   "chars": 585
+  },
+  {
+   "file": "by-name-创.json",
+   "firstChar": "创",
+   "count": 7,
+   "chars": 756
+  },
+  {
+   "file": "by-name-纯.json",
+   "firstChar": "纯",
+   "count": 7,
+   "chars": 768
+  },
+  {
+   "file": "by-name-次.json",
+   "firstChar": "次",
+   "count": 5,
+   "chars": 603
+  },
+  {
+   "file": "by-name-刺.json",
+   "firstChar": "刺",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-聪.json",
+   "firstChar": "聪",
+   "count": 4,
+   "chars": 533
+  },
+  {
+   "file": "by-name-从.json",
+   "firstChar": "从",
+   "count": 4,
+   "chars": 507
+  },
+  {
+   "file": "by-name-粗.json",
+   "firstChar": "粗",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-篡.json",
+   "firstChar": "篡",
+   "count": 29,
+   "chars": 2588
+  },
+  {
+   "file": "by-name-璀.json",
+   "firstChar": "璀",
+   "count": 2,
+   "chars": 358
+  },
+  {
+   "file": "by-name-翠.json",
+   "firstChar": "翠",
+   "count": 3,
+   "chars": 457
+  },
+  {
+   "file": "by-name-村.json",
+   "firstChar": "村",
+   "count": 1,
+   "chars": 261
+  },
+  {
+   "file": "by-name-打.json",
+   "firstChar": "打",
+   "count": 2,
+   "chars": 389
+  },
+  {
+   "file": "by-name-大.json",
+   "firstChar": "大",
+   "count": 27,
+   "chars": 2284
+  },
+  {
+   "file": "by-name-待.json",
+   "firstChar": "待",
+   "count": 3,
+   "chars": 428
+  },
+  {
+   "file": "by-name-丹.json",
+   "firstChar": "丹",
+   "count": 2,
+   "chars": 369
+  },
+  {
+   "file": "by-name-单.json",
+   "firstChar": "单",
+   "count": 6,
+   "chars": 682
+  },
+  {
+   "file": "by-name-耽.json",
+   "firstChar": "耽",
+   "count": 6,
+   "chars": 714
+  },
+  {
+   "file": "by-name-弹.json",
+   "firstChar": "弹",
+   "count": 2,
+   "chars": 378
+  },
+  {
+   "file": "by-name-蛋.json",
+   "firstChar": "蛋",
+   "count": 7,
+   "chars": 732
+  },
+  {
+   "file": "by-name-岛.json",
+   "firstChar": "岛",
+   "count": 4,
+   "chars": 495
+  },
+  {
+   "file": "by-name-盗.json",
+   "firstChar": "盗",
+   "count": 4,
+   "chars": 502
+  },
+  {
+   "file": "by-name-地.json",
+   "firstChar": "地",
+   "count": 5,
+   "chars": 576
+  },
+  {
+   "file": "by-name-的.json",
+   "firstChar": "的",
+   "count": 1,
+   "chars": 265
+  },
+  {
+   "file": "by-name-灯.json",
+   "firstChar": "灯",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-狄.json",
+   "firstChar": "狄",
+   "count": 2,
+   "chars": 366
+  },
+  {
+   "file": "by-name-帝.json",
+   "firstChar": "帝",
+   "count": 5,
+   "chars": 616
+  },
+  {
+   "file": "by-name-第.json",
+   "firstChar": "第",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-缔.json",
+   "firstChar": "缔",
+   "count": 2,
+   "chars": 374
+  },
+  {
+   "file": "by-name-癫.json",
+   "firstChar": "癫",
+   "count": 2,
+   "chars": 371
+  },
+  {
+   "file": "by-name-电.json",
+   "firstChar": "电",
+   "count": 3,
+   "chars": 435
+  },
+  {
+   "file": "by-name-调.json",
+   "firstChar": "调",
+   "count": 2,
+   "chars": 356
+  },
+  {
+   "file": "by-name-叮.json",
+   "firstChar": "叮",
+   "count": 7,
+   "chars": 743
+  },
+  {
+   "file": "by-name-东.json",
+   "firstChar": "东",
+   "count": 2,
+   "chars": 349
+  },
+  {
+   "file": "by-name-动.json",
+   "firstChar": "动",
+   "count": 1,
+   "chars": 289
+  },
+  {
+   "file": "by-name-冻.json",
+   "firstChar": "冻",
+   "count": 10,
+   "chars": 1065
+  },
+  {
+   "file": "by-name-都.json",
+   "firstChar": "都",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-独.json",
+   "firstChar": "独",
+   "count": 10,
+   "chars": 1026
+  },
+  {
+   "file": "by-name-读.json",
+   "firstChar": "读",
+   "count": 2,
+   "chars": 370
+  },
+  {
+   "file": "by-name-渎.json",
+   "firstChar": "渎",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-镀.json",
+   "firstChar": "镀",
+   "count": 1,
+   "chars": 267
+  },
+  {
+   "file": "by-name-断.json",
+   "firstChar": "断",
+   "count": 2,
+   "chars": 364
+  },
+  {
+   "file": "by-name-对.json",
+   "firstChar": "对",
+   "count": 3,
+   "chars": 433
+  },
+  {
+   "file": "by-name-堕.json",
+   "firstChar": "堕",
+   "count": 3,
+   "chars": 424
+  },
+  {
+   "file": "by-name-俄.json",
+   "firstChar": "俄",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-厄.json",
+   "firstChar": "厄",
+   "count": 6,
+   "chars": 644
+  },
+  {
+   "file": "by-name-恶.json",
+   "firstChar": "恶",
+   "count": 8,
+   "chars": 841
+  },
+  {
+   "file": "by-name-噩.json",
+   "firstChar": "噩",
+   "count": 2,
+   "chars": 376
+  },
+  {
+   "file": "by-name-发.json",
+   "firstChar": "发",
+   "count": 4,
+   "chars": 500
+  },
+  {
+   "file": "by-name-伐.json",
+   "firstChar": "伐",
+   "count": 4,
+   "chars": 519
+  },
+  {
+   "file": "by-name-法.json",
+   "firstChar": "法",
+   "count": 3,
+   "chars": 440
+  },
+  {
+   "file": "by-name-帆.json",
+   "firstChar": "帆",
+   "count": 3,
+   "chars": 395
+  },
+  {
+   "file": "by-name-番.json",
+   "firstChar": "番",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-反.json",
+   "firstChar": "反",
+   "count": 4,
+   "chars": 525
+  },
+  {
+   "file": "by-name-芳.json",
+   "firstChar": "芳",
+   "count": 2,
+   "chars": 339
+  },
+  {
+   "file": "by-name-紡.json",
+   "firstChar": "紡",
+   "count": 1,
+   "chars": 282
+  },
+  {
+   "file": "by-name-放.json",
+   "firstChar": "放",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-飞.json",
+   "firstChar": "飞",
+   "count": 8,
+   "chars": 845
+  },
+  {
+   "file": "by-name-非.json",
+   "firstChar": "非",
+   "count": 1,
+   "chars": 284
+  },
+  {
+   "file": "by-name-绯.json",
+   "firstChar": "绯",
+   "count": 6,
+   "chars": 712
+  },
+  {
+   "file": "by-name-緋.json",
+   "firstChar": "緋",
+   "count": 1,
+   "chars": 282
+  },
+  {
+   "file": "by-name-废.json",
+   "firstChar": "废",
+   "count": 3,
+   "chars": 413
+  },
+  {
+   "file": "by-name-奋.json",
+   "firstChar": "奋",
+   "count": 3,
+   "chars": 443
+  },
+  {
+   "file": "by-name-愤.json",
+   "firstChar": "愤",
+   "count": 2,
+   "chars": 362
+  },
+  {
+   "file": "by-name-丰.json",
+   "firstChar": "丰",
+   "count": 3,
+   "chars": 438
+  },
+  {
+   "file": "by-name-风.json",
+   "firstChar": "风",
+   "count": 2,
+   "chars": 354
+  },
+  {
+   "file": "by-name-封.json",
+   "firstChar": "封",
+   "count": 4,
+   "chars": 545
+  },
+  {
+   "file": "by-name-疯.json",
+   "firstChar": "疯",
+   "count": 8,
+   "chars": 841
+  },
+  {
+   "file": "by-name-逢.json",
+   "firstChar": "逢",
+   "count": 2,
+   "chars": 365
+  },
+  {
+   "file": "by-name-凤.json",
+   "firstChar": "凤",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-奉.json",
+   "firstChar": "奉",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-弗.json",
+   "firstChar": "弗",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-拂.json",
+   "firstChar": "拂",
+   "count": 4,
+   "chars": 549
+  },
+  {
+   "file": "by-name-浮.json",
+   "firstChar": "浮",
+   "count": 2,
+   "chars": 364
+  },
+  {
+   "file": "by-name-斧.json",
+   "firstChar": "斧",
+   "count": 2,
+   "chars": 343
+  },
+  {
+   "file": "by-name-俯.json",
+   "firstChar": "俯",
+   "count": 4,
+   "chars": 515
+  },
+  {
+   "file": "by-name-腐.json",
+   "firstChar": "腐",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-复.json",
+   "firstChar": "复",
+   "count": 4,
+   "chars": 549
+  },
+  {
+   "file": "by-name-改.json",
+   "firstChar": "改",
+   "count": 2,
+   "chars": 371
+  },
+  {
+   "file": "by-name-冈.json",
+   "firstChar": "冈",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-刚.json",
+   "firstChar": "刚",
+   "count": 4,
+   "chars": 494
+  },
+  {
+   "file": "by-name-钢.json",
+   "firstChar": "钢",
+   "count": 10,
+   "chars": 997
+  },
+  {
+   "file": "by-name-高.json",
+   "firstChar": "高",
+   "count": 19,
+   "chars": 1741
+  },
+  {
+   "file": "by-name-哥.json",
+   "firstChar": "哥",
+   "count": 5,
+   "chars": 599
+  },
+  {
+   "file": "by-name-歌.json",
+   "firstChar": "歌",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-格.json",
+   "firstChar": "格",
+   "count": 2,
+   "chars": 333
+  },
+  {
+   "file": "by-name-葛.json",
+   "firstChar": "葛",
+   "count": 3,
+   "chars": 424
+  },
+  {
+   "file": "by-name-给.json",
+   "firstChar": "给",
+   "count": 3,
+   "chars": 442
+  },
+  {
+   "file": "by-name-根.json",
+   "firstChar": "根",
+   "count": 2,
+   "chars": 339
+  },
+  {
+   "file": "by-name-耿.json",
+   "firstChar": "耿",
+   "count": 2,
+   "chars": 372
+  },
+  {
+   "file": "by-name-工.json",
+   "firstChar": "工",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-弓.json",
+   "firstChar": "弓",
+   "count": 4,
+   "chars": 493
+  },
+  {
+   "file": "by-name-公.json",
+   "firstChar": "公",
+   "count": 11,
+   "chars": 1079
+  },
+  {
+   "file": "by-name-宫.json",
+   "firstChar": "宫",
+   "count": 4,
+   "chars": 478
+  },
+  {
+   "file": "by-name-孤.json",
+   "firstChar": "孤",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-古.json",
+   "firstChar": "古",
+   "count": 3,
+   "chars": 449
+  },
+  {
+   "file": "by-name-骨.json",
+   "firstChar": "骨",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-观.json",
+   "firstChar": "观",
+   "count": 1,
+   "chars": 283
+  },
+  {
+   "file": "by-name-管.json",
+   "firstChar": "管",
+   "count": 4,
+   "chars": 509
+  },
+  {
+   "file": "by-name-貫.json",
+   "firstChar": "貫",
+   "count": 1,
+   "chars": 297
+  },
+  {
+   "file": "by-name-光.json",
+   "firstChar": "光",
+   "count": 17,
+   "chars": 1675
+  },
+  {
+   "file": "by-name-瑰.json",
+   "firstChar": "瑰",
+   "count": 1,
+   "chars": 267
+  },
+  {
+   "file": "by-name-贵.json",
+   "firstChar": "贵",
+   "count": 13,
+   "chars": 1232
+  },
+  {
+   "file": "by-name-哈.json",
+   "firstChar": "哈",
+   "count": 1,
+   "chars": 265
+  },
+  {
+   "file": "by-name-骸.json",
+   "firstChar": "骸",
+   "count": 4,
+   "chars": 500
+  },
+  {
+   "file": "by-name-海.json",
+   "firstChar": "海",
+   "count": 7,
+   "chars": 745
+  },
+  {
+   "file": "by-name-骇.json",
+   "firstChar": "骇",
+   "count": 3,
+   "chars": 436
+  },
+  {
+   "file": "by-name-害.json",
+   "firstChar": "害",
+   "count": 2,
+   "chars": 354
+  },
+  {
+   "file": "by-name-寒.json",
+   "firstChar": "寒",
+   "count": 3,
+   "chars": 452
+  },
+  {
+   "file": "by-name-好.json",
+   "firstChar": "好",
+   "count": 1,
+   "chars": 294
+  },
+  {
+   "file": "by-name-合.json",
+   "firstChar": "合",
+   "count": 2,
+   "chars": 394
+  },
+  {
+   "file": "by-name-和.json",
+   "firstChar": "和",
+   "count": 4,
+   "chars": 567
+  },
+  {
+   "file": "by-name-涸.json",
+   "firstChar": "涸",
+   "count": 12,
+   "chars": 1245
+  },
+  {
+   "file": "by-name-赫.json",
+   "firstChar": "赫",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-鹤.json",
+   "firstChar": "鹤",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-黑.json",
+   "firstChar": "黑",
+   "count": 25,
+   "chars": 2328
+  },
+  {
+   "file": "by-name-恒.json",
+   "firstChar": "恒",
+   "count": 1,
+   "chars": 280
+  },
+  {
+   "file": "by-name-横.json",
+   "firstChar": "横",
+   "count": 1,
+   "chars": 267
+  },
+  {
+   "file": "by-name-轰.json",
+   "firstChar": "轰",
+   "count": 2,
+   "chars": 331
+  },
+  {
+   "file": "by-name-红.json",
+   "firstChar": "红",
+   "count": 6,
+   "chars": 677
+  },
+  {
+   "file": "by-name-宏.json",
+   "firstChar": "宏",
+   "count": 7,
+   "chars": 816
+  },
+  {
+   "file": "by-name-狐.json",
+   "firstChar": "狐",
+   "count": 4,
+   "chars": 506
+  },
+  {
+   "file": "by-name-胡.json",
+   "firstChar": "胡",
+   "count": 5,
+   "chars": 579
+  },
+  {
+   "file": "by-name-虎.json",
+   "firstChar": "虎",
+   "count": 8,
+   "chars": 834
+  },
+  {
+   "file": "by-name-花.json",
+   "firstChar": "花",
+   "count": 9,
+   "chars": 926
+  },
+  {
+   "file": "by-name-华.json",
+   "firstChar": "华",
+   "count": 9,
+   "chars": 948
+  },
+  {
+   "file": "by-name-画.json",
+   "firstChar": "画",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-坏.json",
+   "firstChar": "坏",
+   "count": 5,
+   "chars": 636
+  },
+  {
+   "file": "by-name-环.json",
+   "firstChar": "环",
+   "count": 2,
+   "chars": 360
+  },
+  {
+   "file": "by-name-幻.json",
+   "firstChar": "幻",
+   "count": 11,
+   "chars": 1133
+  },
+  {
+   "file": "by-name-唤.json",
+   "firstChar": "唤",
+   "count": 2,
+   "chars": 348
+  },
+  {
+   "file": "by-name-荒.json",
+   "firstChar": "荒",
+   "count": 7,
+   "chars": 724
+  },
+  {
+   "file": "by-name-皇.json",
+   "firstChar": "皇",
+   "count": 2,
+   "chars": 378
+  },
+  {
+   "file": "by-name-黄.json",
+   "firstChar": "黄",
+   "count": 14,
+   "chars": 1297
+  },
+  {
+   "file": "by-name-煌.json",
+   "firstChar": "煌",
+   "count": 8,
+   "chars": 862
+  },
+  {
+   "file": "by-name-辉.json",
+   "firstChar": "辉",
+   "count": 1,
+   "chars": 265
+  },
+  {
+   "file": "by-name-回.json",
+   "firstChar": "回",
+   "count": 4,
+   "chars": 554
+  },
+  {
+   "file": "by-name-毁.json",
+   "firstChar": "毁",
+   "count": 4,
+   "chars": 515
+  },
+  {
+   "file": "by-name-惠.json",
+   "firstChar": "惠",
+   "count": 2,
+   "chars": 329
+  },
+  {
+   "file": "by-name-混.json",
+   "firstChar": "混",
+   "count": 27,
+   "chars": 2501
+  },
+  {
+   "file": "by-name-活.json",
+   "firstChar": "活",
+   "count": 2,
+   "chars": 367
+  },
+  {
+   "file": "by-name-火.json",
+   "firstChar": "火",
+   "count": 10,
+   "chars": 1007
+  },
+  {
+   "file": "by-name-祸.json",
+   "firstChar": "祸",
+   "count": 2,
+   "chars": 360
+  },
+  {
+   "file": "by-name-击.json",
+   "firstChar": "击",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-饥.json",
+   "firstChar": "饥",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-机.json",
+   "firstChar": "机",
+   "count": 44,
+   "chars": 3694
+  },
+  {
+   "file": "by-name-激.json",
+   "firstChar": "激",
+   "count": 7,
+   "chars": 767
+  },
+  {
+   "file": "by-name-羁.json",
+   "firstChar": "羁",
+   "count": 5,
+   "chars": 599
+  },
+  {
+   "file": "by-name-极.json",
+   "firstChar": "极",
+   "count": 12,
+   "chars": 1225
+  },
+  {
+   "file": "by-name-疾.json",
+   "firstChar": "疾",
+   "count": 6,
+   "chars": 681
+  },
+  {
+   "file": "by-name-棘.json",
+   "firstChar": "棘",
+   "count": 4,
+   "chars": 505
+  },
+  {
+   "file": "by-name-極.json",
+   "firstChar": "極",
+   "count": 1,
+   "chars": 276
+  },
+  {
+   "file": "by-name-记.json",
+   "firstChar": "记",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-加.json",
+   "firstChar": "加",
+   "count": 6,
+   "chars": 663
+  },
+  {
+   "file": "by-name-嘉.json",
+   "firstChar": "嘉",
+   "count": 6,
+   "chars": 620
+  },
+  {
+   "file": "by-name-贾.json",
+   "firstChar": "贾",
+   "count": 2,
+   "chars": 343
+  },
+  {
+   "file": "by-name-假.json",
+   "firstChar": "假",
+   "count": 3,
+   "chars": 445
+  },
+  {
+   "file": "by-name-尖.json",
+   "firstChar": "尖",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-坚.json",
+   "firstChar": "坚",
+   "count": 4,
+   "chars": 550
+  },
+  {
+   "file": "by-name-歼.json",
+   "firstChar": "歼",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-拣.json",
+   "firstChar": "拣",
+   "count": 1,
+   "chars": 283
+  },
+  {
+   "file": "by-name-减.json",
+   "firstChar": "减",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-剪.json",
+   "firstChar": "剪",
+   "count": 6,
+   "chars": 730
+  },
+  {
+   "file": "by-name-见.json",
+   "firstChar": "见",
+   "count": 3,
+   "chars": 465
+  },
+  {
+   "file": "by-name-剑.json",
+   "firstChar": "剑",
+   "count": 6,
+   "chars": 627
+  },
+  {
+   "file": "by-name-将.json",
+   "firstChar": "将",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-交.json",
+   "firstChar": "交",
+   "count": 8,
+   "chars": 851
+  },
+  {
+   "file": "by-name-娇.json",
+   "firstChar": "娇",
+   "count": 2,
+   "chars": 367
+  },
+  {
+   "file": "by-name-焦.json",
+   "firstChar": "焦",
+   "count": 7,
+   "chars": 791
+  },
+  {
+   "file": "by-name-角.json",
+   "firstChar": "角",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-矫.json",
+   "firstChar": "矫",
+   "count": 4,
+   "chars": 521
+  },
+  {
+   "file": "by-name-叫.json",
+   "firstChar": "叫",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-教.json",
+   "firstChar": "教",
+   "count": 2,
+   "chars": 350
+  },
+  {
+   "file": "by-name-接.json",
+   "firstChar": "接",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-洁.json",
+   "firstChar": "洁",
+   "count": 3,
+   "chars": 458
+  },
+  {
+   "file": "by-name-结.json",
+   "firstChar": "结",
+   "count": 5,
+   "chars": 601
+  },
+  {
+   "file": "by-name-截.json",
+   "firstChar": "截",
+   "count": 2,
+   "chars": 339
+  },
+  {
+   "file": "by-name-解.json",
+   "firstChar": "解",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-戒.json",
+   "firstChar": "戒",
+   "count": 9,
+   "chars": 952
+  },
+  {
+   "file": "by-name-金.json",
+   "firstChar": "金",
+   "count": 9,
+   "chars": 962
+  },
+  {
+   "file": "by-name-尽.json",
+   "firstChar": "尽",
+   "count": 2,
+   "chars": 346
+  },
+  {
+   "file": "by-name-禁.json",
+   "firstChar": "禁",
+   "count": 13,
+   "chars": 1292
+  },
+  {
+   "file": "by-name-荆.json",
+   "firstChar": "荆",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-惊.json",
+   "firstChar": "惊",
+   "count": 2,
+   "chars": 368
+  },
+  {
+   "file": "by-name-精.json",
+   "firstChar": "精",
+   "count": 19,
+   "chars": 1743
+  },
+  {
+   "file": "by-name-景.json",
+   "firstChar": "景",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-警.json",
+   "firstChar": "警",
+   "count": 2,
+   "chars": 346
+  },
+  {
+   "file": "by-name-净.json",
+   "firstChar": "净",
+   "count": 11,
+   "chars": 1128
+  },
+  {
+   "file": "by-name-静.json",
+   "firstChar": "静",
+   "count": 7,
+   "chars": 840
+  },
+  {
+   "file": "by-name-镜.json",
+   "firstChar": "镜",
+   "count": 5,
+   "chars": 554
+  },
+  {
+   "file": "by-name-九.json",
+   "firstChar": "九",
+   "count": 6,
+   "chars": 694
+  },
+  {
+   "file": "by-name-久.json",
+   "firstChar": "久",
+   "count": 3,
+   "chars": 400
+  },
+  {
+   "file": "by-name-酒.json",
+   "firstChar": "酒",
+   "count": 4,
+   "chars": 495
+  },
+  {
+   "file": "by-name-救.json",
+   "firstChar": "救",
+   "count": 4,
+   "chars": 511
+  },
+  {
+   "file": "by-name-橘.json",
+   "firstChar": "橘",
+   "count": 1,
+   "chars": 265
+  },
+  {
+   "file": "by-name-举.json",
+   "firstChar": "举",
+   "count": 2,
+   "chars": 378
+  },
+  {
+   "file": "by-name-巨.json",
+   "firstChar": "巨",
+   "count": 13,
+   "chars": 1243
+  },
+  {
+   "file": "by-name-飓.json",
+   "firstChar": "飓",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-聚.json",
+   "firstChar": "聚",
+   "count": 3,
+   "chars": 440
+  },
+  {
+   "file": "by-name-决.json",
+   "firstChar": "决",
+   "count": 1,
+   "chars": 284
+  },
+  {
+   "file": "by-name-绝.json",
+   "firstChar": "绝",
+   "count": 62,
+   "chars": 5451
+  },
+  {
+   "file": "by-name-军.json",
+   "firstChar": "军",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-均.json",
+   "firstChar": "均",
+   "count": 2,
+   "chars": 376
+  },
+  {
+   "file": "by-name-卡.json",
+   "firstChar": "卡",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-开.json",
+   "firstChar": "开",
+   "count": 8,
+   "chars": 884
+  },
+  {
+   "file": "by-name-凯.json",
+   "firstChar": "凯",
+   "count": 14,
+   "chars": 1252
+  },
+  {
+   "file": "by-name-铠.json",
+   "firstChar": "铠",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-栞.json",
+   "firstChar": "栞",
+   "count": 4,
+   "chars": 473
+  },
+  {
+   "file": "by-name-可.json",
+   "firstChar": "可",
+   "count": 10,
+   "chars": 940
+  },
+  {
+   "file": "by-name-克.json",
+   "firstChar": "克",
+   "count": 9,
+   "chars": 844
+  },
+  {
+   "file": "by-name-客.json",
+   "firstChar": "客",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-空.json",
+   "firstChar": "空",
+   "count": 15,
+   "chars": 1406
+  },
+  {
+   "file": "by-name-库.json",
+   "firstChar": "库",
+   "count": 3,
+   "chars": 407
+  },
+  {
+   "file": "by-name-狂.json",
+   "firstChar": "狂",
+   "count": 14,
+   "chars": 1374
+  },
+  {
+   "file": "by-name-傀.json",
+   "firstChar": "傀",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-扩.json",
+   "firstChar": "扩",
+   "count": 2,
+   "chars": 363
+  },
+  {
+   "file": "by-name-拉.json",
+   "firstChar": "拉",
+   "count": 4,
+   "chars": 553
+  },
+  {
+   "file": "by-name-菈.json",
+   "firstChar": "菈",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-莱.json",
+   "firstChar": "莱",
+   "count": 3,
+   "chars": 413
+  },
+  {
+   "file": "by-name-兰.json",
+   "firstChar": "兰",
+   "count": 3,
+   "chars": 410
+  },
+  {
+   "file": "by-name-蓝.json",
+   "firstChar": "蓝",
+   "count": 2,
+   "chars": 367
+  },
+  {
+   "file": "by-name-浪.json",
+   "firstChar": "浪",
+   "count": 4,
+   "chars": 520
+  },
+  {
+   "file": "by-name-乐.json",
+   "firstChar": "乐",
+   "count": 4,
+   "chars": 551
+  },
+  {
+   "file": "by-name-楽.json",
+   "firstChar": "楽",
+   "count": 2,
+   "chars": 362
+  },
+  {
+   "file": "by-name-勒.json",
+   "firstChar": "勒",
+   "count": 6,
+   "chars": 688
+  },
+  {
+   "file": "by-name-雷.json",
+   "firstChar": "雷",
+   "count": 64,
+   "chars": 5862
+  },
+  {
+   "file": "by-name-棱.json",
+   "firstChar": "棱",
+   "count": 1,
+   "chars": 293
+  },
+  {
+   "file": "by-name-冷.json",
+   "firstChar": "冷",
+   "count": 1,
+   "chars": 287
+  },
+  {
+   "file": "by-name-狸.json",
+   "firstChar": "狸",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-黎.json",
+   "firstChar": "黎",
+   "count": 1,
+   "chars": 286
+  },
+  {
+   "file": "by-name-里.json",
+   "firstChar": "里",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-理.json",
+   "firstChar": "理",
+   "count": 4,
+   "chars": 555
+  },
+  {
+   "file": "by-name-力.json",
+   "firstChar": "力",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-利.json",
+   "firstChar": "利",
+   "count": 3,
+   "chars": 436
+  },
+  {
+   "file": "by-name-莉.json",
+   "firstChar": "莉",
+   "count": 4,
+   "chars": 500
+  },
+  {
+   "file": "by-name-连.json",
+   "firstChar": "连",
+   "count": 5,
+   "chars": 595
+  },
+  {
+   "file": "by-name-怜.json",
+   "firstChar": "怜",
+   "count": 3,
+   "chars": 387
+  },
+  {
+   "file": "by-name-炼.json",
+   "firstChar": "炼",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-恋.json",
+   "firstChar": "恋",
+   "count": 2,
+   "chars": 365
+  },
+  {
+   "file": "by-name-链.json",
+   "firstChar": "链",
+   "count": 1,
+   "chars": 284
+  },
+  {
+   "file": "by-name-疗.json",
+   "firstChar": "疗",
+   "count": 1,
+   "chars": 288
+  },
+  {
+   "file": "by-name-燎.json",
+   "firstChar": "燎",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-列.json",
+   "firstChar": "列",
+   "count": 4,
+   "chars": 488
+  },
+  {
+   "file": "by-name-烈.json",
+   "firstChar": "烈",
+   "count": 17,
+   "chars": 1605
+  },
+  {
+   "file": "by-name-裂.json",
+   "firstChar": "裂",
+   "count": 3,
+   "chars": 416
+  },
+  {
+   "file": "by-name-林.json",
+   "firstChar": "林",
+   "count": 3,
+   "chars": 423
+  },
+  {
+   "file": "by-name-琳.json",
+   "firstChar": "琳",
+   "count": 2,
+   "chars": 327
+  },
+  {
+   "file": "by-name-凛.json",
+   "firstChar": "凛",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-灵.json",
+   "firstChar": "灵",
+   "count": 18,
+   "chars": 1657
+  },
+  {
+   "file": "by-name-凌.json",
+   "firstChar": "凌",
+   "count": 6,
+   "chars": 697
+  },
+  {
+   "file": "by-name-铃.json",
+   "firstChar": "铃",
+   "count": 3,
+   "chars": 396
+  },
+  {
+   "file": "by-name-菱.json",
+   "firstChar": "菱",
+   "count": 11,
+   "chars": 1056
+  },
+  {
+   "file": "by-name-零.json",
+   "firstChar": "零",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-流.json",
+   "firstChar": "流",
+   "count": 2,
+   "chars": 381
+  },
+  {
+   "file": "by-name-六.json",
+   "firstChar": "六",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-龙.json",
+   "firstChar": "龙",
+   "count": 72,
+   "chars": 6086
+  },
+  {
+   "file": "by-name-竜.json",
+   "firstChar": "竜",
+   "count": 4,
+   "chars": 511
+  },
+  {
+   "file": "by-name-鲁.json",
+   "firstChar": "鲁",
+   "count": 5,
+   "chars": 645
+  },
+  {
+   "file": "by-name-路.json",
+   "firstChar": "路",
+   "count": 4,
+   "chars": 485
+  },
+  {
+   "file": "by-name-鹭.json",
+   "firstChar": "鹭",
+   "count": 3,
+   "chars": 407
+  },
+  {
+   "file": "by-name-履.json",
+   "firstChar": "履",
+   "count": 4,
+   "chars": 509
+  },
+  {
+   "file": "by-name-轮.json",
+   "firstChar": "轮",
+   "count": 5,
+   "chars": 595
+  },
+  {
+   "file": "by-name-罗.json",
+   "firstChar": "罗",
+   "count": 8,
+   "chars": 897
+  },
+  {
+   "file": "by-name-马.json",
+   "firstChar": "马",
+   "count": 43,
+   "chars": 3990
+  },
+  {
+   "file": "by-name-玛.json",
+   "firstChar": "玛",
+   "count": 1,
+   "chars": 277
+  },
+  {
+   "file": "by-name-迈.json",
+   "firstChar": "迈",
+   "count": 4,
+   "chars": 543
+  },
+  {
+   "file": "by-name-满.json",
+   "firstChar": "满",
+   "count": 5,
+   "chars": 601
+  },
+  {
+   "file": "by-name-曼.json",
+   "firstChar": "曼",
+   "count": 3,
+   "chars": 417
+  },
+  {
+   "file": "by-name-猫.json",
+   "firstChar": "猫",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-矛.json",
+   "firstChar": "矛",
+   "count": 5,
+   "chars": 541
+  },
+  {
+   "file": "by-name-没.json",
+   "firstChar": "没",
+   "count": 2,
+   "chars": 347
+  },
+  {
+   "file": "by-name-梅.json",
+   "firstChar": "梅",
+   "count": 6,
+   "chars": 624
+  },
+  {
+   "file": "by-name-美.json",
+   "firstChar": "美",
+   "count": 22,
+   "chars": 1856
+  },
+  {
+   "file": "by-name-蒙.json",
+   "firstChar": "蒙",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-猛.json",
+   "firstChar": "猛",
+   "count": 5,
+   "chars": 593
+  },
+  {
+   "file": "by-name-梦.json",
+   "firstChar": "梦",
+   "count": 4,
+   "chars": 521
+  },
+  {
+   "file": "by-name-夢.json",
+   "firstChar": "夢",
+   "count": 1,
+   "chars": 281
+  },
+  {
+   "file": "by-name-迷.json",
+   "firstChar": "迷",
+   "count": 4,
+   "chars": 508
+  },
+  {
+   "file": "by-name-米.json",
+   "firstChar": "米",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-秘.json",
+   "firstChar": "秘",
+   "count": 3,
+   "chars": 437
+  },
+  {
+   "file": "by-name-喵.json",
+   "firstChar": "喵",
+   "count": 1,
+   "chars": 274
+  },
+  {
+   "file": "by-name-妙.json",
+   "firstChar": "妙",
+   "count": 6,
+   "chars": 642
+  },
+  {
+   "file": "by-name-灭.json",
+   "firstChar": "灭",
+   "count": 6,
+   "chars": 729
+  },
+  {
+   "file": "by-name-明.json",
+   "firstChar": "明",
+   "count": 2,
+   "chars": 363
+  },
+  {
+   "file": "by-name-冥.json",
+   "firstChar": "冥",
+   "count": 10,
+   "chars": 1000
+  },
+  {
+   "file": "by-name-瞑.json",
+   "firstChar": "瞑",
+   "count": 5,
+   "chars": 611
+  },
+  {
+   "file": "by-name-摩.json",
+   "firstChar": "摩",
+   "count": 3,
+   "chars": 419
+  },
+  {
+   "file": "by-name-魔.json",
+   "firstChar": "魔",
+   "count": 52,
+   "chars": 4473
+  },
+  {
+   "file": "by-name-母.json",
+   "firstChar": "母",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-木.json",
+   "firstChar": "木",
+   "count": 2,
+   "chars": 364
+  },
+  {
+   "file": "by-name-目.json",
+   "firstChar": "目",
+   "count": 12,
+   "chars": 1136
+  },
+  {
+   "file": "by-name-牧.json",
+   "firstChar": "牧",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-暮.json",
+   "firstChar": "暮",
+   "count": 1,
+   "chars": 288
+  },
+  {
+   "file": "by-name-那.json",
+   "firstChar": "那",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-娜.json",
+   "firstChar": "娜",
+   "count": 4,
+   "chars": 491
+  },
+  {
+   "file": "by-name-奈.json",
+   "firstChar": "奈",
+   "count": 6,
+   "chars": 641
+  },
+  {
+   "file": "by-name-南.json",
+   "firstChar": "南",
+   "count": 3,
+   "chars": 417
+  },
+  {
+   "file": "by-name-嫩.json",
+   "firstChar": "嫩",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-逆.json",
+   "firstChar": "逆",
+   "count": 7,
+   "chars": 805
+  },
+  {
+   "file": "by-name-涅.json",
+   "firstChar": "涅",
+   "count": 6,
+   "chars": 617
+  },
+  {
+   "file": "by-name-啮.json",
+   "firstChar": "啮",
+   "count": 4,
+   "chars": 495
+  },
+  {
+   "file": "by-name-农.json",
+   "firstChar": "农",
+   "count": 2,
+   "chars": 348
+  },
+  {
+   "file": "by-name-農.json",
+   "firstChar": "農",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-怒.json",
+   "firstChar": "怒",
+   "count": 4,
+   "chars": 509
+  },
+  {
+   "file": "by-name-女.json",
+   "firstChar": "女",
+   "count": 12,
+   "chars": 1202
+  },
+  {
+   "file": "by-name-欧.json",
+   "firstChar": "欧",
+   "count": 2,
+   "chars": 347
+  },
+  {
+   "file": "by-name-帕.json",
+   "firstChar": "帕",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-庞.json",
+   "firstChar": "庞",
+   "count": 2,
+   "chars": 369
+  },
+  {
+   "file": "by-name-跑.json",
+   "firstChar": "跑",
+   "count": 2,
+   "chars": 343
+  },
+  {
+   "file": "by-name-泡.json",
+   "firstChar": "泡",
+   "count": 4,
+   "chars": 505
+  },
+  {
+   "file": "by-name-佩.json",
+   "firstChar": "佩",
+   "count": 8,
+   "chars": 817
+  },
+  {
+   "file": "by-name-喷.json",
+   "firstChar": "喷",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-琵.json",
+   "firstChar": "琵",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-缥.json",
+   "firstChar": "缥",
+   "count": 4,
+   "chars": 547
+  },
+  {
+   "file": "by-name-漂.json",
+   "firstChar": "漂",
+   "count": 6,
+   "chars": 699
+  },
+  {
+   "file": "by-name-平.json",
+   "firstChar": "平",
+   "count": 1,
+   "chars": 277
+  },
+  {
+   "file": "by-name-破.json",
+   "firstChar": "破",
+   "count": 42,
+   "chars": 3603
+  },
+  {
+   "file": "by-name-七.json",
+   "firstChar": "七",
+   "count": 2,
+   "chars": 332
+  },
+  {
+   "file": "by-name-栖.json",
+   "firstChar": "栖",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-漆.json",
+   "firstChar": "漆",
+   "count": 3,
+   "chars": 434
+  },
+  {
+   "file": "by-name-齐.json",
+   "firstChar": "齐",
+   "count": 2,
+   "chars": 356
+  },
+  {
+   "file": "by-name-奇.json",
+   "firstChar": "奇",
+   "count": 11,
+   "chars": 1116
+  },
+  {
+   "file": "by-name-祈.json",
+   "firstChar": "祈",
+   "count": 7,
+   "chars": 699
+  },
+  {
+   "file": "by-name-骑.json",
+   "firstChar": "骑",
+   "count": 1,
+   "chars": 295
+  },
+  {
+   "file": "by-name-企.json",
+   "firstChar": "企",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-気.json",
+   "firstChar": "気",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-器.json",
+   "firstChar": "器",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-千.json",
+   "firstChar": "千",
+   "count": 9,
+   "chars": 888
+  },
+  {
+   "file": "by-name-前.json",
+   "firstChar": "前",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-潜.json",
+   "firstChar": "潜",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-茜.json",
+   "firstChar": "茜",
+   "count": 1,
+   "chars": 258
+  },
+  {
+   "file": "by-name-枪.json",
+   "firstChar": "枪",
+   "count": 3,
+   "chars": 435
+  },
+  {
+   "file": "by-name-强.json",
+   "firstChar": "强",
+   "count": 3,
+   "chars": 423
+  },
+  {
+   "file": "by-name-俏.json",
+   "firstChar": "俏",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-切.json",
+   "firstChar": "切",
+   "count": 4,
+   "chars": 540
+  },
+  {
+   "file": "by-name-青.json",
+   "firstChar": "青",
+   "count": 4,
+   "chars": 510
+  },
+  {
+   "file": "by-name-清.json",
+   "firstChar": "清",
+   "count": 9,
+   "chars": 944
+  },
+  {
+   "file": "by-name-情.json",
+   "firstChar": "情",
+   "count": 1,
+   "chars": 274
+  },
+  {
+   "file": "by-name-晴.json",
+   "firstChar": "晴",
+   "count": 4,
+   "chars": 553
+  },
+  {
+   "file": "by-name-秋.json",
+   "firstChar": "秋",
+   "count": 3,
+   "chars": 415
+  },
+  {
+   "file": "by-name-区.json",
+   "firstChar": "区",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-驱.json",
+   "firstChar": "驱",
+   "count": 8,
+   "chars": 880
+  },
+  {
+   "file": "by-name-駆.json",
+   "firstChar": "駆",
+   "count": 1,
+   "chars": 283
+  },
+  {
+   "file": "by-name-全.json",
+   "firstChar": "全",
+   "count": 10,
+   "chars": 1048
+  },
+  {
+   "file": "by-name-群.json",
+   "firstChar": "群",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-燃.json",
+   "firstChar": "燃",
+   "count": 2,
+   "chars": 352
+  },
+  {
+   "file": "by-name-热.json",
+   "firstChar": "热",
+   "count": 9,
+   "chars": 929
+  },
+  {
+   "file": "by-name-熱.json",
+   "firstChar": "熱",
+   "count": 1,
+   "chars": 280
+  },
+  {
+   "file": "by-name-人.json",
+   "firstChar": "人",
+   "count": 14,
+   "chars": 1341
+  },
+  {
+   "file": "by-name-仁.json",
+   "firstChar": "仁",
+   "count": 5,
+   "chars": 623
+  },
+  {
+   "file": "by-name-忍.json",
+   "firstChar": "忍",
+   "count": 3,
+   "chars": 406
+  },
+  {
+   "file": "by-name-任.json",
+   "firstChar": "任",
+   "count": 3,
+   "chars": 439
+  },
+  {
+   "file": "by-name-日.json",
+   "firstChar": "日",
+   "count": 3,
+   "chars": 415
+  },
+  {
+   "file": "by-name-荣.json",
+   "firstChar": "荣",
+   "count": 10,
+   "chars": 1041
+  },
+  {
+   "file": "by-name-熔.json",
+   "firstChar": "熔",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-入.json",
+   "firstChar": "入",
+   "count": 3,
+   "chars": 428
+  },
+  {
+   "file": "by-name-睿.json",
+   "firstChar": "睿",
+   "count": 5,
+   "chars": 597
+  },
+  {
+   "file": "by-name-撒.json",
+   "firstChar": "撒",
+   "count": 9,
+   "chars": 977
+  },
+  {
+   "file": "by-name-塞.json",
+   "firstChar": "塞",
+   "count": 2,
+   "chars": 340
+  },
+  {
+   "file": "by-name-赛.json",
+   "firstChar": "赛",
+   "count": 5,
+   "chars": 556
+  },
+  {
+   "file": "by-name-骚.json",
+   "firstChar": "骚",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-扫.json",
+   "firstChar": "扫",
+   "count": 2,
+   "chars": 362
+  },
+  {
+   "file": "by-name-涩.json",
+   "firstChar": "涩",
+   "count": 1,
+   "chars": 261
+  },
+  {
+   "file": "by-name-森.json",
+   "firstChar": "森",
+   "count": 36,
+   "chars": 3146
+  },
+  {
+   "file": "by-name-杀.json",
+   "firstChar": "杀",
+   "count": 8,
+   "chars": 877
+  },
+  {
+   "file": "by-name-沙.json",
+   "firstChar": "沙",
+   "count": 3,
+   "chars": 461
+  },
+  {
+   "file": "by-name-鲨.json",
+   "firstChar": "鲨",
+   "count": 2,
+   "chars": 356
+  },
+  {
+   "file": "by-name-闪.json",
+   "firstChar": "闪",
+   "count": 8,
+   "chars": 874
+  },
+  {
+   "file": "by-name-烧.json",
+   "firstChar": "烧",
+   "count": 3,
+   "chars": 443
+  },
+  {
+   "file": "by-name-蛇.json",
+   "firstChar": "蛇",
+   "count": 2,
+   "chars": 377
+  },
+  {
+   "file": "by-name-射.json",
+   "firstChar": "射",
+   "count": 3,
+   "chars": 434
+  },
+  {
+   "file": "by-name-赦.json",
+   "firstChar": "赦",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-身.json",
+   "firstChar": "身",
+   "count": 8,
+   "chars": 899
+  },
+  {
+   "file": "by-name-深.json",
+   "firstChar": "深",
+   "count": 20,
+   "chars": 1859
+  },
+  {
+   "file": "by-name-神.json",
+   "firstChar": "神",
+   "count": 54,
+   "chars": 4581
+  },
+  {
+   "file": "by-name-生.json",
+   "firstChar": "生",
+   "count": 2,
+   "chars": 350
+  },
+  {
+   "file": "by-name-圣.json",
+   "firstChar": "圣",
+   "count": 34,
+   "chars": 2972
+  },
+  {
+   "file": "by-name-胜.json",
+   "firstChar": "胜",
+   "count": 3,
+   "chars": 457
+  },
+  {
+   "file": "by-name-盛.json",
+   "firstChar": "盛",
+   "count": 1,
+   "chars": 281
+  },
+  {
+   "file": "by-name-尸.json",
+   "firstChar": "尸",
+   "count": 2,
+   "chars": 376
+  },
+  {
+   "file": "by-name-失.json",
+   "firstChar": "失",
+   "count": 4,
+   "chars": 547
+  },
+  {
+   "file": "by-name-屍.json",
+   "firstChar": "屍",
+   "count": 2,
+   "chars": 362
+  },
+  {
+   "file": "by-name-十.json",
+   "firstChar": "十",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-石.json",
+   "firstChar": "石",
+   "count": 2,
+   "chars": 343
+  },
+  {
+   "file": "by-name-辻.json",
+   "firstChar": "辻",
+   "count": 2,
+   "chars": 340
+  },
+  {
+   "file": "by-name-时.json",
+   "firstChar": "时",
+   "count": 3,
+   "chars": 448
+  },
+  {
+   "file": "by-name-始.json",
+   "firstChar": "始",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-世.json",
+   "firstChar": "世",
+   "count": 7,
+   "chars": 798
+  },
+  {
+   "file": "by-name-式.json",
+   "firstChar": "式",
+   "count": 1,
+   "chars": 276
+  },
+  {
+   "file": "by-name-势.json",
+   "firstChar": "势",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-试.json",
+   "firstChar": "试",
+   "count": 3,
+   "chars": 431
+  },
+  {
+   "file": "by-name-弑.json",
+   "firstChar": "弑",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-誓.json",
+   "firstChar": "誓",
+   "count": 6,
+   "chars": 659
+  },
+  {
+   "file": "by-name-噬.json",
+   "firstChar": "噬",
+   "count": 5,
+   "chars": 568
+  },
+  {
+   "file": "by-name-收.json",
+   "firstChar": "收",
+   "count": 2,
+   "chars": 372
+  },
+  {
+   "file": "by-name-受.json",
+   "firstChar": "受",
+   "count": 5,
+   "chars": 608
+  },
+  {
+   "file": "by-name-兽.json",
+   "firstChar": "兽",
+   "count": 2,
+   "chars": 346
+  },
+  {
+   "file": "by-name-赎.json",
+   "firstChar": "赎",
+   "count": 3,
+   "chars": 445
+  },
+  {
+   "file": "by-name-熟.json",
+   "firstChar": "熟",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-术.json",
+   "firstChar": "术",
+   "count": 2,
+   "chars": 365
+  },
+  {
+   "file": "by-name-束.json",
+   "firstChar": "束",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-树.json",
+   "firstChar": "树",
+   "count": 15,
+   "chars": 1385
+  },
+  {
+   "file": "by-name-帅.json",
+   "firstChar": "帅",
+   "count": 2,
+   "chars": 368
+  },
+  {
+   "file": "by-name-双.json",
+   "firstChar": "双",
+   "count": 25,
+   "chars": 2249
+  },
+  {
+   "file": "by-name-水.json",
+   "firstChar": "水",
+   "count": 13,
+   "chars": 1228
+  },
+  {
+   "file": "by-name-瞬.json",
+   "firstChar": "瞬",
+   "count": 4,
+   "chars": 532
+  },
+  {
+   "file": "by-name-说.json",
+   "firstChar": "说",
+   "count": 1,
+   "chars": 291
+  },
+  {
+   "file": "by-name-斯.json",
+   "firstChar": "斯",
+   "count": 3,
+   "chars": 421
+  },
+  {
+   "file": "by-name-死.json",
+   "firstChar": "死",
+   "count": 16,
+   "chars": 1492
+  },
+  {
+   "file": "by-name-四.json",
+   "firstChar": "四",
+   "count": 2,
+   "chars": 350
+  },
+  {
+   "file": "by-name-似.json",
+   "firstChar": "似",
+   "count": 1,
+   "chars": 262
+  },
+  {
+   "file": "by-name-松.json",
+   "firstChar": "松",
+   "count": 2,
+   "chars": 351
+  },
+  {
+   "file": "by-name-送.json",
+   "firstChar": "送",
+   "count": 2,
+   "chars": 360
+  },
+  {
+   "file": "by-name-肃.json",
+   "firstChar": "肃",
+   "count": 11,
+   "chars": 1122
+  },
+  {
+   "file": "by-name-宿.json",
+   "firstChar": "宿",
+   "count": 6,
+   "chars": 666
+  },
+  {
+   "file": "by-name-酸.json",
+   "firstChar": "酸",
+   "count": 4,
+   "chars": 500
+  },
+  {
+   "file": "by-name-碎.json",
+   "firstChar": "碎",
+   "count": 2,
+   "chars": 329
+  },
+  {
+   "file": "by-name-太.json",
+   "firstChar": "太",
+   "count": 3,
+   "chars": 445
+  },
+  {
+   "file": "by-name-贪.json",
+   "firstChar": "贪",
+   "count": 10,
+   "chars": 1076
+  },
+  {
+   "file": "by-name-糖.json",
+   "firstChar": "糖",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-桃.json",
+   "firstChar": "桃",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-淘.json",
+   "firstChar": "淘",
+   "count": 3,
+   "chars": 445
+  },
+  {
+   "file": "by-name-忒.json",
+   "firstChar": "忒",
+   "count": 4,
+   "chars": 524
+  },
+  {
+   "file": "by-name-特.json",
+   "firstChar": "特",
+   "count": 2,
+   "chars": 349
+  },
+  {
+   "file": "by-name-提.json",
+   "firstChar": "提",
+   "count": 2,
+   "chars": 378
+  },
+  {
+   "file": "by-name-天.json",
+   "firstChar": "天",
+   "count": 54,
+   "chars": 4678
+  },
+  {
+   "file": "by-name-殄.json",
+   "firstChar": "殄",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-眺.json",
+   "firstChar": "眺",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-跳.json",
+   "firstChar": "跳",
+   "count": 3,
+   "chars": 473
+  },
+  {
+   "file": "by-name-铁.json",
+   "firstChar": "铁",
+   "count": 5,
+   "chars": 574
+  },
+  {
+   "file": "by-name-童.json",
+   "firstChar": "童",
+   "count": 2,
+   "chars": 371
+  },
+  {
+   "file": "by-name-统.json",
+   "firstChar": "统",
+   "count": 2,
+   "chars": 376
+  },
+  {
+   "file": "by-name-头.json",
+   "firstChar": "头",
+   "count": 1,
+   "chars": 279
+  },
+  {
+   "file": "by-name-突.json",
+   "firstChar": "突",
+   "count": 4,
+   "chars": 517
+  },
+  {
+   "file": "by-name-屠.json",
+   "firstChar": "屠",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-歪.json",
+   "firstChar": "歪",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-丸.json",
+   "firstChar": "丸",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-万.json",
+   "firstChar": "万",
+   "count": 13,
+   "chars": 1233
+  },
+  {
+   "file": "by-name-亡.json",
+   "firstChar": "亡",
+   "count": 4,
+   "chars": 517
+  },
+  {
+   "file": "by-name-王.json",
+   "firstChar": "王",
+   "count": 16,
+   "chars": 1536
+  },
+  {
+   "file": "by-name-往.json",
+   "firstChar": "往",
+   "count": 2,
+   "chars": 367
+  },
+  {
+   "file": "by-name-忘.json",
+   "firstChar": "忘",
+   "count": 4,
+   "chars": 505
+  },
+  {
+   "file": "by-name-望.json",
+   "firstChar": "望",
+   "count": 4,
+   "chars": 509
+  },
+  {
+   "file": "by-name-危.json",
+   "firstChar": "危",
+   "count": 2,
+   "chars": 378
+  },
+  {
+   "file": "by-name-威.json",
+   "firstChar": "威",
+   "count": 4,
+   "chars": 524
+  },
+  {
+   "file": "by-name-薇.json",
+   "firstChar": "薇",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-唯.json",
+   "firstChar": "唯",
+   "count": 5,
+   "chars": 635
+  },
+  {
+   "file": "by-name-维.json",
+   "firstChar": "维",
+   "count": 2,
+   "chars": 331
+  },
+  {
+   "file": "by-name-未.json",
+   "firstChar": "未",
+   "count": 1,
+   "chars": 295
+  },
+  {
+   "file": "by-name-温.json",
+   "firstChar": "温",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-乌.json",
+   "firstChar": "乌",
+   "count": 3,
+   "chars": 414
+  },
+  {
+   "file": "by-name-呜.json",
+   "firstChar": "呜",
+   "count": 2,
+   "chars": 390
+  },
+  {
+   "file": "by-name-巫.json",
+   "firstChar": "巫",
+   "count": 1,
+   "chars": 284
+  },
+  {
+   "file": "by-name-嗚.json",
+   "firstChar": "嗚",
+   "count": 2,
+   "chars": 374
+  },
+  {
+   "file": "by-name-无.json",
+   "firstChar": "无",
+   "count": 23,
+   "chars": 2123
+  },
+  {
+   "file": "by-name-無.json",
+   "firstChar": "無",
+   "count": 2,
+   "chars": 358
+  },
+  {
+   "file": "by-name-五.json",
+   "firstChar": "五",
+   "count": 5,
+   "chars": 608
+  },
+  {
+   "file": "by-name-午.json",
+   "firstChar": "午",
+   "count": 4,
+   "chars": 526
+  },
+  {
+   "file": "by-name-武.json",
+   "firstChar": "武",
+   "count": 7,
+   "chars": 786
+  },
+  {
+   "file": "by-name-侮.json",
+   "firstChar": "侮",
+   "count": 44,
+   "chars": 3823
+  },
+  {
+   "file": "by-name-舞.json",
+   "firstChar": "舞",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-吸.json",
+   "firstChar": "吸",
+   "count": 6,
+   "chars": 688
+  },
+  {
+   "file": "by-name-西.json",
+   "firstChar": "西",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-希.json",
+   "firstChar": "希",
+   "count": 21,
+   "chars": 2038
+  },
+  {
+   "file": "by-name-蜥.json",
+   "firstChar": "蜥",
+   "count": 1,
+   "chars": 288
+  },
+  {
+   "file": "by-name-喜.json",
+   "firstChar": "喜",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-夏.json",
+   "firstChar": "夏",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-仙.json",
+   "firstChar": "仙",
+   "count": 2,
+   "chars": 348
+  },
+  {
+   "file": "by-name-先.json",
+   "firstChar": "先",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-鲜.json",
+   "firstChar": "鲜",
+   "count": 6,
+   "chars": 694
+  },
+  {
+   "file": "by-name-线.json",
+   "firstChar": "线",
+   "count": 2,
+   "chars": 347
+  },
+  {
+   "file": "by-name-献.json",
+   "firstChar": "献",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-相.json",
+   "firstChar": "相",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-香.json",
+   "firstChar": "香",
+   "count": 6,
+   "chars": 655
+  },
+  {
+   "file": "by-name-向.json",
+   "firstChar": "向",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-骁.json",
+   "firstChar": "骁",
+   "count": 2,
+   "chars": 358
+  },
+  {
+   "file": "by-name-宵.json",
+   "firstChar": "宵",
+   "count": 2,
+   "chars": 371
+  },
+  {
+   "file": "by-name-硝.json",
+   "firstChar": "硝",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-小.json",
+   "firstChar": "小",
+   "count": 14,
+   "chars": 1351
+  },
+  {
+   "file": "by-name-咲.json",
+   "firstChar": "咲",
+   "count": 7,
+   "chars": 704
+  },
+  {
+   "file": "by-name-校.json",
+   "firstChar": "校",
+   "count": 1,
+   "chars": 296
+  },
+  {
+   "file": "by-name-笑.json",
+   "firstChar": "笑",
+   "count": 4,
+   "chars": 539
+  },
+  {
+   "file": "by-name-邪.json",
+   "firstChar": "邪",
+   "count": 5,
+   "chars": 603
+  },
+  {
+   "file": "by-name-心.json",
+   "firstChar": "心",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-新.json",
+   "firstChar": "新",
+   "count": 21,
+   "chars": 1900
+  },
+  {
+   "file": "by-name-信.json",
+   "firstChar": "信",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-星.json",
+   "firstChar": "星",
+   "count": 4,
+   "chars": 520
+  },
+  {
+   "file": "by-name-形.json",
+   "firstChar": "形",
+   "count": 2,
+   "chars": 339
+  },
+  {
+   "file": "by-name-醒.json",
+   "firstChar": "醒",
+   "count": 3,
+   "chars": 426
+  },
+  {
+   "file": "by-name-幸.json",
+   "firstChar": "幸",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-凶.json",
+   "firstChar": "凶",
+   "count": 3,
+   "chars": 452
+  },
+  {
+   "file": "by-name-雄.json",
+   "firstChar": "雄",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-休.json",
+   "firstChar": "休",
+   "count": 2,
+   "chars": 367
+  },
+  {
+   "file": "by-name-虚.json",
+   "firstChar": "虚",
+   "count": 8,
+   "chars": 856
+  },
+  {
+   "file": "by-name-宣.json",
+   "firstChar": "宣",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-旋.json",
+   "firstChar": "旋",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-漩.json",
+   "firstChar": "漩",
+   "count": 2,
+   "chars": 347
+  },
+  {
+   "file": "by-name-炫.json",
+   "firstChar": "炫",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-绚.json",
+   "firstChar": "绚",
+   "count": 7,
+   "chars": 769
+  },
+  {
+   "file": "by-name-学.json",
+   "firstChar": "学",
+   "count": 1,
+   "chars": 292
+  },
+  {
+   "file": "by-name-雪.json",
+   "firstChar": "雪",
+   "count": 13,
+   "chars": 1139
+  },
+  {
+   "file": "by-name-血.json",
+   "firstChar": "血",
+   "count": 15,
+   "chars": 1385
+  },
+  {
+   "file": "by-name-薰.json",
+   "firstChar": "薰",
+   "count": 4,
+   "chars": 531
+  },
+  {
+   "file": "by-name-寻.json",
+   "firstChar": "寻",
+   "count": 1,
+   "chars": 282
+  },
+  {
+   "file": "by-name-巡.json",
+   "firstChar": "巡",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-迅.json",
+   "firstChar": "迅",
+   "count": 6,
+   "chars": 661
+  },
+  {
+   "file": "by-name-亚.json",
+   "firstChar": "亚",
+   "count": 8,
+   "chars": 804
+  },
+  {
+   "file": "by-name-岩.json",
+   "firstChar": "岩",
+   "count": 2,
+   "chars": 348
+  },
+  {
+   "file": "by-name-炎.json",
+   "firstChar": "炎",
+   "count": 9,
+   "chars": 911
+  },
+  {
+   "file": "by-name-盐.json",
+   "firstChar": "盐",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-艳.json",
+   "firstChar": "艳",
+   "count": 3,
+   "chars": 449
+  },
+  {
+   "file": "by-name-验.json",
+   "firstChar": "验",
+   "count": 3,
+   "chars": 433
+  },
+  {
+   "file": "by-name-扬.json",
+   "firstChar": "扬",
+   "count": 2,
+   "chars": 339
+  },
+  {
+   "file": "by-name-洋.json",
+   "firstChar": "洋",
+   "count": 6,
+   "chars": 711
+  },
+  {
+   "file": "by-name-妖.json",
+   "firstChar": "妖",
+   "count": 24,
+   "chars": 2142
+  },
+  {
+   "file": "by-name-耶.json",
+   "firstChar": "耶",
+   "count": 3,
+   "chars": 436
+  },
+  {
+   "file": "by-name-也.json",
+   "firstChar": "也",
+   "count": 2,
+   "chars": 347
+  },
+  {
+   "file": "by-name-野.json",
+   "firstChar": "野",
+   "count": 5,
+   "chars": 614
+  },
+  {
+   "file": "by-name-业.json",
+   "firstChar": "业",
+   "count": 1,
+   "chars": 266
+  },
+  {
+   "file": "by-name-叶.json",
+   "firstChar": "叶",
+   "count": 4,
+   "chars": 509
+  },
+  {
+   "file": "by-name-夜.json",
+   "firstChar": "夜",
+   "count": 5,
+   "chars": 612
+  },
+  {
+   "file": "by-name-一.json",
+   "firstChar": "一",
+   "count": 11,
+   "chars": 1099
+  },
+  {
+   "file": "by-name-伊.json",
+   "firstChar": "伊",
+   "count": 13,
+   "chars": 1180
+  },
+  {
+   "file": "by-name-医.json",
+   "firstChar": "医",
+   "count": 1,
+   "chars": 264
+  },
+  {
+   "file": "by-name-依.json",
+   "firstChar": "依",
+   "count": 2,
+   "chars": 332
+  },
+  {
+   "file": "by-name-遗.json",
+   "firstChar": "遗",
+   "count": 4,
+   "chars": 526
+  },
+  {
+   "file": "by-name-乙.json",
+   "firstChar": "乙",
+   "count": 1,
+   "chars": 274
+  },
+  {
+   "file": "by-name-异.json",
+   "firstChar": "异",
+   "count": 20,
+   "chars": 1781
+  },
+  {
+   "file": "by-name-異.json",
+   "firstChar": "異",
+   "count": 2,
+   "chars": 374
+  },
+  {
+   "file": "by-name-意.json",
+   "firstChar": "意",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-毅.json",
+   "firstChar": "毅",
+   "count": 6,
+   "chars": 745
+  },
+  {
+   "file": "by-name-翼.json",
+   "firstChar": "翼",
+   "count": 5,
+   "chars": 635
+  },
+  {
+   "file": "by-name-因.json",
+   "firstChar": "因",
+   "count": 6,
+   "chars": 711
+  },
+  {
+   "file": "by-name-阴.json",
+   "firstChar": "阴",
+   "count": 6,
+   "chars": 677
+  },
+  {
+   "file": "by-name-音.json",
+   "firstChar": "音",
+   "count": 14,
+   "chars": 1407
+  },
+  {
+   "file": "by-name-银.json",
+   "firstChar": "银",
+   "count": 24,
+   "chars": 2152
+  },
+  {
+   "file": "by-name-隐.json",
+   "firstChar": "隐",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-英.json",
+   "firstChar": "英",
+   "count": 6,
+   "chars": 704
+  },
+  {
+   "file": "by-name-樱.json",
+   "firstChar": "樱",
+   "count": 4,
+   "chars": 503
+  },
+  {
+   "file": "by-name-鹰.json",
+   "firstChar": "鹰",
+   "count": 4,
+   "chars": 513
+  },
+  {
+   "file": "by-name-迎.json",
+   "firstChar": "迎",
+   "count": 2,
+   "chars": 343
+  },
+  {
+   "file": "by-name-影.json",
+   "firstChar": "影",
+   "count": 4,
+   "chars": 490
+  },
+  {
+   "file": "by-name-拥.json",
+   "firstChar": "拥",
+   "count": 3,
+   "chars": 436
+  },
+  {
+   "file": "by-name-永.json",
+   "firstChar": "永",
+   "count": 19,
+   "chars": 1825
+  },
+  {
+   "file": "by-name-咏.json",
+   "firstChar": "咏",
+   "count": 2,
+   "chars": 363
+  },
+  {
+   "file": "by-name-勇.json",
+   "firstChar": "勇",
+   "count": 5,
+   "chars": 607
+  },
+  {
+   "file": "by-name-优.json",
+   "firstChar": "优",
+   "count": 20,
+   "chars": 1765
+  },
+  {
+   "file": "by-name-幽.json",
+   "firstChar": "幽",
+   "count": 5,
+   "chars": 635
+  },
+  {
+   "file": "by-name-悠.json",
+   "firstChar": "悠",
+   "count": 5,
+   "chars": 600
+  },
+  {
+   "file": "by-name-優.json",
+   "firstChar": "優",
+   "count": 1,
+   "chars": 292
+  },
+  {
+   "file": "by-name-游.json",
+   "firstChar": "游",
+   "count": 3,
+   "chars": 469
+  },
+  {
+   "file": "by-name-友.json",
+   "firstChar": "友",
+   "count": 4,
+   "chars": 517
+  },
+  {
+   "file": "by-name-幼.json",
+   "firstChar": "幼",
+   "count": 2,
+   "chars": 349
+  },
+  {
+   "file": "by-name-愚.json",
+   "firstChar": "愚",
+   "count": 4,
+   "chars": 508
+  },
+  {
+   "file": "by-name-舆.json",
+   "firstChar": "舆",
+   "count": 2,
+   "chars": 338
+  },
+  {
+   "file": "by-name-与.json",
+   "firstChar": "与",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-宇.json",
+   "firstChar": "宇",
+   "count": 2,
+   "chars": 376
+  },
+  {
+   "file": "by-name-羽.json",
+   "firstChar": "羽",
+   "count": 2,
+   "chars": 371
+  },
+  {
+   "file": "by-name-雨.json",
+   "firstChar": "雨",
+   "count": 2,
+   "chars": 377
+  },
+  {
+   "file": "by-name-驭.json",
+   "firstChar": "驭",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-狱.json",
+   "firstChar": "狱",
+   "count": 1,
+   "chars": 268
+  },
+  {
+   "file": "by-name-预.json",
+   "firstChar": "预",
+   "count": 8,
+   "chars": 867
+  },
+  {
+   "file": "by-name-欲.json",
+   "firstChar": "欲",
+   "count": 14,
+   "chars": 1294
+  },
+  {
+   "file": "by-name-御.json",
+   "firstChar": "御",
+   "count": 1,
+   "chars": 280
+  },
+  {
+   "file": "by-name-元.json",
+   "firstChar": "元",
+   "count": 4,
+   "chars": 519
+  },
+  {
+   "file": "by-name-原.json",
+   "firstChar": "原",
+   "count": 3,
+   "chars": 437
+  },
+  {
+   "file": "by-name-圆.json",
+   "firstChar": "圆",
+   "count": 8,
+   "chars": 820
+  },
+  {
+   "file": "by-name-源.json",
+   "firstChar": "源",
+   "count": 1,
+   "chars": 283
+  },
+  {
+   "file": "by-name-远.json",
+   "firstChar": "远",
+   "count": 8,
+   "chars": 848
+  },
+  {
+   "file": "by-name-怨.json",
+   "firstChar": "怨",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-愿.json",
+   "firstChar": "愿",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-约.json",
+   "firstChar": "约",
+   "count": 4,
+   "chars": 526
+  },
+  {
+   "file": "by-name-月.json",
+   "firstChar": "月",
+   "count": 9,
+   "chars": 887
+  },
+  {
+   "file": "by-name-跃.json",
+   "firstChar": "跃",
+   "count": 2,
+   "chars": 345
+  },
+  {
+   "file": "by-name-越.json",
+   "firstChar": "越",
+   "count": 7,
+   "chars": 801
+  },
+  {
+   "file": "by-name-云.json",
+   "firstChar": "云",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-运.json",
+   "firstChar": "运",
+   "count": 3,
+   "chars": 430
+  },
+  {
+   "file": "by-name-再.json",
+   "firstChar": "再",
+   "count": 1,
+   "chars": 279
+  },
+  {
+   "file": "by-name-在.json",
+   "firstChar": "在",
+   "count": 2,
+   "chars": 379
+  },
+  {
+   "file": "by-name-凿.json",
+   "firstChar": "凿",
+   "count": 4,
+   "chars": 495
+  },
+  {
+   "file": "by-name-早.json",
+   "firstChar": "早",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-造.json",
+   "firstChar": "造",
+   "count": 6,
+   "chars": 698
+  },
+  {
+   "file": "by-name-噪.json",
+   "firstChar": "噪",
+   "count": 1,
+   "chars": 277
+  },
+  {
+   "file": "by-name-憎.json",
+   "firstChar": "憎",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-炸.json",
+   "firstChar": "炸",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-斩.json",
+   "firstChar": "斩",
+   "count": 6,
+   "chars": 676
+  },
+  {
+   "file": "by-name-崭.json",
+   "firstChar": "崭",
+   "count": 4,
+   "chars": 527
+  },
+  {
+   "file": "by-name-战.json",
+   "firstChar": "战",
+   "count": 15,
+   "chars": 1472
+  },
+  {
+   "file": "by-name-帐.json",
+   "firstChar": "帐",
+   "count": 4,
+   "chars": 493
+  },
+  {
+   "file": "by-name-招.json",
+   "firstChar": "招",
+   "count": 2,
+   "chars": 335
+  },
+  {
+   "file": "by-name-召.json",
+   "firstChar": "召",
+   "count": 2,
+   "chars": 353
+  },
+  {
+   "file": "by-name-照.json",
+   "firstChar": "照",
+   "count": 2,
+   "chars": 349
+  },
+  {
+   "file": "by-name-折.json",
+   "firstChar": "折",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-侦.json",
+   "firstChar": "侦",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-珍.json",
+   "firstChar": "珍",
+   "count": 2,
+   "chars": 358
+  },
+  {
+   "file": "by-name-真.json",
+   "firstChar": "真",
+   "count": 47,
+   "chars": 4000
+  },
+  {
+   "file": "by-name-震.json",
+   "firstChar": "震",
+   "count": 2,
+   "chars": 358
+  },
+  {
+   "file": "by-name-正.json",
+   "firstChar": "正",
+   "count": 1,
+   "chars": 288
+  },
+  {
+   "file": "by-name-织.json",
+   "firstChar": "织",
+   "count": 1,
+   "chars": 287
+  },
+  {
+   "file": "by-name-至.json",
+   "firstChar": "至",
+   "count": 2,
+   "chars": 355
+  },
+  {
+   "file": "by-name-炙.json",
+   "firstChar": "炙",
+   "count": 5,
+   "chars": 639
+  },
+  {
+   "file": "by-name-智.json",
+   "firstChar": "智",
+   "count": 6,
+   "chars": 626
+  },
+  {
+   "file": "by-name-中.json",
+   "firstChar": "中",
+   "count": 4,
+   "chars": 496
+  },
+  {
+   "file": "by-name-忠.json",
+   "firstChar": "忠",
+   "count": 4,
+   "chars": 522
+  },
+  {
+   "file": "by-name-终.json",
+   "firstChar": "终",
+   "count": 9,
+   "chars": 966
+  },
+  {
+   "file": "by-name-重.json",
+   "firstChar": "重",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-咒.json",
+   "firstChar": "咒",
+   "count": 6,
+   "chars": 764
+  },
+  {
+   "file": "by-name-朱.json",
+   "firstChar": "朱",
+   "count": 4,
+   "chars": 516
+  },
+  {
+   "file": "by-name-珠.json",
+   "firstChar": "珠",
+   "count": 16,
+   "chars": 1514
+  },
+  {
+   "file": "by-name-诸.json",
+   "firstChar": "诸",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-蛛.json",
+   "firstChar": "蛛",
+   "count": 1,
+   "chars": 273
+  },
+  {
+   "file": "by-name-逐.json",
+   "firstChar": "逐",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-壮.json",
+   "firstChar": "壮",
+   "count": 1,
+   "chars": 275
+  },
+  {
+   "file": "by-name-追.json",
+   "firstChar": "追",
+   "count": 4,
+   "chars": 541
+  },
+  {
+   "file": "by-name-椎.json",
+   "firstChar": "椎",
+   "count": 2,
+   "chars": 337
+  },
+  {
+   "file": "by-name-坠.json",
+   "firstChar": "坠",
+   "count": 2,
+   "chars": 357
+  },
+  {
+   "file": "by-name-灼.json",
+   "firstChar": "灼",
+   "count": 8,
+   "chars": 893
+  },
+  {
+   "file": "by-name-卓.json",
+   "firstChar": "卓",
+   "count": 3,
+   "chars": 458
+  },
+  {
+   "file": "by-name-紫.json",
+   "firstChar": "紫",
+   "count": 7,
+   "chars": 731
+  },
+  {
+   "file": "by-name-自.json",
+   "firstChar": "自",
+   "count": 14,
+   "chars": 1359
+  },
+  {
+   "file": "by-name-宗.json",
+   "firstChar": "宗",
+   "count": 2,
+   "chars": 341
+  },
+  {
+   "file": "by-name-奏.json",
+   "firstChar": "奏",
+   "count": 8,
+   "chars": 873
+  },
+  {
+   "file": "by-name-诅.json",
+   "firstChar": "诅",
+   "count": 3,
+   "chars": 459
+  },
+  {
+   "file": "by-name-尊.json",
+   "firstChar": "尊",
+   "count": 6,
+   "chars": 719
+  },
+  {
+   "file": "by-name-左.json",
+   "firstChar": "左",
+   "count": 2,
+   "chars": 349
+  },
+  {
+   "file": "by-name-佐.json",
+   "firstChar": "佐",
+   "count": 1,
+   "chars": 269
+  },
+  {
+   "file": "by-name-作.json",
+   "firstChar": "作",
+   "count": 2,
+   "chars": 362
+  },
+  {
+   "file": "by-name-座.json",
+   "firstChar": "座",
+   "count": 2,
+   "chars": 342
+  },
+  {
+   "file": "by-name-做.json",
+   "firstChar": "做",
+   "count": 2,
+   "chars": 361
+  },
+  {
+   "file": "by-name-b.json",
+   "firstChar": "B",
+   "count": 3,
+   "chars": 477
+  },
+  {
+   "file": "by-name-c.json",
+   "firstChar": "C",
+   "count": 4,
+   "chars": 570
+  },
+  {
+   "file": "by-name-e.json",
+   "firstChar": "E",
+   "count": 1,
+   "chars": 271
+  },
+  {
+   "file": "by-name-f.json",
+   "firstChar": "F",
+   "count": 3,
+   "chars": 505
+  },
+  {
+   "file": "by-name-l.json",
+   "firstChar": "L",
+   "count": 2,
+   "chars": 393
+  },
+  {
+   "file": "by-name-m.json",
+   "firstChar": "M",
+   "count": 1,
+   "chars": 300
+  },
+  {
+   "file": "by-name-n.json",
+   "firstChar": "N",
+   "count": 1,
+   "chars": 307
+  },
+  {
+   "file": "by-name-t.json",
+   "firstChar": "T",
+   "count": 1,
+   "chars": 304
+  },
+  {
+   "file": "by-name-y.json",
+   "firstChar": "Y",
+   "count": 1,
+   "chars": 299
+  },
+  {
+   "file": "by-name-ア.json",
+   "firstChar": "ア",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-イ.json",
+   "firstChar": "イ",
+   "count": 2,
+   "chars": 344
+  },
+  {
+   "file": "by-name-エ.json",
+   "firstChar": "エ",
+   "count": 1,
+   "chars": 289
+  },
+  {
+   "file": "by-name-カ.json",
+   "firstChar": "カ",
+   "count": 2,
+   "chars": 360
+  },
+  {
+   "file": "by-name-グ.json",
+   "firstChar": "グ",
+   "count": 3,
+   "chars": 436
+  },
+  {
+   "file": "by-name-ス.json",
+   "firstChar": "ス",
+   "count": 1,
+   "chars": 281
+  },
+  {
+   "file": "by-name-ソ.json",
+   "firstChar": "ソ",
+   "count": 2,
+   "chars": 348
+  },
+  {
+   "file": "by-name-タ.json",
+   "firstChar": "タ",
+   "count": 1,
+   "chars": 270
+  },
+  {
+   "file": "by-name-ド.json",
+   "firstChar": "ド",
+   "count": 1,
+   "chars": 292
+  },
+  {
+   "file": "by-name-バ.json",
+   "firstChar": "バ",
+   "count": 3,
+   "chars": 443
+  },
+  {
+   "file": "by-name-マ.json",
+   "firstChar": "マ",
+   "count": 2,
+   "chars": 359
+  },
+  {
+   "file": "by-name-め.json",
+   "firstChar": "め",
+   "count": 1,
+   "chars": 272
+  },
+  {
+   "file": "by-name-メ.json",
+   "firstChar": "メ",
+   "count": 1,
+   "chars": 290
+  },
+  {
+   "file": "by-name-ル.json",
+   "firstChar": "ル",
+   "count": 2,
+   "chars": 368
+  },
+  {
+   "file": "by-name-レ.json",
+   "firstChar": "レ",
+   "count": 4,
+   "chars": 536
   }
- ],
- "firstCharToPart": {
-  "[": "by-name-00.json",
-  "《": "by-name-00.json",
-  "〔": "by-name-00.json",
-  "*": "by-name-00.json",
-  "#": "by-name-00.json",
-  "阿": "by-name-00.json",
-  "埃": "by-name-00.json",
-  "艾": "by-name-00.json",
-  "爱": "by-name-00.json",
-  "隘": "by-name-00.json",
-  "安": "by-name-00.json",
-  "暗": "by-name-00.json",
-  "奥": "by-name-00.json",
-  "巴": "by-name-00.json",
-  "芭": "by-name-00.json",
-  "霸": "by-name-00.json",
-  "白": "by-name-00.json",
-  "百": "by-name-00.json",
-  "佰": "by-name-00.json",
-  "半": "by-name-00.json",
-  "絆": "by-name-00.json",
-  "宝": "by-name-00.json",
-  "暴": "by-name-00.json",
-  "爆": "by-name-00.json",
-  "北": "by-name-00.json",
-  "背": "by-name-00.json",
-  "被": "by-name-00.json",
-  "奔": "by-name-00.json",
-  "本": "by-name-00.json",
-  "笨": "by-name-00.json",
-  "闭": "by-name-00.json",
-  "庇": "by-name-00.json",
-  "碧": "by-name-00.json",
-  "避": "by-name-00.json",
-  "边": "by-name-00.json",
-  "蝙": "by-name-00.json",
-  "冰": "by-name-01.json",
-  "剥": "by-name-01.json",
-  "捕": "by-name-01.json",
-  "不": "by-name-01.json",
-  "财": "by-name-01.json",
-  "裁": "by-name-01.json",
-  "采": "by-name-01.json",
-  "彩": "by-name-01.json",
-  "残": "by-name-01.json",
-  "沧": "by-name-01.json",
-  "苍": "by-name-01.json",
-  "柴": "by-name-01.json",
-  "超": "by-name-01.json",
-  "沉": "by-name-01.json",
-  "成": "by-name-01.json",
-  "诚": "by-name-01.json",
-  "惩": "by-name-01.json",
-  "持": "by-name-01.json",
-  "赤": "by-name-01.json",
-  "炽": "by-name-01.json",
-  "敕": "by-name-01.json",
-  "冲": "by-name-01.json",
-  "憧": "by-name-01.json",
-  "崇": "by-name-01.json",
-  "出": "by-name-01.json",
-  "触": "by-name-01.json",
-  "川": "by-name-01.json",
-  "传": "by-name-01.json",
-  "船": "by-name-01.json",
-  "串": "by-name-01.json",
-  "创": "by-name-01.json",
-  "纯": "by-name-01.json",
-  "次": "by-name-01.json",
-  "刺": "by-name-01.json",
-  "聪": "by-name-01.json",
-  "从": "by-name-01.json",
-  "粗": "by-name-01.json",
-  "篡": "by-name-01.json",
-  "璀": "by-name-01.json",
-  "翠": "by-name-01.json",
-  "村": "by-name-01.json",
-  "打": "by-name-01.json",
-  "大": "by-name-01.json",
-  "待": "by-name-01.json",
-  "丹": "by-name-01.json",
-  "单": "by-name-01.json",
-  "耽": "by-name-01.json",
-  "弹": "by-name-01.json",
-  "蛋": "by-name-01.json",
-  "岛": "by-name-01.json",
-  "盗": "by-name-01.json",
-  "地": "by-name-01.json",
-  "的": "by-name-01.json",
-  "灯": "by-name-01.json",
-  "狄": "by-name-01.json",
-  "帝": "by-name-01.json",
-  "第": "by-name-01.json",
-  "缔": "by-name-01.json",
-  "癫": "by-name-01.json",
-  "电": "by-name-01.json",
-  "调": "by-name-01.json",
-  "叮": "by-name-01.json",
-  "东": "by-name-01.json",
-  "动": "by-name-01.json",
-  "冻": "by-name-01.json",
-  "都": "by-name-01.json",
-  "独": "by-name-01.json",
-  "读": "by-name-01.json",
-  "渎": "by-name-01.json",
-  "镀": "by-name-01.json",
-  "断": "by-name-01.json",
-  "对": "by-name-01.json",
-  "堕": "by-name-01.json",
-  "俄": "by-name-01.json",
-  "厄": "by-name-01.json",
-  "恶": "by-name-01.json",
-  "噩": "by-name-01.json",
-  "发": "by-name-02.json",
-  "伐": "by-name-02.json",
-  "法": "by-name-02.json",
-  "帆": "by-name-02.json",
-  "番": "by-name-02.json",
-  "反": "by-name-02.json",
-  "芳": "by-name-02.json",
-  "紡": "by-name-02.json",
-  "放": "by-name-02.json",
-  "飞": "by-name-02.json",
-  "非": "by-name-02.json",
-  "绯": "by-name-02.json",
-  "緋": "by-name-02.json",
-  "废": "by-name-02.json",
-  "奋": "by-name-02.json",
-  "愤": "by-name-02.json",
-  "丰": "by-name-02.json",
-  "风": "by-name-02.json",
-  "封": "by-name-02.json",
-  "疯": "by-name-02.json",
-  "逢": "by-name-02.json",
-  "凤": "by-name-02.json",
-  "奉": "by-name-02.json",
-  "弗": "by-name-02.json",
-  "拂": "by-name-02.json",
-  "浮": "by-name-02.json",
-  "斧": "by-name-02.json",
-  "俯": "by-name-02.json",
-  "腐": "by-name-02.json",
-  "复": "by-name-02.json",
-  "改": "by-name-02.json",
-  "冈": "by-name-02.json",
-  "刚": "by-name-02.json",
-  "钢": "by-name-02.json",
-  "高": "by-name-02.json",
-  "哥": "by-name-02.json",
-  "歌": "by-name-02.json",
-  "格": "by-name-02.json",
-  "葛": "by-name-02.json",
-  "给": "by-name-02.json",
-  "根": "by-name-02.json",
-  "耿": "by-name-02.json",
-  "工": "by-name-02.json",
-  "弓": "by-name-02.json",
-  "公": "by-name-02.json",
-  "宫": "by-name-02.json",
-  "孤": "by-name-02.json",
-  "古": "by-name-02.json",
-  "骨": "by-name-02.json",
-  "观": "by-name-02.json",
-  "管": "by-name-02.json",
-  "貫": "by-name-02.json",
-  "光": "by-name-02.json",
-  "瑰": "by-name-02.json",
-  "贵": "by-name-02.json",
-  "哈": "by-name-02.json",
-  "骸": "by-name-02.json",
-  "海": "by-name-02.json",
-  "骇": "by-name-02.json",
-  "害": "by-name-02.json",
-  "寒": "by-name-02.json",
-  "好": "by-name-02.json",
-  "合": "by-name-02.json",
-  "和": "by-name-02.json",
-  "涸": "by-name-02.json",
-  "赫": "by-name-02.json",
-  "鹤": "by-name-02.json",
-  "黑": "by-name-02.json",
-  "恒": "by-name-02.json",
-  "横": "by-name-02.json",
-  "轰": "by-name-02.json",
-  "红": "by-name-02.json",
-  "宏": "by-name-02.json",
-  "狐": "by-name-02.json",
-  "胡": "by-name-02.json",
-  "虎": "by-name-02.json",
-  "花": "by-name-02.json",
-  "华": "by-name-02.json",
-  "画": "by-name-02.json",
-  "坏": "by-name-02.json",
-  "环": "by-name-02.json",
-  "幻": "by-name-02.json",
-  "唤": "by-name-02.json",
-  "荒": "by-name-02.json",
-  "皇": "by-name-02.json",
-  "黄": "by-name-02.json",
-  "煌": "by-name-02.json",
-  "辉": "by-name-02.json",
-  "回": "by-name-02.json",
-  "毁": "by-name-02.json",
-  "惠": "by-name-02.json",
-  "混": "by-name-02.json",
-  "活": "by-name-02.json",
-  "火": "by-name-02.json",
-  "祸": "by-name-02.json",
-  "击": "by-name-03.json",
-  "饥": "by-name-03.json",
-  "机": "by-name-03.json",
-  "激": "by-name-03.json",
-  "羁": "by-name-03.json",
-  "极": "by-name-03.json",
-  "疾": "by-name-03.json",
-  "棘": "by-name-03.json",
-  "極": "by-name-03.json",
-  "记": "by-name-03.json",
-  "加": "by-name-03.json",
-  "嘉": "by-name-03.json",
-  "贾": "by-name-03.json",
-  "假": "by-name-03.json",
-  "尖": "by-name-03.json",
-  "坚": "by-name-03.json",
-  "歼": "by-name-03.json",
-  "拣": "by-name-03.json",
-  "减": "by-name-03.json",
-  "剪": "by-name-03.json",
-  "见": "by-name-03.json",
-  "剑": "by-name-03.json",
-  "将": "by-name-03.json",
-  "交": "by-name-03.json",
-  "娇": "by-name-03.json",
-  "焦": "by-name-03.json",
-  "角": "by-name-03.json",
-  "矫": "by-name-03.json",
-  "叫": "by-name-03.json",
-  "教": "by-name-03.json",
-  "接": "by-name-03.json",
-  "洁": "by-name-03.json",
-  "结": "by-name-03.json",
-  "截": "by-name-03.json",
-  "解": "by-name-03.json",
-  "戒": "by-name-03.json",
-  "金": "by-name-03.json",
-  "尽": "by-name-03.json",
-  "禁": "by-name-03.json",
-  "荆": "by-name-03.json",
-  "惊": "by-name-03.json",
-  "精": "by-name-03.json",
-  "景": "by-name-03.json",
-  "警": "by-name-03.json",
-  "净": "by-name-03.json",
-  "静": "by-name-03.json",
-  "镜": "by-name-03.json",
-  "九": "by-name-03.json",
-  "久": "by-name-03.json",
-  "酒": "by-name-03.json",
-  "救": "by-name-03.json",
-  "橘": "by-name-03.json",
-  "举": "by-name-03.json",
-  "巨": "by-name-03.json",
-  "飓": "by-name-03.json",
-  "聚": "by-name-03.json",
-  "决": "by-name-03.json",
-  "绝": "by-name-03.json",
-  "军": "by-name-03.json",
-  "均": "by-name-03.json",
-  "卡": "by-name-03.json",
-  "开": "by-name-03.json",
-  "凯": "by-name-03.json",
-  "铠": "by-name-03.json",
-  "栞": "by-name-03.json",
-  "可": "by-name-03.json",
-  "克": "by-name-03.json",
-  "客": "by-name-03.json",
-  "空": "by-name-03.json",
-  "库": "by-name-03.json",
-  "狂": "by-name-03.json",
-  "傀": "by-name-03.json",
-  "扩": "by-name-04.json",
-  "拉": "by-name-04.json",
-  "菈": "by-name-04.json",
-  "莱": "by-name-04.json",
-  "兰": "by-name-04.json",
-  "蓝": "by-name-04.json",
-  "浪": "by-name-04.json",
-  "乐": "by-name-04.json",
-  "楽": "by-name-04.json",
-  "勒": "by-name-04.json",
-  "雷": "by-name-04.json",
-  "棱": "by-name-04.json",
-  "冷": "by-name-04.json",
-  "狸": "by-name-04.json",
-  "黎": "by-name-04.json",
-  "里": "by-name-04.json",
-  "理": "by-name-04.json",
-  "力": "by-name-04.json",
-  "利": "by-name-04.json",
-  "莉": "by-name-04.json",
-  "连": "by-name-04.json",
-  "怜": "by-name-04.json",
-  "炼": "by-name-04.json",
-  "恋": "by-name-04.json",
-  "链": "by-name-04.json",
-  "疗": "by-name-04.json",
-  "燎": "by-name-04.json",
-  "列": "by-name-04.json",
-  "烈": "by-name-04.json",
-  "裂": "by-name-04.json",
-  "林": "by-name-04.json",
-  "琳": "by-name-04.json",
-  "凛": "by-name-04.json",
-  "灵": "by-name-04.json",
-  "凌": "by-name-04.json",
-  "铃": "by-name-04.json",
-  "菱": "by-name-04.json",
-  "零": "by-name-04.json",
-  "流": "by-name-04.json",
-  "六": "by-name-04.json",
-  "龙": "by-name-04.json",
-  "竜": "by-name-04.json",
-  "鲁": "by-name-04.json",
-  "路": "by-name-04.json",
-  "鹭": "by-name-04.json",
-  "履": "by-name-04.json",
-  "轮": "by-name-04.json",
-  "罗": "by-name-04.json",
-  "马": "by-name-04.json",
-  "玛": "by-name-04.json",
-  "迈": "by-name-04.json",
-  "满": "by-name-04.json",
-  "曼": "by-name-04.json",
-  "猫": "by-name-04.json",
-  "矛": "by-name-04.json",
-  "没": "by-name-04.json",
-  "梅": "by-name-04.json",
-  "美": "by-name-04.json",
-  "蒙": "by-name-04.json",
-  "猛": "by-name-04.json",
-  "梦": "by-name-04.json",
-  "夢": "by-name-04.json",
-  "迷": "by-name-04.json",
-  "米": "by-name-04.json",
-  "秘": "by-name-04.json",
-  "喵": "by-name-04.json",
-  "妙": "by-name-04.json",
-  "灭": "by-name-05.json",
-  "明": "by-name-05.json",
-  "冥": "by-name-05.json",
-  "瞑": "by-name-05.json",
-  "摩": "by-name-05.json",
-  "魔": "by-name-05.json",
-  "母": "by-name-05.json",
-  "木": "by-name-05.json",
-  "目": "by-name-05.json",
-  "牧": "by-name-05.json",
-  "暮": "by-name-05.json",
-  "那": "by-name-05.json",
-  "娜": "by-name-05.json",
-  "奈": "by-name-05.json",
-  "南": "by-name-05.json",
-  "嫩": "by-name-05.json",
-  "逆": "by-name-05.json",
-  "涅": "by-name-05.json",
-  "啮": "by-name-05.json",
-  "农": "by-name-05.json",
-  "農": "by-name-05.json",
-  "怒": "by-name-05.json",
-  "女": "by-name-05.json",
-  "欧": "by-name-05.json",
-  "帕": "by-name-05.json",
-  "庞": "by-name-05.json",
-  "跑": "by-name-05.json",
-  "泡": "by-name-05.json",
-  "佩": "by-name-05.json",
-  "喷": "by-name-05.json",
-  "琵": "by-name-05.json",
-  "缥": "by-name-05.json",
-  "漂": "by-name-05.json",
-  "平": "by-name-05.json",
-  "破": "by-name-05.json",
-  "七": "by-name-05.json",
-  "栖": "by-name-05.json",
-  "漆": "by-name-05.json",
-  "齐": "by-name-05.json",
-  "奇": "by-name-05.json",
-  "祈": "by-name-05.json",
-  "骑": "by-name-05.json",
-  "企": "by-name-05.json",
-  "気": "by-name-05.json",
-  "器": "by-name-05.json",
-  "千": "by-name-05.json",
-  "前": "by-name-05.json",
-  "潜": "by-name-05.json",
-  "茜": "by-name-05.json",
-  "枪": "by-name-05.json",
-  "强": "by-name-05.json",
-  "俏": "by-name-05.json",
-  "切": "by-name-05.json",
-  "青": "by-name-05.json",
-  "清": "by-name-05.json",
-  "情": "by-name-05.json",
-  "晴": "by-name-05.json",
-  "秋": "by-name-05.json",
-  "区": "by-name-05.json",
-  "驱": "by-name-05.json",
-  "駆": "by-name-05.json",
-  "全": "by-name-05.json",
-  "群": "by-name-05.json",
-  "燃": "by-name-05.json",
-  "热": "by-name-05.json",
-  "熱": "by-name-05.json",
-  "人": "by-name-05.json",
-  "仁": "by-name-05.json",
-  "忍": "by-name-05.json",
-  "任": "by-name-05.json",
-  "日": "by-name-05.json",
-  "荣": "by-name-05.json",
-  "熔": "by-name-05.json",
-  "入": "by-name-05.json",
-  "睿": "by-name-05.json",
-  "撒": "by-name-05.json",
-  "塞": "by-name-05.json",
-  "赛": "by-name-05.json",
-  "骚": "by-name-05.json",
-  "扫": "by-name-05.json",
-  "涩": "by-name-05.json",
-  "森": "by-name-05.json",
-  "杀": "by-name-05.json",
-  "沙": "by-name-06.json",
-  "鲨": "by-name-06.json",
-  "闪": "by-name-06.json",
-  "烧": "by-name-06.json",
-  "蛇": "by-name-06.json",
-  "射": "by-name-06.json",
-  "赦": "by-name-06.json",
-  "身": "by-name-06.json",
-  "深": "by-name-06.json",
-  "神": "by-name-06.json",
-  "生": "by-name-06.json",
-  "圣": "by-name-06.json",
-  "胜": "by-name-06.json",
-  "盛": "by-name-06.json",
-  "尸": "by-name-06.json",
-  "失": "by-name-06.json",
-  "屍": "by-name-06.json",
-  "十": "by-name-06.json",
-  "石": "by-name-06.json",
-  "辻": "by-name-06.json",
-  "时": "by-name-06.json",
-  "始": "by-name-06.json",
-  "世": "by-name-06.json",
-  "式": "by-name-06.json",
-  "势": "by-name-06.json",
-  "试": "by-name-06.json",
-  "弑": "by-name-06.json",
-  "誓": "by-name-06.json",
-  "噬": "by-name-06.json",
-  "收": "by-name-06.json",
-  "受": "by-name-06.json",
-  "兽": "by-name-06.json",
-  "赎": "by-name-06.json",
-  "熟": "by-name-06.json",
-  "术": "by-name-06.json",
-  "束": "by-name-06.json",
-  "树": "by-name-06.json",
-  "帅": "by-name-06.json",
-  "双": "by-name-06.json",
-  "水": "by-name-06.json",
-  "瞬": "by-name-06.json",
-  "说": "by-name-06.json",
-  "斯": "by-name-06.json",
-  "死": "by-name-06.json",
-  "四": "by-name-06.json",
-  "似": "by-name-06.json",
-  "松": "by-name-06.json",
-  "送": "by-name-06.json",
-  "肃": "by-name-06.json",
-  "宿": "by-name-06.json",
-  "酸": "by-name-06.json",
-  "碎": "by-name-06.json",
-  "太": "by-name-06.json",
-  "贪": "by-name-06.json",
-  "糖": "by-name-06.json",
-  "桃": "by-name-06.json",
-  "淘": "by-name-06.json",
-  "忒": "by-name-06.json",
-  "特": "by-name-06.json",
-  "提": "by-name-06.json",
-  "天": "by-name-06.json",
-  "殄": "by-name-06.json",
-  "眺": "by-name-06.json",
-  "跳": "by-name-06.json",
-  "铁": "by-name-06.json",
-  "童": "by-name-06.json",
-  "统": "by-name-06.json",
-  "头": "by-name-06.json",
-  "突": "by-name-06.json",
-  "屠": "by-name-06.json",
-  "歪": "by-name-06.json",
-  "丸": "by-name-06.json",
-  "万": "by-name-06.json",
-  "亡": "by-name-07.json",
-  "王": "by-name-07.json",
-  "往": "by-name-07.json",
-  "忘": "by-name-07.json",
-  "望": "by-name-07.json",
-  "危": "by-name-07.json",
-  "威": "by-name-07.json",
-  "薇": "by-name-07.json",
-  "唯": "by-name-07.json",
-  "维": "by-name-07.json",
-  "未": "by-name-07.json",
-  "温": "by-name-07.json",
-  "乌": "by-name-07.json",
-  "呜": "by-name-07.json",
-  "巫": "by-name-07.json",
-  "嗚": "by-name-07.json",
-  "无": "by-name-07.json",
-  "無": "by-name-07.json",
-  "五": "by-name-07.json",
-  "午": "by-name-07.json",
-  "武": "by-name-07.json",
-  "侮": "by-name-07.json",
-  "舞": "by-name-07.json",
-  "吸": "by-name-07.json",
-  "西": "by-name-07.json",
-  "希": "by-name-07.json",
-  "蜥": "by-name-07.json",
-  "喜": "by-name-07.json",
-  "夏": "by-name-07.json",
-  "仙": "by-name-07.json",
-  "先": "by-name-07.json",
-  "鲜": "by-name-07.json",
-  "线": "by-name-07.json",
-  "献": "by-name-07.json",
-  "相": "by-name-07.json",
-  "香": "by-name-07.json",
-  "向": "by-name-07.json",
-  "骁": "by-name-07.json",
-  "宵": "by-name-07.json",
-  "硝": "by-name-07.json",
-  "小": "by-name-07.json",
-  "咲": "by-name-07.json",
-  "校": "by-name-07.json",
-  "笑": "by-name-07.json",
-  "邪": "by-name-07.json",
-  "心": "by-name-07.json",
-  "新": "by-name-07.json",
-  "信": "by-name-07.json",
-  "星": "by-name-07.json",
-  "形": "by-name-07.json",
-  "醒": "by-name-07.json",
-  "幸": "by-name-07.json",
-  "凶": "by-name-07.json",
-  "雄": "by-name-07.json",
-  "休": "by-name-07.json",
-  "虚": "by-name-07.json",
-  "宣": "by-name-07.json",
-  "旋": "by-name-07.json",
-  "漩": "by-name-07.json",
-  "炫": "by-name-07.json",
-  "绚": "by-name-07.json",
-  "学": "by-name-07.json",
-  "雪": "by-name-07.json",
-  "血": "by-name-07.json",
-  "薰": "by-name-07.json",
-  "寻": "by-name-07.json",
-  "巡": "by-name-07.json",
-  "迅": "by-name-07.json",
-  "亚": "by-name-07.json",
-  "岩": "by-name-07.json",
-  "炎": "by-name-07.json",
-  "盐": "by-name-07.json",
-  "艳": "by-name-07.json",
-  "验": "by-name-07.json",
-  "扬": "by-name-07.json",
-  "洋": "by-name-07.json",
-  "妖": "by-name-07.json",
-  "耶": "by-name-07.json",
-  "也": "by-name-07.json",
-  "野": "by-name-07.json",
-  "业": "by-name-07.json",
-  "叶": "by-name-07.json",
-  "夜": "by-name-07.json",
-  "一": "by-name-07.json",
-  "伊": "by-name-08.json",
-  "医": "by-name-08.json",
-  "依": "by-name-08.json",
-  "遗": "by-name-08.json",
-  "乙": "by-name-08.json",
-  "异": "by-name-08.json",
-  "異": "by-name-08.json",
-  "意": "by-name-08.json",
-  "毅": "by-name-08.json",
-  "翼": "by-name-08.json",
-  "因": "by-name-08.json",
-  "阴": "by-name-08.json",
-  "音": "by-name-08.json",
-  "银": "by-name-08.json",
-  "隐": "by-name-08.json",
-  "英": "by-name-08.json",
-  "樱": "by-name-08.json",
-  "鹰": "by-name-08.json",
-  "迎": "by-name-08.json",
-  "影": "by-name-08.json",
-  "拥": "by-name-08.json",
-  "永": "by-name-08.json",
-  "咏": "by-name-08.json",
-  "勇": "by-name-08.json",
-  "优": "by-name-08.json",
-  "幽": "by-name-08.json",
-  "悠": "by-name-08.json",
-  "優": "by-name-08.json",
-  "游": "by-name-08.json",
-  "友": "by-name-08.json",
-  "幼": "by-name-08.json",
-  "愚": "by-name-08.json",
-  "舆": "by-name-08.json",
-  "与": "by-name-08.json",
-  "宇": "by-name-08.json",
-  "羽": "by-name-08.json",
-  "雨": "by-name-08.json",
-  "驭": "by-name-08.json",
-  "狱": "by-name-08.json",
-  "预": "by-name-08.json",
-  "欲": "by-name-08.json",
-  "御": "by-name-08.json",
-  "元": "by-name-08.json",
-  "原": "by-name-08.json",
-  "圆": "by-name-08.json",
-  "源": "by-name-08.json",
-  "远": "by-name-08.json",
-  "怨": "by-name-08.json",
-  "愿": "by-name-08.json",
-  "约": "by-name-08.json",
-  "月": "by-name-08.json",
-  "跃": "by-name-08.json",
-  "越": "by-name-08.json",
-  "云": "by-name-08.json",
-  "运": "by-name-08.json",
-  "再": "by-name-08.json",
-  "在": "by-name-08.json",
-  "凿": "by-name-08.json",
-  "早": "by-name-08.json",
-  "造": "by-name-08.json",
-  "噪": "by-name-08.json",
-  "憎": "by-name-08.json",
-  "炸": "by-name-08.json",
-  "斩": "by-name-08.json",
-  "崭": "by-name-08.json",
-  "战": "by-name-08.json",
-  "帐": "by-name-08.json",
-  "招": "by-name-08.json",
-  "召": "by-name-08.json",
-  "照": "by-name-08.json",
-  "折": "by-name-08.json",
-  "侦": "by-name-08.json",
-  "珍": "by-name-08.json",
-  "真": "by-name-08.json",
-  "震": "by-name-08.json",
-  "正": "by-name-08.json",
-  "织": "by-name-08.json",
-  "至": "by-name-08.json",
-  "炙": "by-name-08.json",
-  "智": "by-name-08.json",
-  "中": "by-name-08.json",
-  "忠": "by-name-08.json",
-  "终": "by-name-08.json",
-  "重": "by-name-08.json",
-  "咒": "by-name-08.json",
-  "朱": "by-name-09.json",
-  "珠": "by-name-09.json",
-  "诸": "by-name-09.json",
-  "蛛": "by-name-09.json",
-  "逐": "by-name-09.json",
-  "壮": "by-name-09.json",
-  "追": "by-name-09.json",
-  "椎": "by-name-09.json",
-  "坠": "by-name-09.json",
-  "灼": "by-name-09.json",
-  "卓": "by-name-09.json",
-  "紫": "by-name-09.json",
-  "自": "by-name-09.json",
-  "宗": "by-name-09.json",
-  "奏": "by-name-09.json",
-  "诅": "by-name-09.json",
-  "尊": "by-name-09.json",
-  "左": "by-name-09.json",
-  "佐": "by-name-09.json",
-  "作": "by-name-09.json",
-  "座": "by-name-09.json",
-  "做": "by-name-09.json",
-  "B": "by-name-09.json",
-  "C": "by-name-09.json",
-  "E": "by-name-09.json",
-  "F": "by-name-09.json",
-  "L": "by-name-09.json",
-  "M": "by-name-09.json",
-  "N": "by-name-09.json",
-  "T": "by-name-09.json",
-  "Y": "by-name-09.json",
-  "ア": "by-name-09.json",
-  "イ": "by-name-09.json",
-  "エ": "by-name-09.json",
-  "カ": "by-name-09.json",
-  "グ": "by-name-09.json",
-  "ス": "by-name-09.json",
-  "ソ": "by-name-09.json",
-  "タ": "by-name-09.json",
-  "ド": "by-name-09.json",
-  "バ": "by-name-09.json",
-  "マ": "by-name-09.json",
-  "め": "by-name-09.json",
-  "メ": "by-name-09.json",
-  "ル": "by-name-09.json",
-  "レ": "by-name-09.json"
- }
+ ]
 }
