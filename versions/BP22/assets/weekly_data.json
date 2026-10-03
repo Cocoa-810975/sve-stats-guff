@@ -122,10 +122,10 @@
         "image": "../../assets/cards/BP07-SL13.jpg"
       },
       {
-        "name": "赛马娘｜法术马",
+        "name": "赛马娘｜loop马",
         "value": 5,
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-003.jpg"
       },
       {
         "name": "巫师｜学院法",
@@ -248,6 +248,12 @@
         "image": "../../assets/cards/BP11-069.jpg"
       },
       {
+        "name": "赛马娘｜法术马",
+        "value": 1,
+        "link": "decktypes/decktype-1ef829252684.html",
+        "image": "../../assets/cards/CP01-057.jpg"
+      },
+      {
         "name": "主教｜护符教",
         "value": 1,
         "link": "decktypes/decktype-79c6992b28db.html",
@@ -258,12 +264,6 @@
         "value": 1,
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-001.jpg"
-      },
-      {
-        "name": "赛马娘｜大哥马",
-        "value": 1,
-        "link": "decktypes/decktype-a168893e77d8.html",
-        "image": "../../assets/cards/ECP01-028.jpg"
       },
       {
         "name": "赛马娘｜萝卜马",
@@ -351,11 +351,11 @@
       },
       {
         "class": "赛马娘",
-        "category": "法术马",
+        "category": "loop马",
         "count": 5,
         "best": "1/7",
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-003.jpg"
       },
       {
         "class": "巫师",
@@ -507,10 +507,10 @@
         "image": "../../assets/cards/BP07-SL13.jpg"
       },
       {
-        "name": "赛马娘｜法术马",
+        "name": "赛马娘｜loop马",
         "value": 5,
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-003.jpg"
       },
       {
         "name": "巫师｜学院法",
@@ -633,6 +633,12 @@
         "image": "../../assets/cards/BP11-069.jpg"
       },
       {
+        "name": "赛马娘｜法术马",
+        "value": 1,
+        "link": "decktypes/decktype-1ef829252684.html",
+        "image": "../../assets/cards/CP01-057.jpg"
+      },
+      {
         "name": "主教｜护符教",
         "value": 1,
         "link": "decktypes/decktype-79c6992b28db.html",
@@ -643,12 +649,6 @@
         "value": 1,
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-001.jpg"
-      },
-      {
-        "name": "赛马娘｜大哥马",
-        "value": 1,
-        "link": "decktypes/decktype-a168893e77d8.html",
-        "image": "../../assets/cards/ECP01-028.jpg"
       },
       {
         "name": "赛马娘｜萝卜马",
@@ -736,11 +736,11 @@
       },
       {
         "class": "赛马娘",
-        "category": "法术马",
+        "category": "loop马",
         "count": 5,
         "best": "1/7",
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-003.jpg"
       },
       {
         "class": "巫师",
