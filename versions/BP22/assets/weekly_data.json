@@ -164,16 +164,16 @@
         "image": "../../assets/cards/CP04-062.jpg"
       },
       {
+        "name": "梦魇｜哥布林梦",
+        "value": 3,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/BP22-081.jpg"
+      },
+      {
         "name": "皇家护卫｜天使皇",
         "value": 2,
         "link": "decktypes/decktype-2b0efb008539.html",
         "image": "../../assets/cards/PR-233.jpg"
-      },
-      {
-        "name": "梦魇｜スマートゴブリン型",
-        "value": 2,
-        "link": "decktypes/decktype-8a4d936263f5.html",
-        "image": "../../assets/cards/BP22-SL26.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -240,12 +240,6 @@
         "value": 1,
         "link": "decktypes/decktype-07544eb64d36.html",
         "image": "../../assets/cards/CP01-068.jpg"
-      },
-      {
-        "name": "梦魇｜控梦",
-        "value": 1,
-        "link": "decktypes/decktype-2e7701fa0587.html",
-        "image": "../../assets/cards/BP11-069.jpg"
       },
       {
         "name": "赛马娘｜法术马",
@@ -549,16 +543,16 @@
         "image": "../../assets/cards/CP04-062.jpg"
       },
       {
+        "name": "梦魇｜哥布林梦",
+        "value": 3,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/BP22-081.jpg"
+      },
+      {
         "name": "皇家护卫｜天使皇",
         "value": 2,
         "link": "decktypes/decktype-2b0efb008539.html",
         "image": "../../assets/cards/PR-233.jpg"
-      },
-      {
-        "name": "梦魇｜スマートゴブリン型",
-        "value": 2,
-        "link": "decktypes/decktype-8a4d936263f5.html",
-        "image": "../../assets/cards/BP22-SL26.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -625,12 +619,6 @@
         "value": 1,
         "link": "decktypes/decktype-07544eb64d36.html",
         "image": "../../assets/cards/CP01-068.jpg"
-      },
-      {
-        "name": "梦魇｜控梦",
-        "value": 1,
-        "link": "decktypes/decktype-2e7701fa0587.html",
-        "image": "../../assets/cards/BP11-069.jpg"
       },
       {
         "name": "赛马娘｜法术马",
