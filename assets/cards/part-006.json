@@ -2,11 +2,41 @@
  "_comment": "卡牌分片，按卡号排序",
  "part": "part-006.json",
  "range": [
-  "BP06-P22",
-  "BP07-076"
+  "BP06-P18",
+  "BP07-074"
  ],
  "count": 80,
  "cards": {
+  "BP06-P18": {
+   "name_jp": "氷上の竜戦士",
+   "name_cn": "履冰龙战士",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "ドラゴニュート・竜族",
+   "rare": "SR_P",
+   "craft": "Dragon",
+   "desc_cn": "这张卡可以无视【守护】能力进行攻击。",
+   "desc_jp": "これは【守護】を無視して攻撃できる。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-P18"
+  },
+  "BP06-P21": {
+   "name_jp": "酒呑童子",
+   "name_cn": "酒吞童子",
+   "cost": 3,
+   "attack": 1,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "妖怪",
+   "rare": "GR_P",
+   "craft": "Nightmare",
+   "desc_cn": "《进化》《消费1》：使这张卡进化。\n【必杀】\n《入场曲》将墓场中的2张妖怪类型·卡片消失：使这张卡进化。",
+   "desc_jp": "進化コスト1：これは進化する。\n【必殺】\nファンファーレ墓場の妖怪・カード2枚を消滅：これは進化する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-P21"
+  },
   "BP06-P22": {
    "name_jp": "酒呑童子",
    "name_cn": "酒吞童子",
@@ -1176,36 +1206,6 @@
    "desc_jp": "【進化時】相手の場のフォロワー1体を選ぶ。それに2ダメージ。【ネクロチャージ_10】代わりに4ダメージ。",
    "matched_by": "card_no",
    "api_card_no": "BP07-074"
-  },
-  "BP07-075": {
-   "name_jp": "ファースト・ワン",
-   "name_cn": "原初之一",
-   "cost": 1,
-   "attack": -1,
-   "life": -1,
-   "card_type": "Spell",
-   "type": "機械・魔界",
-   "rare": "GR",
-   "craft": "Nightmare",
-   "desc_cn": " 从下述之中抉择1项。\n【1】选择自己的墓场中的1张机械类型·从者卡。将其加入手牌。\n【2】选择自己的墓场中的1张『绯红抗战者·莫诺』卡。将其召唤到场上。 ",
-   "desc_jp": "下記から1つチョイスする。【1】自分の墓場の機械・フォロワー1枚を選ぶ。それを手札に加える。【2】自分の墓場の『真紅の抗戦者・モノ』1枚を選ぶ。それを場に出す。",
-   "matched_by": "card_no",
-   "api_card_no": "BP07-075"
-  },
-  "BP07-076": {
-   "name_jp": "禁絶の腕・ニコラ",
-   "name_cn": "禁断之腕·尼古拉",
-   "cost": 3,
-   "attack": 3,
-   "life": 3,
-   "card_type": "Follower",
-   "type": "機械・死者",
-   "rare": "SR",
-   "craft": "Nightmare",
-   "desc_cn": " 《进化》《消费1》：使这张卡进化。\n《入场曲》将自己的牌堆顶2张卡置于墓场。 ",
-   "desc_jp": "進化コスト1：これは進化する。\nファンファーレ自分のデッキの上2枚を墓場に置く。",
-   "matched_by": "card_no",
-   "api_card_no": "BP07-076"
   }
  }
 }

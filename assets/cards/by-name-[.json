@@ -1,7 +1,7 @@
 {
  "_comment": "按卡名索引分片：首字符「[」",
  "firstChar": "[",
- "count": 130,
+ "count": 132,
  "nameRange": [
   "[爱情礼物]佐久间麻由",
   "[Youthful Romance]小日向美穗"
@@ -872,6 +872,15 @@
    "随从"
   ],
   [
+   "BP22-SL32",
+   "[Escorte étoile]天狼星象征",
+   "〔Escorte étoile〕シリウスシンボリ",
+   2,
+   2,
+   2,
+   "随从"
+  ],
+  [
    "ECP01-013",
    "[Escorte étoile]天狼星象征",
    "〔Escorte étoile〕シリウスシンボリ",
@@ -882,6 +891,15 @@
   ],
   [
    "ECP01-SL08",
+   "[Escorte étoile]天狼星象征",
+   "〔Escorte étoile〕シリウスシンボリ",
+   2,
+   2,
+   2,
+   "随从"
+  ],
+  [
+   "ECP01-SP08",
    "[Escorte étoile]天狼星象征",
    "〔Escorte étoile〕シリウスシンボリ",
    2,

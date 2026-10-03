@@ -2,11 +2,41 @@
  "_comment": "卡牌分片，按卡号排序",
  "part": "part-008.json",
  "range": [
-  "BP08-028",
-  "BP08-SL20"
+  "BP08-025",
+  "BP08-SL18"
  ],
  "count": 80,
  "cards": {
+  "BP08-025": {
+   "name_jp": "ミストデューク・アゾード",
+   "name_cn": "魔雾公爵·亚卓德",
+   "cost": 4,
+   "attack": 3,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "指揮官・貴族",
+   "rare": "SR",
+   "craft": "Sword",
+   "desc_cn": "《进化》《消费3》：使这张卡进化。\n【守护】",
+   "desc_jp": "進化コスト3：これは進化する。\n【守護】",
+   "matched_by": "card_no",
+   "api_card_no": "BP08-025"
+  },
+  "BP08-026": {
+   "name_jp": "ミストデューク・アゾード",
+   "name_cn": "魔雾公爵·亚卓德",
+   "cost": -1,
+   "attack": 4,
+   "life": 5,
+   "card_type": "FollowerEvo",
+   "type": "指揮官・貴族",
+   "rare": "SR",
+   "craft": "Sword",
+   "desc_cn": "【守护】\n【进化时】选择自己的墓场中的原始消费为2及以下的《皇家护卫职业》从者卡最多2张。将其召唤到场上。",
+   "desc_jp": "【守護】\n【進化時】自分の墓場の元のコスト2以下のロイヤルフォロワー2枚まで選ぶ。それを場に出す。",
+   "matched_by": "card_no",
+   "api_card_no": "BP08-026"
+  },
   "BP08-028": {
    "name_jp": "簒奪の舞",
    "name_cn": "篡夺之舞",
@@ -1176,36 +1206,6 @@
    "desc_jp": "【守護】\n【進化時】相手の場のフォロワー1体を選ぶ。それとそれのリーダーに「自分の場のアミュレットの数」の2倍のダメージ。",
    "matched_by": "card_no",
    "api_card_no": "BP08-SL18"
-  },
-  "BP08-SL19": {
-   "name_jp": "異界を統べる者",
-   "name_cn": "异界统领者",
-   "cost": 5,
-   "attack": 5,
-   "life": 5,
-   "card_type": "Follower",
-   "type": "大神",
-   "rare": "SL",
-   "craft": "Neutral",
-   "desc_cn": "《进化》《消费2》：使这张卡进化。\n《入场曲》指定任意1个数字。将自己的牌堆顶5张卡置于墓场。给予敌方场上的全体从者各X点伤害。X为「以这个能力置于墓场的、原始消费与指定数字相同的卡片的张数」。",
-   "desc_jp": "進化コスト2：これは進化する。\nファンファーレ好きな数1つを指定する。自分のデッキの上5枚を墓場に置く。相手の場のフォロワーすべてにXダメージ。Xは「これによって墓場に置いた元のコストが指定した数と同じカードの枚数」である。",
-   "matched_by": "card_no",
-   "api_card_no": "BP08-SL19"
-  },
-  "BP08-SL20": {
-   "name_jp": "異界を統べる者",
-   "name_cn": "异界统领者",
-   "cost": -1,
-   "attack": 6,
-   "life": 6,
-   "card_type": "FollowerEvo",
-   "type": "大神",
-   "rare": "SL",
-   "craft": "Neutral",
-   "desc_cn": "【进化时】选择自己的墓场中的卡名各不相同的3张卡片。如果其原始消费全部相同的话，将其加入手牌。",
-   "desc_jp": "【進化時】自分の墓場のカードをカード名が異なるように3枚選ぶ。それの元のコストがすべて同じなら、それを手札に加える。",
-   "matched_by": "card_no",
-   "api_card_no": "BP08-SL20"
   }
  }
 }

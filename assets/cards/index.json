@@ -1,6 +1,6 @@
 {
  "_comment": "卡牌精简索引（无效果文本），用于快速查找卡号；效果文本见 all_cards.json 或 chunk-*.json",
- "count": 4012,
+ "count": 4145,
  "cards": {
   "BP01-002": {
    "name_cn": "远古精灵",
@@ -554,6 +554,14 @@
    "card_type": "Spell",
    "type": "光輝"
   },
+  "BP01-171": {
+   "name_cn": "哥布林",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
   "BP01-172": {
    "name_cn": "哥布林",
    "cost": -1,
@@ -1025,6 +1033,14 @@
    "life": -1,
    "card_type": "Amulet",
    "type": "竜使い"
+  },
+  "BP02-064": {
+   "name_cn": "赤怒蛇",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "竜族"
   },
   "BP02-068": {
    "name_cn": "龙之武装",
@@ -8122,6 +8138,14 @@
    "card_type": "FollowerEvo",
    "type": "荒野・傭兵"
   },
+  "BP11-107": {
+   "name_cn": "哥布林女王",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
   "BP11-108": {
    "name_cn": "冰狱的显现",
    "cost": 2,
@@ -9041,6 +9065,14 @@
    "life": 4,
    "card_type": "Follower",
    "type": "コック"
+  },
+  "BP12-111": {
+   "name_cn": "哥布林列阵",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "ゴブリン"
   },
   "BP12-112": {
    "name_cn": "浪漫寻宝家",
@@ -11074,6 +11106,14 @@
    "card_type": "Follower",
    "type": "宴楽・機械・超克・マグナ"
   },
+  "BP14-106": {
+   "name_cn": "神伟的剑士",
+   "cost": -1,
+   "attack": 5,
+   "life": 5,
+   "card_type": "FollowerEvo",
+   "type": "宴楽・機械・超克・マグナ"
+  },
   "BP14-107": {
    "name_cn": "双极的生命之烈焰·琉璃",
    "cost": 6,
@@ -11121,6 +11161,22 @@
    "life": -1,
    "card_type": "Spell",
    "type": "宴楽"
+  },
+  "BP14-116": {
+   "name_cn": "哥布林勇者",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
+  "BP14-117": {
+   "name_cn": "哥布林勇者",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "ゴブリン"
   },
   "BP14-118": {
    "name_cn": "照明的引路人",
@@ -11281,6 +11337,22 @@
    "life": 3,
    "card_type": "Follower",
    "type": "宴楽・狂信・獣"
+  },
+  "BP14-P26": {
+   "name_cn": "哥布林勇者",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
+  "BP14-P27": {
+   "name_cn": "哥布林勇者",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "ゴブリン"
   },
   "BP14-P28": {
    "name_cn": "照明的引路人",
@@ -20082,6 +20154,14 @@
    "card_type": "Follower",
    "type": "魔界・学院"
   },
+  "BP21-088": {
+   "name_cn": "恶意的剑士",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "キラー"
+  },
   "BP21-091": {
    "name_cn": "异端的指导者·贝尔迪俪亚",
    "cost": 1,
@@ -20506,6 +20586,14 @@
    "card_type": "Follower",
    "type": "魔界・学院"
   },
+  "BP21-P45": {
+   "name_cn": "悪魔の令嬢",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "魔界"
+  },
   "BP21-P48": {
    "name_cn": "極徒会表番・デナン",
    "cost": 2,
@@ -20513,6 +20601,14 @@
    "life": 3,
    "card_type": "Follower",
    "type": "魔界・学院"
+  },
+  "BP21-P49": {
+   "name_cn": "マリシャスブレイダー",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "キラー"
   },
   "BP21-P51": {
    "name_cn": "不退転の乙女・キーラ",
@@ -20553,6 +20649,14 @@
    "life": -1,
    "card_type": "Spell",
    "type": "学院・ゴブリン"
+  },
+  "BP21-PR01": {
+   "name_cn": "真紅の抗戦者・モノ",
+   "cost": -1,
+   "attack": 5,
+   "life": 4,
+   "card_type": "FollowerEvo",
+   "type": "機械・魔界"
   },
   "BP21-PR03": {
    "name_cn": "アネモネタイガー",
@@ -20882,6 +20986,774 @@
    "card_type": "Follower",
    "type": "機械・学院・超克"
   },
+  "BP22-001": {
+   "name_cn": "ブリリアントフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-003": {
+   "name_cn": "永久なる輝き・エリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-004": {
+   "name_cn": "永久なる輝き・エリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-005": {
+   "name_cn": "フラワーフォックス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-006": {
+   "name_cn": "フラワーフォックス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-007": {
+   "name_cn": "アイヴィーキング",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-008": {
+   "name_cn": "ブラストフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-009": {
+   "name_cn": "清き泉のエルフプリンセスメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-010": {
+   "name_cn": "清き泉のエルフプリンセスメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-011": {
+   "name_cn": "アクアフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-012": {
+   "name_cn": "水晶の指揮者・リリィ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-019": {
+   "name_cn": "ビクトリーブレイダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-020": {
+   "name_cn": "ゴールデンウォーリアー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-021": {
+   "name_cn": "千金武装の大参謀・アルメリゼ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-022": {
+   "name_cn": "千金武装の大参謀・アルメリゼ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-033": {
+   "name_cn": "エレガントバンデッド",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-034": {
+   "name_cn": "ブレードバンデッド",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-037": {
+   "name_cn": "クロノウィッチ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-038": {
+   "name_cn": "クロノウィッチ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-042": {
+   "name_cn": "マジカルキャット",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-043": {
+   "name_cn": "マジカルキャット",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-045": {
+   "name_cn": "界門のホムンクルス・ラズリ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-046": {
+   "name_cn": "フェイクウィング・エリーナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-047": {
+   "name_cn": "フェイクウィング・エリーナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-048": {
+   "name_cn": "アンブレラウィッチ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-050": {
+   "name_cn": "刃の魔術師",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-051": {
+   "name_cn": "刃の魔術師",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-056": {
+   "name_cn": "イグニスドラゴン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-057": {
+   "name_cn": "イグニスドラゴン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-059": {
+   "name_cn": "オーシャンスター・ジゼル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-060": {
+   "name_cn": "黒白の乱舞・ノール＆ブラン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-061": {
+   "name_cn": "黒白の乱舞・ノール＆ブラン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-062": {
+   "name_cn": "ジュエルドラゴン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-063": {
+   "name_cn": "紅炎の竜爪・エチカ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-064": {
+   "name_cn": "珊瑚礁の精霊",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-065": {
+   "name_cn": "珊瑚礁の精霊",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-066": {
+   "name_cn": "シールドドラゴン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-067": {
+   "name_cn": "貫く咆哮",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-074": {
+   "name_cn": "スケルトンレイダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-077": {
+   "name_cn": "ケルヌンノス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-078": {
+   "name_cn": "カースメーカー・スージー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-079": {
+   "name_cn": "カースメーカー・スージー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-081": {
+   "name_cn": "デスサイズゴブリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-084": {
+   "name_cn": "デスキャットリーパー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-088": {
+   "name_cn": "よろめく不死者",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-089": {
+   "name_cn": "ゴブリンゾンビ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-093": {
+   "name_cn": "ホーリーセイバー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-094": {
+   "name_cn": "ホーリーセイバー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-095": {
+   "name_cn": "白翼の慈愛・アイテール",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-103": {
+   "name_cn": "希望の守護者・ソニア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-110": {
+   "name_cn": "ゴブリンエンペラー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-112": {
+   "name_cn": "メチャカワ傭兵・フィーナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-113": {
+   "name_cn": "ゴブリンリーダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-114": {
+   "name_cn": "ゴブリンリーダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-115": {
+   "name_cn": "ミニゴブリンメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-116": {
+   "name_cn": "〔勝利目指して〕ハルウララ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-117": {
+   "name_cn": "〔全力疾走〕オグリキャップ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-118": {
+   "name_cn": "〔全力疾走〕オグリキャップ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P01": {
+   "name_cn": "清き泉のエルフプリンセスメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P02": {
+   "name_cn": "清き泉のエルフプリンセスメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P11": {
+   "name_cn": "クレイモアマスター",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P25": {
+   "name_cn": "アンブレラウィッチ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P43": {
+   "name_cn": "デスサイズゴブリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P46": {
+   "name_cn": "デスキャットリーパー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P50": {
+   "name_cn": "ゴブリンゾンビ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P64": {
+   "name_cn": "メチャカワ傭兵・フィーナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P65": {
+   "name_cn": "ゴブリンリーダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P66": {
+   "name_cn": "ゴブリンリーダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-P67": {
+   "name_cn": "ミニゴブリンメイジ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-R07": {
+   "name_cn": "天威的龙巫女",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "竜使い"
+  },
+  "BP22-R12": {
+   "name_cn": "血艳领主·夕月",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "魔界"
+  },
+  "BP22-R16": {
+   "name_cn": "涸绝饥饿·吉鲁涅莉婕",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "絶傑"
+  },
+  "BP22-SL05": {
+   "name_cn": "ビクトリーブレイダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL07": {
+   "name_cn": "千金武装の大参謀・アルメリゼ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL08": {
+   "name_cn": "千金武装の大参謀・アルメリゼ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL18": {
+   "name_cn": "スケルトンレイダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL21": {
+   "name_cn": "ケルヌンノス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL23": {
+   "name_cn": "ホーリーセイバー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL24": {
+   "name_cn": "ホーリーセイバー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL25": {
+   "name_cn": "白翼の慈愛・アイテール",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL26": {
+   "name_cn": "ゴブリンエンペラー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL28": {
+   "name_cn": "〔全力疾走〕オグリキャップ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL29": {
+   "name_cn": "〔全力疾走〕オグリキャップ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SL32": {
+   "name_cn": "[Escorte étoile]天狼星象征",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "BP22-SL33": {
+   "name_cn": "高尚骏逸",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "BP22-SL34": {
+   "name_cn": "高尚骏逸",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "BP22-SL35": {
+   "name_cn": "葛城王牌",
+   "cost": 7,
+   "attack": 5,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "BP22-SL36": {
+   "name_cn": "森林宝穴",
+   "cost": 2,
+   "attack": 3,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "BP22-SP01": {
+   "name_cn": "ケルヌンノス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SSP01": {
+   "name_cn": "〔勝利目指して〕ハルウララ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-SSP02": {
+   "name_cn": "〔全力疾走〕オグリキャップ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-U01": {
+   "name_cn": "ブリリアントフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-U02": {
+   "name_cn": "ビクトリーブレイダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-U05": {
+   "name_cn": "ケルヌンノス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-U06": {
+   "name_cn": "ホーリーセイバー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "BP22-U07": {
+   "name_cn": "ゴブリンエンペラー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
   "CP01-001": {
    "name_cn": "无声铃鹿",
    "cost": 4,
@@ -20978,6 +21850,14 @@
    "card_type": "FollowerEvo",
    "type": "ウマ娘"
   },
+  "CP01-030": {
+   "name_cn": "伏特加",
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
   "CP01-031": {
    "name_cn": "跳起来・燥起来・FES起来！",
    "cost": 2,
@@ -21024,6 +21904,14 @@
    "attack": -1,
    "life": -1,
    "card_type": "Amulet",
+   "type": "ウマ娘"
+  },
+  "CP01-047": {
+   "name_cn": "为你献上",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
    "type": "ウマ娘"
   },
   "CP01-052": {
@@ -21344,6 +22232,22 @@
    "attack": 6,
    "life": 8,
    "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "CP01-SL07": {
+   "name_cn": "爱丽速子",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "CP01-SL08": {
+   "name_cn": "爱丽速子",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
    "type": "ウマ娘"
   },
   "CP01-SL16": {
@@ -22359,6 +23263,14 @@
    "cost": 2,
    "attack": 2,
    "life": 2,
+   "card_type": "Follower",
+   "type": "ヴァンガード・かげろう"
+  },
+  "CP03-074": {
+   "name_cn": "魔龙战鬼 夜叉",
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
    "card_type": "Follower",
    "type": "ヴァンガード・かげろう"
   },
@@ -25242,6 +26154,14 @@
    "card_type": "Follower",
    "type": "魔法使い"
   },
+  "EBD02-007": {
+   "name_cn": "次元超越",
+   "cost": 12,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔法使い"
+  },
   "EBD02-014": {
    "name_cn": "精神统一",
    "cost": 3,
@@ -26370,12 +27290,28 @@
    "card_type": "SpellEvo",
    "type": "-"
   },
+  "ECP01-SP01": {
+   "name_cn": "北港火山",
+   "cost": 4,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
   "ECP01-SP02": {
    "name_cn": "北港火山",
    "cost": -1,
    "attack": 3,
    "life": 3,
    "card_type": "FollowerEvo",
+   "type": "ウマ娘"
+  },
+  "ECP01-SP04": {
+   "name_cn": "万籁争鸣",
+   "cost": 9,
+   "attack": 3,
+   "life": 2,
+   "card_type": "Follower",
    "type": "ウマ娘"
   },
   "ECP01-SP05": {
@@ -26391,6 +27327,30 @@
    "cost": -1,
    "attack": 7,
    "life": 7,
+   "card_type": "FollowerEvo",
+   "type": "ウマ娘"
+  },
+  "ECP01-SP08": {
+   "name_cn": "[Escorte étoile]天狼星象征",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "ECP01-SP09": {
+   "name_cn": "高尚骏逸",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "ECP01-SP10": {
+   "name_cn": "高尚骏逸",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
    "card_type": "FollowerEvo",
    "type": "ウマ娘"
   },
@@ -26414,6 +27374,14 @@
    "name_cn": "千明代表",
    "cost": 4,
    "attack": 4,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "ウマ娘"
+  },
+  "ECP01-SP16": {
+   "name_cn": "葛城王牌",
+   "cost": 7,
+   "attack": 5,
    "life": 4,
    "card_type": "Follower",
    "type": "ウマ娘"
@@ -26449,6 +27417,14 @@
    "life": 5,
    "card_type": "Follower",
    "type": "ウマ娘・メジロ家"
+  },
+  "ECP01-SP24": {
+   "name_cn": "森林宝穴",
+   "cost": 2,
+   "attack": 3,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ウマ娘"
   },
   "ECP01-SSP01": {
    "name_cn": "北港火山",
@@ -28986,6 +29962,14 @@
    "card_type": "Follower",
    "type": "荒野・信仰・鳥族"
   },
+  "PR-310": {
+   "name_cn": "哥布林女王",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
   "PR-311": {
    "name_cn": "自由的冒险者",
    "cost": 1,
@@ -30778,6 +31762,14 @@
    "card_type": "Spell",
    "type": "指揮官"
   },
+  "PR-586": {
+   "name_cn": "肃清之器·梅希亚",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "超克"
+  },
   "PR-589": {
    "name_cn": "碎石龙",
    "cost": 9,
@@ -30785,6 +31777,62 @@
    "life": 5,
    "card_type": "Follower",
    "type": "竜族"
+  },
+  "PR-592": {
+   "name_cn": "ブラストフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-601": {
+   "name_cn": "アイヴィーキング",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-606": {
+   "name_cn": "〔勝利目指して〕ハルウララ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-609": {
+   "name_cn": "アクアフェアリー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-611": {
+   "name_cn": "フラワーフォックス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-612": {
+   "name_cn": "フラワーフォックス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-618": {
+   "name_cn": "熟练的翼战士",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "信仰・鳥族"
   },
   "SCS01-001": {
    "name_cn": "自然妖精公主·阿丽雅",
@@ -30889,6 +31937,22 @@
    "life": -1,
    "card_type": "Spell",
    "type": "兵士"
+  },
+  "SD02-017": {
+   "name_cn": "哥布林",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ゴブリン"
+  },
+  "SD02-018": {
+   "name_cn": "哥布林",
+   "cost": -1,
+   "attack": 4,
+   "life": 4,
+   "card_type": "FollowerEvo",
+   "type": "ゴブリン"
   },
   "SD03-005": {
    "name_cn": "智慧之光",

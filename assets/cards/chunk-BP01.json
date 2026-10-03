@@ -1,6 +1,6 @@
 {
  "prefix": "BP01",
- "count": 99,
+ "count": 100,
  "cards": {
   "BP01-002": {
    "name_jp": "エンシェントエルフ",
@@ -1036,6 +1036,21 @@
    "desc_jp": "これを自分の手札から捨てたとき、1枚引く。\n----------\n1枚引く。",
    "matched_by": "card_no",
    "api_card_no": "BP01-170"
+  },
+  "BP01-171": {
+   "name_jp": "ゴブリン",
+   "name_cn": "哥布林",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ゴブリン",
+   "rare": "BR",
+   "craft": "Neutral",
+   "desc_cn": "《进化》《消费4》：使这张卡进化。",
+   "desc_jp": "《進化》《コスト4》：これは進化する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-171"
   },
   "BP01-172": {
    "name_jp": "ゴブリン",

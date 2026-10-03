@@ -2,11 +2,41 @@
  "_comment": "卡牌分片，按卡号排序",
  "part": "part-005.json",
  "range": [
-  "BP05-SL05",
-  "BP06-P21"
+  "BP05-SL02",
+  "BP06-P17"
  ],
  "count": 80,
  "cards": {
+  "BP05-SL02": {
+   "name_jp": "不殺の絶傑・エズディア",
+   "name_cn": "不弑绝杰·艾兹迪亚",
+   "cost": -1,
+   "attack": 5,
+   "life": 5,
+   "card_type": "FollowerEvo",
+   "type": "絶傑・狩人",
+   "rare": "SL",
+   "craft": "Forest",
+   "desc_cn": "《起动》将这张卡《横置》：给予生命值为10点及以上的敌方的全体主战者各6点伤害。",
+   "desc_jp": "起動これをアクト：体力10以上の相手のリーダーすべてに6ダメージ。",
+   "matched_by": "card_no",
+   "api_card_no": "BP05-SL02"
+  },
+  "BP05-SL04": {
+   "name_jp": "簒奪の絶傑・オクトリス",
+   "name_cn": "篡夺绝杰·欧克托莉斯",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "絶傑・盗賊",
+   "rare": "SL",
+   "craft": "Sword",
+   "desc_cn": "《进化》《消费2》：使这张卡进化。\n《进化》《消费0》：使这张卡进化。这个能力在「如果敌方的墓场为10张及以上的话」才可使用。\n《入场曲》将敌方的牌堆顶2张卡置于墓场。\n《起动》《消费8》：选择敌方的墓场中的1张卡片。将其以「消费变为0」使用。 ",
+   "desc_jp": "進化コスト2：これは進化する。\n進化コスト0：これは進化する。この能力は相手の墓場が10枚以上なら使える。\nファンファーレ相手のデッキの上2枚を墓場に置く。\n起動コスト8：相手の墓場のカード1枚を選ぶ。それのコストを0にしてプレイする。",
+   "matched_by": "card_no",
+   "api_card_no": "BP05-SL04"
+  },
   "BP05-SL05": {
    "name_jp": "簒奪の絶傑・オクトリス",
    "name_cn": "篡夺绝杰·欧克托莉斯",
@@ -1176,36 +1206,6 @@
    "desc_jp": "進化コスト1：これは進化する。\nファンファーレ【覚醒】状態なら、これは攻撃力+1して、【疾走】を持つ。",
    "matched_by": "card_no",
    "api_card_no": "BP06-P17"
-  },
-  "BP06-P18": {
-   "name_jp": "氷上の竜戦士",
-   "name_cn": "履冰龙战士",
-   "cost": -1,
-   "attack": 3,
-   "life": 3,
-   "card_type": "FollowerEvo",
-   "type": "ドラゴニュート・竜族",
-   "rare": "SR_P",
-   "craft": "Dragon",
-   "desc_cn": "这张卡可以无视【守护】能力进行攻击。",
-   "desc_jp": "これは【守護】を無視して攻撃できる。",
-   "matched_by": "card_no",
-   "api_card_no": "BP06-P18"
-  },
-  "BP06-P21": {
-   "name_jp": "酒呑童子",
-   "name_cn": "酒吞童子",
-   "cost": 3,
-   "attack": 1,
-   "life": 4,
-   "card_type": "Follower",
-   "type": "妖怪",
-   "rare": "GR_P",
-   "craft": "Nightmare",
-   "desc_cn": "《进化》《消费1》：使这张卡进化。\n【必杀】\n《入场曲》将墓场中的2张妖怪类型·卡片消失：使这张卡进化。",
-   "desc_jp": "進化コスト1：これは進化する。\n【必殺】\nファンファーレ墓場の妖怪・カード2枚を消滅：これは進化する。",
-   "matched_by": "card_no",
-   "api_card_no": "BP06-P21"
   }
  }
 }

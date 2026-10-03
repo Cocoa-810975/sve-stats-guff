@@ -1,6 +1,6 @@
 {
  "prefix": "BP21",
- "count": 177,
+ "count": 181,
  "cards": {
   "BP21-001": {
    "name_jp": "新緑の新入生・カステル",
@@ -1157,6 +1157,21 @@
    "matched_by": "card_no",
    "api_card_no": "BP21-087"
   },
+  "BP21-088": {
+   "name_jp": "マリシャスブレイダー",
+   "name_cn": "恶意的剑士",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "キラー",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "《入场曲》如果自己的墓场中的原始消费为2的卡片为5张及以上的话，将自己的PP回复2点。",
+   "desc_jp": "ファンファーレ自分の墓場の元のコスト2のカードが5枚以上なら、自分のPPを2回復する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP21-088"
+  },
   "BP21-091": {
    "name_jp": "異端の指導者・ベルディリア",
    "name_cn": "异端的指导者·贝尔迪俪亚",
@@ -1952,6 +1967,21 @@
    "matched_by": "card_no",
    "api_card_no": "BP21-P44"
   },
+  "BP21-P45": {
+   "name_jp": "悪魔の令嬢",
+   "name_cn": "",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "魔界",
+   "rare": "SR_P",
+   "craft": "Nightmare",
+   "desc_cn": "当其他的原始消费为2的从者召唤到自己的场上时，给予敌方的全体主战者各1点伤害。",
+   "desc_jp": "自分の場に他の元のコスト2のフォロワーが出たとき、相手のリーダーすべてに1ダメージ。",
+   "matched_by": "card_no",
+   "api_card_no": "BP21-P45"
+  },
   "BP21-P48": {
    "name_jp": "極徒会表番・デナン",
    "name_cn": "",
@@ -1966,6 +1996,21 @@
    "desc_jp": "自分がサイコロをふったとき、自分の場のフォロワー1体を選ぶ。出た目が6なら、それは攻撃力+1/体力+1する。\n起動コスト0：サイコロをふる。この能力は1ターンに1回使える。",
    "matched_by": "card_no",
    "api_card_no": "BP21-P48"
+  },
+  "BP21-P49": {
+   "name_jp": "マリシャスブレイダー",
+   "name_cn": "",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "キラー",
+   "rare": "BR_P",
+   "craft": "Nightmare",
+   "desc_cn": "《入场曲》如果自己的墓场中的原始消费为2的卡片为5张及以上的话，将自己的PP回复2点。",
+   "desc_jp": "ファンファーレ自分の墓場の元のコスト2のカードが5枚以上なら、自分のPPを2回復する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP21-P49"
   },
   "BP21-P51": {
    "name_jp": "不退転の乙女・キーラ",
@@ -2041,6 +2086,21 @@
    "desc_jp": "自分のデッキの上4枚を見る。その中から、学院・カード2枚まで公開して手札に加えてよい。残りを好きな順にデッキの下に置く。自分のPPを1回復する。",
    "matched_by": "card_no",
    "api_card_no": "BP21-P62"
+  },
+  "BP21-PR01": {
+   "name_jp": "真紅の抗戦者・モノ",
+   "name_cn": "",
+   "cost": -1,
+   "attack": 5,
+   "life": 4,
+   "card_type": "FollowerEvo",
+   "type": "機械・魔界",
+   "rare": "SP",
+   "craft": "Nightmare",
+   "desc_cn": " 【疾驰】\n《起动》《消费2》将墓场中的1张『原初之一』卡消失：使自己场上的全体机械类型·从者各《攻击力》+2/《生命值》+2、并获得【突进】能力。这个能力在1回合可以使用1次。 ",
+   "desc_jp": "【疾走】\n起動コスト2墓場の『ファースト・ワン』1枚を消滅：自分の場の機械・フォロワーすべては攻撃力+2/体力+2して、【突進】を持つ。この能力は1ターンに1回使える。",
+   "matched_by": "card_no",
+   "api_card_no": "BP21-PR01"
   },
   "BP21-PR03": {
    "name_jp": "アネモネタイガー",

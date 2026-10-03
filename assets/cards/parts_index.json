@@ -1,8 +1,8 @@
 {
  "_comment": "卡牌分片清单。抓取方式：先读本文件，再按需抓取 part-*.json。每片约 120 张卡，可完整抓取。",
- "totalCards": 4012,
+ "totalCards": 4145,
  "partSize": 80,
- "partCount": 51,
+ "partCount": 52,
  "fields": [
   "name_cn（中文卡名）",
   "name_jp（日文卡名）",
@@ -18,257 +18,262 @@
   {
    "file": "part-000.json",
    "count": 80,
-   "range": "BP01-002 ~ BP01-P16"
+   "range": "BP01-002 ~ BP01-P14"
   },
   {
    "file": "part-001.json",
    "count": 80,
-   "range": "BP01-P20 ~ BP02-P25"
+   "range": "BP01-P16 ~ BP02-P19"
   },
   {
    "file": "part-002.json",
    "count": 80,
-   "range": "BP02-P26 ~ BP04-002"
+   "range": "BP02-P21 ~ BP03-U07"
   },
   {
    "file": "part-003.json",
    "count": 80,
-   "range": "BP04-005 ~ BP05-039"
+   "range": "BP04-001 ~ BP05-037"
   },
   {
    "file": "part-004.json",
    "count": 80,
-   "range": "BP05-040 ~ BP05-SL04"
+   "range": "BP05-038 ~ BP05-SL01"
   },
   {
    "file": "part-005.json",
    "count": 80,
-   "range": "BP05-SL05 ~ BP06-P21"
+   "range": "BP05-SL02 ~ BP06-P17"
   },
   {
    "file": "part-006.json",
    "count": 80,
-   "range": "BP06-P22 ~ BP07-076"
+   "range": "BP06-P18 ~ BP07-074"
   },
   {
    "file": "part-007.json",
    "count": 80,
-   "range": "BP07-077 ~ BP08-026"
+   "range": "BP07-075 ~ BP08-024"
   },
   {
    "file": "part-008.json",
    "count": 80,
-   "range": "BP08-028 ~ BP08-SL20"
+   "range": "BP08-025 ~ BP08-SL18"
   },
   {
    "file": "part-009.json",
    "count": 80,
-   "range": "BP08-SL21 ~ BP09-P05"
+   "range": "BP08-SL19 ~ BP09-P03"
   },
   {
    "file": "part-010.json",
    "count": 80,
-   "range": "BP09-P11 ~ BP10-058"
+   "range": "BP09-P04 ~ BP10-055"
   },
   {
    "file": "part-011.json",
    "count": 80,
-   "range": "BP10-059 ~ BP11-037"
+   "range": "BP10-056 ~ BP11-035"
   },
   {
    "file": "part-012.json",
    "count": 80,
-   "range": "BP11-038 ~ BP11-SL03"
+   "range": "BP11-036 ~ BP11-P24"
   },
   {
    "file": "part-013.json",
    "count": 80,
-   "range": "BP11-SL04 ~ BP12-092"
+   "range": "BP11-P27 ~ BP12-089"
   },
   {
    "file": "part-014.json",
    "count": 80,
-   "range": "BP12-093 ~ BP13-035"
+   "range": "BP12-090 ~ BP13-030"
   },
   {
    "file": "part-015.json",
    "count": 80,
-   "range": "BP13-036 ~ BP13-SL08"
+   "range": "BP13-031 ~ BP13-SL03"
   },
   {
    "file": "part-016.json",
    "count": 80,
-   "range": "BP13-SL11 ~ BP14-074"
+   "range": "BP13-SL04 ~ BP14-070"
   },
   {
    "file": "part-017.json",
    "count": 80,
-   "range": "BP14-075 ~ BP15-007"
+   "range": "BP14-071 ~ BP14-U05"
   },
   {
    "file": "part-018.json",
    "count": 80,
-   "range": "BP15-008 ~ BP15-102"
+   "range": "BP14-U06 ~ BP15-090"
   },
   {
    "file": "part-019.json",
    "count": 80,
-   "range": "BP15-103 ~ BP16-003"
+   "range": "BP15-091 ~ BP15-U01"
   },
   {
    "file": "part-020.json",
    "count": 80,
-   "range": "BP16-007 ~ BP16-104"
+   "range": "BP15-U02 ~ BP16-093"
   },
   {
    "file": "part-021.json",
    "count": 80,
-   "range": "BP16-109 ~ BP17-036"
+   "range": "BP16-094 ~ BP17-022"
   },
   {
    "file": "part-022.json",
    "count": 80,
-   "range": "BP17-037 ~ BP17-P21"
+   "range": "BP17-023 ~ BP17-P10"
   },
   {
    "file": "part-023.json",
    "count": 80,
-   "range": "BP17-P24 ~ BP18-044"
+   "range": "BP17-P11 ~ BP18-032"
   },
   {
    "file": "part-024.json",
    "count": 80,
-   "range": "BP18-045 ~ BP18-P11"
+   "range": "BP18-033 ~ BP18-P02"
   },
   {
    "file": "part-025.json",
    "count": 80,
-   "range": "BP18-P12 ~ BP19-005"
+   "range": "BP18-P03 ~ BP18-U03"
   },
   {
    "file": "part-026.json",
    "count": 80,
-   "range": "BP19-006 ~ BP19-095"
+   "range": "BP18-U04 ~ BP19-086"
   },
   {
    "file": "part-027.json",
    "count": 80,
-   "range": "BP19-096 ~ BP19-U01"
+   "range": "BP19-087 ~ BP19-SL21"
   },
   {
    "file": "part-028.json",
    "count": 80,
-   "range": "BP19-U02 ~ BP20-085"
+   "range": "BP19-SL22 ~ BP20-076"
   },
   {
    "file": "part-029.json",
    "count": 80,
-   "range": "BP20-086 ~ BP20-SL06"
+   "range": "BP20-077 ~ BP20-R08"
   },
   {
    "file": "part-030.json",
    "count": 80,
-   "range": "BP20-SL07 ~ BP21-051"
+   "range": "BP20-R09 ~ BP21-039"
   },
   {
    "file": "part-031.json",
    "count": 80,
-   "range": "BP21-052 ~ BP21-P40"
+   "range": "BP21-040 ~ BP21-P28"
   },
   {
    "file": "part-032.json",
    "count": 80,
-   "range": "BP21-P41 ~ CP01-070"
+   "range": "BP21-P29 ~ BP22-034"
   },
   {
    "file": "part-033.json",
    "count": 80,
-   "range": "CP01-072 ~ CP02-090"
+   "range": "BP22-037 ~ CP01-001"
   },
   {
    "file": "part-034.json",
    "count": 80,
-   "range": "CP02-093 ~ CP03-086"
+   "range": "CP01-002 ~ CP02-019"
   },
   {
    "file": "part-035.json",
    "count": 80,
-   "range": "CP03-087 ~ CP04-041"
+   "range": "CP02-020 ~ CP02-U03"
   },
   {
    "file": "part-036.json",
    "count": 80,
-   "range": "CP04-042 ~ CP04-P35"
+   "range": "CP02-U05 ~ CP03-P85"
   },
   {
    "file": "part-037.json",
    "count": 80,
-   "range": "CP04-P36 ~ CSD02a-SL01"
+   "range": "CP03-SL14 ~ CP04-093"
   },
   {
    "file": "part-038.json",
    "count": 80,
-   "range": "CSD02b-001 ~ DSD01b-007"
+   "range": "CP04-094 ~ CP04-SL20"
   },
   {
    "file": "part-039.json",
    "count": 80,
-   "range": "DSD01b-009 ~ ECP01-007"
+   "range": "CP04-SL21 ~ CSD03b-P02"
   },
   {
    "file": "part-040.json",
    "count": 80,
-   "range": "ECP01-008 ~ ECP01-SL12"
+   "range": "CSD03b-P03 ~ EBD03-005"
   },
   {
    "file": "part-041.json",
    "count": 80,
-   "range": "ECP01-SL13 ~ ECP02-051"
+   "range": "EBD03-006 ~ ECP01-058"
   },
   {
    "file": "part-042.json",
    "count": 80,
-   "range": "ECP02-052 ~ ETD01-009"
+   "range": "ECP01-059 ~ ECP01-SSP14"
   },
   {
    "file": "part-043.json",
    "count": 80,
-   "range": "ETD02-007 ~ PR-128"
+   "range": "ECP01-SSP16 ~ ECP02-SL04"
   },
   {
    "file": "part-044.json",
    "count": 80,
-   "range": "PR-131 ~ PR-276"
+   "range": "ECP02-SL05 ~ PCS02-003"
   },
   {
    "file": "part-045.json",
    "count": 80,
-   "range": "PR-277 ~ PR-386"
+   "range": "PR-001 ~ PR-199"
   },
   {
    "file": "part-046.json",
    "count": 80,
-   "range": "PR-387 ~ PR-485"
+   "range": "PR-200 ~ PR-328"
   },
   {
    "file": "part-047.json",
    "count": 80,
-   "range": "PR-486 ~ PR-578"
+   "range": "PR-329 ~ PR-437"
   },
   {
    "file": "part-048.json",
    "count": 80,
-   "range": "PR-579 ~ SP01-012"
+   "range": "PR-440 ~ PR-526"
   },
   {
    "file": "part-049.json",
    "count": 80,
-   "range": "SP01-013 ~ SP01-U12"
+   "range": "PR-527 ~ SD04-001"
   },
   {
    "file": "part-050.json",
-   "count": 12,
-   "range": "SP01-U13 ~ SP01-U28"
+   "count": 80,
+   "range": "SD04-002 ~ SP01-SL04"
+  },
+  {
+   "file": "part-051.json",
+   "count": 65,
+   "range": "SP01-SL05 ~ SP01-U28"
   }
  ]
 }
