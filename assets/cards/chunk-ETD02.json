@@ -13,6 +13,7 @@
    "rare": "SR",
    "craft": "Nightmare",
    "desc_cn": " 《快速》\n选择自己的1个从者。将其破坏。抽取2张卡。 ",
+   "desc_jp": "クイック\n自分のフォロワー1体を選ぶ。それを破壊する。2枚引く。",
    "matched_by": "card_no",
    "api_card_no": "ETD02-007"
   }

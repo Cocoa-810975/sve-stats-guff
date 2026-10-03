@@ -1431,13 +1431,19 @@
         container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
         return;
       }
-      // 有中文效果时只显示中文，否则给出提示
+      // 效果文本：优先中文；无中文时回退日文（标注暂未翻译）；两者都无才提示无效果
       var html = '<div class="card-effect">';
       if (card.desc_cn) {
         html += '<div class="card-effect-section"><div class="card-effect-label">效果</div>'
           + '<div class="card-effect-text">' + escapeHtml(card.desc_cn) + '</div></div>';
+      } else if (card.desc_jp) {
+        html += '<div class="card-effect-section">'
+          + '<div class="card-effect-label">效果（暂未翻译）</div>'
+          + '<div class="card-effect-text" style="color:#b8c7dd">' + escapeHtml(card.desc_jp) + '</div>'
+          + '<div class="card-effect-note">该卡在数据源中暂无中文效果文本，此处显示日文原文</div>'
+          + '</div>';
       } else {
-        html += '<div class="card-effect-note">该卡暂无效果文本（可能为无效果随从或未收录）</div>';
+        html += '<div class="card-effect-note">该卡无效果文本（可能为无能力的白板卡）</div>';
       }
       html += '</div>';
       container.innerHTML = html;
