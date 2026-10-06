@@ -104,6 +104,7 @@
 </head>
 <body>
   <script>window.SVE_CARDS_JSON = '../../../assets/cards/cards.json';</script>
+  <script src="../../../assets/cards/cards-data.js"></script>
   <div class="container">
     <div class="header" style="border-left:5px solid #e67e22">
       <a class="back-link" href="../shadowverse_evolve_decks.html?restore=1">← 返回主页面</a>
@@ -671,12 +672,52 @@
   var cardsPromise = null;
   var cardsData = null;
 
+  // 把内嵌数据转成弹窗使用的对象形态。
+  // cards-data.js 用紧凑结构：{ nos:[卡号...], cards:[[中文名,效果],...] }
+  function normalizeEmbedded(raw) {
+    if (!raw) return null;
+    var out = {};
+    if (raw.nos && raw.cards) {
+      for (var i = 0; i < raw.nos.length; i++) {
+        var v = raw.cards[i] || [];
+        out[raw.nos[i]] = { name_cn: v[0] || '', desc_cn: v[1] || '', desc_jp: '' };
+      }
+      return out;
+    }
+    // 兼容旧的「卡号 -> [中文名,效果]」对象形态
+    for (var no in raw) {
+      if (!Object.prototype.hasOwnProperty.call(raw, no)) continue;
+      var w = raw[no];
+      out[no] = Array.isArray(w)
+        ? { name_cn: w[0] || '', desc_cn: w[1] || '', desc_jp: '' }
+        : w;
+    }
+    return out;
+  }
+
   function loadCards() {
     if (cardsPromise) return cardsPromise;
+    // 优先用内嵌数据（本地 file:// 场景唯一可行的方式）
+    var embedded = normalizeEmbedded(window.SVE_CARD_DATA);
+    if (embedded && Object.keys(embedded).length) {
+      cardsData = embedded;
+      cardsPromise = Promise.resolve(cardsData);
+      return cardsPromise;
+    }
+    if (typeof fetch !== 'function') {
+      cardsData = {}; cardsPromise = Promise.resolve(cardsData); return cardsPromise;
+    }
     cardsPromise = fetch(CARDS_PATH)
       .then(function(res) { return res.ok ? res.json() : null; })
       .then(function(data) { cardsData = data && data.cards ? data.cards : {}; return cardsData; })
-      .catch(function() { cardsData = {}; return cardsData; });
+      .catch(function() { cardsData = {}; return cardsData; })
+      .then(function(d) {
+        // fetch 被拒（常见于 file:// 直接打开本地文件）且无内嵌数据时明确提示
+        if (!Object.keys(d).length && !window.SVE_CARD_DATA) {
+          window.__SVE_CARD_FETCH_FAILED = true;
+        }
+        return d;
+      });
     return cardsPromise;
   }
 
@@ -712,7 +753,17 @@
         if (cnEl) { cnEl.textContent = card.name_cn; cnEl.style.color = '#fff'; }
       }
       if (!card) {
-        container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
+        if (window.__SVE_CARD_FETCH_FAILED) {
+          // 典型场景：直接双击打开本地 html（file:// 协议），浏览器禁止读取本地 json
+          container.innerHTML = '<div class="card-effect-note">'
+            + '读取卡牌数据失败：浏览器不允许 <code>file://</code> 页面读取本地文件。<br>'
+            + '本地查看请用本地服务器打开，例如在项目目录执行 '
+            + '<code>npx serve site</code> 或 <code>python -m http.server</code>，'
+            + '然后访问 <code>http://localhost:端口</code>。'
+            + '</div>';
+        } else {
+          container.innerHTML = '<div class="card-effect-note">暂无该卡的效果文本</div>';
+        }
         return;
       }
       // 效果文本：优先中文；无中文时回退日文（标注暂未翻译）；两者都无才提示无效果
