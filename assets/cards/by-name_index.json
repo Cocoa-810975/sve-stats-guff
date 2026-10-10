@@ -1,8 +1,8 @@
 {
  "_comment": "按卡名索引。用法：取卡名首字符 -> 在 firstCharToPart 查对应分片文件 -> 抓该文件按名字匹配拿卡号 -> 到 part-*.json 取效果文本。",
  "totalCards": 4145,
- "totalNames": 1843,
- "duplicateNameGroups": 1282,
+ "totalNames": 1839,
+ "duplicateNameGroups": 1286,
  "partCount": 739,
  "fields": [
   "卡号",
@@ -761,7 +761,7 @@
    "file": "by-name-[.json",
    "firstChar": "[",
    "count": 132,
-   "chars": 12944
+   "chars": 12945
   },
   {
    "file": "by-name-《.json",
@@ -808,8 +808,8 @@
   {
    "file": "by-name-爱.json",
    "firstChar": "爱",
-   "count": 18,
-   "chars": 1651
+   "count": 20,
+   "chars": 1798
   },
   {
    "file": "by-name-隘.json",
@@ -1223,7 +1223,7 @@
    "file": "by-name-打.json",
    "firstChar": "打",
    "count": 2,
-   "chars": 389
+   "chars": 387
   },
   {
    "file": "by-name-大.json",
@@ -1714,8 +1714,8 @@
   {
    "file": "by-name-公.json",
    "firstChar": "公",
-   "count": 11,
-   "chars": 1079
+   "count": 9,
+   "chars": 929
   },
   {
    "file": "by-name-宫.json",
@@ -4571,7 +4571,7 @@
    "file": "by-name-欲.json",
    "firstChar": "欲",
    "count": 14,
-   "chars": 1294
+   "chars": 1290
   },
   {
    "file": "by-name-御.json",

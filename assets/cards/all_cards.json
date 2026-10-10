@@ -10519,7 +10519,7 @@
   },
   "BP08-P20": {
    "name_jp": "欲望の口付け",
-   "name_cn": "欲望の口付け",
+   "name_cn": "欲望之吻",
    "cost": 2,
    "attack": -1,
    "life": -1,
@@ -21439,7 +21439,7 @@
   },
   "BP14-SL14": {
    "name_jp": "憧れの飛躍・イツルギ",
-   "name_cn": "憧憬的飞跃·壹剑",
+   "name_cn": "憧憬的飞跃·一剑",
    "cost": 2,
    "attack": 3,
    "life": 2,
@@ -46341,7 +46341,7 @@
   },
   "CP04-P85": {
    "name_jp": "アメス",
-   "name_cn": "公主骑士",
+   "name_cn": "爱梅斯",
    "cost": 2,
    "attack": 2,
    "life": 2,
@@ -46356,7 +46356,7 @@
   },
   "CP04-P86": {
    "name_jp": "アメス",
-   "name_cn": "公主骑士",
+   "name_cn": "爱梅斯",
    "cost": -1,
    "attack": 3,
    "life": 3,
@@ -47451,7 +47451,7 @@
   },
   "CSD02b-SL03": {
    "name_jp": "〔ソング・フォー・ライフ〕北条加蓮",
-   "name_cn": "[Song of Life]北条加莲",
+   "name_cn": "[Song for Life]北条加莲",
    "cost": 1,
    "attack": 3,
    "life": 2,
@@ -50676,7 +50676,7 @@
   },
   "ECP01-P30": {
    "name_jp": "かっとばせー！ですわ！？",
-   "name_cn": "打飞他吧！跌丝袜！？",
+   "name_cn": "打飞他吧！的哇！？",
    "cost": 2,
    "attack": -1,
    "life": -1,
