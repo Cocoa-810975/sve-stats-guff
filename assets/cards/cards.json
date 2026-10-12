@@ -1,6 +1,6 @@
 {
  "_comment": "卡牌数据，数据源 svehelperwin.com（按卡号匹配，PR 等促销卡按卡名回退）。字段：name_cn/name_jp/cost/attack/life/card_type/type/craft/desc_cn",
- "generatedAt": "2026-10-10T05:26:04.069Z",
+ "generatedAt": "2026-10-12T11:00:12.211Z",
  "versions": [
   "BP18",
   "BP19",
