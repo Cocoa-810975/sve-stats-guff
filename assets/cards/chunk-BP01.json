@@ -1,6 +1,6 @@
 {
  "prefix": "BP01",
- "count": 100,
+ "count": 103,
  "cards": {
   "BP01-002": {
    "name_jp": "エンシェントエルフ",
@@ -91,6 +91,21 @@
    "desc_jp": "《ファンファーレ》自分の他の妖精・フォロワーすべてと、自分のEXエリアの妖精・フォロワーすべては《攻撃力》+1/《体力》+1する。",
    "matched_by": "card_no",
    "api_card_no": "BP01-011"
+  },
+  "BP01-014": {
+   "name_jp": "ノーブルフェアリー",
+   "name_cn": "妖精贵族",
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "妖精・プリンセス",
+   "rare": "SR",
+   "craft": "Forest",
+   "desc_cn": "【守护】\n《入场曲》【连击_3】选择敌方的1个从者。将其破坏。将1个『妖精』召唤到敌方的场上。\n―――――――――――――――\n『妖精』《精灵职业》妖精类型·从者《消费1》《攻击力》1/《生命值》1",
+   "desc_jp": "【守護】\n《ファンファーレ》【コンボ_3】相手のフォロワー1体を選ぶ。それを破壊する。相手の場に『フェアリー』1体を出す。\n―――――――――――――――\n『フェアリー』《エルフ》妖精・フォロワー《コスト1》《攻撃力》1/《体力》1",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-014"
   },
   "BP01-015": {
    "name_jp": "自然の導き",
@@ -737,6 +752,21 @@
    "matched_by": "card_no",
    "api_card_no": "BP01-118"
   },
+  "BP01-120": {
+   "name_jp": "スパルトイサージェント",
+   "name_cn": "尸魂战士",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "死者",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "《入场曲》将自己的牌堆顶2张卡置于墓场。",
+   "desc_jp": "《ファンファーレ》自分のデッキの上2枚を墓場に置く。",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-120"
+  },
   "BP01-125": {
    "name_jp": "鋭利な一裂き",
    "name_cn": "利爪的一击",
@@ -856,6 +886,21 @@
    "desc_jp": "《進化》《コスト1》：これは進化する。\r\n【オーラ】",
    "matched_by": "card_no",
    "api_card_no": "BP01-144"
+  },
+  "BP01-146": {
+   "name_jp": "スネークプリースト",
+   "name_cn": "蛇神女祭司",
+   "cost": 1,
+   "attack": 1,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "狂信",
+   "rare": "BR",
+   "craft": "Haven",
+   "desc_cn": "【守护】",
+   "desc_jp": "【守護】",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-146"
   },
   "BP01-152": {
    "name_jp": "ルシフェル",

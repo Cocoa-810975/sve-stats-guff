@@ -1,9 +1,9 @@
 {
- "_comment": "按卡名索引分片：首字符「M」",
- "firstChar": "M",
- "count": 1,
+ "_comment": "按卡名索引分片：首字符「m」",
+ "firstChar": "m",
+ "count": 2,
  "nameRange": [
-  "Mode Estival",
+  "miroir",
   "Mode Estival"
  ],
  "fields": [
@@ -16,6 +16,15 @@
   "卡种"
  ],
  "cards": [
+  [
+   "CP02-U04a",
+   "miroir",
+   "miroir",
+   4,
+   4,
+   4,
+   "随从"
+  ],
   [
    "CP02-068",
    "Mode Estival",

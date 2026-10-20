@@ -1,6 +1,6 @@
 {
  "prefix": "BP06",
- "count": 88,
+ "count": 92,
  "cards": {
   "BP06-001": {
    "name_jp": "フォレストエース・リマーガ",
@@ -437,6 +437,36 @@
    "matched_by": "card_no",
    "api_card_no": "BP06-057"
   },
+  "BP06-059": {
+   "name_jp": "天窮の竜神",
+   "name_cn": "天穹龙神",
+   "cost": 4,
+   "attack": 4,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "ドラゴニュート・竜族",
+   "rare": "GR",
+   "craft": "Dragon",
+   "desc_cn": "这张卡从手牌以外不能使用。\n《进化》《消费1》：使这张卡进化。\n《起动》《消费2》将EX区域的这张卡置于墓场：选择自己场上的1个从者。使其《攻击力》+4/《生命值》+4。这个回合，使其不能对敌方进行攻击。",
+   "desc_jp": "これは手札以外からプレイできない。\n進化コスト1：これは進化する。\n起動コスト2EXエリアのこれを墓場に置く：自分の場のフォロワー1体を選ぶ。それは攻撃力+4/体力+4する。このターン、それは相手を攻撃できない。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-059"
+  },
+  "BP06-060": {
+   "name_jp": "天窮の竜神",
+   "name_cn": "天穹龙神",
+   "cost": -1,
+   "attack": 5,
+   "life": 5,
+   "card_type": "FollowerEvo",
+   "type": "ドラゴニュート・竜族",
+   "rare": "GR",
+   "craft": "Dragon",
+   "desc_cn": "【进化时】使自己的主战者《生命值》+3。\n《谢幕曲》将这张卡置于EX区域。",
+   "desc_jp": "【進化時】自分のリーダーは体力+3する。\nラストワードこれをEXエリアに置く。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-060"
+  },
   "BP06-061": {
    "name_jp": "銀氷の吐息",
    "name_cn": "银冰吐息",
@@ -841,6 +871,36 @@
    "desc_jp": "自分のエボルヴデッキの表向きのエボルヴフォロワー1枚を選ぶ。それを裏向きにする。1枚引く。",
    "matched_by": "card_no",
    "api_card_no": "BP06-117"
+  },
+  "BP06-119": {
+   "name_jp": "バズーカゴブリンズ",
+   "name_cn": "哥布林火箭筒大兵",
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ゴブリン",
+   "rare": "BR",
+   "craft": "Neutral",
+   "desc_cn": "《进化》《消费2》：使这张卡进化。\n《入场曲》选择原始消费为2及以下的敌方场上的1张卡片。将其破坏。",
+   "desc_jp": "進化コスト2：これは進化する。\nファンファーレ元のコスト2以下の相手の場のカード1枚を選ぶ。それを破壊する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-119"
+  },
+  "BP06-120": {
+   "name_jp": "バズーカゴブリンズ",
+   "name_cn": "哥布林火箭筒大兵",
+   "cost": -1,
+   "attack": 5,
+   "life": 5,
+   "card_type": "FollowerEvo",
+   "type": "ゴブリン",
+   "rare": "BR",
+   "craft": "Neutral",
+   "desc_cn": "【进化时】选择原始消费为2及以下的敌方场上的1张卡片。将其破坏。",
+   "desc_jp": "【進化時】元のコスト2以下の相手の場のカード1枚を選ぶ。それを破壊する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP06-120"
   },
   "BP06-P03": {
    "name_jp": "スピリットシャイン",

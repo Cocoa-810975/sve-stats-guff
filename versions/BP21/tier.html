@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BP21 卡组梯度表｜SVE Stats Guff</title>
+<style>
+:root{--bg:#0f0f1a;--panel:#161a26;--line:#252b3b;--text:#e8eef8;--muted:#96a5b9;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding:24px 20px 60px}
+h1{font-size:30px;margin:6px 0 4px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.back{display:inline-block;color:#7fb3ff;text-decoration:none;font-size:13px;margin-bottom:10px}
+.back:hover{text-decoration:underline}
+.tier-row{display:flex;gap:14px;margin-bottom:16px;align-items:stretch}
+.tier-label{flex:0 0 128px;background:var(--panel);border-radius:12px;padding:12px 10px;text-align:center;
+  border-left:5px solid var(--tc);display:flex;flex-direction:column;justify-content:center;gap:2px}
+.tier-label b{font-size:26px;color:var(--tc);letter-spacing:.5px}
+.tier-label span{font-size:11px;color:var(--muted);line-height:1.3}
+.tier-label em{font-size:11px;color:#6b7a8f;font-style:normal;margin-top:3px}
+.tier-cards{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.tier-card{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;padding:8px;text-decoration:none;color:inherit;transition:.15s;min-height:64px}
+.tier-card:hover{border-color:#4a6fa5;background:#1b2130;transform:translateY(-1px)}
+.tc-art{flex:0 0 46px;width:46px;height:46px;border-radius:50%;overflow:hidden;background:#0b0d14;
+  border:1.5px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
+.tc-art img{width:100%;height:100%;object-fit:cover;display:block}
+.tc-body{flex:1;min-width:0}
+.tc-name{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-cls{font-size:11px;color:var(--muted)}
+.tc-stats{flex:0 0 auto;text-align:right;display:flex;flex-direction:column;gap:1px}
+.tc-count{font-size:11px;color:#8fa3b8}
+.tc-wr{font-size:13px;font-weight:700}
+.up{color:#4ade80}.down{color:#f87171}
+table{width:100%;border-collapse:collapse;margin-top:26px;font-size:13px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:600;font-size:12px;background:var(--panel)}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.tier-pill{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:700;color:#0f0f1a}
+h2{font-size:19px;margin:34px 0 6px}
+.hint{color:var(--muted);font-size:12px;margin-bottom:10px}
+@media(max-width:640px){.tier-row{flex-direction:column}.tier-label{flex:0 0 auto;flex-direction:row;gap:8px;align-items:center}.tier-label b{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 返回 BP21 报告</a>
+  <h1>BP21 卡组梯度表</h1>
+  <div class="sub">共 2481 套有卡表的卡组 · 73 种卡组类型 · 数据来源 bushi-navi.com</div>
+  
+      <section class="tier-row tier-T0">
+        <div class="tier-label" style="--tc:#e94560">
+          <b>T0</b>
+          <span>环境定义者</span>
+          <em>2 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-593b0d7a6099.html" title="皇家护卫｜雷维翁皇：477 套，淘汰赛胜率 52.6%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-SL08.jpg" alt="雷维翁皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">雷维翁皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">477 套</span>
+          <span class="tc-wr up">52.6%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-7e3b69cd0c30.html" title="龙族｜五妹龙：469 套，淘汰赛胜率 49.8%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP15-SL15.jpg" alt="五妹龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">五妹龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">469 套</span>
+          <span class="tc-wr down">49.8%</span>
+        </div></a></div>
+      </section>
+      <section class="tier-row tier-T2">
+        <div class="tier-label" style="--tc:#f1c40f">
+          <b>T2</b>
+          <span>可用之选</span>
+          <em>2 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-9e477d88228e.html" title="皇家护卫｜财宝皇：221 套，淘汰赛胜率 57.4%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL05.jpg" alt="财宝皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">财宝皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">221 套</span>
+          <span class="tc-wr up">57.4%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-4347111b0e67.html" title="精灵｜人偶妖：195 套，淘汰赛胜率 54.9%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP16-SL03.jpg" alt="人偶妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">人偶妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">195 套</span>
+          <span class="tc-wr up">54.9%</span>
+        </div></a></div>
+      </section>
+      <section class="tier-row tier-T3">
+        <div class="tier-label" style="--tc:#2ecc71">
+          <b>T3</b>
+          <span>需要熟练度</span>
+          <em>5 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-f04045f27752.html" title="巫师｜二妹法：189 套，淘汰赛胜率 52.8%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP15-SL11.jpg" alt="二妹法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">二妹法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">189 套</span>
+          <span class="tc-wr up">52.8%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-42a5c2f5e134.html" title="梦魇｜机械梦：9 套，淘汰赛胜率 76.9%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP07-SL13.jpg" alt="机械梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">机械梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">9 套</span>
+          <span class="tc-wr up">76.9%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-71c5492994cc.html" title="梦魇｜永火梦：74 套，淘汰赛胜率 55.9%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP14-SL16.jpg" alt="永火梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">永火梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">74 套</span>
+          <span class="tc-wr up">55.9%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-b9263fb83a8a.html" title="巫师｜学院法：123 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP06-SL08.jpg" alt="学院法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">学院法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">123 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-bfb6320cd8c6.html" title="公主连结Re:Dive｜跳费PCR：18 套，淘汰赛胜率 62.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP04-062.jpg" alt="跳费PCR" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">跳费PCR</div>
+          <div class="tc-cls">公主连结Re:Dive</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">18 套</span>
+          <span class="tc-wr up">62.5%</span>
+        </div></a></div>
+      </section>
+      <section class="tier-row tier-T4">
+        <div class="tier-label" style="--tc:#3498db">
+          <b>T4</b>
+          <span>偏弱势</span>
+          <em>6 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-826de03f0f61.html" title="精灵｜连击妖：58 套，淘汰赛胜率 54.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/ECP02-SL04.jpg" alt="连击妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">连击妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">58 套</span>
+          <span class="tc-wr up">54.5%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-bbc8f17f6035.html" title="梦魇｜nc梦：22 套，淘汰赛胜率 52%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/PR-399.jpg" alt="nc梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">nc梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">22 套</span>
+          <span class="tc-wr up">52%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-73a3a8508e82.html" title="皇家护卫｜铺场皇：12 套，淘汰赛胜率 57.1%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP09-018.jpg" alt="铺场皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">铺场皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">12 套</span>
+          <span class="tc-wr up">57.1%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-87a84038db1f.html" title="巫师｜星星法：16 套，淘汰赛胜率 58.3%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP11-SL07.jpg" alt="星星法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">星星法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">16 套</span>
+          <span class="tc-wr up">58.3%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-75a3e2d0e2a4.html" title="精灵｜宇宙妖：17 套，淘汰赛胜率 58.8%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL26.jpg" alt="宇宙妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">宇宙妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">17 套</span>
+          <span class="tc-wr up">58.8%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-96191bb3b6d4.html" title="梦魇｜骰子梦：136 套，淘汰赛胜率 40.4%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-SL19.jpg" alt="骰子梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">骰子梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">136 套</span>
+          <span class="tc-wr down">40.4%</span>
+        </div></a></div>
+      </section>
+      <section class="tier-row tier-T5">
+        <div class="tier-label" style="--tc:#7f8c8d">
+          <b>T5</b>
+          <span>边缘/娱乐</span>
+          <em>23 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-b9c3d7da07ee.html" title="主教｜节奏教：10 套，淘汰赛胜率 54.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/PR-415.jpg" alt="节奏教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">节奏教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">10 套</span>
+          <span class="tc-wr up">54.5%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-deb2d8e95565.html" title="公主连结Re:Dive｜法术PCR：42 套，淘汰赛胜率 45%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP04-SL03.jpg" alt="法术PCR" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">法术PCR</div>
+          <div class="tc-cls">公主连结Re:Dive</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">42 套</span>
+          <span class="tc-wr down">45%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-75396de72bcf.html" title="主教｜守护教：37 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP15-SL26.jpg" alt="守护教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">守护教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">37 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-44ce1ca73386.html" title="精灵｜猎人妖：12 套，淘汰赛胜率 53.8%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP20-SL01.jpg" alt="猎人妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">猎人妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">12 套</span>
+          <span class="tc-wr up">53.8%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-058fd7f22075.html" title="巫师｜八狱法：11 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL10.jpg" alt="八狱法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">八狱法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">11 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-79c6992b28db.html" title="主教｜护符教：8 套，淘汰赛胜率 40%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL23.jpg" alt="护符教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">护符教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">8 套</span>
+          <span class="tc-wr down">40%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-90c874a554cb.html" title="巫师｜消失法：18 套，淘汰赛胜率 40%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL09.jpg" alt="消失法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">消失法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">18 套</span>
+          <span class="tc-wr down">40%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-c2ac43fe870c.html" title="精灵｜兽妖：91 套，淘汰赛胜率 39.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-SL01.jpg" alt="兽妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">兽妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">91 套</span>
+          <span class="tc-wr down">39.5%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-246e45fe1891.html" title="龙族｜学院龙：12 套，淘汰赛胜率 44.4%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-SL15.jpg" alt="学院龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">学院龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">12 套</span>
+          <span class="tc-wr down">44.4%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-717ed8345f1c.html" title="主教｜学院教：10 套，淘汰赛胜率 40%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-U06.jpg" alt="学院教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">学院教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">10 套</span>
+          <span class="tc-wr down">40%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-ed7dbad0b4d0.html" title="皇家护卫｜自然皇：13 套，淘汰赛胜率 38.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP07-SL04.jpg" alt="自然皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">自然皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">13 套</span>
+          <span class="tc-wr down">38.5%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-75305287827c.html" title="梦魇｜2c梦：14 套，淘汰赛胜率 36.4%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL19.jpg" alt="2c梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">2c梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">14 套</span>
+          <span class="tc-wr down">36.4%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-217b5e054fbc.html" title="精灵｜妖精妖：6 套，淘汰赛胜率 33.3%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP16-SL01.jpg" alt="妖精妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">妖精妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">6 套</span>
+          <span class="tc-wr down">33.3%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-9b9e36f01173.html" title="梦魇｜抉择梦：6 套，淘汰赛胜率 33.3%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP20-076.jpg" alt="抉择梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">抉择梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">6 套</span>
+          <span class="tc-wr down">33.3%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-c068a8ef6610.html" title="主教｜纹章教：10 套，淘汰赛胜率 30%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP20-SL25.jpg" alt="纹章教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">纹章教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">10 套</span>
+          <span class="tc-wr down">30%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-b5d06bda5b15.html" title="皇家护卫｜篡夺皇：9 套，淘汰赛胜率 30%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP05-SL04.jpg" alt="篡夺皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">篡夺皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">9 套</span>
+          <span class="tc-wr down">30%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-f4843d4577ae.html" title="巫师｜土法：14 套，淘汰赛胜率 27.3%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP09-SL09.jpg" alt="土法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">土法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">14 套</span>
+          <span class="tc-wr down">27.3%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-ca24d30a1a65.html" title="龙族｜龙人龙：11 套，淘汰赛胜率 25%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-SL16.jpg" alt="龙人龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">龙人龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">11 套</span>
+          <span class="tc-wr down">25%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-200bb41cd994.html" title="龙族｜海洋龙：5 套，淘汰赛胜率 25%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP17-SL15.jpg" alt="海洋龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">海洋龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">5 套</span>
+          <span class="tc-wr down">25%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-2271753f82b0.html" title="皇家护卫｜宇宙皇：6 套，淘汰赛胜率 20%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL26.jpg" alt="宇宙皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">宇宙皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">6 套</span>
+          <span class="tc-wr down">20%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-747237d91606.html" title="梦魇｜真红梦：8 套，淘汰赛胜率 16.7%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP05-U05.jpg" alt="真红梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">真红梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">8 套</span>
+          <span class="tc-wr down">16.7%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-da0c322184a8.html" title="主教｜控教：14 套，淘汰赛胜率 12.5%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP15-SL24.jpg" alt="控教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">控教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">14 套</span>
+          <span class="tc-wr down">12.5%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-522ba9eb9548.html" title="梦魇｜蝙蝠梦：7 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL20.jpg" alt="蝙蝠梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">蝙蝠梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">7 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a></div>
+      </section>
+      <section class="tier-row tier-UR">
+        <div class="tier-label" style="--tc:#4a5568">
+          <b>未评级</b>
+          <span>样本不足</span>
+          <em>35 种</em>
+        </div>
+        <div class="tier-cards"><a class="tier-card" href="../../versions/BP21/decktypes/decktype-5a0677b37803.html" title="赛马娘｜横马：1 套，淘汰赛胜率 100%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/ECP01-P01.jpg" alt="横马" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">横马</div>
+          <div class="tc-cls">赛马娘</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr up">100%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-0aa681ac28de.html" title="公主连结Re:Dive｜涅妃PCR：1 套，淘汰赛胜率 100%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP04-004.jpg" alt="涅妃PCR" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">涅妃PCR</div>
+          <div class="tc-cls">公主连结Re:Dive</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr up">100%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-7a481475a6b5.html" title="梦魇｜八狱梦：4 套，淘汰赛胜率 66.7%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-080.jpg" alt="八狱梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">八狱梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">4 套</span>
+          <span class="tc-wr up">66.7%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-7ea4d7128729.html" title="龙族｜荒野龙：3 套，淘汰赛胜率 66.7%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP11-SL10.jpg" alt="荒野龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">荒野龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr up">66.7%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-4aeba2c734d7.html" title="皇家护卫｜盗贼皇：2 套，淘汰赛胜率 66.7%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL05.jpg" alt="盗贼皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">盗贼皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr up">66.7%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-6ea288eb8275.html" title="巫师｜机械法：2 套，淘汰赛胜率 66.7%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/PR-513.jpg" alt="机械法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">机械法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr up">66.7%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-25097831eeb5.html" title="精灵｜八狱妖：3 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-005.jpg" alt="八狱妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">八狱妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-e966f3ffc9bd.html" title="龙族｜小凤龙：4 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP16-SL15.jpg" alt="小凤龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">小凤龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">4 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-c4187e008e9c.html" title="龙族｜武斗龙：3 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL13.jpg" alt="武斗龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">武斗龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-cd6d71f47cfb.html" title="龙族｜大哥龙：3 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP16-SL15.jpg" alt="大哥龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">大哥龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-f2cf81b92eda.html" title="巫师｜魔法使法：2 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP14-U03.jpg" alt="魔法使法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">魔法使法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-754c9f89f7d7.html" title="主教｜耶拉教：2 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL25.jpg" alt="耶拉教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">耶拉教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-e7b52e29d4c1.html" title="巫师｜九爷法：2 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/PR-390.jpg" alt="九爷法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">九爷法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-05e1a2604c89.html" title="偶像大师｜passion：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/ECP02-SL31.jpg" alt="passion" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">passion</div>
+          <div class="tc-cls">偶像大师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-a168893e77d8.html" title="赛马娘｜大哥马：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/ECP01-028.jpg" alt="大哥马" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">大哥马</div>
+          <div class="tc-cls">赛马娘</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-0756d6450098.html" title="巫师｜一世の探究型：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-PR10.jpg" alt="一世の探究型" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">一世の探究型</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-01c7e9eecd2a.html" title="皇家护卫｜〔Escorte étoile〕シリウスシンボリ型：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP04-019.jpg" alt="〔Escorte étoile〕シリウスシンボリ型" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">〔Escorte étoile〕シリウスシンボリ型</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-bab8fae9b582.html" title="皇家护卫｜金币皇：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP14-P05.jpg" alt="金币皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">金币皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-b02e587006ac.html" title="巫师｜大美法：1 套，淘汰赛胜率 50%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-PR10.jpg" alt="大美法" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">大美法</div>
+          <div class="tc-cls">巫师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr up">50%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-856773b7c741.html" title="主教｜聖なる願い型：1 套，淘汰赛胜率 —">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP15-SL29.jpg" alt="聖なる願い型" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">聖なる願い型</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr ">—</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-36123430c5af.html" title="龙族｜宇宙龙：4 套，淘汰赛胜率 40%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL26.jpg" alt="宇宙龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">宇宙龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">4 套</span>
+          <span class="tc-wr down">40%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-b839e822b2c1.html" title="精灵｜透京妖：4 套，淘汰赛胜率 33.3%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-005.jpg" alt="透京妖" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">透京妖</div>
+          <div class="tc-cls">精灵</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">4 套</span>
+          <span class="tc-wr down">33.3%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-592a6c9d3e95.html" title="皇家护卫｜荒野皇：3 套，淘汰赛胜率 25%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP11-019.jpg" alt="荒野皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">荒野皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr down">25%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-c20c01569823.html" title="皇家护卫｜学院皇：4 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP21-020.jpg" alt="学院皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">学院皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">4 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-dfb30b7dc558.html" title="梦魇｜削手梦：3 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP05-SL14.jpg" alt="削手梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">削手梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">3 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-0fe79a39fa2e.html" title="偶像大师｜cool：2 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CSD02b-001.jpg" alt="cool" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">cool</div>
+          <div class="tc-cls">偶像大师</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-07544eb64d36.html" title="主教｜黄金船教：2 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP01-SP18.jpg" alt="黄金船教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">黄金船教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-ca5fd6cc5e75.html" title="梦魇｜宇宙梦：2 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL26.jpg" alt="宇宙梦" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">宇宙梦</div>
+          <div class="tc-cls">梦魇</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-6bdb34ded311.html" title="主教｜宇宙教：2 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL26.jpg" alt="宇宙教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">宇宙教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">2 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-7358073c5024.html" title="赛马娘｜loop马：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/CP01-003.jpg" alt="loop马" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">loop马</div>
+          <div class="tc-cls">赛马娘</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-5a3c74f57a70.html" title="龙族｜武装龙：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP10-063.jpg" alt="武装龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">武装龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-0041c51ca85d.html" title="主教｜哈基米鼠鼠教：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP13-094.jpg" alt="哈基米鼠鼠教" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">哈基米鼠鼠教</div>
+          <div class="tc-cls">主教</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-61f597ab3315.html" title="皇家护卫｜透京皇：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP18-SL05.jpg" alt="透京皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">透京皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-a0e911cab421.html" title="龙族｜八狱龙：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/BP19-SL15.jpg" alt="八狱龙" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">八狱龙</div>
+          <div class="tc-cls">龙族</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a><a class="tier-card" href="../../versions/BP21/decktypes/decktype-2b0efb008539.html" title="皇家护卫｜天使皇：1 套，淘汰赛胜率 0%">
+        <div class="tc-art"><img src="../../assets/cards/thumbs/PR-233.jpg" alt="天使皇" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="tc-body">
+          <div class="tc-name">天使皇</div>
+          <div class="tc-cls">皇家护卫</div>
+        </div>
+        <div class="tc-stats">
+          <span class="tc-count">1 套</span>
+          <span class="tc-wr down">0%</span>
+        </div></a></div>
+      </section>
+
+  <h2>综合排名（前 20）</h2>
+  <div class="hint">综合分 = 占比 45% + 淘汰赛胜率 35% + 冠军率 20%；使用数少于 5 套的类型不参与分级。</div>
+  <table>
+    <thead><tr>
+      <th>#</th><th>梯度</th><th>卡组类型</th><th class="num">使用数</th>
+      <th class="num">淘汰赛胜率</th><th class="num">占比</th><th class="num">冠军</th><th class="num">综合分</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td class="num">1</td>
+      <td><span class="tier-pill" style="background:#e94560">T0</span></td>
+      <td>皇家护卫｜雷维翁皇</td>
+      <td class="num">477</td>
+      <td class="num up">52.6%</td>
+      <td class="num">19.2%</td>
+      <td class="num">72</td>
+      <td class="num">78.5</td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td><span class="tier-pill" style="background:#e94560">T0</span></td>
+      <td>龙族｜五妹龙</td>
+      <td class="num">469</td>
+      <td class="num down">49.8%</td>
+      <td class="num">18.9%</td>
+      <td class="num">62</td>
+      <td class="num">74.9</td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td><span class="tier-pill" style="background:#f1c40f">T2</span></td>
+      <td>皇家护卫｜财宝皇</td>
+      <td class="num">221</td>
+      <td class="num up">57.4%</td>
+      <td class="num">8.9%</td>
+      <td class="num">39</td>
+      <td class="num">58.6</td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td><span class="tier-pill" style="background:#f1c40f">T2</span></td>
+      <td>精灵｜人偶妖</td>
+      <td class="num">195</td>
+      <td class="num up">54.9%</td>
+      <td class="num">7.9%</td>
+      <td class="num">29</td>
+      <td class="num">52.5</td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td><span class="tier-pill" style="background:#2ecc71">T3</span></td>
+      <td>巫师｜二妹法</td>
+      <td class="num">189</td>
+      <td class="num up">52.8%</td>
+      <td class="num">7.6%</td>
+      <td class="num">28</td>
+      <td class="num">51.1</td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td><span class="tier-pill" style="background:#2ecc71">T3</span></td>
+      <td>梦魇｜机械梦</td>
+      <td class="num">9</td>
+      <td class="num up">76.9%</td>
+      <td class="num">0.4%</td>
+      <td class="num">3</td>
+      <td class="num">47.8</td>
+    </tr>
+    <tr>
+      <td class="num">7</td>
+      <td><span class="tier-pill" style="background:#2ecc71">T3</span></td>
+      <td>梦魇｜永火梦</td>
+      <td class="num">74</td>
+      <td class="num up">55.9%</td>
+      <td class="num">3%</td>
+      <td class="num">14</td>
+      <td class="num">45.5</td>
+    </tr>
+    <tr>
+      <td class="num">8</td>
+      <td><span class="tier-pill" style="background:#2ecc71">T3</span></td>
+      <td>巫师｜学院法</td>
+      <td class="num">123</td>
+      <td class="num up">50%</td>
+      <td class="num">5%</td>
+      <td class="num">20</td>
+      <td class="num">45.4</td>
+    </tr>
+    <tr>
+      <td class="num">9</td>
+      <td><span class="tier-pill" style="background:#2ecc71">T3</span></td>
+      <td>公主连结Re:Dive｜跳费PCR</td>
+      <td class="num">18</td>
+      <td class="num up">62.5%</td>
+      <td class="num">0.7%</td>
+      <td class="num">5</td>
+      <td class="num">43.6</td>
+    </tr>
+    <tr>
+      <td class="num">10</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>精灵｜连击妖</td>
+      <td class="num">58</td>
+      <td class="num up">54.5%</td>
+      <td class="num">2.3%</td>
+      <td class="num">9</td>
+      <td class="num">40.1</td>
+    </tr>
+    <tr>
+      <td class="num">11</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>梦魇｜nc梦</td>
+      <td class="num">22</td>
+      <td class="num up">52%</td>
+      <td class="num">0.9%</td>
+      <td class="num">4</td>
+      <td class="num">38.5</td>
+    </tr>
+    <tr>
+      <td class="num">12</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>皇家护卫｜铺场皇</td>
+      <td class="num">12</td>
+      <td class="num up">57.1%</td>
+      <td class="num">0.5%</td>
+      <td class="num">2</td>
+      <td class="num">37.8</td>
+    </tr>
+    <tr>
+      <td class="num">13</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>巫师｜星星法</td>
+      <td class="num">16</td>
+      <td class="num up">58.3%</td>
+      <td class="num">0.6%</td>
+      <td class="num">2</td>
+      <td class="num">34.4</td>
+    </tr>
+    <tr>
+      <td class="num">14</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>精灵｜宇宙妖</td>
+      <td class="num">17</td>
+      <td class="num up">58.8%</td>
+      <td class="num">0.7%</td>
+      <td class="num">2</td>
+      <td class="num">34</td>
+    </tr>
+    <tr>
+      <td class="num">15</td>
+      <td><span class="tier-pill" style="background:#3498db">T4</span></td>
+      <td>梦魇｜骰子梦</td>
+      <td class="num">136</td>
+      <td class="num down">40.4%</td>
+      <td class="num">5.5%</td>
+      <td class="num">9</td>
+      <td class="num">33.6</td>
+    </tr>
+    <tr>
+      <td class="num">16</td>
+      <td><span class="tier-pill" style="background:#7f8c8d">T5</span></td>
+      <td>主教｜节奏教</td>
+      <td class="num">10</td>
+      <td class="num up">54.5%</td>
+      <td class="num">0.4%</td>
+      <td class="num">1</td>
+      <td class="num">30</td>
+    </tr>
+    <tr>
+      <td class="num">17</td>
+      <td><span class="tier-pill" style="background:#7f8c8d">T5</span></td>
+      <td>公主连结Re:Dive｜法术PCR</td>
+      <td class="num">42</td>
+      <td class="num down">45%</td>
+      <td class="num">1.7%</td>
+      <td class="num">4</td>
+      <td class="num">29.2</td>
+    </tr>
+    <tr>
+      <td class="num">18</td>
+      <td><span class="tier-pill" style="background:#7f8c8d">T5</span></td>
+      <td>主教｜守护教</td>
+      <td class="num">37</td>
+      <td class="num up">50%</td>
+      <td class="num">1.5%</td>
+      <td class="num">3</td>
+      <td class="num">29.1</td>
+    </tr>
+    <tr>
+      <td class="num">19</td>
+      <td><span class="tier-pill" style="background:#7f8c8d">T5</span></td>
+      <td>精灵｜猎人妖</td>
+      <td class="num">12</td>
+      <td class="num up">53.8%</td>
+      <td class="num">0.5%</td>
+      <td class="num">1</td>
+      <td class="num">28.3</td>
+    </tr>
+    <tr>
+      <td class="num">20</td>
+      <td><span class="tier-pill" style="background:#7f8c8d">T5</span></td>
+      <td>巫师｜八狱法</td>
+      <td class="num">11</td>
+      <td class="num up">50%</td>
+      <td class="num">0.4%</td>
+      <td class="num">1</td>
+      <td class="num">27.6</td>
+    </tr></tbody>
+  </table>
+</div>
+</body>
+</html>

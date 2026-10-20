@@ -3,7 +3,7 @@
  "part": "part-000.json",
  "range": [
   "BP01-002",
-  "BP01-P14"
+  "BP01-P07"
  ],
  "count": 80,
  "cards": {
@@ -96,6 +96,21 @@
    "desc_jp": "《ファンファーレ》自分の他の妖精・フォロワーすべてと、自分のEXエリアの妖精・フォロワーすべては《攻撃力》+1/《体力》+1する。",
    "matched_by": "card_no",
    "api_card_no": "BP01-011"
+  },
+  "BP01-014": {
+   "name_jp": "ノーブルフェアリー",
+   "name_cn": "妖精贵族",
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "妖精・プリンセス",
+   "rare": "SR",
+   "craft": "Forest",
+   "desc_cn": "【守护】\n《入场曲》【连击_3】选择敌方的1个从者。将其破坏。将1个『妖精』召唤到敌方的场上。\n―――――――――――――――\n『妖精』《精灵职业》妖精类型·从者《消费1》《攻击力》1/《生命值》1",
+   "desc_jp": "【守護】\n《ファンファーレ》【コンボ_3】相手のフォロワー1体を選ぶ。それを破壊する。相手の場に『フェアリー』1体を出す。\n―――――――――――――――\n『フェアリー』《エルフ》妖精・フォロワー《コスト1》《攻撃力》1/《体力》1",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-014"
   },
   "BP01-015": {
    "name_jp": "自然の導き",
@@ -742,6 +757,21 @@
    "matched_by": "card_no",
    "api_card_no": "BP01-118"
   },
+  "BP01-120": {
+   "name_jp": "スパルトイサージェント",
+   "name_cn": "尸魂战士",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "死者",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": "《入场曲》将自己的牌堆顶2张卡置于墓场。",
+   "desc_jp": "《ファンファーレ》自分のデッキの上2枚を墓場に置く。",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-120"
+  },
   "BP01-125": {
    "name_jp": "鋭利な一裂き",
    "name_cn": "利爪的一击",
@@ -861,6 +891,21 @@
    "desc_jp": "《進化》《コスト1》：これは進化する。\r\n【オーラ】",
    "matched_by": "card_no",
    "api_card_no": "BP01-144"
+  },
+  "BP01-146": {
+   "name_jp": "スネークプリースト",
+   "name_cn": "蛇神女祭司",
+   "cost": 1,
+   "attack": 1,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "狂信",
+   "rare": "BR",
+   "craft": "Haven",
+   "desc_cn": "【守护】",
+   "desc_jp": "【守護】",
+   "matched_by": "card_no",
+   "api_card_no": "BP01-146"
   },
   "BP01-152": {
    "name_jp": "ルシフェル",
@@ -1161,51 +1206,6 @@
    "desc_jp": "《進化》《コスト2》：これは進化する。",
    "matched_by": "card_no",
    "api_card_no": "BP01-P07"
-  },
-  "BP01-P08": {
-   "name_jp": "メイドリーダー",
-   "name_cn": "女仆事务长",
-   "cost": -1,
-   "attack": 2,
-   "life": 2,
-   "card_type": "FollowerEvo",
-   "type": "兵士・メイド",
-   "rare": "SR_P",
-   "craft": "Sword",
-   "desc_cn": "【进化时】从自己的牌堆之中搜寻持有《进化》能力的1张从者卡，并加入手牌。",
-   "desc_jp": "【進化時】自分のデッキから《進化》を持つフォロワー1枚を探し、手札に加える。",
-   "matched_by": "card_no",
-   "api_card_no": "BP01-P08"
-  },
-  "BP01-P11": {
-   "name_jp": "次元の超越",
-   "name_cn": "次元超越",
-   "cost": 12,
-   "attack": -1,
-   "life": -1,
-   "card_type": "Spell",
-   "type": "魔法使い",
-   "rare": "GR_P",
-   "craft": "Rune",
-   "desc_cn": "将这张卡使用之际，将10张墓场中的法术卡消失：将消费变为7。\n这个回合的结束后，将进行自己的额外回合。",
-   "desc_jp": "これをプレイする際、墓場のスペル10枚を消滅：コストを7にする。\nこのターンのあと、自分の追加ターンを行う。",
-   "matched_by": "card_no",
-   "api_card_no": "BP01-P11"
-  },
-  "BP01-P14": {
-   "name_jp": "錬金術の代償",
-   "name_cn": "炼金术的代价",
-   "cost": 3,
-   "attack": -1,
-   "life": -1,
-   "card_type": "Amulet",
-   "type": "土の印",
-   "rare": "SR_P",
-   "craft": "Rune",
-   "desc_cn": "【蓄积】\n《入场曲》选择生命值为4及以下的敌方的1个从者。将其消失。",
-   "desc_jp": "【スタック】\n《ファンファーレ》体力4以下の相手のフォロワー1体を選ぶ。それを消滅させる。",
-   "matched_by": "card_no",
-   "api_card_no": "BP01-P14"
   }
  }
 }
