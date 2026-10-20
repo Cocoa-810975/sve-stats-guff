@@ -12,6 +12,12 @@
     .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 40px 30px; border-radius: 16px; margin-bottom: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
     .header h1 { font-size: 28px; color: #fff; margin-bottom: 10px; }
     .header .subtitle { color: #8899aa; font-size: 14px; }
+    /* 梯度表入口：静态链接，不依赖 JS，放在标题下方最显眼的位置 */
+    .tier-entry { display: inline-block; margin-top: 16px; padding: 10px 22px; border-radius: 24px;
+      background: linear-gradient(135deg, #e94560, #c23152); color: #fff; font-size: 15px; font-weight: 700;
+      text-decoration: none; border: 1px solid rgba(255,255,255,0.25); box-shadow: 0 4px 14px rgba(233,69,96,0.35);
+      transition: transform .15s, box-shadow .15s; }
+    .tier-entry:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(233,69,96,0.5); }
     .scope-panel { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; margin: -14px 0 22px; padding: 14px 18px; background: #1a1a2e; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; color: #ccc; }
     .scope-panel select { background: #111827; color: #e0e0e0; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; padding: 8px 12px; font-size: 13px; min-width: 260px; }
     .summary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 30px; }
@@ -111,6 +117,7 @@
   <div class="header">
     <h1>Shadowverse EVOLVE BP18 大会卡组统计</h1>
     <div class="subtitle">数据来源: bushi-navi.com | 查询版本: BP18 | 时间范围: 2025年11月21日-2026年1月29日（含首尾日期）</div>
+    <a class="tier-entry" href="tier.html">📊 查看本弹卡组梯度表 →</a>
   </div>
   <div class="scope-panel">
     <label for="scope-select">查看范围</label>

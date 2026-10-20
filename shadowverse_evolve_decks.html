@@ -74,6 +74,7 @@
           <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html" data-exists="1">BP19</button>
           <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html" data-exists="1">BP18</button>
           <a class="open-link" id="open-current" href="versions/BP22/shadowverse_evolve_decks.html" target="_blank" rel="noopener">新窗口打开当前版本</a>
+          <a class="open-link" id="tier-link" href="versions/BP22/tier.html" target="_blank" rel="noopener">📊 卡组梯度表</a>
           <a class="open-link" id="matchup-link" href="matchup.html" target="_blank" rel="noopener">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="_blank" rel="noopener">大赛卡组统计</a>
           <a class="open-link" href="crossover.html" target="_blank" rel="noopener">双职业统计</a>
@@ -237,6 +238,9 @@
         openCurrent.href = info.src;
         var matchupLink = document.getElementById('matchup-link');
         if (matchupLink) matchupLink.href = 'matchup.html?version=' + encodeURIComponent(version);
+        // 梯度表入口跟随当前选中版本切换
+        var tierLink = document.getElementById('tier-link');
+        if (tierLink) tierLink.href = 'versions/' + version + '/tier.html';
         try { localStorage.setItem('sve_selected_version', version); } catch (error) {}
         if (history && history.replaceState) {
           history.replaceState(null, '', window.location.pathname + '?version=' + encodeURIComponent(version));
