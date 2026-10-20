@@ -296,6 +296,12 @@
         "image": "../../assets/cards/BP11-SL07.jpg"
       },
       {
+        "name": "精灵｜死噬妖",
+        "value": 2,
+        "link": "decktypes/decktype-e7515dc1071b.html",
+        "image": "../../assets/cards/BP22-002.jpg"
+      },
+      {
         "name": "精灵｜宇宙妖",
         "value": 2,
         "link": "decktypes/decktype-75a3e2d0e2a4.html",
@@ -336,12 +342,6 @@
         "value": 1,
         "link": "decktypes/decktype-98145ff20f4d.html",
         "image": "../../assets/cards/BP21-023.jpg"
-      },
-      {
-        "name": "精灵｜死噬妖",
-        "value": 1,
-        "link": "decktypes/decktype-e7515dc1071b.html",
-        "image": "../../assets/cards/BP22-002.jpg"
       },
       {
         "name": "巫师｜机械法",
@@ -390,12 +390,6 @@
         "value": 1,
         "link": "decktypes/decktype-754c9f89f7d7.html",
         "image": "../../assets/cards/BP18-100.jpg"
-      },
-      {
-        "name": "精灵｜エルフの双撃型",
-        "value": 1,
-        "link": "decktypes/decktype-2522a52952e1.html",
-        "image": "../../assets/cards/BP07-005.jpg"
       },
       {
         "name": "巫师｜魔法使法",
@@ -783,10 +777,10 @@
         "image": "../../assets/cards/CP01-SP03.jpg"
       },
       {
-        "name": "精灵｜エルフの双撃型",
+        "name": "精灵｜死噬妖",
         "value": 1,
-        "link": "decktypes/decktype-2522a52952e1.html",
-        "image": "../../assets/cards/BP07-005.jpg"
+        "link": "decktypes/decktype-e7515dc1071b.html",
+        "image": "../../assets/cards/BP22-002.jpg"
       },
       {
         "name": "巫师｜魔法使法",
