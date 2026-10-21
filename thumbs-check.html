@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>卡图加载自检 | SVE Stats Guff</title>
+<style>
+  body{margin:0;background:#0f0f1a;color:#e8eef8;font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
+  h1{font-size:24px;margin:6px 0 4px}
+  .sub{color:#96a5b9;font-size:13px;margin-bottom:18px}
+  .card{background:#161a26;border:1px solid #252b3b;border-radius:10px;padding:14px 16px;margin-bottom:14px}
+  .card h2{font-size:16px;margin:0 0 8px}
+  .row{display:flex;gap:8px;align-items:center;font-size:13px;padding:3px 0;border-bottom:1px dashed #222838}
+  .ok{color:#4ade80}.bad{color:#f87171}.wait{color:#96a5b9}
+  .path{font-family:Consolas,monospace;font-size:12px;color:#8fa3b8;word-break:break-all}
+  .thumb{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#0b0d14;border:1px solid #333}
+  .summary{font-size:15px;font-weight:700;padding:12px 16px;border-radius:10px;margin-bottom:18px}
+  .s-ok{background:rgba(74,222,128,.12);border:1px solid rgba(74,222,128,.4);color:#4ade80}
+  .s-bad{background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.4);color:#f87171}
+  code{background:#0b0d14;padding:1px 5px;border-radius:4px;font-size:12px}
+  .note{color:#96a5b9;font-size:12px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>卡图加载自检</h1>
+  <div class="sub">在本页直接测试每张缩略图能否加载。全部通过说明资源没问题，问题在页面缓存。</div>
+  <div id="summary" class="summary wait">正在检测…</div>
+  <div id="root" class="card">
+    <h2>环境信息</h2>
+    <div class="row"><span>当前页面</span><span class="path" id="env-url"></span></div>
+    <div class="row"><span>路径基准</span><span class="path" id="env-base"></span></div>
+  </div>
+  <div id="list"></div>
+  <div class="note">
+    提示：如果这里全部是绿色 OK，但报告页仍是破图，说明是<strong>浏览器缓存了旧版 charts.js / HTML</strong>，
+    请按 <code>Ctrl + Shift + R</code> 强制刷新那个页面。
+  </div>
+</div>
+<script>
+var PER_VERSION = {"BP18":["BP07-SL13.jpg","BP16-SL15.jpg","ECP02-SL04.jpg","PR-343.jpg","BP11-SL05.jpg","BP17-041.jpg","CP01-SL03.jpg","CSD02b-001.jpg","CSD03b-SL01.jpg","BP11-SL15.jpg","BP18-SL13.jpg","BP18-SL05.jpg","BP18-SL20.jpg","BP15-SL24.jpg","PR-415.jpg","BP18-SL01.jpg","BP18-SL19.jpg","BP09-SL04.jpg","BP18-SL09.jpg","BP05-SL13.jpg","BP07-SL04.jpg","BP17-SL21.jpg","BP18-SL25.jpg","ECP01-005.jpg","PR-233.jpg","BP05-SL04.jpg","BP14-022.jpg","BP06-SL08.jpg","PR-238.jpg","ECP02-063.jpg","ECP01-035.jpg","BP16-SL01.jpg","CP01-SL18.jpg","BP14-SL16.jpg","BP05-SL14.jpg","BP13-019.jpg","ECP01-SP13.jpg","CSD02a-SL01.jpg","BP17-057.jpg","BP11-052.jpg","BP15-U04.jpg","PR-316.jpg","BP07-SL01.jpg","BP14-U03.jpg","BP09-055.jpg","BP18-SL22.jpg","BP15-U06.jpg","BP07-052.jpg","BP15-079.jpg","BP09-U01.jpg","BP17-SL26.jpg","PR-029.jpg","BP15-039.jpg","BP09-U03.jpg","BP03-112.jpg","BP09-SL06.jpg","BP13-094.jpg","BP11-SL13.jpg","ECP01-039.jpg","BP16-079.jpg","BP11-035.jpg","BP16-SL03.jpg","PR-297.jpg","CP01-031.jpg","BP12-004.jpg","CP01-057.jpg","BP15-SL29.jpg","PR-483.jpg","CP03-106.jpg"],"BP19":["BP07-SL13.jpg","ECP02-SL04.jpg","BP19-SL05.jpg","BP19-SL10.jpg","CP04-SL03.jpg","BP16-SL15.jpg","PR-415.jpg","ECP01-SL13.jpg","CSD02b-001.jpg","BP14-SL16.jpg","PR-513.jpg","BP19-005.jpg","BP05-SL13.jpg","BP11-SL15.jpg","PR-233.jpg","BP19-080.jpg","BP16-SL03.jpg","BP18-SL13.jpg","BP18-SL01.jpg","CP04-062.jpg","BP19-SL23.jpg","BP15-SL24.jpg","BP14-U03.jpg","BP05-SL04.jpg","BP17-SL15.jpg","BP19-SL15.jpg","BP19-SL26.jpg","BP09-SL04.jpg","BP19-SL22.jpg","BP07-SL04.jpg","BP18-SL20.jpg","BP15-SL26.jpg","BP18-SL05.jpg","BP11-SL05.jpg","BP14-022.jpg","BP05-SL14.jpg","CP04-SL20.jpg","ECP01-005.jpg","CP04-SL04.jpg","ECP02-063.jpg","PR-343.jpg","BP18-079.jpg","BP19-042.jpg","BP09-001.jpg","BP12-SL18.jpg","ECP01-035.jpg","BP11-052.jpg","BP13-094.jpg","BP09-055.jpg","CP01-031.jpg","BP06-SL08.jpg","PR-029.jpg","BP18-039.jpg","CSD02a-001.jpg","BP15-U04.jpg","BP18-SL25.jpg","BP10-042.jpg","BP04-005.jpg"],"BP20":["BP15-SL15.jpg","BP19-SL05.jpg","BP15-SL11.jpg","BP20-SL01.jpg","BP18-SL20.jpg","CP04-SL03.jpg","PR-415.jpg","CSD02b-SL01.jpg","ECP01-005.jpg","BP16-SL03.jpg","BP19-SL10.jpg","ECP02-SL04.jpg","CP04-062.jpg","PR-390.jpg","BP11-SL15.jpg","BP05-U05.jpg","BP19-SL26.jpg","BP14-SL16.jpg","BP09-SL04.jpg","BP07-SL13.jpg","BP14-SL08.jpg","BP20-SL25.jpg","BP05-SL14.jpg","BP18-SL13.jpg","BP19-005.jpg","PR-513.jpg","BP18-SL19.jpg","BP05-SL04.jpg","BP07-SL04.jpg","BP15-SL24.jpg","BP16-SL15.jpg","BP11-SL05.jpg","BP15-U06.jpg","BP18-SL01.jpg","BP17-057.jpg","ECP01-035.jpg","BP19-080.jpg","CP04-SL04.jpg","BP15-SL23.jpg","PR-233.jpg","BP09-055.jpg","BP12-SL18.jpg","BP19-SL23.jpg","ECP02-SL31.jpg","BP13-094.jpg","PR-343.jpg","BP16-SL01.jpg","BP18-SL25.jpg","CP02-SP13.jpg","BP20-SL22.jpg","BP06-037.jpg","CP04-076.jpg","PR-297.jpg","CP01-068.jpg","BP18-SL09.jpg","PR-532.jpg","BP09-001.jpg","BP19-SL15.jpg","ECP01-028.jpg","CSD02a-SL01.jpg"],"BP21":["BP19-SL05.jpg","BP15-SL15.jpg","BP16-SL03.jpg","BP06-SL08.jpg","BP14-SL16.jpg","PR-415.jpg","CP04-SL03.jpg","ECP02-SL31.jpg","ECP01-P01.jpg","BP21-SL08.jpg","BP15-SL11.jpg","BP21-SL19.jpg","BP21-SL01.jpg","ECP02-SL04.jpg","BP15-SL26.jpg","PR-399.jpg","CP04-062.jpg","BP18-SL09.jpg","BP19-SL26.jpg","BP11-SL07.jpg","BP15-SL24.jpg","BP18-SL19.jpg","BP09-SL09.jpg","BP07-SL04.jpg","BP20-SL01.jpg","BP09-018.jpg","BP21-SL15.jpg","BP19-SL10.jpg","BP21-SL16.jpg","BP21-U06.jpg","BP20-SL25.jpg","BP07-SL13.jpg","BP05-SL04.jpg","BP19-SL23.jpg","BP05-U05.jpg","BP18-SL20.jpg","BP16-SL01.jpg","BP20-076.jpg","BP17-SL15.jpg","BP19-080.jpg","BP18-005.jpg","BP21-020.jpg","BP16-SL15.jpg","BP11-019.jpg","BP19-005.jpg","BP11-SL10.jpg","BP05-SL14.jpg","BP18-SL13.jpg","PR-513.jpg","PR-390.jpg","CP01-SP18.jpg","CSD02b-001.jpg","BP14-U03.jpg","BP18-SL25.jpg","CP04-004.jpg","BP21-PR10.jpg","BP13-094.jpg","BP18-SL05.jpg","BP19-SL15.jpg","PR-233.jpg","BP15-SL29.jpg","BP10-063.jpg","CP01-003.jpg","CP04-019.jpg","BP14-P05.jpg","ECP01-028.jpg"],"BP22":["BP16-026.jpg","BP15-SL15.jpg","BP22-081.jpg","BP15-SL11.jpg","BP15-SL26.jpg","BP16-SL03.jpg","ECP01-005.jpg","CP04-U02.jpg","BP18-SL19.jpg","BP14-022.jpg","BP16-SL01.jpg","BP18-SL09.jpg","BP06-SL08.jpg","BP19-SL10.jpg","BP14-SL16.jpg","ECP02-SL04.jpg","BP16-SL15.jpg","CP01-SP03.jpg","BP15-SL24.jpg","PR-399.jpg","CP04-062.jpg","BP07-SL13.jpg","BP20-SL01.jpg","PR-415.jpg","BP19-005.jpg","BP21-SL19.jpg","BP17-SL15.jpg","BP20-093.jpg","BP21-SL16.jpg","PR-233.jpg","BP09-U03.jpg","PR-483.jpg","CP01-068.jpg","CP01-057.jpg","BP18-SL20.jpg","BP19-080.jpg","BP11-SL07.jpg","BP22-002.jpg","BP19-SL26.jpg","BP09-018.jpg","BP08-087.jpg","BP11-052.jpg","BP21-001.jpg","BP18-SL05.jpg","BP21-023.jpg","BP17-041.jpg","BP21-057.jpg","BP19-019.jpg","BP05-U05.jpg","ECP01-035.jpg","BP07-001.jpg","BP21-093.jpg","BP18-100.jpg","BP14-036.jpg","BP20-076.jpg","ECP01-SL26.jpg"]};
+var BASE = new URL('assets/cards/thumbs/', location.href).href;
+document.getElementById('env-url').textContent = location.href;
+document.getElementById('env-base').textContent = BASE;
+
+var root = document.getElementById('list');
+var stat = { ok: 0, bad: 0, total: 0 };
+var badList = [];
+
+Object.keys(PER_VERSION).forEach(function(v) {
+  var names = PER_VERSION[v];
+  var card = document.createElement('div');
+  card.className = 'card';
+  var h = document.createElement('h2');
+  h.textContent = v + '（' + names.length + ' 张）';
+  card.appendChild(h);
+  var box = document.createElement('div');
+  card.appendChild(box);
+  root.appendChild(card);
+
+  names.forEach(function(name) {
+    stat.total++;
+    var row = document.createElement('div');
+    row.className = 'row';
+    var img = document.createElement('img');
+    img.className = 'thumb';
+    img.alt = '';
+    var span = document.createElement('span');
+    span.className = 'path';
+    span.textContent = name;
+    var st = document.createElement('span');
+    st.className = 'wait';
+    st.textContent = '检测中…';
+    row.appendChild(img);
+    row.appendChild(span);
+    row.appendChild(st);
+    box.appendChild(row);
+
+    var url = BASE + name;
+    img.onload = function() {
+      // 缩略图都是 160x160；尺寸不对说明拿到的是别的东西
+      var w = img.naturalWidth, h2 = img.naturalHeight;
+      if (w === 160 && h2 === 160) {
+        st.className = 'ok';
+        st.textContent = 'OK ' + w + 'x' + h2;
+        stat.ok++;
+      } else {
+        st.className = 'bad';
+        st.textContent = '尺寸异常 ' + w + 'x' + h2;
+        stat.bad++;
+        badList.push(name + ' 尺寸 ' + w + 'x' + h2);
+      }
+      updateSummary();
+    };
+    img.onerror = function() {
+      st.className = 'bad';
+      st.textContent = '加载失败';
+      stat.bad++;
+      badList.push(name + ' 加载失败');
+      updateSummary();
+    };
+    img.src = url;
+  });
+});
+
+function updateSummary() {
+  var el = document.getElementById('summary');
+  if (stat.ok + stat.bad < stat.total) {
+    el.className = 'summary wait';
+    el.textContent = '检测中… ' + (stat.ok + stat.bad) + '/' + stat.total;
+    return;
+  }
+  if (stat.bad === 0) {
+    el.className = 'summary s-ok';
+    el.textContent = '✓ 全部通过：' + stat.total + ' 张缩略图都能正常加载（160x160）';
+  } else {
+    el.className = 'summary s-bad';
+    el.textContent = '✗ ' + stat.bad + ' / ' + stat.total + ' 张失败 —— ' + badList.slice(0, 5).join('；');
+  }
+}
+</script>
+</body>
+</html>
