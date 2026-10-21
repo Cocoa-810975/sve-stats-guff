@@ -95,7 +95,7 @@
       },
       {
         "name": "巫师｜二妹法",
-        "value": 537,
+        "value": 536,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
@@ -119,7 +119,7 @@
       },
       {
         "name": "巫师｜八狱法",
-        "value": 45,
+        "value": 39,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
@@ -290,6 +290,12 @@
         "value": 7,
         "link": "decktypes/decktype-b839e822b2c1.html",
         "image": "../../assets/cards/BP18-SL01.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 7,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "龙族｜海洋龙",
@@ -498,7 +504,7 @@
       {
         "class": "巫师",
         "category": "二妹法",
-        "count": 537,
+        "count": 536,
         "best": "1/554",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
@@ -530,7 +536,7 @@
       {
         "class": "巫师",
         "category": "八狱法",
-        "count": 45,
+        "count": 39,
         "best": "1/58",
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
@@ -576,7 +582,7 @@
         "image": "../../assets/cards/BP11-SL15.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录351场有效赛事、2921套有排名记录的卡组，其中上位卡组2452套、冠军卡组365套。从上位职业分布看，龙族706套（28.8%）、皇家护卫571套（23.3%）构成本范围的主要出场面，冠军侧则以龙族102套（27.9%）、巫师98套（26.8%）表现最突出。卡组类型方面，龙族「五妹龙」675套（27.5%，最好2/554）、皇家护卫「财宝皇」516套（21.0%，最好1/553）、巫师「二妹法」464套（18.9%，最好1/554）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是巫师「二妹法」，由にん使用，成绩为1/554，成绩系数0.0018。整体来看，前10%成绩卡组共有1060套，占全部记录36.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录351场有效赛事、2921套有排名记录的卡组，其中上位卡组2452套、冠军卡组365套。从上位职业分布看，龙族706套（28.8%）、皇家护卫571套（23.3%）构成本范围的主要出场面，冠军侧则以龙族102套（27.9%）、巫师98套（26.8%）表现最突出。卡组类型方面，龙族「五妹龙」675套（27.5%，最好2/554）、皇家护卫「财宝皇」516套（21.0%，最好1/553）、巫师「二妹法」463套（18.9%，最好1/554）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是巫师「二妹法」，由にん使用，成绩为1/554，成绩系数0.0018。整体来看，前10%成绩卡组共有1060套，占全部记录36.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/07/24",
@@ -719,12 +725,6 @@
         "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
-        "name": "巫师｜八狱法",
-        "value": 3,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "name": "皇家护卫｜铺场皇",
         "value": 2,
         "link": "decktypes/decktype-73a3a8508e82.html",
@@ -753,6 +753,12 @@
         "value": 2,
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 2,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "name": "巫师｜九爷法",
@@ -813,6 +819,12 @@
         "value": 1,
         "link": "decktypes/decktype-cd6d71f47cfb.html",
         "image": "../../assets/cards/BP16-SL15.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 1,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "梦魇｜宇宙梦",
@@ -941,12 +953,12 @@
         "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
-        "class": "巫师",
-        "category": "八狱法",
-        "count": 3,
-        "best": "5/14",
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
+        "class": "皇家护卫",
+        "category": "铺场皇",
+        "count": 2,
+        "best": "4/24",
+        "link": "decktypes/decktype-73a3a8508e82.html",
+        "image": "../../assets/cards/BP09-SL04.jpg"
       }
     ],
     "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/07/24-2026/07/30共收录25场有效赛事、213套有排名记录的卡组，其中上位卡组140套、冠军卡组27套。从上位职业分布看，龙族47套（33.6%）、皇家护卫36套（25.7%）构成本范围的主要出场面，冠军侧则以龙族12套（44.4%）、巫师6套（22.2%）表现最突出。卡组类型方面，龙族「五妹龙」44套（31.4%，最好1/16）、皇家护卫「财宝皇」34套（24.3%，最好1/29）、巫师「二妹法」20套（14.3%，最好1/25）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「财宝皇」，由めめめ使用，成绩为1/29，成绩系数0.0345。整体来看，前10%成绩卡组共有52套，占全部记录24.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
@@ -1076,16 +1088,16 @@
         "image": "../../assets/cards/CP04-SL03.jpg"
       },
       {
-        "name": "巫师｜八狱法",
-        "value": 7,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "name": "精灵｜连击妖",
         "value": 7,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 6,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "name": "梦魇｜蝙蝠梦",
@@ -1220,6 +1232,12 @@
         "image": "../../assets/cards/PR-297.jpg"
       },
       {
+        "name": "巫师｜星星法",
+        "value": 1,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
+      },
+      {
         "name": "梦魇｜怨灵梦",
         "value": 1,
         "link": "decktypes/decktype-dd2be811fe92.html",
@@ -1344,20 +1362,20 @@
         "image": "../../assets/cards/CP04-SL03.jpg"
       },
       {
-        "class": "巫师",
-        "category": "八狱法",
-        "count": 7,
-        "best": "1/8",
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "class": "精灵",
         "category": "连击妖",
         "count": 7,
         "best": "2/9",
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 6,
+        "best": "4/24",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "class": "梦魇",
@@ -1467,16 +1485,16 @@
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "巫师｜二妹法",
-        "value": 48,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
         "name": "皇家护卫｜财宝皇",
         "value": 47,
         "link": "decktypes/decktype-9e477d88228e.html",
         "image": "../../assets/cards/BP19-SL05.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 47,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "name": "精灵｜猎人妖",
@@ -1573,6 +1591,12 @@
         "value": 1,
         "link": "decktypes/decktype-200bb41cd994.html",
         "image": "../../assets/cards/BP17-057.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 1,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "梦魇｜2c梦",
@@ -1681,20 +1705,20 @@
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "class": "巫师",
-        "category": "二妹法",
-        "count": 48,
-        "best": "1/25",
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
         "class": "皇家护卫",
         "category": "财宝皇",
         "count": 47,
         "best": "1/29",
         "link": "decktypes/decktype-9e477d88228e.html",
         "image": "../../assets/cards/BP19-SL05.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "二妹法",
+        "count": 47,
+        "best": "1/25",
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "class": "精灵",
@@ -1769,7 +1793,7 @@
         "image": "../../assets/cards/BP14-SL16.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/07/10-2026/07/16共收录23场有效赛事、210套有排名记录的卡组，其中上位卡组187套、冠军卡组27套。从上位职业分布看，龙族51套（27.3%）、皇家护卫48套（25.7%）构成本范围的主要出场面，冠军侧则以巫师9套（33.3%）、龙族7套（25.9%）表现最突出。卡组类型方面，龙族「五妹龙」49套（26.2%，最好1/27）、皇家护卫「财宝皇」44套（23.5%，最好1/29）、巫师「二妹法」43套（23.0%，最好1/25）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是精灵「猎人妖」，由タック使用，成绩为1/40，成绩系数0.0250。整体来看，前10%成绩卡组共有61套，占全部记录29.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/07/10-2026/07/16共收录23场有效赛事、210套有排名记录的卡组，其中上位卡组187套、冠军卡组27套。从上位职业分布看，龙族51套（27.3%）、皇家护卫48套（25.7%）构成本范围的主要出场面，冠军侧则以巫师9套（33.3%）、龙族7套（25.9%）表现最突出。卡组类型方面，龙族「五妹龙」49套（26.2%，最好1/27）、皇家护卫「财宝皇」44套（23.5%，最好1/29）、巫师「二妹法」42套（22.5%，最好1/25）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是精灵「猎人妖」，由タック使用，成绩为1/40，成绩系数0.0250。整体来看，前10%成绩卡组共有61套，占全部记录29.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/07/03",
@@ -2311,12 +2335,6 @@
         "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
-        "name": "巫师｜八狱法",
-        "value": 5,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "name": "公主连结Re:Dive｜跳费PCR",
         "value": 5,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
@@ -2333,6 +2351,12 @@
         "value": 5,
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 4,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "name": "梦魇｜nc梦",
@@ -2485,6 +2509,12 @@
         "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
+        "name": "巫师｜星星法",
+        "value": 1,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
+      },
+      {
         "name": "主教｜控教",
         "value": 1,
         "link": "decktypes/decktype-da0c322184a8.html",
@@ -2557,14 +2587,6 @@
         "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
-        "class": "巫师",
-        "category": "八狱法",
-        "count": 5,
-        "best": "1/58",
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "class": "公主连结Re:Dive",
         "category": "跳费PCR",
         "count": 5,
@@ -2587,6 +2609,14 @@
         "best": "5/35",
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 4,
+        "best": "1/58",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       }
     ],
     "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/06/26-2026/07/02共收录42场有效赛事、335套有排名记录的卡组，其中上位卡组295套、冠军卡组42套。从上位职业分布看，龙族76套（25.8%）、皇家护卫74套（25.1%）构成本范围的主要出场面，冠军侧则以皇家护卫15套（35.7%）、巫师10套（23.8%）表现最突出。卡组类型方面，龙族「五妹龙」71套（24.1%，最好1/44）、皇家护卫「财宝皇」67套（22.7%，最好1/45）、巫师「二妹法」50套（16.9%，最好1/30）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是巫师「八狱法」，由ちゃん使用，成绩为1/58，成绩系数0.0172。整体来看，前10%成绩卡组共有125套，占全部记录37.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
@@ -3818,7 +3848,7 @@
       },
       {
         "name": "巫师｜八狱法",
-        "value": 6,
+        "value": 5,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
@@ -3905,6 +3935,12 @@
         "value": 1,
         "link": "decktypes/decktype-cd6d71f47cfb.html",
         "image": "../../assets/cards/BP16-SL15.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 1,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "偶像大师｜passion",
@@ -4043,7 +4079,7 @@
       {
         "class": "巫师",
         "category": "八狱法",
-        "count": 6,
+        "count": 5,
         "best": "1/23",
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
@@ -4182,12 +4218,6 @@
         "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
-        "name": "巫师｜八狱法",
-        "value": 7,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "name": "公主连结Re:Dive｜跳费PCR",
         "value": 6,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
@@ -4198,6 +4228,12 @@
         "value": 5,
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/PR-513.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 5,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "name": "梦魇｜nc梦",
@@ -4276,6 +4312,12 @@
         "value": 2,
         "link": "decktypes/decktype-73a3a8508e82.html",
         "image": "../../assets/cards/BP09-SL04.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 2,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "梦魇｜永火梦",
@@ -4428,14 +4470,6 @@
         "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
-        "class": "巫师",
-        "category": "八狱法",
-        "count": 7,
-        "best": "1/6",
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
         "class": "公主连结Re:Dive",
         "category": "跳费PCR",
         "count": 6,
@@ -4450,6 +4484,14 @@
         "best": "4/41",
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/PR-513.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 5,
+        "best": "8/38",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "class": "梦魇",

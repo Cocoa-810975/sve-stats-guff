@@ -328,12 +328,6 @@
         "image": "../../assets/cards/BP15-U04.jpg"
       },
       {
-        "name": "巫师｜小卖部法",
-        "value": 3,
-        "link": "decktypes/decktype-aa7a697c0ec2.html",
-        "image": "../../assets/cards/PR-316.jpg"
-      },
-      {
         "name": "精灵｜自然妖",
         "value": 3,
         "link": "decktypes/decktype-941c1ca0a7a2.html",
@@ -350,6 +344,12 @@
         "value": 3,
         "link": "decktypes/decktype-18ec8bbe957f.html",
         "image": "../../assets/cards/BP09-055.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 3,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "主教｜教皇透京教",
@@ -424,6 +424,12 @@
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
+        "name": "巫师｜小卖部法",
+        "value": 1,
+        "link": "decktypes/decktype-aa7a697c0ec2.html",
+        "image": "../../assets/cards/PR-316.jpg"
+      },
+      {
         "name": "皇家护卫｜胜利皇",
         "value": 1,
         "link": "decktypes/decktype-8ff5ae7f9a02.html",
@@ -452,12 +458,6 @@
         "value": 1,
         "link": "decktypes/decktype-dd2be811fe92.html",
         "image": "../../assets/cards/BP16-079.jpg"
-      },
-      {
-        "name": "巫师｜星星法",
-        "value": 1,
-        "link": "decktypes/decktype-87a84038db1f.html",
-        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -2401,10 +2401,10 @@
         "image": "../../assets/cards/BP07-SL04.jpg"
       },
       {
-        "name": "巫师｜小卖部法",
+        "name": "巫师｜星星法",
         "value": 1,
-        "link": "decktypes/decktype-aa7a697c0ec2.html",
-        "image": "../../assets/cards/PR-316.jpg"
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "巫师｜洋葱法",
@@ -2750,10 +2750,10 @@
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
-        "name": "巫师｜小卖部法",
+        "name": "巫师｜星星法",
         "value": 1,
-        "link": "decktypes/decktype-aa7a697c0ec2.html",
-        "image": "../../assets/cards/PR-316.jpg"
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-035.jpg"
       },
       {
         "name": "皇家护卫｜篡夺皇",
