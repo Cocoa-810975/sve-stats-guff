@@ -6225,9 +6225,9 @@
   }
 };
   var currentScopeKey = 'total';
-  // 把每张「代表卡」画到饼图对应扇区的质心上（圆形裁切 + 白描边）。
-  // 几何必须与 series.pie 的 radius/center 保持一致（见 makePie）。
-  var PIE_INNER = 0.38, PIE_OUTER = 0.68, PIE_CX = 0.50, PIE_CY = 0.43;
+  // ===== 饼图：实心饼 + 每个扇区用「该类型的代表卡插画」铺满 =====
+  // 几何参数必须与 series.pie 的 radius/center 保持一致。
+  var PIE_OUTER = 0.60, PIE_CX = 0.50, PIE_CY = 0.50;
 
   // 图片路径基准：按 charts.js 自身位置换算到「站点根」，再拼 ../../assets/cards/。
   // 原因：ECharts 渲染 SVG <image> 时不会沿用页面的相对路径规则，
@@ -6235,31 +6235,50 @@
   //
   // 目录关系（发布后）：
   //   site/versions/BPxx/assets/charts.js   ← 脚本本身
-  //   site/versions/BPxx/../../assets/cards/      ← 发布时被删除
-  //   site/../../assets/cards/                    ← 卡图实际所在（发布合并到这里）
-  //   site/../../assets/cards/thumbs/             ← 插画头像（饼图用这个，40px 才看得清）
-  // 所以：charts.js → 上三层 = site/ → ../../assets/cards/thumbs/X.jpg
-  var CARD_URL_BASE = (function() {
+  //   site/../../assets/cards/arts/               ← 饼图扇区填充用（400x400 插画）
+  //   site/../../assets/cards/thumbs/             ← 小圆头像（其他处仍在用）
+  // 所以：charts.js → 上三层 = site/ → ../../assets/cards/arts/X.jpg
+  var ARTS_BASE = (function() {
     try {
       var scripts = document.getElementsByTagName('script');
       for (var i = 0; i < scripts.length; i++) {
         var src = scripts[i].getAttribute('src') || '';
         if (src.indexOf('charts.js') >= 0) {
-          // ../../../ 抵消 versions/BPxx/assets/
-          return new URL('../../../assets/cards/thumbs/', new URL(src, location.href)).href;
+          return new URL('../../../assets/cards/arts/', new URL(src, location.href)).href;
         }
       }
     } catch (e) {}
-    return new URL('../../../assets/cards/thumbs/', location.href).href;
+    return new URL('../../../assets/cards/arts/', location.href).href;
   })();
 
-  // 用「插画头像」而不是整张卡面：整卡缩到 40px 会糊，
-  // 裁出插画的方形缩略图在圆形里才看得清角色。
-  function resolveCardUrl(p) {
-    if (!p) return '';
-    var name = String(p).split('/').pop().replace(/.(png|jpeg)$/i, '.jpg');
-    try { return new URL(name, CARD_URL_BASE).href; }
-    catch (e) { return '../../../assets/cards/thumbs/' + name; }
+  function artUrl(p) {
+    var no = p ? String(p).split('/').pop().replace(/.(png|jpeg|jpg)$/i, '') : '';
+    if (!no) return '';
+    try { return new URL(no + '.jpg', ARTS_BASE).href; }
+    catch (e) { return '../../../assets/cards/arts/' + no + '.jpg'; }
+  }
+
+  // 「Others」扇区没有对应卡图，固定用一张不冲突的插画
+  var OTHERS_ART_NO = 'BP03-112';
+
+  function polarPt(cx, cy, r, deg) {
+    var a = deg * Math.PI / 180;
+    return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+  }
+
+  // 扇形包围盒（含圆心与弧上采样点），用于把插画「铺满」该扇区
+  function sliceBBox(cx, cy, R, a0, a1) {
+    var xs = [cx], ys = [cy];
+    var step = Math.max(1, (a1 - a0) / 24);
+    for (var a = a0; a <= a1 + 0.001; a += step) {
+      var p = polarPt(cx, cy, R, a);
+      xs.push(p[0]); ys.push(p[1]);
+    }
+    var pe = polarPt(cx, cy, R, a1);
+    xs.push(pe[0]); ys.push(pe[1]);
+    var minx = Math.min.apply(null, xs), maxx = Math.max.apply(null, xs);
+    var miny = Math.min.apply(null, ys), maxy = Math.max.apply(null, ys);
+    return { cx: (minx + maxx) / 2, cy: (miny + maxy) / 2, w: maxx - minx, h: maxy - miny };
   }
 
   function buildPieCardGraphics(data, W, H) {
@@ -6269,50 +6288,44 @@
     if (!total) return [];
 
     var cx = W * PIE_CX, cy = H * PIE_CY;
-    var Rmax = Math.min(W, H) / 2;
-    var rOuter = Rmax * PIE_OUTER;
-    var rInner = Rmax * PIE_INNER;
-    var rMid = (rOuter + rInner) / 2;
-    var gap = rOuter - rInner;              // 环宽，决定图的上限
+    var R = Math.min(W, H) / 2 * PIE_OUTER;
 
     var out = [];
-    var acc = -90;                          // ECharts 饼图从 12 点方向开始
+    var acc = -90;                          // ECharts 饼图从 12 点方向开始、顺时针
     for (var j = 0; j < data.length; j++) {
       var d = data[j];
       var v = Number(d.value) || 0;
+      if (!v) continue;
       var span = v / total * 360;
-      var share = v / total;
-      var mid = acc + span / 2;
-      var rad = mid * Math.PI / 180;
-      var x = cx + Math.cos(rad) * rMid;
-      var y = cy + Math.sin(rad) * rMid;
+      var url = d.image ? artUrl(d.image) : artUrl(OTHERS_ART_NO);
+      if (!url) { acc += span; continue; }
 
-      // 尺寸：既不能超出环宽，也要跟扇区角宽成比例，最小 22px
-      var size = Math.min(gap * 0.62, rMid * (span * Math.PI / 180) * 0.82);
-      size = Math.max(22, Math.round(size));
+      // 按该扇区的包围盒铺满（cover），略微放大避免边缘露底
+      var bb = sliceBBox(cx, cy, R, acc, acc + span);
+      var size = Math.max(bb.w, bb.h) * 1.06;
+      if (!(size > 0)) { acc += span; continue; }
+      var left = bb.cx - size / 2, top = bb.cy - size / 2;
 
-      // 太小的扇区放图会糊成一团，直接跳过
-      if (d.image && share >= 0.025 && size >= 24) {
-        out.push({
-          type: 'image',
-          left: x - size / 2,
-          top: y - size / 2,
-          style: { image: resolveCardUrl(d.image), width: size, height: size },
-          // 注意：clipPath 的坐标是相对图片自身的局部坐标系（左上角为 0,0），
-          // 不能填全局坐标——否则圆形裁剪区会落在图片外面，图片被裁成空白。
-          clipPath: { type: 'circle', shape: { cx: size / 2, cy: size / 2, r: size / 2 } },
-          z: 30,
-          silent: true
-        });
-        // 描边圈（这个用全局坐标才对，因为它是独立元素）
-        out.push({
-          type: 'circle',
-          shape: { cx: x, cy: y, r: size / 2 },
-          style: { fill: 'none', stroke: 'rgba(255,255,255,0.85)', lineWidth: 2 },
-          z: 31,
-          silent: true
-        });
-      }
+      out.push({
+        type: 'image',
+        left: left,
+        top: top,
+        style: { image: url, width: size, height: size },
+        // 扇形裁剪。两个坑（都已踩过）：
+        //   1) r0 不能为 0，否则 ECharts 内部构造报错 "e is not a constructor"
+        //   2) clipPath 是「图片元素的局部坐标系」，圆心要换算成 (cx-left, cy-top)
+        clipPath: {
+          type: 'sector',
+          shape: {
+            cx: cx - left, cy: cy - top, r0: 0.01, r: R,
+            startAngle: acc * Math.PI / 180,
+            endAngle: (acc + span) * Math.PI / 180,
+            clockwise: true
+          }
+        },
+        z: 5,
+        silent: true
+      });
       acc += span;
     }
     return out;
@@ -6321,9 +6334,8 @@
   // 把 graphic 列表整理成 eCharts 可接受的结构（去掉内部标记字段）
   function sanitizeGraphics(list) {
     return (list || []).map(function(g) {
-      if (g.type !== 'image') return g;
       return {
-        type: 'image',
+        type: g.type,
         left: g.left,
         top: g.top,
         style: g.style,
@@ -6360,20 +6372,23 @@
     chart.setOption({
       animation: false,
       tooltip: { trigger: 'item', appendToBody: true, formatter: function(p) { return p.name + '<br/>数量：' + p.value + ' 套<br/>占比：' + p.percent + '%'; } },
-      legend: { type: 'scroll', orient: 'horizontal', bottom: 0, textStyle: { color: '#8899aa', fontSize: 11 } },
+      // 图例关掉：扇区上已有标签，且实心饼用图铺满后图例的色块对不上
+      legend: { show: false },
       series: [{
         name: title,
         type: 'pie',
-        radius: ['38%', '68%'],
-        center: ['50%', '43%'],
+        // 实心饼（原来 38%~68% 的环已改为 0~60%，扇区里铺卡图）
+        radius: ['0%', (PIE_OUTER * 100) + '%'],
+        center: [(PIE_CX * 100) + '%', (PIE_CY * 100) + '%'],
         avoidLabelOverlap: true,
-        itemStyle: { borderColor: 'rgba(255,255,255,0.08)', borderWidth: 2 },
-        labelLine: { show: true, length: 14, length2: 18, lineStyle: { color: 'rgba(255,255,255,0.35)' } },
+        // 扇区本身透明，只留描边；卡图由 graphic 铺在下面
+        itemStyle: { color: 'rgba(0,0,0,0)', borderColor: 'rgba(255,255,255,0.25)', borderWidth: 2 },
+        labelLine: { show: true, length: 16, length2: 20, lineStyle: { color: 'rgba(255,255,255,0.5)' } },
         label: {
           show: true,
-          color: '#e0e0e0',
-          formatter: '{b}\n{c}套 ({d}%)',
-          fontSize: 11
+          color: '#e8eef8',
+          formatter: '{b} {c}',
+          fontSize: 12
         },
         data: currentData
       }]
