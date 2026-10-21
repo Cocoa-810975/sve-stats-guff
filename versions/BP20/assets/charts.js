@@ -6801,8 +6801,10 @@
     catch (e) { return '../../../assets/cards/arts/' + no + '.jpg'; }
   }
 
-  // 「Others」扇区没有对应卡图，固定用一张不冲突的插画
-  var OTHERS_ART_NO = 'BP03-112';
+  // 「Others（其他）」扇区没有对应卡牌，用一张自定义素材图。
+  // 源图 = ../../assets/cards/others_source.jpg，由 make_pie_arts.py 裁成 600x600 的
+  // arts/_others.jpg（cover 裁切，不变形）。换图只需替换源图后重跑该脚本。
+  var OTHERS_ART_NO = '_others';
 
   function polarPt(cx, cy, r, deg) {
     var a = deg * Math.PI / 180;
