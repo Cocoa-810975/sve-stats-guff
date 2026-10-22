@@ -101,7 +101,7 @@
       },
       {
         "name": "精灵｜猎人妖",
-        "value": 186,
+        "value": 187,
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-SL01.jpg"
       },
@@ -124,12 +124,6 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
-        "name": "精灵｜连击妖",
-        "value": 36,
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "name": "公主连结Re:Dive｜跳费PCR",
         "value": 36,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
@@ -140,6 +134,12 @@
         "value": 36,
         "link": "decktypes/decktype-e7b52e29d4c1.html",
         "image": "../../assets/cards/PR-390.jpg"
+      },
+      {
+        "name": "精灵｜连击妖",
+        "value": 34,
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "name": "梦魇｜蝙蝠梦",
@@ -220,16 +220,16 @@
         "image": "../../assets/cards/BP05-SL14.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 13,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "name": "龙族｜武斗龙",
         "value": 13,
         "link": "decktypes/decktype-c4187e008e9c.html",
         "image": "../../assets/cards/BP18-SL13.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 12,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "巫师｜机械法",
@@ -512,7 +512,7 @@
       {
         "class": "精灵",
         "category": "猎人妖",
-        "count": 186,
+        "count": 187,
         "best": "6/554",
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-SL01.jpg"
@@ -542,14 +542,6 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
-        "class": "精灵",
-        "category": "连击妖",
-        "count": 36,
-        "best": "1/56",
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "class": "公主连结Re:Dive",
         "category": "跳费PCR",
         "count": 36,
@@ -564,6 +556,14 @@
         "best": "1/32",
         "link": "decktypes/decktype-e7b52e29d4c1.html",
         "image": "../../assets/cards/PR-390.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "连击妖",
+        "count": 34,
+        "best": "1/56",
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "class": "梦魇",
@@ -1563,6 +1563,12 @@
         "image": "../../assets/cards/BP18-SL20.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 2,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "name": "主教｜护符教",
         "value": 2,
         "link": "decktypes/decktype-79c6992b28db.html",
@@ -1623,12 +1629,6 @@
         "image": "../../assets/cards/PR-233.jpg"
       },
       {
-        "name": "精灵｜连击妖",
-        "value": 1,
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "name": "梦魇｜nc梦",
         "value": 1,
         "link": "decktypes/decktype-bbc8f17f6035.html",
@@ -1639,12 +1639,6 @@
         "value": 1,
         "link": "decktypes/decktype-5d4feb130208.html",
         "image": "../../assets/cards/CP02-SP13.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 1,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "公主连结Re:Dive｜跳费PCR",
@@ -3806,7 +3800,7 @@
       },
       {
         "name": "精灵｜猎人妖",
-        "value": 27,
+        "value": 28,
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-SL01.jpg"
       },
@@ -3830,7 +3824,7 @@
       },
       {
         "name": "精灵｜连击妖",
-        "value": 8,
+        "value": 7,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
@@ -4025,7 +4019,7 @@
       {
         "class": "精灵",
         "category": "猎人妖",
-        "count": 27,
+        "count": 28,
         "best": "1/21",
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-SL01.jpg"
@@ -4057,7 +4051,7 @@
       {
         "class": "精灵",
         "category": "连击妖",
-        "count": 8,
+        "count": 7,
         "best": "2/44",
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"

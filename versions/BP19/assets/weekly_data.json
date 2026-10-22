@@ -88,16 +88,16 @@
         "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
-        "name": "精灵｜连击妖",
-        "value": 275,
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "name": "梦魇｜永火梦",
         "value": 273,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "name": "精灵｜连击妖",
+        "value": 270,
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "name": "公主连结Re:Dive｜法术PCR",
@@ -106,16 +106,16 @@
         "image": "../../assets/cards/CP04-SL03.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 154,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "name": "巫师｜机械法",
         "value": 154,
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/PR-513.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 149,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "巫师｜八狱法",
@@ -482,20 +482,20 @@
         "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
-        "class": "精灵",
-        "category": "连击妖",
-        "count": 275,
-        "best": "8/910",
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "class": "梦魇",
         "category": "永火梦",
         "count": 273,
         "best": "1/210",
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "连击妖",
+        "count": 270,
+        "best": "8/910",
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "class": "公主连结Re:Dive",
@@ -506,20 +506,20 @@
         "image": "../../assets/cards/CP04-SL03.jpg"
       },
       {
+        "class": "精灵",
+        "category": "八狱妖",
+        "count": 154,
+        "best": "1/59",
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "class": "巫师",
         "category": "机械法",
         "count": 154,
         "best": "1/48",
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/PR-513.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "八狱妖",
-        "count": 149,
-        "best": "1/59",
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "class": "巫师",
@@ -570,7 +570,7 @@
         "image": "../../assets/cards/BP16-SL03.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录240场有效赛事、2811套有排名记录的卡组，其中上位卡组2184套、冠军卡组360套。从上位职业分布看，梦魇502套（23.0%）、皇家护卫458套（21.0%）构成本范围的主要出场面，冠军侧则以梦魇81套（22.5%）、精灵74套（20.6%）表现最突出。卡组类型方面，皇家护卫「财宝皇」283套（13.0%，最好3/910）、梦魇「永火梦」209套（9.6%，最好1/210）、精灵「连击妖」206套（9.4%，最好8/910）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是公主连结Re:Dive「法术PCR」，由ナマコ使用，成绩为1/910，成绩系数0.0011。整体来看，前10%成绩卡组共有893套，占全部记录31.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录240场有效赛事、2811套有排名记录的卡组，其中上位卡组2184套、冠军卡组360套。从上位职业分布看，梦魇502套（23.0%）、皇家护卫458套（21.0%）构成本范围的主要出场面，冠军侧则以梦魇81套（22.5%）、精灵74套（20.6%）表现最突出。卡组类型方面，皇家护卫「财宝皇」283套（13.0%，最好3/910）、梦魇「永火梦」209套（9.6%，最好1/210）、精灵「连击妖」203套（9.3%，最好8/910）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是公主连结Re:Dive「法术PCR」，由ナマコ使用，成绩为1/910，成绩系数0.0011。整体来看，前10%成绩卡组共有893套，占全部记录31.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/05/15",
@@ -660,7 +660,7 @@
       },
       {
         "name": "精灵｜连击妖",
-        "value": 19,
+        "value": 16,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
@@ -695,6 +695,12 @@
         "image": "../../assets/cards/PR-513.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 9,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "name": "精灵｜宇宙妖",
         "value": 8,
         "link": "decktypes/decktype-75a3e2d0e2a4.html",
@@ -711,12 +717,6 @@
         "value": 6,
         "link": "decktypes/decktype-c4187e008e9c.html",
         "image": "../../assets/cards/BP18-SL13.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 6,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "龙族｜大哥龙",
@@ -883,7 +883,7 @@
       {
         "class": "精灵",
         "category": "连击妖",
-        "count": 19,
+        "count": 16,
         "best": "1/25",
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
@@ -930,6 +930,14 @@
       },
       {
         "class": "精灵",
+        "category": "八狱妖",
+        "count": 9,
+        "best": "4/36",
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
+        "class": "精灵",
         "category": "宇宙妖",
         "count": 8,
         "best": "1/24",
@@ -951,17 +959,9 @@
         "best": "1/13",
         "link": "decktypes/decktype-c4187e008e9c.html",
         "image": "../../assets/cards/BP18-SL13.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "八狱妖",
-        "count": 6,
-        "best": "4/36",
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/05/15-2026/05/21共收录25场有效赛事、215套有排名记录的卡组，其中上位卡组180套、冠军卡组27套。从上位职业分布看，梦魇38套（21.1%）、皇家护卫37套（20.6%）构成本范围的主要出场面，冠军侧则以公主连结Re:Dive7套（25.9%）、皇家护卫5套（18.5%）表现最突出。卡组类型方面，公主连结Re:Dive「法术PCR」28套（15.6%，最好1/31）、皇家护卫「财宝皇」24套（13.3%，最好1/28）、精灵「连击妖」17套（9.4%，最好1/25）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是巫师「机械法」，由はいぶらー使用，成绩为1/48，成绩系数0.0208。整体来看，前10%成绩卡组共有67套，占全部记录31.2%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/05/15-2026/05/21共收录25场有效赛事、215套有排名记录的卡组，其中上位卡组180套、冠军卡组27套。从上位职业分布看，梦魇38套（21.1%）、皇家护卫37套（20.6%）构成本范围的主要出场面，冠军侧则以公主连结Re:Dive7套（25.9%）、皇家护卫5套（18.5%）表现最突出。卡组类型方面，公主连结Re:Dive「法术PCR」28套（15.6%，最好1/31）、皇家护卫「财宝皇」24套（13.3%，最好1/28）、精灵「连击妖」15套（8.3%，最好1/25）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是巫师「机械法」，由はいぶらー使用，成绩为1/48，成绩系数0.0208。整体来看，前10%成绩卡组共有67套，占全部记录31.2%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/05/08",
@@ -1036,16 +1036,16 @@
         "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
-        "name": "精灵｜连击妖",
-        "value": 16,
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "name": "公主连结Re:Dive｜法术PCR",
         "value": 15,
         "link": "decktypes/decktype-deb2d8e95565.html",
         "image": "../../assets/cards/CP04-SL03.jpg"
+      },
+      {
+        "name": "精灵｜连击妖",
+        "value": 15,
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "name": "巫师｜八狱法",
@@ -1060,6 +1060,12 @@
         "image": "../../assets/cards/PR-233.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 7,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "name": "巫师｜机械法",
         "value": 7,
         "link": "decktypes/decktype-6ea288eb8275.html",
@@ -1070,12 +1076,6 @@
         "value": 6,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
         "image": "../../assets/cards/CP04-SL15.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 6,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "梦魇｜机械梦",
@@ -1202,20 +1202,20 @@
         "image": "../../assets/cards/BP19-SL05.jpg"
       },
       {
-        "class": "精灵",
-        "category": "连击妖",
-        "count": 16,
-        "best": "8/910",
-        "link": "decktypes/decktype-826de03f0f61.html",
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
         "class": "公主连结Re:Dive",
         "category": "法术PCR",
         "count": 15,
         "best": "1/910",
         "link": "decktypes/decktype-deb2d8e95565.html",
         "image": "../../assets/cards/CP04-SL03.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "连击妖",
+        "count": 15,
+        "best": "8/910",
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "class": "巫师",
@@ -1234,6 +1234,14 @@
         "image": "../../assets/cards/PR-233.jpg"
       },
       {
+        "class": "精灵",
+        "category": "八狱妖",
+        "count": 7,
+        "best": "18/910",
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
         "class": "巫师",
         "category": "机械法",
         "count": 7,
@@ -1248,14 +1256,6 @@
         "best": "1/62",
         "link": "decktypes/decktype-bfb6320cd8c6.html",
         "image": "../../assets/cards/CP04-SL15.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "八狱妖",
-        "count": 6,
-        "best": "18/910",
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "class": "梦魇",
@@ -1290,7 +1290,7 @@
         "image": "../../assets/cards/BP14-SL16.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/05/08-2026/05/14共收录9场有效赛事、124套有排名记录的卡组，其中上位卡组116套、冠军卡组9套。从上位职业分布看，皇家护卫28套（24.1%）、公主连结Re:Dive20套（17.2%）构成本范围的主要出场面，冠军侧则以公主连结Re:Dive3套（33.3%）、梦魇3套（33.3%）表现最突出。卡组类型方面，皇家护卫「财宝皇」17套（14.7%，最好3/910）、公主连结Re:Dive「法术PCR」15套（12.9%，最好1/910）、精灵「连击妖」12套（10.3%，最好8/910）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是公主连结Re:Dive「法术PCR」，由ナマコ使用，成绩为1/910，成绩系数0.0011。整体来看，前10%成绩卡组共有86套，占全部记录69.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/05/08-2026/05/14共收录9场有效赛事、124套有排名记录的卡组，其中上位卡组116套、冠军卡组9套。从上位职业分布看，皇家护卫28套（24.1%）、公主连结Re:Dive20套（17.2%）构成本范围的主要出场面，冠军侧则以公主连结Re:Dive3套（33.3%）、梦魇3套（33.3%）表现最突出。卡组类型方面，皇家护卫「财宝皇」17套（14.7%，最好3/910）、公主连结Re:Dive「法术PCR」15套（12.9%，最好1/910）、精灵「连击妖」11套（9.5%，最好8/910）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是公主连结Re:Dive「法术PCR」，由ナマコ使用，成绩为1/910，成绩系数0.0011。整体来看，前10%成绩卡组共有86套，占全部记录69.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/05/01",
@@ -3649,21 +3649,21 @@
       },
       {
         "name": "精灵｜连击妖",
-        "value": 19,
+        "value": 18,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "精灵｜八狱妖",
+        "value": 15,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "公主连结Re:Dive｜法术PCR",
         "value": 14,
         "link": "decktypes/decktype-deb2d8e95565.html",
         "image": "../../assets/cards/CP04-SL03.jpg"
-      },
-      {
-        "name": "精灵｜八狱妖",
-        "value": 14,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -3930,10 +3930,18 @@
       {
         "class": "精灵",
         "category": "连击妖",
-        "count": 19,
+        "count": 18,
         "best": "1/30",
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "八狱妖",
+        "count": 15,
+        "best": "1/26",
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "class": "公主连结Re:Dive",
@@ -3942,14 +3950,6 @@
         "best": "1/32",
         "link": "decktypes/decktype-deb2d8e95565.html",
         "image": "../../assets/cards/CP04-SL03.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "八狱妖",
-        "count": 14,
-        "best": "1/26",
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
       },
       {
         "class": "精灵",
