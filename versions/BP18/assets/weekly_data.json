@@ -370,6 +370,12 @@
         "image": "../../assets/cards/BP07-052.jpg"
       },
       {
+        "name": "赛马娘｜露比马",
+        "value": 2,
+        "link": "decktypes/decktype-4cc737096206.html",
+        "image": "../../assets/cards/ECP01-039.jpg"
+      },
+      {
         "name": "梦魇｜妖怪梦",
         "value": 2,
         "link": "decktypes/decktype-09fb70f80a6c.html",
@@ -442,12 +448,6 @@
         "image": "../../assets/cards/BP11-SL13.jpg"
       },
       {
-        "name": "赛马娘｜露比马",
-        "value": 1,
-        "link": "decktypes/decktype-4cc737096206.html",
-        "image": "../../assets/cards/ECP01-039.jpg"
-      },
-      {
         "name": "梦魇｜怨灵梦",
         "value": 1,
         "link": "decktypes/decktype-dd2be811fe92.html",
@@ -482,12 +482,6 @@
         "value": 1,
         "link": "decktypes/decktype-9db0cc1ac351.html",
         "image": "../../assets/cards/BP12-004.jpg"
-      },
-      {
-        "name": "赛马娘｜法术马",
-        "value": 1,
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
       },
       {
         "name": "龙族｜温泉龙",
@@ -2786,10 +2780,10 @@
         "image": "../../assets/cards/BP11-052.jpg"
       },
       {
-        "name": "赛马娘｜法术马",
+        "name": "赛马娘｜露比马",
         "value": 1,
-        "link": "decktypes/decktype-1ef829252684.html",
-        "image": "../../assets/cards/CP01-057.jpg"
+        "link": "decktypes/decktype-4cc737096206.html",
+        "image": "../../assets/cards/ECP01-039.jpg"
       },
       {
         "name": "梦魇｜永火梦",
