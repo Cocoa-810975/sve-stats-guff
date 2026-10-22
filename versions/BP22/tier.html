@@ -13,6 +13,14 @@ h1{font-size:30px;margin:6px 0 4px}
 .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
 .back{display:inline-block;color:#7fb3ff;text-decoration:none;font-size:13px;margin-bottom:10px}
 .back:hover{text-decoration:underline}
+/* 版本切换栏：和首页/对局矩阵保持同一套样式，
+   这样从首页点进梯度表后仍能直接换版本，不用先返回。 */
+.ver-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
+.ver-btn{display:inline-block;border:1px solid rgba(255,255,255,.18);background:#20243a;color:#e0e0e0;
+  border-radius:999px;padding:7px 18px;font-size:13px;font-weight:700;text-decoration:none;transition:.2s}
+.ver-btn:hover{transform:translateY(-1px);border-color:#e94560}
+.ver-btn.active{background:#e94560;color:#fff;border-color:#e94560;box-shadow:0 0 0 3px rgba(233,69,96,.18)}
+.ver-tip{font-size:12px;color:#6b7a8f;margin-left:4px}
 .tier-row{display:flex;gap:14px;margin-bottom:16px;align-items:stretch}
 .tier-label{flex:0 0 128px;background:var(--panel);border-radius:12px;padding:12px 10px;text-align:center;
   border-left:5px solid var(--tc);display:flex;flex-direction:column;justify-content:center;gap:2px}
@@ -46,8 +54,17 @@ h2{font-size:19px;margin:34px 0 6px}
 </head>
 <body>
 <div class="wrap">
-  <a class="back" href="shadowverse_evolve_decks.html">← 返回 BP22 报告</a>
+  <a class="back" href="../../index.html?version=BP22" target="_top">← 返回 BP22 主页</a>
   <h1>BP22 卡组梯度表</h1>
+  <div class="ver-bar">
+    <a class="ver-btn active"
+        href="#" target="_top">BP22</a><a class="ver-btn"
+        href="../BP21/tier.html" target="_top">BP21</a><a class="ver-btn"
+        href="../BP20/tier.html" target="_top">BP20</a><a class="ver-btn"
+        href="../BP19/tier.html" target="_top">BP19</a><a class="ver-btn"
+        href="../BP18/tier.html" target="_top">BP18</a>
+    <span class="ver-tip">切换版本看对应梯度表</span>
+  </div>
   <div class="sub">共 954 套有卡表的卡组 · 纳入梯度 20 种卡组类型（另有 38 种使用数不足 10 套未列入）· 数据来源 bushi-navi.com</div>
   
       <section class="tier-row tier-T0">

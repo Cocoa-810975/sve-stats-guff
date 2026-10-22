@@ -7288,7 +7288,7 @@
     setHtml('top1-type-others-list', scope.top1_type_others_html || '<span class="others-empty">无</span>');
     setHtml('popular-rows', scope.popular_rows || '<tr><td colspan="5" style="text-align:center;color:#8899aa">该范围暂无上位卡组类型数据</td></tr>');
     setHtml('class-sections', scope.class_sections || '');
-    setHtml('nav-links', (scope.nav_links || '') + '<a href="#pie-charts">饼图</a><a href="#popular">上位卡组类型</a><a href="tier.html">卡组梯度表</a>');
+    setHtml('nav-links', (scope.nav_links || '') + '<a href="#pie-charts">饼图</a><a href="#popular">上位卡组类型</a><a href="tier.html" target="_top">卡组梯度表</a>');
     try { sessionStorage.setItem('sve_scope', currentScopeKey); } catch (error) {}
     if (window.sveBindCollapsibles) window.sveBindCollapsibles();
   }

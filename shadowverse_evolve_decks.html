@@ -73,12 +73,16 @@
           <button class="version-btn" type="button" data-version="BP20" data-src="versions/BP20/shadowverse_evolve_decks.html" data-exists="1">BP20</button>
           <button class="version-btn" type="button" data-version="BP19" data-src="versions/BP19/shadowverse_evolve_decks.html" data-exists="1">BP19</button>
           <button class="version-btn" type="button" data-version="BP18" data-src="versions/BP18/shadowverse_evolve_decks.html" data-exists="1">BP18</button>
+          <!-- 梯度表是「每版本一页」且自带版本栏 + 返回首页，所以整页跳转，
+               避免和上面的版本栏重复显示两条。
+               其余几个是聚合页，用 target="report-frame" 载入下方 iframe，
+               这样上方版本栏始终可见，进去后照样能换版本。 -->
           <a class="open-link" id="tier-link" href="versions/BP22/tier.html">📊 卡组梯度表</a>
-          <a class="open-link" id="matchup-link" href="matchup.html">对局胜率矩阵</a>
-          <a class="open-link" href="major_tournaments.html">大赛卡组统计</a>
-          <a class="open-link" href="crossover.html">双职业统计</a>
-          <a class="open-link" href="rules.html">综合规则说明书</a>
-          <a class="open-link" href="classification_rules.html">卡组分类规则</a>
+          <a class="open-link" id="matchup-link" href="matchup.html?version=bp22" target="report-frame">对局胜率矩阵</a>
+          <a class="open-link" href="major_tournaments.html" target="report-frame">大赛卡组统计</a>
+          <a class="open-link" href="crossover.html" target="report-frame">双职业统计</a>
+          <a class="open-link" href="rules.html" target="report-frame">综合规则说明书</a>
+          <a class="open-link" href="classification_rules.html" target="report-frame">卡组分类规则</a>
         </div>
       </div>
     </div>
@@ -89,7 +93,7 @@
       <div class="empty-text" id="empty-state-text"></div>
       <a class="empty-link" href="#" id="empty-state-latest">查看最新版本</a>
     </div>
-    <iframe id="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP22/shadowverse_evolve_decks.html"></iframe>
+    <iframe id="report-frame" name="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP22/shadowverse_evolve_decks.html"></iframe>
   </div>
   <script>
     (function() {
@@ -237,7 +241,7 @@
         subtitle.textContent = info.text + '。';
         if (openCurrent) openCurrent.href = info.src;   // 入口已移除，仅做兼容保护
         var matchupLink = document.getElementById('matchup-link');
-        if (matchupLink) matchupLink.href = 'matchup.html?version=' + encodeURIComponent(version);
+        if (matchupLink) matchupLink.href = 'matchup.html?version=' + encodeURIComponent(version.toLowerCase());
         // 梯度表入口跟随当前选中版本切换
         var tierLink = document.getElementById('tier-link');
         if (tierLink) tierLink.href = 'versions/' + version + '/tier.html';
