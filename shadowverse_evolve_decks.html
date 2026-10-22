@@ -12,7 +12,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f0f1a; color: #e0e0e0; min-height: 100vh; overflow: hidden; }
     .version-shell { height: 100vh; display: flex; flex-direction: column; }
-    .version-bar { flex: 0 0 auto; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 55%, #0f3460 100%); border-bottom: 1px solid rgba(255,255,255,0.12); padding: 14px 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.28); z-index: 2; }
+    .version-bar { position: sticky; top: 0; flex: 0 0 auto; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 55%, #0f3460 100%); border-bottom: 1px solid rgba(255,255,255,0.12); padding: 14px 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.28); z-index: 2; }
     .version-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
     .title { display: flex; flex-direction: column; gap: 2px; }
     .title h1 { color: #fff; font-size: 20px; line-height: 1.3; }
@@ -77,7 +77,7 @@
                避免和上面的版本栏重复显示两条。
                其余几个是聚合页，用 target="report-frame" 载入下方 iframe，
                这样上方版本栏始终可见，进去后照样能换版本。 -->
-          <a class="open-link" id="tier-link" href="versions/BP22/tier.html">📊 卡组梯度表</a>
+          <a class="open-link" id="tier-link" href="versions/BP22/tier.html" target="report-frame">📊 卡组梯度表</a>
           <a class="open-link" id="matchup-link" href="matchup.html?version=bp22" target="report-frame">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="report-frame">大赛卡组统计</a>
           <a class="open-link" href="crossover.html" target="report-frame">双职业统计</a>
