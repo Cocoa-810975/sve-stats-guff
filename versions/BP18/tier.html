@@ -5,68 +5,138 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BP18 卡组梯度表｜SVE Stats Guff</title>
 <style>
-:root{--bg:#0f0f1a;--panel:#161a26;--line:#252b3b;--text:#e8eef8;--muted:#96a5b9;}
+/* 视觉规范统一对齐报告页（versions/BPxx/shadowverse_evolve_decks.html）：
+   同一套配色令牌、同样的标题块、同样的红色强调线与卡片描边。 */
+:root{
+  --bg:#0f0f1a;          /* 页面底色 */
+  --panel:#1a1a2e;       /* 卡片/面板 */
+  --panel-2:#111827;     /* 表头等更深的块 */
+  --line:#2a2a3e;        /* 分隔线 */
+  --line-soft:rgba(255,255,255,0.05);
+  --text:#e0e0e0;
+  --text-strong:#fff;
+  --muted:#8899aa;
+  --accent:#e94560;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.5}
-.wrap{max-width:1280px;margin:0 auto;padding:24px 20px 60px}
-h1{font-size:30px;margin:6px 0 4px}
-.sub{color:var(--muted);font-size:14px;margin-bottom:22px}
-.back{display:inline-block;color:#7fb3ff;text-decoration:none;font-size:13px;margin-bottom:10px}
-.back:hover{text-decoration:underline}
-/* 版本切换栏：和首页/对局矩阵保持同一套样式，
-   这样从首页点进梯度表后仍能直接换版本，不用先返回。 */
-.ver-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
-.ver-btn{display:inline-block;border:1px solid rgba(255,255,255,.18);background:#20243a;color:#e0e0e0;
-  border-radius:999px;padding:7px 18px;font-size:13px;font-weight:700;text-decoration:none;transition:.2s}
-.ver-btn:hover{transform:translateY(-1px);border-color:#e94560}
-.ver-btn.active{background:#e94560;color:#fff;border-color:#e94560;box-shadow:0 0 0 3px rgba(233,69,96,.18)}
-.ver-tip{font-size:12px;color:#6b7a8f;margin-left:4px}
-.tier-row{display:flex;gap:14px;margin-bottom:16px;align-items:stretch}
-.tier-label{flex:0 0 128px;background:var(--panel);border-radius:12px;padding:12px 10px;text-align:center;
-  border-left:5px solid var(--tc);display:flex;flex-direction:column;justify-content:center;gap:2px}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6;
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif}
+.container{max-width:1200px;margin:0 auto;padding:20px 20px 60px}
+
+/* 页面标题块：与报告页 .header 完全一致 */
+.header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+  padding:36px 30px 30px;border-radius:16px;margin-bottom:24px;text-align:center;
+  border:1px solid rgba(255,255,255,0.1)}
+.header h1{font-size:28px;color:var(--text-strong);margin:0 0 10px}
+.header .subtitle{color:var(--muted);font-size:14px}
+
+.back{display:inline-flex;align-items:center;gap:4px;color:var(--muted);text-decoration:none;
+  font-size:13px;margin-bottom:12px;transition:color .2s}
+.back:hover{color:var(--accent)}
+
+/* 版本切换：沿用报告页 .nav a 的胶囊样式 */
+.ver-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.ver-btn{display:inline-block;background:var(--panel);padding:6px 16px;border-radius:20px;
+  font-size:13px;font-weight:700;color:#ccc;text-decoration:none;
+  border:1px solid rgba(255,255,255,0.1);transition:all .2s}
+.ver-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ver-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(233,69,96,0.18);cursor:default}
+.ver-tip{font-size:12px;color:#6b7a8f;align-self:center;margin-left:4px}
+
+/* 概览数字：与报告页 .summary-grid / .summary-card 一致 */
+.summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:30px}
+.summary-card{background:var(--panel);border-radius:12px;padding:22px;text-align:center;
+  border:1px solid var(--line-soft)}
+.summary-card .number{font-size:36px;font-weight:bold;color:var(--accent)}
+.summary-card .label{font-size:13px;color:var(--muted);margin-top:5px}
+
+/* 章节区块：与报告页 .section 完全一致 */
+.section{background:var(--panel);border-radius:16px;padding:24px;margin-bottom:24px;
+  border:1px solid var(--line-soft)}
+.section h2{color:var(--text-strong);font-size:20px;margin:0 0 20px;
+  padding-bottom:10px;border-bottom:2px solid var(--accent)}
+h2.plain{color:var(--text-strong);font-size:20px;margin:0 0 20px;
+  padding-bottom:10px;border-bottom:2px solid var(--accent)}
+
+.tier-row{display:flex;gap:14px;margin-bottom:14px;align-items:stretch}
+.tier-label{flex:0 0 124px;background:var(--panel);border-radius:12px;padding:12px 10px;text-align:center;
+  border:1px solid var(--line-soft);border-left:5px solid var(--tc);
+  display:flex;flex-direction:column;justify-content:center;gap:2px}
 .tier-label b{font-size:26px;color:var(--tc);letter-spacing:.5px}
 .tier-label span{font-size:11px;color:var(--muted);line-height:1.3}
 .tier-label em{font-size:11px;color:#6b7a8f;font-style:normal;margin-top:3px}
 .tier-cards{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
-.tier-card{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);
-  border-radius:10px;padding:8px;text-decoration:none;color:inherit;transition:.15s;min-height:64px}
-.tier-card:hover{border-color:#4a6fa5;background:#1b2130;transform:translateY(-1px)}
+.tier-card{display:flex;align-items:center;gap:9px;background:var(--panel);
+  border:1px solid var(--line-soft);border-radius:12px;padding:8px;text-decoration:none;
+  color:inherit;transition:all .2s;min-height:64px}
+.tier-card:hover{border-color:var(--accent);background:#1f1f36;transform:translateY(-1px)}
 .tc-art{flex:0 0 46px;width:46px;height:46px;border-radius:50%;overflow:hidden;background:#0b0d14;
   border:1.5px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
 .tc-art img{width:100%;height:100%;object-fit:cover;display:block}
 .tc-body{flex:1;min-width:0}
-.tc-name{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-name{font-size:14px;font-weight:700;color:var(--text-strong);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
 .tc-cls{font-size:11px;color:var(--muted)}
 .tc-stats{flex:0 0 auto;text-align:right;display:flex;flex-direction:column;gap:1px}
-.tc-count{font-size:11px;color:#8fa3b8}
+.tc-count{font-size:11px;color:var(--muted)}
 .tc-wr{font-size:13px;font-weight:700}
 .up{color:#4ade80}.down{color:#f87171}
-table{width:100%;border-collapse:collapse;margin-top:26px;font-size:13px}
-th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
-th{color:var(--muted);font-weight:600;font-size:12px;background:var(--panel)}
+
+/* 表格：与报告页 .deck-table 一致 */
+.table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line-soft)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--panel-2);padding:10px 12px;text-align:left;color:var(--muted);
+  font-weight:600;font-size:12px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--panel);color:#ddd}
+tbody tr:hover td{background:rgba(255,255,255,0.03)}
+tbody tr:last-child td{border-bottom:0}
 td.num{text-align:right;font-variant-numeric:tabular-nums}
 .tier-pill{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:700;color:#0f0f1a}
-h2{font-size:19px;margin:34px 0 6px}
-.hint{color:var(--muted);font-size:12px;margin-bottom:10px}
-.gap-note{color:#8fa3b8;font-size:12px;background:rgba(255,255,255,.03);border:1px dashed #2a3346;border-radius:8px;padding:8px 12px;margin:2px 0 16px}
-@media(max-width:640px){.tier-row{flex-direction:column}.tier-label{flex:0 0 auto;flex-direction:row;gap:8px;align-items:center}.tier-label b{font-size:20px}}
+.hint{color:var(--muted);font-size:12px;margin-bottom:14px;line-height:1.7}
+.gap-note{color:var(--muted);font-size:12px;background:rgba(255,255,255,.03);
+  border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin:2px 0 14px}
+@media(max-width:768px){
+  .summary-grid{grid-template-columns:1fr}
+  .tier-row{flex-direction:column}
+  .tier-label{flex:0 0 auto;flex-direction:row;gap:8px;align-items:center}
+  .tier-label b{font-size:20px}
+  .header{padding:28px 18px 24px}
+  .container{padding:14px 12px 40px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
   <a class="back" href="../../index.html?version=BP18" target="_top">← 返回 BP18 主页</a>
-  <h1>BP18 卡组梯度表</h1>
-  <div class="ver-bar">
-    <a class="ver-btn"
-        href="../BP22/tier.html" target="_top">BP22</a><a class="ver-btn"
-        href="../BP21/tier.html" target="_top">BP21</a><a class="ver-btn"
-        href="../BP20/tier.html" target="_top">BP20</a><a class="ver-btn"
-        href="../BP19/tier.html" target="_top">BP19</a><a class="ver-btn active"
-        href="#" target="_top">BP18</a>
-    <span class="ver-tip">切换版本看对应梯度表</span>
+  <div class="header">
+    <h1>BP18 卡组梯度表</h1>
+    <div class="subtitle">数据来源 bushi-navi.com · decklog</div>
+    <div class="ver-bar">
+      <a class="ver-btn"
+          href="../BP22/tier.html" target="_top">BP22</a><a class="ver-btn"
+          href="../BP21/tier.html" target="_top">BP21</a><a class="ver-btn"
+          href="../BP20/tier.html" target="_top">BP20</a><a class="ver-btn"
+          href="../BP19/tier.html" target="_top">BP19</a><a class="ver-btn active"
+          href="#" target="_top">BP18</a>
+      <span class="ver-tip">切换版本看对应梯度表</span>
+    </div>
   </div>
-  <div class="sub">共 2967 套有卡表的卡组 · 纳入梯度 29 种卡组类型（另有 42 种使用数不足 10 套未列入）· 数据来源 bushi-navi.com</div>
-  
+
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="number">29</div>
+      <div class="label">纳入梯度的卡组类型（使用数 ≥ 10 套）</div>
+    </div>
+    <div class="summary-card">
+      <div class="number">2967</div>
+      <div class="label">有卡表的卡组总数（另有 42 种类型使用数不足未列入）</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>梯度分层</h2>
+    
       <section class="tier-row tier-T0">
         <div class="tier-label" style="--tc:#e94560">
           <b>T0</b>
@@ -376,17 +446,21 @@ h2{font-size:19px;margin:34px 0 6px}
           <span class="tc-wr down">7.7%</span>
         </div></a></div>
       </section>
-  
-  <h2>综合排名（前 20）</h2>
-  <div class="hint">综合分 = <b>使用数 30%</b> + <b>冠军数 30%</b> + <b>淘汰赛胜率 40%</b>（三项各归一到 0~100 后加权）；
-    梯度按「该类型得分 ÷ 本弹最高分」的比例划分：T0 ≥80%、T1 ≥62%、T2 ≥48%、T3 ≥35%、T4 ≥20%，其余为 T5。
-    使用数少于 10 套的类型不纳入梯度表（本弹另有 42 种因此未列出）。</div>
-  <table>
-    <thead><tr>
-      <th>#</th><th>梯度</th><th>卡组类型</th><th class="num">使用数</th>
-      <th class="num">淘汰赛胜率</th><th class="num">占比</th><th class="num">冠军</th><th class="num">综合分</th>
-    </tr></thead>
-    <tbody>
+    
+  </div>
+
+  <div class="section">
+    <h2>综合排名（前 20）</h2>
+    <div class="hint">综合分 = <b>使用数 30%</b> + <b>冠军数 30%</b> + <b>淘汰赛胜率 40%</b>（三项各归一到 0~100 后加权）；
+      梯度按「该类型得分 ÷ 本弹最高分」的比例划分：T0 ≥80%、T1 ≥62%、T2 ≥48%、T3 ≥35%、T4 ≥20%，其余为 T5。
+      使用数少于 10 套的类型不纳入梯度表（本弹另有 42 种因此未列出）。</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>#</th><th>梯度</th><th>卡组类型</th><th class="num">使用数</th>
+          <th class="num">淘汰赛胜率</th><th class="num">占比</th><th class="num">冠军</th><th class="num">综合分</th>
+        </tr></thead>
+        <tbody>
     <tr>
       <td class="num">1</td>
       <td><span class="tier-pill" style="background:#e94560">T0</span></td>
@@ -587,7 +661,9 @@ h2{font-size:19px;margin:34px 0 6px}
       <td class="num">2</td>
       <td class="num">18.8</td>
     </tr></tbody>
-  </table>
+      </table>
+    </div>
+  </div>
 </div>
 </body>
 </html>
