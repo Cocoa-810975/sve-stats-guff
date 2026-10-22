@@ -30,19 +30,8 @@ body{margin:0;background:var(--bg);color:var(--text);line-height:1.6;
 .header h1{font-size:28px;color:var(--text-strong);margin:0 0 10px}
 .header .subtitle{color:var(--muted);font-size:14px}
 
-.back{display:inline-flex;align-items:center;gap:4px;color:var(--muted);text-decoration:none;
-  font-size:13px;margin-bottom:12px;transition:color .2s}
-.back:hover{color:var(--accent)}
 
 /* 版本切换：沿用报告页 .nav a 的胶囊样式 */
-.ver-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}
-.ver-btn{display:inline-block;background:var(--panel);padding:6px 16px;border-radius:20px;
-  font-size:13px;font-weight:700;color:#ccc;text-decoration:none;
-  border:1px solid rgba(255,255,255,0.1);transition:all .2s}
-.ver-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-.ver-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);
-  box-shadow:0 0 0 3px rgba(233,69,96,0.18);cursor:default}
-.ver-tip{font-size:12px;color:#6b7a8f;align-self:center;margin-left:4px}
 
 /* 概览数字：与报告页 .summary-grid / .summary-card 一致 */
 .summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:30px}
@@ -108,19 +97,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 </head>
 <body>
 <div class="container">
-  <a class="back" href="../../index.html?version=BP18" target="_top">← 返回 BP18 主页</a>
   <div class="header">
     <h1>BP18 卡组梯度表</h1>
     <div class="subtitle">数据来源 bushi-navi.com · decklog</div>
-    <div class="ver-bar">
-      <a class="ver-btn"
-          href="../BP22/tier.html" target="_top">BP22</a><a class="ver-btn"
-          href="../BP21/tier.html" target="_top">BP21</a><a class="ver-btn"
-          href="../BP20/tier.html" target="_top">BP20</a><a class="ver-btn"
-          href="../BP19/tier.html" target="_top">BP19</a><a class="ver-btn active"
-          href="#" target="_top">BP18</a>
-      <span class="ver-tip">切换版本看对应梯度表</span>
-    </div>
   </div>
 
   <div class="summary-grid">
