@@ -6325,10 +6325,10 @@
       ART_STATE[url] = 'fail';
       if (onSettle) onSettle();
     };
-    // 超时保护：15 秒还没动静就当作失败，用兜底色先把饼画完整
+    // 超时保护：15 秒还没到就先把兜底色画上（饼看起来是完整的），
+    // 但**不标记失败** —— 图片可能只是慢，迟到的 onload 仍会把它升级成真图。
     setTimeout(function() {
       if (ART_STATE[url] === 'loading') {
-        ART_STATE[url] = 'fail';
         if (onSettle) onSettle();
       }
     }, 15000);
@@ -6377,7 +6377,7 @@
         clockwise: true
       };
 
-      if (artState(url) === 'fail') {
+      if (artState(url) !== 'ok') {
         // 图片确定加载失败：用纯色扇形兜底，至少形状和标签是对的
         out.push({
           type: 'sector',
