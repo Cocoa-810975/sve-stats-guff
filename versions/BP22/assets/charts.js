@@ -3481,7 +3481,13 @@
     function refreshGraphics() {
       var d = readSeriesData() || [];
       var g = sanitizeGraphics(buildPieCardGraphics(d, chart.getWidth(), chart.getHeight()));
-      chart.setOption({ graphic: g });
+      // 必须 replaceMerge：默认 merge 模式下，graphic 里图片 URL 没变时
+      // ECharts 认为没有变化、不会重新渲染，图片就永远补不上去（踩过）。
+      try {
+        chart.setOption({ graphic: g }, { replaceMerge: ['graphic'], lazyUpdate: false });
+      } catch (e) {
+        chart.setOption({ graphic: g });
+      }
     }
 
     // 预加载该饼图用到的所有卡图，任意一张加载完就合并重绘一次；
