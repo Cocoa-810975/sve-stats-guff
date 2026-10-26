@@ -7118,6 +7118,47 @@
     return { cx: (minx + maxx) / 2, cy: (miny + maxy) / 2, w: maxx - minx, h: maxy - miny };
   }
 
+  // ── 饼图卡图预加载 ────────────────────────────────────────────
+  // 踩过的坑（2026-10-26）：graphic 里塞 image 后，ECharts 是异步去加载的，
+  // 加载完**不会自动重绘**。网络慢时（国内访问 GitHub Pages 常见 20~30 秒），
+  // 扇区早就画完了、图还没到，于是整片饼图是空的，只有 resize 才会补上。
+  // 这里的做法：
+  //   1) 先把所有要用的图预加载一遍
+  //   2) 每加载完一张就合并触发一次重绘（防抖），加载完就不用再重绘了
+  //   3) 真加载失败的记进 ART_FAILED，之后该扇区改用纯色扇形兜底，不再是空洞
+  var ART_STATE = {};   // url -> 'loading' | 'ok' | 'fail'
+
+  function artState(url) { return ART_STATE[url] || ''; }
+
+  function preloadArt(url, onSettle) {
+    if (!url || ART_STATE[url]) { if (onSettle) onSettle(); return; }
+    ART_STATE[url] = 'loading';
+    var img = new Image();
+    img.onload = function() {
+      ART_STATE[url] = (img.naturalWidth > 0) ? 'ok' : 'fail';
+      if (onSettle) onSettle();
+    };
+    img.onerror = function() {
+      ART_STATE[url] = 'fail';
+      if (onSettle) onSettle();
+    };
+    // 超时保护：15 秒还没动静就当作失败，用兜底色先把饼画完整
+    setTimeout(function() {
+      if (ART_STATE[url] === 'loading') {
+        ART_STATE[url] = 'fail';
+        if (onSettle) onSettle();
+      }
+    }, 15000);
+    img.src = url;
+  }
+
+  // 兜底色板：图没加载出来时的占位扇形，避免看起来像「缺图」
+  var PIE_FALLBACK_COLORS = [
+    '#2f4858', '#33658a', '#86bbd8', '#758e4f', '#f6ae2d',
+    '#f26419', '#b13c53', '#6a4c93', '#1982c4', '#4a7c59',
+    '#8d6a9f', '#c14953', '#357266', '#7b6d8d', '#a3b565'
+  ];
+
   function buildPieCardGraphics(data, W, H) {
     if (!W || !H || !data || !data.length) return [];
     var total = 0;
@@ -7143,23 +7184,40 @@
       if (!(size > 0)) { acc += span; continue; }
       var left = bb.cx - size / 2, top = bb.cy - size / 2;
 
+      var sectorShape = {
+        // 扇形裁剪。两个坑（都已踩过）：
+        //   1) r0 不能为 0，否则 ECharts 内部构造报错 "e is not a constructor"
+        //   2) clipPath 是「图片元素的局部坐标系」，圆心要换算成 (cx-left, cy-top)
+        cx: cx - left, cy: cy - top, r0: 0.01, r: R,
+        startAngle: acc * Math.PI / 180,
+        endAngle: (acc + span) * Math.PI / 180,
+        clockwise: true
+      };
+
+      if (artState(url) === 'fail') {
+        // 图片确定加载失败：用纯色扇形兜底，至少形状和标签是对的
+        out.push({
+          type: 'sector',
+          shape: {
+            cx: cx, cy: cy, r0: 0.01, r: R,
+            startAngle: acc * Math.PI / 180,
+            endAngle: (acc + span) * Math.PI / 180,
+            clockwise: true
+          },
+          style: { fill: PIE_FALLBACK_COLORS[j % PIE_FALLBACK_COLORS.length] },
+          z: 5,
+          silent: true
+        });
+        acc += span;
+        continue;
+      }
+
       out.push({
         type: 'image',
         left: left,
         top: top,
         style: { image: url, width: size, height: size },
-        // 扇形裁剪。两个坑（都已踩过）：
-        //   1) r0 不能为 0，否则 ECharts 内部构造报错 "e is not a constructor"
-        //   2) clipPath 是「图片元素的局部坐标系」，圆心要换算成 (cx-left, cy-top)
-        clipPath: {
-          type: 'sector',
-          shape: {
-            cx: cx - left, cy: cy - top, r0: 0.01, r: R,
-            startAngle: acc * Math.PI / 180,
-            endAngle: (acc + span) * Math.PI / 180,
-            clockwise: true
-          }
-        },
+        clipPath: { type: 'sector', shape: sectorShape },
         z: 5,
         silent: true
       });
@@ -7171,7 +7229,7 @@
   // 把 graphic 列表整理成 eCharts 可接受的结构（去掉内部标记字段）
   function sanitizeGraphics(list) {
     return (list || []).map(function(g) {
-      return {
+      var o = {
         type: g.type,
         left: g.left,
         top: g.top,
@@ -7180,6 +7238,9 @@
         z: g.z,
         silent: g.silent
       };
+      // 纯色兜底扇形用的是 sector 图元，它的几何在 shape 上
+      if (g.shape) o.shape = g.shape;
+      return o;
     });
   }
 
@@ -7204,6 +7265,36 @@
       var d = readSeriesData() || [];
       var g = sanitizeGraphics(buildPieCardGraphics(d, chart.getWidth(), chart.getHeight()));
       chart.setOption({ graphic: g });
+    }
+
+    // 预加载该饼图用到的所有卡图，任意一张加载完就合并重绘一次；
+    // 全部落定后再补一次，确保图片能落到扇区上（否则慢网下会一直是空的）。
+    var redrawTimer = null;
+    function scheduleRedraw() {
+      if (redrawTimer) return;
+      redrawTimer = setTimeout(function() {
+        redrawTimer = null;
+        try { refreshGraphics(); } catch (e) {}
+      }, 120);
+    }
+    function preloadPieArts() {
+      var d = readSeriesData() || [];
+      var urls = [];
+      for (var i = 0; i < d.length; i++) {
+        var u = d[i] && d[i].image ? artUrl(d[i].image) : artUrl(OTHERS_ART_NO);
+        if (u) urls.push(u);
+      }
+      var remaining = 0;
+      urls.forEach(function(u) {
+        if (artState(u)) return;             // 已加载/失败过，不重复
+        remaining++;
+        preloadArt(u, function() {
+          remaining--;
+          scheduleRedraw();                  // 每张到货都重绘一次
+        });
+      });
+      // 已经全部就绪：直接重绘一次，把「迟到」的图补上
+      if (!remaining) scheduleRedraw();
     }
 
     chart.setOption({
@@ -7231,11 +7322,14 @@
       }]
     });
     refreshGraphics();
+    // 立刻预热卡图：加载完一张就重绘一次，避免慢网下扇区空白
+    preloadPieArts();
     // 供 updateChart 在切换统计范围后重建卡图
     chart.__pieData = currentData;
     chart.__refreshPieCards = function() {
       currentData = chart.__pieData || currentData;
       refreshGraphics();
+      preloadPieArts();
     };
     chart.on('click', function(params) {
       if (params.data && params.data.link) {
