@@ -6397,26 +6397,56 @@
 
   function artState(url) { return ART_STATE[url] || ''; }
 
+  // 单个 URL 的加载：失败/超时都重试，最多 3 次。
+  // 为什么要重试：GitHub Pages 的 CDN 在部分网络下会随机把单个请求挂住
+  // 20~40 秒甚至直接 ERR_HTTP2_PROTOCOL_ERROR（实测 BP22 的 59 张图里 26 张这样）。
+  // 重试时加 cache-busting 参数，避免命中那条坏连接留下的缓存。
   function preloadArt(url, onSettle) {
     if (!url || ART_STATE[url]) { if (onSettle) onSettle(); return; }
     ART_STATE[url] = 'loading';
-    var img = new Image();
-    img.onload = function() {
-      ART_STATE[url] = (img.naturalWidth > 0) ? 'ok' : 'fail';
-      if (onSettle) onSettle();
-    };
-    img.onerror = function() {
-      ART_STATE[url] = 'fail';
-      if (onSettle) onSettle();
-    };
-    // 超时保护：15 秒还没到就先把兜底色画上（饼看起来是完整的），
-    // 但**不标记失败** —— 图片可能只是慢，迟到的 onload 仍会把它升级成真图。
-    setTimeout(function() {
-      if (ART_STATE[url] === 'loading') {
+
+    var attempt = 0;
+    var MAX = 3;
+
+    function tryLoad() {
+      attempt++;
+      var bust = attempt === 1 ? url : (url + (url.indexOf('?') >= 0 ? '&' : '?') + 'retry=' + attempt);
+      var img = new Image();
+      var settled = false;
+
+      var timer = setTimeout(function() {
+        if (settled) return;
+        settled = true;
+        retryOrGiveUp();
+      }, 12000);
+
+      img.onload = function() {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        ART_STATE[url] = (img.naturalWidth > 0) ? 'ok' : 'fail';
+        if (onSettle) onSettle();
+      };
+      img.onerror = function() {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        retryOrGiveUp();
+      };
+
+      function retryOrGiveUp() {
+        if (attempt < MAX) {
+          setTimeout(tryLoad, 500 * attempt);   // 退避后重试
+          return;
+        }
+        ART_STATE[url] = 'fail';
         if (onSettle) onSettle();
       }
-    }, 15000);
-    img.src = url;
+
+      img.src = bust;
+    }
+
+    tryLoad();
   }
 
   // 兜底色板：图没加载出来时的占位扇形，避免看起来像「缺图」
@@ -6461,9 +6491,9 @@
         clockwise: true
       };
 
-      // 只有在「确认加载失败」时才用兜底色；其它情况一律先放 image 元素，
-      // 浏览器会在图片到达后自行绘制，配合上面的 replaceMerge 重绘即可补上。
-      if (artState(url) === 'fail') {
+      // 只要图还没确认加载好，就先用兜底色把扇区填满，
+      // 这样无论网络多慢，饼图看起来都是完整的；图到货后重绘会替换成真图。
+      if (artState(url) !== 'ok') {
         // 图片确定加载失败：用纯色扇形兜底，至少形状和标签是对的
         out.push({
           type: 'sector',
