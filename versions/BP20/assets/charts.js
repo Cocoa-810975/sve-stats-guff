@@ -6890,7 +6890,9 @@
         clockwise: true
       };
 
-      if (artState(url) !== 'ok') {
+      // 只有在「确认加载失败」时才用兜底色；其它情况一律先放 image 元素，
+      // 浏览器会在图片到达后自行绘制，配合上面的 replaceMerge 重绘即可补上。
+      if (artState(url) === 'fail') {
         // 图片确定加载失败：用纯色扇形兜底，至少形状和标签是对的
         out.push({
           type: 'sector',
