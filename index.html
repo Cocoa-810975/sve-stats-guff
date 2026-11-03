@@ -233,6 +233,36 @@
           });
       }
 
+      // 当前 iframe 真正显示的地址。
+      // 注意不能用 getAttribute('src')：点击链接在 iframe 内导航后，属性和实际地址会脱节。
+      function currentFrameUrl() {
+        try {
+          var u = frame.contentWindow && frame.contentWindow.location && frame.contentWindow.location.href;
+          if (u && u !== 'about:blank') return u;
+        } catch (error) {}
+        return frame.getAttribute('src') || '';
+      }
+
+      // 顶栏换版本时，若当前停在某个子页面（胜率矩阵 / 梯度表），
+      // 就换成新版本的同一个子页面，而不是弹回主报告。
+      // 这段在模板字符串里，不能用正则（反斜杠会被吃掉），全部用 indexOf 判断。
+      function nextSrcFor(version, currentUrl) {
+        var u = String(currentUrl || '');
+        var lo = version.toLowerCase();
+        if (u.indexOf('matchup.html') >= 0) {
+          return 'matchup.html?version=' + encodeURIComponent(lo);
+        }
+        if (u.indexOf('tier.html') >= 0) {
+          return 'versions/' + version + '/tier.html';
+        }
+        if (u.indexOf('major_tournaments.html') >= 0
+            || u.indexOf('crossover.html') >= 0
+            || u.indexOf('rules.html') >= 0) {
+          return frame.getAttribute('src');
+        }
+        return versions[version].src;
+      }
+
       function setVersion(version) {
         var info = versions[version] || versions['BP22'];
         buttons.forEach(function(button) {
@@ -256,9 +286,10 @@
           return;
         }
         hideEmpty();
-        if (frame.getAttribute('src') !== info.src) {
+        var nextSrc = nextSrcFor(version, currentFrameUrl());
+        if (frame.getAttribute('src') !== nextSrc) {
           showLoading();
-          frame.src = info.src;
+          frame.src = nextSrc;
         } else if (frame.style.display === 'none') {
           frame.style.display = '';
         }
