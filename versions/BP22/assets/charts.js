@@ -3,14 +3,14 @@
   {
     "key": "total",
     "label": "总数据",
-    "event_count": 82,
-    "deck_count": 704,
-    "top8_count": 704,
-    "top1_count": 82,
+    "event_count": 144,
+    "deck_count": 995,
+    "top8_count": 995,
+    "top1_count": 155,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 182,
+        "value": 250,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -18,7 +18,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 139,
+        "value": 195,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -26,7 +26,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 121,
+        "value": 166,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -34,7 +34,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 92,
+        "value": 140,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -42,7 +42,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 69,
+        "value": 95,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -50,7 +50,7 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 61,
+        "value": 84,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -58,7 +58,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 30,
+        "value": 49,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -66,163 +66,171 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 10,
+        "value": 15,
         "itemStyle": {
           "color": "#e91e63"
         },
         "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 148,
+        "value": 208,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 132,
+        "value": 179,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 55,
+        "value": 78,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 40,
+        "value": 64,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 36,
+        "value": 45,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
+        "name": "赛马娘｜横马",
+        "value": 42,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
         "name": "巫师｜二妹法",
-        "value": 30,
+        "value": 40,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "name": "皇家护卫｜金币皇",
-        "value": 29,
+        "value": 35,
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
-        "name": "赛马娘｜横马",
-        "value": 26,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "精灵｜妖精妖",
-        "value": 23,
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
-      },
-      {
         "name": "巫师｜八狱法",
-        "value": 22,
+        "value": 33,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "精灵｜妖精妖",
+        "value": 30,
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
         "name": "巫师｜消失法",
-        "value": 21,
+        "value": 29,
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
       },
       {
         "name": "梦魇｜2c梦",
-        "value": 20,
+        "value": 26,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
       },
       {
-        "name": "精灵｜人偶妖",
-        "value": 16,
-        "link": "decktypes/decktype-4347111b0e67.html",
-        "image": "../../assets/cards/BP16-SL03.jpg"
-      },
-      {
         "name": "梦魇｜永火梦",
-        "value": 16,
+        "value": 23,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
+        "name": "精灵｜人偶妖",
+        "value": 19,
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
         "name": "精灵｜连击妖",
-        "value": 10,
+        "value": 14,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "name": "巫师｜星星法",
-        "value": 10,
+        "value": 13,
         "link": "decktypes/decktype-87a84038db1f.html",
         "image": "../../assets/cards/BP11-SL07.jpg"
       },
       {
-        "name": "主教｜控教",
-        "value": 7,
-        "link": "decktypes/decktype-da0c322184a8.html",
-        "image": "../../assets/cards/BP15-SL24.jpg"
-      },
-      {
-        "name": "公主连结Re:Dive｜法术PCR",
-        "value": 6,
-        "link": "decktypes/decktype-deb2d8e95565.html",
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      },
-      {
         "name": "梦魇｜nc梦",
-        "value": 5,
+        "value": 9,
         "link": "decktypes/decktype-bbc8f17f6035.html",
         "image": "../../assets/cards/PR-399.jpg"
       },
       {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 9,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "主教｜控教",
+        "value": 9,
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
+      },
+      {
         "name": "龙族｜大哥龙",
-        "value": 5,
+        "value": 8,
         "link": "decktypes/decktype-cd6d71f47cfb.html",
         "image": "../../assets/cards/BP16-SL15.jpg"
       },
       {
-        "name": "公主连结Re:Dive｜跳费PCR",
-        "value": 4,
-        "link": "decktypes/decktype-bfb6320cd8c6.html",
-        "image": "../../assets/cards/CP04-SL15.jpg"
-      },
-      {
         "name": "精灵｜猎人妖",
-        "value": 4,
+        "value": 7,
         "link": "decktypes/decktype-44ce1ca73386.html",
         "image": "../../assets/cards/BP20-SL01.jpg"
       },
       {
+        "name": "公主连结Re:Dive｜跳费PCR",
+        "value": 6,
+        "link": "decktypes/decktype-bfb6320cd8c6.html",
+        "image": "../../assets/cards/CP04-SL15.jpg"
+      },
+      {
+        "name": "赛马娘｜loop马",
+        "value": 6,
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-SP03.jpg"
+      },
+      {
         "name": "梦魇｜机械梦",
-        "value": 4,
+        "value": 6,
         "link": "decktypes/decktype-42a5c2f5e134.html",
         "image": "../../assets/cards/BP07-SL13.jpg"
       },
       {
         "name": "梦魇｜骰子梦",
-        "value": 4,
+        "value": 5,
         "link": "decktypes/decktype-96191bb3b6d4.html",
         "image": "../../assets/cards/BP21-SL19.jpg"
-      },
-      {
-        "name": "赛马娘｜loop马",
-        "value": 4,
-        "link": "decktypes/decktype-7358073c5024.html",
-        "image": "../../assets/cards/CP01-SP03.jpg"
       },
       {
         "name": "皇家护卫｜天使皇",
@@ -237,16 +245,52 @@
         "image": "../../assets/cards/PR-415.jpg"
       },
       {
+        "name": "梦魇｜八狱梦",
+        "value": 3,
+        "link": "decktypes/decktype-7a481475a6b5.html",
+        "image": "../../assets/cards/BP19-080.jpg"
+      },
+      {
+        "name": "精灵｜八狱妖",
+        "value": 3,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
+        "name": "精灵｜哥布林妖",
+        "value": 3,
+        "link": "decktypes/decktype-786184f4fedc.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "巫师｜土法",
+        "value": 3,
+        "link": "decktypes/decktype-f4843d4577ae.html",
+        "image": "../../assets/cards/BP09-U03.jpg"
+      },
+      {
+        "name": "精灵｜死噬妖",
+        "value": 3,
+        "link": "decktypes/decktype-e7515dc1071b.html",
+        "image": "../../assets/cards/BP22-SL02.jpg"
+      },
+      {
+        "name": "龙族｜海洋龙",
+        "value": 3,
+        "link": "decktypes/decktype-200bb41cd994.html",
+        "image": "../../assets/cards/BP17-SL15.jpg"
+      },
+      {
         "name": "主教｜纹章教",
         "value": 2,
         "link": "decktypes/decktype-c068a8ef6610.html",
         "image": "../../assets/cards/BP20-093.jpg"
       },
       {
-        "name": "精灵｜八狱妖",
+        "name": "梦魇｜真红梦",
         "value": 2,
-        "link": "decktypes/decktype-25097831eeb5.html",
-        "image": "../../assets/cards/BP19-005.jpg"
+        "link": "decktypes/decktype-747237d91606.html",
+        "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
         "name": "主教｜护符教",
@@ -261,10 +305,16 @@
         "image": "../../assets/cards/BP21-SL16.jpg"
       },
       {
-        "name": "精灵｜死噬妖",
+        "name": "精灵｜宇宙妖",
         "value": 2,
-        "link": "decktypes/decktype-e7515dc1071b.html",
-        "image": "../../assets/cards/BP22-SL02.jpg"
+        "link": "decktypes/decktype-75a3e2d0e2a4.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
+        "name": "精灵｜兽妖",
+        "value": 2,
+        "link": "decktypes/decktype-c2ac43fe870c.html",
+        "image": "../../assets/cards/BP21-001.jpg"
       },
       {
         "name": "巫师｜机械法",
@@ -273,10 +323,16 @@
         "image": "../../assets/cards/BP17-041.jpg"
       },
       {
-        "name": "梦魇｜八狱梦",
+        "name": "偶像大师｜cool",
         "value": 1,
-        "link": "decktypes/decktype-7a481475a6b5.html",
-        "image": "../../assets/cards/BP19-080.jpg"
+        "link": "decktypes/decktype-0fe79a39fa2e.html",
+        "image": "../../assets/cards/CSD02b-001.jpg"
+      },
+      {
+        "name": "皇家护卫｜财宝皇",
+        "value": 1,
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
       },
       {
         "name": "皇家护卫｜哥布林皇",
@@ -285,10 +341,10 @@
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
-        "name": "精灵｜宇宙妖",
+        "name": "巫师｜魔法使法",
         "value": 1,
-        "link": "decktypes/decktype-75a3e2d0e2a4.html",
-        "image": "../../assets/cards/BP19-SL26.jpg"
+        "link": "decktypes/decktype-f2cf81b92eda.html",
+        "image": "../../assets/cards/BP14-U03.jpg"
       },
       {
         "name": "皇家护卫｜铺场皇",
@@ -297,10 +353,40 @@
         "image": "../../assets/cards/BP17-022.jpg"
       },
       {
+        "name": "主教｜黄金船教",
+        "value": 1,
+        "link": "decktypes/decktype-07544eb64d36.html",
+        "image": "../../assets/cards/CP01-068.jpg"
+      },
+      {
+        "name": "赛马娘｜法术马",
+        "value": 1,
+        "link": "decktypes/decktype-1ef829252684.html",
+        "image": "../../assets/cards/CP01-057.jpg"
+      },
+      {
+        "name": "龙族｜学院龙",
+        "value": 1,
+        "link": "decktypes/decktype-246e45fe1891.html",
+        "image": "../../assets/cards/BP21-057.jpg"
+      },
+      {
+        "name": "皇家护卫｜盗贼皇",
+        "value": 1,
+        "link": "decktypes/decktype-4aeba2c734d7.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
+      },
+      {
         "name": "梦魇｜蝙蝠梦",
         "value": 1,
         "link": "decktypes/decktype-522ba9eb9548.html",
         "image": "../../assets/cards/BP18-SL20.jpg"
+      },
+      {
+        "name": "龙族｜荒野龙",
+        "value": 1,
+        "link": "decktypes/decktype-7ea4d7128729.html",
+        "image": "../../assets/cards/BP11-052.jpg"
       },
       {
         "name": "梦魇｜削手梦",
@@ -309,29 +395,23 @@
         "image": "../../assets/cards/BP05-070.jpg"
       },
       {
-        "name": "精灵｜哥布林妖",
+        "name": "龙族｜快攻龙",
         "value": 1,
-        "link": "decktypes/decktype-786184f4fedc.html",
-        "image": "../../assets/cards/PR-310.jpg"
+        "link": "decktypes/decktype-f50f99e7f0df.html",
+        "image": "../../assets/cards/ECP01-035.jpg"
       },
       {
         "name": "精灵｜自然妖",
         "value": 1,
         "link": "decktypes/decktype-941c1ca0a7a2.html",
         "image": "../../assets/cards/BP07-001.jpg"
-      },
-      {
-        "name": "精灵｜兽妖",
-        "value": 1,
-        "link": "decktypes/decktype-c2ac43fe870c.html",
-        "image": "../../assets/cards/BP21-001.jpg"
       }
     ],
     "top_types": [
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 148,
+        "count": 208,
         "best": "1/556",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -339,7 +419,7 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 132,
+        "count": 179,
         "best": "5/556",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
@@ -347,7 +427,7 @@
       {
         "class": "主教",
         "category": "守护教",
-        "count": 55,
+        "count": 78,
         "best": "7/556",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -355,7 +435,7 @@
       {
         "class": "梦魇",
         "category": "哥布林梦",
-        "count": 40,
+        "count": 64,
         "best": "4/556",
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
@@ -363,15 +443,23 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 36,
+        "count": 45,
         "best": "8/556",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
+        "class": "赛马娘",
+        "category": "横马",
+        "count": 42,
+        "best": "1/39",
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
         "class": "巫师",
         "category": "二妹法",
-        "count": 30,
+        "count": 40,
         "best": "10/556",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
@@ -379,39 +467,31 @@
       {
         "class": "皇家护卫",
         "category": "金币皇",
-        "count": 29,
+        "count": 35,
         "best": "13/556",
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
-        "class": "赛马娘",
-        "category": "横马",
-        "count": 26,
-        "best": "1/39",
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 33,
+        "best": "3/556",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "class": "精灵",
         "category": "妖精妖",
-        "count": 23,
+        "count": 30,
         "best": "11/556",
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
         "class": "巫师",
-        "category": "八狱法",
-        "count": 22,
-        "best": "3/556",
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
-        "class": "巫师",
         "category": "消失法",
-        "count": 21,
+        "count": 29,
         "best": "1/28",
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
@@ -419,25 +499,25 @@
       {
         "class": "梦魇",
         "category": "2c梦",
-        "count": 20,
+        "count": 26,
         "best": "1/26",
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录82场有效赛事、704套有排名记录的卡组，其中上位卡组704套、冠军卡组82套。从上位职业分布看，皇家护卫182套（25.9%）、龙族139套（19.7%）构成本范围的主要出场面，冠军侧则以皇家护卫26套（31.7%）、巫师13套（15.9%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」148套（21.0%，最好1/556）、龙族「五妹龙」132套（18.8%，最好5/556）、主教「守护教」55套（7.8%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有331套，占全部记录47.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录144场有效赛事、995套有排名记录的卡组，其中上位卡组995套、冠军卡组155套。从上位职业分布看，皇家护卫250套（25.1%）、龙族195套（19.6%）构成本范围的主要出场面，冠军侧则以皇家护卫44套（28.4%）、龙族26套（16.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」208套（20.9%，最好1/556）、龙族「五妹龙」179套（18.0%，最好5/556）、主教「守护教」78套（7.8%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有448套，占全部记录45.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/30",
     "label": "2026/10/30-2026/11/05",
-    "event_count": 14,
-    "deck_count": 112,
-    "top8_count": 112,
-    "top1_count": 14,
+    "event_count": 28,
+    "deck_count": 176,
+    "top8_count": 176,
+    "top1_count": 31,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 35,
+        "value": 52,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -445,7 +525,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 28,
+        "value": 41,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -453,7 +533,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 26,
+        "value": 39,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -461,7 +541,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 11,
+        "value": 23,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -469,7 +549,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 7,
+        "value": 9,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -477,11 +557,19 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 4,
+        "value": 8,
         "itemStyle": {
           "color": "#27ae60"
         },
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 2,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "🏇 赛马娘",
@@ -490,38 +578,58 @@
           "color": "#8bd450"
         },
         "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 29,
+        "value": 45,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 25,
+        "value": 37,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 13,
+        "value": 17,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "name": "巫师｜八狱法",
-        "value": 9,
+        "value": 14,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "梦魇｜哥布林梦",
+        "value": 9,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
         "name": "梦魇｜永火梦",
-        "value": 6,
+        "value": 8,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 7,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "皇家护卫｜金币皇",
@@ -530,22 +638,28 @@
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
-        "name": "主教｜守护教",
-        "value": 5,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
+        "name": "巫师｜二妹法",
         "value": 4,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "name": "精灵｜人偶妖",
-        "value": 2,
+        "value": 3,
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 3,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "梦魇｜真红梦",
+        "value": 2,
+        "link": "decktypes/decktype-747237d91606.html",
+        "image": "../../assets/cards/BP05-U05.jpg"
       },
       {
         "name": "巫师｜星星法",
@@ -554,16 +668,40 @@
         "image": "../../assets/cards/BP11-SL07.jpg"
       },
       {
-        "name": "巫师｜二妹法",
+        "name": "精灵｜妖精妖",
         "value": 2,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
+        "name": "龙族｜大哥龙",
+        "value": 2,
+        "link": "decktypes/decktype-cd6d71f47cfb.html",
+        "image": "../../assets/cards/BP16-SL15.jpg"
+      },
+      {
+        "name": "偶像大师｜cool",
+        "value": 1,
+        "link": "decktypes/decktype-0fe79a39fa2e.html",
+        "image": "../../assets/cards/CSD02b-001.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 1,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "梦魇｜机械梦",
         "value": 1,
         "link": "decktypes/decktype-42a5c2f5e134.html",
         "image": "../../assets/cards/BP07-SL13.jpg"
+      },
+      {
+        "name": "皇家护卫｜财宝皇",
+        "value": 1,
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
       },
       {
         "name": "皇家护卫｜天使皇",
@@ -578,16 +716,28 @@
         "image": "../../assets/cards/BP08-087.jpg"
       },
       {
-        "name": "精灵｜妖精妖",
+        "name": "梦魇｜骰子梦",
         "value": 1,
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
+        "link": "decktypes/decktype-96191bb3b6d4.html",
+        "image": "../../assets/cards/BP21-SL19.jpg"
       },
       {
-        "name": "巫师｜消失法",
+        "name": "梦魇｜八狱梦",
         "value": 1,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
+        "link": "decktypes/decktype-7a481475a6b5.html",
+        "image": "../../assets/cards/BP19-080.jpg"
+      },
+      {
+        "name": "精灵｜连击妖",
+        "value": 1,
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "精灵｜兽妖",
+        "value": 1,
+        "link": "decktypes/decktype-c2ac43fe870c.html",
+        "image": "../../assets/cards/BP21-001.jpg"
       },
       {
         "name": "主教｜控教",
@@ -602,16 +752,22 @@
         "image": "../../assets/cards/BP17-041.jpg"
       },
       {
+        "name": "梦魇｜nc梦",
+        "value": 1,
+        "link": "decktypes/decktype-bbc8f17f6035.html",
+        "image": "../../assets/cards/PR-399.jpg"
+      },
+      {
         "name": "精灵｜死噬妖",
         "value": 1,
         "link": "decktypes/decktype-e7515dc1071b.html",
         "image": "../../assets/cards/BP22-SL02.jpg"
       },
       {
-        "name": "龙族｜大哥龙",
+        "name": "公主连结Re:Dive｜跳费PCR",
         "value": 1,
-        "link": "decktypes/decktype-cd6d71f47cfb.html",
-        "image": "../../assets/cards/BP16-SL15.jpg"
+        "link": "decktypes/decktype-bfb6320cd8c6.html",
+        "image": "../../assets/cards/CP04-SL15.jpg"
       },
       {
         "name": "赛马娘｜横马",
@@ -624,7 +780,7 @@
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 29,
+        "count": 45,
         "best": "1/52",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -632,7 +788,7 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 25,
+        "count": 37,
         "best": "1/36",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
@@ -640,7 +796,7 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 13,
+        "count": 17,
         "best": "1/49",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
@@ -648,18 +804,34 @@
       {
         "class": "巫师",
         "category": "八狱法",
-        "count": 9,
+        "count": 14,
         "best": "1/36",
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "class": "梦魇",
+        "category": "哥布林梦",
+        "count": 9,
+        "best": "1/27",
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "class": "梦魇",
         "category": "永火梦",
-        "count": 6,
+        "count": 8,
         "best": "2/36",
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "class": "主教",
+        "category": "守护教",
+        "count": 7,
+        "best": "4/26",
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "class": "皇家护卫",
@@ -670,67 +842,51 @@
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
-        "class": "主教",
-        "category": "守护教",
-        "count": 5,
-        "best": "4/26",
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "class": "梦魇",
-        "category": "哥布林梦",
+        "class": "巫师",
+        "category": "二妹法",
         "count": 4,
-        "best": "1/27",
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
+        "best": "5/27",
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "class": "精灵",
         "category": "人偶妖",
-        "count": 2,
+        "count": 3,
         "best": "2/26",
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
         "class": "巫师",
-        "category": "星星法",
-        "count": 2,
-        "best": "4/27",
-        "link": "decktypes/decktype-87a84038db1f.html",
-        "image": "../../assets/cards/BP11-SL07.jpg"
-      },
-      {
-        "class": "巫师",
-        "category": "二妹法",
-        "count": 2,
-        "best": "5/27",
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
+        "category": "消失法",
+        "count": 3,
+        "best": "1/11",
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
       },
       {
         "class": "梦魇",
-        "category": "机械梦",
-        "count": 1,
-        "best": "2/27",
-        "link": "decktypes/decktype-42a5c2f5e134.html",
-        "image": "../../assets/cards/BP07-SL13.jpg"
+        "category": "真红梦",
+        "count": 2,
+        "best": "1/13",
+        "link": "decktypes/decktype-747237d91606.html",
+        "image": "../../assets/cards/BP05-U05.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/30-2026/11/05共收录14场有效赛事、112套有排名记录的卡组，其中上位卡组112套、冠军卡组14套。从上位职业分布看，皇家护卫35套（31.3%）、巫师28套（25.0%）构成本范围的主要出场面，冠军侧则以皇家护卫5套（35.7%）、巫师5套（35.7%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」29套（25.9%，最好1/52）、龙族「五妹龙」25套（22.3%，最好1/36）、巫师「学院法」13套（11.6%，最好1/49）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由ラルド使用，成绩为1/52，成绩系数0.0192。整体来看，前10%成绩卡组共有44套，占全部记录39.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/30-2026/11/05共收录28场有效赛事、176套有排名记录的卡组，其中上位卡组176套、冠军卡组31套。从上位职业分布看，皇家护卫52套（29.5%）、巫师41套（23.3%）构成本范围的主要出场面，冠军侧则以皇家护卫11套（35.5%）、巫师8套（25.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」45套（25.6%，最好1/52）、龙族「五妹龙」37套（21.0%，最好1/36）、巫师「学院法」17套（9.7%，最好1/49）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由ラルド使用，成绩为1/52，成绩系数0.0192。整体来看，前10%成绩卡组共有70套，占全部记录39.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/23",
     "label": "2026/10/23-2026/10/29",
-    "event_count": 5,
-    "deck_count": 88,
-    "top8_count": 88,
-    "top1_count": 5,
+    "event_count": 11,
+    "deck_count": 120,
+    "top8_count": 120,
+    "top1_count": 13,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 30,
+        "value": 47,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -738,7 +894,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 17,
+        "value": 20,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -746,31 +902,31 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 15,
+        "value": 18,
         "itemStyle": {
           "color": "#9b59b6"
         },
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
-        "name": "💀 梦魇",
-        "value": 12,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
         "name": "🍃 精灵",
-        "value": 8,
+        "value": 13,
         "itemStyle": {
           "color": "#27ae60"
         },
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
+        "name": "💀 梦魇",
+        "value": 13,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
         "name": "⛪ 主教",
-        "value": 5,
+        "value": 7,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -778,7 +934,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 1,
+        "value": 2,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -788,45 +944,51 @@
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 28,
+        "value": 44,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 17,
+        "value": 20,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "梦魇｜哥布林梦",
-        "value": 7,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
         "name": "巫师｜八狱法",
-        "value": 6,
+        "value": 8,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "梦魇｜哥布林梦",
+        "value": 8,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "精灵｜妖精妖",
+        "value": 7,
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
         "name": "主教｜守护教",
-        "value": 5,
+        "value": 6,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 5,
+        "value": 6,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "name": "精灵｜妖精妖",
-        "value": 5,
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
+        "name": "精灵｜人偶妖",
+        "value": 4,
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
         "name": "巫师｜二妹法",
@@ -835,10 +997,10 @@
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
-        "name": "精灵｜人偶妖",
+        "name": "皇家护卫｜金币皇",
         "value": 3,
-        "link": "decktypes/decktype-4347111b0e67.html",
-        "image": "../../assets/cards/BP16-SL03.jpg"
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
       },
       {
         "name": "梦魇｜永火梦",
@@ -847,14 +1009,8 @@
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
-        "name": "皇家护卫｜金币皇",
-        "value": 2,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "name": "赛马娘｜横马",
-        "value": 1,
+        "value": 2,
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
       },
@@ -865,17 +1021,35 @@
         "image": "../../assets/cards/BP18-SL19.jpg"
       },
       {
+        "name": "精灵｜连击妖",
+        "value": 1,
+        "link": "decktypes/decktype-826de03f0f61.html",
+        "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "精灵｜死噬妖",
+        "value": 1,
+        "link": "decktypes/decktype-e7515dc1071b.html",
+        "image": "../../assets/cards/BP22-SL02.jpg"
+      },
+      {
         "name": "梦魇｜削手梦",
         "value": 1,
         "link": "decktypes/decktype-dfb30b7dc558.html",
         "image": "../../assets/cards/BP05-070.jpg"
+      },
+      {
+        "name": "主教｜控教",
+        "value": 1,
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
       }
     ],
     "top_types": [
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 28,
+        "count": 44,
         "best": "1/556",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -883,31 +1057,39 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 17,
+        "count": 20,
         "best": "5/556",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "class": "梦魇",
-        "category": "哥布林梦",
-        "count": 7,
-        "best": "4/556",
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
         "class": "巫师",
         "category": "八狱法",
-        "count": 6,
+        "count": 8,
         "best": "3/556",
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "class": "梦魇",
+        "category": "哥布林梦",
+        "count": 8,
+        "best": "4/556",
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "妖精妖",
+        "count": 7,
+        "best": "11/556",
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
         "class": "主教",
         "category": "守护教",
-        "count": 5,
+        "count": 6,
         "best": "7/556",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -915,18 +1097,18 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 5,
+        "count": 6,
         "best": "8/556",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "class": "精灵",
-        "category": "妖精妖",
-        "count": 5,
-        "best": "11/556",
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
+        "category": "人偶妖",
+        "count": 4,
+        "best": "5/556",
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
         "class": "巫师",
@@ -937,12 +1119,12 @@
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
-        "class": "精灵",
-        "category": "人偶妖",
+        "class": "皇家护卫",
+        "category": "金币皇",
         "count": 3,
-        "best": "5/556",
-        "link": "decktypes/decktype-4347111b0e67.html",
-        "image": "../../assets/cards/BP16-SL03.jpg"
+        "best": "13/556",
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
       },
       {
         "class": "梦魇",
@@ -953,35 +1135,27 @@
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
-        "class": "皇家护卫",
-        "category": "金币皇",
-        "count": 2,
-        "best": "13/556",
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "class": "赛马娘",
         "category": "横马",
-        "count": 1,
+        "count": 2,
         "best": "28/556",
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/23-2026/10/29共收录5场有效赛事、88套有排名记录的卡组，其中上位卡组88套、冠军卡组5套。从上位职业分布看，皇家护卫30套（34.1%）、龙族17套（19.3%）构成本范围的主要出场面，冠军侧则以皇家护卫3套（60.0%）、龙族1套（20.0%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」28套（31.8%，最好1/556）、龙族「五妹龙」17套（19.3%，最好5/556）、梦魇「哥布林梦」7套（8.0%，最好4/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有73套，占全部记录83.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/23-2026/10/29共收录11场有效赛事、120套有排名记录的卡组，其中上位卡组120套、冠军卡组13套。从上位职业分布看，皇家护卫47套（39.2%）、龙族20套（16.7%）构成本范围的主要出场面，冠军侧则以皇家护卫7套（53.8%）、龙族3套（23.1%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（36.7%，最好1/556）、龙族「五妹龙」20套（16.7%，最好5/556）、巫师「八狱法」8套（6.7%，最好3/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有85套，占全部记录70.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/16",
     "label": "2026/10/16-2026/10/22",
-    "event_count": 16,
-    "deck_count": 128,
-    "top8_count": 128,
-    "top1_count": 16,
+    "event_count": 28,
+    "deck_count": 195,
+    "top8_count": 195,
+    "top1_count": 32,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 40,
+        "value": 52,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -989,7 +1163,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 30,
+        "value": 45,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -997,23 +1171,15 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 16,
+        "value": 29,
         "itemStyle": {
           "color": "#9b59b6"
         },
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "name": "🍃 精灵",
-        "value": 13,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      },
-      {
         "name": "💀 梦魇",
-        "value": 13,
+        "value": 23,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -1021,15 +1187,23 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 12,
+        "value": 19,
         "itemStyle": {
           "color": "#f1c40f"
         },
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
+        "name": "🍃 精灵",
+        "value": 17,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      },
+      {
         "name": "🏇 赛马娘",
-        "value": 3,
+        "value": 7,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -1037,7 +1211,7 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 1,
+        "value": 3,
         "itemStyle": {
           "color": "#e91e63"
         },
@@ -1047,57 +1221,81 @@
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 33,
+        "value": 44,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 27,
+        "value": 41,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "皇家护卫｜金币皇",
-        "value": 7,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "name": "主教｜守护教",
-        "value": 7,
+        "value": 12,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 7,
+        "value": 11,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "巫师｜二妹法",
-        "value": 6,
+        "value": 9,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
+        "name": "皇家护卫｜金币皇",
+        "value": 8,
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 7,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 6,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 6,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "梦魇｜永火梦",
+        "value": 6,
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
         "name": "精灵｜连击妖",
-        "value": 4,
+        "value": 6,
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 3,
+        "value": 4,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "name": "巫师｜消失法",
-        "value": 3,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
+        "name": "精灵｜妖精妖",
+        "value": 4,
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -1106,22 +1304,28 @@
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
-        "name": "精灵｜妖精妖",
+        "name": "梦魇｜nc梦",
         "value": 3,
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
+        "link": "decktypes/decktype-bbc8f17f6035.html",
+        "image": "../../assets/cards/PR-399.jpg"
       },
       {
-        "name": "赛马娘｜横马",
+        "name": "主教｜控教",
         "value": 3,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
       },
       {
-        "name": "巫师｜八狱法",
-        "value": 2,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
+        "name": "巫师｜星星法",
+        "value": 3,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-SL07.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 3,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "精灵｜猎人妖",
@@ -1136,28 +1340,10 @@
         "image": "../../assets/cards/PR-415.jpg"
       },
       {
-        "name": "主教｜控教",
-        "value": 2,
-        "link": "decktypes/decktype-da0c322184a8.html",
-        "image": "../../assets/cards/BP15-SL24.jpg"
-      },
-      {
-        "name": "巫师｜星星法",
-        "value": 2,
-        "link": "decktypes/decktype-87a84038db1f.html",
-        "image": "../../assets/cards/BP11-SL07.jpg"
-      },
-      {
         "name": "梦魇｜2c梦",
         "value": 2,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
-      },
-      {
-        "name": "梦魇｜永火梦",
-        "value": 2,
-        "link": "decktypes/decktype-71c5492994cc.html",
-        "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
         "name": "龙族｜大哥龙",
@@ -1166,22 +1352,28 @@
         "image": "../../assets/cards/BP16-SL15.jpg"
       },
       {
-        "name": "梦魇｜nc梦",
-        "value": 1,
-        "link": "decktypes/decktype-bbc8f17f6035.html",
-        "image": "../../assets/cards/PR-399.jpg"
-      },
-      {
         "name": "梦魇｜骰子梦",
         "value": 1,
         "link": "decktypes/decktype-96191bb3b6d4.html",
         "image": "../../assets/cards/BP21-SL19.jpg"
       },
       {
-        "name": "公主连结Re:Dive｜法术PCR",
+        "name": "精灵｜哥布林妖",
         "value": 1,
-        "link": "decktypes/decktype-deb2d8e95565.html",
-        "image": "../../assets/cards/CP04-SP02.jpg"
+        "link": "decktypes/decktype-786184f4fedc.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "巫师｜魔法使法",
+        "value": 1,
+        "link": "decktypes/decktype-f2cf81b92eda.html",
+        "image": "../../assets/cards/BP14-U03.jpg"
+      },
+      {
+        "name": "主教｜黄金船教",
+        "value": 1,
+        "link": "decktypes/decktype-07544eb64d36.html",
+        "image": "../../assets/cards/CP01-068.jpg"
       },
       {
         "name": "龙族｜龙人龙",
@@ -1200,13 +1392,19 @@
         "value": 1,
         "link": "decktypes/decktype-25097831eeb5.html",
         "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
+        "name": "龙族｜荒野龙",
+        "value": 1,
+        "link": "decktypes/decktype-7ea4d7128729.html",
+        "image": "../../assets/cards/BP11-052.jpg"
       }
     ],
     "top_types": [
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 33,
+        "count": 44,
         "best": "1/36",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -1214,23 +1412,15 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 27,
+        "count": 41,
         "best": "1/60",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "class": "皇家护卫",
-        "category": "金币皇",
-        "count": 7,
-        "best": "1/42",
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "class": "主教",
         "category": "守护教",
-        "count": 7,
+        "count": 12,
         "best": "1/40",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -1238,7 +1428,7 @@
       {
         "class": "梦魇",
         "category": "哥布林梦",
-        "count": 7,
+        "count": 11,
         "best": "1/29",
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
@@ -1246,15 +1436,55 @@
       {
         "class": "巫师",
         "category": "二妹法",
-        "count": 6,
+        "count": 9,
         "best": "1/19",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
+        "class": "皇家护卫",
+        "category": "金币皇",
+        "count": 8,
+        "best": "1/42",
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "class": "赛马娘",
+        "category": "横马",
+        "count": 7,
+        "best": "7/42",
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "消失法",
+        "count": 6,
+        "best": "3/60",
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 6,
+        "best": "1/19",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "class": "梦魇",
+        "category": "永火梦",
+        "count": 6,
+        "best": "1/16",
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
         "class": "精灵",
         "category": "连击妖",
-        "count": 4,
+        "count": 6,
         "best": "2/32",
         "link": "decktypes/decktype-826de03f0f61.html",
         "image": "../../assets/cards/ECP02-SL04.jpg"
@@ -1262,57 +1492,25 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 3,
+        "count": 4,
         "best": "2/45",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
-      },
-      {
-        "class": "巫师",
-        "category": "消失法",
-        "count": 3,
-        "best": "3/60",
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "人偶妖",
-        "count": 3,
-        "best": "4/60",
-        "link": "decktypes/decktype-4347111b0e67.html",
-        "image": "../../assets/cards/BP16-SL03.jpg"
-      },
-      {
-        "class": "精灵",
-        "category": "妖精妖",
-        "count": 3,
-        "best": "3/21",
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
-      },
-      {
-        "class": "赛马娘",
-        "category": "横马",
-        "count": 3,
-        "best": "7/42",
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/16-2026/10/22共收录16场有效赛事、128套有排名记录的卡组，其中上位卡组128套、冠军卡组16套。从上位职业分布看，皇家护卫40套（31.3%）、龙族30套（23.4%）构成本范围的主要出场面，冠军侧则以皇家护卫6套（37.5%）、龙族3套（18.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」33套（25.8%，最好1/36）、龙族「五妹龙」27套（21.1%，最好1/60）、皇家护卫「金币皇」7套（5.5%，最好1/42）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由ラルド使用，成绩为1/60，成绩系数0.0167。整体来看，前10%成绩卡组共有55套，占全部记录43.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/16-2026/10/22共收录28场有效赛事、195套有排名记录的卡组，其中上位卡组195套、冠军卡组32套。从上位职业分布看，皇家护卫52套（26.7%）、龙族45套（23.1%）构成本范围的主要出场面，冠军侧则以皇家护卫10套（31.3%）、龙族6套（18.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（22.6%，最好1/36）、龙族「五妹龙」41套（21.0%，最好1/60）、主教「守护教」12套（6.2%，最好1/40）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由ラルド使用，成绩为1/60，成绩系数0.0167。整体来看，前10%成绩卡组共有79套，占全部记录40.5%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/09",
     "label": "2026/10/09-2026/10/15",
-    "event_count": 30,
-    "deck_count": 240,
-    "top8_count": 240,
-    "top1_count": 30,
+    "event_count": 46,
+    "deck_count": 312,
+    "top8_count": 312,
+    "top1_count": 48,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 55,
+        "value": 69,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -1320,31 +1518,31 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 44,
+        "value": 53,
         "itemStyle": {
           "color": "#9b59b6"
         },
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
-        "name": "🐉 龙族",
-        "value": 37,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
         "name": "💀 梦魇",
-        "value": 34,
+        "value": 52,
         "itemStyle": {
           "color": "#2c3e50"
         },
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
+        "name": "🐉 龙族",
+        "value": 50,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
         "name": "🍃 精灵",
-        "value": 25,
+        "value": 31,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -1352,7 +1550,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 23,
+        "value": 27,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -1360,7 +1558,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 17,
+        "value": 24,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -1368,7 +1566,7 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 5,
+        "value": 6,
         "itemStyle": {
           "color": "#e91e63"
         },
@@ -1378,61 +1576,67 @@
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 44,
+        "value": 55,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 37,
+        "value": 47,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 20,
+        "value": 32,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 17,
+        "value": 21,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "赛马娘｜横马",
-        "value": 14,
+        "value": 20,
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
       },
       {
         "name": "巫师｜二妹法",
-        "value": 13,
+        "value": 17,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "name": "巫师｜消失法",
-        "value": 13,
+        "value": 15,
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
       },
       {
         "name": "皇家护卫｜金币皇",
-        "value": 9,
+        "value": 12,
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 9,
+        "value": 11,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
+        "name": "梦魇｜2c梦",
+        "value": 10,
+        "link": "decktypes/decktype-75305287827c.html",
+        "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
         "name": "精灵｜妖精妖",
-        "value": 8,
+        "value": 10,
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
@@ -1443,12 +1647,6 @@
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
-        "name": "梦魇｜2c梦",
-        "value": 7,
-        "link": "decktypes/decktype-75305287827c.html",
-        "image": "../../assets/cards/BP18-SL19.jpg"
-      },
-      {
         "name": "精灵｜连击妖",
         "value": 6,
         "link": "decktypes/decktype-826de03f0f61.html",
@@ -1456,9 +1654,15 @@
       },
       {
         "name": "巫师｜星星法",
-        "value": 5,
+        "value": 6,
         "link": "decktypes/decktype-87a84038db1f.html",
         "image": "../../assets/cards/BP11-SL07.jpg"
+      },
+      {
+        "name": "梦魇｜永火梦",
+        "value": 5,
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
         "name": "主教｜控教",
@@ -1473,10 +1677,10 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
-        "name": "梦魇｜永火梦",
+        "name": "赛马娘｜loop马",
         "value": 4,
-        "link": "decktypes/decktype-71c5492994cc.html",
-        "image": "../../assets/cards/BP14-SL16.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-SP03.jpg"
       },
       {
         "name": "公主连结Re:Dive｜法术PCR",
@@ -1485,16 +1689,16 @@
         "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
-        "name": "赛马娘｜loop马",
-        "value": 3,
-        "link": "decktypes/decktype-7358073c5024.html",
-        "image": "../../assets/cards/CP01-SP03.jpg"
-      },
-      {
         "name": "公主连结Re:Dive｜跳费PCR",
-        "value": 2,
+        "value": 3,
         "link": "decktypes/decktype-bfb6320cd8c6.html",
         "image": "../../assets/cards/CP04-SL15.jpg"
+      },
+      {
+        "name": "龙族｜海洋龙",
+        "value": 3,
+        "link": "decktypes/decktype-200bb41cd994.html",
+        "image": "../../assets/cards/BP17-SL15.jpg"
       },
       {
         "name": "主教｜纹章教",
@@ -1504,9 +1708,21 @@
       },
       {
         "name": "梦魇｜nc梦",
-        "value": 1,
+        "value": 2,
         "link": "decktypes/decktype-bbc8f17f6035.html",
         "image": "../../assets/cards/PR-399.jpg"
+      },
+      {
+        "name": "精灵｜哥布林妖",
+        "value": 2,
+        "link": "decktypes/decktype-786184f4fedc.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "精灵｜猎人妖",
+        "value": 2,
+        "link": "decktypes/decktype-44ce1ca73386.html",
+        "image": "../../assets/cards/BP20-SL01.jpg"
       },
       {
         "name": "皇家护卫｜哥布林皇",
@@ -1527,28 +1743,34 @@
         "image": "../../assets/cards/BP17-022.jpg"
       },
       {
+        "name": "精灵｜八狱妖",
+        "value": 1,
+        "link": "decktypes/decktype-25097831eeb5.html",
+        "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
+        "name": "精灵｜宇宙妖",
+        "value": 1,
+        "link": "decktypes/decktype-75a3e2d0e2a4.html",
+        "image": "../../assets/cards/BP19-SL26.jpg"
+      },
+      {
         "name": "梦魇｜蝙蝠梦",
         "value": 1,
         "link": "decktypes/decktype-522ba9eb9548.html",
         "image": "../../assets/cards/BP18-SL20.jpg"
       },
       {
-        "name": "精灵｜猎人妖",
-        "value": 1,
-        "link": "decktypes/decktype-44ce1ca73386.html",
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      },
-      {
-        "name": "精灵｜哥布林妖",
-        "value": 1,
-        "link": "decktypes/decktype-786184f4fedc.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
         "name": "梦魇｜骰子梦",
         "value": 1,
         "link": "decktypes/decktype-96191bb3b6d4.html",
         "image": "../../assets/cards/BP21-SL19.jpg"
+      },
+      {
+        "name": "梦魇｜八狱梦",
+        "value": 1,
+        "link": "decktypes/decktype-7a481475a6b5.html",
+        "image": "../../assets/cards/BP19-080.jpg"
       },
       {
         "name": "精灵｜兽妖",
@@ -1561,7 +1783,7 @@
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 44,
+        "count": 55,
         "best": "1/51",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -1569,7 +1791,7 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 37,
+        "count": 47,
         "best": "1/21",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
@@ -1577,7 +1799,7 @@
       {
         "class": "梦魇",
         "category": "哥布林梦",
-        "count": 20,
+        "count": 32,
         "best": "1/47",
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
@@ -1585,7 +1807,7 @@
       {
         "class": "主教",
         "category": "守护教",
-        "count": 17,
+        "count": 21,
         "best": "1/34",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -1593,7 +1815,7 @@
       {
         "class": "赛马娘",
         "category": "横马",
-        "count": 14,
+        "count": 20,
         "best": "1/35",
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
@@ -1601,7 +1823,7 @@
       {
         "class": "巫师",
         "category": "二妹法",
-        "count": 13,
+        "count": 17,
         "best": "1/38",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
@@ -1609,7 +1831,7 @@
       {
         "class": "巫师",
         "category": "消失法",
-        "count": 13,
+        "count": 15,
         "best": "1/28",
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
@@ -1617,7 +1839,7 @@
       {
         "class": "皇家护卫",
         "category": "金币皇",
-        "count": 9,
+        "count": 12,
         "best": "1/34",
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
@@ -1625,15 +1847,23 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 9,
+        "count": 11,
         "best": "1/17",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
+        "class": "梦魇",
+        "category": "2c梦",
+        "count": 10,
+        "best": "1/26",
+        "link": "decktypes/decktype-75305287827c.html",
+        "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
         "class": "精灵",
         "category": "妖精妖",
-        "count": 8,
+        "count": 10,
         "best": "2/24",
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
@@ -1645,37 +1875,37 @@
         "best": "1/26",
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
-      },
-      {
-        "class": "梦魇",
-        "category": "2c梦",
-        "count": 7,
-        "best": "1/26",
-        "link": "decktypes/decktype-75305287827c.html",
-        "image": "../../assets/cards/BP18-SL19.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/09-2026/10/15共收录30场有效赛事、240套有排名记录的卡组，其中上位卡组240套、冠军卡组30套。从上位职业分布看，皇家护卫55套（22.9%）、巫师44套（18.3%）构成本范围的主要出场面，冠军侧则以皇家护卫9套（30.0%）、巫师5套（16.7%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（18.3%，最好1/51）、龙族「五妹龙」37套（15.4%，最好1/21）、梦魇「哥布林梦」20套（8.3%，最好1/47）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由たたみさし使用，成绩为1/51，成绩系数0.0196。整体来看，前10%成绩卡组共有98套，占全部记录40.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/09-2026/10/15共收录46场有效赛事、312套有排名记录的卡组，其中上位卡组312套、冠军卡组48套。从上位职业分布看，皇家护卫69套（22.1%）、巫师53套（17.0%）构成本范围的主要出场面，冠军侧则以皇家护卫12套（25.0%）、巫师10套（20.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」55套（17.6%，最好1/51）、龙族「五妹龙」47套（15.1%，最好1/21）、梦魇「哥布林梦」32套（10.3%，最好1/47）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由たたみさし使用，成绩为1/51，成绩系数0.0196。整体来看，前10%成绩卡组共有131套，占全部记录42.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/02",
     "label": "2026/10/02-2026/10/08",
-    "event_count": 17,
-    "deck_count": 136,
-    "top8_count": 136,
-    "top1_count": 17,
+    "event_count": 31,
+    "deck_count": 192,
+    "top8_count": 192,
+    "top1_count": 31,
     "class_distribution": [
       {
         "name": "🐉 龙族",
-        "value": 29,
+        "value": 41,
         "itemStyle": {
           "color": "#e67e22"
         },
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
+        "name": "⛪ 主教",
+        "value": 33,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
         "name": "⚔️ 皇家护卫",
-        "value": 22,
+        "value": 30,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -1683,23 +1913,15 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 22,
+        "value": 29,
         "itemStyle": {
           "color": "#2c3e50"
         },
         "image": "../../assets/cards/PR-399.jpg"
       },
       {
-        "name": "⛪ 主教",
-        "value": 22,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
         "name": "🔮 巫师",
-        "value": 18,
+        "value": 25,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -1707,7 +1929,7 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 11,
+        "value": 15,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -1715,7 +1937,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 8,
+        "value": 15,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -1733,63 +1955,81 @@
     "type_distribution": [
       {
         "name": "龙族｜五妹龙",
-        "value": 26,
+        "value": 34,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 21,
+        "value": 32,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 14,
+        "value": 20,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "梦魇｜2c梦",
-        "value": 10,
+        "value": 13,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
       },
       {
         "name": "赛马娘｜横马",
-        "value": 7,
+        "value": 12,
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
       },
       {
         "name": "精灵｜妖精妖",
-        "value": 6,
+        "value": 7,
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
         "name": "皇家护卫｜金币皇",
-        "value": 6,
+        "value": 7,
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 6,
+        "value": 7,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "name": "巫师｜二妹法",
-        "value": 5,
+        "value": 6,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
         "name": "巫师｜消失法",
-        "value": 4,
+        "value": 5,
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "梦魇｜机械梦",
+        "value": 5,
+        "link": "decktypes/decktype-42a5c2f5e134.html",
+        "image": "../../assets/cards/BP07-SL13.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 4,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "龙族｜大哥龙",
+        "value": 4,
+        "link": "decktypes/decktype-cd6d71f47cfb.html",
+        "image": "../../assets/cards/BP16-SL15.jpg"
       },
       {
         "name": "梦魇｜nc梦",
@@ -1798,22 +2038,28 @@
         "image": "../../assets/cards/PR-399.jpg"
       },
       {
-        "name": "梦魇｜机械梦",
+        "name": "巫师｜土法",
         "value": 3,
-        "link": "decktypes/decktype-42a5c2f5e134.html",
-        "image": "../../assets/cards/BP07-SL13.jpg"
+        "link": "decktypes/decktype-f4843d4577ae.html",
+        "image": "../../assets/cards/BP09-U03.jpg"
+      },
+      {
+        "name": "精灵｜猎人妖",
+        "value": 3,
+        "link": "decktypes/decktype-44ce1ca73386.html",
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      },
+      {
+        "name": "精灵｜人偶妖",
+        "value": 2,
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
         "name": "皇家护卫｜天使皇",
         "value": 2,
         "link": "decktypes/decktype-2b0efb008539.html",
         "image": "../../assets/cards/PR-233.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
-        "value": 2,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "公主连结Re:Dive｜法术PCR",
@@ -1828,22 +2074,22 @@
         "image": "../../assets/cards/CP04-SL15.jpg"
       },
       {
-        "name": "龙族｜大哥龙",
+        "name": "赛马娘｜loop马",
         "value": 2,
-        "link": "decktypes/decktype-cd6d71f47cfb.html",
-        "image": "../../assets/cards/BP16-SL15.jpg"
+        "link": "decktypes/decktype-7358073c5024.html",
+        "image": "../../assets/cards/CP01-SP03.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 2,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-SL07.jpg"
       },
       {
         "name": "梦魇｜骰子梦",
         "value": 2,
         "link": "decktypes/decktype-96191bb3b6d4.html",
         "image": "../../assets/cards/BP21-SL19.jpg"
-      },
-      {
-        "name": "精灵｜人偶妖",
-        "value": 1,
-        "link": "decktypes/decktype-4347111b0e67.html",
-        "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
         "name": "主教｜节奏教",
@@ -1864,12 +2110,6 @@
         "image": "../../assets/cards/BP19-005.jpg"
       },
       {
-        "name": "赛马娘｜loop马",
-        "value": 1,
-        "link": "decktypes/decktype-7358073c5024.html",
-        "image": "../../assets/cards/CP01-SP03.jpg"
-      },
-      {
         "name": "龙族｜龙人龙",
         "value": 1,
         "link": "decktypes/decktype-ca24d30a1a65.html",
@@ -1882,16 +2122,16 @@
         "image": "../../assets/cards/BP19-SL26.jpg"
       },
       {
-        "name": "精灵｜猎人妖",
-        "value": 1,
-        "link": "decktypes/decktype-44ce1ca73386.html",
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      },
-      {
         "name": "巫师｜机械法",
         "value": 1,
         "link": "decktypes/decktype-6ea288eb8275.html",
         "image": "../../assets/cards/BP17-041.jpg"
+      },
+      {
+        "name": "赛马娘｜法术马",
+        "value": 1,
+        "link": "decktypes/decktype-1ef829252684.html",
+        "image": "../../assets/cards/CP01-057.jpg"
       },
       {
         "name": "巫师｜八狱法",
@@ -1900,16 +2140,28 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "龙族｜学院龙",
+        "value": 1,
+        "link": "decktypes/decktype-246e45fe1891.html",
+        "image": "../../assets/cards/BP21-057.jpg"
+      },
+      {
         "name": "梦魇｜永火梦",
         "value": 1,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
-        "name": "巫师｜星星法",
+        "name": "皇家护卫｜盗贼皇",
         "value": 1,
-        "link": "decktypes/decktype-87a84038db1f.html",
-        "image": "../../assets/cards/BP11-SL07.jpg"
+        "link": "decktypes/decktype-4aeba2c734d7.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
+      },
+      {
+        "name": "龙族｜快攻龙",
+        "value": 1,
+        "link": "decktypes/decktype-f50f99e7f0df.html",
+        "image": "../../assets/cards/ECP01-035.jpg"
       },
       {
         "name": "精灵｜自然妖",
@@ -1922,7 +2174,7 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 26,
+        "count": 34,
         "best": "1/25",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
@@ -1930,7 +2182,7 @@
       {
         "class": "主教",
         "category": "守护教",
-        "count": 21,
+        "count": 32,
         "best": "1/46",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -1938,7 +2190,7 @@
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 14,
+        "count": 20,
         "best": "1/70",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -1946,7 +2198,7 @@
       {
         "class": "梦魇",
         "category": "2c梦",
-        "count": 10,
+        "count": 13,
         "best": "2/39",
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
@@ -1954,7 +2206,7 @@
       {
         "class": "赛马娘",
         "category": "横马",
-        "count": 7,
+        "count": 12,
         "best": "1/39",
         "link": "decktypes/decktype-5a0677b37803.html",
         "image": "../../assets/cards/ECP01-005.jpg"
@@ -1962,7 +2214,7 @@
       {
         "class": "精灵",
         "category": "妖精妖",
-        "count": 6,
+        "count": 7,
         "best": "3/51",
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
@@ -1970,7 +2222,7 @@
       {
         "class": "皇家护卫",
         "category": "金币皇",
-        "count": 6,
+        "count": 7,
         "best": "2/32",
         "link": "decktypes/decktype-bab8fae9b582.html",
         "image": "../../assets/cards/BP14-022.jpg"
@@ -1978,7 +2230,7 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 6,
+        "count": 7,
         "best": "3/25",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
@@ -1986,7 +2238,7 @@
       {
         "class": "巫师",
         "category": "二妹法",
-        "count": 5,
+        "count": 6,
         "best": "2/70",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
@@ -1994,43 +2246,43 @@
       {
         "class": "巫师",
         "category": "消失法",
-        "count": 4,
+        "count": 5,
         "best": "1/19",
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
       },
       {
         "class": "梦魇",
-        "category": "nc梦",
-        "count": 3,
-        "best": "1/36",
-        "link": "decktypes/decktype-bbc8f17f6035.html",
-        "image": "../../assets/cards/PR-399.jpg"
-      },
-      {
-        "class": "梦魇",
         "category": "机械梦",
-        "count": 3,
+        "count": 5,
         "best": "4/46",
         "link": "decktypes/decktype-42a5c2f5e134.html",
         "image": "../../assets/cards/BP07-SL13.jpg"
+      },
+      {
+        "class": "梦魇",
+        "category": "哥布林梦",
+        "count": 4,
+        "best": "1/32",
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/02-2026/10/08共收录17场有效赛事、136套有排名记录的卡组，其中上位卡组136套、冠军卡组17套。从上位职业分布看，龙族29套（21.3%）、皇家护卫22套（16.2%）构成本范围的主要出场面，冠军侧则以梦魇4套（23.5%）、主教4套（23.5%）表现最突出。卡组类型方面，龙族「五妹龙」26套（19.1%，最好1/25）、主教「守护教」21套（15.4%，最好1/46）、皇家护卫「雷维翁皇」14套（10.3%，最好1/70）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由Saika使用，成绩为1/70，成绩系数0.0143。整体来看，前10%成绩卡组共有61套，占全部记录44.9%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/02-2026/10/08共收录31场有效赛事、192套有排名记录的卡组，其中上位卡组192套、冠军卡组31套。从上位职业分布看，龙族41套（21.4%）、主教33套（17.2%）构成本范围的主要出场面，冠军侧则以主教8套（25.8%）、梦魇5套（16.1%）表现最突出。卡组类型方面，龙族「五妹龙」34套（17.7%，最好1/25）、主教「守护教」32套（16.7%，最好1/46）、皇家护卫「雷维翁皇」20套（10.4%，最好1/70）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由Saika使用，成绩为1/70，成绩系数0.0143。整体来看，前10%成绩卡组共有83套，占全部记录43.2%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   }
 ];
   var scopeData = {
   "total": {
     "key": "total",
     "label": "总数据",
-    "event_count": 82,
-    "deck_count": 704,
-    "top8_count": 704,
-    "top1_count": 82,
+    "event_count": 144,
+    "deck_count": 995,
+    "top8_count": 995,
+    "top1_count": 155,
     "top8_class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 182,
+        "value": 250,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -2038,7 +2290,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 139,
+        "value": 195,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -2046,7 +2298,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 121,
+        "value": 166,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -2054,7 +2306,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 92,
+        "value": 140,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -2062,7 +2314,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 69,
+        "value": 95,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -2070,7 +2322,7 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 61,
+        "value": 84,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -2078,7 +2330,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 30,
+        "value": 49,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -2086,65 +2338,65 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 10,
+        "value": 15,
         "itemStyle": {
           "color": "#e91e63"
         },
         "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "top1_class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 26,
+        "value": 44,
         "itemStyle": {
           "color": "#3498db"
         },
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
-        "name": "🔮 巫师",
-        "value": 13,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP06-SL08.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 11,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
         "name": "🐉 龙族",
-        "value": 11,
+        "value": 26,
         "itemStyle": {
           "color": "#e67e22"
         },
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
+        "name": "🔮 巫师",
+        "value": 25,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
         "name": "💀 梦魇",
-        "value": 10,
+        "value": 22,
         "itemStyle": {
           "color": "#2c3e50"
         },
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
-        "name": "💎 公主连结Re:Dive",
-        "value": 4,
+        "name": "⛪ 主教",
+        "value": 16,
         "itemStyle": {
-          "color": "#e91e63"
+          "color": "#f1c40f"
         },
-        "image": "../../assets/cards/CP04-SP02.jpg"
+        "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "🍃 精灵",
-        "value": 4,
+        "value": 10,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -2152,59 +2404,75 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 3,
+        "value": 6,
         "itemStyle": {
           "color": "#8bd450"
         },
         "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 5,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 148,
+        "value": 208,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 132,
+        "value": 179,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 55,
+        "value": 78,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 40,
+        "value": 64,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 36,
+        "value": 45,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
+        "name": "赛马娘｜横马",
+        "value": 42,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
         "name": "巫师｜二妹法",
-        "value": 30,
+        "value": 40,
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
       },
       {
-        "name": "皇家护卫｜金币皇",
-        "value": 29,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "name": "Others",
-        "value": 234,
+        "value": 339,
         "itemStyle": {
           "color": "#667085"
         }
@@ -2213,63 +2481,63 @@
     "top1_type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 23,
+        "value": 40,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 11,
+        "value": 26,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 9,
+        "value": 14,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 6,
+        "value": 13,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 4,
+        "value": 9,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "name": "Others",
-        "value": 29,
+        "value": 53,
         "itemStyle": {
           "color": "#667085"
         }
       }
     ],
-    "type_other_count": 234,
-    "type_other_types": 35,
-    "top1_type_other_count": 29,
-    "top1_type_other_types": 18,
-    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-5a0677b37803.html\"><b>赛马娘｜横马</b><span>3套，最好成绩 1/39</span></a><a class=\"others-chip\" href=\"decktypes/decktype-058fd7f22075.html\"><b>巫师｜八狱法</b><span>3套，最好成绩 1/36</span></a><a class=\"others-chip\" href=\"decktypes/decktype-deb2d8e95565.html\"><b>公主连结Re:Dive｜法术PCR</b><span>3套，最好成绩 1/34</span></a><a class=\"others-chip\" href=\"decktypes/decktype-90c874a554cb.html\"><b>巫师｜消失法</b><span>3套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-4347111b0e67.html\"><b>精灵｜人偶妖</b><span>2套，最好成绩 1/51</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bab8fae9b582.html\"><b>皇家护卫｜金币皇</b><span>2套，最好成绩 1/42</span></a><a class=\"others-chip\" href=\"decktypes/decktype-f04045f27752.html\"><b>巫师｜二妹法</b><span>2套，最好成绩 1/38</span></a><a class=\"others-chip\" href=\"decktypes/decktype-2b0efb008539.html\"><b>皇家护卫｜天使皇</b><span>1套，最好成绩 1/39</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bbc8f17f6035.html\"><b>梦魇｜nc梦</b><span>1套，最好成绩 1/36</span></a><a class=\"others-chip\" href=\"decktypes/decktype-826de03f0f61.html\"><b>精灵｜连击妖</b><span>1套，最好成绩 1/31</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bfb6320cd8c6.html\"><b>公主连结Re:Dive｜跳费PCR</b><span>1套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-75305287827c.html\"><b>梦魇｜2c梦</b><span>1套，最好成绩 1/26</span></a><a class=\"others-chip\" href=\"decktypes/decktype-7a481475a6b5.html\"><b>梦魇｜八狱梦</b><span>1套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-87a84038db1f.html\"><b>巫师｜星星法</b><span>1套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-c068a8ef6610.html\"><b>主教｜纹章教</b><span>1套，最好成绩 1/20</span></a><a class=\"others-chip\" href=\"decktypes/decktype-71c5492994cc.html\"><b>梦魇｜永火梦</b><span>1套，最好成绩 1/18</span></a><a class=\"others-chip\" href=\"decktypes/decktype-da0c322184a8.html\"><b>主教｜控教</b><span>1套，最好成绩 1/17</span></a><a class=\"others-chip\" href=\"decktypes/decktype-44ce1ca73386.html\"><b>精灵｜猎人妖</b><span>1套，最好成绩 1/17</span></a>",
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录82场有效赛事、704套有排名记录的卡组，其中上位卡组704套、冠军卡组82套。从上位职业分布看，皇家护卫182套（25.9%）、龙族139套（19.7%）构成本范围的主要出场面，冠军侧则以皇家护卫26套（31.7%）、巫师13套（15.9%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」148套（21.0%，最好1/556）、龙族「五妹龙」132套（18.8%，最好5/556）、主教「守护教」55套（7.8%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有331套，占全部记录47.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html\">雷维翁皇</a></td><td style=\"text-align:center\">148</td><td style=\"text-align:center\">128-109 (54.0%)</td><td style=\"text-align:center\">1/556 (0.0018)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html\">五妹龙</a></td><td style=\"text-align:center\">132</td><td style=\"text-align:center\">106-116 (47.7%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html\">守护教</a></td><td style=\"text-align:center\">55</td><td style=\"text-align:center\">45-42 (51.7%)</td><td style=\"text-align:center\">7/556 (0.0126)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html\">哥布林梦</a></td><td style=\"text-align:center\">40</td><td style=\"text-align:center\">40-29 (58.0%)</td><td style=\"text-align:center\">4/556 (0.0072)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html\">学院法</a></td><td style=\"text-align:center\">36</td><td style=\"text-align:center\">29-29 (50.0%)</td><td style=\"text-align:center\">8/556 (0.0144)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html\">二妹法</a></td><td style=\"text-align:center\">30</td><td style=\"text-align:center\">16-25 (39.0%)</td><td style=\"text-align:center\">10/556 (0.0180)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html\">金币皇</a></td><td style=\"text-align:center\">29</td><td style=\"text-align:center\">22-25 (46.8%)</td><td style=\"text-align:center\">13/556 (0.0234)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html\">横马</a></td><td style=\"text-align:center\">26</td><td style=\"text-align:center\">19-22 (46.3%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html\">妖精妖</a></td><td style=\"text-align:center\">23</td><td style=\"text-align:center\">6-18 (25.0%)</td><td style=\"text-align:center\">11/556 (0.0198)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html\">八狱法</a></td><td style=\"text-align:center\">22</td><td style=\"text-align:center\">21-18 (53.8%)</td><td style=\"text-align:center\">3/556 (0.0054)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html\">消失法</a></td><td style=\"text-align:center\">21</td><td style=\"text-align:center\">20-18 (52.6%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html\">2c梦</a></td><td style=\"text-align:center\">20</td><td style=\"text-align:center\">15-19 (44.1%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html\">人偶妖</a></td><td style=\"text-align:center\">16</td><td style=\"text-align:center\">13-12 (52.0%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html\">永火梦</a></td><td style=\"text-align:center\">16</td><td style=\"text-align:center\">11-14 (44.0%)</td><td style=\"text-align:center\">23/556 (0.0414)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html\">连击妖</a></td><td style=\"text-align:center\">10</td><td style=\"text-align:center\">10-9 (52.6%)</td><td style=\"text-align:center\">1/31 (0.0323)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html\">星星法</a></td><td style=\"text-align:center\">10</td><td style=\"text-align:center\">7-9 (43.8%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html\">控教</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">6-6 (50.0%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html\">法术PCR</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">11-3 (78.6%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html\">nc梦</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">8-4 (66.7%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html\">大哥龙</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">0-5 (0.0%)</td><td style=\"text-align:center\">5/39 (0.1282)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html\">跳费PCR</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">8-3 (72.7%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html\">猎人妖</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">3-3 (50.0%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html\">机械梦</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">3-4 (42.9%)</td><td style=\"text-align:center\">2/27 (0.0741)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html\">骰子梦</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">1-4 (20.0%)</td><td style=\"text-align:center\">6/60 (0.1000)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html\">loop马</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-4 (0.0%)</td><td style=\"text-align:center\">7/46 (0.1522)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html\">天使皇</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-2 (71.4%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html\">节奏教</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-3 (57.1%)</td><td style=\"text-align:center\">2/51 (0.0392)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-c068a8ef6610.html\">纹章教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/20 (0.0500)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html\">八狱妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">2/25 (0.0800)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html\">护符教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">2/18 (0.1111)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html\">龙人龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/25 (0.1600)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html\">死噬妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">5/28 (0.1786)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html\">机械法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/19 (0.2105)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html\">八狱梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">3-0 (100.0%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9d903ce17ada.html\">哥布林皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/17 (0.1176)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-75a3e2d0e2a4.html\">宇宙妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/22 (0.1818)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-73a3a8508e82.html\">铺场皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/34 (0.2059)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-522ba9eb9548.html\">蝙蝠梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/21 (0.3333)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-dfb30b7dc558.html\">削手梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/23 (0.3478)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-786184f4fedc.html\">哥布林妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/17 (0.3529)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-941c1ca0a7a2.html\">自然妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/19 (0.4211)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-c2ac43fe870c.html\">兽妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/17 (0.4706)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">182 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 95</span>\n          <span class=\"stat-pill percent\">25.9%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>148套 (81.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>29套 (15.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>3套 (1.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9d903ce17ada.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林皇</b><em>1套 (0.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-73a3a8508e82.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP17-022.jpg\" alt=\"铺场皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>铺场皇</b><em>1套 (0.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">139 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 61</span>\n          <span class=\"stat-pill percent\">19.7%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>132套 (95.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>5套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>2套 (1.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">121 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 47</span>\n          <span class=\"stat-pill percent\">17.2%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>36套 (29.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>30套 (24.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>22套 (18.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>21套 (17.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>10套 (8.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>2套 (1.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">92 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 47</span>\n          <span class=\"stat-pill percent\">13.1%</span>\n          <span class=\"stat-pill archetypes\">9 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>40套 (43.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>20套 (21.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>16套 (17.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>5套 (5.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>4套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>4套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>1套 (1.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-522ba9eb9548.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL20.jpg\" alt=\"蝙蝠梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>蝙蝠梦</b><em>1套 (1.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-dfb30b7dc558.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-070.jpg\" alt=\"削手梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>削手梦</b><em>1套 (1.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">69 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 35</span>\n          <span class=\"stat-pill percent\">9.8%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>55套 (79.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>7套 (10.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>3套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c068a8ef6610.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP20-093.jpg\" alt=\"纹章教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>纹章教</b><em>2套 (2.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>2套 (2.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">61 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 27</span>\n          <span class=\"stat-pill percent\">8.7%</span>\n          <span class=\"stat-pill archetypes\">10 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>23套 (37.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>16套 (26.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>10套 (16.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>4套 (6.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>2套 (3.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>2套 (3.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75a3e2d0e2a4.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-SL26.jpg\" alt=\"宇宙妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>宇宙妖</b><em>1套 (1.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-786184f4fedc.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林妖</b><em>1套 (1.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-941c1ca0a7a2.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP07-001.jpg\" alt=\"自然妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>自然妖</b><em>1套 (1.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c2ac43fe870c.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP21-001.jpg\" alt=\"兽妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>兽妖</b><em>1套 (1.6%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">30 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 11</span>\n          <span class=\"stat-pill percent\">4.3%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>26套 (86.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>4套 (13.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">10 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">1.4%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>6套 (60.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>4套 (40.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
-    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
+    "type_other_count": 339,
+    "type_other_types": 47,
+    "top1_type_other_count": 53,
+    "top1_type_other_types": 24,
+    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-90c874a554cb.html\"><b>巫师｜消失法</b><span>6套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-4347111b0e67.html\"><b>精灵｜人偶妖</b><span>5套，最好成绩 1/51</span></a><a class=\"others-chip\" href=\"decktypes/decktype-5a0677b37803.html\"><b>赛马娘｜横马</b><span>5套，最好成绩 1/39</span></a><a class=\"others-chip\" href=\"decktypes/decktype-f04045f27752.html\"><b>巫师｜二妹法</b><span>4套，最好成绩 1/38</span></a><a class=\"others-chip\" href=\"decktypes/decktype-058fd7f22075.html\"><b>巫师｜八狱法</b><span>4套，最好成绩 1/36</span></a><a class=\"others-chip\" href=\"decktypes/decktype-deb2d8e95565.html\"><b>公主连结Re:Dive｜法术PCR</b><span>4套，最好成绩 1/34</span></a><a class=\"others-chip\" href=\"decktypes/decktype-71c5492994cc.html\"><b>梦魇｜永火梦</b><span>3套，最好成绩 1/18</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bab8fae9b582.html\"><b>皇家护卫｜金币皇</b><span>2套，最好成绩 1/42</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bbc8f17f6035.html\"><b>梦魇｜nc梦</b><span>2套，最好成绩 1/36</span></a><a class=\"others-chip\" href=\"decktypes/decktype-826de03f0f61.html\"><b>精灵｜连击妖</b><span>2套，最好成绩 1/31</span></a><a class=\"others-chip\" href=\"decktypes/decktype-75305287827c.html\"><b>梦魇｜2c梦</b><span>2套，最好成绩 1/26</span></a><a class=\"others-chip\" href=\"decktypes/decktype-87a84038db1f.html\"><b>巫师｜星星法</b><span>2套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-2b0efb008539.html\"><b>皇家护卫｜天使皇</b><span>1套，最好成绩 1/39</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bfb6320cd8c6.html\"><b>公主连结Re:Dive｜跳费PCR</b><span>1套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-7a481475a6b5.html\"><b>梦魇｜八狱梦</b><span>1套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-c068a8ef6610.html\"><b>主教｜纹章教</b><span>1套，最好成绩 1/20</span></a><a class=\"others-chip\" href=\"decktypes/decktype-da0c322184a8.html\"><b>主教｜控教</b><span>1套，最好成绩 1/17</span></a><a class=\"others-chip\" href=\"decktypes/decktype-44ce1ca73386.html\"><b>精灵｜猎人妖</b><span>1套，最好成绩 1/17</span></a><a class=\"others-chip\" href=\"decktypes/decktype-0fe79a39fa2e.html\"><b>偶像大师｜cool</b><span>1套，最好成绩 1/16</span></a><a class=\"others-chip\" href=\"decktypes/decktype-7358073c5024.html\"><b>赛马娘｜loop马</b><span>1套，最好成绩 1/14</span></a><a class=\"others-chip\" href=\"decktypes/decktype-217b5e054fbc.html\"><b>精灵｜妖精妖</b><span>1套，最好成绩 1/13</span></a><a class=\"others-chip\" href=\"decktypes/decktype-747237d91606.html\"><b>梦魇｜真红梦</b><span>1套，最好成绩 1/13</span></a><a class=\"others-chip\" href=\"decktypes/decktype-9e477d88228e.html\"><b>皇家护卫｜财宝皇</b><span>1套，最好成绩 1/11</span></a><a class=\"others-chip\" href=\"decktypes/decktype-786184f4fedc.html\"><b>精灵｜哥布林妖</b><span>1套，最好成绩 1/10</span></a>",
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录144场有效赛事、995套有排名记录的卡组，其中上位卡组995套、冠军卡组155套。从上位职业分布看，皇家护卫250套（25.1%）、龙族195套（19.6%）构成本范围的主要出场面，冠军侧则以皇家护卫44套（28.4%）、龙族26套（16.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」208套（20.9%，最好1/556）、龙族「五妹龙」179套（18.0%，最好5/556）、主教「守护教」78套（7.8%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有448套，占全部记录45.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html\">雷维翁皇</a></td><td style=\"text-align:center\">208</td><td style=\"text-align:center\">176-152 (53.7%)</td><td style=\"text-align:center\">1/556 (0.0018)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html\">五妹龙</a></td><td style=\"text-align:center\">179</td><td style=\"text-align:center\">149-148 (50.2%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html\">守护教</a></td><td style=\"text-align:center\">78</td><td style=\"text-align:center\">61-60 (50.4%)</td><td style=\"text-align:center\">7/556 (0.0126)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html\">哥布林梦</a></td><td style=\"text-align:center\">64</td><td style=\"text-align:center\">57-46 (55.3%)</td><td style=\"text-align:center\">4/556 (0.0072)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html\">学院法</a></td><td style=\"text-align:center\">45</td><td style=\"text-align:center\">40-33 (54.8%)</td><td style=\"text-align:center\">8/556 (0.0144)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html\">横马</a></td><td style=\"text-align:center\">42</td><td style=\"text-align:center\">25-36 (41.0%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html\">二妹法</a></td><td style=\"text-align:center\">40</td><td style=\"text-align:center\">23-33 (41.1%)</td><td style=\"text-align:center\">10/556 (0.0180)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html\">金币皇</a></td><td style=\"text-align:center\">35</td><td style=\"text-align:center\">27-31 (46.6%)</td><td style=\"text-align:center\">13/556 (0.0234)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html\">八狱法</a></td><td style=\"text-align:center\">33</td><td style=\"text-align:center\">24-28 (46.2%)</td><td style=\"text-align:center\">3/556 (0.0054)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html\">妖精妖</a></td><td style=\"text-align:center\">30</td><td style=\"text-align:center\">11-24 (31.4%)</td><td style=\"text-align:center\">11/556 (0.0198)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html\">消失法</a></td><td style=\"text-align:center\">29</td><td style=\"text-align:center\">27-23 (54.0%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html\">2c梦</a></td><td style=\"text-align:center\">26</td><td style=\"text-align:center\">21-24 (46.7%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html\">永火梦</a></td><td style=\"text-align:center\">23</td><td style=\"text-align:center\">18-19 (48.6%)</td><td style=\"text-align:center\">23/556 (0.0414)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html\">人偶妖</a></td><td style=\"text-align:center\">19</td><td style=\"text-align:center\">19-12 (61.3%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html\">连击妖</a></td><td style=\"text-align:center\">14</td><td style=\"text-align:center\">13-12 (52.0%)</td><td style=\"text-align:center\">1/31 (0.0323)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html\">星星法</a></td><td style=\"text-align:center\">13</td><td style=\"text-align:center\">10-11 (47.6%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html\">nc梦</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">10-7 (58.8%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html\">法术PCR</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">14-5 (73.7%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html\">控教</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">7-8 (46.7%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html\">大哥龙</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">1-8 (11.1%)</td><td style=\"text-align:center\">5/39 (0.1282)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html\">猎人妖</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">5-6 (45.5%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html\">跳费PCR</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">8-5 (61.5%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html\">loop马</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">2-5 (28.6%)</td><td style=\"text-align:center\">1/14 (0.0714)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html\">机械梦</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">3-6 (33.3%)</td><td style=\"text-align:center\">2/27 (0.0741)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html\">骰子梦</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">2-5 (28.6%)</td><td style=\"text-align:center\">6/60 (0.1000)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html\">天使皇</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-2 (71.4%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html\">节奏教</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-3 (57.1%)</td><td style=\"text-align:center\">2/51 (0.0392)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html\">八狱梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html\">八狱妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">2/25 (0.0800)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-786184f4fedc.html\">哥布林妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">1/10 (0.1000)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f4843d4577ae.html\">土法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">2/14 (0.1429)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html\">死噬妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-3 (0.0%)</td><td style=\"text-align:center\">5/28 (0.1786)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-200bb41cd994.html\">海洋龙</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-3 (0.0%)</td><td style=\"text-align:center\">3/13 (0.2308)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-c068a8ef6610.html\">纹章教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/20 (0.0500)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-747237d91606.html\">真红梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">3-1 (75.0%)</td><td style=\"text-align:center\">1/13 (0.0769)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html\">护符教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">2/18 (0.1111)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html\">龙人龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/25 (0.1600)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-75a3e2d0e2a4.html\">宇宙妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/22 (0.1818)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-c2ac43fe870c.html\">兽妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">3/16 (0.1875)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html\">机械法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/19 (0.2105)</td></tr><tr><td>偶像大师</td><td><a class=\"type-link\" href=\"decktypes/decktype-0fe79a39fa2e.html\">cool</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/16 (0.0625)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9e477d88228e.html\">财宝皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/11 (0.0909)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9d903ce17ada.html\">哥布林皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/17 (0.1176)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f2cf81b92eda.html\">魔法使法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/10 (0.2000)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-73a3a8508e82.html\">铺场皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/34 (0.2059)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-07544eb64d36.html\">黄金船教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/14 (0.2143)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-1ef829252684.html\">法术马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/9 (0.2222)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-246e45fe1891.html\">学院龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/13 (0.2308)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-4aeba2c734d7.html\">盗贼皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/13 (0.3077)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-522ba9eb9548.html\">蝙蝠梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/21 (0.3333)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7ea4d7128729.html\">荒野龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/12 (0.3333)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-dfb30b7dc558.html\">削手梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/23 (0.3478)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-f50f99e7f0df.html\">快攻龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/11 (0.3636)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-941c1ca0a7a2.html\">自然妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/19 (0.4211)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">250 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 126</span>\n          <span class=\"stat-pill percent\">25.1%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>208套 (83.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>35套 (14.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>3套 (1.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9e477d88228e.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP19-SP01.jpg\" alt=\"财宝皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>财宝皇</b><em>1套 (0.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9d903ce17ada.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林皇</b><em>1套 (0.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-73a3a8508e82.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP17-022.jpg\" alt=\"铺场皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>铺场皇</b><em>1套 (0.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4aeba2c734d7.html\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP19-SP01.jpg\" alt=\"盗贼皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>盗贼皇</b><em>1套 (0.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">195 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 84</span>\n          <span class=\"stat-pill percent\">19.6%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>179套 (91.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>8套 (4.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-200bb41cd994.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP17-SL15.jpg\" alt=\"海洋龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>海洋龙</b><em>3套 (1.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>2套 (1.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-246e45fe1891.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-057.jpg\" alt=\"学院龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院龙</b><em>1套 (0.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7ea4d7128729.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP11-052.jpg\" alt=\"荒野龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>荒野龙</b><em>1套 (0.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f50f99e7f0df.html\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/ECP01-035.jpg\" alt=\"快攻龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>快攻龙</b><em>1套 (0.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">166 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 65</span>\n          <span class=\"stat-pill percent\">16.7%</span>\n          <span class=\"stat-pill archetypes\">8 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>45套 (27.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>40套 (24.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>33套 (19.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>29套 (17.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>13套 (7.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f4843d4577ae.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP09-U03.jpg\" alt=\"土法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>土法</b><em>3套 (1.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>2套 (1.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f2cf81b92eda.html\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP14-U03.jpg\" alt=\"魔法使法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>魔法使法</b><em>1套 (0.6%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">140 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 69</span>\n          <span class=\"stat-pill percent\">14.1%</span>\n          <span class=\"stat-pill archetypes\">10 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>64套 (45.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>26套 (18.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>23套 (16.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>9套 (6.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>6套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>5套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>3套 (2.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-747237d91606.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-U05.jpg\" alt=\"真红梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>真红梦</b><em>2套 (1.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-522ba9eb9548.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL20.jpg\" alt=\"蝙蝠梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>蝙蝠梦</b><em>1套 (0.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-dfb30b7dc558.html\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-070.jpg\" alt=\"削手梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>削手梦</b><em>1套 (0.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">95 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 42</span>\n          <span class=\"stat-pill percent\">9.5%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>78套 (82.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>9套 (9.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>3套 (3.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c068a8ef6610.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP20-093.jpg\" alt=\"纹章教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>纹章教</b><em>2套 (2.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>2套 (2.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-07544eb64d36.html\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/CP01-068.jpg\" alt=\"黄金船教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>黄金船教</b><em>1套 (1.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">84 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 37</span>\n          <span class=\"stat-pill percent\">8.4%</span>\n          <span class=\"stat-pill archetypes\">10 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>30套 (35.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>19套 (22.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>14套 (16.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>7套 (8.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>3套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-786184f4fedc.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林妖</b><em>3套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>3套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75a3e2d0e2a4.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-SL26.jpg\" alt=\"宇宙妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>宇宙妖</b><em>2套 (2.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c2ac43fe870c.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP21-001.jpg\" alt=\"兽妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>兽妖</b><em>2套 (2.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-941c1ca0a7a2.html\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP07-001.jpg\" alt=\"自然妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>自然妖</b><em>1套 (1.2%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">49 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 15</span>\n          <span class=\"stat-pill percent\">4.9%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>42套 (85.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>6套 (12.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-1ef829252684.html\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-057.jpg\" alt=\"法术马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术马</b><em>1套 (2.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">15 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 9</span>\n          <span class=\"stat-pill percent\">1.5%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>9套 (60.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>6套 (40.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"偶像大师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #ff8ab3\">\n        <h2><span class=\"class-icon\">🎤</span> 偶像大师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">0.1%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-0fe79a39fa2e.html\" style=\"border-color:#ff8ab3\"><img src=\"../../assets/cards/thumbs/CSD02b-001.jpg\" alt=\"cool核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>cool</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a><a href=\"#偶像大师\">🎤 偶像大师</a>"
   },
   "2026/10/30": {
     "key": "2026/10/30",
     "label": "2026/10/30-2026/11/05",
-    "event_count": 14,
-    "deck_count": 112,
-    "top8_count": 112,
-    "top1_count": 14,
+    "event_count": 28,
+    "deck_count": 176,
+    "top8_count": 176,
+    "top1_count": 31,
     "top8_class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 35,
+        "value": 52,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -2277,7 +2545,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 28,
+        "value": 41,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -2285,7 +2553,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 26,
+        "value": 39,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -2293,7 +2561,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 11,
+        "value": 23,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -2301,7 +2569,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 7,
+        "value": 9,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -2309,11 +2577,19 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 4,
+        "value": 8,
         "itemStyle": {
           "color": "#27ae60"
         },
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 2,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "🏇 赛马娘",
@@ -2322,12 +2598,20 @@
           "color": "#8bd450"
         },
         "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "top1_class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 5,
+        "value": 11,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -2335,7 +2619,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 5,
+        "value": 8,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -2343,7 +2627,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 3,
+        "value": 7,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -2351,59 +2635,77 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 1,
+        "value": 2,
         "itemStyle": {
           "color": "#2c3e50"
         },
         "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 1,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 1,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
       }
     ],
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 29,
+        "value": 45,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 25,
+        "value": 37,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 13,
+        "value": 17,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "name": "巫师｜八狱法",
-        "value": 9,
+        "value": 14,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "梦魇｜哥布林梦",
+        "value": 9,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
         "name": "梦魇｜永火梦",
-        "value": 6,
+        "value": 8,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
-        "name": "皇家护卫｜金币皇",
-        "value": 5,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 5,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
         "name": "Others",
-        "value": 20,
+        "value": 46,
         "itemStyle": {
           "color": "#667085"
         }
@@ -2412,21 +2714,21 @@
     "top1_type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 5,
+        "value": 10,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
-        "name": "巫师｜学院法",
-        "value": 3,
-        "link": "decktypes/decktype-b9263fb83a8a.html",
-        "image": "../../assets/cards/BP06-SL08.jpg"
-      },
-      {
         "name": "龙族｜五妹龙",
-        "value": 3,
+        "value": 7,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "巫师｜学院法",
+        "value": 5,
+        "link": "decktypes/decktype-b9263fb83a8a.html",
+        "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
         "name": "巫师｜八狱法",
@@ -2435,33 +2737,34 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
-        "name": "梦魇｜哥布林梦",
-        "value": 1,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
+        "name": "Others",
+        "value": 7,
+        "itemStyle": {
+          "color": "#667085"
+        }
       }
     ],
-    "type_other_count": 20,
-    "type_other_types": 14,
-    "top1_type_other_count": 0,
-    "top1_type_other_types": 0,
-    "top1_type_others_html": "<span class=\"others-empty\">无</span>",
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/30-2026/11/05共收录14场有效赛事、112套有排名记录的卡组，其中上位卡组112套、冠军卡组14套。从上位职业分布看，皇家护卫35套（31.3%）、巫师28套（25.0%）构成本范围的主要出场面，冠军侧则以皇家护卫5套（35.7%）、巫师5套（35.7%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」29套（25.9%，最好1/52）、龙族「五妹龙」25套（22.3%，最好1/36）、巫师「学院法」13套（11.6%，最好1/49）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由ラルド使用，成绩为1/52，成绩系数0.0192。整体来看，前10%成绩卡组共有44套，占全部记录39.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F30\">雷维翁皇</a></td><td style=\"text-align:center\">29</td><td style=\"text-align:center\">26-24 (52.0%)</td><td style=\"text-align:center\">1/52 (0.0192)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F30\">五妹龙</a></td><td style=\"text-align:center\">25</td><td style=\"text-align:center\">22-22 (50.0%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F30\">学院法</a></td><td style=\"text-align:center\">13</td><td style=\"text-align:center\">16-10 (61.5%)</td><td style=\"text-align:center\">1/49 (0.0204)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F30\">八狱法</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">9-7 (56.3%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F30\">永火梦</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">4-6 (40.0%)</td><td style=\"text-align:center\">2/36 (0.0556)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F30\">金币皇</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">4-5 (44.4%)</td><td style=\"text-align:center\">3/49 (0.0612)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F30\">守护教</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">2-5 (28.6%)</td><td style=\"text-align:center\">4/26 (0.1538)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F30\">哥布林梦</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">5-3 (62.5%)</td><td style=\"text-align:center\">1/27 (0.0370)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F30\">人偶妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">2/26 (0.0769)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F30\">星星法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/27 (0.1481)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F30\">二妹法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">5/27 (0.1852)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F30\">机械梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/27 (0.0741)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F30\">天使皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/27 (0.1111)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F30\">护符教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/18 (0.1111)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F30\">妖精妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/18 (0.1667)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F30\">消失法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/22 (0.1818)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F30\">控教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/22 (0.2273)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F30\">机械法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/20 (0.3000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F30\">死噬妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/20 (0.3000)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F30\">大哥龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/18 (0.3333)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F30\">横马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/18 (0.4444)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">35 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 18</span>\n          <span class=\"stat-pill percent\">31.3%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>29套 (82.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>5套 (14.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>1套 (2.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">26 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 9</span>\n          <span class=\"stat-pill percent\">23.2%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F30\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>25套 (96.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F30\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>1套 (3.8%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">28 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">25.0%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>13套 (46.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>9套 (32.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>2套 (7.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>2套 (7.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>1套 (3.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>1套 (3.6%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">11 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">9.8%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>6套 (54.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>4套 (36.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">7 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">6.3%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>5套 (71.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>1套 (14.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>1套 (14.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">4 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">3.6%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>2套 (50.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>1套 (25.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>1套 (25.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">0.9%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F30\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
-    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a>"
+    "type_other_count": 46,
+    "type_other_types": 25,
+    "top1_type_other_count": 7,
+    "top1_type_other_types": 7,
+    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F30\"><b>梦魇｜哥布林梦</b><span>1套，最好成绩 1/27</span></a><a class=\"others-chip\" href=\"decktypes/decktype-0fe79a39fa2e.html?scope=2026%2F10%2F30\"><b>偶像大师｜cool</b><span>1套，最好成绩 1/16</span></a><a class=\"others-chip\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F30\"><b>公主连结Re:Dive｜法术PCR</b><span>1套，最好成绩 1/14</span></a><a class=\"others-chip\" href=\"decktypes/decktype-747237d91606.html?scope=2026%2F10%2F30\"><b>梦魇｜真红梦</b><span>1套，最好成绩 1/13</span></a><a class=\"others-chip\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F30\"><b>巫师｜消失法</b><span>1套，最好成绩 1/11</span></a><a class=\"others-chip\" href=\"decktypes/decktype-9e477d88228e.html?scope=2026%2F10%2F30\"><b>皇家护卫｜财宝皇</b><span>1套，最好成绩 1/11</span></a><a class=\"others-chip\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F30\"><b>精灵｜人偶妖</b><span>1套，最好成绩 1/8</span></a>",
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/30-2026/11/05共收录28场有效赛事、176套有排名记录的卡组，其中上位卡组176套、冠军卡组31套。从上位职业分布看，皇家护卫52套（29.5%）、巫师41套（23.3%）构成本范围的主要出场面，冠军侧则以皇家护卫11套（35.5%）、巫师8套（25.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」45套（25.6%，最好1/52）、龙族「五妹龙」37套（21.0%，最好1/36）、巫师「学院法」17套（9.7%，最好1/49）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由ラルド使用，成绩为1/52，成绩系数0.0192。整体来看，前10%成绩卡组共有70套，占全部记录39.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F30\">雷维翁皇</a></td><td style=\"text-align:center\">45</td><td style=\"text-align:center\">41-35 (53.9%)</td><td style=\"text-align:center\">1/52 (0.0192)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F30\">五妹龙</a></td><td style=\"text-align:center\">37</td><td style=\"text-align:center\">32-30 (51.6%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F30\">学院法</a></td><td style=\"text-align:center\">17</td><td style=\"text-align:center\">21-12 (63.6%)</td><td style=\"text-align:center\">1/49 (0.0204)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F30\">八狱法</a></td><td style=\"text-align:center\">14</td><td style=\"text-align:center\">9-12 (42.9%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F30\">哥布林梦</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">6-8 (42.9%)</td><td style=\"text-align:center\">1/27 (0.0370)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F30\">永火梦</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">5-8 (38.5%)</td><td style=\"text-align:center\">2/36 (0.0556)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F30\">守护教</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">3-7 (30.0%)</td><td style=\"text-align:center\">4/26 (0.1538)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F30\">金币皇</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">4-5 (44.4%)</td><td style=\"text-align:center\">3/49 (0.0612)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F30\">二妹法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-4 (0.0%)</td><td style=\"text-align:center\">5/27 (0.1852)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F30\">人偶妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">2/26 (0.0769)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F30\">消失法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">3-2 (60.0%)</td><td style=\"text-align:center\">1/11 (0.0909)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-747237d91606.html?scope=2026%2F10%2F30\">真红梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">3-1 (75.0%)</td><td style=\"text-align:center\">1/13 (0.0769)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F30\">星星法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/27 (0.1481)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F30\">妖精妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/18 (0.1667)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F30\">大哥龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">2/10 (0.2000)</td></tr><tr><td>偶像大师</td><td><a class=\"type-link\" href=\"decktypes/decktype-0fe79a39fa2e.html?scope=2026%2F10%2F30\">cool</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/16 (0.0625)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F30\">法术PCR</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/14 (0.0714)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F30\">机械梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/27 (0.0741)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9e477d88228e.html?scope=2026%2F10%2F30\">财宝皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/11 (0.0909)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F30\">天使皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/27 (0.1111)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F30\">护符教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/18 (0.1111)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F30\">骰子梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/16 (0.1250)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F30\">八狱梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/14 (0.1429)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F30\">连击妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/11 (0.1818)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F30\">兽妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/16 (0.1875)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F30\">控教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/22 (0.2273)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F30\">机械法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/20 (0.3000)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F30\">nc梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/10 (0.3000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F30\">死噬妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/20 (0.3000)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F30\">跳费PCR</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/11 (0.3636)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F30\">横马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/18 (0.4444)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">52 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 26</span>\n          <span class=\"stat-pill percent\">29.5%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>45套 (86.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>5套 (9.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9e477d88228e.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP19-SP01.jpg\" alt=\"财宝皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>财宝皇</b><em>1套 (1.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F30\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>1套 (1.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">39 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 14</span>\n          <span class=\"stat-pill percent\">22.2%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F30\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>37套 (94.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F30\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>2套 (5.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">41 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 14</span>\n          <span class=\"stat-pill percent\">23.3%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>17套 (41.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>14套 (34.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>4套 (9.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>3套 (7.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>2套 (4.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F30\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>1套 (2.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">23 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">13.1%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>9套 (39.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>8套 (34.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-747237d91606.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-U05.jpg\" alt=\"真红梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>真红梦</b><em>2套 (8.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>1套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>1套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>1套 (4.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F30\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>1套 (4.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">9 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">5.1%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>7套 (77.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>1套 (11.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F30\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>1套 (11.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">8 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 3</span>\n          <span class=\"stat-pill percent\">4.5%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>3套 (37.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>2套 (25.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>1套 (12.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP21-001.jpg\" alt=\"兽妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>兽妖</b><em>1套 (12.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F30\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>1套 (12.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">0.6%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F30\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">2 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">1.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F30\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>1套 (50.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F30\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>1套 (50.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"偶像大师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #ff8ab3\">\n        <h2><span class=\"class-icon\">🎤</span> 偶像大师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">0.6%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-0fe79a39fa2e.html?scope=2026%2F10%2F30\" style=\"border-color:#ff8ab3\"><img src=\"../../assets/cards/thumbs/CSD02b-001.jpg\" alt=\"cool核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>cool</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a><a href=\"#偶像大师\">🎤 偶像大师</a>"
   },
   "2026/10/23": {
     "key": "2026/10/23",
     "label": "2026/10/23-2026/10/29",
-    "event_count": 5,
-    "deck_count": 88,
-    "top8_count": 88,
-    "top1_count": 5,
+    "event_count": 11,
+    "deck_count": 120,
+    "top8_count": 120,
+    "top1_count": 13,
     "top8_class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 30,
+        "value": 47,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -2469,678 +2772,11 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 17,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "🔮 巫师",
-        "value": 15,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 12,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "🍃 精灵",
-        "value": 8,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/BP16-SL03.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 5,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "🏇 赛马娘",
-        "value": 1,
-        "itemStyle": {
-          "color": "#8bd450"
-        },
-        "image": "../../assets/cards/ECP01-005.jpg"
-      }
-    ],
-    "top1_class_distribution": [
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 3,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 1,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/BP14-SL16.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 1,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      }
-    ],
-    "type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 28,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 17,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
-        "value": 7,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "巫师｜八狱法",
-        "value": 6,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 5,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "巫师｜学院法",
-        "value": 5,
-        "link": "decktypes/decktype-b9263fb83a8a.html",
-        "image": "../../assets/cards/BP06-SL08.jpg"
-      },
-      {
-        "name": "精灵｜妖精妖",
-        "value": 5,
-        "link": "decktypes/decktype-217b5e054fbc.html",
-        "image": "../../assets/cards/BP16-SL01.jpg"
-      },
-      {
-        "name": "巫师｜二妹法",
-        "value": 4,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "Others",
-        "value": 11,
-        "itemStyle": {
-          "color": "#667085"
-        }
-      }
-    ],
-    "top1_type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 3,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 1,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "梦魇｜永火梦",
-        "value": 1,
-        "link": "decktypes/decktype-71c5492994cc.html",
-        "image": "../../assets/cards/BP14-SL16.jpg"
-      }
-    ],
-    "type_other_count": 11,
-    "type_other_types": 6,
-    "top1_type_other_count": 0,
-    "top1_type_other_types": 0,
-    "top1_type_others_html": "<span class=\"others-empty\">无</span>",
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/23-2026/10/29共收录5场有效赛事、88套有排名记录的卡组，其中上位卡组88套、冠军卡组5套。从上位职业分布看，皇家护卫30套（34.1%）、龙族17套（19.3%）构成本范围的主要出场面，冠军侧则以皇家护卫3套（60.0%）、龙族1套（20.0%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」28套（31.8%，最好1/556）、龙族「五妹龙」17套（19.3%，最好5/556）、梦魇「哥布林梦」7套（8.0%，最好4/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有73套，占全部记录83.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F23\">雷维翁皇</a></td><td style=\"text-align:center\">28</td><td style=\"text-align:center\">15-9 (62.5%)</td><td style=\"text-align:center\">1/556 (0.0018)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F23\">五妹龙</a></td><td style=\"text-align:center\">17</td><td style=\"text-align:center\">9-11 (45.0%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F23\">哥布林梦</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/556 (0.0072)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F23\">八狱法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">4-5 (44.4%)</td><td style=\"text-align:center\">3/556 (0.0054)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F23\">守护教</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/556 (0.0126)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F23\">学院法</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">8/556 (0.0144)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F23\">妖精妖</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">-</td><td style=\"text-align:center\">11/556 (0.0198)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F23\">二妹法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">10/556 (0.0180)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F23\">人偶妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F23\">永火梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">23/556 (0.0414)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F23\">金币皇</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">-</td><td style=\"text-align:center\">13/556 (0.0234)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F23\">横马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">-</td><td style=\"text-align:center\">28/556 (0.0504)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F23\">2c梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/31 (0.0968)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-dfb30b7dc558.html?scope=2026%2F10%2F23\">削手梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/23 (0.3478)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">30 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 26</span>\n          <span class=\"stat-pill percent\">34.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F23\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>28套 (93.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F23\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>2套 (6.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">17 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 11</span>\n          <span class=\"stat-pill percent\">19.3%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F23\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>17套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">15 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 12</span>\n          <span class=\"stat-pill percent\">17.0%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>6套 (40.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>5套 (33.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>4套 (26.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">12 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">13.6%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>7套 (58.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>3套 (25.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>1套 (8.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-dfb30b7dc558.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-070.jpg\" alt=\"削手梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>削手梦</b><em>1套 (8.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">5 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">5.7%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F23\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>5套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">8 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">9.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>5套 (62.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>3套 (37.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">1.1%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F23\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
-    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a>"
-  },
-  "2026/10/16": {
-    "key": "2026/10/16",
-    "label": "2026/10/16-2026/10/22",
-    "event_count": 16,
-    "deck_count": 128,
-    "top8_count": 128,
-    "top1_count": 16,
-    "top8_class_distribution": [
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 40,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 30,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "🔮 巫师",
-        "value": 16,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP06-SL08.jpg"
-      },
-      {
-        "name": "🍃 精灵",
-        "value": 13,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 13,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 12,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "🏇 赛马娘",
-        "value": 3,
-        "itemStyle": {
-          "color": "#8bd450"
-        },
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "💎 公主连结Re:Dive",
-        "value": 1,
-        "itemStyle": {
-          "color": "#e91e63"
-        },
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      }
-    ],
-    "top1_class_distribution": [
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 6,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 3,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 3,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "🔮 巫师",
-        "value": 2,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 1,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "🍃 精灵",
-        "value": 1,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      }
-    ],
-    "type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 33,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 27,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "皇家护卫｜金币皇",
-        "value": 7,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 7,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
-        "value": 7,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "巫师｜二妹法",
-        "value": 6,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "Others",
-        "value": 41,
-        "itemStyle": {
-          "color": "#667085"
-        }
-      }
-    ],
-    "top1_type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 5,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 3,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 3,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "皇家护卫｜金币皇",
-        "value": 1,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
-        "value": 1,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "巫师｜八狱法",
-        "value": 1,
-        "link": "decktypes/decktype-058fd7f22075.html",
-        "image": "../../assets/cards/BP19-SL10.jpg"
-      },
-      {
-        "name": "巫师｜二妹法",
-        "value": 1,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "精灵｜猎人妖",
-        "value": 1,
-        "link": "decktypes/decktype-44ce1ca73386.html",
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      }
-    ],
-    "type_other_count": 41,
-    "type_other_types": 20,
-    "top1_type_other_count": 0,
-    "top1_type_other_types": 0,
-    "top1_type_others_html": "<span class=\"others-empty\">无</span>",
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/16-2026/10/22共收录16场有效赛事、128套有排名记录的卡组，其中上位卡组128套、冠军卡组16套。从上位职业分布看，皇家护卫40套（31.3%）、龙族30套（23.4%）构成本范围的主要出场面，冠军侧则以皇家护卫6套（37.5%）、龙族3套（18.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」33套（25.8%，最好1/36）、龙族「五妹龙」27套（21.1%，最好1/60）、皇家护卫「金币皇」7套（5.5%，最好1/42）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由ラルド使用，成绩为1/60，成绩系数0.0167。整体来看，前10%成绩卡组共有55套，占全部记录43.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F16\">雷维翁皇</a></td><td style=\"text-align:center\">33</td><td style=\"text-align:center\">26-28 (48.1%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F16\">五妹龙</a></td><td style=\"text-align:center\">27</td><td style=\"text-align:center\">30-24 (55.6%)</td><td style=\"text-align:center\">1/60 (0.0167)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F16\">金币皇</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">7-6 (53.8%)</td><td style=\"text-align:center\">1/42 (0.0238)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F16\">守护教</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">10-4 (71.4%)</td><td style=\"text-align:center\">1/40 (0.0250)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F16\">哥布林梦</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">7-6 (53.8%)</td><td style=\"text-align:center\">1/29 (0.0345)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F16\">二妹法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">5-5 (50.0%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F16\">连击妖</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">3-4 (42.9%)</td><td style=\"text-align:center\">2/32 (0.0625)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F16\">学院法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">2/45 (0.0444)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F16\">消失法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">3/60 (0.0500)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F16\">人偶妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">4/60 (0.0667)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F16\">妖精妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">3/21 (0.1429)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F16\">横马</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-3 (0.0%)</td><td style=\"text-align:center\">7/42 (0.1667)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F16\">八狱法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F16\">猎人妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">3-1 (75.0%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F16\">节奏教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">3/45 (0.0667)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F16\">控教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/40 (0.0750)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F16\">星星法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/21 (0.1429)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F16\">2c梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/17 (0.1765)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F16\">永火梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">4/21 (0.1905)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F16\">大哥龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">6/17 (0.3529)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F16\">nc梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/29 (0.0690)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F16\">骰子梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/60 (0.1000)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F16\">法术PCR</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/40 (0.1750)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F16\">龙人龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/21 (0.2381)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F16\">护符教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/19 (0.2632)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F16\">八狱妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/26 (0.3077)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">40 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 16</span>\n          <span class=\"stat-pill percent\">31.3%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F16\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>33套 (82.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F16\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>7套 (17.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">30 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 16</span>\n          <span class=\"stat-pill percent\">23.4%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>27套 (90.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>2套 (6.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>1套 (3.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">16 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 7</span>\n          <span class=\"stat-pill percent\">12.5%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>6套 (37.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>3套 (18.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>3套 (18.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>2套 (12.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>2套 (12.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">13 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 6</span>\n          <span class=\"stat-pill percent\">10.2%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>7套 (53.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>2套 (15.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>2套 (15.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">12 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">9.4%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>7套 (58.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>2套 (16.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>2套 (16.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>1套 (8.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">13 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">10.2%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>4套 (30.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>3套 (23.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>3套 (23.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>2套 (15.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">3 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">2.3%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F16\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>3套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">1 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">0.8%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F16\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>1套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
-    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
-  },
-  "2026/10/09": {
-    "key": "2026/10/09",
-    "label": "2026/10/09-2026/10/15",
-    "event_count": 30,
-    "deck_count": 240,
-    "top8_count": 240,
-    "top1_count": 30,
-    "top8_class_distribution": [
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 55,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "🔮 巫师",
-        "value": 44,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 37,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 34,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "🍃 精灵",
-        "value": 25,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 23,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "🏇 赛马娘",
-        "value": 17,
-        "itemStyle": {
-          "color": "#8bd450"
-        },
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "💎 公主连结Re:Dive",
-        "value": 5,
-        "itemStyle": {
-          "color": "#e91e63"
-        },
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      }
-    ],
-    "top1_class_distribution": [
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 9,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "🔮 巫师",
-        "value": 5,
-        "itemStyle": {
-          "color": "#9b59b6"
-        },
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 4,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 3,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 3,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "💎 公主连结Re:Dive",
-        "value": 3,
-        "itemStyle": {
-          "color": "#e91e63"
-        },
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      },
-      {
-        "name": "🍃 精灵",
-        "value": 2,
-        "itemStyle": {
-          "color": "#27ae60"
-        },
-        "image": "../../assets/cards/ECP02-SL04.jpg"
-      },
-      {
-        "name": "🏇 赛马娘",
-        "value": 1,
-        "itemStyle": {
-          "color": "#8bd450"
-        },
-        "image": "../../assets/cards/ECP01-005.jpg"
-      }
-    ],
-    "type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 44,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 37,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
         "value": 20,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 17,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "赛马娘｜横马",
-        "value": 14,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "巫师｜二妹法",
-        "value": 13,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "巫师｜消失法",
-        "value": 13,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
-      },
-      {
-        "name": "Others",
-        "value": 82,
-        "itemStyle": {
-          "color": "#667085"
-        }
-      }
-    ],
-    "top1_type_distribution": [
-      {
-        "name": "皇家护卫｜雷维翁皇",
-        "value": 8,
-        "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "龙族｜五妹龙",
-        "value": 3,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "梦魇｜哥布林梦",
-        "value": 2,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 2,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "公主连结Re:Dive｜法术PCR",
-        "value": 2,
-        "link": "decktypes/decktype-deb2d8e95565.html",
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      },
-      {
-        "name": "巫师｜消失法",
-        "value": 2,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
-      },
-      {
-        "name": "Others",
-        "value": 11,
-        "itemStyle": {
-          "color": "#667085"
-        }
-      }
-    ],
-    "type_other_count": 82,
-    "type_other_types": 23,
-    "top1_type_other_count": 11,
-    "top1_type_other_types": 11,
-    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F09\"><b>巫师｜二妹法</b><span>1套，最好成绩 1/38</span></a><a class=\"others-chip\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F09\"><b>赛马娘｜横马</b><span>1套，最好成绩 1/35</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\"><b>皇家护卫｜金币皇</b><span>1套，最好成绩 1/34</span></a><a class=\"others-chip\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\"><b>精灵｜连击妖</b><span>1套，最好成绩 1/31</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\"><b>公主连结Re:Dive｜跳费PCR</b><span>1套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F09\"><b>梦魇｜2c梦</b><span>1套，最好成绩 1/26</span></a><a class=\"others-chip\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\"><b>精灵｜人偶妖</b><span>1套，最好成绩 1/26</span></a><a class=\"others-chip\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F09\"><b>巫师｜星星法</b><span>1套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\"><b>主教｜纹章教</b><span>1套，最好成绩 1/20</span></a><a class=\"others-chip\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\"><b>主教｜控教</b><span>1套，最好成绩 1/17</span></a><a class=\"others-chip\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F09\"><b>巫师｜学院法</b><span>1套，最好成绩 1/17</span></a>",
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/09-2026/10/15共收录30场有效赛事、240套有排名记录的卡组，其中上位卡组240套、冠军卡组30套。从上位职业分布看，皇家护卫55套（22.9%）、巫师44套（18.3%）构成本范围的主要出场面，冠军侧则以皇家护卫9套（30.0%）、巫师5套（16.7%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（18.3%，最好1/51）、龙族「五妹龙」37套（15.4%，最好1/21）、梦魇「哥布林梦」20套（8.3%，最好1/47）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由たたみさし使用，成绩为1/51，成绩系数0.0196。整体来看，前10%成绩卡组共有98套，占全部记录40.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F09\">雷维翁皇</a></td><td style=\"text-align:center\">44</td><td style=\"text-align:center\">53-36 (59.6%)</td><td style=\"text-align:center\">1/51 (0.0196)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F09\">五妹龙</a></td><td style=\"text-align:center\">37</td><td style=\"text-align:center\">26-34 (43.3%)</td><td style=\"text-align:center\">1/21 (0.0476)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F09\">哥布林梦</a></td><td style=\"text-align:center\">20</td><td style=\"text-align:center\">21-18 (53.8%)</td><td style=\"text-align:center\">1/47 (0.0213)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F09\">守护教</a></td><td style=\"text-align:center\">17</td><td style=\"text-align:center\">12-15 (44.4%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F09\">横马</a></td><td style=\"text-align:center\">14</td><td style=\"text-align:center\">8-13 (38.1%)</td><td style=\"text-align:center\">1/35 (0.0286)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F09\">二妹法</a></td><td style=\"text-align:center\">13</td><td style=\"text-align:center\">8-12 (40.0%)</td><td style=\"text-align:center\">1/38 (0.0263)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F09\">消失法</a></td><td style=\"text-align:center\">13</td><td style=\"text-align:center\">13-11 (54.2%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\">金币皇</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">6-8 (42.9%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F09\">学院法</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">9-8 (52.9%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F09\">妖精妖</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">2-8 (20.0%)</td><td style=\"text-align:center\">2/24 (0.0833)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\">人偶妖</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">6-6 (50.0%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F09\">2c梦</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">7-6 (53.8%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\">连击妖</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">7-5 (58.3%)</td><td style=\"text-align:center\">1/31 (0.0323)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F09\">星星法</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">5-4 (55.6%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\">控教</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">5-3 (62.5%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F09\">八狱法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">3-4 (42.9%)</td><td style=\"text-align:center\">2/31 (0.0645)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F09\">永火梦</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">1-4 (20.0%)</td><td style=\"text-align:center\">3/34 (0.0882)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F09\">法术PCR</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">6-1 (85.7%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F09\">loop马</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-3 (0.0%)</td><td style=\"text-align:center\">6/34 (0.1765)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\">跳费PCR</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">4-1 (80.0%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\">纹章教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/20 (0.0500)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F09\">nc梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/45 (0.0667)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9d903ce17ada.html?scope=2026%2F10%2F09\">哥布林皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/17 (0.1176)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F09\">死噬妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/28 (0.1786)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-73a3a8508e82.html?scope=2026%2F10%2F09\">铺场皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/34 (0.2059)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-522ba9eb9548.html?scope=2026%2F10%2F09\">蝙蝠梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/21 (0.3333)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F09\">猎人妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/21 (0.3333)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F09\">哥布林妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/17 (0.3529)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F09\">骰子梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/20 (0.4000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F09\">兽妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/17 (0.4706)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">55 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 26</span>\n          <span class=\"stat-pill percent\">22.9%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>44套 (80.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>9套 (16.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9d903ce17ada.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林皇</b><em>1套 (1.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-73a3a8508e82.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP17-022.jpg\" alt=\"铺场皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>铺场皇</b><em>1套 (1.8%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">37 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 13</span>\n          <span class=\"stat-pill percent\">15.4%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F09\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>37套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">44 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 13</span>\n          <span class=\"stat-pill percent\">18.3%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>13套 (29.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>13套 (29.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>9套 (20.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>5套 (11.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>4套 (9.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">34 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 18</span>\n          <span class=\"stat-pill percent\">14.2%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>20套 (58.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>7套 (20.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>4套 (11.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>1套 (2.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-522ba9eb9548.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL20.jpg\" alt=\"蝙蝠梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>蝙蝠梦</b><em>1套 (2.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>1套 (2.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">23 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 11</span>\n          <span class=\"stat-pill percent\">9.6%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>17套 (73.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>4套 (17.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP20-093.jpg\" alt=\"纹章教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>纹章教</b><em>2套 (8.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">25 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 9</span>\n          <span class=\"stat-pill percent\">10.4%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>8套 (32.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>7套 (28.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>6套 (24.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林妖</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP21-001.jpg\" alt=\"兽妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>兽妖</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">17 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">7.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F09\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>14套 (82.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F09\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>3套 (17.6%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">5 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">2.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F09\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>3套 (60.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>2套 (40.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
-    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
-  },
-  "2026/10/02": {
-    "key": "2026/10/02",
-    "label": "2026/10/02-2026/10/08",
-    "event_count": 17,
-    "deck_count": 136,
-    "top8_count": 136,
-    "top1_count": 17,
-    "top8_class_distribution": [
-      {
-        "name": "🐉 龙族",
-        "value": 29,
         "itemStyle": {
           "color": "#e67e22"
         },
         "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 22,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP16-026.jpg"
-      },
-      {
-        "name": "💀 梦魇",
-        "value": 22,
-        "itemStyle": {
-          "color": "#2c3e50"
-        },
-        "image": "../../assets/cards/PR-399.jpg"
-      },
-      {
-        "name": "⛪ 主教",
-        "value": 22,
-        "itemStyle": {
-          "color": "#f1c40f"
-        },
-        "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "🔮 巫师",
@@ -3148,57 +2784,31 @@
         "itemStyle": {
           "color": "#9b59b6"
         },
-        "image": "../../assets/cards/BP15-SL11.jpg"
+        "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
         "name": "🍃 精灵",
-        "value": 11,
+        "value": 13,
         "itemStyle": {
           "color": "#27ae60"
         },
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
-        "name": "🏇 赛马娘",
-        "value": 8,
-        "itemStyle": {
-          "color": "#8bd450"
-        },
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "💎 公主连结Re:Dive",
-        "value": 4,
-        "itemStyle": {
-          "color": "#e91e63"
-        },
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      }
-    ],
-    "top1_class_distribution": [
-      {
         "name": "💀 梦魇",
-        "value": 4,
+        "value": 13,
         "itemStyle": {
           "color": "#2c3e50"
         },
-        "image": "../../assets/cards/PR-399.jpg"
+        "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "⛪ 主教",
-        "value": 4,
+        "value": 7,
         "itemStyle": {
           "color": "#f1c40f"
         },
         "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
-        "name": "⚔️ 皇家护卫",
-        "value": 3,
-        "itemStyle": {
-          "color": "#3498db"
-        },
-        "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "🏇 赛马娘",
@@ -3207,6 +2817,24 @@
           "color": "#8bd450"
         },
         "image": "../../assets/cards/ECP01-005.jpg"
+      }
+    ],
+    "top1_class_distribution": [
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 7,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 3,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "🔮 巫师",
@@ -3214,15 +2842,15 @@
         "itemStyle": {
           "color": "#9b59b6"
         },
-        "image": "../../assets/cards/BP18-SL09.jpg"
+        "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "name": "💎 公主连结Re:Dive",
+        "name": "💀 梦魇",
         "value": 1,
         "itemStyle": {
-          "color": "#e91e63"
+          "color": "#2c3e50"
         },
-        "image": "../../assets/cards/CP04-SP02.jpg"
+        "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
         "name": "🍃 精灵",
@@ -3231,58 +2859,44 @@
           "color": "#27ae60"
         },
         "image": "../../assets/cards/BP16-SL03.jpg"
-      },
-      {
-        "name": "🐉 龙族",
-        "value": 1,
-        "itemStyle": {
-          "color": "#e67e22"
-        },
-        "image": "../../assets/cards/BP15-SL15.jpg"
       }
     ],
     "type_distribution": [
       {
-        "name": "龙族｜五妹龙",
-        "value": 26,
-        "link": "decktypes/decktype-7e3b69cd0c30.html",
-        "image": "../../assets/cards/BP15-SL15.jpg"
-      },
-      {
-        "name": "主教｜守护教",
-        "value": 21,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 14,
+        "value": 44,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
-        "name": "梦魇｜2c梦",
-        "value": 10,
-        "link": "decktypes/decktype-75305287827c.html",
-        "image": "../../assets/cards/BP18-SL19.jpg"
+        "name": "龙族｜五妹龙",
+        "value": 20,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "赛马娘｜横马",
-        "value": 7,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
+        "name": "巫师｜八狱法",
+        "value": 8,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 8,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "精灵｜妖精妖",
-        "value": 6,
+        "value": 7,
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
-        "name": "皇家护卫｜金币皇",
+        "name": "主教｜守护教",
         "value": 6,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "巫师｜学院法",
@@ -3292,7 +2906,7 @@
       },
       {
         "name": "Others",
-        "value": 40,
+        "value": 21,
         "itemStyle": {
           "color": "#667085"
         }
@@ -3300,28 +2914,22 @@
     ],
     "top1_type_distribution": [
       {
-        "name": "主教｜守护教",
-        "value": 4,
-        "link": "decktypes/decktype-75396de72bcf.html",
-        "image": "../../assets/cards/BP15-SL26.jpg"
-      },
-      {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 2,
+        "value": 7,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
-        "name": "赛马娘｜横马",
-        "value": 2,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
+        "name": "龙族｜五妹龙",
+        "value": 3,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "梦魇｜哥布林梦",
-        "value": 2,
-        "link": "decktypes/decktype-f0af484e4c57.html",
-        "image": "../../assets/cards/PR-310.jpg"
+        "name": "梦魇｜永火梦",
+        "value": 1,
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
         "name": "精灵｜人偶妖",
@@ -3330,50 +2938,763 @@
         "image": "../../assets/cards/BP16-SL03.jpg"
       },
       {
-        "name": "皇家护卫｜天使皇",
+        "name": "巫师｜学院法",
         "value": 1,
-        "link": "decktypes/decktype-2b0efb008539.html",
-        "image": "../../assets/cards/PR-233.jpg"
+        "link": "decktypes/decktype-b9263fb83a8a.html",
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      }
+    ],
+    "type_other_count": 21,
+    "type_other_types": 10,
+    "top1_type_other_count": 0,
+    "top1_type_other_types": 0,
+    "top1_type_others_html": "<span class=\"others-empty\">无</span>",
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/23-2026/10/29共收录11场有效赛事、120套有排名记录的卡组，其中上位卡组120套、冠军卡组13套。从上位职业分布看，皇家护卫47套（39.2%）、龙族20套（16.7%）构成本范围的主要出场面，冠军侧则以皇家护卫7套（53.8%）、龙族3套（23.1%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（36.7%，最好1/556）、龙族「五妹龙」20套（16.7%，最好5/556）、巫师「八狱法」8套（6.7%，最好3/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有85套，占全部记录70.8%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F23\">雷维翁皇</a></td><td style=\"text-align:center\">44</td><td style=\"text-align:center\">27-21 (56.3%)</td><td style=\"text-align:center\">1/556 (0.0018)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F23\">五妹龙</a></td><td style=\"text-align:center\">20</td><td style=\"text-align:center\">13-12 (52.0%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F23\">八狱法</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">4-7 (36.4%)</td><td style=\"text-align:center\">3/556 (0.0054)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F23\">哥布林梦</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">4/556 (0.0072)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F23\">妖精妖</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">11/556 (0.0198)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F23\">守护教</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">7/556 (0.0126)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F23\">学院法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">8/556 (0.0144)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F23\">人偶妖</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">5/556 (0.0090)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F23\">二妹法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">10/556 (0.0180)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F23\">金币皇</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">13/556 (0.0234)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F23\">永火梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">23/556 (0.0414)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F23\">横马</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">28/556 (0.0504)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F23\">2c梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">3/31 (0.0968)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F23\">连击妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/10 (0.3000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F23\">死噬妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/9 (0.3333)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-dfb30b7dc558.html?scope=2026%2F10%2F23\">削手梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/23 (0.3478)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F23\">控教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/9 (0.4444)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">47 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 34</span>\n          <span class=\"stat-pill percent\">39.2%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F23\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>44套 (93.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F23\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>3套 (6.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">20 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 13</span>\n          <span class=\"stat-pill percent\">16.7%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F23\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>20套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">18 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 13</span>\n          <span class=\"stat-pill percent\">15.0%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>8套 (44.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>6套 (33.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F23\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>4套 (22.2%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">13 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">10.8%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>8套 (61.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>3套 (23.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-dfb30b7dc558.html?scope=2026%2F10%2F23\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP05-070.jpg\" alt=\"削手梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>削手梦</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">7 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">5.8%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F23\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>6套 (85.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F23\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>1套 (14.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">13 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 9</span>\n          <span class=\"stat-pill percent\">10.8%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>7套 (53.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>4套 (30.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F23\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>1套 (7.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">2 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 1</span>\n          <span class=\"stat-pill percent\">1.7%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F23\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>2套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a>"
+  },
+  "2026/10/16": {
+    "key": "2026/10/16",
+    "label": "2026/10/16-2026/10/22",
+    "event_count": 28,
+    "deck_count": 195,
+    "top8_count": 195,
+    "top1_count": 32,
+    "top8_class_distribution": [
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 52,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP14-022.jpg"
       },
       {
-        "name": "梦魇｜nc梦",
-        "value": 1,
-        "link": "decktypes/decktype-bbc8f17f6035.html",
-        "image": "../../assets/cards/PR-399.jpg"
+        "name": "🐉 龙族",
+        "value": 45,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
-        "name": "梦魇｜八狱梦",
-        "value": 1,
-        "link": "decktypes/decktype-7a481475a6b5.html",
-        "image": "../../assets/cards/BP19-080.jpg"
+        "name": "🔮 巫师",
+        "value": 29,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 23,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 19,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 17,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 7,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 3,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      }
+    ],
+    "top1_class_distribution": [
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 10,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 6,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 5,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 4,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 4,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 3,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 44,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 1,
+        "value": 41,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
+        "name": "主教｜守护教",
+        "value": 12,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 11,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 9,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "皇家护卫｜金币皇",
+        "value": 8,
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 70,
+        "itemStyle": {
+          "color": "#667085"
+        }
+      }
+    ],
+    "top1_type_distribution": [
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 9,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "龙族｜五妹龙",
+        "value": 6,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 4,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 2,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 2,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 2,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "梦魇｜永火梦",
+        "value": 2,
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 5,
+        "itemStyle": {
+          "color": "#667085"
+        }
+      }
+    ],
+    "type_other_count": 70,
+    "type_other_types": 24,
+    "top1_type_other_count": 5,
+    "top1_type_other_types": 5,
+    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F16\"><b>皇家护卫｜金币皇</b><span>1套，最好成绩 1/42</span></a><a class=\"others-chip\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F16\"><b>精灵｜猎人妖</b><span>1套，最好成绩 1/17</span></a><a class=\"others-chip\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F16\"><b>精灵｜连击妖</b><span>1套，最好成绩 1/15</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F16\"><b>梦魇｜nc梦</b><span>1套，最好成绩 1/12</span></a><a class=\"others-chip\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F16\"><b>精灵｜哥布林妖</b><span>1套，最好成绩 1/10</span></a>",
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/16-2026/10/22共收录28场有效赛事、195套有排名记录的卡组，其中上位卡组195套、冠军卡组32套。从上位职业分布看，皇家护卫52套（26.7%）、龙族45套（23.1%）构成本范围的主要出场面，冠军侧则以皇家护卫10套（31.3%）、龙族6套（18.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」44套（22.6%，最好1/36）、龙族「五妹龙」41套（21.0%，最好1/60）、主教「守护教」12套（6.2%，最好1/40）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由ラルド使用，成绩为1/60，成绩系数0.0167。整体来看，前10%成绩卡组共有79套，占全部记录40.5%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F16\">雷维翁皇</a></td><td style=\"text-align:center\">44</td><td style=\"text-align:center\">34-35 (49.3%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F16\">五妹龙</a></td><td style=\"text-align:center\">41</td><td style=\"text-align:center\">41-35 (53.9%)</td><td style=\"text-align:center\">1/60 (0.0167)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F16\">守护教</a></td><td style=\"text-align:center\">12</td><td style=\"text-align:center\">12-8 (60.0%)</td><td style=\"text-align:center\">1/40 (0.0250)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F16\">哥布林梦</a></td><td style=\"text-align:center\">11</td><td style=\"text-align:center\">10-9 (52.6%)</td><td style=\"text-align:center\">1/29 (0.0345)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F16\">二妹法</a></td><td style=\"text-align:center\">9</td><td style=\"text-align:center\">9-7 (56.3%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F16\">金币皇</a></td><td style=\"text-align:center\">8</td><td style=\"text-align:center\">8-7 (53.3%)</td><td style=\"text-align:center\">1/42 (0.0238)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F16\">横马</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">1-7 (12.5%)</td><td style=\"text-align:center\">7/42 (0.1667)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F16\">消失法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">3-6 (33.3%)</td><td style=\"text-align:center\">3/60 (0.0500)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F16\">八狱法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">8-4 (66.7%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F16\">永火梦</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">6-4 (60.0%)</td><td style=\"text-align:center\">1/16 (0.0625)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F16\">连击妖</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">5-5 (50.0%)</td><td style=\"text-align:center\">2/32 (0.0625)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F16\">学院法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">2-4 (33.3%)</td><td style=\"text-align:center\">2/45 (0.0444)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F16\">妖精妖</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">2-4 (33.3%)</td><td style=\"text-align:center\">3/21 (0.1429)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F16\">人偶妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">4/60 (0.0667)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F16\">nc梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">2/29 (0.0690)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F16\">控教</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">3/40 (0.0750)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F16\">星星法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">3/21 (0.1429)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F16\">法术PCR</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">7/40 (0.1750)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F16\">猎人妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">3-1 (75.0%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F16\">节奏教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-2 (50.0%)</td><td style=\"text-align:center\">3/45 (0.0667)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F16\">2c梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/17 (0.1765)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F16\">大哥龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">6/17 (0.3529)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F16\">骰子梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/60 (0.1000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F16\">哥布林妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-0 (100.0%)</td><td style=\"text-align:center\">1/10 (0.1000)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f2cf81b92eda.html?scope=2026%2F10%2F16\">魔法使法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/10 (0.2000)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-07544eb64d36.html?scope=2026%2F10%2F16\">黄金船教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/14 (0.2143)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F16\">龙人龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/21 (0.2381)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F16\">护符教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/19 (0.2632)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F16\">八狱妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/26 (0.3077)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7ea4d7128729.html?scope=2026%2F10%2F16\">荒野龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/12 (0.3333)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">52 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 20</span>\n          <span class=\"stat-pill percent\">26.7%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F16\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>44套 (84.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F16\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>8套 (15.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">45 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 22</span>\n          <span class=\"stat-pill percent\">23.1%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>41套 (91.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>2套 (4.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>1套 (2.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7ea4d7128729.html?scope=2026%2F10%2F16\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP11-052.jpg\" alt=\"荒野龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>荒野龙</b><em>1套 (2.2%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">29 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 12</span>\n          <span class=\"stat-pill percent\">14.9%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>9套 (31.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>6套 (20.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>6套 (20.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>4套 (13.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>3套 (10.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f2cf81b92eda.html?scope=2026%2F10%2F16\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP14-U03.jpg\" alt=\"魔法使法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>魔法使法</b><em>1套 (3.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">23 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 11</span>\n          <span class=\"stat-pill percent\">11.8%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>11套 (47.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>6套 (26.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>3套 (13.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>2套 (8.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F16\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>1套 (4.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">19 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 7</span>\n          <span class=\"stat-pill percent\">9.7%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>12套 (63.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>3套 (15.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>2套 (10.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-07544eb64d36.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/CP01-068.jpg\" alt=\"黄金船教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>黄金船教</b><em>1套 (5.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-79c6992b28db.html?scope=2026%2F10%2F16\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP08-087.jpg\" alt=\"护符教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>护符教</b><em>1套 (5.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">17 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 7</span>\n          <span class=\"stat-pill percent\">8.7%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>6套 (35.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>4套 (23.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>3套 (17.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>2套 (11.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林妖</b><em>1套 (5.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F16\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>1套 (5.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">7 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">3.6%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F16\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>7套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">3 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 0</span>\n          <span class=\"stat-pill percent\">1.5%</span>\n          <span class=\"stat-pill archetypes\">1 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F16\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>3套 (100.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
+  },
+  "2026/10/09": {
+    "key": "2026/10/09",
+    "label": "2026/10/09-2026/10/15",
+    "event_count": 46,
+    "deck_count": 312,
+    "top8_count": 312,
+    "top1_count": 48,
+    "top8_class_distribution": [
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 69,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 53,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 52,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 50,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 31,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 27,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 24,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 6,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      }
+    ],
+    "top1_class_distribution": [
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 12,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 10,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 9,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 6,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 4,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 3,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 2,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/ECP02-SL04.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 2,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 55,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "龙族｜五妹龙",
+        "value": 47,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 32,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 21,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 20,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 17,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 15,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 105,
+        "itemStyle": {
+          "color": "#667085"
+        }
+      }
+    ],
+    "top1_type_distribution": [
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 11,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 7,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "龙族｜五妹龙",
+        "value": 6,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 3,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "巫师｜学院法",
+        "value": 3,
+        "link": "decktypes/decktype-b9263fb83a8a.html",
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 2,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 2,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 2,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
         "name": "公主连结Re:Dive｜法术PCR",
-        "value": 1,
+        "value": 2,
         "link": "decktypes/decktype-deb2d8e95565.html",
         "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
-        "name": "巫师｜消失法",
-        "value": 1,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
+        "name": "梦魇｜2c梦",
+        "value": 2,
+        "link": "decktypes/decktype-75305287827c.html",
+        "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 2,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-SL07.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 6,
+        "itemStyle": {
+          "color": "#667085"
+        }
       }
     ],
-    "type_other_count": 40,
-    "type_other_types": 23,
-    "top1_type_other_count": 0,
-    "top1_type_other_types": 0,
-    "top1_type_others_html": "<span class=\"others-empty\">无</span>",
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/02-2026/10/08共收录17场有效赛事、136套有排名记录的卡组，其中上位卡组136套、冠军卡组17套。从上位职业分布看，龙族29套（21.3%）、皇家护卫22套（16.2%）构成本范围的主要出场面，冠军侧则以梦魇4套（23.5%）、主教4套（23.5%）表现最突出。卡组类型方面，龙族「五妹龙」26套（19.1%，最好1/25）、主教「守护教」21套（15.4%，最好1/46）、皇家护卫「雷维翁皇」14套（10.3%，最好1/70）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由Saika使用，成绩为1/70，成绩系数0.0143。整体来看，前10%成绩卡组共有61套，占全部记录44.9%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
-    "popular_rows": "<tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F02\">五妹龙</a></td><td style=\"text-align:center\">26</td><td style=\"text-align:center\">19-25 (43.2%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F02\">守护教</a></td><td style=\"text-align:center\">21</td><td style=\"text-align:center\">21-17 (55.3%)</td><td style=\"text-align:center\">1/46 (0.0217)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F02\">雷维翁皇</a></td><td style=\"text-align:center\">14</td><td style=\"text-align:center\">8-12 (40.0%)</td><td style=\"text-align:center\">1/70 (0.0143)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F02\">2c梦</a></td><td style=\"text-align:center\">10</td><td style=\"text-align:center\">6-10 (37.5%)</td><td style=\"text-align:center\">2/39 (0.0513)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F02\">横马</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">11-5 (68.8%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F02\">妖精妖</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">1-6 (14.3%)</td><td style=\"text-align:center\">3/51 (0.0588)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F02\">金币皇</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">5-6 (45.5%)</td><td style=\"text-align:center\">2/32 (0.0625)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F02\">学院法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">2-6 (25.0%)</td><td style=\"text-align:center\">3/25 (0.1200)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F02\">二妹法</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">3-5 (37.5%)</td><td style=\"text-align:center\">2/70 (0.0286)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F02\">消失法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">4-3 (57.1%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F02\">nc梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-2 (71.4%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F02\">机械梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">4/46 (0.0870)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F02\">天使皇</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">4-1 (80.0%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F02\">哥布林梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">6-0 (100.0%)</td><td style=\"text-align:center\">1/32 (0.0313)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F02\">法术PCR</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/24 (0.0417)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F02\">跳费PCR</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">2/36 (0.0556)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F02\">大哥龙</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">5/39 (0.1282)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F02\">骰子梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/17 (0.1765)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F02\">人偶妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">3-0 (100.0%)</td><td style=\"text-align:center\">1/51 (0.0196)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F02\">节奏教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/51 (0.0392)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F02\">八狱梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">3-0 (100.0%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F02\">八狱妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/25 (0.0800)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F02\">loop马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/46 (0.1522)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F02\">龙人龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/25 (0.1600)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F02\">宇宙妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/22 (0.1818)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F02\">猎人妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/25 (0.2000)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F02\">机械法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/19 (0.2105)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F02\">八狱法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/22 (0.2273)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F02\">永火梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/24 (0.2500)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F02\">星星法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/19 (0.2632)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-941c1ca0a7a2.html?scope=2026%2F10%2F02\">自然妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/19 (0.4211)</td></tr>",
-    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">22 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 9</span>\n          <span class=\"stat-pill percent\">16.2%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>14套 (63.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>6套 (27.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>2套 (9.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">29 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 12</span>\n          <span class=\"stat-pill percent\">21.3%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>26套 (89.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>2套 (6.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>1套 (3.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">18 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 5</span>\n          <span class=\"stat-pill percent\">13.2%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>6套 (33.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>5套 (27.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>4套 (22.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>1套 (5.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>1套 (5.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>1套 (5.6%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">22 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">16.2%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>10套 (45.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>3套 (13.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>3套 (13.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>2套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>2套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>1套 (4.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>1套 (4.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">22 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 13</span>\n          <span class=\"stat-pill percent\">16.2%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F02\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>21套 (95.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F02\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>1套 (4.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">11 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">8.1%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>6套 (54.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-SL26.jpg\" alt=\"宇宙妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>宇宙妖</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-941c1ca0a7a2.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP07-001.jpg\" alt=\"自然妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>自然妖</b><em>1套 (9.1%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">8 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 6</span>\n          <span class=\"stat-pill percent\">5.9%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F02\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>7套 (87.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F02\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>1套 (12.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">4 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">2.9%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F02\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>2套 (50.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F02\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>2套 (50.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "type_other_count": 105,
+    "type_other_types": 27,
+    "top1_type_other_count": 6,
+    "top1_type_other_types": 6,
+    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\"><b>皇家护卫｜金币皇</b><span>1套，最好成绩 1/34</span></a><a class=\"others-chip\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\"><b>精灵｜连击妖</b><span>1套，最好成绩 1/31</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\"><b>公主连结Re:Dive｜跳费PCR</b><span>1套，最好成绩 1/28</span></a><a class=\"others-chip\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\"><b>精灵｜人偶妖</b><span>1套，最好成绩 1/26</span></a><a class=\"others-chip\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\"><b>主教｜纹章教</b><span>1套，最好成绩 1/20</span></a><a class=\"others-chip\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\"><b>主教｜控教</b><span>1套，最好成绩 1/17</span></a>",
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/09-2026/10/15共收录46场有效赛事、312套有排名记录的卡组，其中上位卡组312套、冠军卡组48套。从上位职业分布看，皇家护卫69套（22.1%）、巫师53套（17.0%）构成本范围的主要出场面，冠军侧则以皇家护卫12套（25.0%）、巫师10套（20.8%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」55套（17.6%，最好1/51）、龙族「五妹龙」47套（15.1%，最好1/21）、梦魇「哥布林梦」32套（10.3%，最好1/47）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由たたみさし使用，成绩为1/51，成绩系数0.0196。整体来看，前10%成绩卡组共有131套，占全部记录42.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F09\">雷维翁皇</a></td><td style=\"text-align:center\">55</td><td style=\"text-align:center\">62-44 (58.5%)</td><td style=\"text-align:center\">1/51 (0.0196)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F09\">五妹龙</a></td><td style=\"text-align:center\">47</td><td style=\"text-align:center\">36-41 (46.8%)</td><td style=\"text-align:center\">1/21 (0.0476)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F09\">哥布林梦</a></td><td style=\"text-align:center\">32</td><td style=\"text-align:center\">32-25 (56.1%)</td><td style=\"text-align:center\">1/47 (0.0213)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F09\">守护教</a></td><td style=\"text-align:center\">21</td><td style=\"text-align:center\">13-19 (40.6%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F09\">横马</a></td><td style=\"text-align:center\">20</td><td style=\"text-align:center\">11-18 (37.9%)</td><td style=\"text-align:center\">1/35 (0.0286)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F09\">二妹法</a></td><td style=\"text-align:center\">17</td><td style=\"text-align:center\">11-15 (42.3%)</td><td style=\"text-align:center\">1/38 (0.0263)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F09\">消失法</a></td><td style=\"text-align:center\">15</td><td style=\"text-align:center\">15-12 (55.6%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\">金币皇</a></td><td style=\"text-align:center\">12</td><td style=\"text-align:center\">9-11 (45.0%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F09\">学院法</a></td><td style=\"text-align:center\">11</td><td style=\"text-align:center\">13-8 (61.9%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F09\">2c梦</a></td><td style=\"text-align:center\">10</td><td style=\"text-align:center\">11-8 (57.9%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F09\">妖精妖</a></td><td style=\"text-align:center\">10</td><td style=\"text-align:center\">3-10 (23.1%)</td><td style=\"text-align:center\">2/24 (0.0833)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\">人偶妖</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">6-6 (50.0%)</td><td style=\"text-align:center\">1/26 (0.0385)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\">连击妖</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">7-5 (58.3%)</td><td style=\"text-align:center\">1/31 (0.0323)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F09\">星星法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">7-4 (63.6%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F09\">永火梦</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">2-5 (28.6%)</td><td style=\"text-align:center\">3/34 (0.0882)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\">控教</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">5-3 (62.5%)</td><td style=\"text-align:center\">1/17 (0.0588)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F09\">八狱法</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">3-4 (42.9%)</td><td style=\"text-align:center\">2/31 (0.0645)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F09\">loop马</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-4 (0.0%)</td><td style=\"text-align:center\">6/34 (0.1765)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F09\">法术PCR</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">6-1 (85.7%)</td><td style=\"text-align:center\">1/34 (0.0294)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\">跳费PCR</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">1/28 (0.0357)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-200bb41cd994.html?scope=2026%2F10%2F09\">海洋龙</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">0-3 (0.0%)</td><td style=\"text-align:center\">3/13 (0.2308)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\">纹章教</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/20 (0.0500)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F09\">nc梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/45 (0.0667)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F09\">哥布林妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">3/15 (0.2000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F09\">猎人妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">0-2 (0.0%)</td><td style=\"text-align:center\">4/16 (0.2500)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-9d903ce17ada.html?scope=2026%2F10%2F09\">哥布林皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/17 (0.1176)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F09\">死噬妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/28 (0.1786)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-73a3a8508e82.html?scope=2026%2F10%2F09\">铺场皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/34 (0.2059)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F09\">八狱妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/14 (0.2143)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F09\">宇宙妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/13 (0.2308)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-522ba9eb9548.html?scope=2026%2F10%2F09\">蝙蝠梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">7/21 (0.3333)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F09\">骰子梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/20 (0.4000)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F09\">八狱梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/10 (0.4000)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F09\">兽妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/17 (0.4706)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">69 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 34</span>\n          <span class=\"stat-pill percent\">22.1%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>55套 (79.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>12套 (17.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-9d903ce17ada.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林皇</b><em>1套 (1.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-73a3a8508e82.html?scope=2026%2F10%2F09\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP17-022.jpg\" alt=\"铺场皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>铺场皇</b><em>1套 (1.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">50 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 19</span>\n          <span class=\"stat-pill percent\">16.0%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F09\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>47套 (94.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-200bb41cd994.html?scope=2026%2F10%2F09\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP17-SL15.jpg\" alt=\"海洋龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>海洋龙</b><em>3套 (6.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">53 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 18</span>\n          <span class=\"stat-pill percent\">17.0%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>17套 (32.1%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>15套 (28.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>11套 (20.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>6套 (11.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F09\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>4套 (7.5%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">52 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 28</span>\n          <span class=\"stat-pill percent\">16.7%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>32套 (61.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>10套 (19.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>5套 (9.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>2套 (3.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-522ba9eb9548.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL20.jpg\" alt=\"蝙蝠梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>蝙蝠梦</b><em>1套 (1.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>1套 (1.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F09\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>1套 (1.9%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">27 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 12</span>\n          <span class=\"stat-pill percent\">8.7%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>21套 (77.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-da0c322184a8.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL24.jpg\" alt=\"控教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>控教</b><em>4套 (14.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c068a8ef6610.html?scope=2026%2F10%2F09\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP20-093.jpg\" alt=\"纹章教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>纹章教</b><em>2套 (7.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">31 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">9.9%</span>\n          <span class=\"stat-pill archetypes\">9 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>10套 (32.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>7套 (22.6%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-826de03f0f61.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/ECP02-SL04.jpg\" alt=\"连击妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>连击妖</b><em>6套 (19.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-786184f4fedc.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林妖</b><em>2套 (6.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>2套 (6.5%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-e7515dc1071b.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP22-SL02.jpg\" alt=\"死噬妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>死噬妖</b><em>1套 (3.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>1套 (3.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-SL26.jpg\" alt=\"宇宙妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>宇宙妖</b><em>1套 (3.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-c2ac43fe870c.html?scope=2026%2F10%2F09\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP21-001.jpg\" alt=\"兽妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>兽妖</b><em>1套 (3.2%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">24 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 6</span>\n          <span class=\"stat-pill percent\">7.7%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F09\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>20套 (83.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F09\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>4套 (16.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">6 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">1.9%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F09\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>3套 (50.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F09\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>3套 (50.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
+    "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
+  },
+  "2026/10/02": {
+    "key": "2026/10/02",
+    "label": "2026/10/02-2026/10/08",
+    "event_count": 31,
+    "deck_count": 192,
+    "top8_count": 192,
+    "top1_count": 31,
+    "top8_class_distribution": [
+      {
+        "name": "🐉 龙族",
+        "value": 41,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 33,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 30,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 29,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-399.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 25,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 15,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 15,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 4,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      }
+    ],
+    "top1_class_distribution": [
+      {
+        "name": "⛪ 主教",
+        "value": 8,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 5,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/PR-399.jpg"
+      },
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 4,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 4,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 4,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 3,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 2,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 1,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "龙族｜五妹龙",
+        "value": 34,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 32,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 20,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "梦魇｜2c梦",
+        "value": 13,
+        "link": "decktypes/decktype-75305287827c.html",
+        "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 12,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 81,
+        "itemStyle": {
+          "color": "#667085"
+        }
+      }
+    ],
+    "top1_type_distribution": [
+      {
+        "name": "主教｜守护教",
+        "value": 8,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "龙族｜五妹龙",
+        "value": 4,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 3,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 3,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 3,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "精灵｜人偶妖",
+        "value": 2,
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 2,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "name": "Others",
+        "value": 6,
+        "itemStyle": {
+          "color": "#667085"
+        }
+      }
+    ],
+    "type_other_count": 81,
+    "type_other_types": 31,
+    "top1_type_other_count": 6,
+    "top1_type_other_types": 6,
+    "top1_type_others_html": "<a class=\"others-chip\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F02\"><b>皇家护卫｜天使皇</b><span>1套，最好成绩 1/39</span></a><a class=\"others-chip\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F02\"><b>梦魇｜nc梦</b><span>1套，最好成绩 1/36</span></a><a class=\"others-chip\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F02\"><b>梦魇｜八狱梦</b><span>1套，最好成绩 1/25</span></a><a class=\"others-chip\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F02\"><b>公主连结Re:Dive｜法术PCR</b><span>1套，最好成绩 1/24</span></a><a class=\"others-chip\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F02\"><b>赛马娘｜loop马</b><span>1套，最好成绩 1/14</span></a><a class=\"others-chip\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F02\"><b>精灵｜妖精妖</b><span>1套，最好成绩 1/13</span></a>",
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/02-2026/10/08共收录31场有效赛事、192套有排名记录的卡组，其中上位卡组192套、冠军卡组31套。从上位职业分布看，龙族41套（21.4%）、主教33套（17.2%）构成本范围的主要出场面，冠军侧则以主教8套（25.8%）、梦魇5套（16.1%）表现最突出。卡组类型方面，龙族「五妹龙」34套（17.7%，最好1/25）、主教「守护教」32套（16.7%，最好1/46）、皇家护卫「雷维翁皇」20套（10.4%，最好1/70）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由Saika使用，成绩为1/70，成绩系数0.0143。整体来看，前10%成绩卡组共有83套，占全部记录43.2%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。",
+    "popular_rows": "<tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F02\">五妹龙</a></td><td style=\"text-align:center\">34</td><td style=\"text-align:center\">27-30 (47.4%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F02\">守护教</a></td><td style=\"text-align:center\">32</td><td style=\"text-align:center\">32-24 (57.1%)</td><td style=\"text-align:center\">1/46 (0.0217)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F02\">雷维翁皇</a></td><td style=\"text-align:center\">20</td><td style=\"text-align:center\">12-17 (41.4%)</td><td style=\"text-align:center\">1/70 (0.0143)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F02\">2c梦</a></td><td style=\"text-align:center\">13</td><td style=\"text-align:center\">8-13 (38.1%)</td><td style=\"text-align:center\">2/39 (0.0513)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F02\">横马</a></td><td style=\"text-align:center\">12</td><td style=\"text-align:center\">13-9 (59.1%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F02\">妖精妖</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">3-6 (33.3%)</td><td style=\"text-align:center\">3/51 (0.0588)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F02\">金币皇</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">5-7 (41.7%)</td><td style=\"text-align:center\">2/32 (0.0625)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F02\">学院法</a></td><td style=\"text-align:center\">7</td><td style=\"text-align:center\">2-7 (22.2%)</td><td style=\"text-align:center\">3/25 (0.1200)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F02\">二妹法</a></td><td style=\"text-align:center\">6</td><td style=\"text-align:center\">3-6 (33.3%)</td><td style=\"text-align:center\">2/70 (0.0286)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F02\">消失法</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">6-3 (66.7%)</td><td style=\"text-align:center\">1/19 (0.0526)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F02\">机械梦</a></td><td style=\"text-align:center\">5</td><td style=\"text-align:center\">1-5 (16.7%)</td><td style=\"text-align:center\">4/46 (0.0870)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F02\">哥布林梦</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">8-1 (88.9%)</td><td style=\"text-align:center\">1/32 (0.0313)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F02\">大哥龙</a></td><td style=\"text-align:center\">4</td><td style=\"text-align:center\">0-4 (0.0%)</td><td style=\"text-align:center\">5/39 (0.1282)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F02\">nc梦</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">5-2 (71.4%)</td><td style=\"text-align:center\">1/36 (0.0278)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-f4843d4577ae.html?scope=2026%2F10%2F02\">土法</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">1-3 (25.0%)</td><td style=\"text-align:center\">2/14 (0.1429)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F02\">猎人妖</a></td><td style=\"text-align:center\">3</td><td style=\"text-align:center\">2-3 (40.0%)</td><td style=\"text-align:center\">2/11 (0.1818)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F02\">人偶妖</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-0 (100.0%)</td><td style=\"text-align:center\">1/51 (0.0196)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F02\">天使皇</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">4-1 (80.0%)</td><td style=\"text-align:center\">1/39 (0.0256)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F02\">法术PCR</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">5-1 (83.3%)</td><td style=\"text-align:center\">1/24 (0.0417)</td></tr><tr><td>公主连结Re:Dive</td><td><a class=\"type-link\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F02\">跳费PCR</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">4-2 (66.7%)</td><td style=\"text-align:center\">2/36 (0.0556)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F02\">loop马</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">1/14 (0.0714)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F02\">星星法</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">2/13 (0.1538)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F02\">骰子梦</a></td><td style=\"text-align:center\">2</td><td style=\"text-align:center\">1-2 (33.3%)</td><td style=\"text-align:center\">3/17 (0.1765)</td></tr><tr><td>主教</td><td><a class=\"type-link\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F02\">节奏教</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/51 (0.0392)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F02\">八狱梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">3-0 (100.0%)</td><td style=\"text-align:center\">1/25 (0.0400)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F02\">八狱妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">2-1 (66.7%)</td><td style=\"text-align:center\">2/25 (0.0800)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F02\">龙人龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/25 (0.1600)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F02\">宇宙妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/22 (0.1818)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F02\">机械法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">4/19 (0.2105)</td></tr><tr><td>赛马娘</td><td><a class=\"type-link\" href=\"decktypes/decktype-1ef829252684.html?scope=2026%2F10%2F02\">法术马</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">1-1 (50.0%)</td><td style=\"text-align:center\">2/9 (0.2222)</td></tr><tr><td>巫师</td><td><a class=\"type-link\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F02\">八狱法</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">5/22 (0.2273)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-246e45fe1891.html?scope=2026%2F10%2F02\">学院龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">3/13 (0.2308)</td></tr><tr><td>梦魇</td><td><a class=\"type-link\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F02\">永火梦</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">6/24 (0.2500)</td></tr><tr><td>皇家护卫</td><td><a class=\"type-link\" href=\"decktypes/decktype-4aeba2c734d7.html?scope=2026%2F10%2F02\">盗贼皇</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/13 (0.3077)</td></tr><tr><td>龙族</td><td><a class=\"type-link\" href=\"decktypes/decktype-f50f99e7f0df.html?scope=2026%2F10%2F02\">快攻龙</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">4/11 (0.3636)</td></tr><tr><td>精灵</td><td><a class=\"type-link\" href=\"decktypes/decktype-941c1ca0a7a2.html?scope=2026%2F10%2F02\">自然妖</a></td><td style=\"text-align:center\">1</td><td style=\"text-align:center\">0-1 (0.0%)</td><td style=\"text-align:center\">8/19 (0.4211)</td></tr>",
+    "class_sections": "\n    <div class=\"class-section\" id=\"皇家护卫\">\n      <div class=\"class-header\" style=\"border-left:5px solid #3498db\">\n        <h2><span class=\"class-icon\">⚔️</span> 皇家护卫</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">30 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 12</span>\n          <span class=\"stat-pill percent\">15.6%</span>\n          <span class=\"stat-pill archetypes\">4 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"true\">收起</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-593b0d7a6099.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP16-026.jpg\" alt=\"雷维翁皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>雷维翁皇</b><em>20套 (66.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bab8fae9b582.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP14-022.jpg\" alt=\"金币皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>金币皇</b><em>7套 (23.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-2b0efb008539.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/PR-233.jpg\" alt=\"天使皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>天使皇</b><em>2套 (6.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4aeba2c734d7.html?scope=2026%2F10%2F02\" style=\"border-color:#3498db\"><img src=\"../../assets/cards/thumbs/BP19-SP01.jpg\" alt=\"盗贼皇核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>盗贼皇</b><em>1套 (3.3%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"龙族\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e67e22\">\n        <h2><span class=\"class-icon\">🐉</span> 龙族</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">41 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 16</span>\n          <span class=\"stat-pill percent\">21.4%</span>\n          <span class=\"stat-pill archetypes\">5 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-7e3b69cd0c30.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP15-SL15.jpg\" alt=\"五妹龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>五妹龙</b><em>34套 (82.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-cd6d71f47cfb.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP16-SL15.jpg\" alt=\"大哥龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>大哥龙</b><em>4套 (9.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-ca24d30a1a65.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-SL16.jpg\" alt=\"龙人龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>龙人龙</b><em>1套 (2.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-246e45fe1891.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/BP21-057.jpg\" alt=\"学院龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院龙</b><em>1套 (2.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f50f99e7f0df.html?scope=2026%2F10%2F02\" style=\"border-color:#e67e22\"><img src=\"../../assets/cards/thumbs/ECP01-035.jpg\" alt=\"快攻龙核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>快攻龙</b><em>1套 (2.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"巫师\">\n      <div class=\"class-header\" style=\"border-left:5px solid #9b59b6\">\n        <h2><span class=\"class-icon\">🔮</span> 巫师</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">25 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">13.0%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-b9263fb83a8a.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP06-SL08.jpg\" alt=\"学院法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>学院法</b><em>7套 (28.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f04045f27752.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP15-SL11.jpg\" alt=\"二妹法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>二妹法</b><em>6套 (24.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-90c874a554cb.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP18-SL09.jpg\" alt=\"消失法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>消失法</b><em>5套 (20.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f4843d4577ae.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP09-U03.jpg\" alt=\"土法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>土法</b><em>3套 (12.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-87a84038db1f.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP11-SL07.jpg\" alt=\"星星法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>星星法</b><em>2套 (8.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-6ea288eb8275.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP17-041.jpg\" alt=\"机械法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械法</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-058fd7f22075.html?scope=2026%2F10%2F02\" style=\"border-color:#9b59b6\"><img src=\"../../assets/cards/thumbs/BP19-SL10.jpg\" alt=\"八狱法核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱法</b><em>1套 (4.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"梦魇\">\n      <div class=\"class-header\" style=\"border-left:5px solid #2c3e50\">\n        <h2><span class=\"class-icon\">💀</span> 梦魇</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">29 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 10</span>\n          <span class=\"stat-pill percent\">15.1%</span>\n          <span class=\"stat-pill archetypes\">7 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75305287827c.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP18-SL19.jpg\" alt=\"2c梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>2c梦</b><em>13套 (44.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-42a5c2f5e134.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP07-SL13.jpg\" alt=\"机械梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>机械梦</b><em>5套 (17.2%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-f0af484e4c57.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-310.jpg\" alt=\"哥布林梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>哥布林梦</b><em>4套 (13.8%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bbc8f17f6035.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/PR-399.jpg\" alt=\"nc梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>nc梦</b><em>3套 (10.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-96191bb3b6d4.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP21-SL19.jpg\" alt=\"骰子梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>骰子梦</b><em>2套 (6.9%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7a481475a6b5.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP19-080.jpg\" alt=\"八狱梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱梦</b><em>1套 (3.4%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-71c5492994cc.html?scope=2026%2F10%2F02\" style=\"border-color:#2c3e50\"><img src=\"../../assets/cards/thumbs/BP14-SL16.jpg\" alt=\"永火梦核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>永火梦</b><em>1套 (3.4%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"主教\">\n      <div class=\"class-header\" style=\"border-left:5px solid #f1c40f\">\n        <h2><span class=\"class-icon\">⛪</span> 主教</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">33 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 17</span>\n          <span class=\"stat-pill percent\">17.2%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-75396de72bcf.html?scope=2026%2F10%2F02\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/BP15-SL26.jpg\" alt=\"守护教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>守护教</b><em>32套 (97.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-b9c3d7da07ee.html?scope=2026%2F10%2F02\" style=\"border-color:#f1c40f\"><img src=\"../../assets/cards/thumbs/PR-415.jpg\" alt=\"节奏教核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>节奏教</b><em>1套 (3.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"精灵\">\n      <div class=\"class-header\" style=\"border-left:5px solid #27ae60\">\n        <h2><span class=\"class-icon\">🍃</span> 精灵</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">15 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">7.8%</span>\n          <span class=\"stat-pill archetypes\">6 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-217b5e054fbc.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL01.jpg\" alt=\"妖精妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>妖精妖</b><em>7套 (46.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-44ce1ca73386.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP20-SL01.jpg\" alt=\"猎人妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>猎人妖</b><em>3套 (20.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-4347111b0e67.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP16-SL03.jpg\" alt=\"人偶妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>人偶妖</b><em>2套 (13.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-25097831eeb5.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-005.jpg\" alt=\"八狱妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>八狱妖</b><em>1套 (6.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-75a3e2d0e2a4.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP19-SL26.jpg\" alt=\"宇宙妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>宇宙妖</b><em>1套 (6.7%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-941c1ca0a7a2.html?scope=2026%2F10%2F02\" style=\"border-color:#27ae60\"><img src=\"../../assets/cards/thumbs/BP07-001.jpg\" alt=\"自然妖核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>自然妖</b><em>1套 (6.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"赛马娘\">\n      <div class=\"class-header\" style=\"border-left:5px solid #8bd450\">\n        <h2><span class=\"class-icon\">🏇</span> 赛马娘</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">15 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 8</span>\n          <span class=\"stat-pill percent\">7.8%</span>\n          <span class=\"stat-pill archetypes\">3 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-5a0677b37803.html?scope=2026%2F10%2F02\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/ECP01-005.jpg\" alt=\"横马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>横马</b><em>12套 (80.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-7358073c5024.html?scope=2026%2F10%2F02\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-SP03.jpg\" alt=\"loop马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>loop马</b><em>2套 (13.3%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-1ef829252684.html?scope=2026%2F10%2F02\" style=\"border-color:#8bd450\"><img src=\"../../assets/cards/thumbs/CP01-057.jpg\" alt=\"法术马核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术马</b><em>1套 (6.7%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>\n    <div class=\"class-section is-collapsed\" id=\"公主连结ReDive\">\n      <div class=\"class-header\" style=\"border-left:5px solid #e91e63\">\n        <h2><span class=\"class-icon\">💎</span> 公主连结Re:Dive</h2>\n        <div class=\"class-stats\">\n          <span class=\"stat-pill\">4 套卡组</span>\n          <span class=\"stat-pill top10\">前10%: 4</span>\n          <span class=\"stat-pill percent\">2.1%</span>\n          <span class=\"stat-pill archetypes\">2 种卡组</span>\n          <button class=\"toggle-btn\" type=\"button\" aria-expanded=\"false\">展开</button>\n        </div>\n      </div>\n      <div class=\"class-content\">\n        <div class=\"archetype-summary\"><a class=\"archetype-tag\" href=\"decktypes/decktype-deb2d8e95565.html?scope=2026%2F10%2F02\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SP02.jpg\" alt=\"法术PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>法术PCR</b><em>2套 (50.0%)</em><span>点击查看卡组详情</span></span></a><a class=\"archetype-tag\" href=\"decktypes/decktype-bfb6320cd8c6.html?scope=2026%2F10%2F02\" style=\"border-color:#e91e63\"><img src=\"../../assets/cards/thumbs/CP04-SL15.jpg\" alt=\"跳费PCR核心卡\" loading=\"lazy\" decoding=\"async\"><span class=\"archetype-tag-body\"><b>跳费PCR</b><em>2套 (50.0%)</em><span>点击查看卡组详情</span></span></a></div>\n      </div>\n    </div>",
     "nav_links": "<a href=\"#皇家护卫\">⚔️ 皇家护卫</a><a href=\"#龙族\">🐉 龙族</a><a href=\"#巫师\">🔮 巫师</a><a href=\"#梦魇\">💀 梦魇</a><a href=\"#主教\">⛪ 主教</a><a href=\"#精灵\">🍃 精灵</a><a href=\"#赛马娘\">🏇 赛马娘</a><a href=\"#公主连结ReDive\">💎 公主连结Re:Dive</a>"
   }
 };
