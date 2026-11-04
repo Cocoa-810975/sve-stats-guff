@@ -77,6 +77,8 @@
                避免和上面的版本栏重复显示两条。
                其余几个是聚合页，用 target="report-frame" 载入下方 iframe，
                这样上方版本栏始终可见，进去后照样能换版本。 -->
+          <!-- 主页面：从任何子页面（梯度表 / 胜率矩阵 / 聚合页）一键回到当前版本的卡组报告 -->
+          <a class="open-link" id="home-link" href="versions/BP22/shadowverse_evolve_decks.html" target="report-frame">🏠 主页面</a>
           <a class="open-link" id="tier-link" href="versions/BP22/tier.html" target="report-frame">📊 卡组梯度表</a>
           <a class="open-link" id="matchup-link" href="matchup.html?version=bp22" target="report-frame">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="report-frame">大赛卡组统计</a>
@@ -275,6 +277,9 @@
         // 梯度表入口跟随当前选中版本切换
         var tierLink = document.getElementById('tier-link');
         if (tierLink) tierLink.href = 'versions/' + version + '/tier.html';
+        // 主页面入口跟随当前选中版本切换
+        var homeLink = document.getElementById('home-link');
+        if (homeLink) homeLink.href = info.src;
         try { localStorage.setItem('sve_selected_version', version); } catch (error) {}
         if (history && history.replaceState) {
           history.replaceState(null, '', window.location.pathname + '?version=' + encodeURIComponent(version));
