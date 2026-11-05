@@ -31,6 +31,12 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 #trend-share{width:100%;height:480px}
 .note{color:#667788;font-size:12px;line-height:1.7;margin-top:16px}
 .panel + .panel{margin-top:22px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.axis-toggle{display:inline-flex;border:1px solid rgba(255,255,255,0.16);border-radius:999px;overflow:hidden}
+.axis-toggle button{background:transparent;border:0;color:#9aa8bd;font-size:12px;
+  padding:5px 14px;cursor:pointer;font-family:inherit;transition:all .15s}
+.axis-toggle button:hover{color:#fff}
+.axis-toggle button.active{background:#e94560;color:#fff;font-weight:700}
 </style>
 </head>
 <body>
@@ -46,7 +52,13 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 </div>
 
 <div class="panel">
-  <h2>每周上位数</h2>
+  <div class="panel-head">
+    <h2>每周上位数</h2>
+    <div class="axis-toggle" id="toggle-count">
+      <button type="button" data-mode="linear" class="active">线性</button>
+      <button type="button" data-mode="log">对数</button>
+    </div>
+  </div>
   <div class="hint">
     横轴为「周」，每周 = <b>周五 ~ 下周四</b>（与网站其它周统计口径一致）。纵轴为该周收录到的上位套数。<br>
     只展示本弹上位数总量前 10 的卡组类型；点上图例可单独查看某几条曲线。
@@ -55,22 +67,29 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 </div>
 
 <div class="panel">
-  <h2>每周占比</h2>
+  <div class="panel-head">
+    <h2>每周占比</h2>
+    <div class="axis-toggle" id="toggle-share">
+      <button type="button" data-mode="linear" class="active">线性</button>
+      <button type="button" data-mode="log">对数</button>
+    </div>
+  </div>
   <div class="hint">
     纵轴为该类型占<b>当周全部上位</b>的百分比 —— 相比绝对套数，它更能反映环境份额：
-    整弹比赛变少时，上位数会一起下降，但占比能看出谁在真正扩张。
+    整弹比赛变少时，上位数会一起下降，但占比能看出谁在真正扩张。<br>
+    后几名占比很低时会被前几名压扁，可切到<b>对数</b>轴拉开差距（对数轴下 0 值不显示）。
   </div>
   <div id="trend-share"></div>
   <div class="note">
     说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
-    某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理。
+    某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理（对数轴下该点会断开）。
   </div>
 </div>
 
 <script src="./_shared/js/echarts.min.js"></script>
 <script>
 (function(){
-  var D = {"x":["03/27","04/03","04/10","04/17","04/24","05/01","05/08","05/15"],"xFull":["2026/03/27-2026/04/02","2026/04/03-2026/04/09","2026/04/10-2026/04/16","2026/04/17-2026/04/23","2026/04/24-2026/04/30","2026/05/01-2026/05/07","2026/05/08-2026/05/14","2026/05/15-2026/05/21"],"weekTotals":[207,304,300,228,300,332,116,176],"totals":[263,186,178,168,113,110,91,70,64,60],"countSeries":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[30,42,39,21,37,53,17,24]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[24,44,40,22,33,16,3,4]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[11,26,27,27,35,26,11,15]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[6,16,24,14,30,35,15,28]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[13,22,20,9,17,19,7,6]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[13,21,18,10,15,20,7,6]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[8,11,9,13,13,18,8,11]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,4,8,9,9,22,3,8]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[15,7,10,7,6,8,1,10]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[3,7,9,3,10,15,7,6]}],"shareSeries":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[14.5,13.8,13,9.2,12.3,16,14.7,13.6]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[11.6,14.5,13.3,9.6,11,4.8,2.6,2.3]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[5.3,8.6,9,11.8,11.7,7.8,9.5,8.5]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[2.9,5.3,8,6.1,10,10.5,12.9,15.9]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[6.3,7.2,6.7,3.9,5.7,5.7,6,3.4]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[6.3,6.9,6,4.4,5,6,6,3.4]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[3.9,3.6,3,5.7,4.3,5.4,6.9,6.3]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[3.4,1.3,2.7,3.9,3,6.6,2.6,4.5]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[7.2,2.3,3.3,3.1,2,2.4,0.9,5.7]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[1.4,2.3,3,1.3,3.3,4.5,6,3.4]}]};
+  var D = {"x":["03/27","04/03","04/10","04/17","04/24","05/01","05/08","05/15"],"xFull":["2026/03/27-2026/04/02","2026/04/03-2026/04/09","2026/04/10-2026/04/16","2026/04/17-2026/04/23","2026/04/24-2026/04/30","2026/05/01-2026/05/07","2026/05/08-2026/05/14","2026/05/15-2026/05/21"],"weekTotals":[207,304,300,228,300,332,116,176],"totals":[263,186,178,168,113,110,91,70,64,60],"countSeries":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[30,42,39,21,37,53,17,24]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[24,44,40,22,33,16,3,4]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[11,26,27,27,35,26,11,15]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[6,16,24,14,30,35,15,28]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[13,22,20,9,17,19,7,6]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[13,21,18,10,15,20,7,6]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[8,11,9,13,13,18,8,11]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,4,8,9,9,22,3,8]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[15,7,10,7,6,8,1,10]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[3,7,9,3,10,15,7,6]}],"countSeriesLog":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[30,42,39,21,37,53,17,24]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[24,44,40,22,33,16,3,4]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[11,26,27,27,35,26,11,15]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[6,16,24,14,30,35,15,28]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[13,22,20,9,17,19,7,6]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[13,21,18,10,15,20,7,6]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[8,11,9,13,13,18,8,11]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,4,8,9,9,22,3,8]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[15,7,10,7,6,8,1,10]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[3,7,9,3,10,15,7,6]}],"shareSeries":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[14.5,13.8,13,9.2,12.3,16,14.7,13.6]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[11.6,14.5,13.3,9.6,11,4.8,2.6,2.3]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[5.3,8.6,9,11.8,11.7,7.8,9.5,8.5]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[2.9,5.3,8,6.1,10,10.5,12.9,15.9]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[6.3,7.2,6.7,3.9,5.7,5.7,6,3.4]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[6.3,6.9,6,4.4,5,6,6,3.4]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[3.9,3.6,3,5.7,4.3,5.4,6.9,6.3]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[3.4,1.3,2.7,3.9,3,6.6,2.6,4.5]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[7.2,2.3,3.3,3.1,2,2.4,0.9,5.7]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[1.4,2.3,3,1.3,3.3,4.5,6,3.4]}],"shareSeriesLog":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[14.5,13.8,13,9.2,12.3,16,14.7,13.6]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[11.6,14.5,13.3,9.6,11,4.8,2.6,2.3]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[5.3,8.6,9,11.8,11.7,7.8,9.5,8.5]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[2.9,5.3,8,6.1,10,10.5,12.9,15.9]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[6.3,7.2,6.7,3.9,5.7,5.7,6,3.4]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[6.3,6.9,6,4.4,5,6,6,3.4]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[3.9,3.6,3,5.7,4.3,5.4,6.9,6.3]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[3.4,1.3,2.7,3.9,3,6.6,2.6,4.5]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[7.2,2.3,3.3,3.1,2,2.4,0.9,5.7]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[1.4,2.3,3,1.3,3.3,4.5,6,3.4]}]};
   if (!window.echarts) return;
 
   function baseOption(series, yName, isPct) {
@@ -120,6 +139,35 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
   var ch2 = echarts.init(c2, null, { renderer: 'canvas' });
   ch1.setOption(baseOption(D.countSeries, '上位数（套）', false));
   ch2.setOption(baseOption(D.shareSeries, '占比（%）', true));
+
+  // 线性 / 对数 轴切换
+  function wireToggle(id, chart, linearSeries, logSeries, yName, isPct) {
+    var box = document.getElementById(id);
+    if (!box) return;
+    var buttons = [].slice.call(box.querySelectorAll('button'));
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var log = btn.dataset.mode === 'log';
+        buttons.forEach(function(b){ b.classList.toggle('active', b === btn); });
+        chart.setOption({
+          yAxis: {
+            type: log ? 'log' : 'value',
+            name: yName + (log ? '（对数）' : ''),
+            nameTextStyle: { color: '#8899aa', fontSize: 11 },
+            axisLabel: {
+              color: '#8899aa', fontSize: 11,
+              formatter: isPct ? '{value}%' : '{value}'
+            },
+            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+          },
+          series: log ? logSeries : linearSeries
+        }, { replaceMerge: ['series'] });
+      });
+    });
+  }
+  wireToggle('toggle-count', ch1, D.countSeries, D.countSeriesLog, '上位数（套）', false);
+  wireToggle('toggle-share', ch2, D.shareSeries, D.shareSeriesLog, '占比（%）', true);
+
   window.addEventListener('resize', function(){ ch1.resize(); ch2.resize(); });
 })();
 </script>
