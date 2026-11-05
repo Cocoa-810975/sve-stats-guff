@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BP19 每周上位数趋势｜SVE Stats Guff</title>
+<style>
+:root{
+  --bg:#0f0f1a; --panel:#1a1a2e; --panel-2:#111827; --line:#2a2a3e;
+  --line-soft:rgba(255,255,255,0.05); --text:#e0e0e0; --text-strong:#fff;
+  --muted:#8899aa; --accent:#e94560;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  padding:20px 20px 60px;max-width:1400px;margin:0 auto}
+.header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+  padding:32px 28px 26px;border-radius:16px;margin-bottom:22px;text-align:center;
+  border:1px solid rgba(255,255,255,0.1)}
+.header h1{color:#fff;font-size:26px;font-weight:800;letter-spacing:.5px}
+.header .sub{color:#9aa8bd;font-size:13px;margin-top:8px}
+.stats{display:flex;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.stat{flex:1 1 200px;background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:18px;text-align:center}
+.stat .num{font-size:30px;font-weight:800;color:var(--accent)}
+.stat .label{color:var(--muted);font-size:12px;margin-top:6px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
+.panel h2{color:#fff;font-size:17px;font-weight:700;margin-bottom:6px;padding-left:10px;
+  border-left:4px solid var(--accent);line-height:1.2}
+.hint{color:var(--muted);font-size:12px;line-height:1.7;margin:10px 0 16px}
+#trend{width:100%;height:560px}
+.note{color:#667788;font-size:12px;line-height:1.7;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>BP19 每周上位数趋势</h1>
+  <div class="sub">数据来源 bushi-navi.com ｜ 上位数前 10 的卡组类型每周变化</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">1964</div><div class="label">收录上位卡组（套）</div></div>
+  <div class="stat"><div class="num">8</div><div class="label">覆盖周数（周五起算）</div></div>
+  <div class="stat"><div class="num">10</div><div class="label">展示的卡组类型</div></div>
+</div>
+
+<div class="panel">
+  <h2>每周上位数</h2>
+  <div class="hint">
+    横轴为「周」，每周 = <b>周五 ~ 下周四</b>（与网站其它周统计口径一致）。纵轴为该周收录到的上位套数。<br>
+    只展示本弹上位数总量前 10 的卡组类型；点上图例可单独查看某几条曲线。
+  </div>
+  <div id="trend"></div>
+  <div class="note">
+    说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
+    某个类型在某周为 0 表示该周没有它的入赏记录。
+  </div>
+</div>
+
+<script src="./_shared/js/echarts.min.js"></script>
+<script>
+(function(){
+  var D = {"x":["03/27","04/03","04/10","04/17","04/24","05/01","05/08","05/15"],"xFull":["2026/03/27-2026/04/02","2026/04/03-2026/04/09","2026/04/10-2026/04/16","2026/04/17-2026/04/23","2026/04/24-2026/04/30","2026/05/01-2026/05/07","2026/05/08-2026/05/14","2026/05/15-2026/05/21"],"series":[{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[30,42,39,21,37,53,17,24]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[24,44,40,22,33,16,3,4]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[11,26,27,27,35,26,11,15]},{"name":"法术PCR｜公主连结Re:Dive","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[6,16,24,14,30,35,15,28]},{"name":"八狱妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[13,22,20,9,17,19,7,6]},{"name":"机械法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[13,21,18,10,15,20,7,6]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[8,11,9,13,13,18,8,11]},{"name":"nc梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,4,8,9,9,22,3,8]},{"name":"真红梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[15,7,10,7,6,8,1,10]},{"name":"天使皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[3,7,9,3,10,15,7,6]}],"totals":[263,186,178,168,113,110,91,70,64,60]};
+  var el = document.getElementById('trend');
+  if (!el || !window.echarts) return;
+  var chart = echarts.init(el, null, { renderer: 'canvas' });
+  chart.setOption({
+    backgroundColor: 'transparent',
+    tooltip: {
+      trigger: 'axis',
+      backgroundColor: 'rgba(16,18,30,0.95)',
+      borderColor: 'rgba(255,255,255,0.15)',
+      textStyle: { color: '#e0e0e0', fontSize: 12 },
+      formatter: function(ps){
+        var idx = ps[0].dataIndex;
+        var lines = ['<b>' + D.xFull[idx] + '</b>'];
+        ps.filter(function(p){ return p.value > 0; })
+          .sort(function(a,b){ return b.value - a.value; })
+          .forEach(function(p){
+            lines.push(p.marker + p.seriesName + '：<b>' + p.value + '</b> 套');
+          });
+        if (lines.length === 1) lines.push('该周无记录');
+        return lines.join('<br/>');
+      }
+    },
+    legend: {
+      top: 0, type: 'scroll', textStyle: { color: '#9aa8bd', fontSize: 12 },
+      itemWidth: 18, itemHeight: 10, pageTextStyle: { color: '#9aa8bd' }
+    },
+    grid: { left: 48, right: 24, top: 74, bottom: 42 },
+    xAxis: {
+      type: 'category', boundaryGap: false, data: D.x,
+      axisLine: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
+      axisLabel: { color: '#8899aa', fontSize: 11, interval: 'auto', rotate: D.x.length > 14 ? 40 : 0 },
+      axisTick: { show: false }
+    },
+    yAxis: {
+      type: 'value', name: '上位数',
+      nameTextStyle: { color: '#8899aa', fontSize: 11 },
+      axisLabel: { color: '#8899aa', fontSize: 11 },
+      splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+    },
+    series: D.series
+  });
+  window.addEventListener('resize', function(){ chart.resize(); });
+})();
+</script>
+</body>
+</html>

@@ -80,6 +80,7 @@
           <!-- 主页面：从任何子页面（梯度表 / 胜率矩阵 / 聚合页）一键回到当前版本的卡组报告 -->
           <a class="open-link" id="home-link" href="versions/BP22/shadowverse_evolve_decks.html" target="report-frame">🏠 主页面</a>
           <a class="open-link" id="tier-link" href="versions/BP22/tier.html" target="report-frame">📊 卡组梯度表</a>
+          <a class="open-link" id="trend-link" href="versions/BP22/trend.html" target="report-frame">📈 每周趋势</a>
           <a class="open-link" id="matchup-link" href="matchup.html?version=bp22" target="report-frame">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="report-frame">大赛卡组统计</a>
           <a class="open-link" href="crossover.html" target="report-frame">双职业统计</a>
@@ -257,6 +258,9 @@
         if (u.indexOf('tier.html') >= 0) {
           return 'versions/' + version + '/tier.html';
         }
+        if (u.indexOf('trend.html') >= 0) {
+          return 'versions/' + version + '/trend.html';
+        }
         if (u.indexOf('major_tournaments.html') >= 0
             || u.indexOf('crossover.html') >= 0
             || u.indexOf('rules.html') >= 0) {
@@ -277,6 +281,9 @@
         // 梯度表入口跟随当前选中版本切换
         var tierLink = document.getElementById('tier-link');
         if (tierLink) tierLink.href = 'versions/' + version + '/tier.html';
+        // 每周趋势入口跟随当前选中版本切换
+        var trendLink = document.getElementById('trend-link');
+        if (trendLink) trendLink.href = 'versions/' + version + '/trend.html';
         // 主页面入口跟随当前选中版本切换
         var homeLink = document.getElementById('home-link');
         if (homeLink) homeLink.href = info.src;
