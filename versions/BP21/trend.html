@@ -44,22 +44,23 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 </div>
 
 <div class="panel">
-  <h2>每周上位数</h2>
+  <h2>每周上位数 &amp; 占比</h2>
   <div class="hint">
-    横轴为「周」，每周 = <b>周五 ~ 下周四</b>（与网站其它周统计口径一致）。纵轴为该周收录到的上位套数。<br>
-    只展示本弹上位数总量前 10 的卡组类型；点上图例可单独查看某几条曲线。
+    横轴为「周」，每周 = <b>周五 ~ 下周四</b>（与网站其它周统计口径一致）。<br>
+    <b>左轴（实线）</b>＝该周收录到的上位套数；<b>右轴（虚线）</b>＝该类型占当周全部上位的百分比。<br>
+    只展示本弹上位数总量前 10 的卡组类型；点上图例可同时开关该类型的实线与虚线。
   </div>
   <div id="trend"></div>
   <div class="note">
     说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
-    某个类型在某周为 0 表示该周没有它的入赏记录。
+    某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理。
   </div>
 </div>
 
 <script src="./_shared/js/echarts.min.js"></script>
 <script>
 (function(){
-  var D = {"x":["07/31","08/07","08/14","08/21","08/28","09/04","09/11","09/18","09/25"],"xFull":["2026/07/31-2026/08/06","2026/08/07-2026/08/13","2026/08/14-2026/08/20","2026/08/21-2026/08/27","2026/08/28-2026/09/03","2026/09/04-2026/09/10","2026/09/11-2026/09/17","2026/09/18-2026/09/24","2026/09/25-2026/10/01"],"series":[{"name":"雷维翁皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[9,44,54,64,36,30,39,40,25]},{"name":"五妹龙｜龙族","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[26,49,28,41,30,17,29,48,25]},{"name":"财宝皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[24,25,12,12,6,10,14,19,23]},{"name":"人偶妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[12,23,36,25,13,4,10,13,6]},{"name":"二妹法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[35,30,21,17,7,2,3,12,6]},{"name":"骰子梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[23,21,9,9,6,2,4,6,3]},{"name":"学院法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[9,6,7,8,3,13,10,16,7]},{"name":"兽妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[14,15,6,7,1,2,4,2,2]},{"name":"永火梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[5,10,4,5,3,4,6,10,5]},{"name":"连击妖｜精灵","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[1,1,2,1,4,1,4,8,8]}],"totals":[341,293,145,142,133,83,79,53,52,30]};
+  var D = {"x":["07/31","08/07","08/14","08/21","08/28","09/04","09/11","09/18","09/25"],"xFull":["2026/07/31-2026/08/06","2026/08/07-2026/08/13","2026/08/14-2026/08/20","2026/08/21-2026/08/27","2026/08/28-2026/09/03","2026/09/04-2026/09/10","2026/09/11-2026/09/17","2026/09/18-2026/09/24","2026/09/25-2026/10/01"],"weekTotals":[196,255,205,212,116,104,148,205,132],"seriesCount":10,"series":[{"name":"雷维翁皇｜皇家护卫","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"z":3,"data":[9,44,54,64,36,30,39,40,25]},{"name":"五妹龙｜龙族","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"z":3,"data":[26,49,28,41,30,17,29,48,25]},{"name":"财宝皇｜皇家护卫","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"z":3,"data":[24,25,12,12,6,10,14,19,23]},{"name":"人偶妖｜精灵","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"z":3,"data":[12,23,36,25,13,4,10,13,6]},{"name":"二妹法｜巫师","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"z":3,"data":[35,30,21,17,7,2,3,12,6]},{"name":"骰子梦｜梦魇","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"z":3,"data":[23,21,9,9,6,2,4,6,3]},{"name":"学院法｜巫师","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"z":3,"data":[9,6,7,8,3,13,10,16,7]},{"name":"兽妖｜精灵","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"z":3,"data":[14,15,6,7,1,2,4,2,2]},{"name":"永火梦｜梦魇","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"z":3,"data":[5,10,4,5,3,4,6,10,5]},{"name":"连击妖｜精灵","type":"line","yAxisIndex":0,"smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"z":3,"data":[1,1,2,1,4,1,4,8,8]},{"name":"雷维翁皇｜皇家护卫","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"z":2,"data":[4.6,17.3,26.3,30.2,31,28.8,26.4,19.5,18.9]},{"name":"五妹龙｜龙族","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"z":2,"data":[13.3,19.2,13.7,19.3,25.9,16.3,19.6,23.4,18.9]},{"name":"财宝皇｜皇家护卫","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"z":2,"data":[12.2,9.8,5.9,5.7,5.2,9.6,9.5,9.3,17.4]},{"name":"人偶妖｜精灵","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"z":2,"data":[6.1,9,17.6,11.8,11.2,3.8,6.8,6.3,4.5]},{"name":"二妹法｜巫师","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"z":2,"data":[17.9,11.8,10.2,8,6,1.9,2,5.9,4.5]},{"name":"骰子梦｜梦魇","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"z":2,"data":[11.7,8.2,4.4,4.2,5.2,1.9,2.7,2.9,2.3]},{"name":"学院法｜巫师","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"z":2,"data":[4.6,2.4,3.4,3.8,2.6,12.5,6.8,7.8,5.3]},{"name":"兽妖｜精灵","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"z":2,"data":[7.1,5.9,2.9,3.3,0.9,1.9,2.7,1,1.5]},{"name":"永火梦｜梦魇","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"z":2,"data":[2.6,3.9,2,2.4,2.6,3.8,4.1,4.9,3.8]},{"name":"连击妖｜精灵","type":"line","yAxisIndex":1,"smooth":true,"symbol":"none","lineStyle":{"width":1.6,"type":"dashed","opacity":0.85},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"z":2,"data":[0.5,0.4,1,0.5,3.4,1,2.7,3.9,6.1]}],"totals":[341,293,145,142,133,83,79,53,52,30]};
   var el = document.getElementById('trend');
   if (!el || !window.echarts) return;
   var chart = echarts.init(el, null, { renderer: 'canvas' });
@@ -72,13 +73,18 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
       textStyle: { color: '#e0e0e0', fontSize: 12 },
       formatter: function(ps){
         var idx = ps[0].dataIndex;
-        var lines = ['<b>' + D.xFull[idx] + '</b>'];
-        ps.filter(function(p){ return p.value > 0; })
-          .sort(function(a,b){ return b.value - a.value; })
-          .forEach(function(p){
-            lines.push(p.marker + p.seriesName + '：<b>' + p.value + '</b> 套');
-          });
-        if (lines.length === 1) lines.push('该周无记录');
+        var lines = ['<b>' + D.xFull[idx] + '</b>（当周共 ' + D.weekTotals[idx] + ' 套）'];
+        // 先列上位数（前一半 series），再列占比
+        var counts = ps.filter(function(p){ return p.seriesIndex < D.seriesCount && p.value > 0; })
+          .sort(function(a,b){ return b.value - a.value; });
+        var shares = {};
+        ps.forEach(function(p){ if (p.seriesIndex >= D.seriesCount) shares[p.seriesName] = p.value; });
+        counts.forEach(function(p){
+          var sh = shares[p.seriesName];
+          lines.push(p.marker + p.seriesName + '：<b>' + p.value + '</b> 套'
+            + (sh != null ? '（占比 ' + sh + '%）' : ''));
+        });
+        if (counts.length === 0) lines.push('该周无记录');
         return lines.join('<br/>');
       }
     },
@@ -86,19 +92,27 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
       top: 0, type: 'scroll', textStyle: { color: '#9aa8bd', fontSize: 12 },
       itemWidth: 18, itemHeight: 10, pageTextStyle: { color: '#9aa8bd' }
     },
-    grid: { left: 48, right: 24, top: 74, bottom: 42 },
+    grid: { left: 52, right: 58, top: 74, bottom: 42 },
     xAxis: {
       type: 'category', boundaryGap: false, data: D.x,
       axisLine: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
       axisLabel: { color: '#8899aa', fontSize: 11, interval: 'auto', rotate: D.x.length > 14 ? 40 : 0 },
       axisTick: { show: false }
     },
-    yAxis: {
-      type: 'value', name: '上位数',
-      nameTextStyle: { color: '#8899aa', fontSize: 11 },
-      axisLabel: { color: '#8899aa', fontSize: 11 },
-      splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
-    },
+    yAxis: [
+      {
+        type: 'value', name: '上位数（套）',
+        nameTextStyle: { color: '#8899aa', fontSize: 11 },
+        axisLabel: { color: '#8899aa', fontSize: 11 },
+        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+      },
+      {
+        type: 'value', name: '占比（%）', position: 'right',
+        nameTextStyle: { color: '#8899aa', fontSize: 11 },
+        axisLabel: { color: '#8899aa', fontSize: 11, formatter: '{value}%' },
+        splitLine: { show: false }
+      }
+    ],
     series: D.series
   });
   window.addEventListener('resize', function(){ chart.resize(); });
