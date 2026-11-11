@@ -6,117 +6,623 @@
 <title>BP22 每周上位数趋势｜SVE Stats Guff</title>
 <style>
 :root{
-  --bg:#0f0f1a; --panel:#1a1a2e; --panel-2:#111827; --line:#2a2a3e;
-  --line-soft:rgba(255,255,255,0.05); --text:#e0e0e0; --text-strong:#fff;
-  --muted:#8899aa; --accent:#e94560;
+  --bg:#0f0f1a; --panel:#1a1a2e; --line:#2a2a3e;
+  --text:#e0e0e0; --muted:#8899aa; --accent:#e94560;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",sans-serif;
-  padding:20px 20px 60px;max-width:1400px;margin:0 auto}
+  padding:20px 20px 60px;max-width:1600px;margin:0 auto}
 .header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
   padding:32px 28px 26px;border-radius:16px;margin-bottom:22px;text-align:center;
   border:1px solid rgba(255,255,255,0.1)}
 .header h1{color:#fff;font-size:26px;font-weight:800;letter-spacing:.5px}
 .header .sub{color:#9aa8bd;font-size:13px;margin-top:8px}
 .stats{display:flex;gap:16px;margin-bottom:22px;flex-wrap:wrap}
-.stat{flex:1 1 200px;background:var(--panel);border:1px solid var(--line);border-radius:14px;
+.stat{flex:1 1 180px;background:var(--panel);border:1px solid var(--line);border-radius:14px;
   padding:18px;text-align:center}
 .stat .num{font-size:30px;font-weight:800;color:var(--accent)}
 .stat .label{color:var(--muted);font-size:12px;margin-top:6px}
+
+.layout{display:flex;gap:18px;align-items:flex-start}
+.selector{flex:0 0 268px;background:var(--panel);border:1px solid var(--line);border-radius:16px;
+  padding:16px;position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column}
+.charts{flex:1 1 auto;min-width:0}
+.selector h3{color:#fff;font-size:14px;font-weight:700;margin-bottom:2px}
+.sel-count{color:var(--muted);font-size:12px;margin-bottom:10px}
+.sel-count b{color:var(--accent)}
+.sel-filter{width:100%;background:#12121f;border:1px solid var(--line);border-radius:8px;
+  color:var(--text);font-family:inherit;font-size:12px;padding:7px 10px;margin-bottom:9px;outline:none}
+.sel-filter:focus{border-color:var(--accent)}
+.sel-actions{display:flex;gap:6px;margin-bottom:10px}
+.sel-actions button{flex:1;background:#12121f;border:1px solid var(--line);border-radius:8px;
+  color:#9aa8bd;font-size:12px;font-family:inherit;padding:6px 0;cursor:pointer;transition:all .15s}
+.sel-actions button:hover{color:#fff;border-color:var(--accent)}
+.sel-list{list-style:none;overflow-y:auto;flex:1 1 auto;margin:0 -6px;padding:0 6px}
+.sel-list::-webkit-scrollbar{width:8px}
+.sel-list::-webkit-scrollbar-thumb{background:#2f2f45;border-radius:4px}
+.sel-item label{display:flex;align-items:center;gap:7px;padding:5px 6px;border-radius:7px;cursor:pointer;font-size:12px}
+.sel-item label:hover{background:rgba(255,255,255,0.05)}
+.sel-item input{accent-color:#e94560;cursor:pointer;flex:0 0 auto}
+.sel-item .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.sel-item .nm{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sel-item .nm em{color:var(--muted);font-style:normal;font-size:11px;margin-left:5px}
+.sel-item .tt{color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums;flex:0 0 auto}
+
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
-.panel h2{color:#fff;font-size:17px;font-weight:700;margin-bottom:6px;padding-left:10px;
-  border-left:4px solid var(--accent);line-height:1.2}
-.hint{color:var(--muted);font-size:12px;line-height:1.7;margin:10px 0 16px}
-#trend-count{width:100%;height:480px}
-#trend-share{width:100%;height:480px}
-.note{color:#667788;font-size:12px;line-height:1.7;margin-top:16px}
-.panel + .panel{margin-top:22px}
+.panel + .panel{margin-top:18px}
 .panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.panel h2{color:#fff;font-size:17px;font-weight:700;padding-left:10px;
+  border-left:4px solid var(--accent);line-height:1.2}
+.hint{color:var(--muted);font-size:12px;line-height:1.7;margin:10px 0 14px}
+#trend-count{width:100%;height:470px}
+#trend-share{width:100%;height:470px}
+.note{color:#667788;font-size:12px;line-height:1.7;margin-top:14px}
 .axis-toggle{display:inline-flex;border:1px solid rgba(255,255,255,0.16);border-radius:999px;overflow:hidden}
 .axis-toggle button{background:transparent;border:0;color:#9aa8bd;font-size:12px;
   padding:5px 14px;cursor:pointer;font-family:inherit;transition:all .15s}
 .axis-toggle button:hover{color:#fff}
 .axis-toggle button.active{background:#e94560;color:#fff;font-weight:700}
+.empty{color:var(--muted);font-size:13px;text-align:center;padding:40px 0}
+
+@media (max-width:960px){
+  .layout{flex-direction:column}
+  .selector{position:static;flex:1 1 auto;width:100%;max-height:340px}
+}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>BP22 每周上位数趋势</h1>
-  <div class="sub">数据来源 bushi-navi.com ｜ 上位数前 10 的卡组类型每周变化</div>
+  <div class="sub">数据来源 bushi-navi.com ｜ 共 55 种卡组类型，默认展示上位数前 10</div>
 </div>
 
 <div class="stats">
   <div class="stat"><div class="num">1119</div><div class="label">收录上位卡组（套）</div></div>
   <div class="stat"><div class="num">6</div><div class="label">覆盖周数（周五起算）</div></div>
-  <div class="stat"><div class="num">10</div><div class="label">展示的卡组类型</div></div>
+  <div class="stat"><div class="num">55</div><div class="label">卡组类型总数</div></div>
 </div>
 
-<div class="panel">
-  <div class="panel-head">
-    <h2>每周上位数</h2>
-    <div class="axis-toggle" id="toggle-count">
-      <button type="button" data-mode="linear" class="active">线性</button>
-      <button type="button" data-mode="log">对数</button>
+<div class="layout">
+  <aside class="selector">
+    <h3>选择卡组类型</h3>
+    <div class="sel-count">已选 <b id="sel-num">10</b> / 55</div>
+    <input class="sel-filter" id="sel-filter" type="search" placeholder="搜索卡组名 / 职业…">
+    <div class="sel-actions">
+      <button type="button" data-act="top">前 10</button>
+      <button type="button" data-act="all">全选</button>
+      <button type="button" data-act="none">清空</button>
     </div>
-  </div>
-  <div class="hint">
-    横轴为「周」，每周 = <b>周五 ~ 下周四</b>（与网站其它周统计口径一致）。纵轴为该周收录到的上位套数。<br>
-    只展示本弹上位数总量前 10 的卡组类型；点上图例可单独查看某几条曲线。
-  </div>
-  <div id="trend-count"></div>
-</div>
+    <ul class="sel-list" id="sel-list">
+        <li class="sel-item" data-name="雷维翁皇">
+          <label>
+            <input type="checkbox" data-i="0" checked>
+            <span class="dot" style="background:#e94560"></span>
+            <span class="nm">雷维翁皇<em>皇家护卫</em></span>
+            <span class="tt">236</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="五妹龙">
+          <label>
+            <input type="checkbox" data-i="1" checked>
+            <span class="dot" style="background:#8bd3ff"></span>
+            <span class="nm">五妹龙<em>龙族</em></span>
+            <span class="tt">203</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="守护教">
+          <label>
+            <input type="checkbox" data-i="2" checked>
+            <span class="dot" style="background:#2ecc71"></span>
+            <span class="nm">守护教<em>主教</em></span>
+            <span class="tt">86</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="哥布林梦">
+          <label>
+            <input type="checkbox" data-i="3" checked>
+            <span class="dot" style="background:#f1c40f"></span>
+            <span class="nm">哥布林梦<em>梦魇</em></span>
+            <span class="tt">75</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="学院法">
+          <label>
+            <input type="checkbox" data-i="4" checked>
+            <span class="dot" style="background:#9b59b6"></span>
+            <span class="nm">学院法<em>巫师</em></span>
+            <span class="tt">59</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="横马">
+          <label>
+            <input type="checkbox" data-i="5" checked>
+            <span class="dot" style="background:#e67e22"></span>
+            <span class="nm">横马<em>赛马娘</em></span>
+            <span class="tt">43</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="二妹法">
+          <label>
+            <input type="checkbox" data-i="6" checked>
+            <span class="dot" style="background:#1abc9c"></span>
+            <span class="nm">二妹法<em>巫师</em></span>
+            <span class="tt">42</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="金币皇">
+          <label>
+            <input type="checkbox" data-i="7" checked>
+            <span class="dot" style="background:#e84393"></span>
+            <span class="nm">金币皇<em>皇家护卫</em></span>
+            <span class="tt">38</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="八狱法">
+          <label>
+            <input type="checkbox" data-i="8" checked>
+            <span class="dot" style="background:#00cec9"></span>
+            <span class="nm">八狱法<em>巫师</em></span>
+            <span class="tt">36</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="消失法">
+          <label>
+            <input type="checkbox" data-i="9" checked>
+            <span class="dot" style="background:#bdc3c7"></span>
+            <span class="nm">消失法<em>巫师</em></span>
+            <span class="tt">30</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="妖精妖">
+          <label>
+            <input type="checkbox" data-i="10">
+            <span class="dot" style="background:hsl(295, 68%, 62%)"></span>
+            <span class="nm">妖精妖<em>精灵</em></span>
+            <span class="tt">30</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="永火梦">
+          <label>
+            <input type="checkbox" data-i="11">
+            <span class="dot" style="background:hsl(73, 68%, 72%)"></span>
+            <span class="nm">永火梦<em>梦魇</em></span>
+            <span class="tt">29</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="2c梦">
+          <label>
+            <input type="checkbox" data-i="12">
+            <span class="dot" style="background:hsl(210, 68%, 62%)"></span>
+            <span class="nm">2c梦<em>梦魇</em></span>
+            <span class="tt">28</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="人偶妖">
+          <label>
+            <input type="checkbox" data-i="13">
+            <span class="dot" style="background:hsl(348, 68%, 72%)"></span>
+            <span class="nm">人偶妖<em>精灵</em></span>
+            <span class="tt">24</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="星星法">
+          <label>
+            <input type="checkbox" data-i="14">
+            <span class="dot" style="background:hsl(125, 68%, 62%)"></span>
+            <span class="nm">星星法<em>巫师</em></span>
+            <span class="tt">14</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="连击妖">
+          <label>
+            <input type="checkbox" data-i="15">
+            <span class="dot" style="background:hsl(263, 68%, 72%)"></span>
+            <span class="nm">连击妖<em>精灵</em></span>
+            <span class="tt">14</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="猎人妖">
+          <label>
+            <input type="checkbox" data-i="16">
+            <span class="dot" style="background:hsl(40, 68%, 62%)"></span>
+            <span class="nm">猎人妖<em>精灵</em></span>
+            <span class="tt">11</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="法术PCR">
+          <label>
+            <input type="checkbox" data-i="17">
+            <span class="dot" style="background:hsl(178, 68%, 72%)"></span>
+            <span class="nm">法术PCR<em>公主连结Re:Dive</em></span>
+            <span class="tt">10</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="控教">
+          <label>
+            <input type="checkbox" data-i="18">
+            <span class="dot" style="background:hsl(315, 68%, 62%)"></span>
+            <span class="nm">控教<em>主教</em></span>
+            <span class="tt">10</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="nc梦">
+          <label>
+            <input type="checkbox" data-i="19">
+            <span class="dot" style="background:hsl(93, 68%, 72%)"></span>
+            <span class="nm">nc梦<em>梦魇</em></span>
+            <span class="tt">9</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="大哥龙">
+          <label>
+            <input type="checkbox" data-i="20">
+            <span class="dot" style="background:hsl(230, 68%, 62%)"></span>
+            <span class="nm">大哥龙<em>龙族</em></span>
+            <span class="tt">9</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="跳费PCR">
+          <label>
+            <input type="checkbox" data-i="21">
+            <span class="dot" style="background:hsl(8, 68%, 72%)"></span>
+            <span class="nm">跳费PCR<em>公主连结Re:Dive</em></span>
+            <span class="tt">6</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="机械梦">
+          <label>
+            <input type="checkbox" data-i="22">
+            <span class="dot" style="background:hsl(145, 68%, 62%)"></span>
+            <span class="nm">机械梦<em>梦魇</em></span>
+            <span class="tt">6</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="loop马">
+          <label>
+            <input type="checkbox" data-i="23">
+            <span class="dot" style="background:hsl(283, 68%, 72%)"></span>
+            <span class="nm">loop马<em>赛马娘</em></span>
+            <span class="tt">6</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="骰子梦">
+          <label>
+            <input type="checkbox" data-i="24">
+            <span class="dot" style="background:hsl(60, 68%, 62%)"></span>
+            <span class="nm">骰子梦<em>梦魇</em></span>
+            <span class="tt">6</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="节奏教">
+          <label>
+            <input type="checkbox" data-i="25">
+            <span class="dot" style="background:hsl(198, 68%, 72%)"></span>
+            <span class="nm">节奏教<em>主教</em></span>
+            <span class="tt">4</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="死噬妖">
+          <label>
+            <input type="checkbox" data-i="26">
+            <span class="dot" style="background:hsl(335, 68%, 62%)"></span>
+            <span class="nm">死噬妖<em>精灵</em></span>
+            <span class="tt">4</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="天使皇">
+          <label>
+            <input type="checkbox" data-i="27">
+            <span class="dot" style="background:hsl(113, 68%, 72%)"></span>
+            <span class="nm">天使皇<em>皇家护卫</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="土法">
+          <label>
+            <input type="checkbox" data-i="28">
+            <span class="dot" style="background:hsl(250, 68%, 62%)"></span>
+            <span class="nm">土法<em>巫师</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="八狱妖">
+          <label>
+            <input type="checkbox" data-i="29">
+            <span class="dot" style="background:hsl(28, 68%, 72%)"></span>
+            <span class="nm">八狱妖<em>精灵</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="八狱梦">
+          <label>
+            <input type="checkbox" data-i="30">
+            <span class="dot" style="background:hsl(165, 68%, 62%)"></span>
+            <span class="nm">八狱梦<em>梦魇</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="纹章教">
+          <label>
+            <input type="checkbox" data-i="31">
+            <span class="dot" style="background:hsl(303, 68%, 72%)"></span>
+            <span class="nm">纹章教<em>主教</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="海洋龙">
+          <label>
+            <input type="checkbox" data-i="32">
+            <span class="dot" style="background:hsl(80, 68%, 62%)"></span>
+            <span class="nm">海洋龙<em>龙族</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="护符教">
+          <label>
+            <input type="checkbox" data-i="33">
+            <span class="dot" style="background:hsl(218, 68%, 72%)"></span>
+            <span class="nm">护符教<em>主教</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="哥布林妖">
+          <label>
+            <input type="checkbox" data-i="34">
+            <span class="dot" style="background:hsl(355, 68%, 62%)"></span>
+            <span class="nm">哥布林妖<em>精灵</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="宇宙妖">
+          <label>
+            <input type="checkbox" data-i="35">
+            <span class="dot" style="background:hsl(133, 68%, 72%)"></span>
+            <span class="nm">宇宙妖<em>精灵</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="机械法">
+          <label>
+            <input type="checkbox" data-i="36">
+            <span class="dot" style="background:hsl(270, 68%, 62%)"></span>
+            <span class="nm">机械法<em>巫师</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="龙人龙">
+          <label>
+            <input type="checkbox" data-i="37">
+            <span class="dot" style="background:hsl(48, 68%, 72%)"></span>
+            <span class="nm">龙人龙<em>龙族</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="兽妖">
+          <label>
+            <input type="checkbox" data-i="38">
+            <span class="dot" style="background:hsl(185, 68%, 62%)"></span>
+            <span class="nm">兽妖<em>精灵</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="魔法使法">
+          <label>
+            <input type="checkbox" data-i="39">
+            <span class="dot" style="background:hsl(323, 68%, 72%)"></span>
+            <span class="nm">魔法使法<em>巫师</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="真红梦">
+          <label>
+            <input type="checkbox" data-i="40">
+            <span class="dot" style="background:hsl(100, 68%, 62%)"></span>
+            <span class="nm">真红梦<em>梦魇</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="削手梦">
+          <label>
+            <input type="checkbox" data-i="41">
+            <span class="dot" style="background:hsl(238, 68%, 72%)"></span>
+            <span class="nm">削手梦<em>梦魇</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="快攻龙">
+          <label>
+            <input type="checkbox" data-i="42">
+            <span class="dot" style="background:hsl(15, 68%, 62%)"></span>
+            <span class="nm">快攻龙<em>龙族</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="盗贼皇">
+          <label>
+            <input type="checkbox" data-i="43">
+            <span class="dot" style="background:hsl(153, 68%, 72%)"></span>
+            <span class="nm">盗贼皇<em>皇家护卫</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="学院龙">
+          <label>
+            <input type="checkbox" data-i="44">
+            <span class="dot" style="background:hsl(290, 68%, 62%)"></span>
+            <span class="nm">学院龙<em>龙族</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="自然妖">
+          <label>
+            <input type="checkbox" data-i="45">
+            <span class="dot" style="background:hsl(68, 68%, 72%)"></span>
+            <span class="nm">自然妖<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="法术马">
+          <label>
+            <input type="checkbox" data-i="46">
+            <span class="dot" style="background:hsl(205, 68%, 62%)"></span>
+            <span class="nm">法术马<em>赛马娘</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="蝙蝠梦">
+          <label>
+            <input type="checkbox" data-i="47">
+            <span class="dot" style="background:hsl(343, 68%, 72%)"></span>
+            <span class="nm">蝙蝠梦<em>梦魇</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="铺场皇">
+          <label>
+            <input type="checkbox" data-i="48">
+            <span class="dot" style="background:hsl(120, 68%, 62%)"></span>
+            <span class="nm">铺场皇<em>皇家护卫</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="黄金船教">
+          <label>
+            <input type="checkbox" data-i="49">
+            <span class="dot" style="background:hsl(258, 68%, 72%)"></span>
+            <span class="nm">黄金船教<em>主教</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="荒野龙">
+          <label>
+            <input type="checkbox" data-i="50">
+            <span class="dot" style="background:hsl(35, 68%, 62%)"></span>
+            <span class="nm">荒野龙<em>龙族</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="哥布林皇">
+          <label>
+            <input type="checkbox" data-i="51">
+            <span class="dot" style="background:hsl(173, 68%, 72%)"></span>
+            <span class="nm">哥布林皇<em>皇家护卫</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="财宝皇">
+          <label>
+            <input type="checkbox" data-i="52">
+            <span class="dot" style="background:hsl(310, 68%, 62%)"></span>
+            <span class="nm">财宝皇<em>皇家护卫</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="cool">
+          <label>
+            <input type="checkbox" data-i="53">
+            <span class="dot" style="background:hsl(88, 68%, 72%)"></span>
+            <span class="nm">cool<em>偶像大师</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="小凤龙">
+          <label>
+            <input type="checkbox" data-i="54">
+            <span class="dot" style="background:hsl(225, 68%, 62%)"></span>
+            <span class="nm">小凤龙<em>龙族</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+    </ul>
+  </aside>
 
-<div class="panel">
-  <div class="panel-head">
-    <h2>每周占比</h2>
-    <div class="axis-toggle" id="toggle-share">
-      <button type="button" data-mode="linear" class="active">线性</button>
-      <button type="button" data-mode="log">对数</button>
+  <div class="charts">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>每周上位数</h2>
+        <div class="axis-toggle" id="toggle-count">
+          <button type="button" data-mode="linear" class="active">线性</button>
+          <button type="button" data-mode="log">对数</button>
+        </div>
+      </div>
+      <div class="hint">
+        横轴为「周」，每周 = <b>周五 ~ 下周四</b>。纵轴为该周收录到的上位套数。<br>
+        左侧勾选的类型会同时出现在下方两张图里；默认勾选上位数前 10。
+      </div>
+      <div id="trend-count"></div>
     </div>
-  </div>
-  <div class="hint">
-    纵轴为该类型占<b>当周全部上位</b>的百分比 —— 相比绝对套数，它更能反映环境份额：
-    整弹比赛变少时，上位数会一起下降，但占比能看出谁在真正扩张。<br>
-    后几名占比很低时会被前几名压扁，可切到<b>对数</b>轴拉开差距（对数轴下 0 值不显示）。
-  </div>
-  <div id="trend-share"></div>
-  <div class="note">
-    说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
-    某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理（对数轴下该点会断开）。
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>每周占比</h2>
+        <div class="axis-toggle" id="toggle-share">
+          <button type="button" data-mode="linear" class="active">线性</button>
+          <button type="button" data-mode="log">对数</button>
+        </div>
+      </div>
+      <div class="hint">
+        纵轴为该类型占<b>当周全部上位</b>的百分比 —— 整弹比赛变少时，上位数会一起下降，占比才看得出谁在真正扩张。<br>
+        后几名占比低时会被压扁，可切<b>对数</b>轴（对数轴下 0 值不显示）。
+      </div>
+      <div id="trend-share"></div>
+      <div class="note">
+        说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
+        某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理。
+      </div>
+    </div>
   </div>
 </div>
 
 <script src="./_shared/js/echarts.min.js"></script>
 <script>
 (function(){
-  var D = {"x":["10/02","10/09","10/16","10/23","10/30","11/06"],"xFull":["2026/10/02-2026/10/08","2026/10/09-2026/10/15","2026/10/16-2026/10/22","2026/10/23-2026/10/29","2026/10/30-2026/11/05","2026/11/06-2026/11/12"],"weekTotals":[192,312,195,120,180,120],"totals":[236,203,86,75,59,43,42,38,36,30],"countSeries":[{"name":"雷维翁皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[20,55,44,44,47,26]},{"name":"五妹龙｜龙族","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[34,47,41,20,38,23]},{"name":"守护教｜主教","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[32,21,12,6,7,8]},{"name":"哥布林梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[4,32,11,8,9,11]},{"name":"学院法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[7,11,4,6,17,14]},{"name":"横马｜赛马娘","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[12,20,7,2,1,1]},{"name":"二妹法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[6,17,9,4,4,2]},{"name":"金币皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,12,8,3,5,3]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[1,4,6,8,14,3]},{"name":"消失法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[5,15,6,0,3,1]}],"countSeriesLog":[{"name":"雷维翁皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[20,55,44,44,47,26]},{"name":"五妹龙｜龙族","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[34,47,41,20,38,23]},{"name":"守护教｜主教","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[32,21,12,6,7,8]},{"name":"哥布林梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[4,32,11,8,9,11]},{"name":"学院法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[7,11,4,6,17,14]},{"name":"横马｜赛马娘","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[12,20,7,2,1,1]},{"name":"二妹法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[6,17,9,4,4,2]},{"name":"金币皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[7,12,8,3,5,3]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[1,4,6,8,14,3]},{"name":"消失法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[5,15,6,null,3,1]}],"shareSeries":[{"name":"雷维翁皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[10.4,17.6,22.6,36.7,26.1,21.7]},{"name":"五妹龙｜龙族","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[17.7,15.1,21,16.7,21.1,19.2]},{"name":"守护教｜主教","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[16.7,6.7,6.2,5,3.9,6.7]},{"name":"哥布林梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[2.1,10.3,5.6,6.7,5,9.2]},{"name":"学院法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[3.6,3.5,2.1,5,9.4,11.7]},{"name":"横马｜赛马娘","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[6.3,6.4,3.6,1.7,0.6,0.8]},{"name":"二妹法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[3.1,5.4,4.6,3.3,2.2,1.7]},{"name":"金币皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[3.6,3.8,4.1,2.5,2.8,2.5]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[0.5,1.3,3.1,6.7,7.8,2.5]},{"name":"消失法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[2.6,4.8,3.1,0,1.7,0.8]}],"shareSeriesLog":[{"name":"雷维翁皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e94560"},"emphasis":{"focus":"series"},"data":[10.4,17.6,22.6,36.7,26.1,21.7]},{"name":"五妹龙｜龙族","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#8bd3ff"},"emphasis":{"focus":"series"},"data":[17.7,15.1,21,16.7,21.1,19.2]},{"name":"守护教｜主教","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#2ecc71"},"emphasis":{"focus":"series"},"data":[16.7,6.7,6.2,5,3.9,6.7]},{"name":"哥布林梦｜梦魇","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#f1c40f"},"emphasis":{"focus":"series"},"data":[2.1,10.3,5.6,6.7,5,9.2]},{"name":"学院法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#9b59b6"},"emphasis":{"focus":"series"},"data":[3.6,3.5,2.1,5,9.4,11.7]},{"name":"横马｜赛马娘","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e67e22"},"emphasis":{"focus":"series"},"data":[6.3,6.4,3.6,1.7,0.6,0.8]},{"name":"二妹法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#1abc9c"},"emphasis":{"focus":"series"},"data":[3.1,5.4,4.6,3.3,2.2,1.7]},{"name":"金币皇｜皇家护卫","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#e84393"},"emphasis":{"focus":"series"},"data":[3.6,3.8,4.1,2.5,2.8,2.5]},{"name":"八狱法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#00cec9"},"emphasis":{"focus":"series"},"data":[0.5,1.3,3.1,6.7,7.8,2.5]},{"name":"消失法｜巫师","type":"line","smooth":true,"symbol":"circle","symbolSize":6,"lineStyle":{"width":2.4},"itemStyle":{"color":"#bdc3c7"},"emphasis":{"focus":"series"},"data":[2.6,4.8,3.1,null,1.7,0.8]}]};
+  var D = {"x":["10/02","10/09","10/16","10/23","10/30","11/06"],"xFull":["2026/10/02-2026/10/08","2026/10/09-2026/10/15","2026/10/16-2026/10/22","2026/10/23-2026/10/29","2026/10/30-2026/11/05","2026/11/06-2026/11/12"],"weekTotals":[192,312,195,120,180,120],"types":[{"name":"雷维翁皇","label":"雷维翁皇｜皇家护卫","color":"#e94560","total":236,"data":[20,55,44,44,47,26],"share":[10.4,17.6,22.6,36.7,26.1,21.7]},{"name":"五妹龙","label":"五妹龙｜龙族","color":"#8bd3ff","total":203,"data":[34,47,41,20,38,23],"share":[17.7,15.1,21,16.7,21.1,19.2]},{"name":"守护教","label":"守护教｜主教","color":"#2ecc71","total":86,"data":[32,21,12,6,7,8],"share":[16.7,6.7,6.2,5,3.9,6.7]},{"name":"哥布林梦","label":"哥布林梦｜梦魇","color":"#f1c40f","total":75,"data":[4,32,11,8,9,11],"share":[2.1,10.3,5.6,6.7,5,9.2]},{"name":"学院法","label":"学院法｜巫师","color":"#9b59b6","total":59,"data":[7,11,4,6,17,14],"share":[3.6,3.5,2.1,5,9.4,11.7]},{"name":"横马","label":"横马｜赛马娘","color":"#e67e22","total":43,"data":[12,20,7,2,1,1],"share":[6.3,6.4,3.6,1.7,0.6,0.8]},{"name":"二妹法","label":"二妹法｜巫师","color":"#1abc9c","total":42,"data":[6,17,9,4,4,2],"share":[3.1,5.4,4.6,3.3,2.2,1.7]},{"name":"金币皇","label":"金币皇｜皇家护卫","color":"#e84393","total":38,"data":[7,12,8,3,5,3],"share":[3.6,3.8,4.1,2.5,2.8,2.5]},{"name":"八狱法","label":"八狱法｜巫师","color":"#00cec9","total":36,"data":[1,4,6,8,14,3],"share":[0.5,1.3,3.1,6.7,7.8,2.5]},{"name":"消失法","label":"消失法｜巫师","color":"#bdc3c7","total":30,"data":[5,15,6,0,3,1],"share":[2.6,4.8,3.1,0,1.7,0.8]},{"name":"妖精妖","label":"妖精妖｜精灵","color":"hsl(295, 68%, 62%)","total":30,"data":[7,10,4,7,2,0],"share":[3.6,3.2,2.1,5.8,1.1,0]},{"name":"永火梦","label":"永火梦｜梦魇","color":"hsl(73, 68%, 72%)","total":29,"data":[1,5,6,3,9,5],"share":[0.5,1.6,3.1,2.5,5,4.2]},{"name":"2c梦","label":"2c梦｜梦魇","color":"hsl(210, 68%, 62%)","total":28,"data":[13,10,2,1,0,2],"share":[6.8,3.2,1,0.8,0,1.7]},{"name":"人偶妖","label":"人偶妖｜精灵","color":"hsl(348, 68%, 72%)","total":24,"data":[2,7,3,4,3,5],"share":[1,2.2,1.5,3.3,1.7,4.2]},{"name":"星星法","label":"星星法｜巫师","color":"hsl(125, 68%, 62%)","total":14,"data":[2,6,3,0,2,1],"share":[1,1.9,1.5,0,1.1,0.8]},{"name":"连击妖","label":"连击妖｜精灵","color":"hsl(263, 68%, 72%)","total":14,"data":[0,6,6,1,1,0],"share":[0,1.9,3.1,0.8,0.6,0]},{"name":"猎人妖","label":"猎人妖｜精灵","color":"hsl(40, 68%, 62%)","total":11,"data":[3,2,2,0,0,4],"share":[1.6,0.6,1,0,0,3.3]},{"name":"法术PCR","label":"法术PCR｜公主连结Re:Dive","color":"hsl(178, 68%, 72%)","total":10,"data":[2,3,3,0,1,1],"share":[1,1,1.5,0,0.6,0.8]},{"name":"控教","label":"控教｜主教","color":"hsl(315, 68%, 62%)","total":10,"data":[0,4,3,1,1,1],"share":[0,1.3,1.5,0.8,0.6,0.8]},{"name":"nc梦","label":"nc梦｜梦魇","color":"hsl(93, 68%, 72%)","total":9,"data":[3,2,3,0,1,0],"share":[1.6,0.6,1.5,0,0.6,0]},{"name":"大哥龙","label":"大哥龙｜龙族","color":"hsl(230, 68%, 62%)","total":9,"data":[4,0,2,0,2,1],"share":[2.1,0,1,0,1.1,0.8]},{"name":"跳费PCR","label":"跳费PCR｜公主连结Re:Dive","color":"hsl(8, 68%, 72%)","total":6,"data":[2,3,0,0,1,0],"share":[1,1,0,0,0.6,0]},{"name":"机械梦","label":"机械梦｜梦魇","color":"hsl(145, 68%, 62%)","total":6,"data":[5,0,0,0,1,0],"share":[2.6,0,0,0,0.6,0]},{"name":"loop马","label":"loop马｜赛马娘","color":"hsl(283, 68%, 72%)","total":6,"data":[2,4,0,0,0,0],"share":[1,1.3,0,0,0,0]},{"name":"骰子梦","label":"骰子梦｜梦魇","color":"hsl(60, 68%, 62%)","total":6,"data":[2,1,1,0,1,1],"share":[1,0.3,0.5,0,0.6,0.8]},{"name":"节奏教","label":"节奏教｜主教","color":"hsl(198, 68%, 72%)","total":4,"data":[1,0,2,0,0,1],"share":[0.5,0,1,0,0,0.8]},{"name":"死噬妖","label":"死噬妖｜精灵","color":"hsl(335, 68%, 62%)","total":4,"data":[0,1,0,1,1,1],"share":[0,0.3,0,0.8,0.6,0.8]},{"name":"天使皇","label":"天使皇｜皇家护卫","color":"hsl(113, 68%, 72%)","total":3,"data":[2,0,0,0,1,0],"share":[1,0,0,0,0.6,0]},{"name":"土法","label":"土法｜巫师","color":"hsl(250, 68%, 62%)","total":3,"data":[3,0,0,0,0,0],"share":[1.6,0,0,0,0,0]},{"name":"八狱妖","label":"八狱妖｜精灵","color":"hsl(28, 68%, 72%)","total":3,"data":[1,1,1,0,0,0],"share":[0.5,0.3,0.5,0,0,0]},{"name":"八狱梦","label":"八狱梦｜梦魇","color":"hsl(165, 68%, 62%)","total":3,"data":[1,1,0,0,1,0],"share":[0.5,0.3,0,0,0.6,0]},{"name":"纹章教","label":"纹章教｜主教","color":"hsl(303, 68%, 72%)","total":3,"data":[0,2,0,0,0,1],"share":[0,0.6,0,0,0,0.8]},{"name":"海洋龙","label":"海洋龙｜龙族","color":"hsl(80, 68%, 62%)","total":3,"data":[0,3,0,0,0,0],"share":[0,1,0,0,0,0]},{"name":"护符教","label":"护符教｜主教","color":"hsl(218, 68%, 72%)","total":3,"data":[0,0,1,0,1,1],"share":[0,0,0.5,0,0.6,0.8]},{"name":"哥布林妖","label":"哥布林妖｜精灵","color":"hsl(355, 68%, 62%)","total":3,"data":[0,2,1,0,0,0],"share":[0,0.6,0.5,0,0,0]},{"name":"宇宙妖","label":"宇宙妖｜精灵","color":"hsl(133, 68%, 72%)","total":2,"data":[1,1,0,0,0,0],"share":[0.5,0.3,0,0,0,0]},{"name":"机械法","label":"机械法｜巫师","color":"hsl(270, 68%, 62%)","total":2,"data":[1,0,0,0,1,0],"share":[0.5,0,0,0,0.6,0]},{"name":"龙人龙","label":"龙人龙｜龙族","color":"hsl(48, 68%, 72%)","total":2,"data":[1,0,1,0,0,0],"share":[0.5,0,0.5,0,0,0]},{"name":"兽妖","label":"兽妖｜精灵","color":"hsl(185, 68%, 62%)","total":2,"data":[0,1,0,0,1,0],"share":[0,0.3,0,0,0.6,0]},{"name":"魔法使法","label":"魔法使法｜巫师","color":"hsl(323, 68%, 72%)","total":2,"data":[0,0,1,0,0,1],"share":[0,0,0.5,0,0,0.8]},{"name":"真红梦","label":"真红梦｜梦魇","color":"hsl(100, 68%, 62%)","total":2,"data":[0,0,0,0,2,0],"share":[0,0,0,0,1.1,0]},{"name":"削手梦","label":"削手梦｜梦魇","color":"hsl(238, 68%, 72%)","total":2,"data":[0,0,0,1,0,1],"share":[0,0,0,0.8,0,0.8]},{"name":"快攻龙","label":"快攻龙｜龙族","color":"hsl(15, 68%, 62%)","total":1,"data":[1,0,0,0,0,0],"share":[0.5,0,0,0,0,0]},{"name":"盗贼皇","label":"盗贼皇｜皇家护卫","color":"hsl(153, 68%, 72%)","total":1,"data":[1,0,0,0,0,0],"share":[0.5,0,0,0,0,0]},{"name":"学院龙","label":"学院龙｜龙族","color":"hsl(290, 68%, 62%)","total":1,"data":[1,0,0,0,0,0],"share":[0.5,0,0,0,0,0]},{"name":"自然妖","label":"自然妖｜精灵","color":"hsl(68, 68%, 72%)","total":1,"data":[1,0,0,0,0,0],"share":[0.5,0,0,0,0,0]},{"name":"法术马","label":"法术马｜赛马娘","color":"hsl(205, 68%, 62%)","total":1,"data":[1,0,0,0,0,0],"share":[0.5,0,0,0,0,0]},{"name":"蝙蝠梦","label":"蝙蝠梦｜梦魇","color":"hsl(343, 68%, 72%)","total":1,"data":[0,1,0,0,0,0],"share":[0,0.3,0,0,0,0]},{"name":"铺场皇","label":"铺场皇｜皇家护卫","color":"hsl(120, 68%, 62%)","total":1,"data":[0,1,0,0,0,0],"share":[0,0.3,0,0,0,0]},{"name":"黄金船教","label":"黄金船教｜主教","color":"hsl(258, 68%, 72%)","total":1,"data":[0,0,1,0,0,0],"share":[0,0,0.5,0,0,0]},{"name":"荒野龙","label":"荒野龙｜龙族","color":"hsl(35, 68%, 62%)","total":1,"data":[0,0,1,0,0,0],"share":[0,0,0.5,0,0,0]},{"name":"哥布林皇","label":"哥布林皇｜皇家护卫","color":"hsl(173, 68%, 72%)","total":1,"data":[0,1,0,0,0,0],"share":[0,0.3,0,0,0,0]},{"name":"财宝皇","label":"财宝皇｜皇家护卫","color":"hsl(310, 68%, 62%)","total":1,"data":[0,0,0,0,1,0],"share":[0,0,0,0,0.6,0]},{"name":"cool","label":"cool｜偶像大师","color":"hsl(88, 68%, 72%)","total":1,"data":[0,0,0,0,1,0],"share":[0,0,0,0,0.6,0]},{"name":"小凤龙","label":"小凤龙｜龙族","color":"hsl(225, 68%, 62%)","total":1,"data":[0,0,0,0,0,1],"share":[0,0,0,0,0,0.8]}]};
+  var T = D.types;
   if (!window.echarts) return;
 
-  function baseOption(series, yName, isPct) {
+  var modeCount = 'linear';
+  var modeShare = 'linear';
+
+  function seriesFor(indices, key, logMode) {
+    return indices.map(function(i){
+      var t = T[i];
+      var raw = t[key];
+      return {
+        name: t.label,
+        type: 'line',
+        smooth: true,
+        symbol: 'circle',
+        symbolSize: 5,
+        lineStyle: { width: 2.2 },
+        itemStyle: { color: t.color },
+        emphasis: { focus: 'series' },
+        data: logMode ? raw.map(function(v){ return v > 0 ? v : null; }) : raw
+      };
+    });
+  }
+
+  function baseOption(yName, isPct) {
     return {
       backgroundColor: 'transparent',
       tooltip: {
         trigger: 'axis',
-        backgroundColor: 'rgba(16,18,30,0.95)',
+        backgroundColor: 'rgba(16,18,30,0.96)',
         borderColor: 'rgba(255,255,255,0.15)',
         textStyle: { color: '#e0e0e0', fontSize: 12 },
+        confine: true,
         formatter: function(ps){
           var idx = ps[0].dataIndex;
           var head = '<b>' + D.xFull[idx] + '</b>（当周共 ' + D.weekTotals[idx] + ' 套）';
-          var body = ps.filter(function(p){ return p.value > 0; })
+          var rows = ps.filter(function(p){ return p.value > 0; })
             .sort(function(a,b){ return b.value - a.value; })
             .map(function(p){
               return p.marker + p.seriesName + '：<b>' + p.value + '</b>' + (isPct ? '%' : ' 套');
             });
-          if (!body.length) body.push('该周无记录');
-          return [head].concat(body).join('<br/>');
+          if (!rows.length) rows.push('该周无记录');
+          return [head].concat(rows).join('<br/>');
         }
       },
-      legend: {
-        top: 0, type: 'scroll', textStyle: { color: '#9aa8bd', fontSize: 12 },
-        itemWidth: 18, itemHeight: 10, pageTextStyle: { color: '#9aa8bd' }
-      },
-      grid: { left: 56, right: 28, top: 74, bottom: 42 },
+      grid: { left: 58, right: 26, top: 38, bottom: 44 },
       xAxis: {
         type: 'category', boundaryGap: false, data: D.x,
         axisLine: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
@@ -129,19 +635,57 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
         axisLabel: { color: '#8899aa', fontSize: 11, formatter: isPct ? '{value}%' : '{value}' },
         splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
       },
-      series: series
+      series: []
     };
   }
 
-  var c1 = document.getElementById('trend-count');
-  var c2 = document.getElementById('trend-share');
-  var ch1 = echarts.init(c1, null, { renderer: 'canvas' });
-  var ch2 = echarts.init(c2, null, { renderer: 'canvas' });
-  ch1.setOption(baseOption(D.countSeries, '上位数（套）', false));
-  ch2.setOption(baseOption(D.shareSeries, '占比（%）', true));
+  var ch1 = echarts.init(document.getElementById('trend-count'), null, { renderer: 'canvas' });
+  var ch2 = echarts.init(document.getElementById('trend-share'), null, { renderer: 'canvas' });
+  ch1.setOption(baseOption('上位数（套）', false));
+  ch2.setOption(baseOption('占比（%）', true));
 
-  // 线性 / 对数 轴切换
-  function wireToggle(id, chart, linearSeries, logSeries, yName, isPct) {
+  var boxes = [].slice.call(document.querySelectorAll('#sel-list input[type=checkbox]'));
+  var numEl = document.getElementById('sel-num');
+
+  function selectedIndices() {
+    var out = [];
+    boxes.forEach(function(b){ if (b.checked) out.push(+b.dataset.i); });
+    return out.sort(function(a,b){ return a - b; });
+  }
+
+  function redraw() {
+    var idx = selectedIndices();
+    numEl.textContent = idx.length;
+    ch1.setOption({ series: seriesFor(idx, 'data', modeCount === 'log') }, { replaceMerge: ['series'] });
+    ch2.setOption({ series: seriesFor(idx, 'share', modeShare === 'log') }, { replaceMerge: ['series'] });
+  }
+
+  boxes.forEach(function(b){ b.addEventListener('change', redraw); });
+
+  function applySelection(pred) {
+    boxes.forEach(function(b){ b.checked = pred(+b.dataset.i); });
+    redraw();
+  }
+  document.querySelectorAll('.sel-actions button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var act = btn.dataset.act;
+      if (act === 'top') applySelection(function(i){ return i < 10; });
+      else if (act === 'all') applySelection(function(){ return true; });
+      else applySelection(function(){ return false; });
+    });
+  });
+
+  // 搜索过滤（只影响列表显示，不改变勾选）
+  var filter = document.getElementById('sel-filter');
+  filter.addEventListener('input', function(){
+    var q = filter.value.trim().toLowerCase();
+    document.querySelectorAll('#sel-list .sel-item').forEach(function(li){
+      var hit = !q || li.textContent.toLowerCase().indexOf(q) >= 0;
+      li.style.display = hit ? '' : 'none';
+    });
+  });
+
+  function wireToggle(id, chart, which) {
     var box = document.getElementById(id);
     if (!box) return;
     var buttons = [].slice.call(box.querySelectorAll('button'));
@@ -149,25 +693,25 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
       btn.addEventListener('click', function(){
         var log = btn.dataset.mode === 'log';
         buttons.forEach(function(b){ b.classList.toggle('active', b === btn); });
+        var isPct = which === 'share';
+        if (which === 'count') modeCount = btn.dataset.mode; else modeShare = btn.dataset.mode;
         chart.setOption({
           yAxis: {
             type: log ? 'log' : 'value',
-            name: yName + (log ? '（对数）' : ''),
+            name: (isPct ? '占比（%）' : '上位数（套）') + (log ? '（对数）' : ''),
             nameTextStyle: { color: '#8899aa', fontSize: 11 },
-            axisLabel: {
-              color: '#8899aa', fontSize: 11,
-              formatter: isPct ? '{value}%' : '{value}'
-            },
+            axisLabel: { color: '#8899aa', fontSize: 11, formatter: isPct ? '{value}%' : '{value}' },
             splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
           },
-          series: log ? logSeries : linearSeries
+          series: seriesFor(selectedIndices(), which === 'share' ? 'share' : 'data', log)
         }, { replaceMerge: ['series'] });
       });
     });
   }
-  wireToggle('toggle-count', ch1, D.countSeries, D.countSeriesLog, '上位数（套）', false);
-  wireToggle('toggle-share', ch2, D.shareSeries, D.shareSeriesLog, '占比（%）', true);
+  wireToggle('toggle-count', ch1, 'count');
+  wireToggle('toggle-share', ch2, 'share');
 
+  redraw();
   window.addEventListener('resize', function(){ ch1.resize(); ch2.resize(); });
 })();
 </script>
