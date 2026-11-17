@@ -2,14 +2,14 @@
   {
     "key": "total",
     "label": "总数据",
-    "event_count": 164,
-    "deck_count": 1119,
-    "top8_count": 1119,
-    "top1_count": 175,
+    "event_count": 190,
+    "deck_count": 1287,
+    "top8_count": 1287,
+    "top1_count": 203,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 281,
+        "value": 323,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -17,7 +17,7 @@
       },
       {
         "name": "🐉 龙族",
-        "value": 221,
+        "value": 250,
         "itemStyle": {
           "color": "#e67e22"
         },
@@ -25,7 +25,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 188,
+        "value": 231,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -33,7 +33,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 161,
+        "value": 185,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -41,7 +41,7 @@
       },
       {
         "name": "⛪ 主教",
-        "value": 107,
+        "value": 115,
         "itemStyle": {
           "color": "#f1c40f"
         },
@@ -49,7 +49,7 @@
       },
       {
         "name": "🍃 精灵",
-        "value": 94,
+        "value": 108,
         "itemStyle": {
           "color": "#27ae60"
         },
@@ -57,7 +57,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 50,
+        "value": 53,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -65,7 +65,7 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 16,
+        "value": 20,
         "itemStyle": {
           "color": "#e91e63"
         },
@@ -73,7 +73,7 @@
       },
       {
         "name": "🎤 偶像大师",
-        "value": 1,
+        "value": 2,
         "itemStyle": {
           "color": "#ff8ab3"
         },
@@ -83,87 +83,99 @@
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 236,
+        "value": 271,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
       {
         "name": "龙族｜五妹龙",
-        "value": 203,
+        "value": 229,
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
       },
       {
         "name": "主教｜守护教",
-        "value": 86,
+        "value": 92,
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 75,
+        "value": 87,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
       {
         "name": "巫师｜学院法",
-        "value": 59,
+        "value": 82,
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "name": "赛马娘｜横马",
-        "value": 43,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "巫师｜二妹法",
-        "value": 42,
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "name": "皇家护卫｜金币皇",
-        "value": 38,
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "name": "巫师｜八狱法",
-        "value": 36,
+        "value": 46,
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "巫师｜二妹法",
+        "value": 46,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 46,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "皇家护卫｜金币皇",
+        "value": 42,
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
         "name": "精灵｜妖精妖",
-        "value": 30,
+        "value": 37,
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
-        "name": "巫师｜消失法",
-        "value": 30,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
-      },
-      {
         "name": "梦魇｜永火梦",
-        "value": 29,
+        "value": 35,
         "link": "decktypes/decktype-71c5492994cc.html",
         "image": "../../assets/cards/BP14-SL16.jpg"
       },
       {
+        "name": "巫师｜消失法",
+        "value": 33,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
         "name": "梦魇｜2c梦",
-        "value": 28,
+        "value": 29,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
       },
       {
         "name": "精灵｜人偶妖",
-        "value": 24,
+        "value": 28,
         "link": "decktypes/decktype-4347111b0e67.html",
         "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 17,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-SL07.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 14,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "精灵｜连击妖",
@@ -172,32 +184,20 @@
         "image": "../../assets/cards/ECP02-SL04.jpg"
       },
       {
-        "name": "巫师｜星星法",
-        "value": 14,
-        "link": "decktypes/decktype-87a84038db1f.html",
-        "image": "../../assets/cards/BP11-SL07.jpg"
-      },
-      {
-        "name": "精灵｜猎人妖",
-        "value": 11,
-        "link": "decktypes/decktype-44ce1ca73386.html",
-        "image": "../../assets/cards/BP20-SL01.jpg"
-      },
-      {
-        "name": "公主连结Re:Dive｜法术PCR",
-        "value": 10,
-        "link": "decktypes/decktype-deb2d8e95565.html",
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      },
-      {
         "name": "主教｜控教",
-        "value": 10,
+        "value": 12,
         "link": "decktypes/decktype-da0c322184a8.html",
         "image": "../../assets/cards/BP15-SL24.jpg"
       },
       {
+        "name": "精灵｜猎人妖",
+        "value": 12,
+        "link": "decktypes/decktype-44ce1ca73386.html",
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      },
+      {
         "name": "梦魇｜nc梦",
-        "value": 9,
+        "value": 10,
         "link": "decktypes/decktype-bbc8f17f6035.html",
         "image": "../../assets/cards/PR-399.jpg"
       },
@@ -206,6 +206,12 @@
         "value": 9,
         "link": "decktypes/decktype-cd6d71f47cfb.html",
         "image": "../../assets/cards/BP16-SL15.jpg"
+      },
+      {
+        "name": "梦魇｜骰子梦",
+        "value": 7,
+        "link": "decktypes/decktype-96191bb3b6d4.html",
+        "image": "../../assets/cards/BP21-SL19.jpg"
       },
       {
         "name": "公主连结Re:Dive｜跳费PCR",
@@ -226,10 +232,10 @@
         "image": "../../assets/cards/BP07-SL13.jpg"
       },
       {
-        "name": "梦魇｜骰子梦",
-        "value": 6,
-        "link": "decktypes/decktype-96191bb3b6d4.html",
-        "image": "../../assets/cards/BP21-SL19.jpg"
+        "name": "皇家护卫｜天使皇",
+        "value": 4,
+        "link": "decktypes/decktype-2b0efb008539.html",
+        "image": "../../assets/cards/PR-233.jpg"
       },
       {
         "name": "主教｜节奏教",
@@ -238,22 +244,22 @@
         "image": "../../assets/cards/PR-415.jpg"
       },
       {
+        "name": "梦魇｜八狱梦",
+        "value": 4,
+        "link": "decktypes/decktype-7a481475a6b5.html",
+        "image": "../../assets/cards/BP19-080.jpg"
+      },
+      {
+        "name": "梦魇｜真红梦",
+        "value": 4,
+        "link": "decktypes/decktype-747237d91606.html",
+        "image": "../../assets/cards/BP05-SL13.jpg"
+      },
+      {
         "name": "精灵｜死噬妖",
         "value": 4,
         "link": "decktypes/decktype-e7515dc1071b.html",
         "image": "../../assets/cards/BP22-SL02.jpg"
-      },
-      {
-        "name": "皇家护卫｜天使皇",
-        "value": 3,
-        "link": "decktypes/decktype-2b0efb008539.html",
-        "image": "../../assets/cards/PR-233.jpg"
-      },
-      {
-        "name": "梦魇｜八狱梦",
-        "value": 3,
-        "link": "decktypes/decktype-7a481475a6b5.html",
-        "image": "../../assets/cards/BP19-080.jpg"
       },
       {
         "name": "主教｜纹章教",
@@ -266,6 +272,12 @@
         "value": 3,
         "link": "decktypes/decktype-25097831eeb5.html",
         "image": "../../assets/cards/BP19-005.jpg"
+      },
+      {
+        "name": "精灵｜兽妖",
+        "value": 3,
+        "link": "decktypes/decktype-c2ac43fe870c.html",
+        "image": "../../assets/cards/BP21-001.jpg"
       },
       {
         "name": "精灵｜哥布林妖",
@@ -286,10 +298,22 @@
         "image": "../../assets/cards/BP09-U03.jpg"
       },
       {
+        "name": "龙族｜龙人龙",
+        "value": 3,
+        "link": "decktypes/decktype-ca24d30a1a65.html",
+        "image": "../../assets/cards/BP21-SL16.jpg"
+      },
+      {
         "name": "龙族｜海洋龙",
         "value": 3,
         "link": "decktypes/decktype-200bb41cd994.html",
         "image": "../../assets/cards/BP17-SL15.jpg"
+      },
+      {
+        "name": "偶像大师｜cool",
+        "value": 2,
+        "link": "decktypes/decktype-0fe79a39fa2e.html",
+        "image": "../../assets/cards/CSD02b-001.jpg"
       },
       {
         "name": "巫师｜魔法使法",
@@ -298,28 +322,16 @@
         "image": "../../assets/cards/BP14-U03.jpg"
       },
       {
-        "name": "梦魇｜真红梦",
+        "name": "皇家护卫｜财宝皇",
         "value": 2,
-        "link": "decktypes/decktype-747237d91606.html",
-        "image": "../../assets/cards/BP05-U05.jpg"
-      },
-      {
-        "name": "龙族｜龙人龙",
-        "value": 2,
-        "link": "decktypes/decktype-ca24d30a1a65.html",
-        "image": "../../assets/cards/BP21-SL16.jpg"
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
       },
       {
         "name": "精灵｜宇宙妖",
         "value": 2,
         "link": "decktypes/decktype-75a3e2d0e2a4.html",
         "image": "../../assets/cards/BP19-SL26.jpg"
-      },
-      {
-        "name": "精灵｜兽妖",
-        "value": 2,
-        "link": "decktypes/decktype-c2ac43fe870c.html",
-        "image": "../../assets/cards/BP21-001.jpg"
       },
       {
         "name": "巫师｜机械法",
@@ -334,16 +346,10 @@
         "image": "../../assets/cards/BP05-SL14.jpg"
       },
       {
-        "name": "偶像大师｜cool",
+        "name": "皇家护卫｜学院皇",
         "value": 1,
-        "link": "decktypes/decktype-0fe79a39fa2e.html",
-        "image": "../../assets/cards/CSD02b-001.jpg"
-      },
-      {
-        "name": "皇家护卫｜财宝皇",
-        "value": 1,
-        "link": "decktypes/decktype-9e477d88228e.html",
-        "image": "../../assets/cards/BP19-SP01.jpg"
+        "link": "decktypes/decktype-c20c01569823.html",
+        "image": "../../assets/cards/BP21-020.jpg"
       },
       {
         "name": "皇家护卫｜哥布林皇",
@@ -356,6 +362,12 @@
         "value": 1,
         "link": "decktypes/decktype-e966f3ffc9bd.html",
         "image": "../../assets/cards/BP16-SL15.jpg"
+      },
+      {
+        "name": "龙族｜武斗龙",
+        "value": 1,
+        "link": "decktypes/decktype-c4187e008e9c.html",
+        "image": "../../assets/cards/BP18-SL13.jpg"
       },
       {
         "name": "皇家护卫｜铺场皇",
@@ -400,6 +412,12 @@
         "image": "../../assets/cards/BP11-052.jpg"
       },
       {
+        "name": "精灵｜透京妖",
+        "value": 1,
+        "link": "decktypes/decktype-b839e822b2c1.html",
+        "image": "../../assets/cards/BP18-001.jpg"
+      },
+      {
         "name": "龙族｜快攻龙",
         "value": 1,
         "link": "decktypes/decktype-f50f99e7f0df.html",
@@ -410,13 +428,19 @@
         "value": 1,
         "link": "decktypes/decktype-941c1ca0a7a2.html",
         "image": "../../assets/cards/BP07-001.jpg"
+      },
+      {
+        "name": "龙族｜八狱龙",
+        "value": 1,
+        "link": "decktypes/decktype-a0e911cab421.html",
+        "image": "../../assets/cards/BP19-057.jpg"
       }
     ],
     "top_types": [
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 236,
+        "count": 271,
         "best": "1/556",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -424,7 +448,7 @@
       {
         "class": "龙族",
         "category": "五妹龙",
-        "count": 203,
+        "count": 229,
         "best": "5/556",
         "link": "decktypes/decktype-7e3b69cd0c30.html",
         "image": "../../assets/cards/BP15-SL15.jpg"
@@ -432,7 +456,7 @@
       {
         "class": "主教",
         "category": "守护教",
-        "count": 86,
+        "count": 92,
         "best": "7/556",
         "link": "decktypes/decktype-75396de72bcf.html",
         "image": "../../assets/cards/BP15-SL26.jpg"
@@ -440,7 +464,7 @@
       {
         "class": "梦魇",
         "category": "哥布林梦",
-        "count": 75,
+        "count": 87,
         "best": "4/556",
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
@@ -448,81 +472,450 @@
       {
         "class": "巫师",
         "category": "学院法",
-        "count": 59,
+        "count": 82,
         "best": "8/556",
         "link": "decktypes/decktype-b9263fb83a8a.html",
         "image": "../../assets/cards/BP06-SL08.jpg"
       },
       {
-        "class": "赛马娘",
-        "category": "横马",
-        "count": 43,
-        "best": "1/39",
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "class": "巫师",
-        "category": "二妹法",
-        "count": 42,
-        "best": "10/556",
-        "link": "decktypes/decktype-f04045f27752.html",
-        "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "class": "皇家护卫",
-        "category": "金币皇",
-        "count": 38,
-        "best": "13/556",
-        "link": "decktypes/decktype-bab8fae9b582.html",
-        "image": "../../assets/cards/BP14-022.jpg"
-      },
-      {
         "class": "巫师",
         "category": "八狱法",
-        "count": 36,
+        "count": 46,
         "best": "3/556",
         "link": "decktypes/decktype-058fd7f22075.html",
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "class": "巫师",
+        "category": "二妹法",
+        "count": 46,
+        "best": "10/556",
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "class": "赛马娘",
+        "category": "横马",
+        "count": 46,
+        "best": "1/39",
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "金币皇",
+        "count": 42,
+        "best": "13/556",
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
         "class": "精灵",
         "category": "妖精妖",
-        "count": 30,
+        "count": 37,
         "best": "11/556",
         "link": "decktypes/decktype-217b5e054fbc.html",
         "image": "../../assets/cards/BP16-SL01.jpg"
       },
       {
+        "class": "梦魇",
+        "category": "永火梦",
+        "count": 35,
+        "best": "23/556",
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
         "class": "巫师",
         "category": "消失法",
-        "count": 30,
+        "count": 33,
         "best": "1/28",
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      }
+    ],
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录190场有效赛事、1287套有排名记录的卡组，其中上位卡组1287套、冠军卡组203套。从上位职业分布看，皇家护卫323套（25.1%）、龙族250套（19.4%）构成本范围的主要出场面，冠军侧则以皇家护卫56套（27.6%）、龙族41套（20.2%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」271套（21.1%，最好1/556）、龙族「五妹龙」229套（17.8%，最好5/556）、主教「守护教」92套（7.1%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有559套，占全部记录43.4%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+  },
+  {
+    "key": "2026/11/13",
+    "label": "2026/11/13-2026/11/19",
+    "event_count": 25,
+    "deck_count": 160,
+    "top8_count": 160,
+    "top1_count": 27,
+    "class_distribution": [
+      {
+        "name": "🔮 巫师",
+        "value": 42,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 40,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 29,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 21,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 14,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/BP21-001.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 8,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/BP15-SL24.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 3,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "🏇 赛马娘",
+        "value": 2,
+        "itemStyle": {
+          "color": "#8bd450"
+        },
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "🎤 偶像大师",
+        "value": 1,
+        "itemStyle": {
+          "color": "#ff8ab3"
+        },
+        "image": "../../assets/cards/CSD02b-001.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "皇家护卫｜雷维翁皇",
+        "value": 33,
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "龙族｜五妹龙",
+        "value": 26,
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "name": "巫师｜学院法",
+        "value": 23,
+        "link": "decktypes/decktype-b9263fb83a8a.html",
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "name": "巫师｜八狱法",
+        "value": 10,
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "name": "梦魇｜哥布林梦",
+        "value": 9,
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "name": "精灵｜妖精妖",
+        "value": 7,
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
+        "name": "梦魇｜永火梦",
+        "value": 6,
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "name": "主教｜守护教",
+        "value": 6,
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "name": "巫师｜二妹法",
+        "value": 4,
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "name": "精灵｜人偶妖",
+        "value": 4,
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "name": "皇家护卫｜金币皇",
+        "value": 4,
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 3,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      },
+      {
+        "name": "巫师｜星星法",
+        "value": 3,
+        "link": "decktypes/decktype-87a84038db1f.html",
+        "image": "../../assets/cards/BP11-SL07.jpg"
+      },
+      {
+        "name": "主教｜控教",
+        "value": 2,
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 2,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "梦魇｜真红梦",
+        "value": 2,
+        "link": "decktypes/decktype-747237d91606.html",
+        "image": "../../assets/cards/BP05-SL13.jpg"
+      },
+      {
+        "name": "巫师｜消失法",
+        "value": 2,
         "link": "decktypes/decktype-90c874a554cb.html",
         "image": "../../assets/cards/BP18-SL09.jpg"
       },
       {
-        "class": "梦魇",
-        "category": "永火梦",
-        "count": 29,
-        "best": "23/556",
-        "link": "decktypes/decktype-71c5492994cc.html",
-        "image": "../../assets/cards/BP14-SL16.jpg"
+        "name": "偶像大师｜cool",
+        "value": 1,
+        "link": "decktypes/decktype-0fe79a39fa2e.html",
+        "image": "../../assets/cards/CSD02b-001.jpg"
+      },
+      {
+        "name": "皇家护卫｜学院皇",
+        "value": 1,
+        "link": "decktypes/decktype-c20c01569823.html",
+        "image": "../../assets/cards/BP21-020.jpg"
+      },
+      {
+        "name": "精灵｜兽妖",
+        "value": 1,
+        "link": "decktypes/decktype-c2ac43fe870c.html",
+        "image": "../../assets/cards/BP21-001.jpg"
+      },
+      {
+        "name": "皇家护卫｜财宝皇",
+        "value": 1,
+        "link": "decktypes/decktype-9e477d88228e.html",
+        "image": "../../assets/cards/BP19-SP01.jpg"
+      },
+      {
+        "name": "梦魇｜nc梦",
+        "value": 1,
+        "link": "decktypes/decktype-bbc8f17f6035.html",
+        "image": "../../assets/cards/PR-399.jpg"
+      },
+      {
+        "name": "皇家护卫｜天使皇",
+        "value": 1,
+        "link": "decktypes/decktype-2b0efb008539.html",
+        "image": "../../assets/cards/PR-233.jpg"
+      },
+      {
+        "name": "龙族｜武斗龙",
+        "value": 1,
+        "link": "decktypes/decktype-c4187e008e9c.html",
+        "image": "../../assets/cards/BP18-SL13.jpg"
+      },
+      {
+        "name": "精灵｜猎人妖",
+        "value": 1,
+        "link": "decktypes/decktype-44ce1ca73386.html",
+        "image": "../../assets/cards/BP20-SL01.jpg"
+      },
+      {
+        "name": "梦魇｜骰子梦",
+        "value": 1,
+        "link": "decktypes/decktype-96191bb3b6d4.html",
+        "image": "../../assets/cards/BP21-SL19.jpg"
+      },
+      {
+        "name": "龙族｜龙人龙",
+        "value": 1,
+        "link": "decktypes/decktype-ca24d30a1a65.html",
+        "image": "../../assets/cards/BP21-SL16.jpg"
+      },
+      {
+        "name": "梦魇｜2c梦",
+        "value": 1,
+        "link": "decktypes/decktype-75305287827c.html",
+        "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
+        "name": "精灵｜透京妖",
+        "value": 1,
+        "link": "decktypes/decktype-b839e822b2c1.html",
+        "image": "../../assets/cards/BP18-001.jpg"
+      },
+      {
+        "name": "梦魇｜八狱梦",
+        "value": 1,
+        "link": "decktypes/decktype-7a481475a6b5.html",
+        "image": "../../assets/cards/BP19-080.jpg"
+      },
+      {
+        "name": "龙族｜八狱龙",
+        "value": 1,
+        "link": "decktypes/decktype-a0e911cab421.html",
+        "image": "../../assets/cards/BP19-057.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录164场有效赛事、1119套有排名记录的卡组，其中上位卡组1119套、冠军卡组175套。从上位职业分布看，皇家护卫281套（25.1%）、龙族221套（19.7%）构成本范围的主要出场面，冠军侧则以皇家护卫46套（26.3%）、龙族35套（20.0%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」236套（21.1%，最好1/556）、龙族「五妹龙」203套（18.1%，最好5/556）、主教「守护教」86套（7.7%，最好7/556）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由おとーふ使用，成绩为1/556，成绩系数0.0018。整体来看，前10%成绩卡组共有496套，占全部记录44.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "top_types": [
+      {
+        "class": "皇家护卫",
+        "category": "雷维翁皇",
+        "count": 33,
+        "best": "1/33",
+        "link": "decktypes/decktype-593b0d7a6099.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "class": "龙族",
+        "category": "五妹龙",
+        "count": 26,
+        "best": "1/17",
+        "link": "decktypes/decktype-7e3b69cd0c30.html",
+        "image": "../../assets/cards/BP15-SL15.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "学院法",
+        "count": 23,
+        "best": "1/30",
+        "link": "decktypes/decktype-b9263fb83a8a.html",
+        "image": "../../assets/cards/BP06-SL08.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "八狱法",
+        "count": 10,
+        "best": "1/24",
+        "link": "decktypes/decktype-058fd7f22075.html",
+        "image": "../../assets/cards/BP19-SL10.jpg"
+      },
+      {
+        "class": "梦魇",
+        "category": "哥布林梦",
+        "count": 9,
+        "best": "1/14",
+        "link": "decktypes/decktype-f0af484e4c57.html",
+        "image": "../../assets/cards/PR-310.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "妖精妖",
+        "count": 7,
+        "best": "2/20",
+        "link": "decktypes/decktype-217b5e054fbc.html",
+        "image": "../../assets/cards/BP16-SL01.jpg"
+      },
+      {
+        "class": "梦魇",
+        "category": "永火梦",
+        "count": 6,
+        "best": "1/20",
+        "link": "decktypes/decktype-71c5492994cc.html",
+        "image": "../../assets/cards/BP14-SL16.jpg"
+      },
+      {
+        "class": "主教",
+        "category": "守护教",
+        "count": 6,
+        "best": "3/30",
+        "link": "decktypes/decktype-75396de72bcf.html",
+        "image": "../../assets/cards/BP15-SL26.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "二妹法",
+        "count": 4,
+        "best": "1/11",
+        "link": "decktypes/decktype-f04045f27752.html",
+        "image": "../../assets/cards/BP15-SL11.jpg"
+      },
+      {
+        "class": "精灵",
+        "category": "人偶妖",
+        "count": 4,
+        "best": "4/33",
+        "link": "decktypes/decktype-4347111b0e67.html",
+        "image": "../../assets/cards/BP16-SL03.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "金币皇",
+        "count": 4,
+        "best": "3/18",
+        "link": "decktypes/decktype-bab8fae9b582.html",
+        "image": "../../assets/cards/BP14-022.jpg"
+      },
+      {
+        "class": "公主连结Re:Dive",
+        "category": "法术PCR",
+        "count": 3,
+        "best": "1/20",
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
+      }
+    ],
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/13-2026/11/19共收录25场有效赛事、160套有排名记录的卡组，其中上位卡组160套、冠军卡组27套。从上位职业分布看，巫师42套（26.3%）、皇家护卫40套（25.0%）构成本范围的主要出场面，冠军侧则以皇家护卫10套（37.0%）、龙族6套（22.2%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」33套（20.6%，最好1/33）、龙族「五妹龙」26套（16.3%，最好1/17）、巫师「学院法」23套（14.4%，最好1/30）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是主教「控教」，由ウニ使用，成绩为1/39，成绩系数0.0256。整体来看，前10%成绩卡组共有60套，占全部记录37.5%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/11/06",
     "label": "2026/11/06-2026/11/12",
-    "event_count": 19,
-    "deck_count": 120,
-    "top8_count": 120,
-    "top1_count": 19,
+    "event_count": 20,
+    "deck_count": 128,
+    "top8_count": 128,
+    "top1_count": 20,
     "class_distribution": [
       {
         "name": "⚔️ 皇家护卫",
-        "value": 29,
+        "value": 31,
         "itemStyle": {
           "color": "#3498db"
         },
@@ -538,7 +931,7 @@
       },
       {
         "name": "🔮 巫师",
-        "value": 22,
+        "value": 23,
         "itemStyle": {
           "color": "#9b59b6"
         },
@@ -546,7 +939,7 @@
       },
       {
         "name": "💀 梦魇",
-        "value": 20,
+        "value": 23,
         "itemStyle": {
           "color": "#2c3e50"
         },
@@ -570,7 +963,7 @@
       },
       {
         "name": "💎 公主连结Re:Dive",
-        "value": 1,
+        "value": 2,
         "itemStyle": {
           "color": "#e91e63"
         },
@@ -578,7 +971,7 @@
       },
       {
         "name": "🏇 赛马娘",
-        "value": 1,
+        "value": 2,
         "itemStyle": {
           "color": "#8bd450"
         },
@@ -588,7 +981,7 @@
     "type_distribution": [
       {
         "name": "皇家护卫｜雷维翁皇",
-        "value": 26,
+        "value": 28,
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
       },
@@ -606,7 +999,7 @@
       },
       {
         "name": "梦魇｜哥布林梦",
-        "value": 11,
+        "value": 14,
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
       },
@@ -647,6 +1040,12 @@
         "image": "../../assets/cards/BP19-SL10.jpg"
       },
       {
+        "name": "巫师｜消失法",
+        "value": 2,
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
         "name": "巫师｜二妹法",
         "value": 2,
         "link": "decktypes/decktype-f04045f27752.html",
@@ -657,6 +1056,18 @@
         "value": 2,
         "link": "decktypes/decktype-75305287827c.html",
         "image": "../../assets/cards/BP18-SL19.jpg"
+      },
+      {
+        "name": "赛马娘｜横马",
+        "value": 2,
+        "link": "decktypes/decktype-5a0677b37803.html",
+        "image": "../../assets/cards/ECP01-005.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜法术PCR",
+        "value": 2,
+        "link": "decktypes/decktype-deb2d8e95565.html",
+        "image": "../../assets/cards/CP04-SP02.jpg"
       },
       {
         "name": "巫师｜魔法使法",
@@ -695,24 +1106,6 @@
         "image": "../../assets/cards/BP15-SL24.jpg"
       },
       {
-        "name": "赛马娘｜横马",
-        "value": 1,
-        "link": "decktypes/decktype-5a0677b37803.html",
-        "image": "../../assets/cards/ECP01-005.jpg"
-      },
-      {
-        "name": "巫师｜消失法",
-        "value": 1,
-        "link": "decktypes/decktype-90c874a554cb.html",
-        "image": "../../assets/cards/BP18-SL09.jpg"
-      },
-      {
-        "name": "公主连结Re:Dive｜法术PCR",
-        "value": 1,
-        "link": "decktypes/decktype-deb2d8e95565.html",
-        "image": "../../assets/cards/CP04-SP02.jpg"
-      },
-      {
         "name": "主教｜纹章教",
         "value": 1,
         "link": "decktypes/decktype-c068a8ef6610.html",
@@ -747,7 +1140,7 @@
       {
         "class": "皇家护卫",
         "category": "雷维翁皇",
-        "count": 26,
+        "count": 28,
         "best": "1/28",
         "link": "decktypes/decktype-593b0d7a6099.html",
         "image": "../../assets/cards/BP16-026.jpg"
@@ -771,7 +1164,7 @@
       {
         "class": "梦魇",
         "category": "哥布林梦",
-        "count": 11,
+        "count": 14,
         "best": "1/17",
         "link": "decktypes/decktype-f0af484e4c57.html",
         "image": "../../assets/cards/PR-310.jpg"
@@ -826,22 +1219,22 @@
       },
       {
         "class": "巫师",
+        "category": "消失法",
+        "count": 2,
+        "best": "1/22",
+        "link": "decktypes/decktype-90c874a554cb.html",
+        "image": "../../assets/cards/BP18-SL09.jpg"
+      },
+      {
+        "class": "巫师",
         "category": "二妹法",
         "count": 2,
         "best": "4/41",
         "link": "decktypes/decktype-f04045f27752.html",
         "image": "../../assets/cards/BP15-SL11.jpg"
-      },
-      {
-        "class": "梦魇",
-        "category": "2c梦",
-        "count": 2,
-        "best": "3/18",
-        "link": "decktypes/decktype-75305287827c.html",
-        "image": "../../assets/cards/BP18-SL19.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/06-2026/11/12共收录19场有效赛事、120套有排名记录的卡组，其中上位卡组120套、冠军卡组19套。从上位职业分布看，皇家护卫29套（24.2%）、龙族25套（20.8%）构成本范围的主要出场面，冠军侧则以龙族8套（42.1%）、巫师5套（26.3%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」26套（21.7%，最好1/28）、龙族「五妹龙」23套（19.2%，最好1/41）、巫师「学院法」14套（11.7%，最好1/31）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由だいち使用，成绩为1/41，成绩系数0.0244。整体来看，前10%成绩卡组共有46套，占全部记录38.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/06-2026/11/12共收录20场有效赛事、128套有排名记录的卡组，其中上位卡组128套、冠军卡组20套。从上位职业分布看，皇家护卫31套（24.2%）、龙族25套（19.5%）构成本范围的主要出场面，冠军侧则以龙族8套（40.0%）、巫师6套（30.0%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」28套（21.9%，最好1/28）、龙族「五妹龙」23套（18.0%，最好1/41）、巫师「学院法」14套（10.9%，最好1/31）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是龙族「五妹龙」，由だいち使用，成绩为1/41，成绩系数0.0244。整体来看，前10%成绩卡组共有49套，占全部记录38.3%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/10/30",
@@ -995,7 +1388,7 @@
         "name": "梦魇｜真红梦",
         "value": 2,
         "link": "decktypes/decktype-747237d91606.html",
-        "image": "../../assets/cards/BP05-U05.jpg"
+        "image": "../../assets/cards/BP05-SL13.jpg"
       },
       {
         "name": "巫师｜星星法",
@@ -1207,7 +1600,7 @@
         "count": 2,
         "best": "1/13",
         "link": "decktypes/decktype-747237d91606.html",
-        "image": "../../assets/cards/BP05-U05.jpg"
+        "image": "../../assets/cards/BP05-SL13.jpg"
       }
     ],
     "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/10/30-2026/11/05共收录29场有效赛事、180套有排名记录的卡组，其中上位卡组180套、冠军卡组32套。从上位职业分布看，皇家护卫54套（30.0%）、巫师41套（22.8%）构成本范围的主要出场面，冠军侧则以皇家护卫11套（34.4%）、龙族8套（25.0%）表现最突出。卡组类型方面，皇家护卫「雷维翁皇」47套（26.1%，最好1/52）、龙族「五妹龙」38套（21.1%，最好1/36）、巫师「学院法」17套（9.4%，最好1/49）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是皇家护卫「雷维翁皇」，由ラルド使用，成绩为1/52，成绩系数0.0192。整体来看，前10%成绩卡组共有72套，占全部记录40.0%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
