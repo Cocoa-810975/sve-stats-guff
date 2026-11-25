@@ -49,8 +49,8 @@
     <div class="actions"><input id="decklog-code" type="text" placeholder="例如 15TJBE（网址 /view/15TJBE 的最后一段）" spellcheck="false" autocomplete="off" autocapitalize="off"><button id="decklog-fetch" class="secondary" type="button">读取</button></div>
     <label for="decklog-proxy">decklog 代理地址（可选）</label>
     <div class="actions"><input id="decklog-proxy" type="text" placeholder="https://你的worker.workers.dev（填了就能直接用「读取」）" spellcheck="false" autocomplete="off"><button id="decklog-proxy-save" class="secondary" type="button">保存</button></div>
-    <p class="hint">decklog 的接口只认它自己站内的 POST 请求（要 <code>Referer</code>），浏览器跨域读不到，所以直连时「读取」会被拦；填了代理就走代理（见同目录的 <code>decklog-proxy-worker.js</code>，5 分钟能部署一个）。
-      <strong>推荐</strong>用同一个文件夹里的 <code>取decklog卡组.bat</code>：双击 → 粘贴卡组码 → JSON 自动进剪贴板 → 粘到下面的框里。</p>
+    <p class="hint">decklog 只给带 <code>Referer</code> 的请求回卡组，浏览器 JS 设不了这个头、也读不到跨域响应。所以「读取」按顺序尝试：① 本站 <code>/api/decklog</code>（Vercel 等支持服务端函数的托管才有，同源、最省事）；② 你填的「代理地址」；③ 直连（基本会被拦）。</p>
+    <p class="hint">如果本站是 <strong>GitHub Pages</strong> 这类纯静态托管，①②都没有，请用下面两种方式之一：① 部署 <code>decklog-proxy-worker.js</code>（Cloudflare Worker，5 分钟）把地址填到上面的「代理地址」；② 用 <code>取decklog卡组.bat</code> 取到 JSON，粘到下面的框里。</p>
     <label for="decklog-json">或直接粘贴 decklog 数据（JSON）</label>
     <textarea id="decklog-json" placeholder='{"game_title_id":6,"title":"卡组名","list":[{"card_number":"BP01-001","num":3}],"sub_list":[],"p_list":[{"card_number":"BP01-LD01"}]}' spellcheck="false" style="height:132px"></textarea>
     <div class="actions"><button id="decklog-parse" class="primary" type="button">解析并升罕</button><button id="decklog-clear" class="secondary" type="button">清空</button></div>
