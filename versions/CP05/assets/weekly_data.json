@@ -1,0 +1,700 @@
+[
+  {
+    "key": "total",
+    "label": "总数据",
+    "event_count": 12,
+    "deck_count": 84,
+    "top8_count": 84,
+    "top1_count": 14,
+    "class_distribution": [
+      {
+        "name": "🎮 グランブルーファンタジー",
+        "value": 46,
+        "itemStyle": {
+          "color": "#888"
+        },
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 10,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 9,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 6,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 5,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/SCS01-001.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 4,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP13-040.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 3,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/BP14-072.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 1,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/PCS01-001.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "龙族｜侮蔑の炎爪型",
+        "value": 9,
+        "link": "decktypes/decktype-7c5c37ec9710.html",
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜生滅の技巧・ネハン型",
+        "value": 9,
+        "link": "decktypes/decktype-e4518755c716.html",
+        "image": "../../assets/cards/CP05-105.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜どこにでもいるフツーの女の子・メグ型",
+        "value": 8,
+        "link": "decktypes/decktype-1d73a16fabc1.html",
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜水の理・ワムデュス型",
+        "value": 8,
+        "link": "decktypes/decktype-bd8fc996e1d2.html",
+        "image": "../../assets/cards/CP05-039.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜風の理・イーウィヤ型",
+        "value": 8,
+        "link": "decktypes/decktype-cd1153203ebb.html",
+        "image": "../../assets/cards/CP05-SL03.jpg"
+      },
+      {
+        "name": "皇家护卫｜胜利皇",
+        "value": 5,
+        "link": "decktypes/decktype-8ff5ae7f9a02.html",
+        "image": "../../assets/cards/BP09-SL06.jpg"
+      },
+      {
+        "name": "主教｜节奏教",
+        "value": 5,
+        "link": "decktypes/decktype-b9c3d7da07ee.html",
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "name": "皇家护卫｜テンタクルバイト型",
+        "value": 4,
+        "link": "decktypes/decktype-3cffb7876274.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜土の理・ガレヲン型",
+        "value": 3,
+        "link": "decktypes/decktype-b1805a8f72cc.html",
+        "image": "../../assets/cards/CP05-091.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜決意の輝竜・アーサー型",
+        "value": 2,
+        "link": "decktypes/decktype-af252e35bc8e.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜单独构筑",
+        "value": 2,
+        "link": "decktypes/decktype-5c05f6859446.html",
+        "image": "../../assets/cards/CP05-U06.jpg"
+      },
+      {
+        "name": "巫师｜セレスティアルスフィア・ミリカ型",
+        "value": 2,
+        "link": "decktypes/decktype-86df14050dbc.html",
+        "image": "../../assets/cards/BP13-040.jpg"
+      },
+      {
+        "name": "梦魇｜ゴブリンクイーン型",
+        "value": 2,
+        "link": "decktypes/decktype-55f040e1e4f2.html",
+        "image": "../../assets/cards/BP15-SL29.jpg"
+      },
+      {
+        "name": "精灵｜腐食の絶命型",
+        "value": 2,
+        "link": "decktypes/decktype-43c13988e7dd.html",
+        "image": "../../assets/cards/BP20-SL02.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜十天衆の頭目・シエテ型",
+        "value": 1,
+        "link": "decktypes/decktype-35a17534fcdf.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "梦魇｜底無しの契約型",
+        "value": 1,
+        "link": "decktypes/decktype-5455aa995916.html",
+        "image": "../../assets/cards/BP14-072.jpg"
+      },
+      {
+        "name": "精灵｜アクアフェアリー型",
+        "value": 1,
+        "link": "decktypes/decktype-7fb8d134b089.html",
+        "image": "../../assets/cards/SCS01-001.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜不屈の鋭刃・バザラガ型",
+        "value": 1,
+        "link": "decktypes/decktype-b1d9f1996219.html",
+        "image": "../../assets/cards/CP05-079.jpg"
+      },
+      {
+        "name": "精灵｜ジャンク型",
+        "value": 1,
+        "link": "decktypes/decktype-41833720c765.html",
+        "image": "../../assets/cards/BP21-SL02.jpg"
+      },
+      {
+        "name": "精灵｜風の理・イーウィヤ型",
+        "value": 1,
+        "link": "decktypes/decktype-286c7213f0c8.html",
+        "image": "../../assets/cards/PR-483.jpg"
+      },
+      {
+        "name": "巫师｜御伽の姫・アマリリス型",
+        "value": 1,
+        "link": "decktypes/decktype-01a9c87b3e48.html",
+        "image": "../../assets/cards/BP21-041.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜空の命運を握る少女・ルリア型",
+        "value": 1,
+        "link": "decktypes/decktype-db6d7b804f55.html",
+        "image": "../../assets/cards/CP05-107.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜ティアマト・マグナ型",
+        "value": 1,
+        "link": "decktypes/decktype-652eee32957a.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜レリックバスター・グラン＆ジータ型",
+        "value": 1,
+        "link": "decktypes/decktype-a236293509be.html",
+        "image": "../../assets/cards/PR-638.jpg"
+      },
+      {
+        "name": "巫师｜殲滅の歌声型",
+        "value": 1,
+        "link": "decktypes/decktype-94167b7a93f2.html",
+        "image": "../../assets/cards/BP15-039.jpg"
+      },
+      {
+        "name": "主教｜控教",
+        "value": 1,
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜いつか、また会う未来で型",
+        "value": 1,
+        "link": "decktypes/decktype-5aff6f126368.html",
+        "image": "../../assets/cards/PCS01-001.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜炎の理・ウィルナス型",
+        "value": 1,
+        "link": "decktypes/decktype-3edd392becf2.html",
+        "image": "../../assets/cards/CP05-056.jpg"
+      },
+      {
+        "name": "龙族｜天威のドラグーン型",
+        "value": 1,
+        "link": "decktypes/decktype-f1af5a020099.html",
+        "image": "../../assets/cards/BP16-057.jpg"
+      }
+    ],
+    "top_types": [
+      {
+        "class": "龙族",
+        "category": "侮蔑の炎爪型",
+        "count": 9,
+        "best": "1/40",
+        "link": "decktypes/decktype-7c5c37ec9710.html",
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "生滅の技巧・ネハン型",
+        "count": 9,
+        "best": "2/22",
+        "link": "decktypes/decktype-e4518755c716.html",
+        "image": "../../assets/cards/CP05-105.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "どこにでもいるフツーの女の子・メグ型",
+        "count": 8,
+        "best": "1/46",
+        "link": "decktypes/decktype-1d73a16fabc1.html",
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "水の理・ワムデュス型",
+        "count": 8,
+        "best": "2/46",
+        "link": "decktypes/decktype-bd8fc996e1d2.html",
+        "image": "../../assets/cards/CP05-039.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "風の理・イーウィヤ型",
+        "count": 8,
+        "best": "1/13",
+        "link": "decktypes/decktype-cd1153203ebb.html",
+        "image": "../../assets/cards/CP05-SL03.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "胜利皇",
+        "count": 5,
+        "best": "1/18",
+        "link": "decktypes/decktype-8ff5ae7f9a02.html",
+        "image": "../../assets/cards/BP09-SL06.jpg"
+      },
+      {
+        "class": "主教",
+        "category": "节奏教",
+        "count": 5,
+        "best": "2/23",
+        "link": "decktypes/decktype-b9c3d7da07ee.html",
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "テンタクルバイト型",
+        "count": 4,
+        "best": "1/22",
+        "link": "decktypes/decktype-3cffb7876274.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "土の理・ガレヲン型",
+        "count": 3,
+        "best": "5/18",
+        "link": "decktypes/decktype-b1805a8f72cc.html",
+        "image": "../../assets/cards/CP05-091.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "決意の輝竜・アーサー型",
+        "count": 2,
+        "best": "1/10",
+        "link": "decktypes/decktype-af252e35bc8e.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "单独构筑",
+        "count": 2,
+        "best": "4/40",
+        "link": "decktypes/decktype-5c05f6859446.html",
+        "image": "../../assets/cards/CP05-U06.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "セレスティアルスフィア・ミリカ型",
+        "count": 2,
+        "best": "7/46",
+        "link": "decktypes/decktype-86df14050dbc.html",
+        "image": "../../assets/cards/BP13-040.jpg"
+      }
+    ],
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，グランブルーファンタジー46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以グランブルーファンタジー7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，龙族「侮蔑の炎爪型」9套（10.7%，最好1/40）、グランブルーファンタジー「生滅の技巧・ネハン型」9套（10.7%，最好2/22）、グランブルーファンタジー「どこにでもいるフツーの女の子・メグ型」8套（9.5%，最好1/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是グランブルーファンタジー「どこにでもいるフツーの女の子・メグ型」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+  },
+  {
+    "key": "2026/11/27",
+    "label": "2026/11/27-2026/12/03",
+    "event_count": 12,
+    "deck_count": 84,
+    "top8_count": 84,
+    "top1_count": 14,
+    "class_distribution": [
+      {
+        "name": "🎮 グランブルーファンタジー",
+        "value": 46,
+        "itemStyle": {
+          "color": "#888"
+        },
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "name": "🐉 龙族",
+        "value": 10,
+        "itemStyle": {
+          "color": "#e67e22"
+        },
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "name": "⚔️ 皇家护卫",
+        "value": 9,
+        "itemStyle": {
+          "color": "#3498db"
+        },
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "⛪ 主教",
+        "value": 6,
+        "itemStyle": {
+          "color": "#f1c40f"
+        },
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "name": "🍃 精灵",
+        "value": 5,
+        "itemStyle": {
+          "color": "#27ae60"
+        },
+        "image": "../../assets/cards/SCS01-001.jpg"
+      },
+      {
+        "name": "🔮 巫师",
+        "value": 4,
+        "itemStyle": {
+          "color": "#9b59b6"
+        },
+        "image": "../../assets/cards/BP13-040.jpg"
+      },
+      {
+        "name": "💀 梦魇",
+        "value": 3,
+        "itemStyle": {
+          "color": "#2c3e50"
+        },
+        "image": "../../assets/cards/BP14-072.jpg"
+      },
+      {
+        "name": "💎 公主连结Re:Dive",
+        "value": 1,
+        "itemStyle": {
+          "color": "#e91e63"
+        },
+        "image": "../../assets/cards/PCS01-001.jpg"
+      }
+    ],
+    "type_distribution": [
+      {
+        "name": "龙族｜侮蔑の炎爪型",
+        "value": 9,
+        "link": "decktypes/decktype-7c5c37ec9710.html",
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜生滅の技巧・ネハン型",
+        "value": 9,
+        "link": "decktypes/decktype-e4518755c716.html",
+        "image": "../../assets/cards/CP05-105.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜どこにでもいるフツーの女の子・メグ型",
+        "value": 8,
+        "link": "decktypes/decktype-1d73a16fabc1.html",
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜水の理・ワムデュス型",
+        "value": 8,
+        "link": "decktypes/decktype-bd8fc996e1d2.html",
+        "image": "../../assets/cards/CP05-039.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜風の理・イーウィヤ型",
+        "value": 8,
+        "link": "decktypes/decktype-cd1153203ebb.html",
+        "image": "../../assets/cards/CP05-SL03.jpg"
+      },
+      {
+        "name": "皇家护卫｜胜利皇",
+        "value": 5,
+        "link": "decktypes/decktype-8ff5ae7f9a02.html",
+        "image": "../../assets/cards/BP09-SL06.jpg"
+      },
+      {
+        "name": "主教｜节奏教",
+        "value": 5,
+        "link": "decktypes/decktype-b9c3d7da07ee.html",
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "name": "皇家护卫｜テンタクルバイト型",
+        "value": 4,
+        "link": "decktypes/decktype-3cffb7876274.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜土の理・ガレヲン型",
+        "value": 3,
+        "link": "decktypes/decktype-b1805a8f72cc.html",
+        "image": "../../assets/cards/CP05-091.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜決意の輝竜・アーサー型",
+        "value": 2,
+        "link": "decktypes/decktype-af252e35bc8e.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜单独构筑",
+        "value": 2,
+        "link": "decktypes/decktype-5c05f6859446.html",
+        "image": "../../assets/cards/CP05-U06.jpg"
+      },
+      {
+        "name": "巫师｜セレスティアルスフィア・ミリカ型",
+        "value": 2,
+        "link": "decktypes/decktype-86df14050dbc.html",
+        "image": "../../assets/cards/BP13-040.jpg"
+      },
+      {
+        "name": "梦魇｜ゴブリンクイーン型",
+        "value": 2,
+        "link": "decktypes/decktype-55f040e1e4f2.html",
+        "image": "../../assets/cards/BP15-SL29.jpg"
+      },
+      {
+        "name": "精灵｜腐食の絶命型",
+        "value": 2,
+        "link": "decktypes/decktype-43c13988e7dd.html",
+        "image": "../../assets/cards/BP20-SL02.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜十天衆の頭目・シエテ型",
+        "value": 1,
+        "link": "decktypes/decktype-35a17534fcdf.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "梦魇｜底無しの契約型",
+        "value": 1,
+        "link": "decktypes/decktype-5455aa995916.html",
+        "image": "../../assets/cards/BP14-072.jpg"
+      },
+      {
+        "name": "精灵｜アクアフェアリー型",
+        "value": 1,
+        "link": "decktypes/decktype-7fb8d134b089.html",
+        "image": "../../assets/cards/SCS01-001.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜不屈の鋭刃・バザラガ型",
+        "value": 1,
+        "link": "decktypes/decktype-b1d9f1996219.html",
+        "image": "../../assets/cards/CP05-079.jpg"
+      },
+      {
+        "name": "精灵｜ジャンク型",
+        "value": 1,
+        "link": "decktypes/decktype-41833720c765.html",
+        "image": "../../assets/cards/BP21-SL02.jpg"
+      },
+      {
+        "name": "精灵｜風の理・イーウィヤ型",
+        "value": 1,
+        "link": "decktypes/decktype-286c7213f0c8.html",
+        "image": "../../assets/cards/PR-483.jpg"
+      },
+      {
+        "name": "巫师｜御伽の姫・アマリリス型",
+        "value": 1,
+        "link": "decktypes/decktype-01a9c87b3e48.html",
+        "image": "../../assets/cards/BP21-041.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜空の命運を握る少女・ルリア型",
+        "value": 1,
+        "link": "decktypes/decktype-db6d7b804f55.html",
+        "image": "../../assets/cards/CP05-107.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜ティアマト・マグナ型",
+        "value": 1,
+        "link": "decktypes/decktype-652eee32957a.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜レリックバスター・グラン＆ジータ型",
+        "value": 1,
+        "link": "decktypes/decktype-a236293509be.html",
+        "image": "../../assets/cards/PR-638.jpg"
+      },
+      {
+        "name": "巫师｜殲滅の歌声型",
+        "value": 1,
+        "link": "decktypes/decktype-94167b7a93f2.html",
+        "image": "../../assets/cards/BP15-039.jpg"
+      },
+      {
+        "name": "主教｜控教",
+        "value": 1,
+        "link": "decktypes/decktype-da0c322184a8.html",
+        "image": "../../assets/cards/BP15-SL24.jpg"
+      },
+      {
+        "name": "公主连结Re:Dive｜いつか、また会う未来で型",
+        "value": 1,
+        "link": "decktypes/decktype-5aff6f126368.html",
+        "image": "../../assets/cards/PCS01-001.jpg"
+      },
+      {
+        "name": "グランブルーファンタジー｜炎の理・ウィルナス型",
+        "value": 1,
+        "link": "decktypes/decktype-3edd392becf2.html",
+        "image": "../../assets/cards/CP05-056.jpg"
+      },
+      {
+        "name": "龙族｜天威のドラグーン型",
+        "value": 1,
+        "link": "decktypes/decktype-f1af5a020099.html",
+        "image": "../../assets/cards/BP16-057.jpg"
+      }
+    ],
+    "top_types": [
+      {
+        "class": "龙族",
+        "category": "侮蔑の炎爪型",
+        "count": 9,
+        "best": "1/40",
+        "link": "decktypes/decktype-7c5c37ec9710.html",
+        "image": "../../assets/cards/SP01-SP18.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "生滅の技巧・ネハン型",
+        "count": 9,
+        "best": "2/22",
+        "link": "decktypes/decktype-e4518755c716.html",
+        "image": "../../assets/cards/CP05-105.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "どこにでもいるフツーの女の子・メグ型",
+        "count": 8,
+        "best": "1/46",
+        "link": "decktypes/decktype-1d73a16fabc1.html",
+        "image": "../../assets/cards/CP05-SL19.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "水の理・ワムデュス型",
+        "count": 8,
+        "best": "2/46",
+        "link": "decktypes/decktype-bd8fc996e1d2.html",
+        "image": "../../assets/cards/CP05-039.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "風の理・イーウィヤ型",
+        "count": 8,
+        "best": "1/13",
+        "link": "decktypes/decktype-cd1153203ebb.html",
+        "image": "../../assets/cards/CP05-SL03.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "胜利皇",
+        "count": 5,
+        "best": "1/18",
+        "link": "decktypes/decktype-8ff5ae7f9a02.html",
+        "image": "../../assets/cards/BP09-SL06.jpg"
+      },
+      {
+        "class": "主教",
+        "category": "节奏教",
+        "count": 5,
+        "best": "2/23",
+        "link": "decktypes/decktype-b9c3d7da07ee.html",
+        "image": "../../assets/cards/PR-415.jpg"
+      },
+      {
+        "class": "皇家护卫",
+        "category": "テンタクルバイト型",
+        "count": 4,
+        "best": "1/22",
+        "link": "decktypes/decktype-3cffb7876274.html",
+        "image": "../../assets/cards/BP16-026.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "土の理・ガレヲン型",
+        "count": 3,
+        "best": "5/18",
+        "link": "decktypes/decktype-b1805a8f72cc.html",
+        "image": "../../assets/cards/CP05-091.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "決意の輝竜・アーサー型",
+        "count": 2,
+        "best": "1/10",
+        "link": "decktypes/decktype-af252e35bc8e.html",
+        "image": "../../assets/cards/CP05-061.jpg"
+      },
+      {
+        "class": "グランブルーファンタジー",
+        "category": "单独构筑",
+        "count": 2,
+        "best": "4/40",
+        "link": "decktypes/decktype-5c05f6859446.html",
+        "image": "../../assets/cards/CP05-U06.jpg"
+      },
+      {
+        "class": "巫师",
+        "category": "セレスティアルスフィア・ミリカ型",
+        "count": 2,
+        "best": "7/46",
+        "link": "decktypes/decktype-86df14050dbc.html",
+        "image": "../../assets/cards/BP13-040.jpg"
+      }
+    ],
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/27-2026/12/03共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，グランブルーファンタジー46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以グランブルーファンタジー7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，龙族「侮蔑の炎爪型」9套（10.7%，最好1/40）、グランブルーファンタジー「生滅の技巧・ネハン型」9套（10.7%，最好2/22）、グランブルーファンタジー「どこにでもいるフツーの女の子・メグ型」8套（9.5%，最好1/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是グランブルーファンタジー「どこにでもいるフツーの女の子・メグ型」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+  }
+]

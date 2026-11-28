@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CP05 每周上位数趋势｜SVE Stats Guff</title>
+<style>
+:root{
+  --bg:#0f0f1a; --panel:#1a1a2e; --line:#2a2a3e;
+  --text:#e0e0e0; --muted:#8899aa; --accent:#e94560;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  padding:20px 20px 60px;max-width:1600px;margin:0 auto}
+.header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+  padding:32px 28px 26px;border-radius:16px;margin-bottom:22px;text-align:center;
+  border:1px solid rgba(255,255,255,0.1)}
+.header h1{color:#fff;font-size:26px;font-weight:800;letter-spacing:.5px}
+.header .sub{color:#9aa8bd;font-size:13px;margin-top:8px}
+.stats{display:flex;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.stat{flex:1 1 180px;background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:18px;text-align:center}
+.stat .num{font-size:30px;font-weight:800;color:var(--accent)}
+.stat .label{color:var(--muted);font-size:12px;margin-top:6px}
+
+.layout{display:flex;gap:18px;align-items:flex-start}
+.selector{flex:0 0 268px;background:var(--panel);border:1px solid var(--line);border-radius:16px;
+  padding:16px;position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column}
+.charts{flex:1 1 auto;min-width:0}
+.selector h3{color:#fff;font-size:14px;font-weight:700;margin-bottom:2px}
+.sel-count{color:var(--muted);font-size:12px;margin-bottom:10px}
+.sel-count b{color:var(--accent)}
+.sel-filter{width:100%;background:#12121f;border:1px solid var(--line);border-radius:8px;
+  color:var(--text);font-family:inherit;font-size:12px;padding:7px 10px;margin-bottom:9px;outline:none}
+.sel-filter:focus{border-color:var(--accent)}
+.sel-actions{display:flex;gap:6px;margin-bottom:10px}
+.sel-actions button{flex:1;background:#12121f;border:1px solid var(--line);border-radius:8px;
+  color:#9aa8bd;font-size:12px;font-family:inherit;padding:6px 0;cursor:pointer;transition:all .15s}
+.sel-actions button:hover{color:#fff;border-color:var(--accent)}
+.sel-list{list-style:none;overflow-y:auto;flex:1 1 auto;margin:0 -6px;padding:0 6px}
+.sel-list::-webkit-scrollbar{width:8px}
+.sel-list::-webkit-scrollbar-thumb{background:#2f2f45;border-radius:4px}
+.sel-item label{display:flex;align-items:center;gap:7px;padding:5px 6px;border-radius:7px;cursor:pointer;font-size:12px}
+.sel-item label:hover{background:rgba(255,255,255,0.05)}
+.sel-item input{accent-color:#e94560;cursor:pointer;flex:0 0 auto}
+.sel-item .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.sel-item .nm{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sel-item .nm em{color:var(--muted);font-style:normal;font-size:11px;margin-left:5px}
+.sel-item .tt{color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums;flex:0 0 auto}
+
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
+.panel + .panel{margin-top:18px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.panel h2{color:#fff;font-size:17px;font-weight:700;padding-left:10px;
+  border-left:4px solid var(--accent);line-height:1.2}
+.hint{color:var(--muted);font-size:12px;line-height:1.7;margin:10px 0 14px}
+#trend-count{width:100%;height:470px}
+#trend-share{width:100%;height:470px}
+.note{color:#667788;font-size:12px;line-height:1.7;margin-top:14px}
+.axis-toggle{display:inline-flex;border:1px solid rgba(255,255,255,0.16);border-radius:999px;overflow:hidden}
+.axis-toggle button{background:transparent;border:0;color:#9aa8bd;font-size:12px;
+  padding:5px 14px;cursor:pointer;font-family:inherit;transition:all .15s}
+.axis-toggle button:hover{color:#fff}
+.axis-toggle button.active{background:#e94560;color:#fff;font-weight:700}
+.empty{color:var(--muted);font-size:13px;text-align:center;padding:40px 0}
+
+@media (max-width:960px){
+  .layout{flex-direction:column}
+  .selector{position:static;flex:1 1 auto;width:100%;max-height:340px}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>CP05 每周上位数趋势</h1>
+  <div class="sub">数据来源 bushi-navi.com ｜ 共 28 种卡组类型，默认展示上位数前 10</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">84</div><div class="label">收录上位卡组（套）</div></div>
+  <div class="stat"><div class="num">1</div><div class="label">覆盖周数（周五起算）</div></div>
+  <div class="stat"><div class="num">28</div><div class="label">卡组类型总数</div></div>
+</div>
+
+<div class="layout">
+  <aside class="selector">
+    <h3>选择卡组类型</h3>
+    <div class="sel-count">已选 <b id="sel-num">10</b> / 28</div>
+    <input class="sel-filter" id="sel-filter" type="search" placeholder="搜索卡组名 / 职业…">
+    <div class="sel-actions">
+      <button type="button" data-act="top">前 10</button>
+      <button type="button" data-act="all">全选</button>
+      <button type="button" data-act="none">清空</button>
+    </div>
+    <ul class="sel-list" id="sel-list">
+        <li class="sel-item" data-name="生滅の技巧・ネハン型">
+          <label>
+            <input type="checkbox" data-i="0" checked>
+            <span class="dot" style="background:#e94560"></span>
+            <span class="nm">生滅の技巧・ネハン型<em>グランブルーファンタジー</em></span>
+            <span class="tt">9</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="侮蔑の炎爪型">
+          <label>
+            <input type="checkbox" data-i="1" checked>
+            <span class="dot" style="background:#8bd3ff"></span>
+            <span class="nm">侮蔑の炎爪型<em>龙族</em></span>
+            <span class="tt">9</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="風の理・イーウィヤ型">
+          <label>
+            <input type="checkbox" data-i="2" checked>
+            <span class="dot" style="background:#2ecc71"></span>
+            <span class="nm">風の理・イーウィヤ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">9</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="どこにでもいるフツーの女の子・メグ型">
+          <label>
+            <input type="checkbox" data-i="3" checked>
+            <span class="dot" style="background:#f1c40f"></span>
+            <span class="nm">どこにでもいるフツーの女の子・メグ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">8</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="水の理・ワムデュス型">
+          <label>
+            <input type="checkbox" data-i="4" checked>
+            <span class="dot" style="background:#9b59b6"></span>
+            <span class="nm">水の理・ワムデュス型<em>グランブルーファンタジー</em></span>
+            <span class="tt">8</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="胜利皇">
+          <label>
+            <input type="checkbox" data-i="5" checked>
+            <span class="dot" style="background:#e67e22"></span>
+            <span class="nm">胜利皇<em>皇家护卫</em></span>
+            <span class="tt">5</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="节奏教">
+          <label>
+            <input type="checkbox" data-i="6" checked>
+            <span class="dot" style="background:#1abc9c"></span>
+            <span class="nm">节奏教<em>主教</em></span>
+            <span class="tt">5</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="テンタクルバイト型">
+          <label>
+            <input type="checkbox" data-i="7" checked>
+            <span class="dot" style="background:#e84393"></span>
+            <span class="nm">テンタクルバイト型<em>皇家护卫</em></span>
+            <span class="tt">4</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="土の理・ガレヲン型">
+          <label>
+            <input type="checkbox" data-i="8" checked>
+            <span class="dot" style="background:#00cec9"></span>
+            <span class="nm">土の理・ガレヲン型<em>グランブルーファンタジー</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="セレスティアルスフィア・ミリカ型">
+          <label>
+            <input type="checkbox" data-i="9" checked>
+            <span class="dot" style="background:#bdc3c7"></span>
+            <span class="nm">セレスティアルスフィア・ミリカ型<em>巫师</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="決意の輝竜・アーサー型">
+          <label>
+            <input type="checkbox" data-i="10">
+            <span class="dot" style="background:hsl(295, 68%, 62%)"></span>
+            <span class="nm">決意の輝竜・アーサー型<em>グランブルーファンタジー</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="腐食の絶命型">
+          <label>
+            <input type="checkbox" data-i="11">
+            <span class="dot" style="background:hsl(73, 68%, 72%)"></span>
+            <span class="nm">腐食の絶命型<em>精灵</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="单独构筑">
+          <label>
+            <input type="checkbox" data-i="12">
+            <span class="dot" style="background:hsl(210, 68%, 62%)"></span>
+            <span class="nm">单独构筑<em>グランブルーファンタジー</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="ゴブリンクイーン型">
+          <label>
+            <input type="checkbox" data-i="13">
+            <span class="dot" style="background:hsl(348, 68%, 72%)"></span>
+            <span class="nm">ゴブリンクイーン型<em>梦魇</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="不屈の鋭刃・バザラガ型">
+          <label>
+            <input type="checkbox" data-i="14">
+            <span class="dot" style="background:hsl(125, 68%, 62%)"></span>
+            <span class="nm">不屈の鋭刃・バザラガ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="十天衆の頭目・シエテ型">
+          <label>
+            <input type="checkbox" data-i="15">
+            <span class="dot" style="background:hsl(263, 68%, 72%)"></span>
+            <span class="nm">十天衆の頭目・シエテ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="ジャンク型">
+          <label>
+            <input type="checkbox" data-i="16">
+            <span class="dot" style="background:hsl(40, 68%, 62%)"></span>
+            <span class="nm">ジャンク型<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="アクアフェアリー型">
+          <label>
+            <input type="checkbox" data-i="17">
+            <span class="dot" style="background:hsl(178, 68%, 72%)"></span>
+            <span class="nm">アクアフェアリー型<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="レリックバスター・グラン＆ジータ型">
+          <label>
+            <input type="checkbox" data-i="18">
+            <span class="dot" style="background:hsl(315, 68%, 62%)"></span>
+            <span class="nm">レリックバスター・グラン＆ジータ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="御伽の姫・アマリリス型">
+          <label>
+            <input type="checkbox" data-i="19">
+            <span class="dot" style="background:hsl(93, 68%, 72%)"></span>
+            <span class="nm">御伽の姫・アマリリス型<em>巫师</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="ティアマト・マグナ型">
+          <label>
+            <input type="checkbox" data-i="20">
+            <span class="dot" style="background:hsl(230, 68%, 62%)"></span>
+            <span class="nm">ティアマト・マグナ型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="殲滅の歌声型">
+          <label>
+            <input type="checkbox" data-i="21">
+            <span class="dot" style="background:hsl(8, 68%, 72%)"></span>
+            <span class="nm">殲滅の歌声型<em>巫师</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="空の命運を握る少女・ルリア型">
+          <label>
+            <input type="checkbox" data-i="22">
+            <span class="dot" style="background:hsl(145, 68%, 62%)"></span>
+            <span class="nm">空の命運を握る少女・ルリア型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="天威のドラグーン型">
+          <label>
+            <input type="checkbox" data-i="23">
+            <span class="dot" style="background:hsl(283, 68%, 72%)"></span>
+            <span class="nm">天威のドラグーン型<em>龙族</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="いつか、また会う未来で型">
+          <label>
+            <input type="checkbox" data-i="24">
+            <span class="dot" style="background:hsl(60, 68%, 62%)"></span>
+            <span class="nm">いつか、また会う未来で型<em>公主连结Re:Dive</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="炎の理・ウィルナス型">
+          <label>
+            <input type="checkbox" data-i="25">
+            <span class="dot" style="background:hsl(198, 68%, 72%)"></span>
+            <span class="nm">炎の理・ウィルナス型<em>グランブルーファンタジー</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="底無しの契約型">
+          <label>
+            <input type="checkbox" data-i="26">
+            <span class="dot" style="background:hsl(335, 68%, 62%)"></span>
+            <span class="nm">底無しの契約型<em>梦魇</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="控教">
+          <label>
+            <input type="checkbox" data-i="27">
+            <span class="dot" style="background:hsl(113, 68%, 72%)"></span>
+            <span class="nm">控教<em>主教</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+    </ul>
+  </aside>
+
+  <div class="charts">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>每周上位数</h2>
+        <div class="axis-toggle" id="toggle-count">
+          <button type="button" data-mode="linear" class="active">线性</button>
+          <button type="button" data-mode="log">对数</button>
+        </div>
+      </div>
+      <div class="hint">
+        横轴为「周」，每周 = <b>周五 ~ 下周四</b>。纵轴为该周收录到的上位套数。<br>
+        左侧勾选的类型会同时出现在下方两张图里；默认勾选上位数前 10。
+      </div>
+      <div id="trend-count"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>每周占比</h2>
+        <div class="axis-toggle" id="toggle-share">
+          <button type="button" data-mode="linear" class="active">线性</button>
+          <button type="button" data-mode="log">对数</button>
+        </div>
+      </div>
+      <div class="hint">
+        纵轴为该类型占<b>当周全部上位</b>的百分比 —— 整弹比赛变少时，上位数会一起下降，占比才看得出谁在真正扩张。<br>
+        后几名占比低时会被压扁，可切<b>对数</b>轴（对数轴下 0 值不显示）。
+      </div>
+      <div id="trend-share"></div>
+      <div class="note">
+        说明：上位 = 数据源记录的入赏卡组（已按赛事人数过滤：不足 8 人的赛事整场排除，8~16 人的赛事只取前 4 名）。
+        某个类型在某周为 0 表示该周没有它的入赏记录；占比为 0 同理。
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./_shared/js/echarts.min.js"></script>
+<script>
+(function(){
+  var D = {"x":["11/27"],"xFull":["2026/11/27-2026/12/03"],"weekTotals":[84],"types":[{"name":"生滅の技巧・ネハン型","label":"生滅の技巧・ネハン型｜グランブルーファンタジー","color":"#e94560","total":9,"data":[9],"share":[10.7]},{"name":"侮蔑の炎爪型","label":"侮蔑の炎爪型｜龙族","color":"#8bd3ff","total":9,"data":[9],"share":[10.7]},{"name":"風の理・イーウィヤ型","label":"風の理・イーウィヤ型｜グランブルーファンタジー","color":"#2ecc71","total":9,"data":[9],"share":[10.7]},{"name":"どこにでもいるフツーの女の子・メグ型","label":"どこにでもいるフツーの女の子・メグ型｜グランブルーファンタジー","color":"#f1c40f","total":8,"data":[8],"share":[9.5]},{"name":"水の理・ワムデュス型","label":"水の理・ワムデュス型｜グランブルーファンタジー","color":"#9b59b6","total":8,"data":[8],"share":[9.5]},{"name":"胜利皇","label":"胜利皇｜皇家护卫","color":"#e67e22","total":5,"data":[5],"share":[6]},{"name":"节奏教","label":"节奏教｜主教","color":"#1abc9c","total":5,"data":[5],"share":[6]},{"name":"テンタクルバイト型","label":"テンタクルバイト型｜皇家护卫","color":"#e84393","total":4,"data":[4],"share":[4.8]},{"name":"土の理・ガレヲン型","label":"土の理・ガレヲン型｜グランブルーファンタジー","color":"#00cec9","total":3,"data":[3],"share":[3.6]},{"name":"セレスティアルスフィア・ミリカ型","label":"セレスティアルスフィア・ミリカ型｜巫师","color":"#bdc3c7","total":2,"data":[2],"share":[2.4]},{"name":"決意の輝竜・アーサー型","label":"決意の輝竜・アーサー型｜グランブルーファンタジー","color":"hsl(295, 68%, 62%)","total":2,"data":[2],"share":[2.4]},{"name":"腐食の絶命型","label":"腐食の絶命型｜精灵","color":"hsl(73, 68%, 72%)","total":2,"data":[2],"share":[2.4]},{"name":"单独构筑","label":"单独构筑｜グランブルーファンタジー","color":"hsl(210, 68%, 62%)","total":2,"data":[2],"share":[2.4]},{"name":"ゴブリンクイーン型","label":"ゴブリンクイーン型｜梦魇","color":"hsl(348, 68%, 72%)","total":2,"data":[2],"share":[2.4]},{"name":"不屈の鋭刃・バザラガ型","label":"不屈の鋭刃・バザラガ型｜グランブルーファンタジー","color":"hsl(125, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"十天衆の頭目・シエテ型","label":"十天衆の頭目・シエテ型｜グランブルーファンタジー","color":"hsl(263, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"ジャンク型","label":"ジャンク型｜精灵","color":"hsl(40, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"アクアフェアリー型","label":"アクアフェアリー型｜精灵","color":"hsl(178, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"レリックバスター・グラン＆ジータ型","label":"レリックバスター・グラン＆ジータ型｜グランブルーファンタジー","color":"hsl(315, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"御伽の姫・アマリリス型","label":"御伽の姫・アマリリス型｜巫师","color":"hsl(93, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"ティアマト・マグナ型","label":"ティアマト・マグナ型｜グランブルーファンタジー","color":"hsl(230, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"殲滅の歌声型","label":"殲滅の歌声型｜巫师","color":"hsl(8, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"空の命運を握る少女・ルリア型","label":"空の命運を握る少女・ルリア型｜グランブルーファンタジー","color":"hsl(145, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"天威のドラグーン型","label":"天威のドラグーン型｜龙族","color":"hsl(283, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"いつか、また会う未来で型","label":"いつか、また会う未来で型｜公主连结Re:Dive","color":"hsl(60, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"炎の理・ウィルナス型","label":"炎の理・ウィルナス型｜グランブルーファンタジー","color":"hsl(198, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"底無しの契約型","label":"底無しの契約型｜梦魇","color":"hsl(335, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"控教","label":"控教｜主教","color":"hsl(113, 68%, 72%)","total":1,"data":[1],"share":[1.2]}]};
+  var T = D.types;
+  if (!window.echarts) return;
+
+  var modeCount = 'linear';
+  var modeShare = 'linear';
+
+  function seriesFor(indices, key, logMode) {
+    return indices.map(function(i){
+      var t = T[i];
+      var raw = t[key];
+      return {
+        name: t.label,
+        type: 'line',
+        smooth: true,
+        symbol: 'circle',
+        symbolSize: 5,
+        lineStyle: { width: 2.2 },
+        itemStyle: { color: t.color },
+        emphasis: { focus: 'series' },
+        data: logMode ? raw.map(function(v){ return v > 0 ? v : null; }) : raw
+      };
+    });
+  }
+
+  function baseOption(yName, isPct) {
+    return {
+      backgroundColor: 'transparent',
+      tooltip: {
+        trigger: 'axis',
+        backgroundColor: 'rgba(16,18,30,0.96)',
+        borderColor: 'rgba(255,255,255,0.15)',
+        textStyle: { color: '#e0e0e0', fontSize: 12 },
+        confine: true,
+        formatter: function(ps){
+          var idx = ps[0].dataIndex;
+          var head = '<b>' + D.xFull[idx] + '</b>（当周共 ' + D.weekTotals[idx] + ' 套）';
+          var rows = ps.filter(function(p){ return p.value > 0; })
+            .sort(function(a,b){ return b.value - a.value; })
+            .map(function(p){
+              return p.marker + p.seriesName + '：<b>' + p.value + '</b>' + (isPct ? '%' : ' 套');
+            });
+          if (!rows.length) rows.push('该周无记录');
+          return [head].concat(rows).join('<br/>');
+        }
+      },
+      grid: { left: 58, right: 26, top: 38, bottom: 44 },
+      xAxis: {
+        type: 'category', boundaryGap: false, data: D.x,
+        axisLine: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
+        axisLabel: { color: '#8899aa', fontSize: 11, interval: 'auto', rotate: D.x.length > 14 ? 40 : 0 },
+        axisTick: { show: false }
+      },
+      yAxis: {
+        type: 'value', name: yName,
+        nameTextStyle: { color: '#8899aa', fontSize: 11 },
+        axisLabel: { color: '#8899aa', fontSize: 11, formatter: isPct ? '{value}%' : '{value}' },
+        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+      },
+      series: []
+    };
+  }
+
+  var ch1 = echarts.init(document.getElementById('trend-count'), null, { renderer: 'canvas' });
+  var ch2 = echarts.init(document.getElementById('trend-share'), null, { renderer: 'canvas' });
+  ch1.setOption(baseOption('上位数（套）', false));
+  ch2.setOption(baseOption('占比（%）', true));
+
+  var boxes = [].slice.call(document.querySelectorAll('#sel-list input[type=checkbox]'));
+  var numEl = document.getElementById('sel-num');
+
+  function selectedIndices() {
+    var out = [];
+    boxes.forEach(function(b){ if (b.checked) out.push(+b.dataset.i); });
+    return out.sort(function(a,b){ return a - b; });
+  }
+
+  function redraw() {
+    var idx = selectedIndices();
+    numEl.textContent = idx.length;
+    ch1.setOption({ series: seriesFor(idx, 'data', modeCount === 'log') }, { replaceMerge: ['series'] });
+    ch2.setOption({ series: seriesFor(idx, 'share', modeShare === 'log') }, { replaceMerge: ['series'] });
+  }
+
+  boxes.forEach(function(b){ b.addEventListener('change', redraw); });
+
+  function applySelection(pred) {
+    boxes.forEach(function(b){ b.checked = pred(+b.dataset.i); });
+    redraw();
+  }
+  document.querySelectorAll('.sel-actions button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var act = btn.dataset.act;
+      if (act === 'top') applySelection(function(i){ return i < 10; });
+      else if (act === 'all') applySelection(function(){ return true; });
+      else applySelection(function(){ return false; });
+    });
+  });
+
+  // 搜索过滤（只影响列表显示，不改变勾选）
+  var filter = document.getElementById('sel-filter');
+  filter.addEventListener('input', function(){
+    var q = filter.value.trim().toLowerCase();
+    document.querySelectorAll('#sel-list .sel-item').forEach(function(li){
+      var hit = !q || li.textContent.toLowerCase().indexOf(q) >= 0;
+      li.style.display = hit ? '' : 'none';
+    });
+  });
+
+  function wireToggle(id, chart, which) {
+    var box = document.getElementById(id);
+    if (!box) return;
+    var buttons = [].slice.call(box.querySelectorAll('button'));
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var log = btn.dataset.mode === 'log';
+        buttons.forEach(function(b){ b.classList.toggle('active', b === btn); });
+        var isPct = which === 'share';
+        if (which === 'count') modeCount = btn.dataset.mode; else modeShare = btn.dataset.mode;
+        chart.setOption({
+          yAxis: {
+            type: log ? 'log' : 'value',
+            name: (isPct ? '占比（%）' : '上位数（套）') + (log ? '（对数）' : ''),
+            nameTextStyle: { color: '#8899aa', fontSize: 11 },
+            axisLabel: { color: '#8899aa', fontSize: 11, formatter: isPct ? '{value}%' : '{value}' },
+            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+          },
+          series: seriesFor(selectedIndices(), which === 'share' ? 'share' : 'data', log)
+        }, { replaceMerge: ['series'] });
+      });
+    });
+  }
+  wireToggle('toggle-count', ch1, 'count');
+  wireToggle('toggle-share', ch2, 'share');
+
+  redraw();
+  window.addEventListener('resize', function(){ ch1.resize(); ch2.resize(); });
+})();
+</script>
+</body>
+</html>

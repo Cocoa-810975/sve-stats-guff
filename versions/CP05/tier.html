@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CP05 卡组梯度表｜SVE Stats Guff</title>
+<style>
+/* 视觉规范统一对齐报告页（versions/BPxx/shadowverse_evolve_decks.html）：
+   同一套配色令牌、同样的标题块、同样的红色强调线与卡片描边。 */
+:root{
+  --bg:#0f0f1a;          /* 页面底色 */
+  --panel:#1a1a2e;       /* 卡片/面板 */
+  --panel-2:#111827;     /* 表头等更深的块 */
+  --line:#2a2a3e;        /* 分隔线 */
+  --line-soft:rgba(255,255,255,0.05);
+  --text:#e0e0e0;
+  --text-strong:#fff;
+  --muted:#8899aa;
+  --accent:#e94560;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6;
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif}
+.container{max-width:1200px;margin:0 auto;padding:20px 20px 60px}
+
+/* 页面标题块：与报告页 .header 完全一致 */
+.header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+  padding:36px 30px 30px;border-radius:16px;margin-bottom:24px;text-align:center;
+  border:1px solid rgba(255,255,255,0.1)}
+.header h1{font-size:28px;color:var(--text-strong);margin:0 0 10px}
+.header .subtitle{color:var(--muted);font-size:14px}
+
+
+/* 版本切换：沿用报告页 .nav a 的胶囊样式 */
+
+/* 概览数字：与报告页 .summary-grid / .summary-card 一致 */
+.summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:30px}
+.summary-card{background:var(--panel);border-radius:12px;padding:22px;text-align:center;
+  border:1px solid var(--line-soft)}
+.summary-card .number{font-size:36px;font-weight:bold;color:var(--accent)}
+.summary-card .label{font-size:13px;color:var(--muted);margin-top:5px}
+
+/* 章节区块：与报告页 .section 完全一致 */
+.section{background:var(--panel);border-radius:16px;padding:24px;margin-bottom:24px;
+  border:1px solid var(--line-soft)}
+.section h2{color:var(--text-strong);font-size:20px;margin:0 0 20px;
+  padding-bottom:10px;border-bottom:2px solid var(--accent)}
+h2.plain{color:var(--text-strong);font-size:20px;margin:0 0 20px;
+  padding-bottom:10px;border-bottom:2px solid var(--accent)}
+
+.tier-row{display:flex;gap:14px;margin-bottom:14px;align-items:stretch}
+.tier-label{flex:0 0 124px;background:var(--panel);border-radius:12px;padding:12px 10px;text-align:center;
+  border:1px solid var(--line-soft);border-left:5px solid var(--tc);
+  display:flex;flex-direction:column;justify-content:center;gap:2px}
+.tier-label b{font-size:26px;color:var(--tc);letter-spacing:.5px}
+.tier-label span{font-size:11px;color:var(--muted);line-height:1.3}
+.tier-label em{font-size:11px;color:#6b7a8f;font-style:normal;margin-top:3px}
+.tier-cards{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.tier-card{display:flex;align-items:center;gap:9px;background:var(--panel);
+  border:1px solid var(--line-soft);border-radius:12px;padding:8px;text-decoration:none;
+  color:inherit;transition:all .2s;min-height:64px}
+.tier-card:hover{border-color:var(--accent);background:#1f1f36;transform:translateY(-1px)}
+.tc-art{flex:0 0 46px;width:46px;height:46px;border-radius:50%;overflow:hidden;background:#0b0d14;
+  border:1.5px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
+.tc-art img{width:100%;height:100%;object-fit:cover;display:block}
+.tc-body{flex:1;min-width:0}
+.tc-name{font-size:14px;font-weight:700;color:var(--text-strong);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.tc-cls{font-size:11px;color:var(--muted)}
+.tc-stats{flex:0 0 auto;text-align:right;display:flex;flex-direction:column;gap:1px}
+.tc-count{font-size:11px;color:var(--muted)}
+.tc-wr{font-size:13px;font-weight:700}
+.up{color:#4ade80}.down{color:#f87171}
+
+/* 表格：与报告页 .deck-table 一致 */
+.table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line-soft)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--panel-2);padding:10px 12px;text-align:left;color:var(--muted);
+  font-weight:600;font-size:12px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--panel);color:#ddd}
+tbody tr:hover td{background:rgba(255,255,255,0.03)}
+tbody tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tier-pill{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:700;color:#0f0f1a}
+.hint{color:var(--muted);font-size:12px;margin-bottom:14px;line-height:1.7}
+.gap-note{color:var(--muted);font-size:12px;background:rgba(255,255,255,.03);
+  border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin:2px 0 14px}
+@media(max-width:768px){
+  .summary-grid{grid-template-columns:1fr}
+  .tier-row{flex-direction:column}
+  .tier-label{flex:0 0 auto;flex-direction:row;gap:8px;align-items:center}
+  .tier-label b{font-size:20px}
+  .header{padding:28px 18px 24px}
+  .container{padding:14px 12px 40px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>CP05 卡组梯度表</h1>
+    <div class="subtitle">数据来源 bushi-navi.com · decklog</div>
+  </div>
+
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="number">0</div>
+      <div class="label">纳入梯度的卡组类型（上位数 ≥ 10 套）</div>
+    </div>
+    <div class="summary-card">
+      <div class="number">84</div>
+      <div class="label">有卡表的卡组总数（另有 28 种类型上位数不足未列入）</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>梯度分层</h2>
+    
+    <div class="gap-note">本弹 T1 / T2 / T3 / T4 层无类型落入 —— 说明前几名与其他卡组的分差很大（断层明显），不是漏显示。</div>
+  </div>
+
+  <div class="section">
+    <h2>综合排名</h2>
+    <div class="hint">综合分 = <b>上位数 20%</b> + <b>大赛上位数 15%</b> + <b>冠军率 15%</b> + <b>淘汰赛胜率 50%</b>（四项各归一到 0~100 后加权；上位数 = 收录到的该类型上位套数，大赛上位数 = 其中参赛人数 ≥100 的赛事里的套数，因数据稀疏采用开方归一）；
+      <b>冠军数*／冠军率*</b> 只统计 <b>17 人及以上</b>的赛事（排除 8~16 人小店赛刷冠）；冠军率评分时做了小样本平滑。
+      <b>淘汰赛胜率</b>按各赛事实际的淘汰赛名额反推：名额 = 该赛事记录的套数（组队赛除以 team_count），
+      例如常规赛 8 强、大奖赛 32 强或 64 强，再按「冠军全胜、每轮淘汰一半」换算轮次胜负。
+      梯度按「该类型得分 ÷ 本弹最高分」的比例划分：T0 ≥90%、T1 ≥72%、T2 ≥55%、T3 ≥42%、T4 ≥28%，其余为 T5。
+      上位数少于 10 套的类型不纳入梯度表（本弹另有 28 种因此未列出）。</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>#</th><th>梯度</th><th>卡组类型</th><th class="num">上位数</th><th class="num">大赛上位数</th>
+          <th class="num">淘汰赛胜率</th><th class="num">占比</th><th class="num" title="仅统计 17 人及以上赛事">冠军数*</th><th class="num" title="仅统计 17 人及以上赛事">冠军率*</th><th class="num">综合分</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
