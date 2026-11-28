@@ -73,19 +73,19 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 <body>
 <div class="header">
   <h1>CP05 每周上位数趋势</h1>
-  <div class="sub">数据来源 bushi-navi.com ｜ 共 28 种卡组类型，默认展示上位数前 10</div>
+  <div class="sub">数据来源 bushi-navi.com ｜ 共 24 种卡组类型，默认展示上位数前 10</div>
 </div>
 
 <div class="stats">
   <div class="stat"><div class="num">84</div><div class="label">收录上位卡组（套）</div></div>
   <div class="stat"><div class="num">1</div><div class="label">覆盖周数（周五起算）</div></div>
-  <div class="stat"><div class="num">28</div><div class="label">卡组类型总数</div></div>
+  <div class="stat"><div class="num">24</div><div class="label">卡组类型总数</div></div>
 </div>
 
 <div class="layout">
   <aside class="selector">
     <h3>选择卡组类型</h3>
-    <div class="sel-count">已选 <b id="sel-num">10</b> / 28</div>
+    <div class="sel-count">已选 <b id="sel-num">10</b> / 24</div>
     <input class="sel-filter" id="sel-filter" type="search" placeholder="搜索卡组名 / 职业…">
     <div class="sel-actions">
       <button type="button" data-act="top">前 10</button>
@@ -93,226 +93,194 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
       <button type="button" data-act="none">清空</button>
     </div>
     <ul class="sel-list" id="sel-list">
-        <li class="sel-item" data-name="生滅の技巧・ネハン型">
+        <li class="sel-item" data-name="风gbf">
           <label>
             <input type="checkbox" data-i="0" checked>
             <span class="dot" style="background:#e94560"></span>
-            <span class="nm">生滅の技巧・ネハン型<em>グランブルーファンタジー</em></span>
-            <span class="tt">9</span>
+            <span class="nm">风gbf<em>グランブルーファンタジー</em></span>
+            <span class="tt">12</span>
           </label>
         </li>
-        <li class="sel-item" data-name="侮蔑の炎爪型">
+        <li class="sel-item" data-name="水gbf">
           <label>
             <input type="checkbox" data-i="1" checked>
             <span class="dot" style="background:#8bd3ff"></span>
-            <span class="nm">侮蔑の炎爪型<em>龙族</em></span>
-            <span class="tt">9</span>
+            <span class="nm">水gbf<em>グランブルーファンタジー</em></span>
+            <span class="tt">11</span>
           </label>
         </li>
-        <li class="sel-item" data-name="風の理・イーウィヤ型">
+        <li class="sel-item" data-name="暗gbf">
           <label>
             <input type="checkbox" data-i="2" checked>
             <span class="dot" style="background:#2ecc71"></span>
-            <span class="nm">風の理・イーウィヤ型<em>グランブルーファンタジー</em></span>
-            <span class="tt">9</span>
+            <span class="nm">暗gbf<em>グランブルーファンタジー</em></span>
+            <span class="tt">10</span>
           </label>
         </li>
-        <li class="sel-item" data-name="どこにでもいるフツーの女の子・メグ型">
+        <li class="sel-item" data-name="光gbf">
           <label>
             <input type="checkbox" data-i="3" checked>
             <span class="dot" style="background:#f1c40f"></span>
-            <span class="nm">どこにでもいるフツーの女の子・メグ型<em>グランブルーファンタジー</em></span>
-            <span class="tt">8</span>
+            <span class="nm">光gbf<em>グランブルーファンタジー</em></span>
+            <span class="tt">10</span>
           </label>
         </li>
-        <li class="sel-item" data-name="水の理・ワムデュス型">
+        <li class="sel-item" data-name="五妹龙">
           <label>
             <input type="checkbox" data-i="4" checked>
             <span class="dot" style="background:#9b59b6"></span>
-            <span class="nm">水の理・ワムデュス型<em>グランブルーファンタジー</em></span>
-            <span class="tt">8</span>
+            <span class="nm">五妹龙<em>龙族</em></span>
+            <span class="tt">9</span>
           </label>
         </li>
-        <li class="sel-item" data-name="胜利皇">
+        <li class="sel-item" data-name="雷维翁皇">
           <label>
             <input type="checkbox" data-i="5" checked>
             <span class="dot" style="background:#e67e22"></span>
-            <span class="nm">胜利皇<em>皇家护卫</em></span>
-            <span class="tt">5</span>
+            <span class="nm">雷维翁皇<em>皇家护卫</em></span>
+            <span class="tt">8</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="土gbf">
+          <label>
+            <input type="checkbox" data-i="6" checked>
+            <span class="dot" style="background:#1abc9c"></span>
+            <span class="nm">土gbf<em>グランブルーファンタジー</em></span>
+            <span class="tt">3</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="守护教">
+          <label>
+            <input type="checkbox" data-i="7" checked>
+            <span class="dot" style="background:#e84393"></span>
+            <span class="nm">守护教<em>主教</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="八狱法">
+          <label>
+            <input type="checkbox" data-i="8" checked>
+            <span class="dot" style="background:#00cec9"></span>
+            <span class="nm">八狱法<em>巫师</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="猎人妖">
+          <label>
+            <input type="checkbox" data-i="9" checked>
+            <span class="dot" style="background:#bdc3c7"></span>
+            <span class="nm">猎人妖<em>精灵</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="哥布林梦">
+          <label>
+            <input type="checkbox" data-i="10">
+            <span class="dot" style="background:hsl(295, 68%, 62%)"></span>
+            <span class="nm">哥布林梦<em>梦魇</em></span>
+            <span class="tt">2</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="天使皇">
+          <label>
+            <input type="checkbox" data-i="11">
+            <span class="dot" style="background:hsl(73, 68%, 72%)"></span>
+            <span class="nm">天使皇<em>皇家护卫</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="人偶妖">
+          <label>
+            <input type="checkbox" data-i="12">
+            <span class="dot" style="background:hsl(210, 68%, 62%)"></span>
+            <span class="nm">人偶妖<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="妖精妖">
+          <label>
+            <input type="checkbox" data-i="13">
+            <span class="dot" style="background:hsl(348, 68%, 72%)"></span>
+            <span class="nm">妖精妖<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="耶拉教">
+          <label>
+            <input type="checkbox" data-i="14">
+            <span class="dot" style="background:hsl(125, 68%, 62%)"></span>
+            <span class="nm">耶拉教<em>主教</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="连击妖">
+          <label>
+            <input type="checkbox" data-i="15">
+            <span class="dot" style="background:hsl(263, 68%, 72%)"></span>
+            <span class="nm">连击妖<em>精灵</em></span>
+            <span class="tt">1</span>
+          </label>
+        </li>
+        <li class="sel-item" data-name="学院法">
+          <label>
+            <input type="checkbox" data-i="16">
+            <span class="dot" style="background:hsl(40, 68%, 62%)"></span>
+            <span class="nm">学院法<em>巫师</em></span>
+            <span class="tt">1</span>
           </label>
         </li>
         <li class="sel-item" data-name="节奏教">
           <label>
-            <input type="checkbox" data-i="6" checked>
-            <span class="dot" style="background:#1abc9c"></span>
-            <span class="nm">节奏教<em>主教</em></span>
-            <span class="tt">5</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="テンタクルバイト型">
-          <label>
-            <input type="checkbox" data-i="7" checked>
-            <span class="dot" style="background:#e84393"></span>
-            <span class="nm">テンタクルバイト型<em>皇家护卫</em></span>
-            <span class="tt">4</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="土の理・ガレヲン型">
-          <label>
-            <input type="checkbox" data-i="8" checked>
-            <span class="dot" style="background:#00cec9"></span>
-            <span class="nm">土の理・ガレヲン型<em>グランブルーファンタジー</em></span>
-            <span class="tt">3</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="セレスティアルスフィア・ミリカ型">
-          <label>
-            <input type="checkbox" data-i="9" checked>
-            <span class="dot" style="background:#bdc3c7"></span>
-            <span class="nm">セレスティアルスフィア・ミリカ型<em>巫师</em></span>
-            <span class="tt">2</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="決意の輝竜・アーサー型">
-          <label>
-            <input type="checkbox" data-i="10">
-            <span class="dot" style="background:hsl(295, 68%, 62%)"></span>
-            <span class="nm">決意の輝竜・アーサー型<em>グランブルーファンタジー</em></span>
-            <span class="tt">2</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="腐食の絶命型">
-          <label>
-            <input type="checkbox" data-i="11">
-            <span class="dot" style="background:hsl(73, 68%, 72%)"></span>
-            <span class="nm">腐食の絶命型<em>精灵</em></span>
-            <span class="tt">2</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="单独构筑">
-          <label>
-            <input type="checkbox" data-i="12">
-            <span class="dot" style="background:hsl(210, 68%, 62%)"></span>
-            <span class="nm">单独构筑<em>グランブルーファンタジー</em></span>
-            <span class="tt">2</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="ゴブリンクイーン型">
-          <label>
-            <input type="checkbox" data-i="13">
-            <span class="dot" style="background:hsl(348, 68%, 72%)"></span>
-            <span class="nm">ゴブリンクイーン型<em>梦魇</em></span>
-            <span class="tt">2</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="不屈の鋭刃・バザラガ型">
-          <label>
-            <input type="checkbox" data-i="14">
-            <span class="dot" style="background:hsl(125, 68%, 62%)"></span>
-            <span class="nm">不屈の鋭刃・バザラガ型<em>グランブルーファンタジー</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="十天衆の頭目・シエテ型">
-          <label>
-            <input type="checkbox" data-i="15">
-            <span class="dot" style="background:hsl(263, 68%, 72%)"></span>
-            <span class="nm">十天衆の頭目・シエテ型<em>グランブルーファンタジー</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="ジャンク型">
-          <label>
-            <input type="checkbox" data-i="16">
-            <span class="dot" style="background:hsl(40, 68%, 62%)"></span>
-            <span class="nm">ジャンク型<em>精灵</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="アクアフェアリー型">
-          <label>
             <input type="checkbox" data-i="17">
             <span class="dot" style="background:hsl(178, 68%, 72%)"></span>
-            <span class="nm">アクアフェアリー型<em>精灵</em></span>
+            <span class="nm">节奏教<em>主教</em></span>
             <span class="tt">1</span>
           </label>
         </li>
-        <li class="sel-item" data-name="レリックバスター・グラン＆ジータ型">
+        <li class="sel-item" data-name="二妹法">
           <label>
             <input type="checkbox" data-i="18">
             <span class="dot" style="background:hsl(315, 68%, 62%)"></span>
-            <span class="nm">レリックバスター・グラン＆ジータ型<em>グランブルーファンタジー</em></span>
+            <span class="nm">二妹法<em>巫师</em></span>
             <span class="tt">1</span>
           </label>
         </li>
-        <li class="sel-item" data-name="御伽の姫・アマリリス型">
+        <li class="sel-item" data-name="大哥龙">
           <label>
             <input type="checkbox" data-i="19">
             <span class="dot" style="background:hsl(93, 68%, 72%)"></span>
-            <span class="nm">御伽の姫・アマリリス型<em>巫师</em></span>
+            <span class="nm">大哥龙<em>龙族</em></span>
             <span class="tt">1</span>
           </label>
         </li>
-        <li class="sel-item" data-name="ティアマト・マグナ型">
+        <li class="sel-item" data-name="法术PCR">
           <label>
             <input type="checkbox" data-i="20">
             <span class="dot" style="background:hsl(230, 68%, 62%)"></span>
-            <span class="nm">ティアマト・マグナ型<em>グランブルーファンタジー</em></span>
+            <span class="nm">法术PCR<em>公主连结Re:Dive</em></span>
             <span class="tt">1</span>
           </label>
         </li>
-        <li class="sel-item" data-name="殲滅の歌声型">
+        <li class="sel-item" data-name="火gbf">
           <label>
             <input type="checkbox" data-i="21">
             <span class="dot" style="background:hsl(8, 68%, 72%)"></span>
-            <span class="nm">殲滅の歌声型<em>巫师</em></span>
+            <span class="nm">火gbf<em>グランブルーファンタジー</em></span>
             <span class="tt">1</span>
           </label>
         </li>
-        <li class="sel-item" data-name="空の命運を握る少女・ルリア型">
+        <li class="sel-item" data-name="永火梦">
           <label>
             <input type="checkbox" data-i="22">
             <span class="dot" style="background:hsl(145, 68%, 62%)"></span>
-            <span class="nm">空の命運を握る少女・ルリア型<em>グランブルーファンタジー</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="天威のドラグーン型">
-          <label>
-            <input type="checkbox" data-i="23">
-            <span class="dot" style="background:hsl(283, 68%, 72%)"></span>
-            <span class="nm">天威のドラグーン型<em>龙族</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="いつか、また会う未来で型">
-          <label>
-            <input type="checkbox" data-i="24">
-            <span class="dot" style="background:hsl(60, 68%, 62%)"></span>
-            <span class="nm">いつか、また会う未来で型<em>公主连结Re:Dive</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="炎の理・ウィルナス型">
-          <label>
-            <input type="checkbox" data-i="25">
-            <span class="dot" style="background:hsl(198, 68%, 72%)"></span>
-            <span class="nm">炎の理・ウィルナス型<em>グランブルーファンタジー</em></span>
-            <span class="tt">1</span>
-          </label>
-        </li>
-        <li class="sel-item" data-name="底無しの契約型">
-          <label>
-            <input type="checkbox" data-i="26">
-            <span class="dot" style="background:hsl(335, 68%, 62%)"></span>
-            <span class="nm">底無しの契約型<em>梦魇</em></span>
+            <span class="nm">永火梦<em>梦魇</em></span>
             <span class="tt">1</span>
           </label>
         </li>
         <li class="sel-item" data-name="控教">
           <label>
-            <input type="checkbox" data-i="27">
-            <span class="dot" style="background:hsl(113, 68%, 72%)"></span>
+            <input type="checkbox" data-i="23">
+            <span class="dot" style="background:hsl(283, 68%, 72%)"></span>
             <span class="nm">控教<em>主教</em></span>
             <span class="tt">1</span>
           </label>
@@ -360,7 +328,7 @@ body{background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingF
 <script src="./_shared/js/echarts.min.js"></script>
 <script>
 (function(){
-  var D = {"x":["11/27"],"xFull":["2026/11/27-2026/12/03"],"weekTotals":[84],"types":[{"name":"生滅の技巧・ネハン型","label":"生滅の技巧・ネハン型｜グランブルーファンタジー","color":"#e94560","total":9,"data":[9],"share":[10.7]},{"name":"侮蔑の炎爪型","label":"侮蔑の炎爪型｜龙族","color":"#8bd3ff","total":9,"data":[9],"share":[10.7]},{"name":"風の理・イーウィヤ型","label":"風の理・イーウィヤ型｜グランブルーファンタジー","color":"#2ecc71","total":9,"data":[9],"share":[10.7]},{"name":"どこにでもいるフツーの女の子・メグ型","label":"どこにでもいるフツーの女の子・メグ型｜グランブルーファンタジー","color":"#f1c40f","total":8,"data":[8],"share":[9.5]},{"name":"水の理・ワムデュス型","label":"水の理・ワムデュス型｜グランブルーファンタジー","color":"#9b59b6","total":8,"data":[8],"share":[9.5]},{"name":"胜利皇","label":"胜利皇｜皇家护卫","color":"#e67e22","total":5,"data":[5],"share":[6]},{"name":"节奏教","label":"节奏教｜主教","color":"#1abc9c","total":5,"data":[5],"share":[6]},{"name":"テンタクルバイト型","label":"テンタクルバイト型｜皇家护卫","color":"#e84393","total":4,"data":[4],"share":[4.8]},{"name":"土の理・ガレヲン型","label":"土の理・ガレヲン型｜グランブルーファンタジー","color":"#00cec9","total":3,"data":[3],"share":[3.6]},{"name":"セレスティアルスフィア・ミリカ型","label":"セレスティアルスフィア・ミリカ型｜巫师","color":"#bdc3c7","total":2,"data":[2],"share":[2.4]},{"name":"決意の輝竜・アーサー型","label":"決意の輝竜・アーサー型｜グランブルーファンタジー","color":"hsl(295, 68%, 62%)","total":2,"data":[2],"share":[2.4]},{"name":"腐食の絶命型","label":"腐食の絶命型｜精灵","color":"hsl(73, 68%, 72%)","total":2,"data":[2],"share":[2.4]},{"name":"单独构筑","label":"单独构筑｜グランブルーファンタジー","color":"hsl(210, 68%, 62%)","total":2,"data":[2],"share":[2.4]},{"name":"ゴブリンクイーン型","label":"ゴブリンクイーン型｜梦魇","color":"hsl(348, 68%, 72%)","total":2,"data":[2],"share":[2.4]},{"name":"不屈の鋭刃・バザラガ型","label":"不屈の鋭刃・バザラガ型｜グランブルーファンタジー","color":"hsl(125, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"十天衆の頭目・シエテ型","label":"十天衆の頭目・シエテ型｜グランブルーファンタジー","color":"hsl(263, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"ジャンク型","label":"ジャンク型｜精灵","color":"hsl(40, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"アクアフェアリー型","label":"アクアフェアリー型｜精灵","color":"hsl(178, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"レリックバスター・グラン＆ジータ型","label":"レリックバスター・グラン＆ジータ型｜グランブルーファンタジー","color":"hsl(315, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"御伽の姫・アマリリス型","label":"御伽の姫・アマリリス型｜巫师","color":"hsl(93, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"ティアマト・マグナ型","label":"ティアマト・マグナ型｜グランブルーファンタジー","color":"hsl(230, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"殲滅の歌声型","label":"殲滅の歌声型｜巫师","color":"hsl(8, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"空の命運を握る少女・ルリア型","label":"空の命運を握る少女・ルリア型｜グランブルーファンタジー","color":"hsl(145, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"天威のドラグーン型","label":"天威のドラグーン型｜龙族","color":"hsl(283, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"いつか、また会う未来で型","label":"いつか、また会う未来で型｜公主连结Re:Dive","color":"hsl(60, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"炎の理・ウィルナス型","label":"炎の理・ウィルナス型｜グランブルーファンタジー","color":"hsl(198, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"底無しの契約型","label":"底無しの契約型｜梦魇","color":"hsl(335, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"控教","label":"控教｜主教","color":"hsl(113, 68%, 72%)","total":1,"data":[1],"share":[1.2]}]};
+  var D = {"x":["11/27"],"xFull":["2026/11/27-2026/12/03"],"weekTotals":[84],"types":[{"name":"风gbf","label":"风gbf｜グランブルーファンタジー","color":"#e94560","total":12,"data":[12],"share":[14.3]},{"name":"水gbf","label":"水gbf｜グランブルーファンタジー","color":"#8bd3ff","total":11,"data":[11],"share":[13.1]},{"name":"暗gbf","label":"暗gbf｜グランブルーファンタジー","color":"#2ecc71","total":10,"data":[10],"share":[11.9]},{"name":"光gbf","label":"光gbf｜グランブルーファンタジー","color":"#f1c40f","total":10,"data":[10],"share":[11.9]},{"name":"五妹龙","label":"五妹龙｜龙族","color":"#9b59b6","total":9,"data":[9],"share":[10.7]},{"name":"雷维翁皇","label":"雷维翁皇｜皇家护卫","color":"#e67e22","total":8,"data":[8],"share":[9.5]},{"name":"土gbf","label":"土gbf｜グランブルーファンタジー","color":"#1abc9c","total":3,"data":[3],"share":[3.6]},{"name":"守护教","label":"守护教｜主教","color":"#e84393","total":2,"data":[2],"share":[2.4]},{"name":"八狱法","label":"八狱法｜巫师","color":"#00cec9","total":2,"data":[2],"share":[2.4]},{"name":"猎人妖","label":"猎人妖｜精灵","color":"#bdc3c7","total":2,"data":[2],"share":[2.4]},{"name":"哥布林梦","label":"哥布林梦｜梦魇","color":"hsl(295, 68%, 62%)","total":2,"data":[2],"share":[2.4]},{"name":"天使皇","label":"天使皇｜皇家护卫","color":"hsl(73, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"人偶妖","label":"人偶妖｜精灵","color":"hsl(210, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"妖精妖","label":"妖精妖｜精灵","color":"hsl(348, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"耶拉教","label":"耶拉教｜主教","color":"hsl(125, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"连击妖","label":"连击妖｜精灵","color":"hsl(263, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"学院法","label":"学院法｜巫师","color":"hsl(40, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"节奏教","label":"节奏教｜主教","color":"hsl(178, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"二妹法","label":"二妹法｜巫师","color":"hsl(315, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"大哥龙","label":"大哥龙｜龙族","color":"hsl(93, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"法术PCR","label":"法术PCR｜公主连结Re:Dive","color":"hsl(230, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"火gbf","label":"火gbf｜グランブルーファンタジー","color":"hsl(8, 68%, 72%)","total":1,"data":[1],"share":[1.2]},{"name":"永火梦","label":"永火梦｜梦魇","color":"hsl(145, 68%, 62%)","total":1,"data":[1],"share":[1.2]},{"name":"控教","label":"控教｜主教","color":"hsl(283, 68%, 72%)","total":1,"data":[1],"share":[1.2]}]};
   var T = D.types;
   if (!window.echarts) return;
 
