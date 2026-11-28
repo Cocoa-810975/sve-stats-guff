@@ -26236,1523 +26236,1523 @@
   },
   "CP05-001": {
    "name_cn": "魔眼の狩人・ソーン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・光属性"
   },
   "CP05-002": {
    "name_cn": "調和の舞手・ユエル＆ソシエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性・水属性"
   },
   "CP05-003": {
    "name_cn": "風の理・イーウィヤ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-004": {
    "name_cn": "風の理・イーウィヤ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-005": {
    "name_cn": "絢爛の紡ぎ手・コルワ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-006": {
    "name_cn": "絢爛の紡ぎ手・コルワ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性"
   },
   "CP05-007": {
    "name_cn": "奮励の儁秀・シルヴァ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-008": {
    "name_cn": "虹色の弓使い・クピタン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 0,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-009": {
    "name_cn": "清新なる銃設計士・ククル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-010": {
    "name_cn": "清新なる銃設計士・ククル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・水属性"
   },
   "CP05-011": {
    "name_cn": "天禀の射手・メーテラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-012": {
    "name_cn": "美粧の乙女・クロエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-013": {
    "name_cn": "緋焔の踊り子・アンスリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性"
   },
   "CP05-014": {
    "name_cn": "緋焔の踊り子・アンスリア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・火属性"
   },
   "CP05-015": {
    "name_cn": "フォレストレンジャー・ウェルダー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 2,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-017": {
    "name_cn": "カワイイ花マル・マナマル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-018": {
    "name_cn": "箒星",
-   "cost": null,
+   "cost": 3,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・風属性"
   },
   "CP05-019": {
    "name_cn": "天星剣王・シエテ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・風属性"
   },
   "CP05-020": {
    "name_cn": "刀神・オクトー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 8,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・土属性"
   },
   "CP05-021": {
    "name_cn": "光の理・ル・オー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・光属性"
   },
   "CP05-022": {
    "name_cn": "光の理・ル・オー",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・光属性"
   },
   "CP05-023": {
    "name_cn": "揺らぎの斬姫・ナルメア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-024": {
    "name_cn": "揺らぎの斬姫・ナルメア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-025": {
    "name_cn": "真紅の穿光・ゼタ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性"
   },
   "CP05-026": {
    "name_cn": "ドラゴンナイツ",
-   "cost": null,
+   "cost": 5,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・火属性・水属性・風属性・土属性"
   },
   "CP05-027": {
    "name_cn": "サムライドリーマー・ミリン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-028": {
    "name_cn": "サムライドリーマー・ミリン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性"
   },
   "CP05-029": {
    "name_cn": "不滅の群青・ベアトリクス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-030": {
    "name_cn": "氷心の覇王・アグロヴァル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-031": {
    "name_cn": "花開く筋肉・フィオリト",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-032": {
    "name_cn": "花開く筋肉・フィオリト",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 6,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・土属性"
   },
   "CP05-033": {
    "name_cn": "眠れる輝竜・アーサー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-034": {
    "name_cn": "眠れる獅子・モルドレッド",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-036": {
    "name_cn": "信念の蹴撃・ランドル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 2,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-037": {
    "name_cn": "魔弾の射手・エッセル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 2,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・火属性"
   },
   "CP05-038": {
    "name_cn": "閃耀の双剣・カトル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 4,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・水属性"
   },
   "CP05-039": {
    "name_cn": "水の理・ワムデュス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・水属性"
   },
   "CP05-040": {
    "name_cn": "水の理・ワムデュス",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・水属性"
   },
   "CP05-041": {
    "name_cn": "開闢の錬金術師・カリオストロ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-042": {
    "name_cn": "開闢の錬金術師・カリオストロ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-043": {
    "name_cn": "空慕う帰還者・カシウス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-044": {
    "name_cn": "コロッサス・マグナ",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・火属性"
   },
   "CP05-045": {
    "name_cn": "神託の妖童・アルルメイヤ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-046": {
    "name_cn": "神託の妖童・アルルメイヤ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・土属性"
   },
   "CP05-047": {
    "name_cn": "楽隠居の元国王・フォリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-048": {
    "name_cn": "アルケミック・フレア",
-   "cost": null,
+   "cost": 2,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・火属性"
   },
   "CP05-051": {
    "name_cn": "炎獄の葬送者・エルモート",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性"
   },
   "CP05-052": {
    "name_cn": "報恩の技師・アイザック",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-053": {
    "name_cn": "アルス･グローリア",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-054": {
    "name_cn": "怪力乱神・サラーサ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・土属性"
   },
   "CP05-055": {
    "name_cn": "大いなる調停者・ゾーイ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-056": {
    "name_cn": "炎の理・ウィルナス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・火属性"
   },
   "CP05-057": {
    "name_cn": "炎の理・ウィルナス",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・火属性"
   },
   "CP05-058": {
    "name_cn": "どこにでもいるフツーの女の子・メグ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-059": {
    "name_cn": "どこにでもいるフツーの女の子・メグ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-060": {
    "name_cn": "天穿の銃槍騎・ラスティナ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 1,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-061": {
    "name_cn": "ティアマト・マグナ",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・風属性"
   },
   "CP05-062": {
    "name_cn": "純朴の鋼体・ムゲン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-063": {
    "name_cn": "純朴の鋼体・ムゲン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 6,
+   "life": 6,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-064": {
    "name_cn": "護国真龍・スカーサハ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-065": {
    "name_cn": "メグの親友・まりっぺ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-066": {
    "name_cn": "灼脚の麗姫・アリーザ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性"
   },
   "CP05-067": {
    "name_cn": "灼脚の麗姫・アリーザ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・火属性"
   },
   "CP05-068": {
    "name_cn": "古今独歩の大拳豪・ガンダゴウザ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 6,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性"
   },
   "CP05-069": {
    "name_cn": "灰白の豹・アイル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 3,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-070": {
    "name_cn": "オンリー･ワン･ウィッシュ",
-   "cost": null,
+   "cost": 2,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・光属性"
   },
   "CP05-072": {
    "name_cn": "神狼・シス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 3,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・闇属性"
   },
   "CP05-073": {
    "name_cn": "繊細の魔奏者・ニオ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・風属性"
   },
   "CP05-074": {
    "name_cn": "闇の理・フェディエル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-075": {
    "name_cn": "闇の理・フェディエル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-076": {
    "name_cn": "幽想の少女・フェリ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-077": {
    "name_cn": "幽想の少女・フェリ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-078": {
    "name_cn": "生滅の技巧・ネハン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-079": {
    "name_cn": "セレスト・マグナ",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・闇属性"
   },
   "CP05-080": {
    "name_cn": "降魔の操者・ダヌア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-081": {
    "name_cn": "降魔の操者・ダヌア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-082": {
    "name_cn": "冥闇の剛刃・バザラガ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 4,
+   "life": 7,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-084": {
    "name_cn": "心眼の双葬女・レディ・グレイ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 0,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-085": {
    "name_cn": "心眼の双葬女・レディ・グレイ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-086": {
    "name_cn": "自由を駆ける漢・スカル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性"
   },
   "CP05-087": {
    "name_cn": "エーヴィヒ・カメラート",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・闇属性"
   },
   "CP05-088": {
    "name_cn": "ストーン・ブレイク",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・闇属性"
   },
   "CP05-089": {
    "name_cn": "開眼者・ウーノ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・水属性"
   },
   "CP05-090": {
    "name_cn": "魔導の申し子・フュンフ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・光属性"
   },
   "CP05-091": {
    "name_cn": "土の理・ガレヲン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・土属性"
   },
   "CP05-092": {
    "name_cn": "土の理・ガレヲン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・土属性"
   },
   "CP05-093": {
    "name_cn": "狂恋の華鎧・ヴィーラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-094": {
    "name_cn": "狂恋の華鎧・ヴィーラ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-095": {
    "name_cn": "七宝石の姫・レ・フィーエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-096": {
    "name_cn": "シュヴァリエ・マグナ",
-   "cost": null,
+   "cost": 3,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・光属性"
   },
   "CP05-097": {
    "name_cn": "魔杖の外科医・ティコ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-098": {
    "name_cn": "魔杖の外科医・ティコ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-100": {
    "name_cn": "天象の風・ペトラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-101": {
    "name_cn": "星跡の巡礼者・ソフィア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-102": {
    "name_cn": "星跡の巡礼者・ソフィア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・水属性"
   },
   "CP05-103": {
    "name_cn": "英雄幻視・トルー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-104": {
    "name_cn": "アフェクション・オース",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・光属性"
   },
   "CP05-105": {
    "name_cn": "天司長の後継・サンダルフォン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-106": {
    "name_cn": "天司長の後継・サンダルフォン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-107": {
    "name_cn": "グラン＆ジータ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-108": {
    "name_cn": "小さき赤き竜・ビィ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-109": {
    "name_cn": "小さき赤き竜・ビィ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・全属性"
   },
   "CP05-110": {
    "name_cn": "蒼の少女・ルリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-111": {
    "name_cn": "蒼天の守護騎士・カタリナ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF01": {
    "name_cn": "魔眼の狩人・ソーン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・光属性"
   },
   "CP05-GBF02": {
    "name_cn": "調和の舞手・ユエル＆ソシエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・火属性・水属性"
   },
   "CP05-GBF03": {
    "name_cn": "風の理・イーウィヤ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-GBF04": {
    "name_cn": "風の理・イーウィヤ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-GBF05": {
    "name_cn": "絢爛の紡ぎ手・コルワ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF06": {
    "name_cn": "絢爛の紡ぎ手・コルワ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF07": {
    "name_cn": "奮励の儁秀・シルヴァ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF08": {
    "name_cn": "虹色の弓使い・クピタン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 0,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF09": {
    "name_cn": "清新なる銃設計士・ククル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF10": {
    "name_cn": "清新なる銃設計士・ククル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF11": {
    "name_cn": "天禀の射手・メーテラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF12": {
    "name_cn": "美粧の乙女・クロエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF13": {
    "name_cn": "天星剣王・シエテ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・風属性"
   },
   "CP05-GBF15": {
    "name_cn": "光の理・ル・オー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・光属性"
   },
   "CP05-GBF16": {
    "name_cn": "光の理・ル・オー",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・光属性"
   },
   "CP05-GBF17": {
    "name_cn": "揺らぎの斬姫・ナルメア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-GBF18": {
    "name_cn": "揺らぎの斬姫・ナルメア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-GBF20": {
    "name_cn": "サムライドリーマー・ミリン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF21": {
    "name_cn": "サムライドリーマー・ミリン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF23": {
    "name_cn": "氷心の覇王・アグロヴァル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF25": {
    "name_cn": "閃耀の双剣・カトル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 4,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・水属性"
   },
   "CP05-GBF26": {
    "name_cn": "水の理・ワムデュス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・水属性"
   },
   "CP05-GBF27": {
    "name_cn": "水の理・ワムデュス",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・水属性"
   },
   "CP05-GBF28": {
    "name_cn": "開闢の錬金術師・カリオストロ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-GBF30": {
    "name_cn": "空慕う帰還者・カシウス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF33": {
    "name_cn": "楽隠居の元国王・フォリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-GBF35": {
    "name_cn": "大いなる調停者・ゾーイ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-GBF38": {
    "name_cn": "どこにでもいるフツーの女の子・メグ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF39": {
    "name_cn": "どこにでもいるフツーの女の子・メグ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF43": {
    "name_cn": "護国真龍・スカーサハ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF44": {
    "name_cn": "メグの親友・まりっぺ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF45": {
    "name_cn": "神狼・シス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 3,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・闇属性"
   },
   "CP05-GBF46": {
    "name_cn": "繊細の魔奏者・ニオ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・風属性"
   },
   "CP05-GBF47": {
    "name_cn": "闇の理・フェディエル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-GBF48": {
    "name_cn": "闇の理・フェディエル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-GBF49": {
    "name_cn": "幽想の少女・フェリ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF50": {
    "name_cn": "幽想の少女・フェリ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF51": {
    "name_cn": "生滅の技巧・ネハン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-GBF54": {
    "name_cn": "冥闇の剛刃・バザラガ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 4,
+   "life": 7,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-GBF55": {
    "name_cn": "開眼者・ウーノ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・水属性"
   },
   "CP05-GBF56": {
    "name_cn": "魔導の申し子・フュンフ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・光属性"
   },
   "CP05-GBF61": {
    "name_cn": "七宝石の姫・レ・フィーエ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 5,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-GBF65": {
    "name_cn": "天象の風・ペトラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-GBF66": {
    "name_cn": "天司長の後継・サンダルフォン",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-GBF67": {
    "name_cn": "天司長の後継・サンダルフォン",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 5,
+   "life": 5,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・光属性"
   },
   "CP05-GBF68": {
    "name_cn": "グラン＆ジータ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-GBF71": {
    "name_cn": "蒼の少女・ルリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-GBF72": {
    "name_cn": "蒼天の守護騎士・カタリナ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-P14": {
    "name_cn": "箒星",
-   "cost": null,
+   "cost": 3,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・風属性"
   },
   "CP05-P15": {
    "name_cn": "揺らぎの斬姫・ナルメア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-P16": {
    "name_cn": "揺らぎの斬姫・ナルメア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・風属性・闇属性"
   },
   "CP05-P18": {
    "name_cn": "ドラゴンナイツ",
-   "cost": null,
+   "cost": 5,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・火属性・水属性・風属性・土属性"
   },
   "CP05-P25": {
    "name_cn": "眠れる輝竜・アーサー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-P26": {
    "name_cn": "眠れる獅子・モルドレッド",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-P28": {
    "name_cn": "信念の蹴撃・ランドル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 2,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・風属性"
   },
   "CP05-P29": {
    "name_cn": "開闢の錬金術師・カリオストロ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-P37": {
    "name_cn": "妄想少女A・ルナール",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-P38": {
    "name_cn": "妄想少女A・ルナール",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-P40": {
    "name_cn": "報恩の技師・アイザック",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-P41": {
    "name_cn": "アルス･グローリア",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・土属性・光属性・闇属性"
   },
   "CP05-P45": {
    "name_cn": "ティアマト・マグナ",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・風属性"
   },
   "CP05-P54": {
    "name_cn": "オンリー･ワン･ウィッシュ",
-   "cost": null,
+   "cost": 2,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・光属性"
   },
   "CP05-P59": {
    "name_cn": "セレスト・マグナ",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・闇属性"
   },
   "CP05-P62": {
    "name_cn": "冥闇の剛刃・バザラガ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 7,
+   "attack": 4,
+   "life": 7,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-P64": {
    "name_cn": "心眼の双葬女・レディ・グレイ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 0,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・闇属性"
   },
   "CP05-P65": {
    "name_cn": "心眼の双葬女・レディ・グレイ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・闇属性"
   },
   "CP05-P67": {
    "name_cn": "エーヴィヒ・カメラート",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・闇属性"
   },
   "CP05-P68": {
    "name_cn": "ストーン・ブレイク",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・闇属性"
   },
   "CP05-P69": {
    "name_cn": "狂恋の華鎧・ヴィーラ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-P72": {
    "name_cn": "シュヴァリエ・マグナ",
-   "cost": null,
+   "cost": 3,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "アミュレット",
+   "type": "グラブル・光属性"
   },
   "CP05-P73": {
    "name_cn": "魔杖の外科医・ティコ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・光属性"
   },
   "CP05-P77": {
    "name_cn": "星跡の巡礼者・ソフィア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 4,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-P78": {
    "name_cn": "星跡の巡礼者・ソフィア",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・水属性"
   },
   "CP05-P79": {
    "name_cn": "英雄幻視・トルー",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 1,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・水属性"
   },
   "CP05-P80": {
    "name_cn": "アフェクション・オース",
-   "cost": null,
+   "cost": 1,
    "attack": null,
    "life": null,
-   "card_type": "",
-   "type": ""
+   "card_type": "スペル",
+   "type": "グラブル・光属性"
   },
   "CP05-P83": {
    "name_cn": "蒼の少女・ルリア",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CP05-SL03": {
    "name_cn": "風の理・イーウィヤ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-SL04": {
    "name_cn": "風の理・イーウィヤ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-SL17": {
    "name_cn": "神狼・シス",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 6,
+   "attack": 3,
+   "life": 2,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・闇属性"
   },
   "CP05-SL19": {
    "name_cn": "闇の理・フェディエル",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 3,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-SL20": {
    "name_cn": "闇の理・フェディエル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-U02": {
    "name_cn": "風の理・イーウィヤ",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 2,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・風属性"
   },
   "CP05-U03": {
    "name_cn": "十天衆の頭目・シエテ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・風属性"
   },
   "CP05-U06": {
    "name_cn": "水の理・ワムデュス",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 2,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・水属性"
   },
   "CP05-U09": {
    "name_cn": "闇の理・フェディエル",
    "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "attack": 4,
+   "life": 4,
+   "card_type": "フォロワー・エボルヴ",
+   "type": "グラブル・六竜・闇属性"
   },
   "CP05-U11": {
    "name_cn": "十天衆を総べし者・グラン＆ジータ",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": ""
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・全属性"
   },
   "CSD01-014": {
    "name_cn": "美丽周日",

@@ -880,7 +880,7 @@
    "file": "by-name-闇.json",
    "firstChar": "闇",
    "count": 7,
-   "chars": 778
+   "chars": 824
   },
   {
    "file": "by-name-奥.json",
@@ -946,7 +946,7 @@
    "file": "by-name-報.json",
    "firstChar": "報",
    "count": 2,
-   "chars": 371
+   "chars": 375
   },
   {
    "file": "by-name-暴.json",
@@ -1036,7 +1036,7 @@
    "file": "by-name-氷.json",
    "firstChar": "氷",
    "count": 2,
-   "chars": 377
+   "chars": 381
   },
   {
    "file": "by-name-冰.json",
@@ -1060,7 +1060,7 @@
    "file": "by-name-不.json",
    "firstChar": "不",
    "count": 56,
-   "chars": 4769
+   "chars": 4771
   },
   {
    "file": "by-name-财.json",
@@ -1114,7 +1114,7 @@
    "file": "by-name-蒼.json",
    "firstChar": "蒼",
    "count": 5,
-   "chars": 612
+   "chars": 622
   },
   {
    "file": "by-name-柴.json",
@@ -1252,7 +1252,7 @@
    "file": "by-name-純.json",
    "firstChar": "純",
    "count": 2,
-   "chars": 363
+   "chars": 375
   },
   {
    "file": "by-name-次.json",
@@ -1318,7 +1318,7 @@
    "file": "by-name-大.json",
    "firstChar": "大",
    "count": 29,
-   "chars": 2455
+   "chars": 2459
   },
   {
    "file": "by-name-待.json",
@@ -1360,7 +1360,7 @@
    "file": "by-name-刀.json",
    "firstChar": "刀",
    "count": 1,
-   "chars": 277
+   "chars": 279
   },
   {
    "file": "by-name-岛.json",
@@ -1438,7 +1438,7 @@
    "file": "by-name-調.json",
    "firstChar": "調",
    "count": 2,
-   "chars": 381
+   "chars": 385
   },
   {
    "file": "by-name-叮.json",
@@ -1630,7 +1630,7 @@
    "file": "by-name-緋.json",
    "firstChar": "緋",
    "count": 3,
-   "chars": 449
+   "chars": 461
   },
   {
    "file": "by-name-废.json",
@@ -1654,7 +1654,7 @@
    "file": "by-name-奮.json",
    "firstChar": "奮",
    "count": 2,
-   "chars": 369
+   "chars": 373
   },
   {
    "file": "by-name-丰.json",
@@ -1684,7 +1684,7 @@
    "file": "by-name-風.json",
    "firstChar": "風",
    "count": 7,
-   "chars": 769
+   "chars": 815
   },
   {
    "file": "by-name-逢.json",
@@ -1864,7 +1864,7 @@
    "file": "by-name-古.json",
    "firstChar": "古",
    "count": 4,
-   "chars": 542
+   "chars": 544
   },
   {
    "file": "by-name-骨.json",
@@ -1876,7 +1876,7 @@
    "file": "by-name-怪.json",
    "firstChar": "怪",
    "count": 1,
-   "chars": 283
+   "chars": 285
   },
   {
    "file": "by-name-观.json",
@@ -1906,7 +1906,7 @@
    "file": "by-name-光.json",
    "firstChar": "光",
    "count": 23,
-   "chars": 2137
+   "chars": 2161
   },
   {
    "file": "by-name-瑰.json",
@@ -2032,7 +2032,7 @@
    "file": "by-name-虹.json",
    "firstChar": "虹",
    "count": 2,
-   "chars": 373
+   "chars": 377
   },
   {
    "file": "by-name-狐.json",
@@ -2056,13 +2056,13 @@
    "file": "by-name-護.json",
    "firstChar": "護",
    "count": 2,
-   "chars": 369
+   "chars": 373
   },
   {
    "file": "by-name-花.json",
    "firstChar": "花",
    "count": 16,
-   "chars": 1488
+   "chars": 1500
   },
   {
    "file": "by-name-华.json",
@@ -2128,7 +2128,7 @@
    "file": "by-name-灰.json",
    "firstChar": "灰",
    "count": 1,
-   "chars": 280
+   "chars": 282
   },
   {
    "file": "by-name-辉.json",
@@ -2320,7 +2320,7 @@
    "file": "by-name-降.json",
    "firstChar": "降",
    "count": 2,
-   "chars": 363
+   "chars": 375
   },
   {
    "file": "by-name-交.json",
@@ -2578,7 +2578,7 @@
    "file": "by-name-開.json",
    "firstChar": "開",
    "count": 6,
-   "chars": 706
+   "chars": 726
   },
   {
    "file": "by-name-凯.json",
@@ -2632,7 +2632,7 @@
    "file": "by-name-空.json",
    "firstChar": "空",
    "count": 19,
-   "chars": 1744
+   "chars": 1748
   },
   {
    "file": "by-name-骷.json",
@@ -2650,7 +2650,7 @@
    "file": "by-name-狂.json",
    "firstChar": "狂",
    "count": 17,
-   "chars": 1617
+   "chars": 1631
   },
   {
    "file": "by-name-傀.json",
@@ -2716,7 +2716,7 @@
    "file": "by-name-楽.json",
    "firstChar": "楽",
    "count": 5,
-   "chars": 612
+   "chars": 616
   },
   {
    "file": "by-name-勒.json",
@@ -3022,7 +3022,7 @@
    "file": "by-name-美.json",
    "firstChar": "美",
    "count": 25,
-   "chars": 2088
+   "chars": 2092
   },
   {
    "file": "by-name-蒙.json",
@@ -3070,7 +3070,7 @@
    "file": "by-name-眠.json",
    "firstChar": "眠",
    "count": 4,
-   "chars": 535
+   "chars": 543
   },
   {
    "file": "by-name-喵.json",
@@ -3100,7 +3100,7 @@
    "file": "by-name-冥.json",
    "firstChar": "冥",
    "count": 13,
-   "chars": 1251
+   "chars": 1257
   },
   {
    "file": "by-name-瞑.json",
@@ -3118,7 +3118,7 @@
    "file": "by-name-魔.json",
    "firstChar": "魔",
    "count": 66,
-   "chars": 5604
+   "chars": 5628
   },
   {
    "file": "by-name-母.json",
@@ -3304,7 +3304,7 @@
    "file": "by-name-七.json",
    "firstChar": "七",
    "count": 4,
-   "chars": 509
+   "chars": 513
   },
   {
    "file": "by-name-栖.json",
@@ -3418,7 +3418,7 @@
    "file": "by-name-清.json",
    "firstChar": "清",
    "count": 17,
-   "chars": 1655
+   "chars": 1679
   },
   {
    "file": "by-name-情.json",
@@ -3622,7 +3622,7 @@
    "file": "by-name-閃.json",
    "firstChar": "閃",
    "count": 2,
-   "chars": 365
+   "chars": 369
   },
   {
    "file": "by-name-烧.json",
@@ -3664,13 +3664,13 @@
    "file": "by-name-神.json",
    "firstChar": "神",
    "count": 60,
-   "chars": 5061
+   "chars": 5079
   },
   {
    "file": "by-name-生.json",
    "firstChar": "生",
    "count": 4,
-   "chars": 517
+   "chars": 521
   },
   {
    "file": "by-name-圣.json",
@@ -3712,7 +3712,7 @@
    "file": "by-name-十.json",
    "firstChar": "十",
    "count": 4,
-   "chars": 529
+   "chars": 533
   },
   {
    "file": "by-name-石.json",
@@ -3844,7 +3844,7 @@
    "file": "by-name-水.json",
    "firstChar": "水",
    "count": 20,
-   "chars": 1796
+   "chars": 1830
   },
   {
    "file": "by-name-瞬.json",
@@ -3976,7 +3976,7 @@
    "file": "by-name-天.json",
    "firstChar": "天",
    "count": 71,
-   "chars": 6073
+   "chars": 6111
   },
   {
    "file": "by-name-殄.json",
@@ -4036,7 +4036,7 @@
    "file": "by-name-土.json",
    "firstChar": "土",
    "count": 2,
-   "chars": 359
+   "chars": 371
   },
   {
    "file": "by-name-歪.json",
@@ -4078,7 +4078,7 @@
    "file": "by-name-妄.json",
    "firstChar": "妄",
    "count": 2,
-   "chars": 367
+   "chars": 379
   },
   {
    "file": "by-name-忘.json",
@@ -4270,7 +4270,7 @@
    "file": "by-name-繊.json",
    "firstChar": "繊",
    "count": 2,
-   "chars": 365
+   "chars": 369
   },
   {
    "file": "by-name-线.json",
@@ -4330,7 +4330,7 @@
    "file": "by-name-小.json",
    "firstChar": "小",
    "count": 16,
-   "chars": 1512
+   "chars": 1524
   },
   {
    "file": "by-name-咲.json",
@@ -4360,7 +4360,7 @@
    "file": "by-name-心.json",
    "firstChar": "心",
    "count": 6,
-   "chars": 710
+   "chars": 734
   },
   {
    "file": "by-name-新.json",
@@ -4372,13 +4372,13 @@
    "file": "by-name-信.json",
    "firstChar": "信",
    "count": 4,
-   "chars": 520
+   "chars": 524
   },
   {
    "file": "by-name-星.json",
    "firstChar": "星",
    "count": 8,
-   "chars": 848
+   "chars": 872
   },
   {
    "file": "by-name-猩.json",
@@ -4462,7 +4462,7 @@
    "file": "by-name-絢.json",
    "firstChar": "絢",
    "count": 4,
-   "chars": 533
+   "chars": 557
   },
   {
    "file": "by-name-学.json",
@@ -4522,7 +4522,7 @@
    "file": "by-name-炎.json",
    "firstChar": "炎",
    "count": 12,
-   "chars": 1160
+   "chars": 1174
   },
   {
    "file": "by-name-盐.json",
@@ -4564,7 +4564,7 @@
    "file": "by-name-揺.json",
    "firstChar": "揺",
    "count": 6,
-   "chars": 703
+   "chars": 739
   },
   {
    "file": "by-name-耶.json",
@@ -4702,7 +4702,7 @@
    "file": "by-name-英.json",
    "firstChar": "英",
    "count": 8,
-   "chars": 862
+   "chars": 866
   },
   {
    "file": "by-name-樱.json",
@@ -4762,7 +4762,7 @@
    "file": "by-name-幽.json",
    "firstChar": "幽",
    "count": 9,
-   "chars": 959
+   "chars": 983
   },
   {
    "file": "by-name-悠.json",
@@ -5062,7 +5062,7 @@
    "file": "by-name-真.json",
    "firstChar": "真",
    "count": 49,
-   "chars": 4160
+   "chars": 4162
   },
   {
    "file": "by-name-震.json",
@@ -5206,7 +5206,7 @@
    "file": "by-name-灼.json",
    "firstChar": "灼",
    "count": 10,
-   "chars": 1054
+   "chars": 1066
   },
   {
    "file": "by-name-卓.json",
@@ -5224,7 +5224,7 @@
    "file": "by-name-自.json",
    "firstChar": "自",
    "count": 16,
-   "chars": 1528
+   "chars": 1530
   },
   {
    "file": "by-name-宗.json",
@@ -5362,31 +5362,31 @@
    "file": "by-name-カ.json",
    "firstChar": "カ",
    "count": 3,
-   "chars": 445
+   "chars": 447
   },
   {
    "file": "by-name-グ.json",
    "firstChar": "グ",
    "count": 5,
-   "chars": 590
+   "chars": 594
   },
   {
    "file": "by-name-コ.json",
    "firstChar": "コ",
    "count": 1,
-   "chars": 283
+   "chars": 286
   },
   {
    "file": "by-name-サ.json",
    "firstChar": "サ",
    "count": 4,
-   "chars": 551
+   "chars": 575
   },
   {
    "file": "by-name-シ.json",
    "firstChar": "シ",
    "count": 2,
-   "chars": 367
+   "chars": 373
   },
   {
    "file": "by-name-ス.json",
@@ -5398,7 +5398,7 @@
    "file": "by-name-セ.json",
    "firstChar": "セ",
    "count": 2,
-   "chars": 359
+   "chars": 365
   },
   {
    "file": "by-name-ゼ.json",
@@ -5422,13 +5422,13 @@
    "file": "by-name-テ.json",
    "firstChar": "テ",
    "count": 2,
-   "chars": 363
+   "chars": 369
   },
   {
    "file": "by-name-ど.json",
    "firstChar": "ど",
    "count": 4,
-   "chars": 575
+   "chars": 599
   },
   {
    "file": "by-name-ド.json",
@@ -5446,7 +5446,7 @@
    "file": "by-name-フ.json",
    "firstChar": "フ",
    "count": 1,
-   "chars": 304
+   "chars": 306
   },
   {
    "file": "by-name-マ.json",
@@ -5464,7 +5464,7 @@
    "file": "by-name-メ.json",
    "firstChar": "メ",
    "count": 3,
-   "chars": 452
+   "chars": 456
   },
   {
    "file": "by-name-ル.json",

@@ -1195,16 +1195,17 @@
   "CP05-001": {
    "name_jp": "魔眼の狩人・ソーン",
    "name_cn": "",
-   "cost": null,
-   "attack": null,
-   "life": null,
-   "card_type": "",
-   "type": "",
-   "rare": "",
-   "craft": "",
+   "cost": 5,
+   "attack": 3,
+   "life": 3,
+   "card_type": "フォロワー",
+   "type": "グラブル・十天衆・光属性",
+   "rare": "LG",
+   "craft": "エルフ",
    "desc_cn": "",
-   "matched_by": "none",
-   "api_card_no": ""
+   "desc_jp": "これをプレイする際、場の元のコスト5のグラブル・フォロワー2体を\n：コストを-5する。\n【最終上限解放可能】\nこれが上限解放したとき、2枚引く。自分の手札1枚を捨てる。\nこれが最終上限解放したとき、これは【疾走】を持つ。\nどんなに小さな痕跡も私の魔眼は見逃さない。\n私は天性の狩人……逃げ場なんて与えないわ。",
+   "matched_by": "official",
+   "api_card_no": "CP05-001"
   }
  }
 }
