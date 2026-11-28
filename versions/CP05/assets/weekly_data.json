@@ -8,12 +8,12 @@
     "top1_count": 14,
     "class_distribution": [
       {
-        "name": "🎮 グランブルーファンタジー",
+        "name": "🐲 碧蓝幻想",
         "value": 46,
         "itemStyle": {
-          "color": "#888"
+          "color": "#3f8fd1"
         },
-        "image": "../../assets/cards/CP05-076.jpg"
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "🐉 龙族",
@@ -29,7 +29,7 @@
         "itemStyle": {
           "color": "#3498db"
         },
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
         "name": "⛪ 主教",
@@ -74,28 +74,28 @@
     ],
     "type_distribution": [
       {
-        "name": "グランブルーファンタジー｜风gbf",
+        "name": "碧蓝幻想｜风gbf",
         "value": 12,
-        "link": "decktypes/decktype-f7c4e44b698c.html",
-        "image": "../../assets/cards/CP05-SL03.jpg"
+        "link": "decktypes/decktype-94d56da6fdf5.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜暗gbf",
+        "name": "碧蓝幻想｜暗gbf",
         "value": 10,
-        "link": "decktypes/decktype-bffa356d717c.html",
-        "image": "../../assets/cards/CP05-076.jpg"
+        "link": "decktypes/decktype-99ca9d5f3c13.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜水gbf",
+        "name": "碧蓝幻想｜水gbf",
         "value": 10,
-        "link": "decktypes/decktype-0e3649ed6194.html",
-        "image": "../../assets/cards/CP05-039.jpg"
+        "link": "decktypes/decktype-acdd830042ac.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜光gbf",
+        "name": "碧蓝幻想｜光gbf",
         "value": 10,
-        "link": "decktypes/decktype-d951cb67c710.html",
-        "image": "../../assets/cards/CP05-001.jpg"
+        "link": "decktypes/decktype-c8c31a762ed2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "龙族｜五妹龙",
@@ -107,13 +107,13 @@
         "name": "皇家护卫｜雷维翁皇",
         "value": 8,
         "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜土gbf",
+        "name": "碧蓝幻想｜土gbf",
         "value": 3,
-        "link": "decktypes/decktype-f1d313896d0d.html",
-        "image": "../../assets/cards/CP05-091.jpg"
+        "link": "decktypes/decktype-313c6e6a9522.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "主教｜守护教",
@@ -206,16 +206,16 @@
         "image": "../../assets/cards/BP18-100.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜火gbf",
+        "name": "碧蓝幻想｜火gbf",
         "value": 1,
-        "link": "decktypes/decktype-922134404e42.html",
-        "image": "../../assets/cards/CP05-002.jpg"
+        "link": "decktypes/decktype-a5b6cb81a5c2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "主教｜水gbf",
         "value": 1,
         "link": "decktypes/decktype-9f7b929bf9b4.html",
-        "image": "../../assets/cards/CP05-089.jpg"
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "龙族｜大哥龙",
@@ -226,36 +226,36 @@
     ],
     "top_types": [
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "风gbf",
         "count": 12,
         "best": "1/23",
-        "link": "decktypes/decktype-f7c4e44b698c.html",
-        "image": "../../assets/cards/CP05-SL03.jpg"
+        "link": "decktypes/decktype-94d56da6fdf5.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "暗gbf",
         "count": 10,
         "best": "1/46",
-        "link": "decktypes/decktype-bffa356d717c.html",
-        "image": "../../assets/cards/CP05-076.jpg"
+        "link": "decktypes/decktype-99ca9d5f3c13.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "水gbf",
         "count": 10,
         "best": "2/46",
-        "link": "decktypes/decktype-0e3649ed6194.html",
-        "image": "../../assets/cards/CP05-039.jpg"
+        "link": "decktypes/decktype-acdd830042ac.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "光gbf",
         "count": 10,
         "best": "2/22",
-        "link": "decktypes/decktype-d951cb67c710.html",
-        "image": "../../assets/cards/CP05-001.jpg"
+        "link": "decktypes/decktype-c8c31a762ed2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "class": "龙族",
@@ -271,15 +271,15 @@
         "count": 8,
         "best": "1/22",
         "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "土gbf",
         "count": 3,
         "best": "5/18",
-        "link": "decktypes/decktype-f1d313896d0d.html",
-        "image": "../../assets/cards/CP05-091.jpg"
+        "link": "decktypes/decktype-313c6e6a9522.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "class": "主教",
@@ -322,7 +322,7 @@
         "image": "../../assets/cards/BP14-072.jpg"
       }
     ],
-    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，グランブルーファンタジー46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以グランブルーファンタジー7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，グランブルーファンタジー「风gbf」12套（14.3%，最好1/23）、グランブルーファンタジー「暗gbf」10套（11.9%，最好1/46）、グランブルーファンタジー「水gbf」10套（11.9%，最好2/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是グランブルーファンタジー「暗gbf」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "截至本次周一早上9点的最后一次数据统计，总数据共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，碧蓝幻想46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以碧蓝幻想7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，碧蓝幻想「风gbf」12套（14.3%，最好1/23）、碧蓝幻想「暗gbf」10套（11.9%，最好1/46）、碧蓝幻想「水gbf」10套（11.9%，最好2/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是碧蓝幻想「暗gbf」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   },
   {
     "key": "2026/11/27",
@@ -333,12 +333,12 @@
     "top1_count": 14,
     "class_distribution": [
       {
-        "name": "🎮 グランブルーファンタジー",
+        "name": "🐲 碧蓝幻想",
         "value": 46,
         "itemStyle": {
-          "color": "#888"
+          "color": "#3f8fd1"
         },
-        "image": "../../assets/cards/CP05-076.jpg"
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "🐉 龙族",
@@ -354,7 +354,7 @@
         "itemStyle": {
           "color": "#3498db"
         },
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
         "name": "⛪ 主教",
@@ -399,28 +399,28 @@
     ],
     "type_distribution": [
       {
-        "name": "グランブルーファンタジー｜风gbf",
+        "name": "碧蓝幻想｜风gbf",
         "value": 12,
-        "link": "decktypes/decktype-f7c4e44b698c.html",
-        "image": "../../assets/cards/CP05-SL03.jpg"
+        "link": "decktypes/decktype-94d56da6fdf5.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜暗gbf",
+        "name": "碧蓝幻想｜暗gbf",
         "value": 10,
-        "link": "decktypes/decktype-bffa356d717c.html",
-        "image": "../../assets/cards/CP05-076.jpg"
+        "link": "decktypes/decktype-99ca9d5f3c13.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜水gbf",
+        "name": "碧蓝幻想｜水gbf",
         "value": 10,
-        "link": "decktypes/decktype-0e3649ed6194.html",
-        "image": "../../assets/cards/CP05-039.jpg"
+        "link": "decktypes/decktype-acdd830042ac.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜光gbf",
+        "name": "碧蓝幻想｜光gbf",
         "value": 10,
-        "link": "decktypes/decktype-d951cb67c710.html",
-        "image": "../../assets/cards/CP05-001.jpg"
+        "link": "decktypes/decktype-c8c31a762ed2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "龙族｜五妹龙",
@@ -432,13 +432,13 @@
         "name": "皇家护卫｜雷维翁皇",
         "value": 8,
         "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜土gbf",
+        "name": "碧蓝幻想｜土gbf",
         "value": 3,
-        "link": "decktypes/decktype-f1d313896d0d.html",
-        "image": "../../assets/cards/CP05-091.jpg"
+        "link": "decktypes/decktype-313c6e6a9522.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "主教｜守护教",
@@ -531,16 +531,16 @@
         "image": "../../assets/cards/BP18-100.jpg"
       },
       {
-        "name": "グランブルーファンタジー｜火gbf",
+        "name": "碧蓝幻想｜火gbf",
         "value": 1,
-        "link": "decktypes/decktype-922134404e42.html",
-        "image": "../../assets/cards/CP05-002.jpg"
+        "link": "decktypes/decktype-a5b6cb81a5c2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "主教｜水gbf",
         "value": 1,
         "link": "decktypes/decktype-9f7b929bf9b4.html",
-        "image": "../../assets/cards/CP05-089.jpg"
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "name": "龙族｜大哥龙",
@@ -551,36 +551,36 @@
     ],
     "top_types": [
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "风gbf",
         "count": 12,
         "best": "1/23",
-        "link": "decktypes/decktype-f7c4e44b698c.html",
-        "image": "../../assets/cards/CP05-SL03.jpg"
+        "link": "decktypes/decktype-94d56da6fdf5.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "暗gbf",
         "count": 10,
         "best": "1/46",
-        "link": "decktypes/decktype-bffa356d717c.html",
-        "image": "../../assets/cards/CP05-076.jpg"
+        "link": "decktypes/decktype-99ca9d5f3c13.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "水gbf",
         "count": 10,
         "best": "2/46",
-        "link": "decktypes/decktype-0e3649ed6194.html",
-        "image": "../../assets/cards/CP05-039.jpg"
+        "link": "decktypes/decktype-acdd830042ac.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "光gbf",
         "count": 10,
         "best": "2/22",
-        "link": "decktypes/decktype-d951cb67c710.html",
-        "image": "../../assets/cards/CP05-001.jpg"
+        "link": "decktypes/decktype-c8c31a762ed2.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "class": "龙族",
@@ -596,15 +596,15 @@
         "count": 8,
         "best": "1/22",
         "link": "decktypes/decktype-593b0d7a6099.html",
-        "image": "../../assets/cards/BP16-026.jpg"
+        "image": "../../assets/cards/BP21-SL08.jpg"
       },
       {
-        "class": "グランブルーファンタジー",
+        "class": "碧蓝幻想",
         "category": "土gbf",
         "count": 3,
         "best": "5/18",
-        "link": "decktypes/decktype-f1d313896d0d.html",
-        "image": "../../assets/cards/CP05-091.jpg"
+        "link": "decktypes/decktype-313c6e6a9522.html",
+        "image": "../../assets/cards/PR-643.jpg"
       },
       {
         "class": "主教",
@@ -647,6 +647,6 @@
         "image": "../../assets/cards/BP14-072.jpg"
       }
     ],
-    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/27-2026/12/03共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，グランブルーファンタジー46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以グランブルーファンタジー7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，グランブルーファンタジー「风gbf」12套（14.3%，最好1/23）、グランブルーファンタジー「暗gbf」10套（11.9%，最好1/46）、グランブルーファンタジー「水gbf」10套（11.9%，最好2/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是グランブルーファンタジー「暗gbf」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
+    "scope_summary": "本周在周一早上9点完成最后一次数据统计后，2026/11/27-2026/12/03共收录12场有效赛事、84套有排名记录的卡组，其中上位卡组84套、冠军卡组14套。从上位职业分布看，碧蓝幻想46套（54.8%）、龙族10套（11.9%）构成本范围的主要出场面，冠军侧则以碧蓝幻想7套（50.0%）、皇家护卫3套（21.4%）表现最突出。卡组类型方面，碧蓝幻想「风gbf」12套（14.3%，最好1/23）、碧蓝幻想「暗gbf」10套（11.9%，最好1/46）、碧蓝幻想「水gbf」10套（11.9%，最好2/46）位居前列，说明环境核心集中在少数成熟体系。单套成绩最佳的是碧蓝幻想「暗gbf」，由タイ使用，成绩为1/46，成绩系数0.0217。整体来看，前10%成绩卡组共有35套，占全部记录41.7%；后续应继续跟踪头部卡组占比变化，以及中小众类型是否能稳定进入高顺位。"
   }
 ]
