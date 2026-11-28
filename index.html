@@ -68,6 +68,7 @@
           <span class="update-info" id="last-updated">上次更新时间：读取中…</span>
         </div>
         <div class="version-actions">
+          <button class="version-btn" type="button" data-version="CP05" data-src="versions/CP05/shadowverse_evolve_decks.html" data-exists="1">CP05</button>
           <button class="version-btn" type="button" data-version="BP22" data-src="versions/BP22/shadowverse_evolve_decks.html" data-exists="1">BP22</button>
           <button class="version-btn" type="button" data-version="BP21" data-src="versions/BP21/shadowverse_evolve_decks.html" data-exists="1">BP21</button>
           <button class="version-btn" type="button" data-version="BP20" data-src="versions/BP20/shadowverse_evolve_decks.html" data-exists="1">BP20</button>
@@ -78,10 +79,10 @@
                其余几个是聚合页，用 target="report-frame" 载入下方 iframe，
                这样上方版本栏始终可见，进去后照样能换版本。 -->
           <!-- 主页面：从任何子页面（梯度表 / 胜率矩阵 / 聚合页）一键回到当前版本的卡组报告 -->
-          <a class="open-link" id="home-link" href="versions/BP22/shadowverse_evolve_decks.html" target="report-frame">🏠 主页面</a>
-          <a class="open-link" id="tier-link" href="versions/BP22/tier.html" target="report-frame">📊 卡组梯度表</a>
-          <a class="open-link" id="trend-link" href="versions/BP22/trend.html" target="report-frame">📈 每周趋势</a>
-          <a class="open-link" id="matchup-link" href="matchup.html?version=bp22" target="report-frame">对局胜率矩阵</a>
+          <a class="open-link" id="home-link" href="versions/CP05/shadowverse_evolve_decks.html" target="report-frame">🏠 主页面</a>
+          <a class="open-link" id="tier-link" href="versions/CP05/tier.html" target="report-frame">📊 卡组梯度表</a>
+          <a class="open-link" id="trend-link" href="versions/CP05/trend.html" target="report-frame">📈 每周趋势</a>
+          <a class="open-link" id="matchup-link" href="matchup.html?version=cp05" target="report-frame">对局胜率矩阵</a>
           <a class="open-link" href="major_tournaments.html" target="report-frame">大赛卡组统计</a>
           <a class="open-link" href="crossover.html" target="report-frame">双职业统计</a>
           <a class="open-link" href="rules.html" target="report-frame">综合规则说明书</a>
@@ -97,16 +98,23 @@
       <div class="empty-text" id="empty-state-text"></div>
       <a class="empty-link" href="#" id="empty-state-latest">查看最新版本</a>
     </div>
-    <iframe id="report-frame" name="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/BP22/shadowverse_evolve_decks.html"></iframe>
+    <iframe id="report-frame" name="report-frame" class="report-frame" title="Shadowverse EVOLVE 版本统计报告" src="versions/CP05/shadowverse_evolve_decks.html"></iframe>
   </div>
   <script>
     (function() {
       var versions = {
+        CP05: {
+          src: 'versions/CP05/shadowverse_evolve_decks.html',
+          text: '当前版本：CP05｜时间范围：2026年11月27日起（含11月27日）',
+          start: '2026-11-27T00:00:00+09:00',
+          end: null,
+          exists: true
+        },
         BP22: {
           src: 'versions/BP22/shadowverse_evolve_decks.html',
-          text: '当前版本：BP22｜时间范围：2026年10月2日起（含10月2日）',
+          text: '当前版本：BP22｜时间范围：2026年10月2日-2026年11月26日（含首尾日期）',
           start: '2026-10-02T00:00:00+09:00',
-          end: null,
+          end: '2026-11-27T00:00:00+09:00',
           exists: true
         },
         BP21: {
@@ -214,7 +222,7 @@
         if (hasData(fallback)) return fallback;
         var keys = Object.keys(versions);
         for (var i = 0; i < keys.length; i++) if (hasData(keys[i])) return keys[i];
-        return byDate || fallback || 'BP22';
+        return byDate || fallback || 'CP05';
       }
 
       function formatUpdatedAt(value) {
@@ -271,7 +279,7 @@
       }
 
       function setVersion(version) {
-        var info = versions[version] || versions['BP22'];
+        var info = versions[version] || versions['CP05'];
         buttons.forEach(function(button) {
           button.classList.toggle('active', button.dataset.version === version);
         });
