@@ -1,6 +1,6 @@
 {
  "_comment": "卡牌精简索引（无效果文本），用于快速查找卡号；效果文本见 all_cards.json 或 chunk-*.json",
- "count": 4272,
+ "count": 4518,
  "cards": {
   "BP01-002": {
    "name_cn": "远古精灵",
@@ -2450,6 +2450,14 @@
    "card_type": "FollowerEvo",
    "type": "絶傑・狩人"
   },
+  "BP05-007": {
+   "name_cn": "妖精的奔流",
+   "cost": 1,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "妖精"
+  },
   "BP05-008": {
    "name_cn": "不弑的信徒",
    "cost": 2,
@@ -3010,6 +3018,14 @@
    "card_type": "Spell",
    "type": "絶傑"
   },
+  "BP05-116": {
+   "name_cn": "钢铁破坏者",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "傭兵・超克"
+  },
   "BP05-P01": {
    "name_cn": "不弑的使徒",
    "cost": 3,
@@ -3465,6 +3481,14 @@
    "life": 2,
    "card_type": "Follower",
    "type": "エルフ族・精霊"
+  },
+  "BP06-004": {
+   "name_cn": "植蔓精灵",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "エルフ族"
   },
   "BP06-007": {
    "name_cn": "妖精龙",
@@ -4874,6 +4898,22 @@
    "card_type": "Spell",
    "type": "機械・ゴーレム"
   },
+  "BP07-P12": {
+   "name_cn": "疾速机兵",
+   "cost": 3,
+   "attack": 3,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "機械・ゴーレム"
+  },
+  "BP07-P13": {
+   "name_cn": "疾速机兵",
+   "cost": -1,
+   "attack": 4,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "機械・ゴーレム"
+  },
   "BP07-P15": {
    "name_cn": "睿智之核",
    "cost": 1,
@@ -5185,6 +5225,14 @@
    "life": 4,
    "card_type": "FollowerEvo",
    "type": "人形・キラー"
+  },
+  "BP08-008": {
+   "name_cn": "读心少女·米榭儿",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "精霊"
   },
   "BP08-009": {
    "name_cn": "读心少女·米榭儿",
@@ -7002,6 +7050,14 @@
    "card_type": "Follower",
    "type": "植物族・獣"
   },
+  "BP10-016": {
+   "name_cn": "花绽弓箭手",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "エルフ族・狩人・植物族"
+  },
   "BP10-017": {
    "name_cn": "森林之狼",
    "cost": 7,
@@ -7522,6 +7578,14 @@
    "card_type": "Spell",
    "type": "アルカナ・魔法使い・光輝"
   },
+  "BP10-P20": {
+   "name_cn": "巨大的怨念",
+   "cost": 4,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "死者"
+  },
   "BP10-P26": {
    "name_cn": "单翼的反叛者",
    "cost": -1,
@@ -7961,6 +8025,14 @@
    "life": 2,
    "card_type": "Follower",
    "type": "荒野・魔法使い"
+  },
+  "BP11-051": {
+   "name_cn": "烈火爆破",
+   "cost": 3,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "魔法使い"
   },
   "BP11-052": {
    "name_cn": "烈霸工匠·蕾吉",
@@ -10226,6 +10298,14 @@
    "card_type": "Follower",
    "type": "狂信・キラー"
   },
+  "BP13-096": {
+   "name_cn": "非法正义·帕茵",
+   "cost": -1,
+   "attack": 2,
+   "life": 4,
+   "card_type": "FollowerEvo",
+   "type": "狂信・キラー"
+  },
   "BP13-098": {
    "name_cn": "神爱的一击",
    "cost": 2,
@@ -11409,6 +11489,22 @@
    "life": -1,
    "card_type": "Amulet",
    "type": "宴楽・機械・超克・マグナ"
+  },
+  "BP14-112": {
+   "name_cn": "机动枪击手",
+   "cost": 3,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "傭兵・超克"
+  },
+  "BP14-113": {
+   "name_cn": "机动枪击手",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "傭兵・超克"
   },
   "BP14-115": {
    "name_cn": "造访乐园",
@@ -21042,6 +21138,14 @@
    "card_type": "Follower",
    "type": "魔法使い・学院・プリンセス・キラー"
   },
+  "BP21-PR17": {
+   "name_cn": "焦熱の竜翼・ドラーク",
+   "cost": 4,
+   "attack": 4,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "荒野・ドラゴニュート・武闘竜人"
+  },
   "BP21-PR18": {
    "name_cn": "憧れの飛躍・イツルギ",
    "cost": 2,
@@ -21626,6 +21730,14 @@
    "card_type": "Follower",
    "type": "魔法使い"
   },
+  "BP22-049": {
+   "name_cn": "暗狱使者·贾丝珀",
+   "cost": 3,
+   "attack": 1,
+   "life": 5,
+   "card_type": "Follower",
+   "type": "超克"
+  },
   "BP22-050": {
    "name_cn": "剑刃魔法师",
    "cost": 6,
@@ -21736,6 +21848,14 @@
    "attack": -1,
    "life": -1,
    "card_type": "Spell",
+   "type": "竜族"
+  },
+  "BP22-073": {
+   "name_cn": "龙之峡谷",
+   "cost": 8,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Amulet",
    "type": "竜族"
   },
   "BP22-074": {
@@ -22058,6 +22178,14 @@
    "card_type": "Follower",
    "type": "竜族"
   },
+  "BP22-P33": {
+   "name_cn": "红炎龙爪·艾琪卡",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ドラゴニュート"
+  },
   "BP22-P34": {
    "name_cn": "珊瑚礁精灵",
    "cost": 3,
@@ -22186,6 +22314,14 @@
    "card_type": "Follower",
    "type": "ゴブリン"
   },
+  "BP22-R04": {
+   "name_cn": "乐园的开辟·武祇",
+   "cost": 4,
+   "attack": 5,
+   "life": 6,
+   "card_type": "FollowerAdv",
+   "type": "宴楽・指揮官"
+  },
   "BP22-R07": {
    "name_cn": "天威的龙巫女",
    "cost": 1,
@@ -22265,6 +22401,14 @@
    "life": 4,
    "card_type": "Follower",
    "type": "妖精"
+  },
+  "BP22-SL02": {
+   "name_cn": "死噬精灵",
+   "cost": 3,
+   "attack": 1,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "エルフ族・キラー"
   },
   "BP22-SL03": {
    "name_cn": "恒久的光辉·艾琳",
@@ -22362,6 +22506,14 @@
    "card_type": "FollowerEvo",
    "type": "竜族"
   },
+  "BP22-SL16": {
+   "name_cn": "暴戾龙人",
+   "cost": 4,
+   "attack": 4,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "ドラゴニュート"
+  },
   "BP22-SL17": {
    "name_cn": "海洋之星·吉赛儿",
    "cost": 6,
@@ -22441,6 +22593,14 @@
    "life": 3,
    "card_type": "Follower",
    "type": "ゴブリン"
+  },
+  "BP22-SL27": {
+   "name_cn": "安稳的降临",
+   "cost": 3,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "超克"
   },
   "BP22-SL28": {
    "name_cn": "[全力疾驰]小栗帽",
@@ -23369,6 +23529,14 @@
    "life": -1,
    "card_type": "Spell",
    "type": "デレマス・パッション"
+  },
+  "CP02-044": {
+   "name_cn": "宫本芙蕾德莉卡",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "デレマス・キュート"
   },
   "CP02-045": {
    "name_cn": "早熟小恶魔",
@@ -24522,6 +24690,14 @@
    "card_type": "Follower",
    "type": "ヴァンガード・オラクルシンクタンク"
   },
+  "CP03-P84": {
+   "name_cn": "菱形魔法师",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "ヴァンガード・オラクルシンクタンク"
+  },
   "CP03-P85": {
    "name_cn": "战之巫女 湍津姬",
    "cost": 2,
@@ -25586,6 +25762,14 @@
    "card_type": "Follower",
    "type": "プリコネ・アルターメイデン"
   },
+  "CP04-P77": {
+   "name_cn": "美里",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "プリコネ・フォレスティエ"
+  },
   "CP04-P78": {
    "name_cn": "捕捉线绳",
    "cost": 2,
@@ -26049,6 +26233,1526 @@
    "life": 4,
    "card_type": "Follower",
    "type": "プリコネ・〈ジオ・テオゴニア〉"
+  },
+  "CP05-001": {
+   "name_cn": "魔眼の狩人・ソーン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-002": {
+   "name_cn": "調和の舞手・ユエル＆ソシエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-003": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-004": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-005": {
+   "name_cn": "絢爛の紡ぎ手・コルワ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-006": {
+   "name_cn": "絢爛の紡ぎ手・コルワ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-007": {
+   "name_cn": "奮励の儁秀・シルヴァ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-008": {
+   "name_cn": "虹色の弓使い・クピタン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-009": {
+   "name_cn": "清新なる銃設計士・ククル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-010": {
+   "name_cn": "清新なる銃設計士・ククル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-011": {
+   "name_cn": "天禀の射手・メーテラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-012": {
+   "name_cn": "美粧の乙女・クロエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-013": {
+   "name_cn": "緋焔の踊り子・アンスリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-014": {
+   "name_cn": "緋焔の踊り子・アンスリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-015": {
+   "name_cn": "フォレストレンジャー・ウェルダー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-017": {
+   "name_cn": "カワイイ花マル・マナマル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-018": {
+   "name_cn": "箒星",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-019": {
+   "name_cn": "天星剣王・シエテ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-020": {
+   "name_cn": "刀神・オクトー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-021": {
+   "name_cn": "光の理・ル・オー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-022": {
+   "name_cn": "光の理・ル・オー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-023": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-024": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-025": {
+   "name_cn": "真紅の穿光・ゼタ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-026": {
+   "name_cn": "ドラゴンナイツ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-027": {
+   "name_cn": "サムライドリーマー・ミリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-028": {
+   "name_cn": "サムライドリーマー・ミリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-029": {
+   "name_cn": "不滅の群青・ベアトリクス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-030": {
+   "name_cn": "氷心の覇王・アグロヴァル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-031": {
+   "name_cn": "花開く筋肉・フィオリト",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-032": {
+   "name_cn": "花開く筋肉・フィオリト",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-033": {
+   "name_cn": "眠れる輝竜・アーサー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-034": {
+   "name_cn": "眠れる獅子・モルドレッド",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-036": {
+   "name_cn": "信念の蹴撃・ランドル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-037": {
+   "name_cn": "魔弾の射手・エッセル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-038": {
+   "name_cn": "閃耀の双剣・カトル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-039": {
+   "name_cn": "水の理・ワムデュス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-040": {
+   "name_cn": "水の理・ワムデュス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-041": {
+   "name_cn": "開闢の錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-042": {
+   "name_cn": "開闢の錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-043": {
+   "name_cn": "空慕う帰還者・カシウス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-044": {
+   "name_cn": "コロッサス・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-045": {
+   "name_cn": "神託の妖童・アルルメイヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-046": {
+   "name_cn": "神託の妖童・アルルメイヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-047": {
+   "name_cn": "楽隠居の元国王・フォリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-048": {
+   "name_cn": "アルケミック・フレア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-051": {
+   "name_cn": "炎獄の葬送者・エルモート",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-052": {
+   "name_cn": "報恩の技師・アイザック",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-053": {
+   "name_cn": "アルス･グローリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-054": {
+   "name_cn": "怪力乱神・サラーサ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-055": {
+   "name_cn": "大いなる調停者・ゾーイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-056": {
+   "name_cn": "炎の理・ウィルナス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-057": {
+   "name_cn": "炎の理・ウィルナス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-058": {
+   "name_cn": "どこにでもいるフツーの女の子・メグ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-059": {
+   "name_cn": "どこにでもいるフツーの女の子・メグ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-060": {
+   "name_cn": "天穿の銃槍騎・ラスティナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-061": {
+   "name_cn": "ティアマト・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-062": {
+   "name_cn": "純朴の鋼体・ムゲン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-063": {
+   "name_cn": "純朴の鋼体・ムゲン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-064": {
+   "name_cn": "護国真龍・スカーサハ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-065": {
+   "name_cn": "メグの親友・まりっぺ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-066": {
+   "name_cn": "灼脚の麗姫・アリーザ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-067": {
+   "name_cn": "灼脚の麗姫・アリーザ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-068": {
+   "name_cn": "古今独歩の大拳豪・ガンダゴウザ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-069": {
+   "name_cn": "灰白の豹・アイル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-070": {
+   "name_cn": "オンリー･ワン･ウィッシュ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-072": {
+   "name_cn": "神狼・シス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-073": {
+   "name_cn": "繊細の魔奏者・ニオ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-074": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-075": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-076": {
+   "name_cn": "幽想の少女・フェリ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-077": {
+   "name_cn": "幽想の少女・フェリ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-078": {
+   "name_cn": "生滅の技巧・ネハン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-079": {
+   "name_cn": "セレスト・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-080": {
+   "name_cn": "降魔の操者・ダヌア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-081": {
+   "name_cn": "降魔の操者・ダヌア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-082": {
+   "name_cn": "冥闇の剛刃・バザラガ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-084": {
+   "name_cn": "心眼の双葬女・レディ・グレイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-085": {
+   "name_cn": "心眼の双葬女・レディ・グレイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-086": {
+   "name_cn": "自由を駆ける漢・スカル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-087": {
+   "name_cn": "エーヴィヒ・カメラート",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-088": {
+   "name_cn": "ストーン・ブレイク",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-089": {
+   "name_cn": "開眼者・ウーノ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-090": {
+   "name_cn": "魔導の申し子・フュンフ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-091": {
+   "name_cn": "土の理・ガレヲン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-092": {
+   "name_cn": "土の理・ガレヲン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-093": {
+   "name_cn": "狂恋の華鎧・ヴィーラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-094": {
+   "name_cn": "狂恋の華鎧・ヴィーラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-095": {
+   "name_cn": "七宝石の姫・レ・フィーエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-096": {
+   "name_cn": "シュヴァリエ・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-097": {
+   "name_cn": "魔杖の外科医・ティコ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-098": {
+   "name_cn": "魔杖の外科医・ティコ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-100": {
+   "name_cn": "天象の風・ペトラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-101": {
+   "name_cn": "星跡の巡礼者・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-102": {
+   "name_cn": "星跡の巡礼者・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-103": {
+   "name_cn": "英雄幻視・トルー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-104": {
+   "name_cn": "アフェクション・オース",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-105": {
+   "name_cn": "天司長の後継・サンダルフォン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-106": {
+   "name_cn": "天司長の後継・サンダルフォン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-107": {
+   "name_cn": "グラン＆ジータ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-108": {
+   "name_cn": "小さき赤き竜・ビィ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-109": {
+   "name_cn": "小さき赤き竜・ビィ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-110": {
+   "name_cn": "蒼の少女・ルリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-111": {
+   "name_cn": "蒼天の守護騎士・カタリナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF01": {
+   "name_cn": "魔眼の狩人・ソーン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF02": {
+   "name_cn": "調和の舞手・ユエル＆ソシエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF03": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF04": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF05": {
+   "name_cn": "絢爛の紡ぎ手・コルワ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF06": {
+   "name_cn": "絢爛の紡ぎ手・コルワ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF07": {
+   "name_cn": "奮励の儁秀・シルヴァ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF08": {
+   "name_cn": "虹色の弓使い・クピタン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF09": {
+   "name_cn": "清新なる銃設計士・ククル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF10": {
+   "name_cn": "清新なる銃設計士・ククル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF11": {
+   "name_cn": "天禀の射手・メーテラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF12": {
+   "name_cn": "美粧の乙女・クロエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF13": {
+   "name_cn": "天星剣王・シエテ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF15": {
+   "name_cn": "光の理・ル・オー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF16": {
+   "name_cn": "光の理・ル・オー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF17": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF18": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF20": {
+   "name_cn": "サムライドリーマー・ミリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF21": {
+   "name_cn": "サムライドリーマー・ミリン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF23": {
+   "name_cn": "氷心の覇王・アグロヴァル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF25": {
+   "name_cn": "閃耀の双剣・カトル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF26": {
+   "name_cn": "水の理・ワムデュス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF27": {
+   "name_cn": "水の理・ワムデュス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF28": {
+   "name_cn": "開闢の錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF30": {
+   "name_cn": "空慕う帰還者・カシウス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF33": {
+   "name_cn": "楽隠居の元国王・フォリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF35": {
+   "name_cn": "大いなる調停者・ゾーイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF38": {
+   "name_cn": "どこにでもいるフツーの女の子・メグ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF39": {
+   "name_cn": "どこにでもいるフツーの女の子・メグ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF43": {
+   "name_cn": "護国真龍・スカーサハ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF44": {
+   "name_cn": "メグの親友・まりっぺ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF45": {
+   "name_cn": "神狼・シス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF46": {
+   "name_cn": "繊細の魔奏者・ニオ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF47": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF48": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF49": {
+   "name_cn": "幽想の少女・フェリ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF50": {
+   "name_cn": "幽想の少女・フェリ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF51": {
+   "name_cn": "生滅の技巧・ネハン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF54": {
+   "name_cn": "冥闇の剛刃・バザラガ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF55": {
+   "name_cn": "開眼者・ウーノ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF56": {
+   "name_cn": "魔導の申し子・フュンフ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF61": {
+   "name_cn": "七宝石の姫・レ・フィーエ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF65": {
+   "name_cn": "天象の風・ペトラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF66": {
+   "name_cn": "天司長の後継・サンダルフォン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF67": {
+   "name_cn": "天司長の後継・サンダルフォン",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF68": {
+   "name_cn": "グラン＆ジータ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF71": {
+   "name_cn": "蒼の少女・ルリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-GBF72": {
+   "name_cn": "蒼天の守護騎士・カタリナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P14": {
+   "name_cn": "箒星",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P15": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P16": {
+   "name_cn": "揺らぎの斬姫・ナルメア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P18": {
+   "name_cn": "ドラゴンナイツ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P25": {
+   "name_cn": "眠れる輝竜・アーサー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P26": {
+   "name_cn": "眠れる獅子・モルドレッド",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P28": {
+   "name_cn": "信念の蹴撃・ランドル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P29": {
+   "name_cn": "開闢の錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P37": {
+   "name_cn": "妄想少女A・ルナール",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P38": {
+   "name_cn": "妄想少女A・ルナール",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P40": {
+   "name_cn": "報恩の技師・アイザック",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P41": {
+   "name_cn": "アルス･グローリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P45": {
+   "name_cn": "ティアマト・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P54": {
+   "name_cn": "オンリー･ワン･ウィッシュ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P59": {
+   "name_cn": "セレスト・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P62": {
+   "name_cn": "冥闇の剛刃・バザラガ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P64": {
+   "name_cn": "心眼の双葬女・レディ・グレイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P65": {
+   "name_cn": "心眼の双葬女・レディ・グレイ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P67": {
+   "name_cn": "エーヴィヒ・カメラート",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P68": {
+   "name_cn": "ストーン・ブレイク",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P69": {
+   "name_cn": "狂恋の華鎧・ヴィーラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P72": {
+   "name_cn": "シュヴァリエ・マグナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P73": {
+   "name_cn": "魔杖の外科医・ティコ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P77": {
+   "name_cn": "星跡の巡礼者・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P78": {
+   "name_cn": "星跡の巡礼者・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P79": {
+   "name_cn": "英雄幻視・トルー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P80": {
+   "name_cn": "アフェクション・オース",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-P83": {
+   "name_cn": "蒼の少女・ルリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-SL03": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-SL04": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-SL17": {
+   "name_cn": "神狼・シス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-SL19": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-SL20": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-U02": {
+   "name_cn": "風の理・イーウィヤ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-U03": {
+   "name_cn": "十天衆の頭目・シエテ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-U06": {
+   "name_cn": "水の理・ワムデュス",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-U09": {
+   "name_cn": "闇の理・フェディエル",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "CP05-U11": {
+   "name_cn": "十天衆を総べし者・グラン＆ジータ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
   },
   "CSD01-014": {
    "name_cn": "美丽周日",
@@ -26753,6 +28457,22 @@
    "life": 5,
    "card_type": "Follower",
    "type": "ドラゴニュート・武闘竜人・キラー"
+  },
+  "DSD01b-014": {
+   "name_cn": "斩龙剑士·罗伊",
+   "cost": 3,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "武闘竜人・キラー"
+  },
+  "DSD01b-015": {
+   "name_cn": "斩龙剑士·罗伊",
+   "cost": -1,
+   "attack": 3,
+   "life": 3,
+   "card_type": "FollowerEvo",
+   "type": "武闘竜人・キラー"
   },
   "DSD01b-016": {
    "name_cn": "残影龙人",
@@ -29370,6 +31090,14 @@
    "card_type": "Spell",
    "type": "死者"
   },
+  "ETD02-016": {
+   "name_cn": "不灭的怨念",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "死者"
+  },
   "ETD03-008": {
    "name_cn": "大自然的导引",
    "cost": 1,
@@ -30586,6 +32314,14 @@
    "card_type": "Follower",
    "type": "魔法使い・学院"
   },
+  "PR-244": {
+   "name_cn": "灵魂鉴定师",
+   "cost": 2,
+   "attack": 2,
+   "life": 3,
+   "card_type": "Follower",
+   "type": "死霊術師"
+  },
   "PR-246": {
    "name_cn": "坠情箭击",
    "cost": 1,
@@ -31569,6 +33305,14 @@
    "life": 3,
    "card_type": "Follower",
    "type": "死者"
+  },
+  "PR-432": {
+   "name_cn": "煌刃勇者·阿玛莉雅",
+   "cost": 4,
+   "attack": 4,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "兵士"
   },
   "PR-433": {
    "name_cn": "堕落的决意",
@@ -32666,6 +34410,14 @@
    "card_type": "Follower",
    "type": "竜族"
   },
+  "PR-590": {
+   "name_cn": "凶猛嚎叫",
+   "cost": 0,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "獣"
+  },
   "PR-591": {
    "name_cn": "做作业啦！",
    "cost": 1,
@@ -32690,6 +34442,22 @@
    "card_type": "Amulet",
    "type": "妖精"
   },
+  "PR-596": {
+   "name_cn": "突击骑士",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "兵士"
+  },
+  "PR-597": {
+   "name_cn": "突击骑士",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "兵士"
+  },
   "PR-598": {
    "name_cn": "界门的人造体·菈姿莉",
    "cost": 2,
@@ -32697,6 +34465,14 @@
    "life": 3,
    "card_type": "Follower",
    "type": "超克"
+  },
+  "PR-599": {
+   "name_cn": "龙之启示",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "竜族"
   },
   "PR-600": {
    "name_cn": "鲜血项链",
@@ -32714,6 +34490,14 @@
    "card_type": "Follower",
    "type": "植物族"
   },
+  "PR-602": {
+   "name_cn": "黑白乱舞·诺尔与卜朗",
+   "cost": 1,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "ドラゴニュート"
+  },
   "PR-603": {
    "name_cn": "黑白乱舞·诺尔与卜朗",
    "cost": 1,
@@ -32721,6 +34505,22 @@
    "life": 2,
    "card_type": "Follower",
    "type": "ドラゴニュート"
+  },
+  "PR-604": {
+   "name_cn": "光耀圣狮",
+   "cost": 5,
+   "attack": 0,
+   "life": 5,
+   "card_type": "Follower",
+   "type": "光輝・獣"
+  },
+  "PR-605": {
+   "name_cn": "光耀圣狮",
+   "cost": 5,
+   "attack": 0,
+   "life": 5,
+   "card_type": "Follower",
+   "type": "光輝・獣"
   },
   "PR-606": {
    "name_cn": "[以胜利为目标]春乌菈菈",
@@ -32794,6 +34594,14 @@
    "card_type": "Follower",
    "type": "信仰・鳥族"
   },
+  "PR-620": {
+   "name_cn": "黑天鹅·奥黛儿",
+   "cost": 5,
+   "attack": 6,
+   "life": 4,
+   "card_type": "Follower",
+   "type": "童話"
+  },
   "PR-621": {
    "name_cn": "暗黑供奉",
    "cost": 1,
@@ -32801,6 +34609,158 @@
    "life": -1,
    "card_type": "Spell",
    "type": "狂信"
+  },
+  "PR-623": {
+   "name_cn": "アルス・グローリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-624": {
+   "name_cn": "懇切の呪い・スージー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-625": {
+   "name_cn": "武装千金的大参谋·阿尔梅莉泽",
+   "cost": 2,
+   "attack": 2,
+   "life": 2,
+   "card_type": "Follower",
+   "type": "指揮官・貴族"
+  },
+  "PR-629": {
+   "name_cn": "箒星",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-630": {
+   "name_cn": "決意の輝竜・アーサー",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-631": {
+   "name_cn": "迷夢の獅子・モルドレッド",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-633": {
+   "name_cn": "ゼエン教の僧侶・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-634": {
+   "name_cn": "ゼエン教の僧侶・ソフィア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-635": {
+   "name_cn": "天才美少女錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-636": {
+   "name_cn": "天才美少女錬金術師・カリオストロ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-637": {
+   "name_cn": "不屈の鋭刃・バザラガ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-638": {
+   "name_cn": "威容なる星晶騎士・ヴィーラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-639": {
+   "name_cn": "威容なる星晶騎士・ヴィーラ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-640": {
+   "name_cn": "空駆ける庇護者・カタリナ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-642": {
+   "name_cn": "愛すべき相棒・ビィ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-643": {
+   "name_cn": "空の命運を握る少女・ルリア",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-646": {
+   "name_cn": "レリックバスター・グラン＆ジータ",
+   "cost": null,
+   "attack": null,
+   "life": null,
+   "card_type": "",
+   "type": ""
+  },
+  "PR-647": {
+   "name_cn": "异端的指导者·贝尔迪俪亚",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "先導・学院"
+  },
+  "PR-648": {
+   "name_cn": "异端的指导者·贝尔迪俪亚",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "先導・学院"
   },
   "SCS01-001": {
    "name_cn": "自然妖精公主·阿丽雅",
@@ -33897,6 +35857,14 @@
    "life": 3,
    "card_type": "FollowerEvo",
    "type": "兵士・超克"
+  },
+  "SP01-SP09": {
+   "name_cn": "雷维翁剑士·阿尔贝尔",
+   "cost": 4,
+   "attack": 3,
+   "life": 5,
+   "card_type": "Follower",
+   "type": "指揮官・レヴィオン"
   },
   "SP01-SP10": {
    "name_cn": "雷维翁剑士·阿尔贝尔",

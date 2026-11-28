@@ -1,6 +1,6 @@
 {
  "prefix": "SP01",
- "count": 104,
+ "count": 105,
  "cards": {
   "SP01-001": {
    "name_jp": "揺蕩う意志・スピネ",
@@ -1036,6 +1036,21 @@
    "desc_jp": "【疾走】\n【進化時】コスト3：これは攻撃力+X/体力+Xする。Xは「自分の場の他のフォロワーの数」である。",
    "matched_by": "card_no",
    "api_card_no": "SP01-SP08"
+  },
+  "SP01-SP09": {
+   "name_jp": "レヴィオンセイバー・アルベール",
+   "name_cn": "雷维翁剑士·阿尔贝尔",
+   "cost": 4,
+   "attack": 3,
+   "life": 5,
+   "card_type": "Follower",
+   "type": "指揮官・レヴィオン",
+   "rare": "SP",
+   "craft": "Sword",
+   "desc_cn": "《进化》《消费3》：使这张卡进化。\n【疾驰】",
+   "desc_jp": "進化コスト3：これは進化する。\n【疾走】",
+   "matched_by": "card_no",
+   "api_card_no": "SP01-SP09"
   },
   "SP01-SP10": {
    "name_jp": "レヴィオンセイバー・アルベール",

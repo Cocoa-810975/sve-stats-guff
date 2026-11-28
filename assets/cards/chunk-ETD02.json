@@ -1,6 +1,6 @@
 {
  "prefix": "ETD02",
- "count": 1,
+ "count": 2,
  "cards": {
   "ETD02-007": {
    "name_jp": "ソウルコンバージョン",
@@ -16,6 +16,21 @@
    "desc_jp": "クイック\n自分のフォロワー1体を選ぶ。それを破壊する。2枚引く。",
    "matched_by": "card_no",
    "api_card_no": "ETD02-007"
+  },
+  "ETD02-016": {
+   "name_jp": "消えぬ怨恨",
+   "name_cn": "不灭的怨念",
+   "cost": 2,
+   "attack": -1,
+   "life": -1,
+   "card_type": "Spell",
+   "type": "死者",
+   "rare": "BR",
+   "craft": "Nightmare",
+   "desc_cn": " 《快速》\n选择敌方的1个从者。给予其3点伤害。将自己的牌堆顶1张卡置于墓场。 ",
+   "desc_jp": "クイック\n相手のフォロワー1体を選ぶ。それに3ダメージ。自分のデッキの上1枚を墓場に置く。",
+   "matched_by": "card_no",
+   "api_card_no": "ETD02-016"
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "prefix": "BP08",
- "count": 109,
+ "count": 110,
  "cards": {
   "BP08-001": {
    "name_jp": "森の巫女・パメラ",
@@ -76,6 +76,21 @@
    "desc_jp": "【進化時】自分の場の『ヴィクトリア』1体を選ぶ。このターン、それはダメージを受けない。",
    "matched_by": "card_no",
    "api_card_no": "BP08-005"
+  },
+  "BP08-008": {
+   "name_jp": "心読む少女・ミツェル",
+   "name_cn": "读心少女·米榭儿",
+   "cost": 1,
+   "attack": 1,
+   "life": 1,
+   "card_type": "Follower",
+   "type": "精霊",
+   "rare": "SR",
+   "craft": "Forest",
+   "desc_cn": "《进化》《消费2》：使这张卡进化。",
+   "desc_jp": "進化コスト2：これは進化する。",
+   "matched_by": "card_no",
+   "api_card_no": "BP08-008"
   },
   "BP08-009": {
    "name_jp": "心読む少女・ミツェル",
